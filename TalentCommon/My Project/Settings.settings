@@ -1,0 +1,20 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="TalentEBusinessDBConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=NWADW01\SQL2005;Initial Catalog=TalentEBusinessDB;Persist Security Info=True;User ID=sa;Password=princess&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=NWADW01\SQL2005;Initial Catalog=TalentEBusinessDB;Persist Security Info=True;User ID=sa;Password=princess</Value>
+    </Setting>
+    <Setting Name="Talent_Common_Encryption_Encryption" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost:19489/TalentEncryption/Encryption.asmx</Value>
+    </Setting>
+    <Setting Name="Talent_Common_com_pclplstest_www_XMLTransferEngine" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://www.pclplstest.com/services/xmltransferengine.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
