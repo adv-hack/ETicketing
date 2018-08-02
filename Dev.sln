@@ -1,0 +1,203 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 12.0.30501.0
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TalentSupplyNet", "TalentSupplyNet\", "{19674BE1-6D7E-4C2E-AE53-DF646E030428}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = ""
+		SccAuxPath = ""
+		SccLocalPath = ""
+		SccProvider = ""
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.1"
+		ProjectReferences = "{8A3F431C-BF44-4DD5-8242-CCDFF62F6188}|Talent.Common.dll;{5126a230-3b70-4e27-894d-bc6eec6415fe}|TalentBusinessLogic.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/TalentSupplyNet"
+		Debug.AspNetCompiler.PhysicalPath = "TalentSupplyNet\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\TalentSupplyNet\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/TalentSupplyNet"
+		Release.AspNetCompiler.PhysicalPath = "TalentSupplyNet\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\TalentSupplyNet\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "3858"
+		VWDDynamicPort = "true"
+		SlnRelativePath = "TalentSupplyNet\"
+	EndProjectSection
+	ProjectSection(ProjectDependencies) = postProject
+		{8A3F431C-BF44-4DD5-8242-CCDFF62F6188} = {8A3F431C-BF44-4DD5-8242-CCDFF62F6188}
+	EndProjectSection
+	ProjectSection(SvnOrigin) = preProject
+		@Keys = Enlist,Svn.Uri
+		Enlist = Required
+		Svn.Uri = TalentSupplyNet/
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Talent.Common", "TalentCommon\Talent.Common.vbproj", "{8A3F431C-BF44-4DD5-8242-CCDFF62F6188}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "TalentDatabase", "TalentDatabase\TalentDatabase.sqlproj", "{3965401F-EF11-484B-8277-C0B883376CB8}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TalentEBusiness", "TalentEBusiness\", "{8E700ABD-67F8-43A2-B4A0-17C05FE40B84}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = ""
+		SccAuxPath = ""
+		SccLocalPath = ""
+		SccProvider = ""
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.1"
+		ProjectReferences = "{8a3f431c-bf44-4dd5-8242-ccdff62f6188}|Talent.Common.dll;{5126a230-3b70-4e27-894d-bc6eec6415fe}|TalentBusinessLogic.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/TalentEBusiness"
+		Debug.AspNetCompiler.PhysicalPath = "TalentEBusiness\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\TalentEBusiness\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/TalentEBusiness"
+		Release.AspNetCompiler.PhysicalPath = "TalentEBusiness\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\TalentEBusiness\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "20759"
+		VWDDynamicPort = "true"
+		SlnRelativePath = "TalentEBusiness\"
+	EndProjectSection
+	ProjectSection(ProjectDependencies) = postProject
+		{5126A230-3B70-4E27-894D-BC6EEC6415FE} = {5126A230-3B70-4E27-894D-BC6EEC6415FE}
+	EndProjectSection
+	ProjectSection(SvnOrigin) = preProject
+		@Keys = Enlist,Svn.Uri
+		Enlist = Required
+		Svn.Uri = TalentEBusiness/
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "TalentMaintenance", "TalentMaintenance\", "{6650015C-8D65-4E20-B879-5C03EA2B20A0}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = ""
+		SccAuxPath = ""
+		SccLocalPath = ""
+		SccProvider = ""
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.1"
+		ProjectReferences = "{8A3F431C-BF44-4DD5-8242-CCDFF62F6188}|Talent.Common.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/TalentMaintenance"
+		Debug.AspNetCompiler.PhysicalPath = "TalentMaintenance\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\TalentMaintenance\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/TalentMaintenance"
+		Release.AspNetCompiler.PhysicalPath = "TalentMaintenance\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\TalentMaintenance\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "3863"
+		VWDDynamicPort = "true"
+		SlnRelativePath = "TalentMaintenance\"
+	EndProjectSection
+	ProjectSection(SvnOrigin) = preProject
+		@Keys = Enlist,Svn.Uri
+		Enlist = Required
+		Svn.Uri = TalentMaintenance/
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TalentAPI", "TalentAPI\TalentAPI.csproj", "{93FA94C0-3BA1-44FE-B845-02963163FEA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TalentBusinessLogic", "TalentBusinessLogic\TalentBusinessLogic.csproj", "{5126A230-3B70-4E27-894D-BC6EEC6415FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Release|.NET = Release|.NET
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19674BE1-6D7E-4C2E-AE53-DF646E030428}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{19674BE1-6D7E-4C2E-AE53-DF646E030428}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19674BE1-6D7E-4C2E-AE53-DF646E030428}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{19674BE1-6D7E-4C2E-AE53-DF646E030428}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{19674BE1-6D7E-4C2E-AE53-DF646E030428}.Release|.NET.ActiveCfg = Debug|Any CPU
+		{19674BE1-6D7E-4C2E-AE53-DF646E030428}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{19674BE1-6D7E-4C2E-AE53-DF646E030428}.Release|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{19674BE1-6D7E-4C2E-AE53-DF646E030428}.Release|Mixed Platforms.Build.0 = Debug|Any CPU
+		{8A3F431C-BF44-4DD5-8242-CCDFF62F6188}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{8A3F431C-BF44-4DD5-8242-CCDFF62F6188}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A3F431C-BF44-4DD5-8242-CCDFF62F6188}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A3F431C-BF44-4DD5-8242-CCDFF62F6188}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{8A3F431C-BF44-4DD5-8242-CCDFF62F6188}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{8A3F431C-BF44-4DD5-8242-CCDFF62F6188}.Release|.NET.ActiveCfg = Release|Any CPU
+		{8A3F431C-BF44-4DD5-8242-CCDFF62F6188}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A3F431C-BF44-4DD5-8242-CCDFF62F6188}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A3F431C-BF44-4DD5-8242-CCDFF62F6188}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{8A3F431C-BF44-4DD5-8242-CCDFF62F6188}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{3965401F-EF11-484B-8277-C0B883376CB8}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{3965401F-EF11-484B-8277-C0B883376CB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3965401F-EF11-484B-8277-C0B883376CB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3965401F-EF11-484B-8277-C0B883376CB8}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3965401F-EF11-484B-8277-C0B883376CB8}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{3965401F-EF11-484B-8277-C0B883376CB8}.Release|.NET.ActiveCfg = Release|Any CPU
+		{3965401F-EF11-484B-8277-C0B883376CB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3965401F-EF11-484B-8277-C0B883376CB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3965401F-EF11-484B-8277-C0B883376CB8}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{3965401F-EF11-484B-8277-C0B883376CB8}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{3965401F-EF11-484B-8277-C0B883376CB8}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{3965401F-EF11-484B-8277-C0B883376CB8}.Release|Mixed Platforms.Deploy.0 = Release|Any CPU
+		{8E700ABD-67F8-43A2-B4A0-17C05FE40B84}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{8E700ABD-67F8-43A2-B4A0-17C05FE40B84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E700ABD-67F8-43A2-B4A0-17C05FE40B84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E700ABD-67F8-43A2-B4A0-17C05FE40B84}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{8E700ABD-67F8-43A2-B4A0-17C05FE40B84}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{8E700ABD-67F8-43A2-B4A0-17C05FE40B84}.Release|.NET.ActiveCfg = Debug|Any CPU
+		{8E700ABD-67F8-43A2-B4A0-17C05FE40B84}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E700ABD-67F8-43A2-B4A0-17C05FE40B84}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{8E700ABD-67F8-43A2-B4A0-17C05FE40B84}.Release|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{8E700ABD-67F8-43A2-B4A0-17C05FE40B84}.Release|Mixed Platforms.Build.0 = Debug|Any CPU
+		{6650015C-8D65-4E20-B879-5C03EA2B20A0}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{6650015C-8D65-4E20-B879-5C03EA2B20A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6650015C-8D65-4E20-B879-5C03EA2B20A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6650015C-8D65-4E20-B879-5C03EA2B20A0}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{6650015C-8D65-4E20-B879-5C03EA2B20A0}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{6650015C-8D65-4E20-B879-5C03EA2B20A0}.Release|.NET.ActiveCfg = Debug|Any CPU
+		{6650015C-8D65-4E20-B879-5C03EA2B20A0}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{6650015C-8D65-4E20-B879-5C03EA2B20A0}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{6650015C-8D65-4E20-B879-5C03EA2B20A0}.Release|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{6650015C-8D65-4E20-B879-5C03EA2B20A0}.Release|Mixed Platforms.Build.0 = Debug|Any CPU
+		{93FA94C0-3BA1-44FE-B845-02963163FEA9}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{93FA94C0-3BA1-44FE-B845-02963163FEA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93FA94C0-3BA1-44FE-B845-02963163FEA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93FA94C0-3BA1-44FE-B845-02963163FEA9}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{93FA94C0-3BA1-44FE-B845-02963163FEA9}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{93FA94C0-3BA1-44FE-B845-02963163FEA9}.Release|.NET.ActiveCfg = Release|Any CPU
+		{93FA94C0-3BA1-44FE-B845-02963163FEA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93FA94C0-3BA1-44FE-B845-02963163FEA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93FA94C0-3BA1-44FE-B845-02963163FEA9}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{93FA94C0-3BA1-44FE-B845-02963163FEA9}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{5126A230-3B70-4E27-894D-BC6EEC6415FE}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{5126A230-3B70-4E27-894D-BC6EEC6415FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5126A230-3B70-4E27-894D-BC6EEC6415FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5126A230-3B70-4E27-894D-BC6EEC6415FE}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{5126A230-3B70-4E27-894D-BC6EEC6415FE}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{5126A230-3B70-4E27-894D-BC6EEC6415FE}.Release|.NET.ActiveCfg = Release|Any CPU
+		{5126A230-3B70-4E27-894D-BC6EEC6415FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5126A230-3B70-4E27-894D-BC6EEC6415FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5126A230-3B70-4E27-894D-BC6EEC6415FE}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{5126A230-3B70-4E27-894D-BC6EEC6415FE}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+EndGlobal
