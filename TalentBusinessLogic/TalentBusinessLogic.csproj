@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5126A230-3B70-4E27-894D-BC6EEC6415FE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TalentBusinessLogic</RootNamespace>
+    <AssemblyName>TalentBusinessLogic</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=4.1.1.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.4.1.1\lib\net45\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.0\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.0\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.0\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.0\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.0\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.0\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppCode\Helpers\GlobalConstants.cs" />
+    <Compile Include="AppCode\Helpers\TalentMapper.cs" />
+    <Compile Include="BusinessObjects\Basket\Fees.cs" />
+    <Compile Include="BusinessObjects\BusinessObjects.cs" />
+    <Compile Include="BusinessObjects\CRM\Activities.cs" />
+    <Compile Include="BusinessObjects\Data\Cache.cs" />
+    <Compile Include="BusinessObjects\Data\DataSettings.cs" />
+    <Compile Include="BusinessObjects\Data\Session.cs" />
+    <Compile Include="BusinessObjects\Data\Validation.cs" />
+    <Compile Include="BusinessObjects\Definitions\Agent\Agent.cs" />
+    <Compile Include="BusinessObjects\Definitions\CRM\Activities.cs" />
+    <Compile Include="BusinessObjects\Definitions\Finance\VAT.cs" />
+    <Compile Include="BusinessObjects\Definitions\Product\Availability.cs" />
+    <Compile Include="BusinessObjects\Environment\ActivityTemplateDefaults.cs" />
+    <Compile Include="DataTransferObjects\Agent\Agent.cs" />
+    <Compile Include="BusinessObjects\Environment\Agent.cs" />
+    <Compile Include="BusinessObjects\Environment\ECommerceModuleDefaults.cs" />
+    <Compile Include="BusinessObjects\Environment\EnvironmentSettings.cs" />
+    <Compile Include="BusinessObjects\Environment\Settings.cs" />
+    <Compile Include="DataTransferObjects\Customer\FriendsAndFamilyDetails.cs" />
+    <Compile Include="DataTransferObjects\DTOActivities.cs" />
+    <Compile Include="DataTransferObjects\DTOProductAvailability.cs" />
+    <Compile Include="DataTransferObjects\Finance\VAT.cs" />
+    <Compile Include="DataAnnotation\Base\TalentDataValidator.cs" />
+    <Compile Include="DataAnnotation\Base\TalentValidationAttribute.cs" />
+    <Compile Include="DataAnnotation\TalentDisplayAttribute.cs" />
+    <Compile Include="DataAnnotation\TalentLengthAttribute.cs" />
+    <Compile Include="DataAnnotation\TalentRangeAttribute.cs" />
+    <Compile Include="DataAnnotation\TalentRegularExpressionAttribute.cs" />
+    <Compile Include="DataAnnotation\TalentRequiredAttribute.cs" />
+    <Compile Include="DataTransferObjects\Hospitality\AvailabilityDetails.cs" />
+    <Compile Include="DataTransferObjects\Hospitality\HospitalityBookingEnquiryDetails.cs" />
+    <Compile Include="DataTransferObjects\Hospitality\HospitalityBookingPrintCountDetails.cs" />
+    <Compile Include="DataTransferObjects\Hospitality\HospitalitySeatDetails.cs" />
+    <Compile Include="DataTransferObjects\Hospitality\ComponentDetails.cs" />
+    <Compile Include="DataTransferObjects\Hospitality\LeadSourceDetails.cs" />
+    <Compile Include="DataTransferObjects\Hospitality\PackageDetails.cs" />
+    <Compile Include="DataTransferObjects\Hospitality\ProductDetails.cs" />
+    <Compile Include="DataTransferObjects\Hospitality\ProductGroupDetails.cs" />
+    <Compile Include="DataTransferObjects\Hospitality\SeasonTicketExceptions.cs" />
+    <Compile Include="DataTransferObjects\JQuery\DataTables\DataTables.cs" />
+    <Compile Include="DataTransferObjects\JQuery\DataTables\JQueryDataTable.cs" />
+    <Compile Include="DataTransferObjects\JQuery\DataTables\List\ActivitiesList.cs" />
+    <Compile Include="DataTransferObjects\JQuery\DataTables\List\CompanySearch.cs" />
+    <Compile Include="DataTransferObjects\JQuery\DataTables\List\CustomerSearch.cs" />
+    <Compile Include="DataTransferObjects\Product\ProductPriceCodeDetails.cs" />
+    <Compile Include="DataTransferObjects\Product\ProductPriceBandDetails.cs" />
+    <Compile Include="DataTransferObjects\Setup\Template\DataCaptureItem.cs" />
+    <Compile Include="DataTransferObjects\Setup\Template\EmailConfirmationItem.cs" />
+    <Compile Include="DataTransferObjects\Setup\Template\PackageOverrideCriteria.cs" />
+    <Compile Include="DataTransferObjects\Setup\Template\QandAItem.cs" />
+    <Compile Include="DataTransferObjects\Setup\Template\TemplateOverrideCriteriaFormatted.cs" />
+    <Compile Include="DataTransferObjects\Setup\Template\TemplateOverrideHeader.cs" />
+    <Compile Include="DataTransferObjects\Setup\Template\TicketingOverrideCriteria.cs" />
+    <Compile Include="DataTransferObjects\TicketExchange\TicketExchangeStandAreaDefaults.cs" />
+    <Compile Include="DataTransferObjects\TicketExchange\TicketExchangeItem.cs" />
+    <Compile Include="ModelBuilders\AddressLabelPrintBuilder.cs" />
+    <Compile Include="ModelBuilders\BaseModelBuilder.cs" />
+    <Compile Include="ModelBuilders\AddressChangeBuilder.cs" />
+    <Compile Include="ModelBuilders\CRM\Activities\ActivitiesModelBuilder.cs" />
+    <Compile Include="ModelBuilders\CompanySearchBuilder.cs" />
+    <Compile Include="ModelBuilders\CRM\Company\CompanyModelBuilders.cs" />
+    <Compile Include="ModelBuilders\CustomerSearchBuilder.cs" />
+    <Compile Include="ModelBuilders\Example\ExampleModelBuilder.cs" />
+    <Compile Include="ModelBuilders\Base\ModelBuilder.cs" />
+    <Compile Include="ModelBuilders\Hospitality\Booking\HospitalityBookingBuilder.cs" />
+    <Compile Include="ModelBuilders\Hospitality\Booking\HospitalityBookingEnquiryBuilder.cs" />
+    <Compile Include="ModelBuilders\Hospitality\List\HospitalityDetailsBuilder.cs" />
+    <Compile Include="ModelBuilders\Hospitality\List\HospitalityListBuilder.cs" />
+    <Compile Include="ModelBuilders\Orders\TicketExchange\TicketExchangeDefaultsBuilder.cs" />
+    <Compile Include="ModelBuilders\Products\Availability\ProductAvailabilityBuilder.cs" />
+    <Compile Include="ModelBuilders\Profile\Password\PasswordModelBuilders.cs" />
+    <Compile Include="ModelBuilders\Orders\TicketExchange\TicketExchangeSelectionBuilder.cs" />
+    <Compile Include="ModelBuilders\Orders\TicketExchange\TicketExchangeProductsBuilder.cs" />
+    <Compile Include="ModelBuilders\Setup\Templates\TemplateOverrideBuilder.cs" />
+    <Compile Include="ModelBuilders\VerifyAndRetrieveCustomerBuilder.cs" />
+    <Compile Include="Models\ApplicationModels\BaseModels\BaseViewModelForFineUploader.cs" />
+    <Compile Include="Models\ApplicationModels\BaseModels\BaseInputModelForFineUploader.cs" />
+    <Compile Include="Models\ApplicationModels\BaseModels\BaseInputModel.cs" />
+    <Compile Include="Models\ApplicationModels\BaseModels\BaseInputModelForDataTables.cs" />
+    <Compile Include="Models\ApplicationModels\BaseModels\BaseViewModel.cs" />
+    <Compile Include="Models\ApplicationModels\BaseModels\BaseViewModelForDataTables.cs" />
+    <Compile Include="Models\ApplicationModels\ErrorModels\ErrorModel.cs" />
+    <Compile Include="Models\ApplicationModels\HttpContextModel\HttpContextInputModel.cs" />
+    <Compile Include="Models\Club\ClubViewModel.cs" />
+    <Compile Include="Models\CRM\Activities\ActivitiesEditViewModel.cs" />
+    <Compile Include="Models\CRM\Activities\ActivitiesFileViewModel.cs" />
+    <Compile Include="Models\CRM\Activities\ActivitiesFileInputModel.cs" />
+    <Compile Include="Models\CRM\Activities\ActivitiesEditInputModel.cs" />
+    <Compile Include="Models\CRM\Activities\ActivitiesListViewModel.cs" />
+    <Compile Include="Models\CRM\Activities\ActivitiesListInputModel.cs" />
+    <Compile Include="Models\CRM\Activities\ActivitiesTemplateInputModel.cs" />
+    <Compile Include="Models\CRM\AddressChange\AddressChangeSyncInputModel.cs" />
+    <Compile Include="Models\CRM\AddressChange\AddressChangeSyncViewModel.cs" />
+    <Compile Include="Models\CRM\Company\AddressLabelPrint\AddressLabelInputModel.cs" />
+    <Compile Include="Models\CRM\Company\AddressLabelPrint\AddressLabelViewModel.cs" />
+    <Compile Include="Models\CRM\Company\CompanyContacts\CompanyContactsInputModel.cs" />
+    <Compile Include="Models\CRM\Company\CompanyContacts\CompanyContactsViewModel.cs" />
+    <Compile Include="Models\CRM\Company\CompanyUpdate\CompanyUpdateInputModel.cs" />
+    <Compile Include="Models\CRM\Company\CompanyUpdate\CompanyUpdateViewModel.cs" />
+    <Compile Include="Models\CRM\Company\CompanySearch\CompanySearchInputModel.cs" />
+    <Compile Include="Models\CRM\Company\CompanySearch\CompanySearchViewModel.cs" />
+    <Compile Include="Models\CRM\Company\CustomerCompany\CustomerCompanyInputModel.cs" />
+    <Compile Include="Models\CRM\Company\CustomerCompany\CustomerCompanyViewModel.cs" />
+    <Compile Include="Models\CRM\Company\CustomerSearch\CustomerSearchInputModel.cs" />
+    <Compile Include="Models\CRM\Company\CustomerSearch\CustomerSearchViewModel.cs" />
+    <Compile Include="Models\CRM\Company\ParentCustomerCompany\ParentCustomerCompanyInputModel.cs" />
+    <Compile Include="Models\CRM\Company\ParentCustomerCompany\ParentCustomerCompanyViewModel.cs" />
+    <Compile Include="Models\CRM\Company\VerifyAndRetrieveCustomerDetails\RetrieveCustomerInputModel.cs" />
+    <Compile Include="Models\CRM\Company\VerifyAndRetrieveCustomerDetails\RetrieveCustomerViewModel.cs" />
+    <Compile Include="Models\Example\DataAnnotationInputModel.cs" />
+    <Compile Include="Models\Example\DataAnnotationViewModel.cs" />
+    <Compile Include="Models\CRM\AddressChange\AddressChangeInputModel.cs" />
+    <Compile Include="Models\CRM\AddressChange\AddressChangeViewModel.cs" />
+    <Compile Include="Models\Hospitality\Booking\HospitalityBookingEnquiryInputModel.cs" />
+    <Compile Include="Models\Hospitality\Booking\HospitalityBookingEnquiryViewModel.cs" />
+    <Compile Include="Models\Hospitality\Booking\HospitalityBookingInputModel.cs" />
+    <Compile Include="Models\Hospitality\Booking\HospitalityBookingViewModel.cs" />
+    <Compile Include="Models\Hospitality\List\HospitalityDetailsViewModel.cs" />
+    <Compile Include="Models\Hospitality\List\HospitalityDetailsInputModel.cs" />
+    <Compile Include="Models\Hospitality\List\HospitalityPackageListInputModel.cs" />
+    <Compile Include="Models\Hospitality\List\HospitalityPackageListViewModel.cs" />
+    <Compile Include="Models\Hospitality\List\HospitalityProductGroupInputModel.cs" />
+    <Compile Include="Models\Hospitality\List\HospitalityProductGroupViewModel.cs" />
+    <Compile Include="Models\Hospitality\List\HospitalityProductListInputModel.cs" />
+    <Compile Include="Models\Hospitality\List\HospitalityProductListViewModel.cs" />
+    <Compile Include="Models\Orders\TicketExchange\TicketExchangeDefaultsConfirmInputModel.cs" />
+    <Compile Include="Models\Orders\TicketExchange\TicketExchangeInputModel.cs" />
+    <Compile Include="Models\Orders\TicketExchange\TicketExchangeDefaultsInputModel.cs" />
+    <Compile Include="Models\Orders\TicketExchange\TicketExchangeDefaultsViewModel.cs" />
+    <Compile Include="Models\Orders\TicketExchange\TicketExchangeDefaultsConfirmViewModel.cs" />
+    <Compile Include="Models\Orders\TicketExchange\TicketExchangeViewModel.cs" />
+    <Compile Include="Models\Products\Availability\ProductAvailabilityViewModel.cs" />
+    <Compile Include="Models\Products\Availability\ProductAvailabilityInputModel.cs" />
+    <Compile Include="Models\Profile\Password\ResetPasswordInputModel.cs" />
+    <Compile Include="Models\Profile\Password\ResetPasswordViewModel.cs" />
+    <Compile Include="Models\Profile\Password\ForgottenPasswordInputModel.cs" />
+    <Compile Include="Models\Profile\Password\ForgottenPasswordViewModel.cs" />
+    <Compile Include="Models\Setup\Template\TemplateOverrideInputModel.cs" />
+    <Compile Include="Models\Setup\Template\TemplateOverrideViewModel.cs" />
+    <Compile Include="Models\SmartcardModels\SmartcardAPIViewModel.cs" />
+    <Compile Include="Models\SmartcardModels\SmartcardAPIInputModel.cs" />
+    <Compile Include="Models\Orders\TicketExchange\TicketExchangeSelectionViewModel.cs" />
+    <Compile Include="Models\Orders\TicketExchange\TicketExchangeSelectionInputModel.cs" />
+    <Compile Include="Models\Orders\TicketExchange\TicketExchangeProductsInputModel.cs" />
+    <Compile Include="Models\Orders\TicketExchange\TicketExchangeProductsViewModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ModelBuilders\SmartCardBuilder.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\CRM\Company\Registration\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TalentCommon\Talent.Common.vbproj">
+      <Project>{8a3f431c-bf44-4dd5-8242-ccdff62f6188}</Project>
+      <Name>Talent.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

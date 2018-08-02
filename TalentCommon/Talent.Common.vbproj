@@ -1,0 +1,734 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8A3F431C-BF44-4DD5-8242-CCDFF62F6188}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Talent.Common</RootNamespace>
+    <AssemblyName>Talent.Common</AssemblyName>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Talent.Common.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Talent.Common.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CookComputing.XmlRpcV2, Version=2.2.0.4, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ThirdPartyDLLs\CookComputing.XmlRpcV2.dll</HintPath>
+    </Reference>
+    <Reference Include="IBM.Data.DB2.iSeries, Version=12.0.0.0, Culture=neutral, PublicKeyToken=9cdb2ebfb1f93a26, processorArchitecture=MSIL">
+      <HintPath>..\..\..\IBM\IBM.Data.DB2.iSeries.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.0.2.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UltimateCommon, Version=3.2.1112.1637, Culture=neutral, PublicKeyToken=0efede2d78b28dff, processorArchitecture=MSIL" />
+    <Reference Include="UltimateEmailValidator, Version=3.2.1112.1637, Culture=neutral, PublicKeyToken=0efede2d78b28dff, processorArchitecture=MSIL" />
+    <Reference Include="UltimateProxy, Version=3.2.1112.1637, Culture=neutral, PublicKeyToken=0efede2d78b28dff, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CardProcessing\Commidea\CommideaClient.vb" />
+    <Compile Include="CardProcessing\Commidea\ConfirmationRequest.vb" />
+    <Compile Include="CardProcessing\Commidea\TransactionRequest.vb" />
+    <Compile Include="CardProcessing\Commidea\TransactionResponse.vb" />
+    <Compile Include="CardProcessing\Commidea\WebServices\CCTransaction.vb" />
+    <Compile Include="CardProcessing\Commidea\WebServices\ConfirmTxn.vb" />
+    <Compile Include="CardProcessing\Commidea\WebServices\GetServerStatus.vb" />
+    <Compile Include="CardProcessing\HSBC\HSBCApiRequest.vb" />
+    <Compile Include="CardProcessing\PayPal\NVPCodec.vb" />
+    <Compile Include="CardProcessing\PayPal\PayPal.vb" />
+    <Compile Include="CardProcessing\Vanguard\VanguardWebService.vb" />
+    <Compile Include="Cms\Base\cms.vb" />
+    <Compile Include="Cms\TalentErrorMessage.vb" />
+    <Compile Include="Cms\TalentErrorMessages.vb" />
+    <Compile Include="Cms\UserControlResource.vb" />
+    <Compile Include="Cms\WebFormResource.vb" />
+    <Compile Include="DataObjects\Activities\tbl_activity_questions.vb" />
+    <Compile Include="DataObjects\Activities\tbl_activity_questions_answers.vb" />
+    <Compile Include="DataObjects\Activities\tbl_activity_questions_answer_categories.vb" />
+    <Compile Include="DataObjects\Activities\tbl_activity_templates_defaults.vb" />
+    <Compile Include="DataObjects\Activities\tbl_activity_template_type.vb" />
+    <Compile Include="DataObjects\Activities\tbl_activity_templates.vb" />
+    <Compile Include="DataObjects\Activities\tbl_activity_templates_detail.vb" />
+    <Compile Include="DataObjects\Activities\tbl_activity_questions_with_answers.vb" />
+    <Compile Include="DataObjects\ApplicationVariables\tbl_querystring.vb" />
+    <Compile Include="DataObjects\ApplicationVariables\tbl_defaults.vb" />
+    <Compile Include="DataObjects\Activities.vb" />
+    <Compile Include="DataObjects\Basket\tbl_basket_detail_exceptions.vb" />
+    <Compile Include="DataObjects\Basket\tbl_basket_promotion_items.vb" />
+    <Compile Include="DataObjects\Order\tbl_gift_message.vb" />
+    <Compile Include="DataObjects\Payment\tbl_currency.vb" />
+    <Compile Include="DataObjects\Products\tbl_group_product.vb" />
+    <Compile Include="DataObjects\Basket\tbl_basket_payment.vb" />
+    <Compile Include="DataObjects\Products\tbl_product_specific_content.vb" />
+    <Compile Include="DataObjects\Profile\tbl_address_format_1_data.vb" />
+    <Compile Include="DataObjects\Agent.vb" />
+    <Compile Include="DataObjects\Agent\tbl_agent.vb" />
+    <Compile Include="DataObjects\Alerts.vb" />
+    <Compile Include="DataObjects\Alerts\tbl_alert.vb" />
+    <Compile Include="DataObjects\Alerts\tbl_alert_critera.vb" />
+    <Compile Include="DataObjects\Alerts\tbl_alert_definition.vb" />
+    <Compile Include="DataObjects\Alerts\tbl_attribute_definition.vb" />
+    <Compile Include="DataObjects\Alerts\tbl_user_attribute.vb" />
+    <Compile Include="DataObjects\ApplicationVariables.vb" />
+    <Compile Include="DataObjects\ApplicationVariables\tbl_country_bu.vb" />
+    <Compile Include="DataObjects\ApplicationVariables\tbl_partner.vb" />
+    <Compile Include="DataObjects\ApplicationVariables\tbl_language_bu.vb" />
+    <Compile Include="DataObjects\ApplicationVariables\tbl_authorized_partners.vb" />
+    <Compile Include="DataObjects\ApplicationVariables\tbl_offline_processing.vb" />
+    <Compile Include="DataObjects\ApplicationVariables\tbl_url_bu.vb" />
+    <Compile Include="DataObjects\ApplicationVariables\tbl_bu.vb" />
+    <Compile Include="DataObjects\ApplicationVariables\tbl_bu_module_database.vb" />
+    <Compile Include="DataObjects\ApplicationVariables\tbl_database_version.vb" />
+    <Compile Include="DataObjects\ApplicationVariables\tbl_ebusiness_descriptions_bu.vb" />
+    <Compile Include="DataObjects\ApplicationVariables\tbl_ecommerce_module_defaults_bu.vb" />
+    <Compile Include="DataObjects\ApplicationVariables\tbl_language.vb" />
+    <Compile Include="DataObjects\ApplicationVariables\tbl_url_secure.vb" />
+    <Compile Include="DataObjects\Basket.vb" />
+    <Compile Include="DataObjects\Basket\tbl_basket_detail.vb" />
+    <Compile Include="DataObjects\Basket\tbl_basket_fees.vb" />
+    <Compile Include="DataObjects\Basket\tbl_basket_header.vb" />
+    <Compile Include="DataObjects\Basket\tbl_basket_status.vb" />
+    <Compile Include="DataObjects\Basket\tbl_googlecheckout_serialnumber_status.vb" />
+    <Compile Include="DataObjects\Fees.vb" />
+    <Compile Include="DataObjects\Promotions\tbl_promotions_specific_content.vb" />
+    <Compile Include="DataObjects\Promotions.vb" />
+    <Compile Include="DataObjects\Stadiums\tbl_stadium_override.vb" />
+    <Compile Include="DataObjects\TalentAdminDataObjects.vb" />
+    <Compile Include="DataObjects\TalentDefinitions\tbl_agent_group_permissions.vb" />
+    <Compile Include="DataObjects\TalentDefinitions\tbl_agent_group_roles.vb" />
+    <Compile Include="DataObjects\TalentDefinitions\tbl_agent_permission_categories.vb" />
+    <Compile Include="DataObjects\Tracking\tbl_tracking_user_details.vb" />
+    <Compile Include="DataObjects\Vouchers.vb" />
+    <Compile Include="DataObjects\Payment\tbl_creditcard.vb" />
+    <Compile Include="DataObjects\Fees\tbl_fees_relations.vb" />
+    <Compile Include="DataObjects\Payment\tbl_creditcard_bu.vb" />
+    <Compile Include="DataObjects\Serialized.vb" />
+    <Compile Include="DataObjects\Serialize\tbl_serialized_objects.vb" />
+    <Compile Include="DataObjects\Stadiums.vb" />
+    <Compile Include="DataObjects\Stadiums\tbl_stadium_seat_colours.vb" />
+    <Compile Include="DataObjects\Stadiums\tbl_stadium_area_colours.vb" />
+    <Compile Include="DataObjects\Stadiums\tbl_stadiums.vb" />
+    <Compile Include="DataObjects\Maintenance.vb" />
+    <Compile Include="DataObjects\Delivery.vb" />
+    <Compile Include="DataObjects\Delivery\tbl_carrier.vb" />
+    <Compile Include="DataObjects\Delivery\tbl_delivery_unavailable_dates.vb" />
+    <Compile Include="DataObjects\EmailTemplates.vb" />
+    <Compile Include="DataObjects\Clubs.vb" />
+    <Compile Include="DataObjects\Clubs\tbl_club_details.vb" />
+    <Compile Include="DataObjects\Clubs\tbl_partner_user_club.vb" />
+    <Compile Include="DataObjects\Controls.vb" />
+    <Compile Include="DataObjects\Controls\tbl_control_attribute.vb" />
+    <Compile Include="DataObjects\Controls\tbl_control_text_lang.vb" />
+    <Compile Include="DataObjects\Base\DBObjectBase.vb" />
+    <Compile Include="DataObjects\EmailTemplates\tbl_email_templates.vb" />
+    <Compile Include="DataObjects\Feeds.vb" />
+    <Compile Include="DataObjects\Feeds\tbl_feeds_template.vb" />
+    <Compile Include="DataObjects\Feeds\tbl_feeds_text_lang.vb" />
+    <Compile Include="DataObjects\Maintenance\tbl_maintenance_modules.vb" />
+    <Compile Include="DataObjects\Maintenance\tbl_maintenance_publish_types.vb" />
+    <Compile Include="DataObjects\Order.vb" />
+    <Compile Include="DataObjects\Order\tbl_order_detail.vb" />
+    <Compile Include="DataObjects\Order\tbl_order_header.vb" />
+    <Compile Include="DataObjects\Order\tbl_order_status.vb" />
+    <Compile Include="DataObjects\Payment\tbl_creditcard_type_control.vb" />
+    <Compile Include="DataObjects\Payment\tbl_payment_type.vb" />
+    <Compile Include="DataObjects\Payment\tbl_payment_type_lang.vb" />
+    <Compile Include="DataObjects\Payment\tbl_point_of_sale_terminals.vb" />
+    <Compile Include="DataObjects\Payment\tbl_adhoc_fees.vb" />
+    <Compile Include="DataObjects\Payment\tbl_chip_and_pin_devices.vb" />
+    <Compile Include="DataObjects\Payment\tbl_payment_defaults.vb" />
+    <Compile Include="DataObjects\Products.vb" />
+    <Compile Include="DataObjects\Payment.vb" />
+    <Compile Include="DataObjects\Payment\tbl_currency_format_bu.vb" />
+    <Compile Include="DataObjects\Payment\tbl_payment_type_bu.vb" />
+    <Compile Include="DataObjects\Products\tbl_event_category.vb" />
+    <Compile Include="DataObjects\Products\tbl_price_list_detail.vb" />
+    <Compile Include="DataObjects\Products\tbl_product.vb" />
+    <Compile Include="DataObjects\Products\tbl_product_options.vb" />
+    <Compile Include="DataObjects\Products\tbl_product_option_defaults.vb" />
+    <Compile Include="DataObjects\Products\tbl_product_option_definitions.vb" />
+    <Compile Include="DataObjects\Products\tbl_product_option_types.vb" />
+    <Compile Include="DataObjects\Products\tbl_product_relations.vb" />
+    <Compile Include="DataObjects\Products\tbl_product_relations_attribute_values.vb" />
+    <Compile Include="DataObjects\Products\tbl_product_relations_text_lang.vb" />
+    <Compile Include="DataObjects\Products\tbl_product_stock.vb" />
+    <Compile Include="DataObjects\Profile\tbl_authorized_users.vb" />
+    <Compile Include="DataObjects\Profile\tbl_country.vb" />
+    <Compile Include="DataObjects\Profile\tbl_registration_type.vb" />
+    <Compile Include="DataObjects\TalentAdmin.vb" />
+    <Compile Include="DataObjects\TalentAdmin\tbl_client_web_servers.vb" />
+    <Compile Include="DataObjects\TalentDatabase.vb" />
+    <Compile Include="DataObjects\Tracking.vb" />
+    <Compile Include="DataObjects\Logging\tbl_data_transfer_status.vb" />
+    <Compile Include="DataObjects\Pages\tbl_page_extra_data.vb" />
+    <Compile Include="DataObjects\Profile\tbl_forgotten_password.vb" />
+    <Compile Include="DataObjects\Sports.vb" />
+    <Compile Include="DataObjects\Profile.vb" />
+    <Compile Include="DataObjects\Flash.vb" />
+    <Compile Include="DataObjects\Flash\tbl_flash_settings.vb" />
+    <Compile Include="DataObjects\Logging.vb" />
+    <Compile Include="DataObjects\Logging\tbl_logs.vb" />
+    <Compile Include="DataObjects\Logging\tbl_log_header.vb" />
+    <Compile Include="DataObjects\Pages.vb" />
+    <Compile Include="DataObjects\Pages\tbl_page.vb" />
+    <Compile Include="DataObjects\Pages\tbl_page_attribute.vb" />
+    <Compile Include="DataObjects\Pages\tbl_page_control.vb" />
+    <Compile Include="DataObjects\Pages\tbl_page_html.vb" />
+    <Compile Include="DataObjects\Pages\tbl_page_lang.vb" />
+    <Compile Include="DataObjects\Pages\tbl_page_left_nav.vb" />
+    <Compile Include="DataObjects\Pages\tbl_page_text_lang.vb" />
+    <Compile Include="DataObjects\Sports\tbl_sport_team_club_bu.vb" />
+    <Compile Include="DataObjects\Sports\tbl_sport_team_bu.vb" />
+    <Compile Include="DataObjects\Sports\tbl_sport_bu.vb" />
+    <Compile Include="DataObjects\Profile\tbl_address.vb" />
+    <Compile Include="DataObjects\TalentDataObjects.vb" />
+    <Compile Include="DataObjects\Templates.vb" />
+    <Compile Include="DataObjects\Templates\tbl_template_page.vb" />
+    <Compile Include="DataObjects\TicketDesigner.vb" />
+    <Compile Include="DataObjects\TicketDesigner\tbl_td_fieldproperties.vb" />
+    <Compile Include="DataObjects\TicketDesigner\tbl_td_fontsimulate.vb" />
+    <Compile Include="DataObjects\TicketDesigner\tbl_td_fontslaser.vb" />
+    <Compile Include="DataObjects\TicketDesigner\tbl_td_formattingrules.vb" />
+    <Compile Include="DataObjects\TicketDesigner\tbl_td_labelproperties.vb" />
+    <Compile Include="DataObjects\Profile\tbl_partner_user.vb" />
+    <Compile Include="DataObjects\TicketDesigner\tbl_td_pdffontproperties.vb" />
+    <Compile Include="DataObjects\Tracking\tbl_tracking_settings_values.vb" />
+    <Compile Include="DataObjects\Tracking\tbl_page_tracking.vb" />
+    <Compile Include="DataObjects\Tracking\tbl_tracking_providers.vb" />
+    <Compile Include="DataObjects\Version\tbl_version_deployed.vb" />
+    <Compile Include="DataObjects\Version.vb" />
+    <Compile Include="DataObjects\Vouchers\tbl_voucher_external.vb" />
+    <Compile Include="DataTransfer\DataTransfer.vb" />
+    <Compile Include="Functions\Base\TalentBase.vb" />
+    <Compile Include="Functions\Base\TalentDataSet.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBActivities.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBCompany.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBCRM.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBDespatch.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBTemplate.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBVatCodes.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBPackage.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBReservations.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBTalentDefaults.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBVanguard.vb" />
+    <Compile Include="Functions\DataEntities\DEActivityTemplateDefaults.vb" />
+    <Compile Include="Functions\DataEntities\DEBasketPayment.vb" />
+    <Compile Include="Functions\DataEntities\DEClubDetails.vb" />
+    <Compile Include="Functions\DataEntities\DECompanySearch.vb" />
+    <Compile Include="Functions\DataEntities\DECompany.vb" />
+    <Compile Include="Functions\DataEntities\DECustomerSearch.vb" />
+    <Compile Include="Functions\DataEntities\DECVCAndAVSAuthorization.vb" />
+    <Compile Include="Functions\DataEntities\DEAgentPermissions.vb" />
+    <Compile Include="Functions\DataEntities\DESmartcardExternalReprint.vb" />
+    <Compile Include="Functions\DataEntities\DETemplate.vb" />
+    <Compile Include="Functions\DataEntities\DETicketExchange.vb" />
+    <Compile Include="Functions\DataEntities\DERetailToTicketing.vb" />
+    <Compile Include="Functions\DataEntities\DEActivities.vb" />
+    <Compile Include="Functions\DataEntities\DEDespatch.vb" />
+    <Compile Include="Functions\DataEntities\DEPriceCode.vb" />
+    <Compile Include="Functions\DataEntities\DEPackages.vb" />
+    <Compile Include="Functions\DataEntities\DEReservations.vb" />
+    <Compile Include="Functions\DataEntities\DETalentCRM.vb" />
+    <Compile Include="Functions\DataEntities\DETicketDesignerPrint.vb" />
+    <Compile Include="Functions\DataEntities\DEVanguard.vb" />
+    <Compile Include="Functions\DataEntities\Settings\DECountry.vb" />
+    <Compile Include="Functions\TalentActivities.vb" />
+    <Compile Include="DataObjects\TalentDefinitions.vb" />
+    <Compile Include="Functions\TalentCompany.vb" />
+    <Compile Include="Functions\TalentCRM.vb" />
+    <Compile Include="Functions\TalentDefaults.vb" />
+    <Compile Include="Functions\TalentDespatch.vb" />
+    <Compile Include="Functions\TalentTemplateOverride.vb" />
+    <Compile Include="Functions\TalentTicketExchange.vb" />
+    <Compile Include="Functions\TalentVatCodes.vb" />
+    <Compile Include="Functions\TalentPackage.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBVouchers.vb" />
+    <Compile Include="Functions\DataEntities\DEDeliveryDetails.vb" />
+    <Compile Include="Functions\DataEntities\DEProductQuestionsAnswers.vb" />
+    <Compile Include="Functions\DataEntities\DEVouchersExternal.vb" />
+    <Compile Include="Functions\DataEntities\DEPageTextLang.vb" />
+    <Compile Include="Functions\DataEntities\DEPageAtribute.vb" />
+    <Compile Include="Functions\DataEntities\DEVouchers.vb" />
+    <Compile Include="Functions\TalentPartPayment.vb" />
+    <Compile Include="Functions\TalentReservations.vb" />
+    <Compile Include="Functions\TalentVanguard.vb" />
+    <Compile Include="Functions\TalentVouchers.vb" />
+    <Compile Include="Functions\TalentCustomerText.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBCustomerText.vb" />
+    <Compile Include="Functions\DataEntities\DECustomerText.vb" />
+    <Compile Include="Functions\DataEntities\DEDirectDebitDetails.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBDirectDebits.vb" />
+    <Compile Include="Functions\TalentDirectDebitDetails.vb" />
+    <Compile Include="Functions\TalentStopCodes.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBStopCodes.vb" />
+    <Compile Include="Functions\DataEntities\DEPriceBands.vb" />
+    <Compile Include="Functions\TalentPriceBands.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBAgent.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBFees.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBPriceBands.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBOnAccount.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBPrint.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBQueue.vb" />
+    <Compile Include="Functions\DataEntities\DEAmendTicketingOrder.vb" />
+    <Compile Include="Functions\DataEntities\DEAgent.vb" />
+    <Compile Include="Functions\DataEntities\DEBasket.vb" />
+    <Compile Include="Functions\DataEntities\DEBasketItem.vb" />
+    <Compile Include="Functions\DataEntities\DEBasketStatus.vb" />
+    <Compile Include="Functions\DataEntities\DEBasketSummary.vb" />
+    <Compile Include="Functions\DataEntities\DEBusinessUnitURLDevice.vb" />
+    <Compile Include="Functions\DataEntities\DEEcommerceModuleDefaults.vb" />
+    <Compile Include="Functions\DataEntities\DEEmailTemplateDefinition.vb" />
+    <Compile Include="Functions\DataEntities\DEFees.vb" />
+    <Compile Include="Functions\DataEntities\DEPrint.vb" />
+    <Compile Include="Functions\TalentAgent.vb" />
+    <Compile Include="Functions\TalentBasketProcessor.vb" />
+    <Compile Include="Functions\TalentBasketSummary.vb" />
+    <Compile Include="Functions\TalentComments.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBComments.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBCreditFinance.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBFeeds.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBLoyalty.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBSharedFunctions\DBSaveCardFunctions.vb" />
+    <Compile Include="Functions\DataEntities\DEComments.vb" />
+    <Compile Include="Functions\DataEntities\DEAlertCritera.vb" />
+    <Compile Include="Functions\DataEntities\DEAlertDefinition.vb" />
+    <Compile Include="Functions\DataEntities\DEAttributeDefinition.vb" />
+    <Compile Include="Functions\DataEntities\DEFeeds.vb" />
+    <Compile Include="Functions\DataEntities\DELoyalty.vb" />
+    <Compile Include="Functions\DataEntities\DELoyaltyList.vb" />
+    <Compile Include="Functions\TalentCreditFinance.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBEmail.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBSendEmail.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBSearch.vb" />
+    <Compile Include="Functions\DataEntities\DECreditFinance.vb" />
+    <Compile Include="Functions\DataEntities\DEEmailSettings.vb" />
+    <Compile Include="Functions\DataEntities\DEFailedEmailDetails.vb" />
+    <Compile Include="Functions\DataEntities\DEFieldProperties.vb" />
+    <Compile Include="Functions\DataEntities\DEFontSimulate.vb" />
+    <Compile Include="Functions\DataEntities\DEFontsLaser.vb" />
+    <Compile Include="Functions\DataEntities\DELabelProperties.vb" />
+    <Compile Include="Functions\DataEntities\DETicketDesigner.vb" />
+    <Compile Include="Functions\TalentEmail.vb" />
+    <Compile Include="Functions\TalentFeeds.vb" />
+    <Compile Include="Functions\TalentFees.vb" />
+    <Compile Include="Functions\TalentBasketFees\TalentBasketFees.vb" />
+    <Compile Include="Functions\TalentBasketFees\TalentBasketFeesAdhoc.vb" />
+    <Compile Include="Functions\TalentBasketFees\TalentBasketFeesApplication.vb" />
+    <Compile Include="Functions\TalentBasketFees\TalentBasketFeesCAT.vb" />
+    <Compile Include="Functions\TalentBasketFees\TalentBasketFeesCharity.vb" />
+    <Compile Include="Functions\TalentBasketFees\TalentBasketFeesDirectDebit.vb" />
+    <Compile Include="Functions\TalentBasketFees\TalentBasketFeesFinance.vb" />
+    <Compile Include="Functions\TalentBasketFees\TalentBasketFeesFulfilment.vb" />
+    <Compile Include="Functions\TalentBasketFees\TalentBasketFeesBooking.vb" />
+    <Compile Include="Functions\TalentBasketFees\TalentBasketFeesProcessor.vb" />
+    <Compile Include="Functions\TalentBasketFees\TalentBasketFeesVariable.vb" />
+    <Compile Include="Functions\TalentLoyalty.vb" />
+    <Compile Include="Functions\TalentPrint.vb" />
+    <Compile Include="Functions\TalentQueue.vb" />
+    <Compile Include="Functions\TalentSearch.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBSmartcard.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBDataAccess.vb" />
+    <Compile Include="Functions\DatabaseAccess\XmlMultipleAvailability.vb" />
+    <Compile Include="Functions\DataEntities\DEPartnerUserClub.vb" />
+    <Compile Include="Functions\DataEntities\DEProductPriceLoad.vb" />
+    <Compile Include="Functions\DataEntities\DESmartcard.vb" />
+    <Compile Include="Functions\DataEntities\DESQLCommand.vb" />
+    <Compile Include="Functions\DataEntities\DESQLParameter.vb" />
+    <Compile Include="Functions\TalentDataAccess.vb" />
+    <Compile Include="Functions\TalentSmartcard.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBPPS.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBSharedFunctions\DBBasketFunctions.vb" />
+    <Compile Include="Functions\DatabaseAccess\DevDatabaseAcesss\BasketDevData.vb" />
+    <Compile Include="Functions\TalentPPS.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBTicketExchange.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBProfileManager.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBWaitList.vb" />
+    <Compile Include="Functions\DataEntities\DEPPSEnrolmentScheme.vb" />
+    <Compile Include="Functions\DataEntities\DEPPSEnrolment.vb" />
+    <Compile Include="Functions\DataEntities\DECustomerV11.vb" />
+    <Compile Include="Functions\DataEntities\DEPPS.vb" />
+    <Compile Include="Functions\DataEntities\DEStock.vb" />
+    <Compile Include="Functions\DataEntities\DEStockDefault.vb" />
+    <Compile Include="Functions\DataEntities\DEStockDefaults.vb" />
+    <Compile Include="Functions\DataEntities\DEStockProduct.vb" />
+    <Compile Include="Functions\DataEntities\DEStockProducts.vb" />
+    <Compile Include="Functions\DataEntities\DEWaitList.vb" />
+    <Compile Include="Functions\DataEntities\DEWarehouse.vb" />
+    <Compile Include="Functions\DataEntities\DEWarehouses.vb" />
+    <Compile Include="Functions\DataEntities\Settings\DEOrderSettings.vb" />
+    <Compile Include="Functions\DataEntities\Settings\DEPromotionSettings.vb" />
+    <Compile Include="Functions\TalentProfileManager.vb" />
+    <Compile Include="Functions\DatabaseAccess\Base\XmlAccess.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBDeliveryCharge.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBUtilities.vb" />
+    <Compile Include="Functions\DatabaseAccess\XmlOrder.vb" />
+    <Compile Include="Functions\DataEntities\DEProfileManagerTransaction.vb" />
+    <Compile Include="Functions\DataEntities\DEProductOptions.vb" />
+    <Compile Include="Functions\DataEntities\DEProductRelations.vb" />
+    <Compile Include="Functions\DataEntities\DEProductECommerceAttribute.vb" />
+    <Compile Include="Functions\DataEntities\DEProductECommerceDetails.vb" />
+    <Compile Include="Functions\DataEntities\DEAttributeDetails.vb" />
+    <Compile Include="Functions\DataEntities\DEProductDescriptions.vb" />
+    <Compile Include="Functions\DataEntities\DECategoryDetails.vb" />
+    <Compile Include="Functions\DataEntities\DEProduct.vb" />
+    <Compile Include="Functions\DataEntities\DEProductGroups.vb" />
+    <Compile Include="Functions\DataEntities\DEProductGroupHierarchy.vb" />
+    <Compile Include="Functions\DataEntities\DEDeliveryCharges.vb" />
+    <Compile Include="Functions\DataEntities\Settings\WebPriceProduct.vb" />
+    <Compile Include="Functions\TalentDeliveryCharge.vb" />
+    <Compile Include="Functions\TalentUtilities.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBNoise.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBPrompt.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBSharedFunctions\DBOrderFunctions.vb" />
+    <Compile Include="Functions\DataEntities\DEAddPPS.vb" />
+    <Compile Include="Functions\DataEntities\DENoise.vb" />
+    <Compile Include="Functions\DataEntities\DEPrompt.vb" />
+    <Compile Include="Functions\DataEntities\Settings\DEProductSettings.vb" />
+    <Compile Include="Functions\TalentNoise.vb" />
+    <Compile Include="Functions\TalentPrompt.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBCrmNote.vb" />
+    <Compile Include="Functions\TalentCRMNote.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBAddressing.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBCampaign.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBWebPrice.vb" />
+    <Compile Include="Functions\DataEntities\DECampaignDetails.vb" />
+    <Compile Include="Functions\DataEntities\DEPaymentExternalDetails.vb" />
+    <Compile Include="Functions\DataEntities\DEWebPrice.vb" />
+    <Compile Include="Functions\DataEntities\Settings\DEWebPriceSetting.vb" />
+    <Compile Include="Functions\TalentAddressing.vb" />
+    <Compile Include="Functions\TalentCampaigns.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBOrderEnquiry.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBCreditNoteEnquiry.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBUploadTemplates.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBAmendTemplate.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBCreditCheck.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBDeliveryDate.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBInvoiceEnquiry.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBCompleteAvailability.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBProductInfo.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBPromotions.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBStatementEnquiry.vb" />
+    <Compile Include="Functions\DataEntities\DEAmendTicketingItems.vb" />
+    <Compile Include="Functions\DataEntities\DERefundItem.vb" />
+    <Compile Include="Functions\DataEntities\DERefundPayment.vb" />
+    <Compile Include="Functions\DataEntities\DETicketingBasket.vb" />
+    <Compile Include="Functions\DataEntities\DETicketingBasketItem.vb" />
+    <Compile Include="Functions\DataEntities\DEUploadTemplate.vb" />
+    <Compile Include="Functions\DataEntities\DECRMNote.vb" />
+    <Compile Include="Functions\DataEntities\DEAddTicketingItems.vb" />
+    <Compile Include="Functions\DataEntities\DEAmendTemplate.vb" />
+    <Compile Include="Functions\DataEntities\DECreditCheck.vb" />
+    <Compile Include="Functions\DataEntities\DEDeliveryDate.vb" />
+    <Compile Include="Functions\DataEntities\DEProductInfo.vb" />
+    <Compile Include="Functions\DataEntities\DEPromotions.vb" />
+    <Compile Include="Functions\DataEntities\DEStatement.vb" />
+    <Compile Include="Functions\DataEntities\DETicketingItemDetails.vb" />
+    <Compile Include="Functions\DataEntities\Settings\DECustomerSettings.vb" />
+    <Compile Include="Functions\TalentCreditCheck.vb" />
+    <Compile Include="Functions\TalentDeliveryDate.vb" />
+    <Compile Include="Functions\TalentPromotions.vb" />
+    <Compile Include="Functions\TalentStatement.vb" />
+    <Compile Include="Functions\TalentTemplate.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBOrderTemplate.vb" />
+    <Compile Include="Functions\DataEntities\DESeatDetails.vb" />
+    <Compile Include="Functions\DataEntities\DEOrderTemplate.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBPayment.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBProduct.vb" />
+    <Compile Include="Functions\DataEntities\DEPNARequest.vb" />
+    <Compile Include="Functions\DataEntities\DEProductDetails.vb" />
+    <Compile Include="Functions\DataEntities\Settings\Base\DESettings.vb" />
+    <Compile Include="Functions\DataEntities\Settings\DEStockSettings.vb" />
+    <Compile Include="Functions\TalentPayment.vb" />
+    <Compile Include="Functions\TalentProduct.vb" />
+    <Compile Include="Functions\DatabaseAccess\Base\DBAccess.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBAmendBasket.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBCustomer.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBCustRemittances.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBOrderDetail.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBOrderStatus.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBInvoiceStatusRequest.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBAvailability.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBCreditNote.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBDescriptions.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBDispatchAdvice.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBDTypeOrder.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBOrder.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBOrderChange.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBOrderTracking.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBPricing.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBProductAlert.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBPurchaseOrder.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBRMAStatus.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBService.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBStock.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBSupplier.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBSuppRemittances.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBXmlLoad.vb" />
+    <Compile Include="Functions\DataEntities\DeAddress.vb" />
+    <Compile Include="Functions\DataEntities\DEAmendBasket.vb" />
+    <Compile Include="Functions\DataEntities\DECustomer.vb" />
+    <Compile Include="Functions\DataEntities\DEInvoiceStatus.vb" />
+    <Compile Include="Functions\DataEntities\DEAlerts.vb" />
+    <Compile Include="Functions\DataEntities\DECharges.vb" />
+    <Compile Include="Functions\DataEntities\DECommentLines.vb" />
+    <Compile Include="Functions\DataEntities\DECreditNote.vb" />
+    <Compile Include="Functions\DataEntities\DEDescriptions.vb" />
+    <Compile Include="Functions\DataEntities\DEInvoice.vb" />
+    <Compile Include="Functions\DataEntities\DEOrder.vb" />
+    <Compile Include="Functions\DataEntities\DEOrderHeader.vb" />
+    <Compile Include="Functions\DataEntities\DEOrderInfo.vb" />
+    <Compile Include="Functions\DataEntities\DEOrderReponse.vb" />
+    <Compile Include="Functions\DataEntities\DEOrders.vb" />
+    <Compile Include="Functions\DataEntities\DEPayments.vb" />
+    <Compile Include="Functions\DataEntities\DEPNA.vb" />
+    <Compile Include="Functions\DataEntities\DEProductAlert.vb" />
+    <Compile Include="Functions\DataEntities\DEProductLines.vb" />
+    <Compile Include="Functions\DataEntities\DEPurchaseOrder.vb" />
+    <Compile Include="Functions\DataEntities\DeRemittanceHeader.vb" />
+    <Compile Include="Functions\DataEntities\DeRemittances.vb" />
+    <Compile Include="Functions\DataEntities\DeRemittanceLines.vb" />
+    <Compile Include="Functions\DataEntities\DESupplier.vb" />
+    <Compile Include="Functions\DataEntities\DETransaction.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBInvoicing.vb" />
+    <Compile Include="ErrorHandling\ErrorObj.vb" />
+    <Compile Include="Functions\DatabaseAccess\DBMultipleAvailability.vb" />
+    <Compile Include="Functions\DataEntities\DEXmlLoad.vb" />
+    <Compile Include="Functions\TalentAvailibilty.vb" />
+    <Compile Include="Functions\TalentBasket.vb" />
+    <Compile Include="Functions\TalentCreditNote.vb" />
+    <Compile Include="Functions\TalentCustomer.vb" />
+    <Compile Include="Functions\TalentDTypeOrder.vb" />
+    <Compile Include="Functions\TalentInvoicing.vb" />
+    <Compile Include="Functions\TalentOrder.vb" />
+    <Compile Include="Functions\TalentPricing.vb" />
+    <Compile Include="Functions\TalentProductAlert.vb" />
+    <Compile Include="Functions\TalentPurchaseOrder.vb" />
+    <Compile Include="Functions\TalentRemittance.vb" />
+    <Compile Include="Functions\TalentStock.vb" />
+    <Compile Include="Functions\TalentSupplier.vb" />
+    <Compile Include="Functions\TalentWaitList.vb" />
+    <Compile Include="Functions\TalentWebPricing.vb" />
+    <Compile Include="Functions\TalentXmlLoad.vb" />
+    <Compile Include="Hashtable_Cache.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ProxyObjects\BEKOSAPSalesOrder.vb" />
+    <Compile Include="ProxyObjects\BEKOSAPStockCheck.vb" />
+    <Compile Include="Settings\Settings.vb" />
+    <Compile Include="TicketDesigner\TicketDesignerBase.vb" />
+    <Compile Include="TicketDesigner\TicketDesignerDespatchNote.vb" />
+    <Compile Include="TicketDesigner\TicketDesignerPdf.vb" />
+    <Compile Include="TicketDesigner\TicketDesignerTicket.vb" />
+    <Compile Include="Utilities\CacheUtility.vb" />
+    <Compile Include="Utilities\Descriptions.vb" />
+    <Compile Include="Utilities\FTPClient.vb" />
+    <Compile Include="Utilities\GlobalConstants.vb" />
+    <Compile Include="Utilities\LogTypeConstants.vb" />
+    <Compile Include="Utilities\PasswordHash.vb" />
+    <Compile Include="Utilities\TalentLogging.vb" />
+    <Compile Include="Utilities\TalentThreadSafe.vb" />
+    <Compile Include="Utilities\Utilities.vb" />
+    <Compile Include="Utilities\UtilityExtension.vb" />
+    <Compile Include="Web References\com.pclplstest.www\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\Encryption\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\Encryption\Encryption.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:19489/TalentEncryption/Encryption.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\Encryption\</RelPath>
+      <UpdateFromURL>http://localhost:19489/TalentEncryption/Encryption.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Talent_Common_Encryption_Encryption</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://www.pclplstest.com/services/xmltransferengine.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\com.pclplstest.www\</RelPath>
+      <UpdateFromURL>https://www.pclplstest.com/services/xmltransferengine.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Talent_Common_com_pclplstest_www_XMLTransferEngine</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Web References\Encryption\Encryption.disco" />
+    <None Include="Web References\Encryption\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\com.pclplstest.www\Quotation.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.pclplstest.www\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\com.pclplstest.www\Statement.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.pclplstest.www\Transaction.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.pclplstest.www\TransactionResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.pclplstest.www\xmltransferengine.disco" />
+    <None Include="Web References\com.pclplstest.www\xmltransferengine.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ThirdPartyDLLs\CookComputing.XmlRpcV2.dll" />
+    <Content Include="ThirdPartyDLLs\GoogleCheckout\GCheckout.dll" />
+    <Content Include="ThirdPartyDLLs\GoogleCheckout\GCheckout.pdb" />
+    <Content Include="ThirdPartyDLLs\GoogleCheckout\GCheckout.xml" />
+    <Content Include="ThirdPartyDLLs\itextsharp.dll" />
+    <Content Include="ThirdPartyDLLs\UltimateCommon.dll" />
+    <Content Include="ThirdPartyDLLs\UltimateEmailValidator.dll" />
+    <Content Include="ThirdPartyDLLs\UltimateProxy.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DataObjects\Menus\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
