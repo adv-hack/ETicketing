@@ -1,0 +1,30 @@
+﻿@using TalentBusinessLogic.Models;
+
+<div class="panel" id="ebiz-edit-activity-comment-wrapper-@Model.ActivityCommentItemIndex">
+    <div class="ebiz-edit-activity-comment-header-outer-wrap">
+        <div class="ebiz-edit-activity-comment-header-inner-wrap">
+            <span class="ebiz-edit-activity-comment-agent">@Model.ActivityDescriptiveUserName</span>
+            <span class="ebiz-edit-activity-comment-blurb">@Model.ActivityCommentBlurb</span>
+            <span class="ebiz-edit-activity-comment-date">@Model.ActivityCommentUpdatedDate</span>
+            <span class="ebiz-edit-activity-comment-time">@Model.ActivityCommentUpdatedTime</span>
+        </div>
+        <div class="ebiz-edit-delete-activity-wrap" id="ebiz-read-comment-45">
+            <i class="fa fa-times" onclick="deleteActivityComment(@Model.ActivityCommentID,@Model.ActivityCommentItemIndex);"></i>
+        </div>
+    </div>
+    <div class="ebiz-edit-activity-comment-text-wrap">
+        <div contenteditable="true" id="editComment" title="Click to edit" class="ebiz-edit-activity-comment-text ebiz-edit-activity-comment-text-@Model.ActivityCommentID">
+            @Model.ActivityCommentText
+        </div>
+        <div class="ebiz-comment-edit-wrap" style=" display: none; ">
+            <i class="fa fa-pencil" aria-hidden="true"></i>
+        </div>
+        <div class="ebiz-comment-submit-cancel-wrap" style=" display: none; ">
+            <i class="fa fa-check" aria-hidden="true" title="Commit" onmousedown="updateActivityComment(@Model.CustomerActivitiesHeaderID,@Model.ActivityCommentID,@Model.ActivityCommentItemIndex);"></i>
+            <i class="fa fa-undo" aria-hidden="true" title="Undo" onmousedown="undoActivityCommentChanges(@Model.ActivityCommentItemIndex);"></i>
+        </div>
+    </div>
+    <div class="ebiz-edit-activity-comment-hidden-text" style="display:none;">
+        @Model.ActivityCommentText
+    </div>
+</div>

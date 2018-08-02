@@ -1,0 +1,22 @@
+﻿@using TalentBusinessLogic.Models;
+
+<div id="ebiz-activity-file-details-wrapper-@Model.ActivityFileItemIndex" class="ebiz-activity-file-details-wrap">
+    <div class="row">
+        <div class="medium-6 columns ebiz-activity-file-details">
+            <span class="ebiz-activity-file-agent">@Model.ActivityDescriptiveUserName</span>
+            <span class="ebiz-activity-file-blurb">@Model.ActivityFileAttachmentBlurb</span>
+            <span class="ebiz-activity-file-date">@Model.ActivityFileDateAdded</span>
+            <span class="ebiz-activity-file-time">@Model.ActivityFileTimeAdded</span>
+        </div>
+        <div class="medium-6 columns ebiz-activity-file-attachment">
+            <span class="ebiz-activity-file-link"><a target="_blank" href="@Model.ActivityFileLink">@Model.ActivityFileName</a></span>
+            <input type="button" onclick="deleteActivityFile(@Model.ActivityFileAttachmentID, @Model.TemplateID, '@Model.ActivityFileName', @Model.ActivityFileItemIndex);" value="Delete File" class="button ebiz-activity-file-delete-button">
+        </div>
+    </div>
+    @if (Model.ActivityFileHasDescription)
+    {
+        <div class="ebiz-activity-file-description">
+            <span>@Model.ActivityFileDescription</span>
+        </div>
+    }
+</div>
