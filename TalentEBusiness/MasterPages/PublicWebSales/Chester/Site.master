@@ -1,0 +1,43 @@
+﻿<%@ Master Language="VB" CodeFile="~/MasterPages/Shared/SharedClasses/Site.master.vb" Inherits="MasterPages_Shared_SharedClasses_Site" %>
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head id="Head1" runat="server">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="//a248.e.akamai.net/images.talentarena.co.uk/Global/Lib/foundation-5.3.0/js/vendor/modernizr.js"></script>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+    <script src="//a248.e.akamai.net/images.talentarena.co.uk/Global/Lib/foundation-5.3.0/js/vendor/fastclick.js"></script>
+    <link href='//fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
+    <link rel="icon" href="/App_Themes/PWS.Chester/img/favicon.ico" type="image/x-icon">
+    <script> 
+        function OpenAlertsWindow() {
+            if (matchMedia(Foundation.media_queries.small).matches && !matchMedia(Foundation.media_queries.medium).matches) {
+                //small screen size
+            } else {
+                $('#ebiz-alert-reveal').foundation('reveal', 'open');
+            }
+        }
+    </script>
+
+    <asp:ContentPlaceHolder id="SiteMasterHead" runat="server" />
+        
+</head>
+<body id="MasterBodyTag" runat="server">
+    
+    <asp:ContentPlaceHolder ID="SiteMasterBody" runat="server" />
+
+</body>
+</html>

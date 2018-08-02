@@ -1,0 +1,28 @@
+<%@ Master Language="VB" CodeFile="Blank.master.vb" Inherits="MasterPages_Blank" %>
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"> <!--<![endif]-->
+<head id="Head1" runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <script src="../../JavaScript/vendor/modernizr-custom.js"></script>
+    <script src="//use.fontawesome.com/7e81f32a9c.js"></script>
+    <!-- page level scripting -->
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server" />
+    <!-- page extra data table scripting -->
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server" />
+</head>
+<body id="MasterBodyTag" runat="server">
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="scmMainScriptManager" runat="server" />
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+    </form>
+    <%= GetPageExtraDataForBody()%>
+    <%= GetTrackingBodyCodesText()%>
+</body>
+</html>

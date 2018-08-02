@@ -1,0 +1,707 @@
+﻿/* 
+Title:		Talent
+Updated:	Feb 19 2007
+*/
+
+body {
+	font: 0.6875em Verdana, Arial, Helvetica, sans-serif;
+	/*min-width: 1024px;*/
+	padding: 0;
+	margin: 0;
+	color: #68685e;
+	font-family:Arial;
+	font-size:12px;
+}
+h1 {
+	color: #e2821c;
+	font: bold 1.818em Arial, Helvetica, sans-serif;	
+}
+a {
+	color: #e2821c;
+}
+.clear {
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+.button {
+	font: bold 1em Arial, Helvetica, sans-serif;
+	color: #fff;
+	background: #727064; 
+}
+.select {
+	font: normal 1em Arial, Helvetica, sans-serif;
+}
+.input-s, .input-m, .input-l {
+	font: normal 1em Arial, Helvetica, sans-serif;
+}
+.error 
+{
+	color: #c00;
+}
+/* page structure
+---------------------------------------------------------- */
+#outer-wrapper {
+	width: 1000px;
+	margin: 0 auto;
+	border-top: solid 3px #e2821c;
+	border-bottom: solid 30px #e8e5d4;
+}
+#inner-wrapper {
+
+}
+#content {
+		height: 400px;
+}
+#content {
+		height: 400px;
+}
+html>body #content {
+	height: auto; 
+	min-height: 400px; 
+}
+/* header
+---------------------------------------------------------- */
+#header {
+	
+}
+/* account navigation */
+#account-navigation {
+	height: 19px;
+	background: #e6e3de;
+	border-top: solid 1px #fff;
+	border-bottom: solid 2px #f3f0e9;
+	text-align: right;
+	font: 1em/1.6em Arial, Helvetica, sans-serif; 
+}
+#account-navigation a {
+	color: #727064;
+	text-decoration: underline;
+}
+#account-navigation ul {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	
+}
+#account-navigation ul li {
+	list-style: none;
+	display: inline;
+	margin: 0 20px 0 0;
+}
+/* logo */
+#logo {
+	
+}
+/* primary navigation */
+#primary-navigation {
+	border-top: solid 2px #f3f0e9;
+	border-bottom: solid 1px #894d0f;
+	height: 27px;
+	background: #e2821c url(Images/primary-nav-bg.jpg) repeat-x;
+	font: bold 1em/2.5em Verdana, Arial, Helvetica, sans-serif; 
+	
+}
+#primary-navigation a {
+	color: #fff;
+	text-decoration: none; 
+	
+}
+#primary-navigation ul {
+	margin: 0 0 0 21px;
+	padding: 0;
+	display: inline;
+	
+}
+#primary-navigation ul li {
+	list-style: none;
+	display: inline;
+	margin: 0 30px 0 0;
+}
+
+/*
+###########################################################################################################################
+template 1 column structure
+###########################################################################################################################
+*/
+.template1 .content-wrap {
+	
+}
+.template1 #content{
+		margin: 5px;
+}
+/*
+###########################################################################################################################
+template 2, template 3, template 6, template 7 and template 9 column structure
+###########################################################################################################################
+*/
+.template2 .outer, .template3 .outer, .template6 .outer, .template7 .outer, .template9 .outer {
+		border-left: 160px solid #f2efe6;
+}
+.template2 .inner, .template3 .inner, .template6 .inner, .template7 .inner, .template9 .inner {
+		width: 100%;
+}
+.template2 .float-wrap, .template3 .float-wrap, .template6 .float-wrap, .template7 .float-wrap,.template9 .float-wrap {
+		float: left;
+		width: 100%;
+		margin-left: -160px;
+}
+.template2 .content-wrap, .template3 .content-wrap, .template6 .content-wrap, .template7 .content-wrap, .template9 .content-wrap {
+		float: right;
+		margin-right: -160px;
+		width: 100%;
+		position: relative;
+}
+* html .template2 .content-wrap, * html .template3 .content-wrap, * html .template6 .content-wrap, * html .template7 .content-wrap, * html .template9 .content-wrap {
+	position: relative;
+}
+.template2 #content, .template3 #content, .template6 #content, .template7 #content, .template9 #content {
+		margin: 0 0 0 5px;
+}
+/* left column
+---------------------------------------------------------- */
+.template2 #left, .template3 #left, .template6 #left, .template7 #left, .template9 #left {
+		float: left;
+		width: 160px;
+		/*padding: 5px;*/
+		position: relative;
+}
+/*
+###########################################################################################################################
+template 3, template 4, template 5 and template 8 column structure
+###########################################################################################################################
+*/
+.template3 .outer, .template4 .outer, .template5 .outer, .template8 .outer {
+		border-left: 160px solid #f2efe6; /* Same width as margin-left for the float-wrap div */
+		border-right: 160px solid #e6e3de; /* Our right column width */
+}
+.template3 .inner, .template4 .inner, .template5 .inner, .template8 .inner {
+		width: 100%;
+}
+/* div.inner is wider than its container, div.outer, and so overlaps to the right, pushing
+div.right into the proper position. IE expands div.outer instead, requiring a Tan hack to avoid 
+blowing the layout apart. IE gets the original 100% width as in the Livingstone layout.
+*/
+.template3 .float-wrap, .template4 .float-wrap, .template5 .float-wrap, .template8 .float-wrap {
+		float: left;
+		width: 100%;
+		margin-left: -160px; /* Same length as .outer padding-left but with negative value */
+}
+.template3 .content-wrap, .template4 .content-wrap, .template5 .content-wrap, .template8 .content-wrap {
+		float: right;
+		margin-right: -160px; /* Same length as .outer padding-left but with negative value */
+		width: 100%;
+		position: relative; /* IE needs this  ***/
+}
+* html .template3 .content-wrap, * html .template4 .content-wrap, * html .template5 .content-wrap, * html .template8 .content-wrap {
+	position: relative;
+}
+.template3 #content, .template4 #content, #template5 .content, #template8 .content  {
+		margin: 0 5px;
+}
+/* left column
+---------------------------------------------------------- */
+/* div.left is in div.float-wrap, and when div.float-wrap is neg margined to the left, 
+div.left is carried over into the proper position. 
+*/
+.template3 #left, .template4 #left, .template5 #left, .template8 #left {
+		float: left;
+		width: 160px;
+		/*padding: 5px;*/
+		position: relative; /* IE needs this  */
+}
+/* right column
+---------------------------------------------------------- */
+.template3 #right, .template4 #right, .template5 #right, .template8 #right {
+		float: right; 
+		width: 160px;
+		/*padding: 5px;*/
+		position: relative; /* IE needs this  */
+		margin-right: -160px; /* This negative margin-right value is the same as the right column width (width + padding). */
+		position: relative; /* IE needs this  */
+}
+
+/* footer
+---------------------------------------------------------- */
+#footer {
+	background: #e6e3de;
+	margin-top: 5px;
+	font: 0.818em/2.6em Verdana, Arial, Helvetica, sans-serif; 
+	color: #9b9990;
+	height: 25px;
+	border-bottom: solid 5px #fff;
+}
+#footer a {
+	color: #9b9990;
+	text-decoration: underline;
+}
+#footer-navigation {
+	float: right;
+}
+#footer-navigation ul {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	
+}
+#footer-navigation ul li {
+	list-style: none;
+	display: inline;
+	margin: 0 20px 0 0;
+}
+#copyright {
+	float: left;
+	padding: 0 0 0 20px;
+	margin: 0;
+}
+/* login box
+---------------------------------------------------------- */
+#login-box {
+	padding: 10px 20px;	
+}
+#login-box h2 {
+	font: bold 1.818em Arial, Helvetica, sans-serif; 
+	color: #e2821c;
+	display: none;
+}
+#login-box a {
+	color: #a9a698;	
+	text-decoration: underline;
+}
+#login-box label {
+	display: block;
+	padding: 5px 0;
+	font: bold 1em Arial, Helvetica, sans-serif; 
+	color: #727064;
+}
+
+#login-box .username input, #login-box .password input {
+	width: 100px;
+}
+#login-box div.remember-me label {
+	display: inline;
+}
+#login-box p.forgotten-password, #login-box p.register {
+	font: 0.818em Verdana, Arial, Helvetica, sans-serif;
+	padding: 0;
+	margin: 0; 
+}
+/* search bar
+---------------------------------------------------------- */
+#search {
+	height: 31px;
+	background: #e6e3de;
+	margin-bottom: 5px;
+	text-align: right;
+	padding-right: 20px;
+	font: normal 1em Arial, Helvetica, sans-serif; 
+}
+#search span.title {
+	font-weight: bold;
+}
+#search #search-inner {
+	padding-top: 6px;
+}
+/* advanced search box
+---------------------------------------------------------- */
+#advanced-search {
+	background: #f5f4f1;
+	padding: 5px 5px 5px 5px;
+	margin-top: 10px;
+	border-top: solid 1px #e9e5d5;
+	border-bottom: solid 1px #e9e5d5;
+}
+#advanced-search div {
+	clear: both;
+}
+#advanced-search label {
+	display: block;
+	float: left;
+	width: 18em;
+	padding: 3px 0;
+	margin: 0 5px 5px 0;
+	text-align: right;
+}
+#advanced-search div.price input {
+	width:40px;
+}
+/* left navigation
+---------------------------------------------------------- */
+#left-navigation {
+	font: bold 1em Arial, Helvetica, sans-serif;
+	padding: 0 5px;
+}
+#left-navigation a {
+	color:#727064;
+}
+#left-navigation table {
+	border-top: solid 1px #000;
+}
+.nodes{white-space:normal;padding:2px 0;}
+.root{font-weight:bold;}
+.parent{font-weight:normal;}
+.leaf{}
+/* mini basket
+---------------------------------------------------------- */
+#mini-basket {
+	background: #727064 url(Images/mini-basket-bg.gif) repeat-x;
+	height: 105px;
+	border-bottom: solid 5px #fff;
+	color: #fff;
+	padding: 0 7px;
+}
+#mini-basket a {
+	color: #fff;
+	text-decoration: none;
+}
+#mini-basket h2 {
+	font: bold 1em Arial, Helvetica, sans-serif;
+	color: #fff;
+	padding: 0;
+	margin: 0;
+}
+#mini-basket h2.basket {
+	padding-top: 4px;
+}
+#mini-basket h2.checkout {
+	margin-top: 10px;
+}
+#mini-basket span.label {
+	float: left;
+	margin-top: 10px;		
+}
+#mini-basket span.value {
+	float: right;	
+	text-align: right;
+	margin-top: 10px;	
+}
+/* breadcrumb trail
+---------------------------------------------------------- */
+.bct {
+	background: #e8e5d4;	
+	padding: 5px;
+	color: #908d80;
+}
+.bct a {
+	color: #9b9990;
+}
+/* graphical pager control
+---------------------------------------------------------- */
+.graphical-pager {
+	background: #727064;
+	color: #fff;
+	height: 23px;
+	border-bottom: solid 1px #46433e;
+	font: 0.818em/2.6em Verdana, Arial, Helvetica, sans-serif;
+	margin-top: 10px;
+}
+.graphical-pager a {
+	color: #fff;
+	text-decoration: underline;
+}
+.graphical-pager p.pager-display  {
+	float: left; 
+	margin: 0;
+	padding: 0 0 0 5px;
+}
+.graphical-pager p.pager-nav {
+	float: right;
+	margin: 0;
+	padding: 0 5px 0 0;
+}
+/* data pager control
+---------------------------------------------------------- */
+.data-pager {
+	background: #727064;
+	color: #fff;
+	height: 23px;
+	border-bottom: solid 1px #46433e;
+	font: 0.818em/2.6em Verdana, Arial, Helvetica, sans-serif;
+	margin-top: 10px;
+}
+.data-pager a {
+	color: #fff;
+	text-decoration: underline;
+}
+.data-pager p.pager-filter  {
+	float: left; 
+	margin: 0;
+	padding: 0 0 0 5px;
+}
+.data-pager p.pager-filter select  {
+	font: 1em Verdana, Arial, Helvetica, sans-serif;
+	margin: 0;
+}
+.data-pager p.pager-display-nav {
+	float: right;
+	margin: 0;
+	padding: 0 5px 0 0;
+}
+.data-pager span.display {
+	padding-right: 5px;
+}
+.data-pager span.nav {
+	border-left: solid 1px #fff;
+	padding-left: 5px;
+}
+/* graphical product list & graphical group list
+---------------------------------------------------------- */
+.graphical-product-list table, .graphical-group-list table {
+	padding: 0;
+	}
+.graphical-product-list .wrapper, .graphical-group-list .wrapper {
+	display: inline;
+	}
+.graphical-product-list .container, .graphical-group-list .container {
+	width: 100%;
+	float: right;
+	margin-left: -86px;
+	border-bottom: solid 1px #e9e5d5;
+}
+.graphical-product-list .copy, .graphical-group-list .copy  {
+	margin-left: 86px;
+	text-align: left;
+	padding: 5px 10px 0 10px;	
+}
+.graphical-product-list .image, .graphical-group-list .image {
+	width: 86px;
+	float: left;
+	border-right: solid 1px #e9e5d5;
+}
+.graphical-product-list .image img, .graphical-group-list .image img {
+	width: 30px;
+	height: 107px;
+	margin: 6px 0 6px 28px;
+}
+.graphical-product-list p.name, .graphical-group-list p.name {
+	margin: 0;
+	font-weight: bold;
+}
+.graphical-product-list p.description, .graphical-group-list p.description {
+	font: 0.818em Verdana, Arial, Helvetica, sans-serif;	
+	margin-top: 0;
+}
+.graphical-product-list p.price, .graphical-group-list p.price {
+	margin: 10px 0;
+}
+.graphical-product-list p.buy, .graphical-group-list p.buy {
+	margin: 0;
+}
+.graphical-product-list table, .graphical-group-list table  {
+	width: 670px;
+}
+.graphical-product-list td, .graphical-group-list td {
+	width: 335px;
+	vertical-align: top;
+	padding: 0;
+}
+/* data product list
+---------------------------------------------------------- */
+.data-product-list table {
+		border-bottom: solid 1px #e9e5d5;
+}
+.data-product-list th {
+		background: #fadbba;
+		color: #e2821c;
+		text-align: left;
+		height: 23px;
+		font: bold 1em/1.9em Arial, Helvetica, sans-serif;
+		vertical-align: top;
+}
+.data-product-list td {
+		vertical-align: top;
+		border-top: solid 1px #e9e5d5;
+		padding: 5px 0;
+}
+.data-product-list td.style, .data-product-list td.country, .data-product-list td.price {
+		font: bold 1em Arial, Helvetica, sans-serif;
+}
+.data-product-list .image {
+		width: 86px;
+}
+.data-product-list td.image {
+		border-right: solid 1px #e9e5d5;
+}
+.data-product-list .image img {
+	width: 30px;
+	height: 107px;
+	margin: 6px 0 6px 28px;
+}
+.data-product-list .name {
+		width: 280px;
+}
+.data-product-list .style {
+		width: 66px;
+}
+.data-product-list .country {
+		width: 66px;
+}
+.data-product-list .price {
+		width: 66px;
+}
+.data-product-list .action {
+		width: 105px;
+}
+.data-product-list .alternativeRow 
+{
+	background: #f5f4f1;	
+}
+.data-product-list .name-name 
+{
+	margin: 0;
+	font: bold 1em Arial, Helvetica, sans-serif;	
+	padding-left: 5px;
+}
+.data-product-list .name-name a
+{
+	color: #e2821c;
+	text-decoration: none;	
+}
+.data-product-list .name-description 
+{
+	font: 0.818em Verdana, Arial, Helvetica, sans-serif;	
+	padding-left: 5px;
+}
+/* registration form & contact form & checkout form (payment details) & forgotten password box
+---------------------------------------------------------- */
+#registration h2, div.contact h2, #checkout-delivery-details h2, #forgotten-password h2 {
+	font: bold 1em Arial, Helvetica, sans-serif;
+	margin-top: 0;	
+	color: #fff;
+	position: relative;
+}
+#registration div, div.contact div, #checkout-delivery-details div, #forgotten-password div, #Maintenance div {
+	clear: both;
+}
+#registration label, div.contact label, #checkout-delivery-details label, #Maintenance label {
+	display: block;
+	float: left;
+	width: 18em;
+	padding: 3px 0;
+	margin: 0 5px 5px 0;
+	text-align: right;
+}
+#registration .PersonalDetailsBox, #registration .CredentialsBox, #registration .AddressBox, div.contact, #checkout-delivery-details, #forgotten-password
+{
+	background: #f5f4f1 url(Images/form-header-bg.gif) repeat-x;
+	padding: 4px 5px 5px 5px;
+}
+#registration .CredentialsBox, #registration .AddressBox
+{
+	margin-top: 5px;
+}
+#registration p.password-instructions {
+	font: 0.818em Verdana, Arial, Helvetica, sans-serif;
+}	
+div.contact div.flagRow label, #checkout-delivery-details div.save-address label, #checkout-delivery-details div.tandc label
+{
+	width: auto;
+	display: inline;
+	text-align: left;
+}
+div.contact div.flagRow input, #checkout-delivery-details div.save-address input, #checkout-delivery-details div.tandc input
+{
+	float: left;
+}
+div.contact div.submit-btn, #checkout-delivery-details div.proceed-btn
+{
+	padding: 3px 0;
+}
+div.contact div.submit-btn label, #checkout-delivery-details div.proceed-btn label
+{
+	display: none;
+}
+/* basket
+---------------------------------------------------------- */
+#basket table {
+		border-bottom: solid 1px #e9e5d5;
+		width: 100%;
+}
+#basket th {
+		background: #fadbba;
+		color: #e2821c;
+		text-align: left;
+		height: 23px;
+		font: bold 1em/1.9em Arial, Helvetica, sans-serif;
+		vertical-align: top;
+}
+#basket td {
+		vertical-align: top;
+		border-top: solid 1px #e9e5d5;
+		padding: 5px 0;
+}
+#basket td.name, #basket td.unit, #basket td.value {
+		font: bold 1em Arial, Helvetica, sans-serif;
+}
+#basket .alternativeRow 
+{
+	background: #f5f4f1;	
+}
+#baket-buttons 
+{
+	text-align: right;
+	margin-top: 10px;	
+}
+#basket .unit, #basket .quantity, #basket .value, #basket .action {
+		text-align: right;
+}
+#basket .action {
+		width: 100px;
+}
+/* basket summary
+---------------------------------------------------------- */
+#basket-summary table
+{
+	margin: 0 103px 0 auto;
+	font: bold 1em Arial, Helvetica, sans-serif;
+}
+#basket-summary th
+{
+	text-align: left;
+	padding: 5px 60px 5px 0;
+}
+#basket-summary td
+{
+	text-align: right;
+	padding: 5px 0;
+}
+#basket-summary td.total, #basket-summary th.total
+{
+	border-top: solid 1px #e9e5d5;
+	border-bottom: solid 1px #e9e5d5;
+}
+
+/* product page
+---------------------------------------------------------- */
+.product .wrapper {}
+.product .container {
+	width: 100%;
+	float: right;
+	margin-left: -133px;
+}
+.product .copy {
+	margin-left: 133px;
+	text-align: left;
+	padding-left: 20px;
+}
+.product .image {
+	width: 133px;
+	float: left;
+	text-align: center; /* removed because images are different widths */
+	padding: 20px 0 21px 0; /* removed because images are different widths */
+}
+.product .clearing {
+	height: 0;
+	clear: both;
+}
+/* removed because images are different widths but don't exceed 133px
+.product .image img {
+	width: 80px;
+	height: 290px;
+	margin: 20px 27px 21px 26px;
+}*/
+.product p.price .label, .product p.buy .quantity-label  {
+	font-weight: bold;
+}
+
+

@@ -1,0 +1,12 @@
+<%@ Master Language="VB" CodeFile="Reveal.master.vb" Inherits="MasterPages_Reveal" %>
+<head id="Head1" runat="server">
+    <!-- page level scripting -->
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server" />
+    <!-- page extra data table scripting -->
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server" />
+</head>
+<body id="MasterBodyTag" runat="server">
+    <form id="form1" runat="server">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+    </form>
+</body>

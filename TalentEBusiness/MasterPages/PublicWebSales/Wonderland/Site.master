@@ -1,0 +1,113 @@
+﻿<%@ Master Language="VB" CodeFile="~/MasterPages/Shared/SharedClasses/Site.master.vb" Inherits="MasterPages_Shared_SharedClasses_Site" %>
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:google="http://base.google.com/ns/1.0" xmlns:twitter="http://api.twitter.com/"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:google="http://base.google.com/ns/1.0" xmlns:twitter="http://api.twitter.com/"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:google="http://base.google.com/ns/1.0" xmlns:twitter="http://api.twitter.com/"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:google="http://base.google.com/ns/1.0" xmlns:twitter="http://api.twitter.com/"> <!--<![endif]-->
+
+<head id="Head1" runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <meta name="description" content="Winter Wonderland at Chester Racecourse is a premier UK Christmas destination with ice skating rink, fairground, market and other festive attractions.">
+    <meta name="author" content="Chester Racecourse">
+
+    <!-- Social Graph -->
+    <meta property="og:title" content="Winter Wonderland Chester Racecourse (England, UK)" />
+    <meta property="og:type" content="Website" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="/Assets/WinterWonderland/images/winter-wonder-land-og-logo.png" />
+    <meta property="og:description" content="Winter Wonderland at Chester Racecourse is a premier UK Christmas destination with ice skating rink, fairground, market and other festive attractions." />
+
+    <!-- Favicon.ico -->
+    <link rel="icon" href="/Assets/WinterWonderland/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/Assets/WinterWonderland/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css">
+
+    <link rel="stylesheet" href="/Assets/PWS.Wonderland/0-normalize.css">
+    <link rel="stylesheet" href="/Assets/PWS.Wonderland/1-foundation.min.css">
+    <link rel="stylesheet" href="/Assets/PWS.Wonderland/2-ebiz.css">
+    <link rel="stylesheet" href="/Assets/PWS.Wonderland/5-client.Wonderland.css">
+
+    <!-- CSS Responsive Framework Skeleton -->
+    <link rel="stylesheet" href="/Assets/WinterWonderland/css/skeleton.css">
+
+    <!-- CSS Styles --> 
+    <link rel="stylesheet" href="/Assets/WinterWonderland/css/style.css">
+    <link rel="stylesheet" href="/Assets/WinterWonderland/css/nav-styles.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
+
+    <!-- Fullscreen Slider -->
+    <link rel="stylesheet" href="/Assets/WinterWonderland/css/supersized.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/Assets/WinterWonderland/css/supersized.shutter.css" type="text/css" media="screen" />
+
+    <!-- Media Queries -->
+    <link rel="stylesheet" href="/Assets/WinterWonderland/css/media.css"> 
+
+    <!-- JavaScripts -->
+    <script src="//a248.e.akamai.net/images.talentarena.co.uk/Global/Lib/foundation-5.3.0/js/vendor/modernizr.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>    
+    <script src="/Assets/WinterWonderland/js/responsive-nav.js"></script>
+    <script src="/Assets/WinterWonderland/js/element-styles.js"></script>
+    <script src="/Assets/WinterWonderland/js/fading-twitter-feed.js"></script>
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <link rel="stylesheet" href="css/ie.css">
+    <![endif]-->
+
+    <!-- Snow effect -->
+    <script type="text/javascript" src="/Assets/WinterWonderland/js/ThreeCanvas.js"></script>
+    <script type="text/javascript" src="/Assets/WinterWonderland/js/Snow.js"></script>
+    
+    <!-- Web Fonts -->
+    <script type="text/javascript" src="//use.typekit.net/jrf0mgq.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+    <script>
+    <!--
+    function getStylesheet() {
+        var link = document.createElement('link');
+        link.rel = "stylesheet";
+        link.type = "text/css";
+        var currentTime = new Date().getHours();
+        if (currentTime >= 6 && currentTime <= 17) {
+            link.href = '/Assets/WinterWonderland/css/style-day.css';
+        } else {
+            link.href = '/Assets/WinterWonderland/css/style-night.css';
+        }
+        document.head.appendChild(link);
+    }
+    //-->
+    getStylesheet();
+    </script>
+    <noscript><link href="main.css" rel="stylesheet"></noscript>
+
+    <!-- Facebook Like Box -->
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&appId=251696208207345&version=v2.0";
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    
+    <asp:ContentPlaceHolder id="SiteMasterHead" runat="server" />
+        
+</head>
+<body id="MasterBodyTag" runat="server">
+    
+    <asp:ContentPlaceHolder ID="SiteMasterBody" runat="server" />
+
+    <script src="//a248.e.akamai.net/images.talentarena.co.uk/Global/Lib/foundation-5.3.0/js/vendor/fastclick.js"></script>
+    <script src="/Assets/WinterWonderland/js/scroll.js"></script>
+    <script src="/Assets/WinterWonderland/js/fixed-responsive-nav.js"></script>
+
+</body>
+</html>

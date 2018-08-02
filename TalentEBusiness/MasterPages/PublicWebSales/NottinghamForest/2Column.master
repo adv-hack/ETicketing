@@ -1,0 +1,87 @@
+﻿<%@ Master Language="VB" CodeFile="~/MasterPages/Shared/SharedClasses/2Column.master.vb" Inherits="MasterPages_Shared_SharedClasses_2Column" %>
+<%@ Register Namespace="Talent.CustomControls" Assembly="__code" tagprefix="TalentCustom" %>
+<%@ Register Src="~/UserControls/PersonalisationBar.ascx" TagName="PersonalisationBar" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/MicroBasket.ascx" TagName="MicroBasket" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/HTMLInclude.ascx" TagName="HTMLInclude" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/breadCrumbTrail.ascx" TagName="BreadCrumbTrail" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/SessionStatus.ascx" TagName="SessionStatus" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/Alerts.ascx" TagName="Alerts" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/TicketingLoyalty.ascx" TagName="TicketingLoyalty" TagPrefix="Talent" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="SiteMasterHead" runat="server">
+
+    <!-- page level scripting -->
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server" />
+
+    <!-- page extra data table scripting -->
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server" />
+
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="SiteMasterBody" runat="server">
+    <div class="ebiz-body-overlay"></div>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="scmMainScriptManager" runat="server" />
+            <div class="ebiz-inner-box-shadow">
+                <header>
+                            <div class="ebiz-mp-header-wrap-upper">
+                                <div class="row">
+                                    <div class="large-12 columns no-pad-left no-pad-right">      
+                                            <div class="ebiz-mp-personalisation-wrap">
+                                                <TalentCustom:Literal HTMLFileName="clubsmall.html" ID="ltlClubSmall" runat="server" OnLoad="GetStaticHTMLInclude" />
+                                                <Talent:PersonalisationBar ID="uscPersonalisationBar" runat="server" />
+                                                <Talent:TicketingLoyalty ID="TicketingLoyalty1" runat="server" />
+                                                <Talent:Alerts ID="uscAlerts" runat="server" />
+                                                <Talent:MicroBasket ID="uscMicroBasket" runat="server" />
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="row show-for-medium-up">
+                                    <div class="large-12 columns no-pad-left no-pad-right">      
+                                            <div class="ebiz-mp-header-contact-wrap">
+                                                <TalentCustom:Literal HTMLFileName="clubcontact.html" ID="ltlClubContact" runat="server" OnLoad="GetStaticHTMLInclude" />
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="row show-for-medium-up">
+                                    <div class="large-12 columns no-pad-left no-pad-right">      
+                                            <div class="ebiz-mp-club-wrap">
+                                                <TalentCustom:Literal HTMLFileName="clublarge.html" ID="ltlClubLarge" runat="server" OnLoad="GetStaticHTMLInclude" />
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ebiz-mp-header-wrap-lower">
+                                <div class="row">
+                                    <div class="large-12 columns no-pad-left no-pad-right">
+                                        <div class="ebiz-mp-topbar">
+                                            <TalentCustom:Literal HTMLFileName="navigation.html" ID="ltlNavigation" runat="server" OnLoad="GetStaticHTMLInclude" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                              
+                            <Talent:HTMLInclude ID="uscHTMLInclude1" runat="server" Usage="4" Sequence="1" />
+                        </header>
+                <section>
+                    <div class="ebiz-mp-content-wrap">
+                        <div class="row ebiz-mp-content">
+                            <div class="large-3 columns">
+                                <TalentCustom:Literal HTMLFileName="sidebar.html" ID="ltlSideBar" runat="server" OnLoad="GetStaticHTMLInclude" />
+                                <TalentCustom:Literal HTMLFileName="dummysession.html" ID="ltlDummySession" runat="server" OnLoad="GetStaticHTMLInclude" />
+                                <Talent:SessionStatus ID="uscSessionStatus" runat="server" />
+                                <Talent:HTMLInclude ID="uscHTMLInclude3" runat="server" Usage="1" Sequence="1" />
+                            </div>
+                            <div class="large-9 columns">
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <footer>
+                    <Talent:HTMLInclude ID="uscHTMLInclude2" runat="server" Usage="5" Sequence="1" />
+                    <TalentCustom:Literal HTMLFileName="footer.html" ID="ltlFooter" runat="server" OnLoad="GetStaticHTMLInclude" />
+                </footer>
+            </div>
+    </form>
+</asp:Content>

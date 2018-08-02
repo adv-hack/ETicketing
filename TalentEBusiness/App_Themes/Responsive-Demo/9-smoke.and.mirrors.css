@@ -1,0 +1,137 @@
+.ebiz-hospitality-page h1, .ebiz-hospitality-page h2, .ebiz-hospitality-page h3, .ebiz-hospitality-page h4, .ebiz-hospitality-page h5, .ebiz-hospitality-page h6 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase; }
+body.ebiz-hospitality-page {
+	font-family: Georgia, 'Times New Roman', Times, serif; }
+.ebiz-hospitality-page .top-bar-section ul li > a {
+    font-family: Georgia, 'Times New Roman', Times, serif; }
+
+.ebiz-hospitality-page .ebiz-temp-header-wrap {
+    background: #333333 url(img/Hospitality/binding_dark.png);
+    color: #ffffff; }
+.ebiz-hospitality-page .ebiz-temp-header-wrap a { 
+	color: #ffffff; }
+.ebiz-hospitality-page .ebiz-customer-nav {
+    margin-top: 1.250rem; }
+.ebiz-hospitality-page .ebiz-temp-navigation-wrap {
+    background: #333333; }
+
+/* Top Bar */
+.ebiz-hospitality-page .contain-to-grid {
+	background: #333333; }
+.ebiz-hospitality-page .top-bar {
+	background: #333333; }
+.ebiz-hospitality-page .top-bar .name h1 a {
+	color: #ffffff; }
+.ebiz-hospitality-page .top-bar .toggle-topbar a {
+	color: #ffffff; }
+.ebiz-hospitality-page .top-bar .toggle-topbar.menu-icon a {
+	color: #ffffff; }
+.ebiz-hospitality-page .top-bar.expanded .title-area {
+	background: #333333; }
+.ebiz-hospitality-page .top-bar.expanded .toggle-topbar a {
+	color: #ffffff; }
+.ebiz-hospitality-page .top-bar-section ul {
+	background: #333333; }
+.ebiz-hospitality-page .top-bar-section .divider,.ebiz-hospitality-page .top-bar-section [role=separator] {
+	border-top:solid 1px #1a1a1a; }
+.ebiz-hospitality-page .top-bar-section ul li>a {
+	background: #333333;
+	color: #ffffff; }
+.ebiz-hospitality-page .top-bar-section ul li>a.button {
+	background: #008cba; }
+.ebiz-hospitality-page .top-bar-section ul li>a.button:hover {
+	background: #006688; }
+	.ebiz-hospitality-page .top-bar-section ul li>a.button.secondary {
+	background: #e7e7e7;	}
+.ebiz-hospitality-page .top-bar-section ul li>a.button.secondary:hover {
+	background: #cecece; }
+.ebiz-hospitality-page .top-bar-section ul li>a.button.success {
+	background: #43ac6a; }
+.ebiz-hospitality-page .top-bar-section ul li>a.button.success:hover {
+	background: #358854; }
+.ebiz-hospitality-page .top-bar-section ul li>a.button.alert {
+	background: #f04124; }
+.ebiz-hospitality-page .top-bar-section ul li>a.button.alert:hover {
+	background: #d42b0f;	}
+.ebiz-hospitality-page .top-bar-section ul li:hover:not(.has-form)>a {
+	background: #666666;
+	color: #ffffff; }
+.ebiz-hospitality-page .top-bar-section ul li.active>a {
+	background: #008cba;
+	color: #ffffff; }
+.ebiz-hospitality-page .top-bar-section ul li.active>a:hover {
+	background: #0078a0;
+	color: #ffffff; }
+.ebiz-hospitality-page .top-bar-section .has-dropdown>a:after {
+	border-color:transparent transparent transparent rgba(255,255,255,0.4); }
+.ebiz-hospitality-page .top-bar-section .dropdown li.title h5 a {
+	color: #ffffff; }
+.ebiz-hospitality-page .top-bar-section .dropdown label {
+	color: #777777; }
+.ebiz-hospitality-page .top-bar {
+	background: #333333; }
+.ebiz-hospitality-page .top-bar.expanded {
+	background: #333333; }
+.ebiz-hospitality-page .top-bar-section li.hover>a:not(.button) {
+	background: #666666;
+	color: #ffffff; }
+.ebiz-hospitality-page .top-bar-section li:not(.has-form) a:not(.button) {
+	background: #333333; }
+.ebiz-hospitality-page .top-bar-section li:not(.has-form) a:not(.button):hover {
+	background: #666666; }
+.ebiz-hospitality-page .top-bar-section li.active:not(.has-form) a:not(.button) {
+	color: #ffffff;
+	background: #008cba; }
+.ebiz-hospitality-page .top-bar-section li.active:not(.has-form) a:not(.button):hover {
+	background: #0078a0; }
+.ebiz-hospitality-page .top-bar-section .has-dropdown>a:after {
+	border-color:rgba(255,255,255,0.4) transparent transparent; }
+.ebiz-hospitality-page .top-bar-section .dropdown li a {
+	background: #333333; }
+.ebiz-hospitality-page .top-bar-section .dropdown li label {
+	background: #333333; }
+.ebiz-hospitality-page .top-bar-section>ul>.divider,.ebiz-hospitality-page .top-bar-section>ul>[role=separator] {
+	border-right:solid 1px #4e4e4e; }
+.ebiz-hospitality-page .top-bar-section .has-form {
+	background: #333333; }
+
+.ebiz-hospitality-page .panel.ebiz-include-seasonal-availability {
+	background: #333333;
+	border: none;
+	color: #ffffff; }
+.ebiz-hospitality-page .panel.ebiz-include-seasonal-availability h2 {
+	line-height: 1.125rem;
+	margin-bottom: 0.625rem;
+	margin-top: 0; }
+.ebiz-hospitality-page .panel.ebiz-include-seasonal-availability h2 small,
+.ebiz-hospitality-page .panel.ebiz-include-seasonal-availability p {
+	color: #ffffff; }
+
+.ebiz-hospitality-page .ebiz-include-footer-wrap {
+    background: #333333 url(img/Hospitality/binding_dark.png);
+    color: #ffffff; }
+.ebiz-hospitality-page .ebiz-include-small-sponsors,
+.ebiz-hospitality-page .ebiz-include-copyright,
+.ebiz-hospitality-page .ebiz-include-sitemap {
+    border-top: 1px dotted #ffffff; }
+
+/* Large screens */
+@media only screen and (min-width: 64.063em) { 
+	
+	.ebiz-hospitality-page .ebiz-temp-header-wrap {
+    	color: 	#222222; }
+	.ebiz-hospitality-page .ebiz-temp-header-wrap a { 
+		color: #db001b; }
+	.ebiz-hospitality-page .ebiz-temp-header-wrap .ebiz-user-alerts a { 
+		color: #ffffff; }
+
+	body.ebiz-hospitality-page {
+	    	background: url(img/Hospitality/hospitality.body.png) repeat left top #ffffff; }
+	.ebiz-hospitality-page .ebiz-body-overlay {
+	    background: none; }
+	.ebiz-hospitality-page header { 
+		background: url(img/Hospitality/hospitality.banner.jpg) no-repeat bottom center;
+		padding-bottom: 10.063rem; }
+
+} /* min-width 1025px, large screens */

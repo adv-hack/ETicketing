@@ -1,0 +1,26 @@
+<svg>
+	<g id="WINNING-POST">
+		<rect id="WP-WP" x="384.5" y="150" stroke-width="0" width="96" height="24"/>
+		<text fid="WP-WP" transform="matrix(1 0 0 1 394.9473 160.582)" fill="#FFFFFF" font-family="'Arial'" font-size="10">WINNING POST</text>
+	</g>
+	<g id="TATTERSALLS-AND-PADDOCK">
+		<rect id="TP-TP" x="519.309" y="196.498" stroke-width="0" width="164" height="24"/>
+		<text fid="TP-TP" transform="matrix(1 0 0 1 529.2783 207.166)" fill="#FFFFFF" font-family="'Arial'" font-size="10">TATTERSALLS AND PADDOCK</text>
+	</g>
+	<g id="OPEN-COURSE">
+		<rect id="OC-OC" x="32" y="352.475" stroke-width="0" width="94" height="24"/>
+		<text fid="OC-OC" transform="matrix(1 0 0 1 42.0488 363.1426)" fill="#FFFFFF" font-family="'Arial'" font-size="10">OPEN COURSE</text>
+	</g>
+	<g id="DEE-ENCLOSURE">
+		<rect id="DS-DS" x="621.309" y="281.475" stroke-width="0" width="104" height="24"/>
+		<text fid="DS-DS" transform="matrix(1 0 0 1 630.5195 292.1426)" fill="#FFFFFF" font-family="'Arial'" font-size="10">DEE ENCLOSURE</text>
+	</g>
+	<g id="COUNTY-STAND">
+		<rect id="CC-CM" x="449.726" y="106.551" stroke-width="0" width="129.824" height="24"/>
+		<text fid="CC-CM" transform="matrix(1 0 0 1 459.7256 117.3037)" fill="#FFFFFF" font-family="'Arial'" font-size="10">COUNTY CONCOURSE</text>
+	</g>
+	<g id="LONG-ROOM">
+		<rect id="LR-LR" x="589.55" y="106.551" stroke-width="0" width="82.29" height="24"/>
+		<text fid="LR-LR" transform="matrix(1 0 0 1 599.6133 117.5508)" fill="#FFFFFF" font-family="'Arial'" font-size="10">LONG ROOM</text>
+	</g>
+</svg>

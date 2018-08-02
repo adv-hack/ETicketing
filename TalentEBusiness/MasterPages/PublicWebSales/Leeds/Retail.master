@@ -1,0 +1,131 @@
+﻿<%@ Master Language="VB" CodeFile="~/MasterPages/Shared/SharedClasses/Retail.master.vb" Inherits="MasterPages_Shared_SharedClasses_Retail" %>
+<%@ Register Namespace="Talent.CustomControls" Assembly="__code" tagprefix="TalentCustom" %>
+<%@ Register Src="~/UserControls/PersonalisationBar.ascx" TagName="PersonalisationBar" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/Alerts.ascx" TagName="Alerts" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/MicroBasket.ascx" TagName="MicroBasket" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/HTMLInclude.ascx" TagName="HTMLInclude" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/breadCrumbTrail.ascx" TagName="BreadCrumbTrail" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/SessionStatus.ascx" TagName="SessionStatus" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/PageLeftProductNav.ascx" TagName="ProductNav" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/searchBar.ascx" TagName="SearchBar" TagPrefix="Talent" %>
+
+<asp:Content ContentPlaceHolderID="SiteMasterHead" runat="server">
+
+    <script src="//a248.e.akamai.net/images.talentarena.co.uk/Global/Lib/TinyNav.js-master/tinynav.min.js"></script>
+    <script>
+        // Responsive Shop Nav
+        $(function () {
+            // TinyNav.js 1
+            $(".AspNet-TreeView > ul").tinyNav({
+            active: 'selected', // String: Set the "active" class
+            header: 'Select Category ', // String: Specify text for "header" and show header instead of the active item
+            indent: '- ', // String: Specify text for indenting sub-items
+            label: '' // String: Sets the <label> text for the <select> (if not set, no label will be added)
+            });     
+        });
+    </script>
+
+    <!-- page level scripting -->
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server" />
+
+    <!-- page extra data table scripting -->
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server" />
+
+</asp:Content>
+
+<asp:Content ContentPlaceHolderID="SiteMasterBody" runat="server">
+    <div class="ebiz-body-overlay"></div>
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="scmMainScriptManager" runat="server" />
+    <div class="off-canvas-wrap" data-offcanvas>
+
+                <div class="inner-wrap">
+
+                    <nav class="header-mobile hide-for-large-up">
+                        <div class="row">
+                            <div class="large-12 columns">
+                                <img src="/App_Themes/PWS.LeedsUnited/img/leeds-united.png" alt="Leeds United Ticketing">
+                                <a class="right-off-canvas-toggle menu-icon-img" ></a>
+                            </div>
+                        </div>
+                    </nav>
+
+                    <aside class="right-off-canvas-menu">
+                        <ul class="off-canvas-list off-canvas-user">
+                            <TalentCustom:Literal HTMLFileName="off-canvas-home.html" ID="ltlOffCanvasHome" runat="server" OnLoad="GetStaticHTMLInclude" />
+                            <li class="off-canvas-personalisation"><Talent:PersonalisationBar ID="uscPersonalisationOffCanvas" runat="server" /></li>
+                            <li><Talent:MicroBasket ID="uscMicroBasketOffCanvas" runat="server" /></li>
+                            <li><Talent:Alerts ID="uscAlertsOffCanvas" runat="server" /></li>
+                        </ul>
+                        <ul class="off-canvas-list off-canvas-product">
+                            <TalentCustom:Literal HTMLFileName="off-canvas-myaccount-menu.html" ID="ltlOffCanvasMyAccount" runat="server" OnLoad="GetStaticHTMLInclude" />
+                            <TalentCustom:Literal HTMLFileName="off-canvas-product-menu.html" ID="ltlOffCanvasProduct" runat="server" OnLoad="GetStaticHTMLInclude" />
+                        </ul>
+                    </aside>
+
+                    <header class="header show-for-large-up">
+                        <div class="pre-header">
+                            <div class="row">
+                                <div class="large-12 columns">
+                                    <nav>
+                                        <ul>
+                                            <li><Talent:PersonalisationBar ID="uscPersonalisation" runat="server" /></li>
+                                            <li><Talent:Alerts ID="uscAlerts" runat="server" /></li>
+                                            <li><Talent:MicroBasket ID="uscMicroBasket" runat="server" /></li>
+                                        </ul>
+                                    <nav>
+                                </div>
+                            </div>
+                        </div>
+                        <TalentCustom:Literal HTMLFileName="middleheader.html" ID="ltlMiddleHeader" runat="server" OnLoad="GetStaticHTMLInclude" />
+                        <TalentCustom:Literal HTMLFileName="mainnav.html" ID="ltlMainNav" runat="server" OnLoad="GetStaticHTMLInclude" />
+                        <TalentCustom:Literal HTMLFileName="navigation.html" ID="ltlNavigation" runat="server" OnLoad="GetStaticHTMLInclude" />
+                    </header>
+                                
+                    <section class="main-section">
+                        <div class="row ebiz-content">
+                            <div class="show-for-large-up">
+                                <TalentCustom:Literal HTMLFileName="retail-navigation.html" ID="ltlRetailNavigation" runat="server" OnLoad="GetStaticHTMLInclude" />
+                            </div>
+                            <div class="large-3 columns">
+                                <div class="ebiz-sidebar-search">
+                                    <TalentCustom:Literal HTMLFileName="retail-search-title.html" ID="ltlRetailSearchTitle" runat="server" OnLoad="GetStaticHTMLInclude" />
+                                    <Talent:SearchBar ID="uscSearchBar" runat="server" />
+                                </div>
+                                <div class="ebiz-sidebar-filer">
+                                    <TalentCustom:Literal HTMLFileName="retail-filer-title.html" ID="ltlRetailFilerTitle" runat="server" OnLoad="GetStaticHTMLInclude" />
+                                    <Talent:ProductNav ID="uscProductNav" runat="server" />
+                                </div>
+                            </div>
+                            <div class="medium-12 large-9 columns">
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+                            </div> 
+                            <div class="large-12 columns">
+                                <Talent:SessionStatus ID="uscSessionStatus" runat="server" />
+                                <TalentCustom:Literal HTMLFileName="sidebar.html" ID="ltlSidebar" runat="server" OnLoad="GetStaticHTMLInclude" />
+                            </div> 
+                        </div>
+                    </section>
+
+                    <footer>
+                        <TalentCustom:Literal HTMLFileName="footer-upper.html" ID="ltlFooterUpper" runat="server" OnLoad="GetStaticHTMLInclude" />
+                        <TalentCustom:Literal HTMLFileName="footer-sponsors.html" ID="ltlFooterSponsors" runat="server" OnLoad="GetStaticHTMLInclude" />
+                        <TalentCustom:Literal HTMLFileName="footer-sitemap.html" ID="ltlFooterSitemap" runat="server" OnLoad="GetStaticHTMLInclude" />
+                        <TalentCustom:Literal HTMLFileName="footer-lower.html" ID="ltlFooterLower" runat="server" OnLoad="GetStaticHTMLInclude" />
+                    </footer>
+
+                    <a class="exit-off-canvas"></a>
+
+                </div>
+
+            </div>
+
+    </form>
+
+    <script>
+        $(function(){
+            $(".ebiz-ud-retail-hero-img").insertBefore(".ebiz-content");
+        });
+    </script>
+
+</asp:Content>

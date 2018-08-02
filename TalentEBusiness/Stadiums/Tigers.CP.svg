@@ -1,0 +1,59 @@
+<svg>
+<path id="OPA-BAY" stroke-width="0" fill="#007AC1" d="M658.161,306.409c0,1.657,1.345,3,3,3h16.664c1.657,0,3-1.343,3-3v-16.661c0-1.657-1.343-3-3-3
+	h-16.664c-1.655,0-3,1.343-3,3V306.409z"/>
+<path id="LRI-BAY" stroke-width="0" fill="#007AC1" d="M628.1,134.781c0,1.657,1.343,3,3,3h16.664c1.657,0,3-1.343,3-3V118.12c0-1.657-1.343-3-3-3
+	H631.1c-1.657,0-3,1.343-3,3V134.781z"/>
+<path id="NCP-BAY" stroke-width="0" fill="#007AC1" d="M493.935,225.417c0,1.657,1.343,3,3,3h16.664c1.657,0,3-1.343,3-3v-16.664c0-1.657-1.343-3-3-3
+	h-16.664c-1.657,0-3,1.343-3,3V225.417z"/>
+<path id="LCC-BAY" stroke-width="0" fill="#007AC1" d="M276.539,417.434c0,1.657,1.343,3,3,3h16.664c1.655,0,2.998-1.343,2.998-3V400.77
+	c0-1.656-1.343-3-2.998-3h-16.664c-1.657,0-3,1.344-3,3V417.434z"/>
+<path id="LCM-BAY" stroke-width="0" fill="#007AC1" d="M214.177,392.626c0,1.657,1.343,3,3,3h16.664c1.657,0,3-1.343,3-3v-16.664c0-1.657-1.343-3-3-3
+	h-16.664c-1.657,0-3,1.343-3,3V392.626z"/>
+<path id="LRM-BAY" stroke-width="0" fill="#007AC1" d="M432.6,175.325c0,1.657,1.342,3,3,3h16.664c1.656,0,3-1.343,3-3v-16.661
+	c0-1.657-1.344-3-3-3H435.6c-1.658,0-3,1.343-3,3V175.325z"/>
+<path id="KIN-BAY" stroke-width="0" fill="#007AC1" d="M2.247,186.658c0,1.657,1.343,3,3,3h16.664c1.655,0,3-1.343,3-3v-16.664
+	c0-1.657-1.345-3-3-3H5.247c-1.657,0-3,1.343-3,3V186.658z"/>
+<text fid="LRM-BAY" transform="matrix(1 0 0 1 440.594 166.8838)" fill="#F1F1F1" font-family="'Arial'" font-size="12">7</text>
+<text fid="KIN-BAY" transform="matrix(1 0 0 1 10.2415 178.2148)" fill="#F1F1F1" font-family="'Arial'" font-size="12">1</text>
+<text fid="LCM-BAY" transform="matrix(1 0 0 1 222.1716 384.1836)" fill="#F1F1F1" font-family="'Arial'" font-size="12">2</text>
+<text fid="LCC-BAY" transform="matrix(1 0 0 1 284.5334 408.9893)" fill="#F1F1F1" font-family="'Arial'" font-size="12">3</text>
+<text fid="NCP-BAY" transform="matrix(1 0 0 1 501.9299 216.9727)" fill="#F1F1F1" font-family="'Arial'" font-size="12">4</text>
+<text fid="LRI-BAY" transform="matrix(1 0 0 1 636.094 126.3379)" fill="#F1F1F1" font-family="'Arial'" font-size="12">5</text>
+<text fid="OPA-BAY" transform="matrix(1 0 0 1 666.1584 297.9688)" fill="#F1F1F1" font-family="'Arial'" font-size="12">6</text>
+<g id="KEY">
+	<path fill="#007AC1" d="M321.626,587c0,1.657,1.343,3,3,3h16.662c1.657,0,3-1.343,3-3v-16.664c0-1.657-1.343-3-3-3h-16.662
+		c-1.657,0-3,1.343-3,3V587z"/>
+	<path fill="#007AC1" d="M179,587c0,1.657,1.343,3,3,3h16.664c1.655,0,3-1.343,3-3v-16.664c0-1.657-1.345-3-3-3H182
+		c-1.657,0-3,1.343-3,3V587z"/>
+	<path fill="#007AC1" d="M20,587c0,1.657,1.343,3,3,3h16.664c1.655,0,3-1.343,3-3v-16.664c0-1.657-1.345-3-3-3H23
+		c-1.657,0-3,1.343-3,3V587z"/>
+	<path fill="#007AC1" d="M507.276,553.108c0,1.655,1.343,3,3,3h16.659c1.657,0,3-1.345,3-3v-16.664c0-1.657-1.343-3-3-3h-16.659
+		c-1.657,0-3,1.343-3,3V553.108z"/>
+	<path fill="#007AC1" d="M321.626,553.107c0,1.655,1.343,3,3,3h16.66c1.657,0,3-1.345,3-3v-16.662c0-1.657-1.343-3-3-3h-16.66
+		c-1.657,0-3,1.343-3,3V553.107z"/>
+	<path fill="#007AC1" d="M179,553.108c0,1.655,1.343,3,3,3h16.664c1.655,0,3-1.345,3-3v-16.664c0-1.657-1.345-3-3-3H182
+		c-1.657,0-3,1.343-3,3V553.108z"/>
+	<path fill="#007AC1" d="M20,553.108c0,1.655,1.343,3,3,3h16.664c1.655,0,3-1.345,3-3v-16.664c0-1.657-1.345-3-3-3H23
+		c-1.657,0-3,1.343-3,3V553.108z"/>
+	<text transform="matrix(1 0 0 1 19.9998 509.668)" fill="#020202" font-family="'Arial'" font-size="12">KEY</text>
+	<rect x="20" y="519.168" fill="#020202" width="642" height="1"/>
+	<text transform="matrix(1 0 0 1 27.9944 544.666)" fill="#F1F1F1" font-family="'Arial'" font-size="12">1</text>
+	<text transform="matrix(1 0 0 1 49.9998 547.9766)" fill="#020202" font-family="'Arial'" font-size="12">King Power Stadium</text>
+	<text transform="matrix(1 0 0 1 186.9944 544.666)" fill="#F1F1F1" font-family="'Arial'" font-size="12">2</text>
+	<text transform="matrix(1 0 0 1 208.9998 547.9766)" fill="#020202" font-family="'Arial'" font-size="12">Leicester College</text>
+	<text transform="matrix(1 0 0 1 329.6199 544.666)" fill="#F1F1F1" font-family="'Arial'" font-size="12">3</text>
+	<text transform="matrix(1 0 0 1 515.2678 544.666)" fill="#F1F1F1" font-family="'Arial'" font-size="12">4</text>
+	<text transform="matrix(1 0 0 1 351.6252 540.7764)" fill="#020202" font-family="'Arial'" font-size="12">Leicester College -</text>
+	<text transform="matrix(1 0 0 1 351.6252 555.1758)" fill="#020202" font-family="'Arial'" font-size="12">Block C</text>
+	<text transform="matrix(1 0 0 1 27.9944 578.5557)" fill="#F1F1F1" font-family="'Arial'" font-size="12">5</text>
+	<text transform="matrix(1 0 0 1 534.9338 547.9766)" fill="#020202" font-family="'Arial'" font-size="12">Granby Halls NCP</text>
+	<text transform="matrix(1 0 0 1 186.9944 578.5557)" fill="#F1F1F1" font-family="'Arial'" font-size="12">6</text>
+	<text transform="matrix(1 0 0 1 49.9998 574.668)" fill="#020202" font-family="'Arial'" font-size="12">Leicester Royal</text>
+	<text transform="matrix(1 0 0 1 49.9998 589.0674)" fill="#020202" font-family="'Arial'" font-size="12">Infirmary</text>
+	<text transform="matrix(1 0 0 1 329.6204 578.5557)" fill="#F1F1F1" font-family="'Arial'" font-size="12">7</text>
+	<text transform="matrix(1 0 0 1 208.9998 574.668)" fill="#020202" font-family="'Arial'" font-size="12">Opal Court/</text>
+	<text transform="matrix(1 0 0 1 208.9998 589.0674)" fill="#020202" font-family="'Arial'" font-size="12">Lancaster Road</text>
+	<text transform="matrix(1 0 0 1 351.6252 574.668)" fill="#020202" font-family="'Arial'" font-size="12">Leicester Royal Infirmary,</text>
+	<text transform="matrix(1 0 0 1 351.6252 589.0674)" fill="#020202" font-family="'Arial'" font-size="12">Havelock Street</text>
+</g>
+</svg>

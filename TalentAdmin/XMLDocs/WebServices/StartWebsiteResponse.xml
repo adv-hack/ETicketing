@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<StartWebsite>
+  <HasError></HasError>
+  <ErrorText></ErrorText>
+  <WebsiteName></WebsiteName>
+  <ServerName></ServerName>
+  <StartApplicationPoolAttempted></StartApplicationPoolAttempted>
+  <StartApplicationPoolSuccess></StartApplicationPoolSuccess>
+  <StartApplicationPoolResponse></StartApplicationPoolResponse>
+  <StartWebsiteAttempted></StartWebsiteAttempted>
+  <StartWebsiteSuccess></StartWebsiteSuccess>
+  <StartWebsiteResponse></StartWebsiteResponse>
+</StartWebsite>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://dunhill.com/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://dunhill.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://dunhill.com/">
+      <s:element name="CalculateTax">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ds">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CalculateTaxResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CalculateTaxResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CalcImportDuty">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sCountryCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sTariffCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="iQuantity" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="dWeight" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="dPrice" type="s:decimal" />
+            <s:element minOccurs="0" maxOccurs="1" name="sSKUCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CalcImportDutyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CalcImportDutyResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ImportDutyCheck">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CountryCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ImportDutyCheckResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ImportDutyCheckResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+      <s:element name="boolean" type="s:boolean" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CalculateTaxSoapIn">
+    <wsdl:part name="parameters" element="tns:CalculateTax" />
+  </wsdl:message>
+  <wsdl:message name="CalculateTaxSoapOut">
+    <wsdl:part name="parameters" element="tns:CalculateTaxResponse" />
+  </wsdl:message>
+  <wsdl:message name="CalcImportDutySoapIn">
+    <wsdl:part name="parameters" element="tns:CalcImportDuty" />
+  </wsdl:message>
+  <wsdl:message name="CalcImportDutySoapOut">
+    <wsdl:part name="parameters" element="tns:CalcImportDutyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ImportDutyCheckSoapIn">
+    <wsdl:part name="parameters" element="tns:ImportDutyCheck" />
+  </wsdl:message>
+  <wsdl:message name="ImportDutyCheckSoapOut">
+    <wsdl:part name="parameters" element="tns:ImportDutyCheckResponse" />
+  </wsdl:message>
+  <wsdl:message name="CalcImportDutyHttpGetIn">
+    <wsdl:part name="sCountryCode" type="s:string" />
+    <wsdl:part name="sTariffCode" type="s:string" />
+    <wsdl:part name="iQuantity" type="s:string" />
+    <wsdl:part name="dWeight" type="s:string" />
+    <wsdl:part name="dPrice" type="s:string" />
+    <wsdl:part name="sSKUCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CalcImportDutyHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ImportDutyCheckHttpGetIn">
+    <wsdl:part name="CountryCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ImportDutyCheckHttpGetOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="CalcImportDutyHttpPostIn">
+    <wsdl:part name="sCountryCode" type="s:string" />
+    <wsdl:part name="sTariffCode" type="s:string" />
+    <wsdl:part name="iQuantity" type="s:string" />
+    <wsdl:part name="dWeight" type="s:string" />
+    <wsdl:part name="dPrice" type="s:string" />
+    <wsdl:part name="sSKUCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CalcImportDutyHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ImportDutyCheckHttpPostIn">
+    <wsdl:part name="CountryCode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ImportDutyCheckHttpPostOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceSoap">
+    <wsdl:operation name="CalculateTax">
+      <wsdl:input message="tns:CalculateTaxSoapIn" />
+      <wsdl:output message="tns:CalculateTaxSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CalcImportDuty">
+      <wsdl:input message="tns:CalcImportDutySoapIn" />
+      <wsdl:output message="tns:CalcImportDutySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ImportDutyCheck">
+      <wsdl:input message="tns:ImportDutyCheckSoapIn" />
+      <wsdl:output message="tns:ImportDutyCheckSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ServiceHttpGet">
+    <wsdl:operation name="CalcImportDuty">
+      <wsdl:input message="tns:CalcImportDutyHttpGetIn" />
+      <wsdl:output message="tns:CalcImportDutyHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ImportDutyCheck">
+      <wsdl:input message="tns:ImportDutyCheckHttpGetIn" />
+      <wsdl:output message="tns:ImportDutyCheckHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ServiceHttpPost">
+    <wsdl:operation name="CalcImportDuty">
+      <wsdl:input message="tns:CalcImportDutyHttpPostIn" />
+      <wsdl:output message="tns:CalcImportDutyHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ImportDutyCheck">
+      <wsdl:input message="tns:ImportDutyCheckHttpPostIn" />
+      <wsdl:output message="tns:ImportDutyCheckHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CalculateTax">
+      <soap:operation soapAction="http://dunhill.com/CalculateTax" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CalcImportDuty">
+      <soap:operation soapAction="http://dunhill.com/CalcImportDuty" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportDutyCheck">
+      <soap:operation soapAction="http://dunhill.com/ImportDutyCheck" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceSoap12" type="tns:ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CalculateTax">
+      <soap12:operation soapAction="http://dunhill.com/CalculateTax" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CalcImportDuty">
+      <soap12:operation soapAction="http://dunhill.com/CalcImportDuty" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportDutyCheck">
+      <soap12:operation soapAction="http://dunhill.com/ImportDutyCheck" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceHttpGet" type="tns:ServiceHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="CalcImportDuty">
+      <http:operation location="/CalcImportDuty" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportDutyCheck">
+      <http:operation location="/ImportDutyCheck" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceHttpPost" type="tns:ServiceHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="CalcImportDuty">
+      <http:operation location="/CalcImportDuty" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ImportDutyCheck">
+      <http:operation location="/ImportDutyCheck" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="http://teststore.dunhill.com/ADLTaxCalcTest/service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="http://teststore.dunhill.com/ADLTaxCalcTest/service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceHttpGet" binding="tns:ServiceHttpGet">
+      <http:address location="http://teststore.dunhill.com/ADLTaxCalcTest/service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceHttpPost" binding="tns:ServiceHttpPost">
+      <http:address location="http://teststore.dunhill.com/ADLTaxCalcTest/service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

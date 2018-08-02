@@ -1,0 +1,26 @@
+<svg>
+	<rect id="BMR-BMR" x="10" y="415.18" stroke-width="0" width="261.667" height="23.705"/>
+	<text fid="BMR-BMR" transform="matrix(1 0 0 1 80.5664 425.6973)" fill="#FFFFFF" font-family="'Arial'" font-size="9">RAILS BOOKMAKER BADGE</text>
+	<rect id="BMR-BMAR" x="281.667" y="415.18" stroke-width="0" width="261.667" height="23.705"/>
+	<text fid="BMR-BMAR" transform="matrix(1 0 0 1 340.6445 425.6973)" fill="#FFFFFF" font-family="'Arial'" font-size="9">RAILS BOOKMAKERS ASSISTANT</text>
+	<rect id="BMR-BMSR" x="553.333" y="415.18" stroke-width="0" width="261.667" height="23.705"/>
+	<text fid="BMR-BMSR" transform="matrix(1 0 0 1 581.0645 425.6973)" fill="#FFFFFF" font-family="'Arial'" font-size="9">RAILS BOOKMAKER WITH CRC ANNUAL BADGE</text>
+	<rect id="BMT-BMT" x="10" y="448.885" stroke-width="0" width="261.667" height="23.705"/>
+	<text fid="BMT-BMT" transform="matrix(1 0 0 1 62.7314 459.4023)" fill="#FFFFFF" font-family="'Arial'" font-size="9">TATTERSALLS BOOKMAKER BADGE</text>
+	<rect id="BMT-BMAT" x="281.667" y="448.885" stroke-width="0" width="261.667" height="23.705"/>
+	<text fid="BMT-BMAT" transform="matrix(1 0 0 1 322.8096 459.4023)" fill="#FFFFFF" font-family="'Arial'" font-size="9">TATTERSALLS BOOKMAKERS ASSISTANT</text>
+	<rect id="BMT-BMST" x="553.333" y="448.885" stroke-width="0" width="261.667" height="23.705"/>
+	<text fid="BMT-BMST" transform="matrix(1 0 0 1 563.2285 459.4023)" fill="#FFFFFF" font-family="'Arial'" font-size="9">TATTERSALLS BOOKMAKER WITH CRC ANNUAL BADGE</text>
+	<rect id="BMD-BMD" x="10" y="482.59" stroke-width="0" width="261.667" height="23.705"/>
+	<text fid="BMD-BMD" transform="matrix(1 0 0 1 84.3193 493.1074)" fill="#FFFFFF" font-family="'Arial'" font-size="9">DEE BOOKMAKER BADGE</text>
+	<rect id="BMD-BMAD" x="281.667" y="482.59" stroke-width="0" width="261.667" height="23.705"/>
+	<text fid="BMD-BMAD" transform="matrix(1 0 0 1 344.3975 493.1074)" fill="#FFFFFF" font-family="'Arial'" font-size="9">DEE BOOKMAKERS ASSISTANT</text>
+	<rect id="BMD-BMSD" x="553.333" y="482.59" stroke-width="0" width="261.667" height="23.705"/>
+	<text fid="BMD-BMSD" transform="matrix(1 0 0 1 584.8164 493.1074)" fill="#FFFFFF" font-family="'Arial'" font-size="9">DEE BOOKMAKER WITH CRC ANNUAL BADGE</text>
+	<rect id="BMO-BMO" x="10" y="516.295" stroke-width="0" width="261.667" height="23.705"/>
+	<text fid="BMO-BMO" transform="matrix(1 0 0 1 60.3164 526.8125)" fill="#FFFFFF" font-family="'Arial'" font-size="9">OPEN COURSE BOOKMAKER BADGE</text>
+	<rect id="BMO-BMAO" x="281.667" y="516.295" stroke-width="0" width="261.667" height="23.705"/>
+	<text fid="BMO-BMAO" transform="matrix(1 0 0 1 320.3945 526.8125)" fill="#FFFFFF" font-family="'Arial'" font-size="9">OPEN COURSE BOOKMAKERS ASSISTANT</text>
+	<rect id="BMO-BMSO" x="553.333" y="516.295" stroke-width="0" width="261.667" height="23.705"/>
+	<text fid="BMO-BMSO" transform="matrix(1 0 0 1 560.8145 526.8125)" fill="#FFFFFF" font-family="'Arial'" font-size="9">OPEN COURSE BOOKMAKER WITH CRC ANNUAL BADGE</text>
+</svg>

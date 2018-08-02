@@ -1,0 +1,201 @@
+﻿<%@ Master Language="VB" CodeFile="~/MasterPages/Shared/SharedClasses/Site.master.vb" Inherits="MasterPages_Shared_SharedClasses_Site" %>
+<%@ Register Namespace="Talent.CustomControls" Assembly="__code" tagprefix="TalentCustom" %>
+<%@ Register Src="~/UserControls/HTMLInclude.ascx" TagName="HTMLInclude" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/MicroBasket.ascx" TagName="MicroBasket" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/PersonalisationBar.ascx" TagName="PersonalisationBar" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/Alerts.ascx" TagName="Alerts" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/TicketingLoyalty.ascx" TagName="TicketingLoyalty" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/SessionStatus.ascx" TagName="SessionStatus" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/PageHeaderText.ascx" TagName="PageHeaderText" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/breadCrumbTrail.ascx" TagName="BreadCrumbTrail" TagPrefix="Talent" %>
+
+
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"> <!--<![endif]-->
+<head id="Head1" runat="server">
+	<script>document.getElementsByTagName("html")[0].className=document.getElementsByTagName("html")[0].className.replace("no-js","");</script>
+    
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="//use.fontawesome.com/7e81f32a9c.js"></script>
+    <script>function OpenAlertsWindow(URL, boxHeight, boxWidth) { $("#ebiz-alert-reveal").foundation("open"); }</script>
+    <link href="//fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i" rel="stylesheet">
+    <link rel="icon" href="/App_Themes/PWS.Durham/img/favicon.ico" type="image/x-icon">
+		
+    <asp:ContentPlaceHolder id="SiteMasterHead" runat="server" />
+</head>
+
+<body id="MasterBodyTag" runat="server">
+
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-KFPQ7TX');</script>
+	<!-- End Google Tag Manager -->
+
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KFPQ7TX"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+    
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="scmMainScriptManager" runat="server" />
+		
+		<!-- SVG ICON START -->
+		<TalentCustom:Literal HTMLFileName="SVG/svgIcons.html" ID="ltlsvgIcons" runat="server" OnLoad="GetStaticHTMLInclude" />
+		<!-- SVG ICON END -->
+		
+        <!-- NAVIGATION START --> 
+        <input type="checkbox" id="navigation__trigger" />
+        <div id="n__main__wrapper" class="n__main__wrapper">
+            <div>
+                <!--Navigation will go here-->
+                <header class="g__header cf">
+                    <div class="n__main__logo">
+                        <TalentCustom:Literal HTMLFileName="Logo.html" ID="ltlLogo" runat="server" OnLoad="GetStaticHTMLInclude" />
+                    </div>
+                    <label for="navigation__trigger" class="n__main__wrapper__trigger">
+                        <span></span>
+                    </label>
+                </header>
+                <div class="n__main__wrapper__content">
+                    <div class="n__main__quicklinks">
+                        <nav>
+							<TalentCustom:Literal HTMLFileName="Navigation/NavigationQuickLinks.html" ID="ltlNavigationQuickLinks" runat="server" OnLoad="GetStaticHTMLInclude" />
+                        </nav>
+                    </div>
+                    <div class="n__main__navigation">
+                        <nav>
+							<TalentCustom:Literal HTMLFileName="Navigation/NavigationMain.html" ID="ltlNavigationMain" runat="server" OnLoad="GetStaticHTMLInclude" />
+                        </nav>
+                    </div>
+					<div class="n__main__BasketPersonalisation">
+                        <Talent:MicroBasket ID="uscMicroBasket" runat="server" />
+						<Talent:PersonalisationBar ID="uscPersonalisationBar" runat="server" />
+						<Talent:Alerts ID="uscAlerts" runat="server" />
+                    </div>
+                    <div class="n__main__socialLinks">
+                        <nav>
+							<TalentCustom:Literal HTMLFileName="Navigation/NavigationSocialLinks.html" ID="ltlNavigationSocialLinks" runat="server" OnLoad="GetStaticHTMLInclude" />
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- NAVIGATION END -->  
+
+		<!-- PAGE START -->  
+		<main id="c__wrapper">
+		
+			<!-- PAGE HERO START -->
+			<div class="c__hero c__hero__main">
+				<div class="l__contain"></div>
+			</div>
+			<!-- PAGE HERO END -->
+		
+			<!-- PAGE SPECIFIC START -->    
+			<section id="c__wrapper__panel" class="c__comp__block">
+				<div class="ebiz-page-content">
+					<div class="ebiz-page-content-inner">
+						<asp:ContentPlaceHolder ID="SiteMasterBody" runat="server" /> 
+					</div>
+				</div>
+			</section> 
+			<!-- PAGE SPECIFIC END --> 
+
+			<!-- FOOTER START -->   
+			<footer class="g__footer">
+				<div class="g__footer__top cf">
+					<div class="l__row l__row__negative10 l__row__altlayout">
+						<div class="l__col l__col__span9" data-1600="8" data-768="12">
+							<div class="l__col__evenpad">
+								<div class="l__row l__row__negative10">
+									<div class="l__col l__col__span12" data-768="12">
+										<div class="l__col__evenpad">
+											<div class="l__row l__row__negative10 l__flexheight">
+												<div class="l__col l__col__span3" data-1366="6" data>
+													<div class="l__col__evenpad">
+														<div class="c__comp__linkList">
+															<TalentCustom:Literal HTMLFileName="Footer/FooterColumn1.html" ID="ltlFooterColumn1" runat="server" OnLoad="GetStaticHTMLInclude" />
+														</div>
+													</div>
+												</div>
+												<div class="l__col l__col__span3" data-1366="6" data>
+													<div class="l__col__evenpad">
+														<div class="c__comp__linkList">
+															<TalentCustom:Literal HTMLFileName="Footer/FooterColumn2.html" ID="ltlFooterColumn2" runat="server" OnLoad="GetStaticHTMLInclude" />
+														</div>
+													</div>
+												</div>
+												<div class="l__col l__col__span3" data-1366="6" data>
+													<div class="l__col__evenpad">
+														<div class="c__comp__linkList">
+															<TalentCustom:Literal HTMLFileName="Footer/FooterColumn3.html" ID="ltlFooterColumn3" runat="server" OnLoad="GetStaticHTMLInclude" />
+														</div>
+													</div>
+												</div>
+												<div class="l__col l__col__span3" data-1366="6" data>
+													<div class="l__col__evenpad">
+														<div class="c__comp__linkList">
+															<TalentCustom:Literal HTMLFileName="Footer/FooterColumn4.html" ID="ltlFooterColumn4" runat="server" OnLoad="GetStaticHTMLInclude" />
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="l__col l__col__span3" data-1600="4" data-768="12">
+							<div class="l__col__evenpad">
+								<div class="g__footer__top__contact">
+									<TalentCustom:Literal HTMLFileName="Footer/FooterContact.html" ID="ltlFooterContact" runat="server" OnLoad="GetStaticHTMLInclude" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="g__footer__base cf">
+					<TalentCustom:Literal HTMLFileName="Footer/FooterCopySocial.html" ID="ltlFooterCopySocial" runat="server" OnLoad="GetStaticHTMLInclude" />
+				</div>
+			</footer>
+			<!-- FOOTER END -->
+		
+		</main>
+		<!-- PAGE END --> 
+		
+		
+    </form>
+    <script src="//cdn.jsdelivr.net/alertifyjs/1.7.1/alertify.min.js"></script>
+    <script src="../../JavaScript/TimepickerAddon.js"></script>
+    <script src="../../JavaScript/vendor/foundation/foundation.min.js"></script>
+    <script src="../../JavaScript/vendor/jquery.matchHeight-min.js"></script>
+    <script src="../../JavaScript/vendor/fastclick.min.js"></script>
+    <script src="//cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+    <script src="../../JavaScript/vendor/select2/js/select2.min.js"></script>
+    <script src="../../JavaScript/Application/TalentEBusinessSuite.js"></script>
+	<script src="/App_Themes/PWS.Durham/vendor/media-works/scripts.js"></script>
+    <script src="/App_Themes/PWS.Durham/js/theme.js"></script>
+
+    <!-- IMPORTANT APPLICATION STUFF DO NOT DELETE!! -->
+    <div id="loading-image" style="display: none" class="ebiz-loading-default ebiz-loading-results">
+        <i class="fa fa-spinner fa-pulse"></i>
+    </div>
+
+    <%=GetPageExtraDataForBody()%>
+    <%= GetTrackingBodyCodesText %>
+
+</body>
+</html>

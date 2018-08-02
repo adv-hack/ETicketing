@@ -1,0 +1,197 @@
+﻿<%@ Master Language="VB" CodeFile="~/MasterPages/Shared/SharedClasses/Site.master.vb" Inherits="MasterPages_Shared_SharedClasses_Site" %>
+<%@ Register Namespace="Talent.CustomControls" Assembly="__code" tagprefix="TalentCustom" %>
+<%@ Register Src="~/UserControls/HTMLInclude.ascx" TagName="HTMLInclude" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/MicroBasket.ascx" TagName="MicroBasket" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/PersonalisationBar.ascx" TagName="PersonalisationBar" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/Alerts.ascx" TagName="Alerts" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/TicketingLoyalty.ascx" TagName="TicketingLoyalty" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/SessionStatus.ascx" TagName="SessionStatus" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/PageHeaderText.ascx" TagName="PageHeaderText" TagPrefix="Talent" %>
+
+
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"> <!--<![endif]-->
+<head id="Head1" runat="server">
+	
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="viewport" content="width=device-width" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="//use.fontawesome.com/7e81f32a9c.js"></script>
+    <link rel="icon" href="/App_Themes/PWS.Southampton/img/favicon.ico" type="image/x-icon">
+    <asp:ContentPlaceHolder id="SiteMasterHead" runat="server" />
+	
+</head>
+
+<body id="MasterBodyTag" runat="server">
+
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-T2FLQSR');</script>
+	<!-- End Google Tag Manager -->
+
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2FLQSR"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+
+    <form id="form1" runat="server">
+	
+        <asp:ScriptManager ID="scmMainScriptManager" runat="server" />
+		
+		<div class="off-canvas-wrapper">
+		
+			<!-- off-canvas right menu -->
+			<div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-position="right">
+				<ul class="vertical menu" data-accordion-menu data-multi-open="false">
+					<TalentCustom:Literal HTMLFileName="SmallNavigation.html" ID="ltlSmallNavigation" runat="server" OnLoad="GetStaticHTMLInclude" />			
+					<li><Talent:PersonalisationBar ID="uscPersonalisationOffCanvas" runat="server" /></li>
+					<li><Talent:Alerts ID="uscAlertsOffCanvas" runat="server" /></li>
+					<li><Talent:MicroBasket ID="uscMicroBasketOffCanvas" runat="server" /></li>
+				</ul>    
+			</div>
+			
+			<div class="off-canvas-content" data-off-canvas-content>
+		
+				<header>
+					
+					<!-- Top Bar -->
+					<div class="top-utility-bar hide-for-large">
+						<div class="top-utility-bar__content">
+							<Talent:PersonalisationBar ID="uscPersonalisationBarTopUtilityBar" runat="server" />
+							<Talent:Alerts ID="uscAlertsOffCanvasTopUtilityBar" runat="server" />
+						</div>
+					</div>
+									
+					<!-- Small -->		
+					<div class="header-small hide-for-large">
+					
+						<div class="header-small__content">
+							<div class="header-small--left">
+								<TalentCustom:Literal HTMLFileName="SmallLogo.html" ID="ltlSmallLogo" runat="server" OnLoad="GetStaticHTMLInclude" />
+							</div>
+							<div class="header-small--center">
+								<TalentCustom:Literal HTMLFileName="SmallCenter.html" ID="ltlMobileCenter" runat="server" OnLoad="GetStaticHTMLInclude" />
+							</div>
+							<div class="header-small--right">
+								<div data-responsive-toggle="small-navigation" data-hide-for="large">
+									<div class="hamburger hamburger--collapse" type="button" data-open="offCanvasRight">
+										<span class="hamburger-box">
+											<span class="hamburger-inner"></span>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					
+					<!-- Utility Bar -->
+					<div class="utility-bar-small hide-for-large">
+						<div class="utility-bar-small__content">
+							<div class="utility-bar-small__left">
+								<TalentCustom:Literal HTMLFileName="UtilityBarLeft.html" ID="ltlUtilityBarLeft" runat="server" OnLoad="GetStaticHTMLInclude" />
+							</div>
+							<div class="utility-bar-small__right">
+								<Talent:MicroBasket ID="uscMicroBasketUtilityBar" runat="server" />
+							</div>
+						</div>
+					</div>
+					
+					<!-- Large -->
+					<div class="header-large scrollhide-nav show-for-large">
+					
+						<div class="header-large__content">
+							<div class="header-large--left">
+								<TalentCustom:Literal HTMLFileName="LargeLogo.html" ID="ltlLargeLogo" runat="server" OnLoad="GetStaticHTMLInclude" />
+							</div>
+							<div class="header-large--top-bar">
+								<TalentCustom:Literal HTMLFileName="LargeTopBarText.html" ID="ltlLargeTopBarText" runat="server" OnLoad="GetStaticHTMLInclude" />
+								<div class="header-large--user-controls">	
+									<Talent:PersonalisationBar ID="uscPersonalisationBarLarge" runat="server" />
+									<Talent:Alerts ID="uscAlertsTopBarLarge" runat="server" />
+									<div class="header-large--myaccount">
+										<TalentCustom:Literal HTMLFileName="LargeMyAccountNavigation.html" ID="ltlLargeMyAccountNavigation" runat="server" OnLoad="GetStaticHTMLInclude" />
+									</div>
+									<div class="header-large--basket">
+										<Talent:MicroBasket ID="uscMicroBasketLarge" runat="server" />
+									</div>
+								</div>
+							</div>
+							<div class="header-large--navigation">
+								<TalentCustom:Literal HTMLFileName="LargeNavigation.html" ID="ltlLargeNavigation" runat="server" OnLoad="GetStaticHTMLInclude" />
+							</div>
+						</div>
+											
+					</div>
+								
+				</header>
+				
+				<div class="page-header-hero">
+					<div class="page-header-hero--overlay"></div>
+					<div class="page-header-hero__content">
+						<div class="page-header-hero__text">
+							<Talent:PageHeaderText ID="PageHeaderText1" runat="server" />
+						</div>
+					</div>
+				</div>
+				
+				<div class="session-status">
+					<div class="row">
+						<div class="small-12 columns">
+							<Talent:SessionStatus ID="uscSessionStatus" runat="server" />
+							<TalentCustom:Literal HTMLFileName="DummySession.html" ID="ltlDummySession2" runat="server" OnLoad="GetStaticHTMLInclude" />
+						</div>
+					</div>
+				</div>
+				
+				<section class="content">
+					<asp:ContentPlaceHolder ID="SiteMasterBody" runat="server" /> 
+				</section>    
+				
+				<footer class="footer">
+					<TalentCustom:Literal HTMLFileName="FooterPrimary.html" ID="ltlFooterPrimary" runat="server" OnLoad="GetStaticHTMLInclude" />
+					<TalentCustom:Literal HTMLFileName="FooterSecondary.html" ID="ltlFooterSecondary" runat="server" OnLoad="GetStaticHTMLInclude" />
+					<TalentCustom:Literal HTMLFileName="FooterBottom.html" ID="ltlFooterBottom" runat="server" OnLoad="GetStaticHTMLInclude" />
+				</footer>
+			</div>
+		
+		</div>
+						
+    </form>
+		
+    <script src="//cdn.jsdelivr.net/alertifyjs/1.7.1/alertify.min.js"></script>
+    <script src="../../JavaScript/TimepickerAddon.js"></script>
+    <script src="../../JavaScript/vendor/foundation/foundation.min.js"></script>
+    <script src="../../JavaScript/vendor/jquery.matchHeight-min.js"></script>
+    <script src="//cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+    <script src="../../JavaScript/vendor/select2/js/select2.min.js"></script>
+    <script src="../../JavaScript/Application/TalentEBusinessSuite.js"></script>
+	
+	<!-- Mobile seat selection stuff -->
+	<script src="/App_Themes/PWS.Southampton/js/hammer.min.js"></script>
+    <script src="/App_Themes/PWS.Southampton/js/mobile.seat.selection.js"></script>
+
+    <script src="/App_Themes/PWS.Southampton/js/theme.js"></script>
+
+    <!-- IMPORTANT APPLICATION STUFF DO NOT DELETE!! -->
+    <div id="loading-image" style="display: none" class="ebiz-loading-default ebiz-loading-results">
+        <i class="fa fa-spinner fa-pulse"></i>
+    </div>
+
+    <%=GetPageExtraDataForBody()%>
+    <%= GetTrackingBodyCodesText %>
+
+</body>
+</html>

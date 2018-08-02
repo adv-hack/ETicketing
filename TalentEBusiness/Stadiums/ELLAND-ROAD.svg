@@ -1,0 +1,166 @@
+<svg>
+<g id="LABELS">
+	<text fid="E-L28" transform="matrix(1 0 0 1 136.207 123.478)" fill="#FFFFFF" font-family="'Arial'" font-size="10">L28</text>
+	<text fid="E-L29" transform="matrix(1 0 0 1 179.354 123.478)" fill="#FFFFFF" font-family="'Arial'" font-size="10">L29</text>
+	<text fid="E-L30" transform="matrix(1 0 0 1 222.8149 123.478)" fill="#FFFFFF" font-family="'Arial'" font-size="10">L30</text>
+	<text fid="E-L31" transform="matrix(1 0 0 1 267.6685 123.478)" fill="#FFFFFF" font-family="'Arial'" font-size="10">L31</text>
+	<text fid="E-L32" transform="matrix(1 0 0 1 317.2573 123.478)" fill="#FFFFFF" font-family="'Arial'" font-size="10">L32</text>
+	<text fid="E-L33" transform="matrix(1 0 0 1 371.8613 123.478)" fill="#FFFFFF" font-family="'Arial'" font-size="10">L33</text>
+	<text fid="E-L34" transform="matrix(1.1598 0 0 1 422.8262 123.478)" fill="#FFFFFF" font-family="'Arial'" font-size="10">L34</text>
+	<text fid="E-L35" transform="matrix(1.1598 0 0 1 463.7793 123.478)" fill="#FFFFFF" font-family="'Arial'" font-size="10">L35</text>
+	<text fid="E-L36" transform="matrix(1 0 0 1 133.8857 37.3188)" fill="#FFFFFF" font-family="'Arial'" font-size="10">L36</text>
+	<text fid="E-L37" transform="matrix(1 0 0 1 172.2515 37.3188)" fill="#FFFFFF" font-family="'Arial'" font-size="10">L37</text>
+	<text fid="E-L38" transform="matrix(1 0 0 1 213.4819 37.3188)" fill="#FFFFFF" font-family="'Arial'" font-size="10">L38</text>
+	<text fid="E-L39" transform="matrix(1 0 0 1 255.9082 37.3188)" fill="#FFFFFF" font-family="'Arial'" font-size="10">L39</text>
+	<text fid="E-L40" transform="matrix(1 0 0 1 299.5308 37.3188)" fill="#FFFFFF" font-family="'Arial'" font-size="10">L40</text>
+	<text fid="E-L41" transform="matrix(1 0 0 1 343.1543 37.3188)" fill="#FFFFFF" font-family="'Arial'" font-size="10">L41</text>
+	<text fid="E-L42" transform="matrix(1 0 0 1 385.5801 37.3188)" fill="#FFFFFF" font-family="'Arial'" font-size="10">L42</text>
+	<text fid="E-L43" transform="matrix(1.1598 0 0 1 425.4785 37.3188)" fill="#FFFFFF" font-family="'Arial'" font-size="10">L43</text>
+	<text fid="E-L44" transform="matrix(1.1598 0 0 1 463.8584 37.3188)" fill="#FFFFFF" font-family="'Arial'" font-size="10">L44</text>
+	<text fid="SE-SEL" transform="matrix(1.1598 0 0 1 505.3789 165.0933)" fill="#FFFFFF" font-family="'Arial'" font-size="10">SEL</text>
+	<text fid="SE-SE1" transform="matrix(1.1598 0 0 1 498.9531 88.3101)" fill="#FFFFFF" font-family="'Arial'" font-size="10">SE1</text>
+	<text fid="SE-SE2" transform="matrix(1.1598 0 0 1 539.2051 101.6948)" fill="#FFFFFF" font-family="'Arial'" font-size="10">SE2</text>
+	<text fid="SE-SE3" transform="matrix(1.1598 0 0 1 578.2227 149.2915)" fill="#FFFFFF" font-family="'Arial'" font-size="10">SE3</text>
+	<text fid="S-FA1" transform="matrix(1.1598 0 0 1 522.3066 201.7993)" fill="#FFFFFF" font-family="'Arial'" font-size="10">FA1</text>
+	<text fid="S-FA2" transform="matrix(1.1598 0 0 1 522.3066 238.7866)" fill="#FFFFFF" font-family="'Arial'" font-size="10">FA2</text>
+	<text fid="S-FA3" transform="matrix(1.1598 0 0 1 522.3066 275.7534)" fill="#FFFFFF" font-family="'Arial'" font-size="10">FA3</text>
+	<text fid="S-FA4" transform="matrix(1.1598 0 0 1 522.3066 312.7539)" fill="#FFFFFF" font-family="'Arial'" font-size="10">FA4</text>
+	<text fid="S-FA5" transform="matrix(1.1598 0 0 1 522.3066 349.7363)" fill="#FFFFFF" font-family="'Arial'" font-size="10">FA5</text>
+	<text fid="S-FA6" transform="matrix(1.1598 0 0 1 522.3066 386.7188)" fill="#FFFFFF" font-family="'Arial'" font-size="10">FA6</text>
+	<text fid="S-FA7" transform="matrix(1.1598 0 0 1 533.6377 425.7969)" fill="#FFFFFF" font-family="'Arial'" font-size="10">FA7</text>
+	<text fid="S-SS1" transform="matrix(1.1598 0 0 1 591.1328 201.7993)" fill="#FFFFFF" font-family="'Arial'" font-size="10">SS1</text>
+	<text fid="S-SS2" transform="matrix(1.1598 0 0 1 591.1328 238.7866)" fill="#FFFFFF" font-family="'Arial'" font-size="10">SS2</text>
+	<text fid="S-SS3" transform="matrix(1.1598 0 0 1 591.1328 275.7534)" fill="#FFFFFF" font-family="'Arial'" font-size="10">SS3</text>
+	<text fid="S-SS4" transform="matrix(1.1598 0 0 1 591.1328 312.7539)" fill="#FFFFFF" font-family="'Arial'" font-size="10">SS4</text>
+	<text fid="S-SS5" transform="matrix(1.1598 0 0 1 591.1328 349.7363)" fill="#FFFFFF" font-family="'Arial'" font-size="10">SS5</text>
+	<text fid="S-SS6" transform="matrix(1.1598 0 0 1 591.1328 386.7188)" fill="#FFFFFF" font-family="'Arial'" font-size="10">SS6</text>
+	<text fid="W-C15" transform="matrix(1.1598 0 0 1 488.3516 425.9316)" fill="#FFFFFF" font-family="'Arial'" font-size="10">C15</text>
+	<text fid="W-C16" transform="matrix(1.1598 0 0 1 445.3438 425.9316)" fill="#FFFFFF" font-family="'Arial'" font-size="10">C16</text>
+	<text fid="W-C17" transform="matrix(1.1598 0 0 1 400.418 425.9316)" fill="#FFFFFF" font-family="'Arial'" font-size="10">C17</text>
+	<text fid="W-C18" transform="matrix(1.1598 0 0 1 341.1514 425.9316)" fill="#FFFFFF" font-family="'Arial'" font-size="10">C18</text>
+	<text fid="W-C19" transform="matrix(1.1598 0 0 1 288.5835 425.9316)" fill="#FFFFFF" font-family="'Arial'" font-size="10">C19</text>
+	<text fid="W-C20" transform="matrix(1.1598 0 0 1 241.5176 425.9316)" fill="#FFFFFF" font-family="'Arial'" font-size="10">C20</text>
+	<text fid="W-C21" transform="matrix(1.1598 0 0 1 194.6274 425.9316)" fill="#FFFFFF" font-family="'Arial'" font-size="10">C21</text>
+	<text fid="W-C22" transform="matrix(1.1598 0 0 1 146.8315 425.9316)" fill="#FFFFFF" font-family="'Arial'" font-size="10">C22</text>
+	<text fid="W-B1" transform="matrix(1.1598 0 0 1 550.8164 476.8818)" fill="#FFFFFF" font-family="'Arial'" font-size="10">B1</text>
+	<text fid="W-B2" transform="matrix(1.1598 0 0 1 494.8965 476.8818)" fill="#FFFFFF" font-family="'Arial'" font-size="10">B2</text>
+	<text fid="W-B3" transform="matrix(1.1598 0 0 1 445.4727 476.8818)" fill="#FFFFFF" font-family="'Arial'" font-size="10">B3</text>
+	<text fid="W-B4" transform="matrix(1.1598 0 0 1 407.7236 476.8818)" fill="#FFFFFF" font-family="'Arial'" font-size="10">B4</text>
+	<text fid="W-BREM" transform="matrix(1.1598 0 0 1 327.2334 476.8818)" fill="#FFFFFF" font-family="'Arial'" font-size="10">BREM</text>
+	<text fid="W-D11" transform="matrix(1.1598 0 0 1 241.5176 476.8818)" fill="#FFFFFF" font-family="'Arial'" font-size="10">D11</text>
+	<text fid="W-D12" transform="matrix(1.1598 0 0 1 194.6274 476.8818)" fill="#FFFFFF" font-family="'Arial'" font-size="10">D12</text>
+	<text fid="W-D13" transform="matrix(1.1598 0 0 1 142.2344 476.8818)" fill="#FFFFFF" font-family="'Arial'" font-size="10">D13</text>
+	<text fid="W-F23" transform="matrix(1.1598 0 0 1 87.207 476.8828)" fill="#FFFFFF" font-family="'Arial'" font-size="10">F23</text>
+	<text fid="NW-F24" transform="matrix(1.1598 0 0 1 26.7813 435.2773)" fill="#FFFFFF" font-family="'Arial'" font-size="10">F24</text>
+	<text fid="N-N1" transform="matrix(1.1598 0 0 1 89.3232 420.9307)" fill="#FFFFFF" font-family="'Arial'" font-size="10">N1</text>
+	<text fid="N-N2" transform="matrix(1.1598 0 0 1 89.3232 379.8906)" fill="#FFFFFF" font-family="'Arial'" font-size="10">N2</text>
+	<text fid="N-N3" transform="matrix(1.1598 0 0 1 89.3232 334.0996)" fill="#FFFFFF" font-family="'Arial'" font-size="10">N3</text>
+	<text fid="N-N4" transform="matrix(1.1598 0 0 1 89.3232 288.3081)" fill="#FFFFFF" font-family="'Arial'" font-size="10">N4</text>
+	<text fid="N-N5" transform="matrix(1.1598 0 0 1 89.3232 242.5171)" fill="#FFFFFF" font-family="'Arial'" font-size="10">N5</text>
+	<text fid="N-N6" transform="matrix(1.1598 0 0 1 89.3232 196.7261)" fill="#FFFFFF" font-family="'Arial'" font-size="10">N6</text>
+	<text fid="N-N7" transform="matrix(1.1598 0 0 1 29.3604 383.6943)" fill="#FFFFFF" font-family="'Arial'" font-size="10">N7</text>
+	<text fid="N-N8" transform="matrix(1.1598 0 0 1 29.3604 345.5137)" fill="#FFFFFF" font-family="'Arial'" font-size="10">N8</text>
+	<text fid="N-N9" transform="matrix(1.1598 0 0 1 29.3604 307.334)" fill="#FFFFFF" font-family="'Arial'" font-size="10">N9</text>
+	<text fid="N-N10" transform="matrix(1.1598 0 0 1 26.1357 269.1509)" fill="#FFFFFF" font-family="'Arial'" font-size="10">N10</text>
+	<text fid="N-N11" transform="matrix(1.1598 0 0 1 26.1357 230.9683)" fill="#FFFFFF" font-family="'Arial'" font-size="10">N11</text>
+	<text fid="N-N12" transform="matrix(1.1598 0 0 1 26.1357 192.7866)" fill="#FFFFFF" font-family="'Arial'" font-size="10">N12</text>
+	<text fid="NE-NEL" transform="matrix(1.1598 0 0 1 87.3555 150.6421)" fill="#FFFFFF" font-family="'Arial'" font-size="10">NEL</text>
+	<text fid="NE-H25" transform="matrix(1.1598 0 0 1 24.0889 151.8306)" fill="#FFFFFF" font-family="'Arial'" font-size="10">H25</text>
+	<text fid="NE-H26" transform="matrix(1.1598 0 0 1 47.3623 102.0503)" fill="#FFFFFF" font-family="'Arial'" font-size="10">H26</text>
+	<text fid="NE-H27" transform="matrix(1.1598 0 0 1 94.624 80.8091)" fill="#FFFFFF" font-family="'Arial'" font-size="10">H27</text>
+</g>
+<g id="AREAS">
+	<rect id="E-L28" x="125.247" y="70.291" width="38.604" height="101.04"/>
+	<rect id="E-L29" x="165.852" y="70.357" width="43.689" height="100.974"/>
+	<rect id="E-L30" x="211.541" y="70.291" width="39.232" height="101.04"/>
+	<rect id="E-L31" x="252.773" y="70.291" width="46.475" height="101.04"/>
+	<rect id="E-L32" x="301.248" y="70.156" width="48.703" height="101.175"/>
+	<rect id="E-L33" x="351.951" y="70.156" width="56.506" height="101.175"/>
+	<rect id="E-L34" x="410.457" y="70.291" width="44.089" height="101.04"/>
+	<rect id="E-L35" x="456.546" y="70.291" width="33.818" height="101.04"/>
+	<rect id="E-L36" x="125.32" y="1.091" width="33.816" height="67.121"/>
+	<rect id="E-L37" x="160.979" y="1.091" width="39.229" height="67.188"/>
+	<rect id="E-L38" x="202.208" y="1.091" width="39.231" height="67.188"/>
+	<rect id="E-L39" x="243.44" y="1" width="41.622" height="67.278"/>
+	<rect id="E-L40" x="287.062" y="1" width="41.624" height="67.278"/>
+	<rect id="E-L41" x="330.686" y="1" width="41.622" height="67.278"/>
+	<rect id="E-L42" x="374.308" y="1.091" width="39.23" height="67.188"/>
+	<rect id="E-L43" x="415.538" y="1.091" width="39.23" height="67.188"/>
+	<rect id="E-L44" x="456.612" y="1.091" width="33.843" height="67.121"/>
+	<polygon id="SE-SEL" points="M492.43,185.199v-65.547c7.369,0.109,14.881,1.423,22.342,3.907 c10.932,3.787,20.822,10.25,28.593,18.687c9.646,10.545,15.472,23.446,16.885,37.366l-58.121,0.025v5.562H492.43z"/>
+	<polygon id="SE-SE1" points="M514.474,121.383c-7.403-2.371-14.81-3.624-22.044-3.73v-67.75 c15.061,0.105,30.177,2.593,44.968,7.397L514.474,121.383z"/>
+	<polygon id="SE-SE2" points="M544.138,140.169c-7.696-8.117-17.259-14.382-27.771-18.191 l22.927-64.092c20.536,7.118,39.401,18.962,54.669,34.322L544.138,140.169z"/>
+	<polygon id="SE-SE3" points="M562.259,179.637c-1.39-14.129-7.171-27.235-16.769-38.02 l49.871-48.005c22.645,23.539,35.935,54.015,37.515,86.024H562.259z"/>
+	<polygon id="S-FA1" points="497.726,216.604 497.726,187.199 504.128,187.199 504.128,181.637 568.154,181.637 568.154,216.604"/>
+	<rect id="S-FA2" x="497.726" y="218.628" width="70.463" height="34.982"/>
+	<rect id="S-FA3" x="497.726" y="255.586" width="70.463" height="35.008"/>
+	<rect id="S-FA4" x="497.726" y="292.57" width="70.463" height="35.008"/>
+	<rect id="S-FA5" x="497.726" y="329.553" width="70.463" height="35.008"/>
+	<rect id="S-FA6" x="497.726" y="366.535" width="70.463" height="35.008"/>
+	<polygon id="S-FA7" points="M506.367,403.543h61.81c-0.514,21.803-17.725,38.408-25.315,39.014 L506.367,403.543z"/>
+	<rect id="S-SS1" x="570.17" y="181.637" width="63.846" height="34.991"/>
+	<rect id="S-SS2" x="570.154" y="218.628" width="63.846" height="34.983"/>
+	<rect id="S-SS3" x="570.154" y="255.578" width="63.846" height="35.017"/>
+	<rect id="S-SS4" x="570.154" y="292.595" width="63.846" height="34.983"/>
+	<rect id="S-SS5" x="570.188" y="329.578" width="63.812" height="34.982"/>
+	<rect id="S-SS6" x="570.188" y="366.561" width="63.812" height="34.982"/>
+	<polygon id="W-C15" points="481.84,442.574 481.84,403.543 503.629,403.543 540.139,442.574"/>
+	<rect id="W-C16" x="432.188" y="403.615" width="47.587" height="39.029"/>
+	<rect id="W-C17" x="391.924" y="403.615" width="38.264" height="39.029"/>
+	<rect id="W-C18" x="323.536" y="403.615" width="56.505" height="39.029"/>
+	<rect id="W-C19" x="276.905" y="403.883" width="44.631" height="38.762"/>
+	<rect id="W-C20" x="229.406" y="403.615" width="45.499" height="39.029"/>
+	<rect id="W-C21" x="183.125" y="403.615" width="44.281" height="39.029"/>
+	<rect id="W-C22" x="133.813" y="403.883" width="47.312" height="38.762"/>
+	<rect id="W-B1" x="530.948" y="444.549" width="53.922" height="59.168"/>
+	<rect id="W-B2" x="475.029" y="444.574" width="53.919" height="59.117"/>
+	<rect id="W-B3" x="432.253" y="444.574" width="40.624" height="59.143"/>
+	<polygon id="W-B4" points="366.506,503.916 366.506,474.072 399.379,474.072 399.379,444.574 430.253,444.574 430.253,503.916 	"/>
+	<rect id="W-BREM" x="323.536" y="444.645" width="40.901" height="59.342"/>
+	<rect id="W-D11" x="229.406" y="444.645" width="45.499" height="59.141"/>
+	<rect id="W-D12" x="183.125" y="444.645" width="44.281" height="59.141"/>
+	<rect id="W-D13" x="124.62" y="444.645" width="56.505" height="59.141"/>
+	<polygon id="W-F23" points="M122.693,503.688c-26.167-0.158-50.666-6.557-70.988-18.539 l38.679-50.709c8.112,6.527,18.487,10.109,29.338,10.109l2.971,0.02V503.688z"/>
+	<polygon id="NW-F24" points="M49.978,484.09c-31.291-18.998-48.645-48.396-48.973-82.959h72.598 c0.286,12.229,5.794,23.791,15.246,31.996L49.978,484.09z"/>
+	<polygon id="N-N1" points="M118.722,442.488c-10.416-0.219-20.274-3.836-27.858-10.246 c-9.445-7.861-14.968-19.15-15.261-31.111h43.119V442.488z"/>
+	<rect id="N-N2" x="74.547" y="355.316" width="44.379" height="43.814"/>
+	<rect id="N-N3" x="74.547" y="309.525" width="44.383" height="43.813"/>
+	<rect id="N-N4" x="74.547" y="263.733" width="44.383" height="43.815"/>
+	<rect id="N-N5" x="74.547" y="217.942" width="44.383" height="43.815"/>
+	<rect id="N-N6" x="74.547" y="172.151" width="44.486" height="43.815"/>
+	<rect id="N-N7" x="1" y="362.924" width="71.547" height="36.207"/>
+	<rect id="N-N8" x="1" y="324.742" width="71.547" height="36.207"/>
+	<rect id="N-N9" x="1" y="286.562" width="71.547" height="36.208"/>
+	<rect id="N-N10" x="1" y="248.381" width="71.547" height="36.206"/>
+	<rect id="N-N11" x="1" y="210.198" width="71.547" height="36.206"/>
+	<rect id="N-N12" x="1" y="172.018" width="71.547" height="36.204"/>
+	<polygon id="NE-NEL" points="M63.965,169.847c0.129-11.203,2.431-21.879,6.675-30.933 c6.146-13.109,16.214-22.849,29.119-28.165c7.21-2.97,15.132-4.531,23.561-4.646v63.743H63.965z"/>
+	<polygon id="NE-H25" points="M1.004,169.847c0.165-21.996,5.731-42.959,16.132-61.366 l51.313,30.459c-4.185,9.249-6.364,19.634-6.485,30.907H1.004z"/>
+	<polygon id="NE-H26" points="M18.135,106.747c11.282-19.208,27.598-34.774,47.276-45.104 l32.456,47.735c-12.491,5.458-22.331,15.015-28.561,27.742L18.135,106.747z"/>
+	<polygon id="NE-H27" points="M67.204,60.724c16.987-8.512,35.855-12.895,56.116-13.034v56.463 c-8.468,0.108-16.388,1.602-23.568,4.442L67.204,60.724z"/>
+</g>
+<g id="PITCH">
+	<rect x="156.041" y="196.297" fill="#059348" width="304.363" height="182.62"/>
+	<rect x="156.041" y="196.297" fill="#056A38" width="27.669" height="182.62"/>
+	<rect x="211.38" y="196.297" fill="#056A38" width="27.669" height="182.62"/>
+	<rect x="266.718" y="196.297" fill="#056A38" width="27.67" height="182.62"/>
+	<rect x="322.057" y="196.297" fill="#056A38" width="27.67" height="182.62"/>
+	<rect x="377.398" y="196.297" fill="#056A38" width="27.668" height="182.62"/>
+	<rect x="432.734" y="196.297" fill="#056A38" width="27.672" height="182.62"/>
+	<rect x="168.215" y="208.472" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="280.016" height="158.271"/>
+	<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="308.223" y1="208.472" x2="308.223" y2="366.743"/>
+	<circle fill="none" stroke="#FFFFFF" stroke-miterlimit="10" cx="308.223" cy="287.607" r="36.524"/>
+	<rect x="168.215" y="251.083" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="36.523" height="73.049"/>
+	<rect x="168.215" y="263.258" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="18.262" height="48.7"/>
+	<polygon fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="M223.001,287.607c0-11.342-7.767-20.844-18.263-23.551v47.103 C215.234,308.45,223.001,298.95,223.001,287.607z"/>
+	<rect x="411.709" y="251.083" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="36.521" height="73.049"/>
+	<rect x="429.971" y="263.258" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="18.26" height="48.7"/>
+	<polygon fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="M393.445,287.607c0-11.342,7.768-20.844,18.264-23.551v47.103 C401.213,308.45,393.445,298.95,393.445,287.607z"/>
+</g>
+<g id="EXTRAS">
+	<text transform="matrix(1 0 0 1 276.8286 186.481)" font-family="'Arial'" font-size="10" fill="#000000">EAST STAND</text>
+	<text transform="matrix(1 0 0 1 235.4375 394.0664)" font-family="'Arial'" font-size="10" fill="#000000">JOHN CHARLES WEST STAND</text>
+	<text transform="matrix(0 1 -1 0 476.2402 251.7725)" font-family="'Arial'" font-size="10" fill="#000000">SOUTH STAND</text>
+	<text transform="matrix(0 -1 1 0 140.2041 320.9473)" font-family="'Arial'" font-size="10" fill="#000000">REVIE STAND</text>
+</g>
+</svg>

@@ -1,0 +1,36 @@
+<svg>
+<g id="PADDOCK">
+	<polygon id="PA-PA" stroke-width="0" points="83.813,60.999 83.813,85 119.815,85 131.815,97 131.815,85 151.815,85 
+		151.815,60.999 	"/>
+	<text fid="PA-PA" transform="matrix(1 0 0 1 93.458 71.6353)" fill="#FFFFFF" font-family="'Arial'" font-size="10">PADDOCK</text>
+</g>
+<g id="OPEN-COURSE">
+	<polygon id="OC-OC" stroke-width="0" points="523.549,103 523.549,127 559.552,127 571.552,139 571.552,127 616.552,127 616.552,103 
+			"/>
+	<text fid="OC-OC" transform="matrix(1 0 0 1 533.0996 112.9995)" fill="#FFFFFF" font-family="'Arial'" font-size="10">OPEN COURSE</text>
+</g>
+<g id="PADDOCK-RESTAURANT">
+	<polygon id="PD-PD" stroke-width="0" points="280.701,7.5 280.701,31.5 153.304,31.5 141.304,43.5 141.304,7.5 	"/>
+	<text fid="PD-PD" transform="matrix(1 0 0 1 151.8149 16.7002)" fill="#FFFFFF" font-family="'Arial'" font-size="10">PADDOCK RESTAURANT</text>
+</g>
+<g id="WYNNSTAY-RESTAURANT">
+	<polygon id="WN-WN" stroke-width="0" points="282.701,7.5 282.701,31.5 415.098,31.5 427.098,43.5 427.098,7.5 	"/>
+	<text fid="WN-WN" transform="matrix(1 0 0 1 292.5903 16.9355)" fill="#FFFFFF" font-family="'Arial'" font-size="10">WYNNSTAY RESTAURANT</text>
+</g>
+<g id="BMC">
+	<rect id="BMC-BMC" x="73" y="206" stroke-width="0" width="226" height="24"/>
+	<text fid="BMC-BMC" transform="matrix(1 0 0 1 127.6553 216.668)" fill="#FFFFFF" font-family="'Arial'" font-size="10">BOOKMAKERS COURSE</text>
+</g>
+<g id="BMAC">
+	<rect id="BMC-BMAC" x="73" y="236" stroke-width="0" width="226" height="24"/>
+	<text fid="BMC-BMAC" transform="matrix(1 0 0 1 99.2202 246.668)" fill="#FFFFFF" font-family="'Arial'" font-size="10">BOOKMAKERS ASSISTANT COURSE</text>
+</g>
+<g id="BMP">
+	<rect id="BMP-BMP" x="319" y="206" stroke-width="0" width="226" height="24"/>
+	<text fid="BMP-BMP" transform="matrix(1 0 0 1 370.6914 216.668)" fill="#FFFFFF" font-family="'Arial'" font-size="10">BOOKMAKERS PADDOCK</text>
+</g>
+<g id="BMAP">
+	<rect id="BMP-BMAP" x="319" y="236" stroke-width="0" width="226" height="24"/>
+	<text fid="BMP-BMAP" transform="matrix(1 0 0 1 342.2559 246.668)" fill="#FFFFFF" font-family="'Arial'" font-size="10">BOOKMAKERS ASSISTANT PADDOCK</text>
+</g>
+</svg>

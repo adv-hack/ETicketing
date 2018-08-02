@@ -1,0 +1,21 @@
+ .ebiz-logo img {
+	height: 2.000rem;
+	margin-bottom: 0.625rem;
+	margin-top: 0.625rem;
+	width: 13.969rem; }
+
+/* medium screens */
+@media only screen and (min-width: 40.063em) { 
+    .ebiz-logo img {
+		margin-top: 0.625rem;
+ 	}
+}
+
+/* large screens */
+@media only screen and (min-width: 64.063em) { 
+    .ebiz-logo img {
+		height: 3.000rem;
+		margin-bottom: 0.625rem;
+		margin-top: 1.250rem;
+		width: 20.938rem; }
+}

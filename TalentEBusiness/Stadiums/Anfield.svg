@@ -1,0 +1,223 @@
+<svg>
+<g id="AREAS">
+	<polygon id="CU-CE1" fill="#222222" points="117.011,59.783 117.011,2.177 140.061,2.177 140.061,51.626 146.088,51.626 
+		146.088,59.783 	"/>
+	<rect id="CU-CE2" x="142.061" y="2.177" fill="#222222" width="40.856" height="47.45"/>
+	<rect id="CU-CE3" x="184.917" y="2.177" fill="#222222" width="40.856" height="47.45"/>
+	<polygon id="CU-CE4" fill="#222222" points="227.773,49.626 227.773,2.177 270.353,2.177 
+		270.353,43.008 232.402,43.008 232.402,49.626 	"/>
+	<rect id="CU-CE5" x="272.353" y="2.177" fill="#222222" width="40.855" height="40.832"/>
+	<rect id="CU-CE6" x="315.208" y="2.177" fill="#222222" width="41.993" height="40.832"/>
+	<polygon id="CU-CE7" fill="#222222" points="371.612,49.626 371.612,43.008 359.2,43.008 
+		359.2,2.177 404.24,2.177 404.24,49.626 	"/>
+	<rect id="CU-CE8" x="406.24" y="2.177" fill="#222222" width="49.05" height="47.45"/>
+	<rect id="CU-CE9" x="457.29" y="2.177" fill="#222222" width="36.694" height="47.45"/>
+	<polygon id="LC-KG" fill="#222222" points="146.088,67.181 146.088,61.783 
+		117.011,61.783 117.011,102.82 182.917,102.82 182.917,67.181 	"/>
+	<rect id="LC-KH" x="184.917" y="67.181" fill="#222222" width="40.855" height="35.639"/>
+	<rect id="LC-KJ" x="227.772" y="67.181" fill="#222222" width="42.581" height="35.639"/>
+	<rect id="LC-KK" x="272.353" y="67.181" fill="#222222" width="40.855" height="35.639"/>
+	<rect id="LC-KL" x="315.208" y="67.181" fill="#222222" width="41.993" height="35.639"/>
+	<rect id="LC-KM" x="359.2" y="67.181" fill="#222222" width="45.04" height="35.639"/>
+	<rect id="LC-KN" x="406.24" y="67.181" fill="#222222" width="40.136" height="35.639"/>
+	<polygon id="LC-KP" fill="#222222" points="448.376,102.82 448.376,51.626 
+		493.984,51.626 493.984,72.015 463.181,102.82 	"/>
+	<polygon id="KOP-109" fill="#222222" points="518.475,75.849 514.056,71.429 
+		495.984,71.429 495.984,45.741 530.882,45.741 530.882,75.849 	"/>
+	<polygon id="KOP-108" fill="#222222" points="473.514,115.86 473.514,105.424 
+		490.899,105.424 518.475,77.849 530.882,77.849 530.882,115.86 	"/>
+	
+		<rect id="KOP-107" x="473.514" y="117.86" fill="#222222" width="71.676" height="43.557"/>
+	
+		<rect id="KOP-106" x="473.514" y="163.417" fill="#222222" width="71.676" height="43.558"/>
+	
+		<rect id="KOP-105" x="473.514" y="208.975" fill="#222222" width="71.676" height="43.558"/>
+	
+		<rect id="KOP-104" x="473.514" y="254.532" fill="#222222" width="71.676" height="43.558"/>
+	
+		<rect id="KOP-103" x="473.514" y="300.09" fill="#222222" width="71.676" height="45.829"/>
+	<polygon id="KOP-102" fill="#222222" points="513.963,379.047 490.728,355.813 
+		473.514,355.813 473.514,347.919 530.882,347.919 530.882,379.047 	"/>
+	
+		<rect id="KOP-208" x="532.882" y="71.217" fill="#222222" width="66.69" height="44.644"/>
+	
+		<rect id="KOP-207" x="547.189" y="117.86" fill="#222222" width="67.132" height="43.557"/>
+	
+		<rect id="KOP-206" x="547.189" y="163.417" fill="#222222" width="51.564" height="43.558"/>
+	
+		<rect id="KOP-205" x="547.189" y="208.975" fill="#222222" width="51.564" height="43.558"/>
+	
+		<rect id="KOP-204" x="547.189" y="254.532" fill="#222222" width="51.564" height="43.558"/>
+	
+		<rect id="KOP-203" x="547.189" y="300.09" fill="#222222" width="67.132" height="45.829"/>
+	
+		<rect id="KOP-202" x="532.882" y="347.919" fill="#222222" width="66.69" height="39.443"/>
+	
+		<rect id="KOP-306" x="600.754" y="163.417" fill="#222222" width="32.246" height="43.558"/>
+	
+		<rect id="KOP-305" x="600.754" y="208.975" fill="#222222" width="32.246" height="43.558"/>
+	
+		<rect id="KOP-304" x="600.754" y="254.532" fill="#222222" width="32.246" height="43.558"/>
+	<polygon id="MS-MW" fill="#222222" points="455.279,472.823 455.279,389.367 
+		473.934,389.367 473.934,381.047 530.882,381.047 530.882,387.434 521.957,387.434 521.957,406.886 485.593,406.886 
+		485.593,472.823 	"/>
+	
+		<rect id="MS-MA" x="384.304" y="389.367" fill="#222222" width="68.976" height="83.456"/>
+	
+		<rect id="MS-MB" x="331.707" y="389.367" fill="#222222" width="50.597" height="83.456"/>
+	<polygon id="MS-MC" fill="#222222" points="279.888,472.823 279.888,397.4 303.269,397.4 
+		303.269,389.367 329.707,389.367 329.707,472.823 	"/>
+	<polygon id="MS-MD" fill="#222222" points="228.068,472.823 228.068,389.367 
+		254.508,389.367 254.508,397.4 277.888,397.4 277.888,472.823 	"/>
+	
+		<rect id="MS-ME" x="175.471" y="389.367" fill="#222222" width="50.597" height="83.456"/>
+	
+		<rect id="MS-MF" x="111.055" y="389.367" fill="#222222" width="62.417" height="83.456"/>
+	<polygon id="MS-MX" fill="#222222" points="63.262,472.823 63.262,421.25 95.145,389.367 
+		109.055,389.367 109.055,472.823 	"/>
+	<polygon id="PK-PK1" fill="#222222" points="455.645,364.174 414.437,364.174 
+		414.437,387.367 471.934,387.367 471.934,380.461 	"/>
+	
+		<rect id="PK-PK2" x="380.02" y="364.174" fill="#222222" width="32.417" height="23.193"/>
+	
+		<rect id="PK-PK3" x="345.604" y="364.174" fill="#222222" width="32.415" height="23.193"/>
+	
+		<rect id="PK-PK4" x="311.188" y="364.174" fill="#222222" width="32.417" height="23.193"/>
+	
+		<rect id="PK-PK5" x="276.772" y="364.174" fill="#222222" width="32.416" height="23.193"/>
+	
+		<rect id="PK-PK6" x="242.355" y="364.174" fill="#222222" width="32.417" height="23.193"/>
+	
+		<rect id="PK-PK7" x="207.938" y="364.174" fill="#222222" width="32.417" height="23.193"/>
+	
+		<rect id="PK-PK8" x="173.523" y="364.174" fill="#222222" width="32.416" height="23.193"/>
+	<polygon id="PK-PK9" fill="#222222" points="123.196,364.174 106.625,380.744 
+		139.107,380.744 139.107,387.367 171.523,387.367 171.523,364.174 	"/>
+	<polygon id="AL-121" fill="#222222" points="54.538,393.437 54.538,352.79 
+		115.011,352.79 115.011,358.028 79.603,393.437 	"/>
+	
+		<rect id="AL-122" x="54.538" y="312.415" fill="#222222" width="60.474" height="38.375"/>
+	
+		<rect id="AL-123" x="54.538" y="272.041" fill="#222222" width="60.474" height="38.374"/>
+	
+		<rect id="AL-124" x="54.538" y="231.667" fill="#222222" width="60.474" height="38.375"/>
+	
+		<rect id="AL-125" x="54.538" y="191.292" fill="#222222" width="60.474" height="38.375"/>
+	
+		<rect id="AL-126" x="54.538" y="150.918" fill="#222222" width="60.474" height="38.374"/>
+	
+		<rect id="AL-127" x="54.538" y="110.543" fill="#222222" width="60.474" height="38.375"/>
+	<rect id="AL-128" x="83.627" y="73.589" fill="#222222" width="31.384" height="34.955"/>
+	<rect id="AL-129" x="54.538" y="73.589" fill="#222222" width="27.09" height="34.955"/>
+	<rect id="AU-221" x="2" y="352.79" fill="#222222" width="40.728" height="40.646"/>
+	<rect id="AU-222" x="2" y="312.415" fill="#222222" width="40.728" height="38.375"/>
+	<rect id="AU-223" x="2" y="272.041" fill="#222222" width="40.728" height="38.374"/>
+	<rect id="AU-224" x="2" y="231.667" fill="#222222" width="40.728" height="38.375"/>
+	<rect id="AU-225" x="2" y="191.292" fill="#222222" width="40.728" height="38.375"/>
+	<rect id="AU-226" x="2" y="150.918" fill="#222222" width="40.728" height="38.374"/>
+	<rect id="AU-227" x="2" y="110.543" fill="#222222" width="40.728" height="38.375"/>
+	<rect id="AU-228" x="2" y="73.589" fill="#222222" width="40.728" height="34.955"/>
+</g>
+<g id="EXTRAS">
+	<polygon fill="#FFFFFF" points="148.088,65.181 148.088,51.626 234.402,51.626 234.402,45.008 369.612,45.008 369.612,51.626 
+		446.376,51.626 446.376,65.181 	"/>
+	<text transform="matrix(1 0 0 1 265.2583 124.2915)" fill="#222222" font-family="'Arial'" font-size="9">CENTENARY </text>
+	<text transform="matrix(0 1 -1 0 458.2363 223.9941)" fill="#222222" font-family="'Arial'" font-size="9">KOP</text>
+	<text transform="matrix(1 0 0 1 266.5107 347.5029)" fill="#222222" font-family="'Arial'" font-size="9">MAIN STAND</text>
+	
+		<text transform="matrix(4.489659e-011 -1 1 4.489659e-011 129.9258 266.7461)" fill="#222222" font-family="'Arial'" font-size="9">ANFIELD ROAD</text>
+</g>
+<g id="LABELS">
+	<text fid="CU-CE1" transform="matrix(1 0 0 1 119.7959 24.9937)" fill="#FFFFFF" font-family="'Arial'" font-size="9">CE1</text>
+	<text fid="CU-CE2" transform="matrix(1 0 0 1 153.7349 24.9932)" fill="#FFFFFF" font-family="'Arial'" font-size="9">CE2</text>
+	<text fid="CU-CE3" transform="matrix(1 0 0 1 196.5908 24.9932)" fill="#FFFFFF" font-family="'Arial'" font-size="9">CE3</text>
+	<text fid="CU-CE4" transform="matrix(1 0 0 1 240.3091 24.9932)" fill="#FFFFFF" font-family="'Arial'" font-size="9">CE4</text>
+	<text fid="CU-CE5" transform="matrix(1 0 0 1 284.0264 24.9932)" fill="#FFFFFF" font-family="'Arial'" font-size="9">CE5</text>
+	<text fid="CU-CE6" transform="matrix(1 0 0 1 327.4502 24.9932)" fill="#FFFFFF" font-family="'Arial'" font-size="9">CE6</text>
+	<text fid="CU-CE7" transform="matrix(1 0 0 1 372.9668 24.9932)" fill="#FFFFFF" font-family="'Arial'" font-size="9">CE7</text>
+	<text fid="CU-CE8" transform="matrix(1 0 0 1 422.0117 24.9932)" fill="#FFFFFF" font-family="'Arial'" font-size="9">CE8</text>
+	<text fid="CU-CE9" transform="matrix(1 0 0 1 466.8828 24.9932)" fill="#FFFFFF" font-family="'Arial'" font-size="9">CE9</text>
+	<text fid="LC-KG" transform="matrix(1 0 0 1 143.4624 87.4004)" fill="#FFFFFF" font-family="'Arial'" font-size="9">KG</text>
+	<text fid="LC-KH" transform="matrix(1 0 0 1 199.0933 87.4009)" fill="#FFFFFF" font-family="'Arial'" font-size="9">KH</text>
+	<text fid="LC-KJ" transform="matrix(1 0 0 1 243.8105 87.4009)" fill="#FFFFFF" font-family="'Arial'" font-size="9">KJ</text>
+	<text fid="LC-KK" transform="matrix(1 0 0 1 286.7773 87.4009)" fill="#FFFFFF" font-family="'Arial'" font-size="9">KK</text>
+	<text fid="LC-KL" transform="matrix(1 0 0 1 330.7002 87.4009)" fill="#FFFFFF" font-family="'Arial'" font-size="9">KL</text>
+	<text fid="LC-KM" transform="matrix(1 0 0 1 374.9707 87.4009)" fill="#FFFFFF" font-family="'Arial'" font-size="9">KM</text>
+	<text fid="LC-KN" transform="matrix(1 0 0 1 420.0566 87.4009)" fill="#FFFFFF" font-family="'Arial'" font-size="9">KN</text>
+	<text fid="LC-KP" transform="matrix(1 0 0 1 460.1777 79.6235)" fill="#FFFFFF" font-family="'Arial'" font-size="9">KP</text>
+	<text fid="KOP-109" transform="matrix(1 0 0 1 504.2363 63.1953)" fill="#FFFFFF" font-family="'Arial'" font-size="9">109</text>
+	<text fid="KOP-108" transform="matrix(1 0 0 1 501.8438 109.2554)" fill="#FFFFFF" font-family="'Arial'" font-size="9">108</text>
+	<text fid="KOP-107" transform="matrix(1 0 0 1 501.8438 142.0391)" fill="#FFFFFF" font-family="'Arial'" font-size="9">107</text>
+	<text fid="KOP-106" transform="matrix(1 0 0 1 501.8438 187.5967)" fill="#FFFFFF" font-family="'Arial'" font-size="9">106</text>
+	<text fid="KOP-105" transform="matrix(1 0 0 1 501.8438 233.1543)" fill="#FFFFFF" font-family="'Arial'" font-size="9">105</text>
+	<text fid="KOP-104" transform="matrix(1 0 0 1 501.8438 278.7119)" fill="#FFFFFF" font-family="'Arial'" font-size="9">104</text>
+	<text fid="KOP-103" transform="matrix(1 0 0 1 501.8438 326.7949)" fill="#FFFFFF" font-family="'Arial'" font-size="9">103</text>
+	<text fid="KOP-102" transform="matrix(1 0 0 1 501.8438 360.8838)" fill="#FFFFFF" font-family="'Arial'" font-size="9">102</text>
+	<text fid="KOP-208" transform="matrix(1 0 0 1 565.4629 96.8545)" fill="#FFFFFF" font-family="'Arial'" font-size="9">208</text>
+	<text fid="KOP-207" transform="matrix(1 0 0 1 565.4629 142.0391)" fill="#FFFFFF" font-family="'Arial'" font-size="9">207</text>
+	<text fid="KOP-206" transform="matrix(1 0 0 1 565.4629 187.5967)" fill="#FFFFFF" font-family="'Arial'" font-size="9">206</text>
+	<text fid="KOP-205" transform="matrix(1 0 0 1 565.4629 233.1543)" fill="#FFFFFF" font-family="'Arial'" font-size="9">205</text>
+	<text fid="KOP-204" transform="matrix(1 0 0 1 565.4629 278.7119)" fill="#FFFFFF" font-family="'Arial'" font-size="9">204</text>
+	<text fid="KOP-203" transform="matrix(1 0 0 1 565.4629 323.0039)" fill="#FFFFFF" font-family="'Arial'" font-size="9">203</text>
+	<text fid="KOP-202" transform="matrix(1 0 0 1 565.4639 370.041)" fill="#FFFFFF" font-family="'Arial'" font-size="9">202</text>
+	<text fid="KOP-306" transform="matrix(1 0 0 1 609.3691 187.5967)" fill="#FFFFFF" font-family="'Arial'" font-size="9">306</text>
+	<text fid="KOP-305" transform="matrix(1 0 0 1 609.3691 233.1538)" fill="#FFFFFF" font-family="'Arial'" font-size="9">305</text>
+	<text fid="KOP-304" transform="matrix(1 0 0 1 609.3691 278.7119)" fill="#FFFFFF" font-family="'Arial'" font-size="9">304</text>
+	<text fid="MS-MW" transform="matrix(1 0 0 1 462.0381 433.4951)" fill="#FFFFFF" font-family="'Arial'" font-size="9">MW</text>
+	<text fid="MS-MA" transform="matrix(1 0 0 1 412.041 433.4951)" fill="#FFFFFF" font-family="'Arial'" font-size="9">MA</text>
+	<text fid="MS-MB" transform="matrix(1 0 0 1 350.2559 433.4951)" fill="#FFFFFF" font-family="'Arial'" font-size="9">MB</text>
+	<text fid="MS-MC" transform="matrix(1 0 0 1 297.7988 433.4951)" fill="#FFFFFF" font-family="'Arial'" font-size="9">MC</text>
+	<text fid="MS-MD" transform="matrix(1 0 0 1 245.9795 433.4951)" fill="#FFFFFF" font-family="'Arial'" font-size="9">MD</text>
+	<text fid="MS-ME" transform="matrix(1 0 0 1 194.0195 433.4951)" fill="#FFFFFF" font-family="'Arial'" font-size="9">ME</text>
+	<text fid="MS-MF" transform="matrix(1 0 0 1 135.7651 433.4951)" fill="#FFFFFF" font-family="'Arial'" font-size="9">MF</text>
+	<text fid="MS-MX" transform="matrix(1 0 0 1 79.4082 433.4951)" fill="#FFFFFF" font-family="'Arial'" font-size="9">MX</text>
+	<text fid="PK-PK1" transform="matrix(1 0 0 1 424.6797 378.1719)" fill="#FFFFFF" font-family="'Arial'" font-size="9">PK1</text>
+	<text fid="PK-PK2" transform="matrix(1 0 0 1 387.7227 378.1709)" fill="#FFFFFF" font-family="'Arial'" font-size="9">PK2</text>
+	<text fid="PK-PK3" transform="matrix(1 0 0 1 353.3066 378.1719)" fill="#FFFFFF" font-family="'Arial'" font-size="9">PK3</text>
+	<text fid="PK-PK4" transform="matrix(1 0 0 1 318.8906 378.1719)" fill="#FFFFFF" font-family="'Arial'" font-size="9">PK4</text>
+	<text fid="PK-PK5" transform="matrix(1 0 0 1 284.4741 378.1719)" fill="#FFFFFF" font-family="'Arial'" font-size="9">PK5</text>
+	<text fid="PK-PK6" transform="matrix(1 0 0 1 250.0581 378.1709)" fill="#FFFFFF" font-family="'Arial'" font-size="9">PK6</text>
+	<text fid="PK-PK7" transform="matrix(1 0 0 1 215.6411 378.1709)" fill="#FFFFFF" font-family="'Arial'" font-size="9">PK7</text>
+	<text fid="PK-PK8" transform="matrix(1 0 0 1 181.2251 378.1709)" fill="#FFFFFF" font-family="'Arial'" font-size="9">PK8</text>
+	<text fid="PK-PK9" transform="matrix(1 0 0 1 145.5688 378.1709)" fill="#FFFFFF" font-family="'Arial'" font-size="9">PK9</text>
+	<text fid="AL-121" transform="matrix(1 0 0 1 77.2661 375.5137)" fill="#FFFFFF" font-family="'Arial'" font-size="9">121</text>
+	<text fid="AL-122" transform="matrix(1 0 0 1 77.2661 334.0029)" fill="#FFFFFF" font-family="'Arial'" font-size="9">122</text>
+	<text fid="AL-123" transform="matrix(1 0 0 1 77.2661 293.6289)" fill="#FFFFFF" font-family="'Arial'" font-size="9">123</text>
+	<text fid="AL-124" transform="matrix(1 0 0 1 77.2661 253.2549)" fill="#FFFFFF" font-family="'Arial'" font-size="9">124</text>
+	<text fid="AL-125" transform="matrix(1 0 0 1 77.2661 212.8799)" fill="#FFFFFF" font-family="'Arial'" font-size="9">125</text>
+	<text fid="AL-126" transform="matrix(1 0 0 1 77.2661 172.5059)" fill="#FFFFFF" font-family="'Arial'" font-size="9">126</text>
+	<text fid="AL-127" transform="matrix(1 0 0 1 77.2661 132.1318)" fill="#FFFFFF" font-family="'Arial'" font-size="9">127</text>
+	<text fid="AL-128" transform="matrix(1 0 0 1 91.811 93.4668)" fill="#FFFFFF" font-family="'Arial'" font-size="9">128</text>
+	<text fid="AL-129" transform="matrix(1 0 0 1 60.5742 93.4668)" fill="#FFFFFF" font-family="'Arial'" font-size="9">129</text>
+	<text fid="AU-221" transform="matrix(1 0 0 1 14.8555 375.5137)" fill="#FFFFFF" font-family="'Arial'" font-size="9">221</text>
+	<text fid="AU-222" transform="matrix(1 0 0 1 14.8555 334.0029)" fill="#FFFFFF" font-family="'Arial'" font-size="9">222</text>
+	<text fid="AU-223" transform="matrix(1 0 0 1 14.8555 293.6279)" fill="#FFFFFF" font-family="'Arial'" font-size="9">223</text>
+	<text fid="AU-224" transform="matrix(1 0 0 1 14.8555 253.2539)" fill="#FFFFFF" font-family="'Arial'" font-size="9">224</text>
+	<text fid="AU-225" transform="matrix(1 0 0 1 14.8555 212.8799)" fill="#FFFFFF" font-family="'Arial'" font-size="9">225</text>
+	<text fid="AU-226" transform="matrix(1 0 0 1 14.8555 172.5059)" fill="#FFFFFF" font-family="'Arial'" font-size="9">226</text>
+	<text fid="AU-227" transform="matrix(1 0 0 1 14.8555 132.1318)" fill="#FFFFFF" font-family="'Arial'" font-size="9">227</text>
+	<text fid="AU-228" transform="matrix(1 0 0 1 14.8555 93.4668)" fill="#FFFFFF" font-family="'Arial'" font-size="9">228</text>
+</g>
+<g id="PITCH">
+	<g>
+		<rect x="140.039" y="140.962" fill="#059348" width="308.444" height="185.069"/>
+		<rect x="140.039" y="140.962" fill="#056A38" width="28.039" height="185.069"/>
+		<rect x="196.119" y="140.962" fill="#056A38" width="28.04" height="185.069"/>
+		<rect x="252.199" y="140.962" fill="#056A38" width="28.041" height="185.069"/>
+		<rect x="308.279" y="140.962" fill="#056A38" width="28.041" height="185.069"/>
+		<rect x="364.364" y="140.962" fill="#056A38" width="28.039" height="185.069"/>
+		<rect x="420.441" y="140.962" fill="#056A38" width="28.044" height="185.069"/>
+		<rect x="152.376" y="153.301" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="283.771" height="160.394"/>
+		<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="294.262" y1="153.301" x2="294.262" y2="313.694"/>
+		<circle fill="none" stroke="#FFFFFF" stroke-miterlimit="10" cx="294.262" cy="233.498" r="37.014"/>
+		<rect x="152.376" y="196.484" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="37.013" height="74.029"/>
+		<rect x="152.376" y="208.821" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="18.506" height="49.354"/>
+		<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M207.896,233.497c0-11.494-7.871-21.123-18.508-23.866v47.734
+			C200.025,254.62,207.896,244.993,207.896,233.497z"/>
+		<rect x="399.135" y="196.484" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="37.013" height="74.029"/>
+		<rect x="417.642" y="208.821" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="18.506" height="49.354"/>
+		<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M380.627,233.497c0-11.494,7.872-21.123,18.508-23.866v47.734
+			C388.499,254.62,380.627,244.993,380.627,233.497z"/>
+	</g>
+</g>
+</svg>

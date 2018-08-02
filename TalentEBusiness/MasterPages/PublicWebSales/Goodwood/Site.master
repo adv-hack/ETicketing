@@ -1,0 +1,144 @@
+﻿<%@ Master Language="VB" CodeFile="~/MasterPages/Shared/SharedClasses/Site.master.vb" Inherits="MasterPages_Shared_SharedClasses_Site" %>
+<%@ Register Namespace="Talent.CustomControls" Assembly="__code" tagprefix="TalentCustom" %>
+<%@ Register Src="~/UserControls/HTMLInclude.ascx" TagName="HTMLInclude" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/MicroBasket.ascx" TagName="MicroBasket" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/PersonalisationBar.ascx" TagName="PersonalisationBar" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/Alerts.ascx" TagName="Alerts" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/TicketingLoyalty.ascx" TagName="TicketingLoyalty" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/SessionStatus.ascx" TagName="SessionStatus" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/PageHeaderText.ascx" TagName="PageHeaderText" TagPrefix="Talent" %>
+
+
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"> <!--<![endif]-->
+<head id="Head1" runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- External Libraries -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+    <!-- Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="//use.fontawesome.com/7e81f32a9c.js"></script>
+
+    <!-- Style -->
+    <link href="/App_Themes/PWS.Goodwood/PWS_GoodwoodNav.css" rel="stylesheet" />
+    <link href="/App_Themes/PWS.Goodwood/app.css" rel="stylesheet" />
+    <link href="/App_Themes/PWS.Goodwood/PWS_GoodwoodStadiums.css" rel="stylesheet" />
+    <link href="/App_Themes/PWS.Goodwood/PWS_GoodwoodSpecific.css" rel="stylesheet" />
+
+    
+    <link href="/Assets/CSS/base.css" rel="stylesheet" />
+    <link href="/Assets/CSS/basecustom.css" rel="stylesheet" />
+    <link href="/Assets/CSS/shop.css" rel="stylesheet" />
+
+    <!-- 3rd Party -->
+    <script src="/App_Themes/PWS.Goodwood/js/menu.js"></script>
+    <script src="/App_Themes/PWS.Goodwood/js/hoverIntent.js"></script>
+    <script src="/App_Themes/PWS.Goodwood/js/superfish.js"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/App_Themes/PWS.Goodwood/img/favicon.ico" type="image/x-icon">
+
+    <script src="/App_Themes/PWS.Goodwood/js/custom.js"></script>
+
+    <asp:ContentPlaceHolder id="SiteMasterHead" runat="server" />
+</head>
+
+<body id="MasterBodyTag" runat="server">
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KFJV5C"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KFJV5C');</script>
+    <!-- End Google Tag Manager -->
+
+        <form id="form1" runat="server">
+            <asp:ScriptManager ID="scmMainScriptManager" runat="server" />
+            
+            <TalentCustom:Literal HTMLFileName="navigation-start.html" ID="ltlNavigationStart" runat="server" OnLoad="GetStaticHTMLInclude" />
+            <div class="personalisation-basket-wrap">
+                <div class="row">
+                    <div class="large-4 columns">
+                        <TalentCustom:Literal HTMLFileName="header-contact.html" ID="ltlHeaderContact" runat="server" OnLoad="GetStaticHTMLInclude" />
+                    </div>
+                    <div class="large-8 columns">
+                        <Talent:PersonalisationBar ID="uscPersonalisationBar" runat="server" />
+                        <Talent:MicroBasket ID="uscMicroBasket" runat="server" />
+                    </div>
+                </div>
+            </div>
+            <TalentCustom:Literal HTMLFileName="navigation-end.html" ID="ltlNavigationEnd" runat="server" OnLoad="GetStaticHTMLInclude" />
+            <Talent:HTMLInclude ID="uscHTMLInclude3" runat="server" Usage="4" Sequence="2" />      
+            <Talent:HTMLInclude ID="uscHTMLInclude1" runat="server" Usage="4" Sequence="1" />
+
+            <section>
+                <Talent:HTMLInclude ID="uscHTMLInclude4" runat="server" Usage="2" Sequence="97" />
+                <Talent:HTMLInclude ID="uscHTMLInclude5" runat="server" Usage="2" Sequence="98" />
+                <div class="row ebiz-content">
+                    <div class="large-12 columns">
+                        <Talent:Alerts ID="uscAlerts" runat="server" />
+                        <Talent:HTMLInclude ID="uscHTMLInclude6" runat="server" Usage="2" Sequence="99" />
+                        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server" />
+                        <Talent:HTMLInclude ID="uscHTMLIncludeBottomCentreUnique" runat="server" Usage="2" Sequence="3" />
+                        <asp:ContentPlaceHolder ID="SiteMasterBody" runat="server" />
+                        <Talent:HTMLInclude ID="uscHTMLIncludeBottomBelowMasterBodyCentreUnique" runat="server" Usage="2" Sequence="2" />
+                    </div>
+                </div>
+            </section>
+                
+            <footer>
+                <Talent:HTMLInclude ID="uscHTMLInclude2" runat="server" Usage="5" Sequence="1" />
+                <TalentCustom:Literal HTMLFileName="footer.html" ID="ltlFooter" runat="server" OnLoad="GetStaticHTMLInclude" />
+            </footer>
+
+        </form>
+
+    <script src="//cdn.jsdelivr.net/alertifyjs/1.7.1/alertify.min.js"></script>
+    <script src="../../JavaScript/TimepickerAddon.js"></script>
+    <script src="../../JavaScript/vendor/foundation/foundation.min.js"></script>
+    <script src="../../JavaScript/vendor/jquery.matchHeight-min.js"></script>
+    <script src="../../JavaScript/vendor/fastclick.min.js"></script>
+    <script src="//cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+    <script src="../../JavaScript/vendor/select2/js/select2.min.js"></script>
+    <script src="../../JavaScript/Application/TalentEBusinessSuite.js"></script>
+
+    <!-- IMPORTANT APPLICATION STUFF DO NOT DELETE!! -->
+    <div id="loading-image" style="display: none" class="ebiz-loading-default ebiz-loading-results">
+        <i class="fa fa-spinner fa-pulse"></i>
+    </div>
+    <script src="//a248.e.akamai.net/images.talentarena.co.uk/Global/Lib/TinyNav.js-master/tinynav.min.js"></script>
+    <script>
+        // Responsive Shop Nav
+        $(function () {
+            // TinyNav.js 1
+            $(".AspNet-TreeView ul").tinyNav({
+            active: 'selected', // String: Set the "active" class
+            header: 'Select Category', // String: Specify text for "header" and show header instead of the active item
+            indent: '- ', // String: Specify text for indenting sub-items
+            label: '' // String: Sets the <label> text for the <select> (if not set, no label will be added)
+            });     
+        });
+    </script>
+
+    <%=GetPageExtraDataForBody()%>
+    <%= GetTrackingBodyCodesText %>
+
+    <a href="#" class="back-to-top">Back to Top</a>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+﻿<%@ Master Language="VB" CodeFile="~/MasterPages/Shared/SharedClasses/2Column.master.vb" Inherits="MasterPages_Shared_SharedClasses_2Column" %>
+<%@ Register Namespace="Talent.CustomControls" Assembly="__code" tagprefix="TalentCustom" %>
+<%@ Register Src="~/UserControls/PersonalisationBar.ascx" TagName="PersonalisationBar" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/Alerts.ascx" TagName="Alerts" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/MicroBasket.ascx" TagName="MicroBasket" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/HTMLInclude.ascx" TagName="HTMLInclude" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/SessionStatus.ascx" TagName="SessionStatus" TagPrefix="Talent" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="SiteMasterHead" runat="server">
+
+   <!-- page level scripting -->
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server" />
+
+    <!-- page extra data table scripting -->
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server" />
+
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="SiteMasterBody" runat="server">
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="scmMainScriptManager" runat="server" />
+        
+        <div class="header-container">
+            <header>
+                <div class="row">
+                    <div class="small-6 columns ebiz-mp-personalisation">
+                        <Talent:PersonalisationBar ID="uscPersonalisationBar" runat="server" />
+                        <Talent:Alerts ID="uscAlerts" runat="server" />
+                    </div>
+                    <div class="small-6 columns ebiz-mp-mini-basket">
+                        <Talent:MicroBasket ID="uscMicroBasket" runat="server" />
+                    </div>
+                </div>
+                <TalentCustom:Literal HTMLFileName="Delia.header.html" ID="ltlDeliaHeader" runat="server" OnLoad="GetStaticHTMLInclude" />
+                <Talent:HTMLInclude ID="uscHTMLInclude1" runat="server" Usage="4" Sequence="1" />
+            </header>
+        </div>
+    <section>
+        <div class="row ebiz-content">
+            <div class="medium-3 columns">
+                <Talent:HTMLInclude ID="uscHTMLInclude3" runat="server" Usage="1" Sequence="1" />
+                <Talent:SessionStatus ID="uscSessionStatus" runat="server" />
+                <TalentCustom:Literal HTMLFileName="sidebar.html" ID="ltlSidebar" runat="server" OnLoad="GetStaticHTMLInclude" />
+            </div>
+            <div class="medium-9 columns">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+            </div>
+        </div>
+    </section>
+    <footer>
+            <Talent:HTMLInclude ID="uscHTMLInclude2" runat="server" Usage="5" Sequence="1" />
+            <TalentCustom:Literal HTMLFileName="Delia.footer.html" ID="ltlFooter" runat="server" OnLoad="GetStaticHTMLInclude" />
+        </footer>
+        <script src="//a248.e.akamai.net/images.talentarena.co.uk/Global/Lib/foundation-5.3.0/js/foundation.min.js"></script>
+        <script>
+            $(document).foundation();
+        </script>      
+        <script src="/App_Themes/PWS.Delia/js/slick.min.js"></script>
+        <script src="/App_Themes/PWS.Delia/js/jquery.meanmenu.js"></script>
+        <script src="/App_Themes/PWS.Delia/js/hoverIntent.js"></script>
+        <script src="/App_Themes/PWS.Delia/js/jquery.uniform.min.js"></script>
+        <script src="/App_Themes/PWS.Delia/js/jquery.pickmeup.js"></script>
+        <script src="/App_Themes/PWS.Delia/js/ping.scripts.js"></script>
+    </form>
+    <%= GetPageExtraDataForBody()%>
+    <%= GetTrackingBodyCodesText()%>
+    
+</asp:Content>

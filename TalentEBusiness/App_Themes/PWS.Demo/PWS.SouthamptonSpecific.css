@@ -1,0 +1,142 @@
+
+*:focus {
+    outline: none;
+}
+
+/* Removal of stadium from Home Games page */
+
+body.producthome.HOME .ebiz-product-details .ebiz-product-detail.ebiz-stadium {
+	display: none;
+}
+
+/* Removal of time label for Travel Products */
+
+body.producttravel.TRAVEL #ticketing-products .ebiz-product-details .ebiz-product-detail.ebiz-time {
+	display: none;
+}
+
+/* Removal of product logos for Stadium Tours */
+
+body.producttravel.TOUR #ticketing-products .ebiz-product-header {
+	margin-top: 0;
+	padding: 36px 20px;
+}
+body.producttravel.TOUR #ticketing-products .ebiz-product-logos {
+	display: none;
+}
+
+/* Removal of sort by */
+
+.producthome .ebiz-top-pager .ebiz-sort-by,
+.productseason .ebiz-top-pager .ebiz-sort-by,
+.matchdayhospitality .ebiz-top-pager .ebiz-sort-by {
+	display: none;
+}
+
+/* Removal of Select different game on seat selection */
+
+.panel.ebiz-selection-a-different-game-wrap {
+	display: none;
+}
+
+/* Design changes for Membership products */
+
+body.productmembership #ticketing-products .ebiz-product-header {
+	margin-top: 0;
+	padding: 36px 20px;
+	border-bottom: none;
+	padding-bottom: 15px;
+}
+body.productmembership #ticketing-products .ebiz-header.ui-accordion-header {
+	padding-bottom: 36px
+}
+body.productmembership #ticketing-products .ebiz-product-logos,
+body.productmembership #ticketing-products .ebiz-product-wrap {
+	display: none;
+}
+body.productmembership .membership-benefits {
+	color: #777 !important;
+}
+body.productmembership .membership-benefits span {
+	display: block;
+	color: #d10a11;
+	text-transform: uppercase;
+}
+
+/* Removal of price breaks from StandAndAreaSelection.aspx */
+
+.standandareaselection .c-price-band-price-filter {
+	display: none;
+}
+
+/* Removal of product type filter from PurchaseHistory.aspx */
+
+.ebiz-purchase-history-filters-wrap .ebiz-product-type {
+	display: none;
+}
+
+/* Removal of unwanted info for membership sales */
+
+/* Price Band on product page */
+.productmembership table .ebiz-description {
+	display: none;
+}
+/* Date on basket */
+.ebiz-ticketing-products.ebiz-type-C h2 {
+	margin-bottom: 0;
+}
+.ebiz-ticketing-products.ebiz-type-C .ebiz-description-4 {
+	display: none;
+}
+.ebiz-ticketing-products.ebiz-type-C table .ebiz-price-band {
+	display: none;
+}
+
+/* Change of table heading etc so they are correct for the product */
+
+.ebiz-ticketing-basket th.ebiz-seat span.ud-basket-seat-header-text-travel,
+.ebiz-ticketing-basket th.ebiz-seat span.ud-basket-seat-header-text-tour {
+	display: none;
+} 
+.ebiz-ticketing-basket th.ebiz-price-band span.ud-basket-price-band-header-text-travel {
+	display: none;
+}
+/* Tours */
+.ebiz-ticketing-basket .ebiz-ticketing-products[class*="ebiz-code-GT"] .ebiz-description-5 {
+	display: none;
+}
+.ebiz-ticketing-basket .ebiz-ticketing-products[class*="ebiz-code-GT"] th.ebiz-seat span.ud-basket-seat-header-text-default {
+	display: none;
+}
+.ebiz-ticketing-basket .ebiz-ticketing-products[class*="ebiz-code-GT"] th.ebiz-seat span.ud-basket-seat-header-text-tour {
+	display: block;
+}
+@media screen and (max-width: 1023px) {
+	.ebiz-ticketing-basket .ebiz-ticketing-products[class*="ebiz-code-GT"] td.ebiz-seat:before {
+		content: "Tour Time"
+	}
+}
+/* Travel */
+.ebiz-ticketing-basket .ebiz-ticketing-products[class*="ebiz-code-TR"] .ebiz-description-5 {
+	display: none;
+}
+.ebiz-ticketing-basket .ebiz-ticketing-products[class*="ebiz-code-TR"] th.ebiz-seat span.ud-basket-seat-header-text-default {
+	display: none;
+}
+.ebiz-ticketing-basket .ebiz-ticketing-products[class*="ebiz-code-TR"] th.ebiz-seat span.ud-basket-seat-header-text-travel {
+	display: block;
+}
+.ebiz-ticketing-basket .ebiz-ticketing-products[class*="ebiz-code-TR"] th.ebiz-price-band span.ud-basket-price-band-header-text-default {
+	display: none;
+}
+.ebiz-ticketing-basket .ebiz-ticketing-products[class*="ebiz-code-TR"] th.ebiz-price-band span.ud-basket-price-band-header-text-travel {
+	display: block;
+}
+@media screen and (max-width: 1023px) {
+	.ebiz-ticketing-basket .ebiz-ticketing-products[class*="ebiz-code-TR"] td.ebiz-seat:before {
+		content: "Coach Number"
+	}
+}
+
+
+

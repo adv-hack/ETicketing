@@ -1,0 +1,1 @@
+$(function(){$("#ticketing-products").accordion({heightStyle:"content",navigation:true,collapsible:true,active:false,icons:false,header:"div.ebiz-header"});});

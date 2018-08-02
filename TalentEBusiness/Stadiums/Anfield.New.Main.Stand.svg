@@ -1,0 +1,255 @@
+<svg>
+<g id="AREAS">
+	<polyline id="CU-CE1" stroke-width="0" points="117.011,52.172 117.011,2.723 146.088,2.723 146.088,52.172 	"/>
+	<rect id="CU-CE2" x="148.088" y="2.723" stroke-width="0" width="34.828" height="47.45"/>
+	<rect id="CU-CE3" x="184.917" y="2.723" stroke-width="0" width="40.856" height="47.45"/>
+	<polygon id="CU-CE4" stroke-width="0" points="227.773,50.172 227.773,2.723 270.353,2.723 
+		270.353,43.554 232.402,43.554 232.402,50.172 	"/>
+	<rect id="CU-CE5" x="272.353" y="2.723" stroke-width="0" width="40.855" height="40.832"/>
+	<rect id="CU-CE6" x="315.208" y="2.723" stroke-width="0" width="41.993" height="40.832"/>
+	<polygon id="CU-CE7" stroke-width="0" points="371.612,50.172 371.612,43.554 359.2,43.554 
+		359.2,2.723 404.24,2.723 404.24,50.172 	"/>
+	<rect id="CU-CE8" x="406.24" y="2.723" stroke-width="0" width="40.136" height="47.45"/>
+	<rect id="CU-CE9" x="448.376" y="2.723" stroke-width="0" width="45.608" height="47.45"/>
+	<polygon id="LC-KG" stroke-width="0" points="146.088,67.727 146.088,65.329 
+		117.011,65.329 117.011,103.366 182.917,103.366 182.917,67.727 	"/>
+	<rect id="LC-KH" x="184.917" y="67.727" stroke-width="0" width="40.855" height="35.639"/>
+	<rect id="LC-KJ" x="227.772" y="67.727" stroke-width="0" width="42.581" height="35.639"/>
+	<rect id="LC-KK" x="272.353" y="67.727" stroke-width="0" width="40.855" height="35.639"/>
+	<rect id="LC-KL" x="315.208" y="67.727" stroke-width="0" width="41.993" height="35.639"/>
+	<rect id="LC-KM" x="359.2" y="67.727" stroke-width="0" width="45.04" height="35.639"/>
+	<rect id="LC-KN" x="406.24" y="67.727" stroke-width="0" width="40.136" height="35.639"/>
+	<polygon id="LC-KP" stroke-width="0" points="448.376,103.366 448.376,65.329 
+		493.984,65.329 493.984,72.561 463.181,103.366 	"/>
+	<polygon id="KOP-109" stroke-width="0" points="518.475,76.395 514.056,71.975 
+		495.984,71.975 495.984,46.287 530.882,46.287 530.882,76.395 	"/>
+	<polygon id="KOP-108" stroke-width="0" points="473.514,116.406 473.514,105.97 
+		490.899,105.97 518.475,78.395 530.882,78.395 530.882,116.406 	"/>
+	
+		<rect id="KOP-107" x="473.514" y="118.406" stroke-width="0" width="71.676" height="43.557"/>
+	
+		<rect id="KOP-106" x="473.514" y="163.963" stroke-width="0" width="71.676" height="43.558"/>
+	
+		<rect id="KOP-105" x="473.514" y="209.521" stroke-width="0" width="71.676" height="43.558"/>
+	
+		<rect id="KOP-104" x="473.514" y="255.078" stroke-width="0" width="71.676" height="43.558"/>
+	
+		<rect id="KOP-103" x="473.514" y="300.636" stroke-width="0" width="71.676" height="45.829"/>
+	<polygon id="KOP-102" stroke-width="0" points="513.963,379.593 490.728,356.358 
+		473.514,356.358 473.514,348.465 530.882,348.465 530.882,379.593 	"/>
+	
+		<rect id="KOP-208" x="532.882" y="71.763" stroke-width="0" width="66.69" height="44.644"/>
+	
+		<rect id="KOP-207" x="547.189" y="118.406" stroke-width="0" width="67.132" height="43.557"/>
+	
+		<rect id="KOP-206" x="547.189" y="163.963" stroke-width="0" width="51.564" height="43.558"/>
+	
+		<rect id="KOP-205" x="547.189" y="209.521" stroke-width="0" width="51.564" height="43.558"/>
+	
+		<rect id="KOP-204" x="547.189" y="255.078" stroke-width="0" width="51.564" height="43.558"/>
+	
+		<rect id="KOP-203" x="547.189" y="300.636" stroke-width="0" width="67.132" height="45.829"/>
+	
+		<rect id="KOP-202" x="532.882" y="348.465" stroke-width="0" width="66.69" height="39.443"/>
+	
+		<rect id="KOP-306" x="600.754" y="163.963" stroke-width="0" width="32.246" height="43.558"/>
+	
+		<rect id="KOP-305" x="600.754" y="209.521" stroke-width="0" width="32.246" height="43.558"/>
+	
+		<rect id="KOP-304" x="600.754" y="255.078" stroke-width="0" width="32.246" height="43.558"/>
+	<polygon id="AL-121" stroke-width="0" points="54.538,393.982 54.538,353.336 
+		115.011,353.336 115.011,358.574 79.603,393.982 	"/>
+	
+		<rect id="AL-122" x="54.538" y="312.961" stroke-width="0" width="60.474" height="38.375"/>
+	
+		<rect id="AL-123" x="54.538" y="272.587" stroke-width="0" width="60.474" height="38.374"/>
+	
+		<rect id="AL-124" x="54.538" y="232.212" stroke-width="0" width="60.474" height="38.375"/>
+	
+		<rect id="AL-125" x="54.538" y="191.838" stroke-width="0" width="60.474" height="38.375"/>
+	
+		<rect id="AL-126" x="54.538" y="151.464" stroke-width="0" width="60.474" height="38.374"/>
+	
+		<rect id="AL-127" x="54.538" y="111.089" stroke-width="0" width="60.474" height="38.375"/>
+	<rect id="AL-128" x="83.627" y="74.135" stroke-width="0" width="31.384" height="34.955"/>
+	<rect id="AL-129" x="54.538" y="74.135" stroke-width="0" width="27.09" height="34.955"/>
+	<rect id="AU-221" x="2" y="353.336" stroke-width="0" width="40.728" height="40.646"/>
+	<rect id="AU-222" x="2" y="312.961" stroke-width="0" width="40.728" height="38.375"/>
+	<rect id="AU-223" x="2" y="272.587" stroke-width="0" width="40.728" height="38.374"/>
+	<rect id="AU-224" x="2" y="232.212" stroke-width="0" width="40.728" height="38.375"/>
+	<rect id="AU-225" x="2" y="191.838" stroke-width="0" width="40.728" height="38.375"/>
+	<rect id="AU-226" x="2" y="151.464" stroke-width="0" width="40.728" height="38.374"/>
+	<rect id="AU-227" x="2" y="111.089" stroke-width="0" width="40.728" height="38.375"/>
+	<rect id="AU-228" x="2" y="74.135" stroke-width="0" width="40.728" height="34.955"/>
+</g>
+<g id="EXTRAS">
+	<polygon fill="#CCCCCC" points="148.088,65.727 148.088,52.172 234.402,52.172 234.402,45.554 369.612,45.554 369.612,52.172 
+		446.376,52.172 446.376,65.727 	"/>
+	<text transform="matrix(1 0 0 1 230.2583 124.8374)" fill="#333333" font-family="'Arial'" font-size="9">SIR KENNY DALGLISH STAND</text>
+	<text transform="matrix(0 1 -1 0 458.2363 224.54)" fill="#333333" font-family="'Arial'" font-size="9">KOP</text>
+	<text transform="matrix(1 0 0 1 266.5107 348.0488)" fill="#333333" font-family="'Arial'" font-size="9">MAIN STAND</text>
+	<text transform="matrix(0 -1 1 0 129.9258 267.292)" fill="#333333" font-family="'Arial'" font-size="9">ANFIELD ROAD</text>
+</g>
+<g id="LABELS">
+	<text fid="CU-CE1" transform="matrix(1 0 0 1 122.7959 25.5391)" fill="#F2F2F2" font-family="'Arial'" font-size="9">CE1</text>
+	<text fid="CU-CE2" transform="matrix(1 0 0 1 156.7485 25.5391)" fill="#F2F2F2" font-family="'Arial'" font-size="9">CE2</text>
+	<text fid="CU-CE3" transform="matrix(1 0 0 1 196.5908 25.5391)" fill="#F2F2F2" font-family="'Arial'" font-size="9">CE3</text>
+	<text fid="CU-CE4" transform="matrix(1 0 0 1 240.3091 25.5391)" fill="#F2F2F2" font-family="'Arial'" font-size="9">CE4</text>
+	<text fid="CU-CE5" transform="matrix(1 0 0 1 284.0264 25.5391)" fill="#F2F2F2" font-family="'Arial'" font-size="9">CE5</text>
+	<text fid="CU-CE6" transform="matrix(1 0 0 1 327.4502 25.5391)" fill="#F2F2F2" font-family="'Arial'" font-size="9">CE6</text>
+	<text fid="CU-CE7" transform="matrix(1 0 0 1 372.9668 25.5391)" fill="#F2F2F2" font-family="'Arial'" font-size="9">CE7</text>
+	<text fid="CU-CE8" transform="matrix(1 0 0 1 417.5537 25.5391)" fill="#F2F2F2" font-family="'Arial'" font-size="9">CE8</text>
+	<text fid="CU-CE9" transform="matrix(1 0 0 1 462.4268 25.5391)" fill="#F2F2F2" font-family="'Arial'" font-size="9">CE9</text>
+	<text fid="LC-KG" transform="matrix(1 0 0 1 143.4624 87.9463)" fill="#F2F2F2" font-family="'Arial'" font-size="9">KG</text>
+	<text fid="LC-KH" transform="matrix(1 0 0 1 199.0933 87.9473)" fill="#F2F2F2" font-family="'Arial'" font-size="9">KH</text>
+	<text fid="LC-KJ" transform="matrix(1 0 0 1 243.8105 87.9473)" fill="#F2F2F2" font-family="'Arial'" font-size="9">KJ</text>
+	<text fid="LC-KK" transform="matrix(1 0 0 1 286.7773 87.9473)" fill="#F2F2F2" font-family="'Arial'" font-size="9">KK</text>
+	<text fid="LC-KL" transform="matrix(1 0 0 1 330.7002 87.9473)" fill="#F2F2F2" font-family="'Arial'" font-size="9">KL</text>
+	<text fid="LC-KM" transform="matrix(1 0 0 1 374.9707 87.9473)" fill="#F2F2F2" font-family="'Arial'" font-size="9">KM</text>
+	<text fid="LC-KN" transform="matrix(1 0 0 1 420.0566 87.9473)" fill="#F2F2F2" font-family="'Arial'" font-size="9">KN</text>
+	<text fid="LC-KP" transform="matrix(1 0 0 1 460.1777 80.1699)" fill="#F2F2F2" font-family="'Arial'" font-size="9">KP</text>
+	<text fid="KOP-109" transform="matrix(1 0 0 1 504.2363 63.7412)" fill="#F2F2F2" font-family="'Arial'" font-size="9">109</text>
+	<text fid="KOP-108" transform="matrix(1 0 0 1 501.8438 109.8008)" fill="#F2F2F2" font-family="'Arial'" font-size="9">108</text>
+	<text fid="KOP-107" transform="matrix(1 0 0 1 501.8438 142.585)" fill="#F2F2F2" font-family="'Arial'" font-size="9">107</text>
+	<text fid="KOP-106" transform="matrix(1 0 0 1 501.8438 188.1426)" fill="#F2F2F2" font-family="'Arial'" font-size="9">106</text>
+	<text fid="KOP-105" transform="matrix(1 0 0 1 501.8438 233.7002)" fill="#F2F2F2" font-family="'Arial'" font-size="9">105</text>
+	<text fid="KOP-104" transform="matrix(1 0 0 1 501.8438 279.2578)" fill="#F2F2F2" font-family="'Arial'" font-size="9">104</text>
+	<text fid="KOP-103" transform="matrix(1 0 0 1 501.8438 327.3408)" fill="#F2F2F2" font-family="'Arial'" font-size="9">103</text>
+	<text fid="KOP-102" transform="matrix(1 0 0 1 501.8438 361.4297)" fill="#F2F2F2" font-family="'Arial'" font-size="9">102</text>
+	<text fid="KOP-208" transform="matrix(1 0 0 1 565.4629 97.4004)" fill="#F2F2F2" font-family="'Arial'" font-size="9">208</text>
+	<text fid="KOP-207" transform="matrix(1 0 0 1 565.4629 142.585)" fill="#F2F2F2" font-family="'Arial'" font-size="9">207</text>
+	<text fid="KOP-206" transform="matrix(1 0 0 1 565.4629 188.1426)" fill="#F2F2F2" font-family="'Arial'" font-size="9">206</text>
+	<text fid="KOP-205" transform="matrix(1 0 0 1 565.4629 233.7002)" fill="#F2F2F2" font-family="'Arial'" font-size="9">205</text>
+	<text fid="KOP-204" transform="matrix(1 0 0 1 565.4629 279.2578)" fill="#F2F2F2" font-family="'Arial'" font-size="9">204</text>
+	<text fid="KOP-203" transform="matrix(1 0 0 1 565.4629 323.5498)" fill="#F2F2F2" font-family="'Arial'" font-size="9">203</text>
+	<text fid="KOP-202" transform="matrix(1 0 0 1 565.4639 370.5869)" fill="#F2F2F2" font-family="'Arial'" font-size="9">202</text>
+	<text fid="KOP-306" transform="matrix(1 0 0 1 609.3691 188.1426)" fill="#F2F2F2" font-family="'Arial'" font-size="9">306</text>
+	<text fid="KOP-305" transform="matrix(1 0 0 1 609.3691 233.6992)" fill="#F2F2F2" font-family="'Arial'" font-size="9">305</text>
+	<text fid="KOP-304" transform="matrix(1 0 0 1 609.3691 279.2578)" fill="#F2F2F2" font-family="'Arial'" font-size="9">304</text>
+	<text fid="AL-121" transform="matrix(1 0 0 1 77.2661 376.0596)" fill="#F2F2F2" font-family="'Arial'" font-size="9">121</text>
+	<text fid="AL-122" transform="matrix(1 0 0 1 77.2661 334.5488)" fill="#F2F2F2" font-family="'Arial'" font-size="9">122</text>
+	<text fid="AL-123" transform="matrix(1 0 0 1 77.2661 294.1748)" fill="#F2F2F2" font-family="'Arial'" font-size="9">123</text>
+	<text fid="AL-124" transform="matrix(1 0 0 1 77.2661 253.8008)" fill="#F2F2F2" font-family="'Arial'" font-size="9">124</text>
+	<text fid="AL-125" transform="matrix(1 0 0 1 77.2661 213.4258)" fill="#F2F2F2" font-family="'Arial'" font-size="9">125</text>
+	<text fid="AL-126" transform="matrix(1 0 0 1 77.2661 173.0518)" fill="#F2F2F2" font-family="'Arial'" font-size="9">126</text>
+	<text fid="AL-127" transform="matrix(1 0 0 1 77.2661 132.6777)" fill="#F2F2F2" font-family="'Arial'" font-size="9">127</text>
+	<text fid="AL-128" transform="matrix(1 0 0 1 91.811 94.0127)" fill="#F2F2F2" font-family="'Arial'" font-size="9">128</text>
+	<text fid="AL-129" transform="matrix(1 0 0 1 60.5742 94.0127)" fill="#F2F2F2" font-family="'Arial'" font-size="9">129</text>
+	<text fid="AU-221" transform="matrix(1 0 0 1 14.8555 376.0596)" fill="#F2F2F2" font-family="'Arial'" font-size="9">221</text>
+	<text fid="AU-222" transform="matrix(1 0 0 1 14.8555 334.5488)" fill="#F2F2F2" font-family="'Arial'" font-size="9">222</text>
+	<text fid="AU-223" transform="matrix(1 0 0 1 14.8555 294.1738)" fill="#F2F2F2" font-family="'Arial'" font-size="9">223</text>
+	<text fid="AU-224" transform="matrix(1 0 0 1 14.8555 253.7998)" fill="#F2F2F2" font-family="'Arial'" font-size="9">224</text>
+	<text fid="AU-225" transform="matrix(1 0 0 1 14.8555 213.4258)" fill="#F2F2F2" font-family="'Arial'" font-size="9">225</text>
+	<text fid="AU-226" transform="matrix(1 0 0 1 14.8555 173.0518)" fill="#F2F2F2" font-family="'Arial'" font-size="9">226</text>
+	<text fid="AU-227" transform="matrix(1 0 0 1 14.8555 132.6777)" fill="#F2F2F2" font-family="'Arial'" font-size="9">227</text>
+	<text fid="AU-228" transform="matrix(1 0 0 1 14.8555 94.0127)" fill="#F2F2F2" font-family="'Arial'" font-size="9">228</text>
+</g>
+<g id="MAIN-STAND">
+	<g id="MAIN-STAND-AREAS">
+		<polygon id="MSU-U9" stroke-width="0" points="452.083,629.454 452.083,537.868 514.445,537.868 514.445,577.143 462.135,629.454 		
+			"/>
+		<rect id="MSU-U8" x="405.687" y="537.868" stroke-width="0" width="44.396" height="91.586"/>
+		<polygon id="MSU-U7" stroke-width="0" points="359.292,629.454 359.292,547.487 370.336,547.487 370.336,537.868 403.687,537.868 
+			403.687,629.454 		"/>
+		<polygon id="MSU-U6" stroke-width="0" points="312.896,629.454 312.896,553.035 322.063,553.035 322.063,547.487 357.292,547.487 
+			357.292,629.454 		"/>
+		<rect id="MSU-U5" x="266.499" y="553.035" stroke-width="0" width="44.396" height="76.419"/>
+		<polygon id="MSU-U4" stroke-width="0" points="220.104,629.454 220.104,547.487 256.071,547.487 256.071,553.035 264.499,553.035 
+			264.499,629.454 		"/>
+		<polygon id="MSU-U3" stroke-width="0" points="173.707,629.454 173.707,537.868 207.798,537.868 207.798,547.487 218.104,547.487 
+			218.104,629.454 		"/>
+		<rect id="MSU-U2" x="127.312" y="537.868" stroke-width="0" width="44.395" height="91.586"/>
+		<polygon id="MSU-U1" stroke-width="0" points="115.629,629.454 63.689,577.515 63.689,537.868 125.312,537.868 125.312,629.454 		
+			"/>
+		<rect id="MSM-M9" x="466.139" y="491.262" stroke-width="0" width="48.307" height="38.689"/>
+		<rect id="MSM-M8" x="415.832" y="491.262" stroke-width="0" width="48.307" height="38.689"/>
+		<rect id="MSM-M7" x="365.526" y="491.262" stroke-width="0" width="48.306" height="38.689"/>
+		<rect id="MSM-M6" x="315.221" y="491.262" stroke-width="0" width="48.305" height="38.689"/>
+		<rect id="MSM-M5" x="264.914" y="491.262" stroke-width="0" width="48.307" height="38.689"/>
+		<rect id="MSM-M4" x="214.608" y="491.262" stroke-width="0" width="48.306" height="38.689"/>
+		<rect id="MSM-M3" x="164.301" y="491.262" stroke-width="0" width="48.307" height="38.689"/>
+		<rect id="MSM-M2" x="113.996" y="491.262" stroke-width="0" width="48.306" height="38.689"/>
+		<rect id="MSM-M1" x="63.689" y="491.262" stroke-width="0" width="48.307" height="38.689"/>
+		<rect x="121.393" y="474.986" fill="#CCCCCC" width="349.403" height="14.275"/>
+		<rect id="MSL-L16" x="418.052" y="445.025" stroke-width="0" width="52.744" height="27.961"/>
+		<rect id="MSL-L15" x="368.484" y="445.025" stroke-width="0" width="47.567" height="27.961"/>
+		<rect id="MSL-L14" x="319.288" y="445.025" stroke-width="0" width="47.196" height="27.961"/>
+		<rect x="260.105" y="445.025" fill="#CCCCCC" width="57.183" height="27.961"/>
+		<rect id="MSL-L13" x="209.798" y="445.025" stroke-width="0" width="48.307" height="27.961"/>
+		<rect id="MSL-L12" x="165.781" y="445.025" stroke-width="0" width="42.017" height="27.961"/>
+		<rect id="MSL-L11" x="121.393" y="445.025" stroke-width="0" width="42.388" height="27.961"/>
+		<rect id="MSL-L10" x="472.796" y="394.811" stroke-width="0" width="41.649" height="68.929"/>
+		<polygon id="MSL-L9" stroke-width="0" points="428.039,443.025 428.039,364.757 455.478,364.757 470.796,380.075 470.796,443.025 		
+			"/>
+		<rect id="MSL-L8" x="384.761" y="364.757" stroke-width="0" width="41.278" height="78.269"/>
+		<rect id="MSL-L7" x="338.523" y="364.757" stroke-width="0" width="44.237" height="78.269"/>
+		<polygon id="MSL-L6" stroke-width="0" points="289.328,443.025 289.328,411.734 295.43,411.734 295.43,375.114 312.393,375.114 
+			312.393,364.757 336.523,364.757 336.523,443.025 		"/>
+		<polygon id="MSL-L5" stroke-width="0" points="238.651,443.025 238.651,364.757 265.741,364.757 265.741,375.114 282.704,375.114 
+			282.704,411.734 287.328,411.734 287.328,443.025 		"/>
+		<rect id="MSL-L4" x="192.784" y="364.757" stroke-width="0" width="43.868" height="78.269"/>
+		<rect id="MSL-L3" x="149.875" y="364.757" stroke-width="0" width="40.909" height="78.269"/>
+		<polygon id="MSL-L2" stroke-width="0" points="104.748,463.739 104.748,383.405 123.396,364.757 147.875,364.757 147.875,443.025 
+			119.393,443.025 119.393,463.739 		"/>
+		<polygon id="MSL-L1" stroke-width="0" points="63.689,463.739 63.689,424.465 102.748,385.405 102.748,463.739 		"/>
+	</g>
+	<g id="MAIN-STAND-LABELS">
+		<text fid="MSL-L1" transform="matrix(1 0 0 1 78.2129 426.9727)" fill="#F2F2F2" font-family="'Arial'" font-size="9">L1</text>
+		<text fid="MSL-L2" transform="matrix(1 0 0 1 121.3062 426.9727)" fill="#F2F2F2" font-family="'Arial'" font-size="9">L2</text>
+		<text fid="MSL-L3" transform="matrix(1 0 0 1 165.3242 426.9727)" fill="#F2F2F2" font-family="'Arial'" font-size="9">L3</text>
+		<text fid="MSL-L4" transform="matrix(1 0 0 1 209.7124 426.9727)" fill="#F2F2F2" font-family="'Arial'" font-size="9">L4</text>
+		<text fid="MSL-L5" transform="matrix(1 0 0 1 257.9839 426.9727)" fill="#F2F2F2" font-family="'Arial'" font-size="9">L5</text>
+		<text fid="MSL-L6" transform="matrix(1 0 0 1 307.9199 426.9736)" fill="#F2F2F2" font-family="'Arial'" font-size="9">L6</text>
+		<text fid="MSL-L7" transform="matrix(1 0 0 1 355.6367 426.9736)" fill="#F2F2F2" font-family="'Arial'" font-size="9">L7</text>
+		<text fid="MSL-L8" transform="matrix(1 0 0 1 400.3945 426.9736)" fill="#F2F2F2" font-family="'Arial'" font-size="9">L8</text>
+		<text fid="MSL-L9" transform="matrix(1 0 0 1 444.4121 426.9727)" fill="#F2F2F2" font-family="'Arial'" font-size="9">L9</text>
+		<text fid="MSL-L10" transform="matrix(1 0 0 1 486.1123 426.9727)" fill="#F2F2F2" font-family="'Arial'" font-size="9">L10</text>
+		<text fid="MSL-L11" transform="matrix(1 0 0 1 135.0791 461.4072)" fill="#F2F2F2" font-family="'Arial'" font-size="9">L11</text>
+		<text fid="MSL-L12" transform="matrix(1 0 0 1 179.2817 461.4072)" fill="#F2F2F2" font-family="'Arial'" font-size="9">L12</text>
+		<text fid="MSL-L13" transform="matrix(1 0 0 1 226.4438 461.4072)" fill="#F2F2F2" font-family="'Arial'" font-size="9">L13</text>
+		<text fid="MSL-L14" transform="matrix(1 0 0 1 335.3779 461.4072)" fill="#F2F2F2" font-family="'Arial'" font-size="9">L14</text>
+		<text fid="MSL-L15" transform="matrix(1 0 0 1 384.7598 461.4072)" fill="#F2F2F2" font-family="'Arial'" font-size="9">L15</text>
+		<text fid="MSL-L16" transform="matrix(1 0 0 1 436.916 461.4072)" fill="#F2F2F2" font-family="'Arial'" font-size="9">L16</text>
+		<text fid="MSM-M1" transform="matrix(1 0 0 1 81.5908 513.0068)" fill="#F2F2F2" font-family="'Arial'" font-size="9">M1</text>
+		<text fid="MSM-M2" transform="matrix(1 0 0 1 131.897 513.0068)" fill="#F2F2F2" font-family="'Arial'" font-size="9">M2</text>
+		<text fid="MSM-M3" transform="matrix(1 0 0 1 182.2036 513.0068)" fill="#F2F2F2" font-family="'Arial'" font-size="9">M3</text>
+		<text fid="MSM-M4" transform="matrix(1 0 0 1 232.5098 513.0068)" fill="#F2F2F2" font-family="'Arial'" font-size="9">M4</text>
+		<text fid="MSM-M5" transform="matrix(1 0 0 1 282.8164 513.0068)" fill="#F2F2F2" font-family="'Arial'" font-size="9">M5</text>
+		<text fid="MSM-M6" transform="matrix(1 0 0 1 333.123 513.0068)" fill="#F2F2F2" font-family="'Arial'" font-size="9">M6</text>
+		<text fid="MSM-M7" transform="matrix(1 0 0 1 383.4277 513.0068)" fill="#F2F2F2" font-family="'Arial'" font-size="9">M7</text>
+		<text fid="MSM-M8" transform="matrix(1 0 0 1 433.7344 513.0068)" fill="#F2F2F2" font-family="'Arial'" font-size="9">M8</text>
+		<text fid="MSM-M9" transform="matrix(1 0 0 1 484.041 513.0068)" fill="#F2F2F2" font-family="'Arial'" font-size="9">M9</text>
+		<text fid="MSU-U1" transform="matrix(1 0 0 1 88.748 593.6455)" fill="#F2F2F2" font-family="'Arial'" font-size="9">U1</text>
+		<text fid="MSU-U2" transform="matrix(1 0 0 1 143.7568 593.6455)" fill="#F2F2F2" font-family="'Arial'" font-size="9">U2</text>
+		<text fid="MSU-U3" transform="matrix(1 0 0 1 190.1528 593.6455)" fill="#F2F2F2" font-family="'Arial'" font-size="9">U3</text>
+		<text fid="MSU-U4" transform="matrix(1 0 0 1 236.5488 593.6455)" fill="#F2F2F2" font-family="'Arial'" font-size="9">U4</text>
+		<text fid="MSU-U5" transform="matrix(1 0 0 1 282.9448 593.6455)" fill="#F2F2F2" font-family="'Arial'" font-size="9">U5</text>
+		<text fid="MSU-U6" transform="matrix(1 0 0 1 329.3418 593.6445)" fill="#F2F2F2" font-family="'Arial'" font-size="9">U6</text>
+		<text fid="MSU-U7" transform="matrix(1 0 0 1 375.7363 593.6455)" fill="#F2F2F2" font-family="'Arial'" font-size="9">U7</text>
+		<text fid="MSU-U8" transform="matrix(1 0 0 1 422.1328 593.6455)" fill="#F2F2F2" font-family="'Arial'" font-size="9">U8</text>
+		<text fid="MSU-U9" transform="matrix(1 0 0 1 477.5117 593.6455)" fill="#F2F2F2" font-family="'Arial'" font-size="9">U9</text>
+	</g>
+</g>
+<g id="PITCH">
+	<g>
+		<rect x="140.039" y="141.508" fill="#059348" width="308.444" height="185.069"/>
+		<rect x="140.039" y="141.508" fill="#056A38" width="28.039" height="185.069"/>
+		<rect x="196.119" y="141.508" fill="#056A38" width="28.04" height="185.069"/>
+		<rect x="252.199" y="141.508" fill="#056A38" width="28.041" height="185.069"/>
+		<rect x="308.279" y="141.508" fill="#056A38" width="28.041" height="185.069"/>
+		<rect x="364.364" y="141.508" fill="#056A38" width="28.039" height="185.069"/>
+		<rect x="420.441" y="141.508" fill="#056A38" width="28.044" height="185.069"/>
+		<rect x="152.376" y="153.847" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="283.771" height="160.394"/>
+		<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="294.262" y1="153.847" x2="294.262" y2="314.24"/>
+		<circle fill="none" stroke="#FFFFFF" stroke-miterlimit="10" cx="294.262" cy="234.044" r="37.014"/>
+		<rect x="152.376" y="197.03" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="37.013" height="74.029"/>
+		<rect x="152.376" y="209.367" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="18.506" height="49.354"/>
+		<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M207.896,234.043c0-11.494-7.871-21.123-18.508-23.866v47.734
+			C200.025,255.166,207.896,245.539,207.896,234.043z"/>
+		<rect x="399.135" y="197.03" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="37.013" height="74.029"/>
+		<rect x="417.642" y="209.367" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="18.506" height="49.354"/>
+		<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M380.627,234.043c0-11.494,7.872-21.123,18.508-23.866v47.734
+			C388.499,255.166,380.627,245.539,380.627,234.043z"/>
+	</g>
+</g>
+</svg>

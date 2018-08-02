@@ -1,0 +1,77 @@
+﻿<%@ master language="VB" CodeFile="~/MasterPages/Shared/SharedClasses/2Column.master.vb" Inherits="MasterPages_Shared_SharedClasses_2Column" %>
+<%@ Register Namespace="Talent.CustomControls" Assembly="__code" tagprefix="TalentCustom" %>
+<%@ Register Src="~/UserControls/PersonalisationBar.ascx" TagName="PersonalisationBar" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/MicroBasket.ascx" TagName="MicroBasket" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/HTMLInclude.ascx" TagName="HTMLInclude" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/breadCrumbTrail.ascx" TagName="BreadCrumbTrail" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/PageLeftProductNav.ascx" TagName="ProductNav" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/searchBar.ascx" TagName="SearchBar" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/Alerts.ascx" TagName="Alerts" TagPrefix="Talent" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="SiteMasterHead" runat="server">
+
+    <!-- page level scripting -->
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server" />
+    <!-- page extra data table scripting -->
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server" />
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="SiteMasterBody" runat="server">
+    
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="scmMainScriptManager" runat="server" />
+        
+		<header class="header">
+            
+			<div class="header__content">
+			
+				<div class="header__logo">
+					<TalentCustom:Literal HTMLFileName="logoalternate.html" ID="ltlLogoAlternate" runat="server" OnLoad="GetStaticHTMLInclude" />
+				</div>
+			   
+			   <div class="header__right">
+					<div class="header__personalisation">
+						<ul>
+							<li class="home"><TalentCustom:Literal HTMLFileName="homelink.html" ID="ltlHomeLink" runat="server" OnLoad="GetStaticHTMLInclude" /></li>
+							<li><Talent:Alerts ID="uscAlerts" runat="server" /></li>
+							<li class="no-border"><Talent:PersonalisationBar ID="uscPersonalisationBar" runat="server" /></li>
+						</ul>
+					</div>
+				  
+					<div class="header__basket">
+						<Talent:MicroBasket ID="MicroBasket1" runat="server" />
+					</div>
+				  
+				</div>
+			   
+			</div>
+
+        </header>
+
+        <section class="container">
+            <div class="ebiz-container-inner">
+                <div class="row">
+                    <div class="large-12 columns">
+                        <Talent:ProductNav ID="uscProductNav" runat="server" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-12 columns">
+                        <div class="ebiz-retail-search">
+                            <Talent:SearchBar ID="uscSearchBar" runat="server" />
+                        </div>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <TalentCustom:Literal HTMLFileName="footer-title.html" ID="ltlFooterTitle" runat="server" OnLoad="GetStaticHTMLInclude" />
+        <footer class="footer">
+            <TalentCustom:Literal HTMLFileName="footer.html" ID="ltlFooter" runat="server" OnLoad="GetStaticHTMLInclude" />
+        </footer>
+    
+    </form>
+
+</asp:Content>

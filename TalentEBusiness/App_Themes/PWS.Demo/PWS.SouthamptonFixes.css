@@ -1,0 +1,5 @@
+/* Hide seat navigator on seatSelection.aspx - this is masking a bug */
+
+.form-seatselection .ebiz-seat-navigator-wrap {
+	display: none !important;
+}

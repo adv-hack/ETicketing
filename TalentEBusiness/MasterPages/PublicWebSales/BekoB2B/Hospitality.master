@@ -1,0 +1,99 @@
+﻿<%@ Master Language="VB" CodeFile="~/MasterPages/Shared/SharedClasses/Hospitality.master.vb" Inherits="MasterPages_Shared_SharedClasses_Hospitality" %>
+<%@ Register Namespace="Talent.CustomControls" Assembly="__code" tagprefix="TalentCustom" %>
+<%@ Register Src="~/UserControls/ProductHotList.ascx" TagName="HotList" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/Alerts.ascx" TagName="Alerts" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/AgentPersonalisation.ascx" TagName="AgentPersonalisation" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/HTMLInclude.ascx" TagName="HTMLInclude" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/miniBasket.ascx" TagName="miniBasket" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/breadCrumbTrail.ascx" TagName="BreadCrumbTrail" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/Menu.ascx" TagName="Menu" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/searchBar.ascx" TagName="SearchBar" TagPrefix="Talent" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="SiteMasterHead" runat="server">
+
+    <!-- page level scripting -->
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server" />
+
+    <!-- page extra data table scripting -->
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server" />
+
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="SiteMasterBody" runat="server">
+    <TalentCustom:Literal HTMLFileName="accesskeys.htm" ID="ltlAccesskeys" runat="server" OnLoad="GetStaticHTMLInclude" />
+    <div class="ebiz-body-overlay"></div>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="scmMainScriptManager" runat="server" />
+        <!-- Start Opening Off-Canvas Navigation Code -->
+        <div class="off-canvas-wrap" data-offcanvas>
+            <div class="inner-wrap">
+                <nav class="tab-bar">
+                    <section class="left-small"> <a class="left-off-canvas-toggle menu-icon" ><span></span></a> </section>
+                    <section class="middle tab-bar-section">
+                        <div class="row">
+                            <div class="large-12 columns">
+                                <nav class="top-bar" data-topbar>
+                                    <ul class="title-area">
+                                        <li class="name"></li>
+                                        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+                                    </ul>
+                                    <section class="top-bar-section">
+                                        <!-- Right Nav Section --> 
+                                        <ul class="right">
+                                            <li class="ebiz-search-bar">
+                                                <Talent:SearchBar ID="uscSearchBar" runat="server" />
+                                            </li>
+                                        </ul>
+                                        <!-- Left Nav Section --> 
+                                        <ul class="left">
+                                            <Talent:AgentPersonalisation ID="uscAgentPersonliasation" runat="server" />
+                                        </ul>
+                                    </section>
+                                </nav>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="right-small"> <a class="right-off-canvas-toggle menu-icon" ><span></span></a> </section>
+                </nav>
+                <aside class="left-off-canvas-menu">
+                    <TalentCustom:Literal HTMLFileName="off-canvas-list-left.htm" ID="ltlOffCanvasLeft" runat="server" OnLoad="GetStaticHTMLInclude" />
+                </aside>
+                <aside class="right-off-canvas-menu">
+                    <TalentCustom:Literal HTMLFileName="off-canvas-list-right.htm" ID="ltlOffCanvasRight" runat="server" OnLoad="GetStaticHTMLInclude" />
+                </aside>
+                <!-- End Opening Off-Canvas Navigation Code -->
+                <section>
+                    <div class="row ebiz-full-width ebiz-button-bar">
+                        <div class="large-12 columns">
+                            <TalentCustom:Literal HTMLFileName="quick-links.htm" ID="ltlButtonBar" runat="server" OnLoad="GetStaticHTMLInclude" />
+                        </div>
+                    </div>
+                    <div class="row ebiz-full-width ebiz-product-hot-list-wrap">
+                        <div class="large-12 columns">
+                            <Talent:HotList ID="uscHotList" runat="server" />               
+                        </div>
+                    </div>
+                    <div class="row ebiz-full-width ebiz-central-app-content">
+                        <div class="large-12 columns">
+                            <Talent:BreadCrumbTrail ID="uscBreadCrumbTrail" runat="server" />
+                        </div>
+                        <div class="medium-9 columns">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                        </div>
+                        <div class="medium-3 columns">
+                            <Talent:MiniBasket ID="MiniBasket1" runat="server" Usage="GRID" />
+                            <asp:PlaceHolder ID="plhAgentMyAccount" runat="server">
+                                <Talent:Menu ID="mnuAgentMyAccount" runat="server" Display="True" Location="left" Position="before" />
+                            </asp:PlaceHolder>
+                            <Talent:Alerts ID="Alerts1" IsDisplayModeOnly="true" runat="server" />
+                        </div>
+                    </div>
+                </section>
+                <!-- Start Closing Off-Canvas Navigation Code -->
+                <a class="exit-off-canvas"></a>
+            </div>
+        </div>
+        <!-- End Closing Off-Canvas Navigation Code -->
+    </form>
+    <!-- Hospitality -->
+</asp:Content>

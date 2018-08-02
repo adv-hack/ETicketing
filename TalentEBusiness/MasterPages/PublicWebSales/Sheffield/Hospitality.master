@@ -1,0 +1,35 @@
+﻿<%@ Master Language="VB" CodeFile="~/MasterPages/Shared/SharedClasses/Hospitality.master.vb" Inherits="MasterPages_Shared_SharedClasses_Hospitality" %>
+<%@ Register Src="~/UserControls/MicroBasket.ascx" TagName="MicroBasket" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/SessionStatus.ascx" TagName="SessionStatus" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/PersonalisationBar.ascx" TagName="PersonalisationBar" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/Alerts.ascx" TagName="Alerts" TagPrefix="Talent" %>
+<%@ Register Namespace="Talent.CustomControls" Assembly="__code" tagprefix="TalentCustom" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="SiteMasterHead" runat="server">
+    <!-- page level scripting -->
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server" />
+    <!-- page extra data table scripting -->
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server" />
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="SiteMasterBody" runat="server">
+    
+
+            
+
+    <div class="row">
+        <div class="large-3 columns show-for-large sticky-container" data-sticky-container>
+            <div class="ebiz-sidebar sticky" data-sticky data-margin-top="1.875" data-top-anchor="ebiz-content-right-column:top" data-btm-anchor="ebiz-content-right-column:bottom">
+                <ul>
+                    <li class="ebiz-side-bar-basket"><Talent:MicroBasket ID="uscMicroBasketSideBar" runat="server" /></li>
+                    <li class="ebiz-side-bar-personalisation"><Talent:PersonalisationBar ID="uscPersonalisationSideBar" runat="server" /></li>
+                    <li><Talent:Alerts ID="uscAlertsSideBar" runat="server" /></li>
+                </ul>
+                <TalentCustom:Literal HTMLFileName="SidebarNavigation.html" ID="ltlSidebarNavigation" runat="server" OnLoad="GetStaticHTMLInclude" />   
+            </div>
+        </div>
+        <div class="large-9 columns" id="ebiz-content-right-column">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        </div>
+    </div>
+</asp:Content>

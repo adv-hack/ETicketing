@@ -1,0 +1,134 @@
+﻿<%@ Master Language="VB" CodeFile="~/MasterPages/Shared/SharedClasses/Site.master.vb" Inherits="MasterPages_Shared_SharedClasses_Site" %>
+<%@ Register Namespace="Talent.CustomControls" Assembly="__code" tagprefix="TalentCustom" %>
+<%@ Register Src="~/UserControls/HTMLInclude.ascx" TagName="HTMLInclude" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/PageLeftProductNav.ascx" TagName="PageLeftNav" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/ProductHotList.ascx" TagName="HotList" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/MicroBasket.ascx" TagName="MicroBasket" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/PersonalisationBar.ascx" TagName="PersonalisationBar" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/Alerts.ascx" TagName="Alerts" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/TicketingLoyalty.ascx" TagName="TicketingLoyalty" TagPrefix="Talent" %>
+
+
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"> <!--<![endif]-->
+<head id="Head1" runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="viewport" content="width=device-width" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300italic,300,400italic,700,700italic,900,900italic|Merriweather:400,300,300italic,400italic,700,700italic,900italic,900" rel="stylesheet">
+    <script src="../../App_Themes/QANEXT/js/modernizr-custom.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="//use.fontawesome.com/7e81f32a9c.js"></script>
+    <asp:ContentPlaceHolder id="SiteMasterHead" runat="server" />
+</head>
+
+<body id="MasterBodyTag" runat="server">
+    <div class="ebiz-overlay"></div>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="scmMainScriptManager" runat="server" />
+        <div class="off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+                <div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-position="right">
+                    <div class="show-for-small-only inc-personalisation-alerts-loyalty-wrap">
+                        <Talent:PersonalisationBar ID="uscPersonalisationBarTopOffCanvasRight" runat="server" />
+                        <Talent:Alerts ID="uscAlertsOffCanvasRight" runat="server" />
+                        <Talent:TicketingLoyalty ID="TicketingLoyaltyOffCanvasRight" runat="server" />
+                    </div>
+                    <TalentCustom:Literal HTMLFileName="off-canvas-left.htm" ID="ltlOffCanvasLeft" runat="server" OnLoad="GetStaticHTMLInclude" />
+                </div>
+                <div class="off-canvas-content" data-off-canvas-content>
+                    <header>
+                        <div class="temp-header">
+                            <div class="show-for-medium temp-top-nav-wrap"> 
+                                <div class="row">
+                                    <div class="columns">
+                                        <Talent:PersonalisationBar ID="uscPersonalisationBarTop" runat="server" />
+                                        <Talent:Alerts ID="uscAlerts" runat="server" />
+                                        <Talent:TicketingLoyalty ID="TicketingLoyalty" runat="server" />
+                                    </div>    
+                                </div>
+                            </div>
+                            <div class="show-for-large temp-main-nav-outer-wrap"> 
+                                <div class="row">
+                                    <div class="large-2 columns temp-club-crest-wrap">
+                                        <TalentCustom:Literal HTMLFileName="large.club.logo.htm" ID="ltlLargeClubLogo" runat="server" OnLoad="GetStaticHTMLInclude" />
+                                    </div>
+                                    <div class="large-10 columns temp-main-nav-wrap">
+                                        <TalentCustom:Literal HTMLFileName="main-nav-start.htm" ID="ltlMainNavStart" runat="server" OnLoad="GetStaticHTMLInclude" />
+                                        <li class="temp-micro-basket-wrap"><Talent:MicroBasket ID="uscMicroBasket" runat="server" /></li>
+                                        <TalentCustom:Literal HTMLFileName="main-nav-end.htm" ID="ltlMainNavEnd" runat="server" OnLoad="GetStaticHTMLInclude" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hide-for-large temp-main-nav-outer-wrap-mobile">
+                                <div class="row">
+                                    <div class="small-4 columns temp-micro-basket-wrap-mobile">
+                                        <Talent:MicroBasket ID="uscMicroBasketMobile" runat="server" />
+                                    </div>
+                                    <div class="small-4 columns temp-club-crest-wrap-mobile">
+                                        <TalentCustom:Literal HTMLFileName="small.club.logo.htm" ID="ltlSmallClubLogo" runat="server" OnLoad="GetStaticHTMLInclude" />
+                                    </div>
+                                    <div class="small-4 columns temp-off-canavs-btn-wrap-mobile">
+                                        <a href="#" class="temp-off-canvas-trigger" data-toggle="offCanvasRight">
+                                            <i class="fa fa-bars" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <section>
+                        <Talent:HTMLInclude ID="uscHTMLInclude1" runat="server" Usage="6" Sequence="10" />
+                        <div class="temp-content-wrap-outer">
+                            <asp:ContentPlaceHolder ID="SiteMasterBody" runat="server" />
+                        </div>
+                        <div class="ebiz-hot-list-carousel-wrap">
+                            <div class="row">
+                                <div class="large-12 columns ebiz-hot-list-carousel">
+                                    <Talent:HotList ID="uscHotList" runat="server" />
+                                </div>
+                            </div>
+                        </div>
+                        <Talent:HTMLInclude ID="uscHTMLInclude2" runat="server" Usage="6" Sequence="30" />
+                    </section>
+                    <footer>
+                        <TalentCustom:Literal HTMLFileName="footer.htm" ID="ltlFooter" runat="server" OnLoad="GetStaticHTMLInclude" />
+                    </footer>            
+                </div>
+            </div>
+        </div>
+        <asp:HiddenField ID="hdfSessionID" runat="server" ClientIDMode="Static" />
+    </form>
+    <script src="../../JavaScript/TimepickerAddon.js"></script>
+    <script src="../../JavaScript/vendor/foundation/foundation.min.js"></script>
+    <script src="../../JavaScript/vendor/jquery.matchHeight-min.js"></script>
+    <script src="../../JavaScript/vendor/fastclick.min.js"></script>
+    <script src="//cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+    <script src="../../JavaScript/vendor/owl.carousel.min.js"></script>
+    <script src="../../JavaScript/vendor/select2/js/select2.min.js"></script>
+    <script src="../../JavaScript/Application/TalentEBusinessSuite.js"></script>
+    <script src="//cdn.jsdelivr.net/alertifyjs/1.7.1/alertify.min.js"></script>
+
+    <!-- Include ScrollMagic and GSAP plugin -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
+
+    <script src="../../App_Themes/QANEXT/js/theme.js"></script>
+
+    <!-- IMPORTANT APPLICATION STUFF DO NOT DELETE!! -->
+    <div id="loading-image" style="display: none" class="ebiz-loading-default ebiz-loading-results">
+        <i class="fa fa-spinner fa-pulse"></i>
+    </div>
+
+    <%=GetPageExtraDataForBody()%>
+    <%= GetTrackingBodyCodesText %>
+</body>
+</html>

@@ -1,0 +1,126 @@
+﻿<%@ Master Language="VB" CodeFile="~/MasterPages/Shared/SharedClasses/Site.master.vb" Inherits="MasterPages_Shared_SharedClasses_Site" %>
+<%@ Register Namespace="Talent.CustomControls" Assembly="__code" tagprefix="TalentCustom" %>
+<%@ Register Src="~/UserControls/AgentPersonalisation.ascx" TagName="AgentPersonalisation" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/breadCrumbTrail.ascx" TagName="BreadCrumbTrail" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/HTMLInclude.ascx" TagName="HTMLInclude" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/OffCanvasMenu.ascx" TagPrefix="Talent" TagName="OffCanvasMenu" %>
+<%@ Register Src="~/UserControls/PageLeftProductNav.ascx" TagName="PageLeftNav" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/ProductHotList.ascx" TagName="HotList" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/searchBar.ascx" TagName="searchBar" TagPrefix="Talent" %>
+
+<!DOCTYPE html>
+<!--[if IE 9]> <html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" dir="ltr">
+<head id="Head1" runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="viewport" content="width=device-width" />
+    <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <script src="../../JavaScript/vendor/modernizr-custom.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="//use.fontawesome.com/7e81f32a9c.js"></script>
+    <asp:ContentPlaceHolder id="SiteMasterHead" runat="server" />
+</head>
+
+<body id="MasterBodyTag" runat="server" class="boxoffice">
+    <div class="ebiz-overlay"></div>
+    <div class="ebiz-mask">
+        <div class="sk-circle">
+            <div class="sk-circle1 sk-child"></div>
+            <div class="sk-circle2 sk-child"></div>
+            <div class="sk-circle3 sk-child"></div>
+            <div class="sk-circle4 sk-child"></div>
+            <div class="sk-circle5 sk-child"></div>
+            <div class="sk-circle6 sk-child"></div>
+            <div class="sk-circle7 sk-child"></div>
+            <div class="sk-circle8 sk-child"></div>
+            <div class="sk-circle9 sk-child"></div>
+            <div class="sk-circle10 sk-child"></div>
+            <div class="sk-circle11 sk-child"></div>
+            <div class="sk-circle12 sk-child"></div>
+        </div>
+    </div>
+    <form id="form1" runat="server">
+        <div class="off-canvas position-left is-overlay-absolute" id="offCanvasLeft" data-off-canvas data-transition="overlap">
+            <TalentCustom:Literal HTMLFileName="off-canvas-list-left.htm" ID="ltlOffCanvasLeft" runat="server" OnLoad="GetStaticHTMLInclude" />
+        </div>
+        <div class="off-canvas position-right is-overlay-absolute" id="offCanvasRight" data-off-canvas data-transition="overlap">
+            <ul class="tabs small-up-3 row collapse" data-tabs id="ebiz-off-canvas-right-tabs">
+                <li class="tabs-title is-active column"><a href="#ebiz-panel-customer-search" aria-selected="true"><i class="fa fa-search fa-fw"></i></a></li>
+                <li class="tabs-title column"><a href="#panel2"><i class="fa fa-ticket fa-fw"></i></a></li>
+                <li class="tabs-title column"><a href="#panel3"><i class="fa fa-bookmark fa-fw"></i></a></li>
+            </ul>
+            <div class="tabs-content" data-tabs-content="ebiz-off-canvas-right-tabs">
+                <div class="tabs-panel is-active" id="ebiz-panel-customer-search">
+                    <Talent:OffCanvasMenu runat="server" id="OffCanvasMenu" />
+                </div>
+                <div class="tabs-panel ebiz-hot-list-carousel-off-canavas" id="panel2">
+                    <Talent:HotList ID="uscHotListoffCanvas" runat="server" />
+                </div>
+                <div class="tabs-panel" id="panel3">
+                    <div class="ebiz-drilldown-favourites-append-to-wrap"></div>
+                </div>
+            </div>
+        </div>
+        <div class="off-canvas-content" data-off-canvas-content>
+            <header>
+                <Talent:AgentPersonalisation ID="uscAgentPersonliasation" runat="server" />
+            </header>
+            <section>
+                <div class="row">
+                    <div class="large-12 columns ebiz-hot-list-carousel">
+                        <div class="ebiz-hot-list-carousel-wrap closed">
+                            <Talent:HotList ID="uscHotList" runat="server" />
+                        </div>
+                        <div class="ebiz-hot-list-carousel-toggle">
+                            <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </div>
+                        <Talent:BreadCrumbTrail ID="uscBreadCrumbTrail" runat="server" />
+                    </div>
+                </div>
+                <asp:ContentPlaceHolder ID="SiteMasterBody" runat="server" /> 
+            </section>           
+        </div>
+        <TalentCustom:Literal HTMLFileName="favourites.htm" ID="ltlFavourites" runat="server" OnLoad="GetStaticHTMLInclude" />
+        <asp:HiddenField ID="hdfSessionID" runat="server" ClientIDMode="Static" />
+    </form>
+    <script src="//cdn.jsdelivr.net/alertifyjs/1.7.1/alertify.min.js?a=<%=GetVersion()%>"></script>
+    <script src="../../JavaScript/TimepickerAddon.js?a=<%=GetVersion()%>"></script>
+    <script src="../../JavaScript/vendor/foundation/what-input.js?a=<%=GetVersion()%>"></script>
+    <script src="../../JavaScript/vendor/foundation/foundation.min.js?a=<%=GetVersion()%>"></script>
+    <script src="../../JavaScript/vendor/jquery.matchHeight-min.js?a=<%=GetVersion()%>"></script>
+    <!--<script src="../../JavaScript/vendor/fastclick.min.js"></script>-->
+    <script src="//cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js?a=<%=GetVersion()%>"></script>
+    <script src="../../JavaScript/vendor/owl.carousel.min.js?a=<%=GetVersion()%>"></script>
+    <script src="../../JavaScript/vendor/select2/js/select2.min.js?a=<%=GetVersion()%>"></script>
+    <script src="../../JavaScript/vendor/icheck.min.js?a=<%=GetVersion()%>"></script>
+    <script src="../../JavaScript/vendor/jquery.ui.touch-punch.min.js?a=<%=GetVersion()%>"></script>
+    <script src="../../JavaScript/Application/TalentEBusinessSuite.js?a=<%=GetVersion()%>"></script>
+    <script src="../../JavaScript/Application/BUI.js?a=<%=GetVersion()%>"></script>
+    <!--<script src="../../JavaScript/BUI/js/theme.js"></script>-->
+
+    <!-- IMPORTANT APPLICATION STUFF DO NOT DELETE!! -->
+    <div id="loading-image" style="display: none" class="ebiz-loading-default ebiz-loading-results">
+        <div class="sk-circle">
+            <div class="sk-circle1 sk-child"></div>
+            <div class="sk-circle2 sk-child"></div>
+            <div class="sk-circle3 sk-child"></div>
+            <div class="sk-circle4 sk-child"></div>
+            <div class="sk-circle5 sk-child"></div>
+            <div class="sk-circle6 sk-child"></div>
+            <div class="sk-circle7 sk-child"></div>
+            <div class="sk-circle8 sk-child"></div>
+            <div class="sk-circle9 sk-child"></div>
+            <div class="sk-circle10 sk-child"></div>
+            <div class="sk-circle11 sk-child"></div>
+            <div class="sk-circle12 sk-child"></div>
+        </div>
+    </div>
+
+    <%=GetPageExtraDataForBody()%>
+    <%= GetTrackingBodyCodesText %>
+
+</body>
+</html>

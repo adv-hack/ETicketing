@@ -1,0 +1,64 @@
+﻿<%@ Master Language="VB" CodeFile="~/MasterPages/Shared/SharedClasses/Hospitality.master.vb" Inherits="MasterPages_Shared_SharedClasses_Hospitality" %>
+<%@ Register Namespace="Talent.CustomControls" Assembly="__code" tagprefix="TalentCustom" %>
+<%@ Register Src="~/UserControls/PersonalisationBar.ascx" TagName="PersonalisationBar" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/MicroBasket.ascx" TagName="MicroBasket" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/HTMLInclude.ascx" TagName="HTMLInclude" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/breadCrumbTrail.ascx" TagName="BreadCrumbTrail" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/SessionStatus.ascx" TagName="SessionStatus" TagPrefix="Talent" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="SiteMasterHead" runat="server">
+
+    <!-- page level scripting -->
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server" />
+
+    <!-- page extra data table scripting -->
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server" />
+
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="SiteMasterBody" runat="server">
+    <div class="ebiz-body-overlay"></div>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="scmMainScriptManager" runat="server" />
+        <header>
+            <div class="ebiz-mp-header-wrap">
+                <div class="row">
+                    <div class="large-12 columns">
+                        <img src="/App_Themes/PWS.WesternProvince/img/logo.W.P.Rugby.png" alt="" class="ebiz-mp-logo-wprugby">
+                        <div class="ebiz-mp-topbar">
+                            <div class="ebiz-mp-personalisation-wrap">
+                                <Talent:PersonalisationBar ID="uscPersonalisationBar" runat="server" />
+                            </div>
+                            <TalentCustom:Literal HTMLFileName="navigation-start.html" ID="ltlNavigationStart" runat="server" OnLoad="GetStaticHTMLInclude" />
+                            <Talent:MicroBasket ID="uscMicroBasket" runat="server" />
+                            <TalentCustom:Literal HTMLFileName="navigation-end.html" ID="ltlNavigationEnd" runat="server" OnLoad="GetStaticHTMLInclude" />
+                        </div>
+                        <img src="/App_Themes/PWS.WesternProvince/img/logo.Stormers.png" alt="" class="ebiz-mp-logo-stormers">
+                    </div>
+                </div>
+            </div>
+            <Talent:HTMLInclude ID="uscHTMLInclude1" runat="server" Usage="4" Sequence="1" />
+        </header>
+        <section>
+            <div class="ebiz-mp-content-wrap">
+                <div class="row ebiz-mp-content">
+                    <div class="large-12 columns">
+                        <Talent:BreadCrumbTrail ID="uscBreadCrumbTrail" runat="server" />
+                    </div>
+                    <div class="medium-9 columns">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+                    </div>
+                    <div class="medium-3 columns">
+                        <Talent:HTMLInclude ID="uscHTMLInclude3" runat="server" Usage="1" Sequence="1" />
+                        <Talent:SessionStatus ID="uscSessionStatus" runat="server" />
+                        <TalentCustom:Literal HTMLFileName="sidebar.html" ID="ltlSidebar" runat="server" OnLoad="GetStaticHTMLInclude" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <Talent:HTMLInclude ID="uscHTMLInclude2" runat="server" Usage="5" Sequence="1" />
+            <TalentCustom:Literal HTMLFileName="footer.html" ID="ltlFooter" runat="server" OnLoad="GetStaticHTMLInclude" />
+        </footer>
+    </form>
+</asp:Content>

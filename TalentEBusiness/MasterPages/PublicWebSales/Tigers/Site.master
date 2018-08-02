@@ -1,0 +1,62 @@
+﻿<%@ Master Language="VB" CodeFile="~/MasterPages/Shared/SharedClasses/Site.master.vb" Inherits="MasterPages_Shared_SharedClasses_Site" %>
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head id="Head1" runat="server">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NGQFJJ');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css">  
+    <link rel="stylesheet" href="//a248.e.akamai.net/images.talentarena.co.uk/Global/Lib/bxslider-4/jquery.bxslider.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
+    <script src="//a248.e.akamai.net/images.talentarena.co.uk/Global/Lib/foundation-5.3.0/js/vendor/modernizr.js"></script>
+    <link href="//fonts.googleapis.com/css?family=Droid+Sans:400,700|Vollkorn" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="//a248.e.akamai.net/images.talentarena.co.uk/Global/Lib/foundation-5.3.0/js/vendor/fastclick.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>  
+    <script>
+
+        $(function () {
+            // FastClick
+            FastClick.attach(document.body);
+        });
+    </script>
+
+    <link rel="icon" href="/App_Themes/PWS.Tigers/img/favicon.ico" type="image/x-icon">
+
+    <!-- BEGIN LivePerson Monitor. -->
+    <script type="text/javascript">
+        window.lpTag = { site: '30385240', lpSrv: 'server.iad.liveperson.net', _v: '1.0', protocol: location.protocol, events: { bind: function (app, ev, fn) { lpTag.defer(function () { lpTag.events.bind(app, ev, fn) }) }, trigger: function (app, ev, json) { lpTag.defer(function () { lpTag.events.trigger(app, ev, json) }) } }, defer: function (fn) { this._defL = this._defL || []; this._defL.push(fn) }, load: function (src, chr, id) { if (!src) { src = this.protocol + '//' + ((this.ovr && this.ovr.domain) ? this.ovr.domain : 'lptag.liveperson.net') + '/tag/tag.js?site=' + this.site } var s = document.createElement('script'); s.setAttribute('charset', chr ? chr : 'UTF-8'); if (id) { s.setAttribute('id', id) } s.setAttribute('src', src); document.getElementsByTagName('head').item(0).appendChild(s) }, init: function () { this._timing = this._timing || {}; this._timing.start = (new Date()).getTime(); var that = this; if (window.attachEvent) { window.attachEvent('onload', function () { that._domReady('domReady') }) } else { window.addEventListener('DOMContentLoaded', function () { that._domReady('contReady') }, false); window.addEventListener('load', function () { that._domReady('domReady') }, false) } if (typeof (_lptStop) == 'undefined') { this.load() } }, _domReady: function (n) { this.isDom = true; this._timing[n] = (new Date()).getTime(); this.events.trigger('LPT', 'DOM_READY') } }; lpTag.init();
+    </script>
+    <!-- END LivePerson Monitor. -->
+
+    <asp:ContentPlaceHolder id="SiteMasterHead" runat="server" />
+        
+</head>
+<body id="MasterBodyTag" runat="server">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NGQFJJ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!--[if lt IE 9]>
+        <div style=" background: black; padding: 20px; text-align: center; "><h1 style=" color: white; ">Internet Explorer 8 is not supported on this website. Please upgrade to Internet Explorer 9 or use another browser.</h1></div>
+    <![endif]-->
+    <asp:ContentPlaceHolder ID="SiteMasterBody" runat="server" />
+    <div id='LP_DIV_1355411716230' style='width:115px;height:33px;'></div>
+</body>
+</html>

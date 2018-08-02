@@ -1,0 +1,247 @@
+.ebiz-svg-container #stadium-canvas {
+    height: 784px;
+    width: 701px; }
+.ebiz-match-text {
+     display: none !important; }
+
+
+/* HR Goodwood */
+.HR #stand-tip {
+    background-color:rgba(0,0,0,0.8);
+    border: none;
+    color: #222222;
+    height: 300px;
+    left: 0;
+    margin-left: 28px;
+    margin-top: 16px;
+    padding-left: 20px;
+    padding-bottom: 1.25rem;
+    top: 102px;
+    width: 220px; }
+.HR .ebiz-tooltip li {
+    margin-bottom: 1.11111rem; }
+.HR .ebiz-tooltip .ebiz-label {
+    float: none;
+    width: 100%; }
+.HR .ebiz-tooltip .ebiz-data {
+    float: none;
+    width: 100%; }
+.HR .ebiz-quick-buy-option {
+    margin-left: -61px; }
+.ebiz-area-view.HR #stadium-canvas {
+    background: url("/Stadiums/Goodwood.HM.jpg") no-repeat 0 98px rgba(0, 0, 0, 0); }
+.ebiz-seat-view.HR #stadium-canvas {
+    background: url("/Stadiums/Goodwood.HM.tn.jpg") no-repeat 0 0 rgba(0, 0, 0, 0);
+    padding-top: 0; }
+
+/* HM Goodwood */
+.HM #stand-tip {
+    background-color:rgba(0,0,0,0.8);
+    border: none;
+    color: #222222;
+    height: 300px;
+    left: 0;
+    margin-left: 28px;
+    margin-top: 16px;
+    padding-left: 20px;
+    padding-bottom: 1.25rem;
+    top: 102px;
+    width: 190px; }
+.HM .ebiz-tooltip li {
+    margin-bottom: 1.11111rem; }
+.HM .ebiz-tooltip .ebiz-label {
+    float: none;
+    width: 100%; }
+.HM .ebiz-tooltip .ebiz-data {
+    float: none;
+    width: 100%; }
+.HM .ebiz-quick-buy-option {
+    margin-left: -61px; }
+.ebiz-area-view.HM #stadium-canvas {
+    background: url("/Stadiums/Goodwood.HM.jpg") no-repeat 0 98px rgba(0, 0, 0, 0); }
+.ebiz-seat-view.HM #stadium-canvas {
+    background: url("/Stadiums/Goodwood.HM.tn.jpg") no-repeat 0 0 rgba(0, 0, 0, 0); 
+    padding-top: 0; }
+
+/* GR Goodwood */
+.GR #stand-tip {
+    background-color:rgba(0,0,0,0.8);
+    border: none;
+    color: #222222;
+    height: 260px;
+    left: 260px;
+    margin-left: 0px;
+    margin-top: 0;
+    padding-left: 20px;
+    padding-bottom: 1.25rem;
+    top: 325px;
+    width: 240px; }
+.GR .ebiz-tooltip li {
+    margin-bottom: 1.11111rem; }
+.GR .ebiz-tooltip .ebiz-label {
+    float: none;
+    width: 100%; }
+.GR .ebiz-tooltip .ebiz-data {
+    float: none;
+    width: 100%; }
+.GR .ebiz-quick-buy-option {
+    margin-left: -61px; }
+
+/* RM Goodwood */
+.RM #stand-tip {
+    background-color:rgba(0,0,0,0.8);
+    border: none;
+    color: #222222;
+    height: 260px;
+    left: 260px;
+    margin-left: 0px;
+    margin-top: 0;
+    padding-left: 20px;
+    padding-bottom: 1.25rem;
+    top: 325px;
+    width: 240px; }
+.RM .ebiz-tooltip li {
+    margin-bottom: 1.11111rem; }
+.RM .ebiz-tooltip .ebiz-label {
+    float: none;
+    width: 100%; }
+.RM .ebiz-tooltip .ebiz-data {
+    float: none;
+    width: 100%; }
+.RM .ebiz-quick-buy-option {
+    margin-left: -61px; }
+
+svg path[fill="#222222"] { opacity: 0.25; }
+svg path:hover + text + path, svg text:hover + path, svg circle:hover + path + text + path { opacity: 0.5; }
+
+svg path[fill="#010101"]  { opacity: 0.75; }
+
+svg text { font-weight: 700 !important; }
+
+
+
+/* Fixed Key */
+.ebiz-svg-container .ebiz-legend { 
+    background: none;
+    box-shadow: none;
+    border: solid 1px #d8d8d8;;
+    left: 8px !important; 
+    overflow: hidden;
+    top: -2px !important;
+    width: 701px;
+}
+.ebiz-svg-container .ebiz-legend h3 {
+    margin-left: 0.625rem !important;
+}
+.ebiz-svg-container .ebiz-legend .hover {
+    display: none;
+}
+.ebiz-seating-key h3.subheader small {
+    color: #000000 !important;
+    font-size: 1.25rem;
+}
+.ebiz-stand-pricing h3.subheader small {
+    color: #000000 !important;
+    font-size: 1.25rem;
+}
+.ebiz-stand-availability h3.subheader small {
+    color: #000000 !important;
+    font-size: 1.25rem;
+}
+
+
+.ebiz-svg-container.ebiz-seat-view .ebiz-legend { 
+    margin-left: -177px;
+}
+.seat-view.ebiz-svg-container .ebiz-legend { 
+    left: -137px !important;
+    top: -5px !important;
+}
+.ebiz-svg-container .ebiz-toggle-legend {
+    display: none;
+}
+.ebiz-svg-container h3 {
+    background: none !important;
+    margin: 0 10px !important;
+    padding: 0 !important;
+}
+.ebiz-svg-container .ebiz-legend li {
+    clear: none;
+    float: left;
+}
+#stadium-canvas { 
+    padding-top: 98px;
+}
+.ebiz-seat-options { 
+    padding-top: 137px;
+}
+.ebiz-seat-view #svg-controls { 
+    padding-top: 120px;
+}
+
+@media only screen and (max-width: 64em) {
+    .ebiz-svg-container .ebiz-legend  { 
+        width: 100%;
+    }
+    .ebiz-svg-container .ebiz-legend {
+        left: 5px !important;
+    }
+    .ebiz-svg-container.ebiz-seat-view .ebiz-legend {
+        left: 0 !important;
+        margin-left: 0;
+    }
+    .ebiz-seat-options {
+        padding-top: 169px;
+    }
+    .ebiz-seat-view #svg-controls {
+        padding-top: 0;
+    }
+    .ebiz-svg-container.ebiz-seat-view #stadium-canvas {
+        display: none;
+    }
+    .ebiz-svg-container #zoomSlider {
+        width: 76px;
+    }
+    .ebiz-svg-container .ebiz-zoom-options {
+        width: 128px;
+    }
+}
+
+/* Seat Key */
+.ebiz-seating-key .Hover,
+.ebiz-seating-key .basket {
+    display: none;
+}
+
+#tip {
+    background: #000000;
+    border: none;
+    left: -169px !important;
+    height: 320px !important;
+    width: 161px !important;
+    top: 120px !important;
+}
+
+/* SVG */
+svg circle {
+    cursor: pointer;
+}
+
+
+.HR .ebiz-pitch,
+.HM .ebiz-pitch {
+    background: transparent url("img/Track-Way-RC-Left.jpg") no-repeat ;
+    height: 80px;
+    padding: 0;
+    text-indent: -9999px;
+    width: 481px;
+}
+
+.GR .ebiz-pitch,
+.RM .ebiz-pitch {
+    background: transparent url("img/Track-Way-MC-Left.jpg") no-repeat ;
+    height: 80px;
+    padding: 0;
+    text-indent: -9999px;
+    width: 481px;
+}

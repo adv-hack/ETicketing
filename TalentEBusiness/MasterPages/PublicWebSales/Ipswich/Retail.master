@@ -1,0 +1,72 @@
+﻿<%@ Master Language="VB" CodeFile="~/MasterPages/Shared/SharedClasses/Retail.master.vb" Inherits="MasterPages_Shared_SharedClasses_Retail" %>
+<%@ Register Namespace="Talent.CustomControls" Assembly="__code" tagprefix="TalentCustom" %>
+<%@ Register Src="~/UserControls/PageLeftProductNav.ascx" TagName="PageLeftNav" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/PageHeaderText.ascx" TagName="PageHeaderText" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/breadCrumbTrail.ascx" TagName="BreadCrumbTrail" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/searchBar.ascx" TagName="searchBar" TagPrefix="Talent" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="SiteMasterHead" runat="server">
+
+    <script src="//a248.e.akamai.net/images.talentarena.co.uk/Global/Lib/TinyNav.js-master/tinynav.min.js"></script>
+    <script>
+        // Responsive Shop Nav
+        $(function () {
+            // TinyNav.js 1
+            $(".AspNet-TreeView > ul").tinyNav({
+            active: 'selected', // String: Set the "active" class
+            header: 'Select Category ', // String: Specify text for "header" and show header instead of the active item
+            indent: '- ', // String: Specify text for indenting sub-items
+            label: '' // String: Sets the <label> text for the <select> (if not set, no label will be added)
+            });     
+        });
+    </script>
+
+    <!-- page level scripting -->
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server" />
+    <!-- page extra data table scripting -->
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server" />
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="SiteMasterBody" runat="server">
+    <div class="ebiz-retail-info-banner-container"> 
+        <TalentCustom:Literal HTMLFileName="ReatilInfoBanner.html" ID="ltlReatilInfoBanner" runat="server" OnLoad="GetStaticHTMLInclude" />
+    </div>
+    <div class="ebiz-browse-html-container">
+    </div>
+    <div class="ebiz-breadcrumb-container">   
+        <div class="row">
+            <div class="small-12 columns">
+                <TalentCustom:Literal HTMLFileName="BreadcrumbHome.html" ID="ltlBreadCrumbHome" runat="server" OnLoad="GetStaticHTMLInclude" />
+                <Talent:BreadCrumbTrail ID="uscBreadCrumbTrail" runat="server" />
+            </div>
+        </div>
+    </div>
+    <div class="ebiz-page-content"> 
+        <div class="row">
+            <div class="large-3 columns">
+                <TalentCustom:Literal HTMLFileName="RetailCategoryHeader.html" ID="ltlRetailCategoryHeader" runat="server" OnLoad="GetStaticHTMLInclude" />
+                <Talent:PageLeftNav ID="PageLeftNav1" runat="server" />
+            </div>
+            <div class="large-9 columns">
+                <div class="ebiz-retail-search-content">
+                    <div class="row">
+                        <div class="large-6 columns">
+                            <TalentCustom:Literal HTMLFileName="ExtraProductInfo.html" ID="ltlExtraProductInfo" runat="server" OnLoad="GetStaticHTMLInclude" /> 
+                        </div>
+                        <div class="large-6 columns">
+                            <Talent:SearchBar ID="uscSearchBar" runat="server" />
+                        </div>
+                    </div>
+                </div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(function(){
+            $(".ebiz-browse-html-image").insertBefore(".ebiz-browse-html-container");
+        });
+    </script>
+
+</asp:Content>

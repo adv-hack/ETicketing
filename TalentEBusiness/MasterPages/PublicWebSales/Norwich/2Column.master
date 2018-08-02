@@ -1,0 +1,31 @@
+﻿<%@ Master Language="VB" CodeFile="~/MasterPages/Shared/SharedClasses/2Column.master.vb" Inherits="MasterPages_Shared_SharedClasses_2Column" %>
+<%@ Register Namespace="Talent.CustomControls" Assembly="__code" tagprefix="TalentCustom" %>
+<%@ Register Src="~/UserControls/SessionStatus.ascx" TagName="SessionStatus" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/TicketingLoyalty.ascx" TagName="TicketingLoyalty" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/HTMLInclude.ascx" TagName="HTMLInclude" TagPrefix="Talent" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="SiteMasterHead" runat="server">
+
+    <!-- page level scripting -->
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server" />
+
+    <!-- page extra data table scripting -->
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server" />
+
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="SiteMasterBody" runat="server">
+    
+        <div class="row ebiz-content">
+            <div class="medium-9 columns">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+            </div>
+            <div class="medium-3 columns">
+                <Talent:HTMLInclude ID="uscHTMLInclude3" runat="server" Usage="1" Sequence="1" />
+                <Talent:TicketingLoyalty ID="TicketingLoyalty1" runat="server" />
+                <Talent:SessionStatus ID="uscSessionStatus" runat="server" />
+                <TalentCustom:Literal HTMLFileName="sidebar.html" ID="ltlSidebar" runat="server" OnLoad="GetStaticHTMLInclude" />
+            </div>
+        </div>
+
+</asp:Content>

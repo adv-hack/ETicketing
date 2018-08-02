@@ -1,0 +1,141 @@
+﻿<%@ Master Language="VB" CodeFile="~/MasterPages/Shared/SharedClasses/Retail.master.vb" Inherits="MasterPages_Shared_SharedClasses_Retail" %>
+<%@ Register Namespace="Talent.CustomControls" Assembly="__code" tagprefix="TalentCustom" %>
+<%@ Register Src="~/UserControls/PersonalisationBar.ascx" TagName="PersonalisationBar" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/MicroBasket.ascx" TagName="MicroBasket" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/HTMLInclude.ascx" TagName="HTMLInclude" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/breadCrumbTrail.ascx" TagName="BreadCrumbTrail" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/SessionStatus.ascx" TagName="SessionStatus" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/Alerts.ascx" TagName="Alerts" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/TicketingLoyalty.ascx" TagName="TicketingLoyalty" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/PageHeaderText.ascx" TagName="PageHeaderText" TagPrefix="Talent" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="SiteMasterHead" runat="server">
+
+    <!-- page level scripting -->
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server" />
+
+    <!-- page extra data table scripting -->
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server" />
+
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="SiteMasterBody" runat="server">
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="scmMainScriptManager" runat="server" />
+
+            <header id="ebiz-ud-main-nav" class="ebiz-ud-main-nav">
+
+                <div class="ebiz-ud-mast-head">
+                    <TalentCustom:Literal HTMLFileName="header-top.html" ID="ltlHeaderTop" runat="server" OnLoad="GetStaticHTMLInclude" />    
+                        <div class="row ebiz-header-top-bar-mobile">
+                            <div class="small-12 columns no-pad-left no-pad-right">
+                                <nav class="top-bar" data-topbar role="navigation">
+                                    <TalentCustom:Literal HTMLFileName="top-bar-mobile.html" ID="ltlTopBarMobile" runat="server" OnLoad="GetStaticHTMLInclude" />  
+                                        <section class="top-bar-section">
+                                            <ul class="left">
+                                                <li><Talent:MicroBasket ID="uscMicroBasketTopBar" runat="server" /></li>
+                                                <li class="topbarpersonalisation"><Talent:PersonalisationBar ID="uscPersonalisationTopBar" runat="server" /></li>
+                                                <li><Talent:Alerts ID="uscAlertsTopBar" runat="server" /></li>
+                                                <TalentCustom:Literal HTMLFileName="top-bar-links.html" ID="ltlTopBarLinks" runat="server" OnLoad="GetStaticHTMLInclude" />
+                                            </ul>
+                                        </section>
+                                </nav>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="ebiz-ud-main-nav-pre">
+                    <div class="row">
+                        <div class="small-4 columns text-center no-pad-left no-pad-right">
+                            <nav class="quick-links show-for-small-only">
+                                <TalentCustom:Literal HTMLFileName="quick-links-left.html" ID="ltlQuickLinksLeft" runat="server" OnLoad="GetStaticHTMLInclude" /> 
+                            </nav>
+                        </div>
+                        <div class="small-4 columns text-center">
+                            <TalentCustom:Literal HTMLFileName="pre-header.html" ID="ltlPreHeader" runat="server" OnLoad="GetStaticHTMLInclude" />               
+                        </div>
+                        <div class="small-4 columns text-center no-pad-left no-pad-right">
+                            <nav class="quick-links show-for-small-only">
+                                <TalentCustom:Literal HTMLFileName="quick-links-right.html" ID="ltlQuickLinksRight" runat="server" OnLoad="GetStaticHTMLInclude" />
+                            </nav>
+                            <div class="ebiz-ud-main-nav-personalisation">
+                                <Talent:PersonalisationBar ID="uscPersonalisation" runat="server" /> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ebiz-ud-main-nav-top">
+                    <div class="row">
+                        <div class="medium-1 large-1 text-center columns ebiz-ud-main-nav-alerts-container">
+                            <div class="ebiz-ud-main-nav-alerts">
+                                <Talent:Alerts ID="uscAlerts" runat="server" /> 
+                            </div>
+                        </div>
+                        <div class="medium-12 large-10 columns">
+                            <TalentCustom:Literal HTMLFileName="top-navigation-shop.html" ID="ltlTopNavigationShop" runat="server" OnLoad="GetStaticHTMLInclude" />
+                        </div>
+                        <div class="medium-1 large-1 text-center columns ebiz-ud-main-nav-basket-container">
+                            <div class="ebiz-ud-main-nav-basket">
+                                <Talent:MicroBasket ID="uscMicroBasket" runat="server" /> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ebiz-ud-main-nav-sub show-for-medium-up">
+                    <div class="row">
+                        <div class="large-12 columns">
+                            <TalentCustom:Literal HTMLFileName="sub-navigation-shop.html" ID="ltlSubNavigationShop" runat="server" OnLoad="GetStaticHTMLInclude" />               
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ebiz-mobile-personalisation-basket">
+                    <div class="row">
+                        <div class="small-6 columns no-pad-left no-pad-right text-center">
+                            <Talent:MicroBasket ID="uscMicroBasketMobile" runat="server" /> 
+                        </div>
+                        <div class="small-6 columns no-pad-left no-pad-right text-center ebiz-mobile-personalisation">
+                            <Talent:PersonalisationBar ID="uscPersonalisationMobile" runat="server" /> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="red-stripe-up"></div>
+            </header>
+
+            <section>
+                <div class="cd-page-header">
+                    <div class="row">
+                        <div class="large-12 columns">
+                            <Talent:PageHeaderText ID="PageHeaderText1" runat="server"/>
+                        </div>
+                    </div>
+                </div>
+                 <!--<div class="ebiz-session-timer">   
+                    <div class="row">
+                        <div class="large-12 columns">      
+                            <TalentCustom:Literal HTMLFileName="DummySessionTimer.html" ID="ltlDummySessionTimer" runat="server" OnLoad="GetStaticHTMLInclude" />
+                        </div>
+                    </div>
+                </div>-->
+            </section>
+
+            <section class="cd-main-content">
+                <div class="row ebiz-mp-content">
+                    <div class="large-12 columns">              
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+                    </div>
+                </div>
+            </section>
+
+            <div class="red-stripe-lower"></div>
+
+            <footer>
+                <Talent:HTMLInclude ID="uscHTMLInclude2" runat="server" Usage="5" Sequence="1" />
+                <TalentCustom:Literal HTMLFileName="footer.html" ID="ltlFooter" runat="server" OnLoad="GetStaticHTMLInclude" />
+            </footer>
+
+    </form>
+</asp:Content>

@@ -1,0 +1,656 @@
+@import url('/Assets/CSS/Silverstone.css');
+
+/*	
+	Susy Grid System default font size: 14px 
+	Foundation default font size: 16px 
+	Recalculate Foundation sizes to Susy Grid System default font size!
+*/
+
+/* Foundation to Susy Redefines */
+html { 
+	font-size: 62.5%; }
+body { 
+	font-size: 1.4rem; }
+
+/* Fixing Inconsistencies Between Sites  */
+.utility-links ul {
+	padding-top: 0.5rem !important;
+	padding-bottom: 0.7rem !important; }
+.utility-links li {
+	padding-left: 1.4rem !important; }
+
+/* jQuery UI Redefines */
+table.ui-datepicker-calendar th,
+table.ui-datepicker-calendar td {
+	min-width: 0; }
+
+/* Foundation Redefines */	
+body {
+	line-height: 1.71429em; }
+a {
+    color: #1C305F; }
+a:hover {
+	color: #FF3A40; }
+form label {
+    background-color: transparent; }
+form input[type="submit"] {
+	margin-top: 0; }
+.row { 
+	max-width: 69.571em; }
+.panel {
+	background: #ffffff;
+	border: solid 1px #999999;	}
+label.inline {
+    padding: .5rem 0 .893em; }
+
+/* Ebiz Tag Redefines */
+.ebiz-content,
+.hopewiser-address {
+	color: #222222;
+ 	font-family: arial,"Helvetica Neue",Helvetica,sans-serif;
+	margin: 1.214em 0; }
+.ebiz-content h1 {
+    font-family: "FSJoey",sans-serif;
+    font-size: 4rem;
+    font-weight: normal;
+    line-height: 0.84;
+    margin: 0 0 0.5em;
+    text-transform: uppercase; }
+.ebiz-content h2,
+.ebiz-content h3,
+.form-producthome .ebiz-product-detail .ebiz-competition .ebiz-data,
+.hopewiser-address h2,
+.ebiz-ticketing-products .alert-box.alert.ebiz-sold-out {
+	color: #222;
+	font-family: "FSJoey",sans-serif;
+	font-size: 1.429em;
+    font-weight: normal; }
+.ebiz-content p {
+	font-size: 1em; }
+.ebiz-content a { 
+	color: #ff3a40; }
+.ebiz-content h2 small,
+.ebiz-content h3 small,
+.hopewiser-address h2 small   {
+	color: #222222;
+	font-size: inherit;
+	text-transform: uppercase; }
+.ebiz-content input[type="text"],
+.ebiz-content input[type="password"],
+.ebiz-content input[type="date"],
+.ebiz-content input[type="email"],
+.ebiz-content input[type="tel"],
+.ebiz-content input[type="number"],
+.ebiz-content textarea,
+.ebiz-content select,
+.hopewiser-address input[type="text"],
+.hopewiser-address select {	
+	border: 1px solid #999999;
+	font-size: inherit;
+	height: auto;
+	padding: 0.5rem;
+	position: relative;
+	top: 1px;	}
+.ebiz-content span.error,
+.ebiz-content label,
+.ebiz-content ul,
+.ebiz-content table tr th,
+.ebiz-content table tr td,
+.ebiz-content table thead tr th,
+.ebiz-content table thead tr td,
+.ebiz-content table tfoot tr th,
+.ebiz-content table tfoot tr td,
+.ebiz-content ul.pagination li,
+.alert-box,
+.breadcrumbs li,
+.hopewiser-address label  {
+	font-size: inherit; }
+.ebiz-content a.button,
+.ebiz-content input.button,
+.ebiz-content .AspNet-TreeView a,
+.ebiz-content .pagination a,
+.hopewiser-address a.button {
+	background: #000000 url(img/form-submit-icon.png) no-repeat right 50%;
+	border: none;
+	color: #ffffff;
+	-webkit-border-radius:0;
+	-moz-border-radius:0;
+	-ms-border-radius:0;
+	-o-border-radius:0;
+	border-radius:0;
+	box-shadow:none!important;
+	font-family: "BebasNeue",sans-serif;
+	font-size: 1.333em;
+	margin-top: 0;
+	padding: .2em 30px 0 .5em;
+	position: relative;
+	text-transform: uppercase;
+	top: 1px;
+	transition: background-color 300ms ease-out 0s;
+	outline: none;
+	-webkit-appearance: none; }
+.ebiz-content .ebiz-purchase-history .ebiz-details a,
+.ebiz-content a.ebiz-save-favourite-seat,
+.ebiz-search-wrap input.button,
+.ebiz-content .AspNet-TreeView a,
+.ebiz-content .pagination a {
+	background-image: none;
+	padding-right: .5em; }
+.ebiz-content ul.pagination li.current a {
+	background: #BEBEBE; }
+.ebiz-content  a.button.ebiz-remove-ticket,
+.ebiz-content .ebiz-ticketing-basket .button.ebiz-remove-ticket,
+.ebiz-content .ebiz-component-seats .ebiz-remove input,
+.ebiz-content .ebiz-selected-seats .ebiz-delete-seat,
+.ebiz-content .ebiz-merchandising-Basket .ebiz-delete {
+	background: none;
+	color: #FF3A40;
+	margin-bottom: 0;
+	padding: 0; }
+.ebiz-content .ebiz-component-seats .ebiz-remove,
+.ebiz-ticketing-basket .button.ebiz-remove-ticket,
+.ebiz-content .ebiz-selected-seats .ebiz-delete-seat,
+.ebiz-content .ebiz-merchandising-Basket .ebiz-delete {
+	font-family: FontAwesome, 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+.ebiz-content .ebiz-price-and-area-selection input.button,
+.ebiz-content .ebiz-product-subtypes-filter input.button,
+.ebiz-content .ebiz-actions input.button,
+.ebiz-content .ebiz-membership-quantity input.button,
+.ebiz-content .ebiz-book-links input.button,
+.ebiz-content .button.ebiz-basket-checkout-button,
+.ebiz-content .ebiz-checkout-accordion .button,
+.ebiz-content .button.ebiz-login,
+.ebiz-content .ebiz-forgotten-password .button,
+.ebiz-content .button.ebiz-add-to-basket,
+.ebiz-content .ebiz-sign-in .button-group .ebiz-register-link a,
+.ebiz-component-wrap .button.ebiz-proceed,
+.ebiz-component-wrap .button.ebiz-add,
+.hopewiser-address a.button + .button,
+input.button.ebiz-buy,
+input.button.button.ebiz-go-to-basket {
+	background-color: #ff3a40; }
+.ebiz-content a.button:hover,
+.AspNet-TreeView a:hover {
+	background-color:#bebebe;
+	color: #ffffff; }
+.ebiz-content .alert-box.info {
+	background-color: #eff0f4;
+	border: none;
+	color: #222222 }
+.ebiz-content table {
+	border: none; } 
+.ebiz-content table th, 
+.ebiz-content table td {
+	line-height: 1em;
+	min-width: 0; }
+.ebiz-content ul.no-bullet {
+	padding-left: 0; }
+.ebiz-content small,
+.hopewiser-address small { 
+	margin: 0; }
+.ebiz-responsive-table .ebiz-price {
+	text-align: left; }
+
+/* Pancentric */
+body {
+	font-family: Arial,"Helvetica Neue",Helvetica,sans-serif; }
+.breadcrumbs li:not(:last-child):after {
+    content: ""; }
+.breadcrumbs li {
+	padding-left: 0; }
+.breadcrumbs a {
+    margin-right: 0; }
+.user-links { 
+   	color: #222222; }
+form .ebiz-content label {
+ 	background: none; } 
+form .ebiz-content input[type="checkbox"] {
+	-webkit-appearance: checkbox;
+   	-moz-appearance: checkbox;
+   	appearance: checkbox; }
+form .ebiz-content input[type="radio"] {
+	-webkit-appearance: radio;
+   	-moz-appearance: radio;
+   	appearance: radio; }
+div.button, div.button:hover {
+	background: none; }
+div.button a:hover {
+	color: #ffffff; }
+form .ebiz-content :-webkit-autofill {
+	color: #000000 !important; }
+
+/* Masterpage - Basket and Personalization */
+.user-links {
+	text-align: right; }
+.user-links .ebiz-signed-in-as  { 
+	display: inline-block; }
+.user-links .ebiz-sign-in { 
+	display: inline-block;
+	margin-right: 1.11111rem; }
+.user-links .ebiz-sign-out { 
+	display: inline-block;
+	margin-right: 1.11111rem; }
+.user-links .ebiz-basket { 
+	display: inline-block; }
+.user-links .ebiz-basket-items {
+	display: inline-block;
+	margin-right: 1.11111rem; }
+/* .user-links .ebiz-basket-summary { 
+	display: none; } */
+.user-links .ebiz-sign-out i {
+	display: none; }
+.user-links .ebiz-signed-in-as span {
+	display: none; }
+
+
+/* Session */
+.ebiz-content .ebiz-session-status h2 small {
+	color: #ffffff;}
+
+/* AdditionalProductInformation.aspx */
+.ebiz-additional-information .ebiz-question-input input {
+	margin-top: .893rem; }
+.ebiz-content .ebiz-additional-information .ui-accordion-content.panel {
+	padding: 1em 1.86em; }
+	
+/* Basket.aspx */
+.ebiz-content .ebiz-description-3 {
+	display: none; }
+.ebiz-content .ebiz-description-6 {
+	display: none; }
+.ebiz-content .ebiz-type-H .ebiz-stand-information {
+	display: none; }
+.ebiz-content .ebiz-type-H .ebiz-area-information {
+	display: none; }
+.ebiz-content .ebiz-type-T .ebiz-seat-th {
+	display: none; }
+.ebiz-content .ebiz-type-H .ebiz-time-th,
+.ebiz-content .ebiz-type-S .ebiz-time-th {
+	display: none; }
+.ebiz-ticketing-basket .ebiz-customer .button {
+	line-height: 0.938rem;
+	padding: 0;
+	visibility: hidden; }
+
+/* browseXX.aspx */
+.ebiz-content .ebiz-product-list-graphical .ebiz-action {
+	display: none; }
+.ebiz-main-content-merchandise-nav {
+	display: none; }
+.tinynav {
+	margin-bottom: 1.1111rem; }
+.ebiz-content .ebiz-retail-pager {
+	border-left: none;
+	border-right: none;
+	padding-left: 0;
+	padding-right: 0; }
+.ebiz-content .ebiz-retail-pager .pagination {
+	margin-top: 0; }
+.ebiz-content .ebiz-product-list-graphical .panel {
+	background: none;
+	border: none;
+	padding: 0; }
+.ebiz-content .panel.ebiz-pager.ebiz-bottom-pager {
+	border: none;
+	overflow: visible;
+	padding: 0; }
+
+/* Checkout.aspx */
+.ebiz-content .ebiz-checkout-accordion .header {
+	padding-top: 0.5rem; }
+.ebiz-content .ebiz-checkout-accordion .header.ui-accordion-header-active:before {
+	background-image: none; }
+.ebiz-content .ebiz-checkout-accordion .ui-accordion-content.panel {
+	padding: 0 1.86em 1em; }
+.ebiz-content .ebiz-delivery-address-wrapper .ebiz-delivery-instructions {
+	display: none; }
+.ebiz-content .ebiz-checkout-others .ebiz-others-value {
+	display: none; }
+.ebiz-content .ebiz-checkout-accordion .header { 
+	padding-bottom: 0; }
+.ebiz-content .ebiz-checkout-accordion .header p { 
+	margin-bottom: 0; }
+
+/* checkout3dSecure.aspx */
+.ebiz-content .ebiz-checkout-3dsecure-iframe { 
+	height: 415px; }
+
+/* ComponentSelection.aspx */
+.form-componentselection .ebiz-content h1 + h2 {
+	display: none; }
+.ebiz-component-wrap h2 label {
+	width: 83.3333%; }
+.ebiz-content .ebiz-component-wrap li h2 small label {
+	font-size: 1.5rem; }
+.form-componentselection .button.ebiz-delete-package {
+	display: none; }
+
+/* HopewiserPostcodeAndCountry.aspx */
+.form-hopewiserpostcodeandcountry h1 {
+	display: none; }
+
+/* LinkedProducts.aspx */
+.form-linkedproducts .ebiz-main-product .ebiz-date-and-time,
+.form-linkedproducts .button.ebiz-go-to-basket {
+	display: none; }
+
+/* Login.aspx */
+.ebiz-content .ebiz-sign-in h2 {
+	display: none; }
+.ebiz-content .ebiz-sign-in .button-group {
+	padding-left: 0; }
+.ebiz-content .ebiz-sign-in .button-group li {
+	margin-right: 1.1111rem; }
+.ebiz-content .ebiz-sign-in .button-group .button {
+	margin-bottom: 0.313rem; }
+
+/* Products Details (Defaults) */
+.ebiz-content .ui-accordion-header.panel,
+.ebiz-content .panel.ebiz-product-type-H,
+.ebiz-content .panel.ebiz-product-type-S { 
+	background-color: #EFF0F4;
+	border: none;
+	margin-bottom: 2px;
+	padding-left: 2.85714em; }
+.ebiz-content .ui-accordion-header.panel:before {
+	background-image: url(img/icon-sprite.svg);
+    background-position: -55px -504px;
+    background-repeat: no-repeat;
+    content: "";
+    display: block;
+    height: 46px;
+    left: 1em;
+    position: absolute;
+    top: 0;
+    width: 20px; }
+.ebiz-content .ui-accordion-header-active.panel { 
+	margin-bottom: 0; }
+.ebiz-content .ui-accordion-header-active.panel:before { 
+	background-position: -134px -503px; }
+.ebiz-content .ui-accordion-content.panel { 
+	background-color: #EFF0F4;
+	border: 1em solid #EFF0F4;
+	margin-bottom: 2px;
+    padding: 0 1em; }
+.ebiz-content .ui-accordion-header.panel.ebiz-product-type-C,
+.ebiz-content .ui-accordion-header.panel.ebiz-product-type-E {
+	padding-top: 0.500rem; }
+.ebiz-content .ui-accordion-header.panel.ebiz-product-type-T {
+	padding-top: 1rem; }
+.ebiz-content .ebiz-ticketing-products .ebiz-sponsor span { 
+    font-size: .786em; }
+.ebiz-content .ebiz-ticketing-products a {
+	color: #222222; }
+.ebiz-content .ebiz-ticketing-products  ul {
+	margin: 0;  }
+.ebiz-content .ebiz-ticketing-products  .ebiz-label {
+	color: #222222; }
+.ebiz-content  .ebiz-ticketing-products  .ebiz-data {
+	color: #FF3A40;
+	font-weight: 400; }
+.ebiz-content .ebiz-ticketing-products .ebiz-availability .ebiz-data span {
+	padding: 0 1.11111rem; }
+.ebiz-content .ebiz-ticketing-products .ui-accordion-content {
+	margin-top: 0; }
+.ebiz-content .ebiz-ticketing-products .button {
+	color: #ffffff; }
+body.ProductTravel .ebiz-content .ebiz-ticketing-products ul {
+	float: none;
+	margin-bottom: 0;
+	width: 100%; }
+/* body.ProductTravel .ebiz-content .ebiz-ticketing-products  li {
+	clear: none;
+	display: block; 
+	float: left;
+	width: 33.3333%	} */
+body.ProductTravel .ebiz-content .ebiz-ticketing-products  li.ebiz-description {
+	display: none; }
+body.ProductTravel .ebiz-content .ebiz-ticketing-products  .ebiz-data {
+	color: #FF3A40;
+	font-weight: 400; }
+.ebiz-content .ebiz-ticketing-products .ebiz-availability .ebiz-data span {
+	color: #ffffff; }
+.ebiz-content .ebiz-product-type-S .ebiz-time,
+.ebiz-content .ebiz-product-type-H .ebiz-time {
+	display: none; }
+.ebiz-content #ticketing-products .ebiz-extended-text {
+	display: none; }
+.ebiz-content .ebiz-membership-quantity input {
+	margin: 0.357em 0; } 
+.ebiz-content .ebiz-membership-quantity label {
+	margin: 0.357em 0 0 0;
+	/* padding: 0; */ }
+.form-producthome .ebiz-content .ebiz-product-detail .ebiz-competition .ebiz-data {
+	float: left;
+	text-transform: uppercase; }
+.ebiz-content .ebiz-product-type-T + div .ebiz-product-details {
+	display: none; }
+.ebiz-content .ebiz-ticketing-products .ebiz-product-dropdown {
+	margin-bottom: 1.11111rem; }
+.ebiz-content .ebiz-product-type-E .ebiz-duration { 
+	display: none; }
+.ebiz-ticketing-products .alert-box.info.ebiz-extended-text {
+ 	margin-top: 0.357em;
+ 	padding: 0; }
+.ebiz-ticketing-products .alert-box.info.ebiz-extended-text ul { 
+	clear: both;
+	float: none; 
+	width: auto; }
+.ebiz-ticketing-products .alert-box.info.ebiz-extended-text li { 
+  float: none; }
+.ebiz-product-detail .ebiz-availability .ebiz-data span.not-available {
+ 	background: #F04124 !important;
+ 	color: #ffffff;
+ 	font-weight: bold; }
+ .ebiz-ticketing-products .alert-box.alert.ebiz-sold-out {
+ 	background: none;
+ 	border: none;
+ 	color: #DE2D0F;
+ 	padding: 0; }
+
+
+/* ProductMembership.aspx - Ticketing Products */
+.ebiz-product-type-C[class*="GV01"] .ebiz-date {
+  display: none; }
+.ebiz-product-type-C[class*="GV01"] .ebiz-price {
+  clear: both; }
+.ebiz-product-type-C[class*="EV"] .ebiz-date {
+  display: none; }
+.ebiz-product-type-C[class*="EV"] .ebiz-price {
+  clear: both; }
+  .ebiz-product-type-C[class*="SU"] .ebiz-date {
+  display: none; }
+.ebiz-product-type-C .ebiz-date {
+  clear: both; }
+.ebiz-product-type-C .ebiz-competition {
+  display: none; }
+	
+/* productSubtypes.aspx */
+.ebiz-product-subtypes-filter .ebiz-filter-actions {
+	margin-top: 2.5em; }
+/* .ebiz-product-sub-types h2 {
+	min-height: 4em; } */
+
+/* PurchaseHistory.aspx */
+.ebiz-purchase-history-search-options .ebiz-product-type { 
+	display: none; }
+.ebiz-purchase-history-search-options .ebiz-status select {
+	margin-bottom: 1rem; }
+.ebiz-purchase-history .ebiz-corporate-products {
+	display: none; }
+
+/* VisualSeatSelection.aspx */
+.ebiz-content .ebiz-information h1 {
+    margin-right: 1.11111rem; }
+
+/* VisualSeatSelection.aspx - Key */
+.ebiz-content .ebiz-svg-container > .panel {
+	padding-right: 16px; } 
+.ebiz-svg-container .ebiz-legend h3 {
+	padding-top: 1.4rem;
+}
+
+/* VisualSeatSelection.aspx - Navigation Options */
+.ebiz-content .ebiz-svg-container a.button,
+.ebiz-content .ebiz-svg-container input.button {
+	background: #000000;
+	padding: .2em .5em 0 .5em; }
+.ebiz-content .ebiz-svg-container #navigation-options,
+.ebiz-content .ebiz-svg-container .ebiz-legend .ebiz-toggle-legend {
+	background: #000000; }
+.ebiz-content .ebiz-svg-container .ebiz-legend h3 {
+	line-height: 1.429em;}
+.ebiz-content #navigation-options a.button,
+.ebiz-content .ebiz-zoom-options a.button { 
+    background-image: none;
+    padding: 0;
+    top: 0; }
+.ebiz-content .ebiz-svg-container #navigation-options .ebiz-up { 
+    left: 16px;
+    top: 0; }
+.ebiz-content .ebiz-svg-container #navigation-options .ebiz-right {
+    right: 0;
+    top: 16px; }
+.ebiz-content .ebiz-svg-container #navigation-options .ebiz-down {
+    top: 32px;
+    left: 16px; }
+.ebiz-content .ebiz-svg-container #navigation-options .ebiz-left {
+    left: 0;
+    top: 16px; }
+.ebiz-content li.basket {
+	background: none;
+	float: none; }
+
+/* VisualSeatSelection.aspx - Tooltip */
+#stand-tip,
+#tip {
+	background: #000000;
+	border: none; }
+
+/* hide */
+.user-links .ebiz-new-customer, 
+/* .user-links .ebiz-basket-summary, */
+.ebiz-product-detail .ebiz-competition { 
+	display: none; }
+.form-producthome .ebiz-product-detail .ebiz-competition {
+	display: block; }
+.form-producthome .ebiz-product-detail .ebiz-competition .ebiz-label {
+	display: none; }
+.form-producthome .ebiz-product-detail .ebiz-description {
+	display: none; }
+	
+/* Small screens */	
+@media only screen and (max-width: 40.5625em) { 
+	/* Masterpage - Basket and Personalization */
+	.user-links .ebiz-signed-in-as,
+	.user-links .ebiz-sign-in,
+	.user-links .ebiz-basket-total {
+		display: none; }
+	.ebiz-basket {
+    	margin: 0; }
+    /* .ebiz-basket-summary {
+    	display: none; } */
+	/* browseXX.aspx */
+	.ebiz-content .ebiz-top-pager .samll-12.medium-6.large-5 { margin-bottom: 1.1111rem; }
+
+	 /* HopewiserPostcodeAndCountry.aspx */
+	.form-hopewiserpostcodeandcountry .ebiz-hopewiser-country .small-6 { 
+		width: 100% !important; }
+
+	.ebiz-ticketing-products .ebiz-header.ebiz-product-type-T {
+
+	}
+
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+/* Medium screens */
+@media only screen and (min-width: 40.625em) {
+	/* Foundation Redefines */   
+    /* .ebiz-content table thead tr th,
+    .ebiz-content table tr th,
+    .ebiz-content table tbody tr td {
+        font-size: .8em;
+        line-height: 1em; } */
+
+    /* Retail Pagination */
+    /* .ebiz-retail-pager a,
+    .ebiz-retail-pager input {
+    	font-size: 1.4rem !important;
+    	margin-top: 0.25rem !important; }
+    .ebiz-retail-pager input[type=submit]::-moz-focus-inner { 
+    		border: 0; 
+    		padding: 0; 
+    		margin-top: 0.25rem; 
+    		margin-bottom: 0.25rem; } */
+    .ebiz-top-pager.ebiz-retail-pager .medium-6 {
+    	display: none; }
+}
+
+@media only screen and (min-width: 40.625em) and (max-width: 64em) { 
+	/* HopewiserPostcodeAndCountry.aspx */
+	.form-hopewiserpostcodeandcountry .ebiz-hopewiser-country .small-6 { 
+		width: 50%; }
+
+	/* Retail Pagination */
+	.ebiz-top-pager.ebiz-retail-pager .medium-3 {
+    	margin-left: 50%; }
+    .ebiz-top-pager.ebiz-retail-pager .medium-3 + .medium-3 {
+    	margin-left: 0; }
+
+} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+@media only screen and (max-width: 64em) { 
+	/* Merchandise Nav */
+	ul.l_tinynav1 {
+		display:none; }
+} /* max-width 1024px, use when QAing tablet-only issues */
+
+/* Large screens */
+@media only screen and (min-width: 64.063em) {
+	/* Fixing Inconsistencies Between Sites  */
+	.site-banner .site-banner-content {
+		padding-top: 20px;
+		vertical-align: top; }
+	.user-links {
+		margin-top: 0 !important; }
+
+	/* LinkedProducts.aspx */
+	.form-linkedproducts .ebiz-main-product .large-4 {
+		width: 25%; }
+	.form-linkedproducts .ebiz-main-product .large-8 {
+		width: 75%; }
+
+	/* Masterpage - Basket and Personalization */
+	.site-banner .site-banner-content .user-links {
+		width: 21.429em; }
+
+	/* Masterpage - Main EBIZ Conetnt */
+	.ebiz-content {
+		min-height: 22.857em; }
+
+   /* productSubtypes.aspx */
+   .ebiz-content  .ebiz-subtype-product h2 {
+	height: 4.2em; }
+	
+	/* browseXX.aspx */
+	.tinynav {
+		display: none; }
+
+	/* Retail Pagination */
+	/* .ebiz-top-pager.ebiz-retail-pager .large-1 {
+		margin-left: 41.6667%; } */
+	.ebiz-top-pager.ebiz-retail-pager .columns {
+		float: left;
+		margin-right: 1.1111rem; }
+		
+	/* ProductEvent.aspx AND ProductTravel.aspx (hide second table row) */
+	body.product-event-page table.ebiz-responsive-table tr:nth-child(even) td, 
+	body.product-travel-page table.ebiz-responsive-table tr:nth-child(even) td
+	 {display:none; !important}
+
+} /* min-width 1025px, large screens */
+
+/* Fix (Basket.aspx) Remove Wish List/Save Order Button */
+.button.ebiz-basket-save-template,
+.button.ebiz-basket-save-order {
+	display: none; }

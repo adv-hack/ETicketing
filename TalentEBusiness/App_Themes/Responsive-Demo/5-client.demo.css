@@ -1,0 +1,1191 @@
+/* 	
+	Primary Colours
+	#DB001B Default rgb(219, 0, 27)
+	#FF1936 Lighter
+	#C10018 Darker
+	#9B0013 Even Darker
+
+	Default Button Colour
+	#E79611 Default
+	#CD850F Darker
+	#A76D0C Even Darker
+
+	Primary Button Colour
+	#117FE7 Default
+	#0C5CA7 Darker
+	#083967 Even Darker
+*/
+
+
+/* HTML5 Redefines */
+input[type=number] {
+    -moz-appearance: textfield; }
+
+/* Foundation CSS */
+body {
+	font-family:'Open Sans', sans-serif; }
+h1, h2, h3, h4, h5, h6 {
+	font-family:'Open Sans', sans-serif;
+	font-weight: 300;
+	text-transform: uppercase; }
+.top-bar-section ul li > a {
+	font-family:'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 1rem; }
+h1 {
+	font-size: 1.875rem;
+	margin-top: 0; }
+h2.subheader small {
+	font-size: 1.125rem; }
+h3.subheader small {
+	font-size: 1rem; }
+.panel h2 {
+	margin-bottom: 0; }
+button, .button {
+	font-size:  0.875rem;
+	padding: 0.25rem;
+	text-transform: uppercase; }
+input[type="file"], input[type="checkbox"], input[type="radio"], select {
+	font-size: 0.875rem;
+	margin-bottom: 0.313rem; }
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea {
+	font-size: 0.875rem;
+	height: 1.8125rem;
+	margin-bottom: 0.313rem; 
+	padding: 0.25rem; }
+label.inline {
+    margin-bottom: 0.313rem;
+    padding-top: 0.25rem; }
+select { 
+	height: 1.8125rem;
+	padding: 0.25rem;}
+ul, ol, dl, p {
+    margin-bottom: 0.625rem; }
+.panel, .alert-box { 
+	margin-bottom: 0.625rem;
+	padding: 0.625rem; }
+.breadcrumbs {
+	background: none; 
+	border: none;
+	margin: 0.625rem 0;
+	padding: 0; }
+table thead tr th, table tfoot tr th, table tbody tr td, table tr td, table tfoot tr td {
+	font-size: 0.750rem; }
+table {
+	margin-bottom: 0.625rem; }
+h2 small { 
+	font-size: 1.25rem; }
+form {
+	margin-bottom: 0; }
+[class*="block-grid-"] > li {
+	padding-bottom: 0.625rem; }
+p, ul, ol, dl, .panel { 
+	font-size: 0.875rem; }
+.panel h1.subheader, .panel h2.subheader, .panel h3.subheader, .panel h4.subheader, .panel h5.subheader, .panel h6.subheader {
+    line-height: 1rem; 
+	margin-bottom: 0.625rem; }
+ul.pagination {
+	margin: 0; }
+ul.pagination li { 
+	font-size: 0.750rem; }
+ul.pagination li a {
+	box-sizing: border-box;
+	line-height: 1rem;
+	padding: 0.313rem; }
+.tabs dd > a, .tabs .tab-title > a {
+	border-radius: 3px 3px 0 0;
+	padding: 0.625rem; }
+button, .button {
+	margin-bottom: 0.625rem; }
+
+/* jQuery UI */
+.ui-widget input {
+	font-family:'Open Sans', sans-serif;}
+
+/* Ebiz CSS */
+label {
+	font-weight: 300; }
+.panel.ui-accordion-header {
+    padding: 0.625rem; }
+.panel.ui-accordion-content {
+    padding: 0.625rem; }
+.ebiz-contact-preference .large-offset-3 {
+    margin-bottom: 0.625rem; }
+div.ebiz-terms-and-conditions {
+    margin-bottom: 0.625rem; }
+.ebiz-svg-container > .panel {
+    padding-right: 1.25rem; }
+form .panel.ebiz-payment-owner-purchase-details .row {
+    margin-bottom: 0.313rem; }
+.ebiz-faux-paragraph {
+    margin-bottom: 0.625rem; }
+.ebiz-ticketing-products .ebiz-stand-information + table, .ebiz-ticketing-products .ebiz-area-information + table, .ebiz-ticketing-products .ebiz-package-information + table {
+    margin-top: 0.625rem; }
+
+/* Alerts */
+.form-alerts {
+	padding: 0.625rem; }
+#user-alerts-page {
+	margin-top: 0; }
+.ebiz-remove-this-alert input {
+	font-size: 2rem; }
+#user-alerts-page .ebiz-alert-type-link,
+#user-alerts-page .ebiz-alert-type-info {
+	overflow: hidden;
+	position: relative;
+	width: auto; }
+#user-alerts-page img {
+	float: left;
+	margin-right: 2.083333333333333%;
+	width: 25%; }
+#user-alerts-page a {
+	display: block;
+	float: left;
+	width: 91.6667% }
+#user-alerts-page .ebiz-more,
+#user-alerts-page .ebiz-desc {
+	display: block;
+	float: left;
+	width: 64.58333666666667%; }
+#user-alerts-page .ebiz-remove-this-alert {
+	display: block;
+	float: right;
+	position: absolute;
+	right: 0.313rem;
+	text-align: right;
+	top: 0.313rem;
+	width: 8.33333%; }
+
+/* Basket Summary */
+.panel.ebiz-basket-summary .row {
+	margin-bottom: 0.313rem; }
+.panel.ebiz-basket-summary .row:last-child {
+	margin-bottom: 0; }
+
+/* Modal */
+.modal { 
+	background: #000000; }
+.modal p {
+	color: #ffffff; }
+
+/* Pagination */
+.button.ebiz-show-all { 
+	border-radius: 3px;
+	box-sizing: border-box;
+	font-size: 0.75rem;
+	line-height: 1rem;
+	padding: 0.313rem; }
+.ebiz-sort-by-label {
+	font-size: 0.75rem; }
+.ebiz-sort-by-options {
+	font-size: 0.75rem; }
+
+/* Product Nav */
+.AspNet-TreeView {
+	text-transform: uppercase; }
+.AspNet-TreeView li li a {
+    background: none;
+    border: none !important;
+    box-shadow: none;
+    padding-bottom: 0;
+    font-weight: 300;
+    padding-left: 0.625rem;
+    padding-top: 0; }
+.AspNet-TreeView li li a:hover {
+    background: none;
+    border: none !important; }
+.AspNet-TreeView li ul {
+	padding-left: 0.625rem; }
+
+/* Session Timer */
+.ebiz-session-status h2 {
+	line-height: 1.125rem; }
+
+/* Shadowbox */
+#sb-info,
+#sb-info-inner,
+#sb-nav {
+	height: 2rem;
+	padding: 0; }
+#sb-nav a  { 
+	height: 2rem;
+	width: 2rem; }
+#sb-nav-close {
+	background-image: url(img/close.png);
+	background-repeat: no-repeat; }
+
+/* Template - Header */
+.ebiz-temp-header-wrap {
+	background: #ffffff;
+	color: #666666; }
+.ebiz-temp-header-wrap .ebiz-sign-in { 
+	display: inline-block; 
+	font-size: 0.875rem; 
+	margin: 0.625rem 0.625rem 0.625rem 0; }
+.ebiz-temp-header-wrap .ebiz-new-customer { 
+	display: inline-block; 
+	font-size: 0.875rem;
+	margin: 0.625rem 0; }
+.ebiz-temp-header-wrap .ebiz-signed-in-as { 
+	display: inline-block; 
+	font-size: 0.875rem; 
+	margin: 0.625rem 0.625rem 0.625rem 0; }
+.ebiz-temp-header-wrap .ebiz-new-customer { 
+	display: inline-block; 
+	font-size: 0.875rem; }
+.ebiz-temp-header-wrap .ebiz-sign-out {
+	display: inline-block; 
+	font-size: 0.875rem;
+	margin: 0.625rem 0.625rem 0.625rem 0; }
+.ebiz-temp-header-wrap .ebiz-user-alerts {
+	display: inline-block; 
+	font-size: 0.875rem;
+	margin: 0.625rem 0; }
+.ebiz-temp-header-wrap .ebiz-basket {
+	margin-bottom: 0.625rem; }
+.ebiz-temp-navigation-wrap {
+	background: #DB001B; }
+.ebiz-user-alerts a {
+	-webkit-border-radius: 1000px;
+	border-radius: 1000px;
+	padding: 0 0.625rem; }
+
+/* Template - Sidebar */
+/* .ebiz-session-status h2 {
+	margin-top: -1.156rem; } */
+.ebiz-session-status h2 small {
+	color: #ffffff; }
+.ebiz-session-status p { 
+	font-size: 0.813rem; }
+
+/* Ticketing - Pagination */
+.ebiz-bottom-pager {
+	overflow: hidden;
+	width: auto; }
+
+/* Ticketing - Products */
+.ebiz-ticketing-products {
+	margin-bottom: 0.563rem;}
+.ebiz-ticketing-products .panel {
+	margin-bottom: 2px;
+	margin-top: 0; }
+.ebiz-ticketing-products .panel.ui-accordion-header-active {
+	margin-bottom: 0; }
+.ebiz-product-detail ul {
+	line-height: 1rem; }
+.ebiz-ticketing-products .ebiz-eligibility {
+    margin-top: 0.625rem; }
+.ebiz-ticketing-products .ebiz-extended-text {
+    margin-top: 0.625rem; }
+.ebiz-add-to-basket {
+	margin-bottom: 0; }
+
+/* Ticketing - Products - Filter */
+.ebiz-ticketing-filter li {
+	padding-bottom: 0.313rem; }
+.ebiz-ticketing-filter h2 {
+	display: none; }
+.ebiz-ticketing-filter label {
+	margin-bottom: 0;
+	padding-bottom: 0.313rem; }
+.ebiz-ticketing-products .ebiz-sponsor span {
+	display: none; }
+.ebiz-ticketing-filter-buttons input {
+	margin-bottom: 0; }
+
+/* Basket.aspx */
+.ebiz-product-fulfilment label {
+	margin-bottom: 0; }
+.ebiz-stand-information { 
+	clear: left; }
+.ebiz-stand-information .medium-10,
+.ebiz-area-information .medium-10 {
+	font-weight: bold; }
+.ebiz-ticketing-basket td {
+	vertical-align: top; }
+.ebiz-basket-buttons { 
+	margin-bottom: 0.625rem; }
+.ebiz-product-detail .ebiz-basket-product-descriptions {
+	margin-bottom: 0.313rem; }
+.ebiz-basket-product-descriptions div {
+	margin-bottom: 0.313rem; }
+.ebiz-graphical-product-relation-wrap h3.subheader {
+	line-height: 1.125rem; }
+.panel.ebiz-promotions-summary { 
+	background: none; 
+	border: none;
+	padding: 0; }
+.ebiz-ticketing-basket .ebiz-ticketing-products {
+	background: none; 
+	border: none;
+	margin-bottom: 0.625rem;
+	padding: 0; }
+.ebiz-ticketing-basket .ebiz-ticketing-products:last-child {
+	margin-bottom: 0; }
+.form-basket .panel.ebiz-basket-summary {
+	background: none; 
+	border: none;
+	margin-bottom: 1.250rem;
+	padding: 0; }
+.row.ebiz-package-information .columns:last-child {
+	font-weight: bold; }
+.form-basket .ebiz-basket-product-descriptions h2,
+.form-basket .ebiz-package-status h2,
+.form-basket .ebiz-summary-total h2 {
+	font-family: inherit;
+	font-weight: bold;
+	line-height: 0.875rem;
+	margin: 0 0 0.313rem; }
+.form-basket .ebiz-package-status h2,
+.form-basket .ebiz-summary-total h2 {
+	margin-bottom: 0.625rem; }
+.form-basket .ebiz-basket-product-descriptions h2 small,
+.form-basket .ebiz-package-status h2 small,
+.form-basket .ebiz-summary-total h2 small {
+	color: inherit;
+	font-size: 0.875rem; }
+.form-basket .ebiz-summary-total .button {
+	margin-right: 0.313rem; }
+.ebiz-merchandising-Basket .ebiz-summary-totals {
+	background: none; 
+	border: none;
+	padding: 0; }
+.ebiz-basket-summary img {
+	height: 14px;
+	width: 48px; }
+.button.ebiz-basket-save-order,
+.button.ebiz-basket-save-template {
+	display: none; }
+
+/* browseXX.aspx */
+.ebiz-product-list-graphical img {
+	margin-bottom: 1.250rem; }
+.ebiz-product-list-graphical .panel h2 {
+	line-height: 1rem;
+    margin-top: 0; }
+
+/* Checkout.aspx */
+.ebiz-checkout-accordion .header,
+.ebiz-checkout-accordion .ui-accordion-content {
+	margin-bottom: 1px; }
+.ebiz-checkout-accordion .ui-accordion-header-active.header {
+	margin-bottom: 0; }
+.ebiz-checkout-accordion .panel .panel {
+	background: none;
+	border: none;
+	padding: 0; }
+.panel.ebiz-promotions {
+	overflow: hidden;
+	width: auto; }
+.panel.ebiz-promotions input[type=text] {
+	float: left;
+	margin-bottom: 0; 
+	width: 66.6667%; }
+.panel.ebiz-promotions input[type=submit]  {
+	float: right;
+	margin-bottom: 0;
+	width: 25%; }
+.form-checkout .ebiz-basket-product-descriptions h2 {
+	font-family: inherit;
+	font-weight: bold;
+	line-height: 0.875rem;
+	margin: 0 0 0.313rem; }
+.form-checkout .ebiz-basket-product-descriptions h2 small {
+	color: inherit;
+	font-size: 0.875rem; }
+.ebiz-checkout-accordion .header h2 {
+	margin-bottom: 0; }
+.ebiz-merchandising-Basket .ebiz-image {
+	display: none; }
+
+/* ComponentSelection.aspx */
+h1 + h2 {
+	font-size: 1.5rem; }
+.ebiz-stand-area-descriptions .ebiz-stand-description,
+.ebiz-stand-area-descriptions .ebiz-area-description {
+	margin-bottom: 0.625rem; }
+.ebiz-component-wrap h2 label {
+    width: 83.3333%; }
+
+/* FavouriteSeat.aspx */
+.favourite-seat-details .large-9 {
+	font-weight: bold; }
+
+/* LinkedProducts.aspx */
+.ebiz-main-product .ebiz-product-detail li {
+	margin-bottom: 0.313rem; }
+ .ebiz-main-product .ebiz-product-detail li:last-child {
+	margin-bottom: 0; }
+.ebiz-linked-products .ebiz-product-detail li {
+	margin-bottom: 0.313rem; }
+ .ebiz-linked-products .ebiz-product-detail li:last-child {
+	margin-bottom: 0; }
+.ebiz-linked-products .alert-box.info.ebiz-instructions {
+	background: none;
+	border: none;
+	font-family: 'Vollkorn', serif;
+	font-size: 1.25rem; 
+	padding: 0; }
+
+/* Login.aspx */
+.ebiz-sign-in h2 {
+	display: none; }
+.ebiz-sign-in .button-group li {
+	margin-right: 0.313rem; }
+.ebiz-sign-in .button-group .button {
+	margin-bottom: 0.313rem; }
+.alert-box.ebiz-login-failure {
+	margin:  0.625rem 0 0; }
+
+/* MyAccount.aspx */
+#divAccountWindow p {
+	margin-bottom: 0; }
+#divAccountWindow .medium-2 {
+	text-align: right; }
+
+/* OrderReturn.aspx */
+.ebiz-buybacks-comments h2 {
+	display: none; }
+.ebiz-buyback-buttons .button {
+	margin-bottom: 0; }
+.ebiz-buyback-buttons .button:first-child {
+	margin-right: 0.625rem; }
+
+/* OrderReturnEnquiry.aspx */
+.ebiz-buyback-customer .columns {
+	margin-bottom:  0.625rem; }
+.ebiz-buyback-customer .large-9 {
+	font-weight: bold; }
+.ebiz-buyback-continue-button .button {
+	margin-bottom: 0; }
+
+/* product.aspx */
+form .row.ebiz-MagicZoom-product-controls-wrap {
+	margin-bottom: 1.250rem; }
+.MagicZoom {
+	margin-bottom: 0.625rem; }
+.MagicZoom + ul a { 
+	display: inline !important; }
+.form-product .ebiz-quantity input {
+	width: 3rem; }
+.ebiz-product-controls .row.ebiz-price { 
+	margin-bottom: 1.250rem; }
+
+/* productSubtypes.aspx */
+.ebiz-product-subtypes-filter li {
+	padding-bottom: 0; }
+.ebiz-product-subtypes-filter .ebiz-filter-actions .button {
+	margin-bottom: 0.313rem; }
+
+/* PurchaseDetails.aspx */
+.ebiz-purchase-details .large-8 {
+	font-weight: bold; }
+.ebiz-payment-owner div {
+	font-weight: bold; }
+.button.ebiz-print-all {
+	margin-bottom: 0.625rem; }
+.ebiz-order-details .ebiz-actions .button {
+	margin-right: 0.313rem; }
+.ebiz-payment-owner-purchase-details + .button {
+	margin-bottom: 0.625rem; }
+.ebiz-order-details .ebiz-details-2 .button { 
+	background: none;
+	color: #cc0000;
+	font-size: 2rem;
+	line-height: 1rem;
+	padding: 0; }
+.ebiz-detail .fa-info-circle { 
+	font-size: 2rem; }
+.ebiz-package-description-row .columns {
+	margin-bottom: 0.625rem; }
+
+/* PurchaseHistory.aspx */
+.ebiz-purchase-history-search-options label {
+	padding: 0; }
+.ebiz-purchase-history-details .fa-info-circle { 
+	font-size: 2rem; }
+
+/* Registration.aspx */
+.form-registration .ebiz-terms-and-conditions {
+	margin-bottom: 0;
+	padding: 0.625rem; }
+.form-registration .ebiz-reister {
+	padding: 0 0.625rem 0.625rem 0.625rem; }
+.form-registration .ebiz-reister input {
+	margin-bottom: 0; }
+
+/* VisualSeatSelection.aspx */
+.panel.favourite-seat-selection p {
+	font-size: 0.813rem; }
+.ebiz-quick-buy-option .ebiz-quantity-minus a {
+	margin-top: 1rem; }
+.ebiz-quick-buy-option .ebiz-quantity-plus a {
+	margin-top: 1rem; }
+.ebiz-svg-container .ebiz-legend h3 {
+	background: #6F6F6F;
+	line-height: 24px; }
+.ebiz-best-available .ebiz-buy {
+	margin-top: 0.625rem; }
+p.ebiz-match-competition {
+	color: #ffffff; }
+.ebiz-more-info a { 
+	display: inline-block;
+	border-radius: 1000px;
+	padding: 0 0.625rem; }
+.ebiz-seat-selection.favourite-seat-selection .button,
+.ebiz-price-and-area-selection .button,
+.ebiz-favourite-seat-selection .button {
+	margin-bottom: 0; }
+.ebiz-selected-seats #btnBuy {
+	margin-bottom: 0; }
+.ebiz-selected-seats table input.button,
+.ebiz-selected-seats table input.button:hover {
+	background: none;
+	color: red;
+	font-size: 1rem;
+	padding: 0; }
+#navigation-options .button{
+	border: none !important; 
+	box-shadow: none; }
+
+/* vouchers.aspx */
+.panel.ebiz-vouchers .button {
+	margin-bottom: 0; }
+
+/* UpdateProfile.aspx */
+.form-updateprofile .ebiz-update-profile {
+	margin-bottom: 0.625rem;
+	padding: 0.625rem; }
+.form-updateprofile .ebiz-update-profile input {
+	margin-bottom: 0; }
+
+/****** User Defined Content ******/
+/* Footer */
+.ebiz-include-footer-wrap a:hover {
+	color: #FF1936; }
+.ebiz-include-footer-features img {
+	margin-bottom: 1.125rem; }
+.ebiz-include-footer-features h2.subheader {
+	line-height: 1.125rem;
+	margin-top: 0; }
+.ebiz-include-footer-features h2 small {
+	font-size: 1.125rem;
+	font-weight: normal; }
+.ebiz-include-footer-wrap {
+	background: #DB001B;
+	color: #ffffff;
+	padding-top: 0.625rem; }
+.ebiz-include-footer-wrap a {
+	color: #ffffff; }
+.ebiz-include-footer-wrap p,
+.ebiz-include-footer-wrap ul {
+	font-size: 0.750rem; }
+.ebiz-include-footer-wrap h2  {
+	line-height: 0.875rem; }
+.ebiz-include-footer-wrap h2 small {
+	color: #ffffff;
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 0.875rem;
+	font-weight: bold; }
+.ebiz-include-footer-wrap [class*="block-grid-"] li {
+	text-align: center; }
+.ebiz-include-strapline .columns { 
+	text-align: center; }
+.ebiz-include-strapline p {
+	font-size: 0.875rem;
+	line-height: 0.875rem; }
+.ebiz-include-big-sponsors {
+	padding: 1.250rem 0; }
+.ebiz-include-small-sponsors {
+	border-top: 1px solid #FF1936;
+	padding: 1.250rem 0; }
+.cp-socialFt { 
+	padding: 1rem 0; }
+.cp-socialFt .columns {
+	text-align: center; }
+.ebiz-include-sitemap {
+	border-top: 1px solid #FF1936;
+	padding-top: 1.250rem; }
+.ebiz-include-sitemap li {
+	line-height: 0.875rem; }
+.ebiz-include-copyright {
+	border-top: 2px solid #C10018;
+	padding-top: 1.250rem; }
+
+/* Colouring */
+body {
+	background: #ffffff;
+	color: #000000; }
+a,
+.ebiz-checkout-wrap a {
+    color: #DB001B; }
+a:hover, a:focus,
+.ebiz-checkout-wrap a:hover, .ebiz-checkout-wrap a:focus {
+	color: #C10018; }
+.ebiz-more-info a {
+	color: #ffffff; }
+.ui-accordion .panel.ui-accordion-content table a { 
+	color: #DB001B; }
+.ui-accordion .panel.ui-accordion-content table a:hover, .ui-accordion .panel.ui-accordion-content table a:focus { 
+	color: #C10018; }
+.ebiz-ticketing-products .ebiz-header a {
+	color: #666666; }
+.breadcrumbs > * a, .breadcrumbs > * span {
+    color: #ffffff; }
+.breadcrumbs > *:before {
+	color: #666666; }
+.breadcrumbs .current  {
+	color: #666666; }
+.breadcrumbs.ebiz-breadcrumb-trail a {
+	color: #DB001B; }
+h1,
+h1 + h2,
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { 
+	color: #000000; }
+label { 
+	color: #000000; }
+button, .button,
+ul.pagination li.current a,
+.AspNet-TreeView a,
+.tabs dd > a, .tabs .tab-title > a,
+.AspNet-TreeView > ul > li > a + ul {
+    background: #E79611;
+	border-bottom: solid 3px #CD850F !important;
+	border-radius: 6px;
+	box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+	color: #ffffff;
+	font-weight: 600;
+	padding-left: 1.11111rem;
+	padding-right: 1.11111rem; }
+button:hover, button:focus, .button:hover, .button:focus,
+ul.pagination li.current a:hover, ul.pagination li.current a:focus,
+.AspNet-TreeView a:hover, .AspNet-TreeView a:focus,
+.tabs dd > a:hover, .tabs .tab-title > a:hover,
+.ebiz-svg-container #navigation-options {
+    background: #CD850F;
+	border-bottom-color: #A76D0C !important;
+	color: #ffffff; }
+.button.ebiz-basket-checkout-button,
+.button.ebiz-login,
+.ebiz-register-link .button,
+.ebiz-password + .button,
+.ebiz-reister .button,
+.ebiz-change-password-button .button,
+.ebiz-update-profile .button,
+.panel.ebiz-vouchers .button,
+.button.ebiz-add-to-basket,
+.ebiz-membership-quantity .button,
+.ebiz-user-alerts a,
+.button.ebiz-buy,
+.button.ebiz-proceed,
+.button.ebiz-add,
+.ebiz-checkout-wrap .button,
+.ebiz-away-quantity .button,
+.ebiz-quantity-minus .button,
+.ebiz-quantity-plus .button,
+.button.ebiz-qick-buy,
+.button.comments-apply,
+.ebiz-more-info a,
+.ebiz-add-to-basket .button,
+.favourite-seat-selection .button,
+.ebiz-price-and-area-selection .button,
+#btnBuy,
+.ebiz-favourite-seat-selection .button,
+.ebiz-buyback-buttons .button + .button { 
+	background: #117FE7;
+	border-bottom: solid 3px #0C5CA7 !important;
+	color: #ffffff;  }
+.button.ebiz-basket-checkout-button:hover, .button.ebiz-basket-checkout-button:focus,
+.button.ebiz-login:hover, .button.ebiz-login:focus,
+.ebiz-register-link .button:hover, .ebiz-register-link .button:focus,
+.ebiz-password + .button:hover, .ebiz-password + .button:focus,
+.ebiz-reister .button:hover, .ebiz-reister .button:focus,
+.ebiz-change-password-button .button:hover, .ebiz-change-password-button .button:focus,
+.ebiz-update-profile .button:hover, .ebiz-update-profile .button:focus,
+.panel.ebiz-vouchers .button:hover, .panel.ebiz-vouchers .button:focus,
+.button.ebiz-add-to-basket:hover, .button.ebiz-add-to-basket:focus,
+.ebiz-membership-quantity .button:hover, .ebiz-membership-quantity .button:focus,
+.ebiz-user-alerts a:hover, .ebiz-user-alerts a:focus,
+.button.ebiz-buy:hover, .button.ebiz-buy:focus,
+.button.ebiz-proceed:hover, .button.ebiz-proceed:focus,
+.button.ebiz-add:hover, .button.ebiz-add:focus,
+.ebiz-checkout-wrap .button:hover, .ebiz-checkout-wrap .button:focus,
+.ebiz-away-quantity .button:hover, .ebiz-away-quantity .button:focus,
+.ebiz-quantity-minus .button:hover, .ebiz-quantity-minus .button:focus,
+.ebiz-quantity-plus .button:hover, .ebiz-quantity-plus .button:focus,
+.button.ebiz-qick-buy:hover, .button.ebiz-qick-buy:focus,
+.button.comments-apply:hover, .button.comments-apply:focus,
+.ebiz-more-info a :hover, .ebiz-more-info a:focus,
+.ebiz-add-to-basket .button:hover, .ebiz-add-to-basket .button:focus,
+.favourite-seat-selection .button:hover, .favourite-seat-selection .button:focus,
+#btnBuy:hover, #btnBuy:hover,
+.ebiz-favourite-seat-selection .button:hover, .ebiz-favourite-seat-selection .button:focus,
+.ebiz-buyback-buttons .button + .button:hover, .ebiz-buyback-buttons .button + .button:active {
+	background: #0C5CA7;
+	border-bottom-color: #083967 !important; }
+.panel,
+.ebiz-basket-buttons,
+.form-registration .ebiz-terms-and-conditions,
+.form-registration .ebiz-reister,
+.form-updateprofile .ebiz-update-profile,
+.ebiz-buyback-continue-button {
+	background: rgba(255,255,255,1); }
+.panel.ebiz-quick-buy-option {
+	background-color:rgba(0,0,0,0.9); }
+.panel.ebiz-quick-buy-option h2 small {
+	color: #ffffff; }
+.alert-box.warning {
+	background: #C10018;
+	border-color: #C10018; }
+.ebiz-svg-container .ebiz-legend .ebiz-toggle-legend {
+	background: #DB001B; }
+#divAccountWindow .fa {
+	color: #595959; }
+.row.ebiz-content .panel {
+	border-color: #dddddd;
+	color: #222222; }
+.button.fa-input.ebiz-remove-ticket {
+	background: none;
+	border: none !important;
+	color: #cc0000; }
+.ebiz-accordion h2 small {
+	color: #222222; }
+
+/* Accordion */
+.ui-accordion .panel {
+	border: none; }
+.ui-accordion .panel.ui-accordion-header {
+	background: #c2c2c2;
+	color: #666666; }
+.ui-accordion .panel.ui-accordion-header.ui-accordion-header-active,
+.ui-accordion .panel.ui-accordion-content {
+	background: #c2c2c2;
+	color: #666666; }
+.ui-accordion .panel.ui-accordion-header.ui-state-hover {
+	background: #DB001B;
+	color: #ffffff; }
+.ui-accordion .panel.ui-accordion-header.ui-state-hover p,
+.ui-accordion .panel.ui-accordion-header.ui-state-hover li,
+.ui-accordion .panel.ui-accordion-header.ui-state-hover .ebiz-sequence {
+	color: #ffffff; }
+.ui-accordion h2 small {
+	color: #222222; }
+/* .ui-accordion .ui-accordion-header-active h2 small, */
+.ui-accordion .ui-state-hover h2 small {
+	color: #ffffff; }
+.ui-accordion-content label {
+	color: #666666; }
+/* .ui-accordion .panel.ui-accordion-header.ui-accordion-header-active p,
+.ui-accordion .panel.ui-accordion-content p {
+	color: #ffffff; } */
+.ui-accordion .panel.ui-accordion-content a {
+	/* color: #ffffff; */
+	text-decoration: underline; }
+.ebiz-sequence {
+	color: #484848; }
+
+/* Home and Season Products */
+.panel.ebiz-header.ebiz-product-type-S,
+.panel.ebiz-header.ebiz-product-type-H {
+	background: #dddddd;
+	color: #666666;
+	border: none; }
+
+.contain-to-grid {
+	background: #DB001B; }
+.top-bar {
+	background: #DB001B; }
+.top-bar .name h1 a {
+	color: #ffffff; }
+.top-bar .toggle-topbar a {
+	color: #ffffff; }
+.top-bar .toggle-topbar.menu-icon a {
+	color: #ffffff; }
+.top-bar.expanded .title-area {
+	background: #DB001B; }
+.top-bar.expanded .toggle-topbar a {
+	color: #ffffff; }
+.top-bar-section ul {
+	background: #DB001B; }
+.top-bar-section .divider,.top-bar-section [role=separator] {
+	border-top:solid 1px #1a1a1a; }
+.top-bar-section ul li>a {
+	background: #DB001B;
+	color: #ffffff; }
+.top-bar-section ul li>a.button {
+	background: #008cba; }
+.top-bar-section ul li>a.button:hover {
+	background: #006688; }
+	.top-bar-section ul li>a.button.secondary {
+	background: #e7e7e7;	}
+.top-bar-section ul li>a.button.secondary:hover {
+	background: #cecece; }
+.top-bar-section ul li>a.button.success {
+	background: #43ac6a; }
+.top-bar-section ul li>a.button.success:hover {
+	background: #358854; }
+.top-bar-section ul li>a.button.alert {
+	background: #f04124; }
+.top-bar-section ul li>a.button.alert:hover {
+	background: #d42b0f;	}
+.top-bar-section ul li:hover:not(.has-form)>a {
+	background: #FF1936 ;
+	color: #ffffff; }
+.top-bar-section ul li.active>a {
+	background: #008cba;
+	color: #ffffff; }
+.top-bar-section ul li.active>a:hover {
+	background: #0078a0;
+	color: #ffffff; }
+.top-bar-section .has-dropdown>a:after {
+	border-color:transparent transparent transparent rgba(255,255,255,0.4); }
+.top-bar-section .dropdown li.title h5 a {
+	color: #ffffff; }
+.top-bar-section .dropdown label {
+	color: #777777; }
+.top-bar {
+	background: #DB001B; }
+.top-bar.expanded {
+	background: #DB001B; }
+.top-bar-section li.hover>a:not(.button) {
+	background: #FF1936 ;
+	color: #ffffff; }
+.top-bar-section li:not(.has-form) a:not(.button) {
+	background: #DB001B; }
+.top-bar-section li:not(.has-form) a:not(.button):hover {
+	background: #FF1936; }
+.top-bar-section li.active:not(.has-form) a:not(.button) {
+	color: #ffffff;
+	background: #008cba; }
+.top-bar-section li.active:not(.has-form) a:not(.button):hover {
+	background: #0078a0; }
+.top-bar-section .has-dropdown>a:after {
+	border-color:rgba(255,255,255,0.4) transparent transparent; }
+.top-bar-section .dropdown li a {
+	background: #DB001B; }
+.top-bar-section .dropdown li label {
+	background: #DB001B; }
+.top-bar-section>ul>.divider,.top-bar-section>ul>[role=separator] {
+	border-right:solid 1px #4e4e4e; }
+.top-bar-section .has-form {
+	background: #DB001B; }
+.top-bar-section .dropdown li:not(.has-form) a:not(.button) {
+    background: #C10018;
+    color: #ffffff; }
+.top-bar-section .dropdown li:hover:not(.has-form) > a:not(.button) {
+    background: #9B0013;
+    color: #ffffff; }
+
+@media only screen and (max-width: 64em) {
+	.top-bar-section .dropdown li:not(.has-form) a:not(.button) {
+	    background: #DB001B;
+	}
+}
+
+/* Small screens */
+@media only screen and (max-width: 40em) {
+	
+	/* Template - Header */ 
+	.ebiz-temp-header-wrap .ebiz-new-customer,
+	.ebiz-temp-header-wrap .ebiz-basket-summary,
+	.ebiz-temp-header-wrap .ebiz-basket-total {
+		display: none; }
+	.ebiz-temp-header-wrap .ebiz-signed-in-as {
+		color: #6F6F6F;}
+	.ebiz-temp-header-wrap .ebiz-user-alerts {
+		margin-right: 0.625rem; }
+	.ebiz-temp-header-wrap .ebiz-basket {
+		display: inline-block;
+		font-size: 0.750rem; }
+	.ebiz-temp-header-wrap .ebiz-logo {
+		text-align:	center; }
+	.ebiz-logo img {
+		height: 2.000rem;
+		margin-bottom: 0.625rem;
+		margin-top: 0.625rem !important;
+		width: 13.813rem; }
+
+	/* Foundation CSS */
+	.top-bar-section ul li > a {
+		font-size: 1rem; }
+	
+	/* PurchaseDetails.aspx */
+	.ebiz-responsive-table .ebiz-price,
+	.ebiz-responsive-table .ebiz-remove {
+    	text-align: left; }
+    .panel.ebiz-package-detail table a {
+    	float: none; }
+
+	} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+/* Medium screens */
+@media only screen and (min-width: 40.063em) {
+
+	/* Template - Header */
+    .ebiz-custom-nav-wrap {
+    	margin-top: 0.625rem;
+    	text-align: right; } 
+    .ebiz-logo img {
+		height: 2.000rem;
+		margin-bottom: 1.656rem;
+		margin-top: 1.656rem;
+		width: 13.813rem; }
+
+	/* Basket.aspx */
+	.ebiz-merchandising-Basket .ebiz-summary-totals .row {
+		width: 50%; }
+	.ebiz-merchandising-Basket .ebiz-summary-totals .columns:last-child {
+		text-align: right; }
+	.form-basket .ebiz-basket-summary .row {
+		width: 58.33333%;  }
+
+	/****** Masterpage Content ******/
+
+	/****** User Defined Content ******/
+
+	/* Footer Features */	
+	.ebiz-footer-features .panel h2, .ebiz-footer-features .panel > h2:first-child {
+		margin-top: 0; }
+
+	/* Footer Official Ticketing Blurb */	
+	.ebiz-footer-official-ticketing-blurb .ebiz-club-logo {
+		float: left;
+		height: 4rem;
+		margin-right: 1.1111rem; }
+	.ebiz-footer-official-ticketing-blurb p {
+		float: left;
+		line-height: 4rem;
+		margin-right: 1.1111rem; }
+	.ebiz-footer-official-ticketing-blurb .ebiz-league-logo {
+		float: left;
+		height: 2rem;
+		margin: 1rem 0 ;}
+
+	} /* min-width 641px, medium screens */
+
+/* Medium screens */
+@media only screen and (max-width: 64em) { 
+
+	/* Pagination */
+	ul.pagination {
+		margin-bottom: 1.250rem; }
+
+	/* Retail - Nav */
+	.AspNet-TreeView ul {
+		display: none; }
+
+	} /* max-width 1024px, medium screens */
+
+/* Large screens */
+@media only screen and (min-width: 64.063em) { 
+
+	/* Template - Header */
+    .ebiz-temp-header-wrap {
+        background-color: rgba(255, 255, 255, 0.5); }
+    .ebiz-custom-nav-wrap {
+    	background: #ffffff;
+    	border-radius: 10000px;
+    	float: right;
+    	padding: 0.625rem 1.11111rem;
+    	margin-top:  0.625rem; }
+    .ebiz-logo img {
+		height: 3.000em;
+		margin-bottom: 1.656rem;
+		margin-top: 1.656rem;
+		width: 20.688rem; }
+
+	/* Template - Main Content Area */
+	header + section > .row {
+		min-height: 30rem; }
+	.row.ebiz-content {
+		background: #ffffff;
+		-moz-box-shadow: 0 0 0.313rem #666666;
+		-webkit-box-shadow: 0 0 0.313rem #666666;
+		box-shadow: 0 0 0.313rem #666666;
+		margin-bottom: 0.625rem;
+		margin-top: 0.625rem;
+		padding-bottom: 0.625rem;
+		padding-top: 0.625rem; }
+
+	/* Retail - Nav */
+	.tinynav {
+		display: none; }
+
+	/* Basket.aspx */
+	/* .ebiz-ticketing-basket .ebiz-header {
+		float: left; 
+		width: 75%; }
+	.button.ebiz-more-tickets {
+		float: right; } */
+	.ebiz-stand-information .medium-2,
+	.ebiz-area-information .medium-2 {
+		width: 8.33333%; }
+	.ebiz-stand-information .medium-10,
+	.ebiz-area-information .medium-10 {
+		width: 91.6667%; } 
+	.ebiz-basket-buttons input {
+		margin-bottom: 0; }
+
+	/* LinkedProducts.aspx */
+	.ebiz-linked-products .alert-box.info.ebiz-instructions {
+		float: right; }
+
+	/* Ticketing - Pagination */
+	.ebiz-pagination ul {
+		margin: 0; }
+
+	/* VisualSeatSelection.aspx */
+	.form-visualseatselection .panel.ebiz-best-available label {
+		padding-bottom: 0; }
+	.form-visualseatselection .panel.ebiz-best-available select,
+	.form-visualseatselection .panel.ebiz-best-available input {
+		margin-bottom: 0; }
+
+	/****** Demo *******/
+
+	/* Colouring */
+	body {
+	    	background: url(img/body.demo.jpg) no-repeat fixed center center #ffffff; }
+	.ebiz-body-overlay {
+	    background: transparent url(img/overlay-pattern.png);
+	    color: #ffffff;
+	    display: block;
+	    height: 100%;
+	    left: 0;
+	    overflow: hidden;
+	    position: fixed;
+	    top: 0;
+	    width: 100%;
+	    z-index: -99; }
+	} /* min-width 1025px, large screens */
+
+/* Alerts.aspx - FIX */
+#user-alerts-page li {
+    color: #222222; 
+    padding: 0.625rem; }
+#user-alerts-page a {
+    color: #DB001B;
+    padding: 0; }
+#user-alerts-page a:hover {
+    color: #C10018; }
+#user-alerts-page ul {
+    display: block !important;
+    left: 0 !important;
+    position: relative !important;
+    top: 0 !important;
+    max-width: 1000px; }  
+#user-alerts-page .f-dropdown:before,
+#user-alerts-page .f-dropdown:after {
+    display: none; }
+#user-alerts-page .ebiz-more { 
+	display: block;
+	margin-bottom: 0.625rem; }
+#user-alerts-page .ebiz-desc { 
+	display: block;
+	margin-bottom: 0.625rem; }
+#user-alerts-page .button { 
+	background: none;
+	border: none !important;
+	color: #cc0000;
+	font-family: FontAwesome, 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+	margin-bottom: 0; }
+#user-alerts-page .ebiz-more {
+	font-weight: bold; }
+
+/* Basket - Product Relations - No Image Fix */
+.ebiz-graphical-product-relations img[src$="NOI.gif"] {
+	display: none; }
+
+/* ProductSummary.aspx - Columns should Probably Be Removed From User Control */
+.ebiz-product-summary .large-8 {
+	width: 100%; }
+
+/* Demo - FUDGE */
+.ebiz-ticketing-products .GW0006 img {
+	display: none !important; }
+.PRTY .ebiz-ticketing-products .ebiz-header ul {
+    width: 50%; }
+
+/* HTML Includes */
+
+/* homepage */
+.ebiz-ud-homepage-features div {
+  	position: relative; }
+.ebiz-ud-homepage-features img {
+  	margin-bottom: 1.1111rem !important; }
+.ebiz-ud-homepage-features h2 {
+  	background-color: rgba(219, 0, 27, 0.7);
+  	bottom: 0.625rem;
+  	font-weight: bold;
+  	line-height: 3.250rem;
+  	padding: 0.625rem 0;
+  	position: absolute;
+  	text-align: center;
+  	text-shadow: 0 1px 0 #000000;
+  	width: 100%; }
+.ebiz-ud-homepage-features a:hover h2 {
+  	background-color: rgba(219, 0, 27, 1); }
+.ebiz-ud-homepage-features h2.subheader small {
+  	color: #ffffff; }
+
+@media only screen and (min-width: 64.063em) { 
+  	.ebiz-ud-homepage-features .large-6 h2.subheader small {
+     	font-size: 2.250rem; }
+} 
+
+/* Product.aspx */
+
+.form-product .size-chart a {
+	background: #000000;
+	color: #ffffff;
+	display: inline-block;
+	font-size: 0.875rem;
+	padding: 0.25rem;
+	text-transform: uppercase;
+	margin-top: 0.625rem; }
+
+/* CSS Copied From Sunderland */
+.cp-socialFt li {
+    display: inline-block;
+    padding: 0 1%;
+    text-align: center;
+    vertical-align: top;
+    width: auto; }
+a.ico {
+    cursor: pointer;
+    color: #DB001B;
+    display: block;
+    line-height: 15px;
+    overflow: hidden;
+    text-align: left;
+    text-decoration: none;
+    text-indent: -999em; }
+.ico-4sq {
+    background: url(img/Sunderland/sprites.png) no-repeat scroll -150px -1675px rgba(0, 0, 0, 0);
+    height: 33px;
+    width: 33px; }
+   .ico-tw {
+background: url(img/Sunderland/sprites.png) no-repeat scroll 0 -125px rgba(0, 0, 0, 0);
+    height: 35px;
+    width: 35px; }
+.ico-fb {
+    background: url(img/Sunderland/sprites.png) no-repeat scroll -50px -125px rgba(0, 0, 0, 0);
+    height: 35px;
+    width: 35px; }
+.ico-gplus {
+    background: url(img/Sunderland/sprites.png) no-repeat scroll 0 -1675px rgba(0, 0, 0, 0);
+    height: 33px;
+    width: 33px; }
+.ico-store {
+    background: url(img/Sunderland/sprites.png) no-repeat scroll -100px -1675px rgba(0, 0, 0, 0);
+    height: 33px;
+    width: 33px; }
+.ico-sia {
+    background: url(img/Sunderland/sprites.png) no-repeat scroll -50px -1675px rgba(0, 0, 0, 0);
+    height: 33px;
+    width: 33px; }
+
+ 
+
+
+

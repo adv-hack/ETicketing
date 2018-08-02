@@ -1,0 +1,25 @@
+<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPages_MasterPage" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ Register Src="../UserControls/PageLeftNav.ascx" TagName="PageLeftNav" TagPrefix="uc1" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>TALENT Admin Portal</title>
+    <link href="../App_Themes/IRIS_S4S/StyleSheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="header">
+            <div id="logo"> 
+            </div>
+            <div id="strapline">
+                <h1>TALENT Admin Portal</h1>
+            </div>
+            <p class="clear"> </p>
+        </div>
+        <uc1:PageLeftNav ID="PageLeftNav" runat="server" />
+        <div id="mainContent">
+            <asp:ContentPlaceHolder ID="Content1" runat="server"></asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

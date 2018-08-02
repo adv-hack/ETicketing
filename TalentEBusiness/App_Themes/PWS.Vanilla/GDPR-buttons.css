@@ -1,0 +1,62 @@
+.o-radio-group-faux-buttons__radio:not(:last-child) {
+    margin-right: .5rem
+}
+
+.o-radio-group-faux-buttons__radio>input {
+    display: none
+}
+
+.o-radio-group-faux-buttons__radio>input[type="radio"]+label {
+    background-color: #cacaca;
+    border-radius: 2px;
+    color: #fff;
+    display: inline-block;
+    float: none;
+    font-size: 0.9rem;
+    line-height: 1;
+    margin: 0 0 1rem 0;
+    padding: 0.85em 1em !important;
+    text-align: center;
+    text-transform: uppercase;
+    width: auto
+}
+
+.o-radio-group-faux-buttons__radio>input:checked+label {
+    color: #fff;
+    font-weight: bold
+}
+
+.o-radio-group-faux-buttons__radio.o-radio-group-faux-buttons__opt-out>input:checked+label {
+    background-color: #e55869
+}
+
+.o-radio-group-faux-buttons__radio.o-radio-group-faux-buttons__opt-in>input:checked+label {
+    background-color: #9ed566
+}
+
+.o-radio-group-faux-buttons__radio>input:checked+label::before {
+    content: "\f118";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    margin-right: .5rem
+}
+
+.o-radio-group-faux-buttons__radio.o-radio-group-faux-buttons__opt-out>input:checked+label::before {
+    content: "\f00d"
+}
+
+.o-radio-group-faux-buttons__radio.o-radio-group-faux-buttons__opt-in>input:checked+label::before {
+    content: "\f00c"
+}
+
+@media print, screen and (min-width: 40em) {
+    .o-radio-group-faux-buttons__radio+.alert-box {
+        text-align:left
+    }
+}
+
+.o-radio-group-faux-buttons__radio+.alert-box:before {
+    display: inline;
+    font-size: inherit
+}

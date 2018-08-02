@@ -1,0 +1,72 @@
+﻿@inherits System.Web.Mvc.WebViewPage<dynamic>
+@using TalentBusinessLogic.Models;
+@using TalentBusinessLogic.DataTransferObjects.Hospitality;
+@using Talent.eCommerce;
+
+@if (Utilities.GetHtmlFromFile("HospitalityPDF\\" + Model.PackageID + "_header.html").Length > 0)
+{
+    @Html.Raw(Utilities.GetHtmlFromFile("HospitalityPDF\\" + Model.PackageID + "_header.html"))
+}
+else
+{
+    @Html.Raw(Utilities.GetHtmlFromFile("HospitalityPDF\\header.html"))
+}
+
+<p class="f3">@Html.Raw(Model.GetControlText("BookingRefText").Replace("<<BookingRef>>", Model.CallId))</p>
+
+<table class="ebiz-package-customer-detail">
+    <tr>
+        <td class="w-thirds">
+            @if (Model.ProductDescription.Length > 0)
+            {
+                <div class="pb2">@Model.ProductDescription</div>
+            }
+            @if (Model.ProductSubTypeDesc.Length > 0)
+            {
+                <div class="pb2">@Model.ProductSubTypeDesc</div>
+            }
+            @if (Model.ProductCompetitionDescription.Length > 0)
+            {
+                <div class="pb2">@Model.ProductCompetitionDescription</div>
+            }
+            @if (Model.ProductDate.Length > 0 && !Model.HideDate)
+            {
+                <div class="pb2">@Model.ProductDate</div>
+            }
+            @if (Model.ProductTime.Length > 0 && !Model.HideTime)
+            {
+                <div class="pb2">@Model.ProductTime</div>
+            }
+            @if (Model.PackageDescription.Length > 0)
+            {
+                <div class="pb2">@Model.PackageDescription</div>
+            }
+        </td>
+        <td class="w-two-thirds">
+            @if (Model.CompanyName.Length > 0)
+            {
+                <div class="pb2">@Model.CompanyName</div>
+            }
+            @if (Model.CustomerName.Length > 0)
+            {
+                <div class="pb2">@Model.CustomerName</div>
+            }
+            @if (Model.CustomerAddress.Length > 0)
+            {
+                <div class="pb2">@Model.CustomerAddress</div>
+            }
+            @if (Model.MobileNumber.Length > 0)
+            {
+                <div class="pb2">@Model.MobileNumber</div>
+            }
+            @if (Model.HomeNumber.Length > 0)
+            {
+                <div class="pb2">@Model.HomeNumber</div>
+            }
+            @if (Model.WorkNumber.Length > 0)
+            {
+                <div class="pb2">@Model.WorkNumber</div>
+            }
+        </td>
+    </tr>
+</table>

@@ -1,0 +1,14 @@
+<svg>
+	<g id="WHITE-HORSE-INSIDE">
+		<rect id="WH-WH" x="19.773" y="261" stroke-width="0" width="156.824" height="24"/>
+		<text fid="WH-WH" transform="matrix(1 0 0 1 30.5474 271.7539)" fill="#FFFFFF" font-family="'Arial'" font-size="10">THE WHITE HORSE - INSIDE</text>
+	</g>
+	<g id="WHITE-HORSE-CONSERVATORY">
+		<rect id="WH-WH2" x="131.547" y="202.35" stroke-width="0" width="205.071" height="24"/>
+		<text fid="WH-WH2" transform="matrix(1 0 0 1 142.3218 213.1025)" fill="#FFFFFF" font-family="'Arial'" font-size="10">THE WHITE HORSE - CONSERVATORY</text>
+	</g>
+	<g id="WHITE-HORSE-GARDEN">
+		<rect id="WH-WH1" x="19.773" y="143.698" stroke-width="0" width="165" height="24"/>
+		<text fid="WH-WH1" transform="matrix(1 0 0 1 29.7827 154.3633)" fill="#FFFFFF" font-family="'Arial'" font-size="10">THE WHITE HORSE - GARDEN</text>
+	</g>
+</svg>

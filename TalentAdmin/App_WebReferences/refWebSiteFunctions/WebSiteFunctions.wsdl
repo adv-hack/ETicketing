@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.talent-sport.co.uk/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://www.talent-sport.co.uk/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.talent-sport.co.uk/">
+      <s:element name="StartWebsite">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="websiteName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="startAppPool" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="startSite" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="StartWebsiteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StartWebsiteResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="StopWebsite">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="websiteName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="server" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="stopAppPool" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="stopSite" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="StopWebsiteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StopWebsiteResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateWebSite">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="siteFormat" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="siteName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="siteUrl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="serverName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="drive" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="siteType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sslCertPath" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IP1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IP2" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateWebSiteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateWebSiteResult">
+              <s:complexType mixed="true">
+                <s:sequence>
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="StartWebsiteSoapIn">
+    <wsdl:part name="parameters" element="tns:StartWebsite" />
+  </wsdl:message>
+  <wsdl:message name="StartWebsiteSoapOut">
+    <wsdl:part name="parameters" element="tns:StartWebsiteResponse" />
+  </wsdl:message>
+  <wsdl:message name="StopWebsiteSoapIn">
+    <wsdl:part name="parameters" element="tns:StopWebsite" />
+  </wsdl:message>
+  <wsdl:message name="StopWebsiteSoapOut">
+    <wsdl:part name="parameters" element="tns:StopWebsiteResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateWebSiteSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateWebSite" />
+  </wsdl:message>
+  <wsdl:message name="CreateWebSiteSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateWebSiteResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebSiteFunctionsSoap">
+    <wsdl:operation name="StartWebsite">
+      <wsdl:input message="tns:StartWebsiteSoapIn" />
+      <wsdl:output message="tns:StartWebsiteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="StopWebsite">
+      <wsdl:input message="tns:StopWebsiteSoapIn" />
+      <wsdl:output message="tns:StopWebsiteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateWebSite">
+      <wsdl:input message="tns:CreateWebSiteSoapIn" />
+      <wsdl:output message="tns:CreateWebSiteSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebSiteFunctionsSoap" type="tns:WebSiteFunctionsSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="StartWebsite">
+      <soap:operation soapAction="http://www.talent-sport.co.uk/StartWebsite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StopWebsite">
+      <soap:operation soapAction="http://www.talent-sport.co.uk/StopWebsite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateWebSite">
+      <soap:operation soapAction="http://www.talent-sport.co.uk/CreateWebSite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebSiteFunctionsSoap12" type="tns:WebSiteFunctionsSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="StartWebsite">
+      <soap12:operation soapAction="http://www.talent-sport.co.uk/StartWebsite" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StopWebsite">
+      <soap12:operation soapAction="http://www.talent-sport.co.uk/StopWebsite" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateWebSite">
+      <soap12:operation soapAction="http://www.talent-sport.co.uk/CreateWebSite" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebSiteFunctions">
+    <wsdl:port name="WebSiteFunctionsSoap" binding="tns:WebSiteFunctionsSoap">
+      <soap:address location="http://localhost:3076/TalentAdmin/Server/WebSite/WebSiteFunctions.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebSiteFunctionsSoap12" binding="tns:WebSiteFunctionsSoap12">
+      <soap12:address location="http://localhost:3076/TalentAdmin/Server/WebSite/WebSiteFunctions.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,160 @@
+﻿@inherits System.Web.Mvc.WebViewPage<dynamic>
+@using TalentBusinessLogic.Models;
+@using TalentBusinessLogic.DataTransferObjects;
+@using TalentBusinessLogic.DataTransferObjects.Hospitality;
+@using Talent.eCommerce;
+
+@if (Utilities.CheckForDBNull_Boolean_DefaultFalse(Model.GetPageAttribute("ShowLeadSource")) && Model.PackageDetailsList[0].LeadSourceDescription != null)
+{
+    <p>@Model.GetPageText("leadSourceLabel")</p>
+    <p><strong>@Model.PackageDetailsList[0].LeadSourceDescription</strong></p>
+}
+@if (Model.PackageDetailsList[0].MarkOrderFor == GlobalConstants.MARK_FOR_BUISINESS)
+{
+    <p>@Model.GetPageText("BookingTypeLabel")</p>
+    <p><strong>@Model.GetPageText("BusinessLabel")</strong></p>
+}
+@if (Model.PackageDetailsList[0].MarkOrderFor == GlobalConstants.MARK_FOR_PERSONAL)
+{
+    <p>@Model.GetPageText("BookingTypeLabel")</p>
+    <p><strong>@Model.GetPageText("PersonalLabel")</strong></p>
+}
+
+<div class="ebiz-component-wrapper">
+    @foreach (ComponentDetails component in @Model.ComponentDetailsList)
+    {
+        if (component.CanAmendSeat)
+        {
+            <table class="ebiz-seated-components">
+                <thead>
+                    <tr>
+                        <th><strong>@component.ComponentDescription.Trim()</strong></th>
+                        <th><strong>@Model.GetPageText("CustomerHeaderText")</strong></th>
+                        <th><strong>@Model.GetPageText("PriceBandHeaderText")</strong></th>
+                        <th><strong>@Model.GetPageText("PriceCodeHeaderText")</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (HospitalitySeatDetails seatDetails in component.HospitalitySeatDetailsList)
+                    {
+                        <tr>
+                            <td>
+                                @seatDetails.StandDescription @seatDetails.AreaDescription
+                                @if(!component.HideSeatForPWS)
+                                {
+                                   @Html.Raw("(" + @seatDetails.FormattedSeatDetails + ")") 
+                                }
+                            </td>
+                            <td>
+                                (@seatDetails.CustomerNumber.TrimStart('0'))
+                                @if (seatDetails.FriendsAndFamilyDetails.Count == 0)
+                                {
+                                    <span>@Model.PaymentOwnerCustomerForename</span> <span>@Model.PaymentOwnerCustomerSurname</span>
+                                }
+                                else
+                                {
+                                    if (seatDetails.FriendsAndFamilyDetails.Count(x => x.CustomerNumber.TrimStart('0') == seatDetails.CustomerNumber.TrimStart('0')) == 1)
+                                    {
+                                        <span>@Model.PaymentOwnerCustomerForename</span> <span>@Model.PaymentOwnerCustomerSurname</span>
+                                    }
+                                    else
+                                    {
+                                        if (seatDetails.FriendsAndFamilyDetails.Exists(x => x.AssociatedCustomerNumber.TrimStart('0') == seatDetails.CustomerNumber.TrimStart('0')))
+                                        {
+                                            <span>@seatDetails.FriendsAndFamilyDetails.Find(x => x.AssociatedCustomerNumber.TrimStart('0') == seatDetails.CustomerNumber.TrimStart('0')).Forename</span> <span>@seatDetails.FriendsAndFamilyDetails.Find(x => x.AssociatedCustomerNumber.TrimStart('0') == seatDetails.CustomerNumber.TrimStart('0')).Surname</span>
+                                        }
+                                    }
+                                }
+                            </td>
+                            <td>
+                                @if (seatDetails.ProductPriceBands.Exists(x => x.PriceBand == seatDetails.PriceBand))
+                                {
+                                    @seatDetails.ProductPriceBands.Find(x => x.PriceBand == seatDetails.PriceBand).PriceBandDescription
+                                }
+                            </td>
+                            <td>@seatDetails.PriceCode</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            if (component.Discount > 0)
+            {
+                <div class="text-right">@Model.GetPageText("PercentageDiscountText") @component.Discount</div>
+            }
+            <div class="text-right">@Server.HtmlDecode(component.FormattedPriceIncludingVAT)</div>
+        }
+    }
+
+    <table class="ebiz-none-seated-components">
+        <thead>
+            <tr>
+                <th><strong>@Model.GetPageText("PackageIncludedExtras").Replace("<<PackageDescription>>", Model.PackageDetailsList[0].PackageDescription.Trim())</strong></th>
+                <th class="text-right"><strong>@Model.GetPageText("QuantityHeaderText")</strong></th>
+                <th class="text-right"><strong>@Model.GetPageText("PriceHeaderText")</strong></th>
+                <th class="text-right"><strong>@Model.GetPageText("PercentageDiscountText")</strong></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (ComponentDetails component in Model.ComponentDetailsList)
+            {
+                if (!component.CanAmendSeat)
+                {
+                    <tr>
+                        <td>@component.ComponentDescription.Trim()</td>
+                        <td class="text-right">@component.Quantity</td>
+                        <td class="text-right">@Server.HtmlDecode(component.FormattedPriceIncludingVAT)</td>
+                        <td class="text-right">@component.Discount%</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+
+<table class="ebiz-package-totals">
+    <tr>
+        <td>@Model.GetPageText("BookingTotalCostLabelText")</td>
+        <td class="text-right"><strong>@Server.HtmlDecode(Model.PackageDetailsList[0].FormattedPriceBeforeVAT)</strong></td>
+    </tr>
+    <tr>
+        <td>@Model.GetPageText("BookingVATLabelText")</td>
+        <td class="text-right"><strong>@Server.HtmlDecode(@Model.PackageDetailsList[0].FormattedVATPrice)</strong></td>
+    </tr>
+    <tr>
+        <td>@Model.GetPageText("ltlDiscountLabel")</td>
+        <td class="text-right"><strong>@Server.HtmlDecode(Model.PackageDetailsList[0].FormattedPackageComponentLevelDiscountValue)</strong></td>
+    </tr>
+    <tr>
+        <td>@Model.GetPageText("ltlBookingTotalCostIncVATLabelText")</td>
+        <td class="text-right"><strong>@Server.HtmlDecode(Model.PackageDetailsList[0].FormattedPriceIncludingVAT)</strong></td>
+    </tr>
+</table>
+
+@if (Model.ActivityQuestionAnswerList.Count > 0)
+{
+    <table class="ebiz-package-questions">
+        <thead>
+            <tr>
+                <th colspan="2">@Model.GetPageText("QuestionAndAnswerHeaderText")</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (ActivityQuestionAnswer questionAnswer in Model.ActivityQuestionAnswerList)
+            {
+                <tr>
+                    <td>@questionAnswer.QuestionText</td>
+                    <td><strong>@questionAnswer.Answer</strong></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@if (Utilities.GetHtmlFromFile("HospitalityPDF\\" + Model.PackageDetailsList[0].PackageID + "_footer.html").Length > 0)
+{
+    @Html.Raw(Utilities.GetHtmlFromFile("HospitalityPDF\\" + Model.PackageDetailsList[0].PackageID + "_footer.html"))
+}
+else
+{
+    @Html.Raw(Utilities.GetHtmlFromFile("HospitalityPDF\\footer.html"))   
+}

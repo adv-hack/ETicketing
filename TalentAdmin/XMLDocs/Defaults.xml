@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defaults>
+  <WebServers>
+    <WebServer>
+      <ServerName>EBServe01</ServerName>
+      <IPAddress>192.168.57.121</IPAddress>
+      <Drive></Drive>
+    </WebServer>
+    <WebServer>
+      <ServerName>EBServe03</ServerName>
+      <IPAddress>192.168.57.123</IPAddress>
+      <Drive></Drive>
+    </WebServer>
+    <WebServer>
+      <ServerName>EBServe05</ServerName>
+      <IPAddress>192.168.57.125</IPAddress>
+      <Drive></Drive>
+    </WebServer>
+    <WebServer>
+      <ServerName>EBServe06</ServerName>
+      <IPAddress>192.168.57.126</IPAddress>
+      <Drive></Drive>
+    </WebServer>
+  </WebServers>
+</Defaults>

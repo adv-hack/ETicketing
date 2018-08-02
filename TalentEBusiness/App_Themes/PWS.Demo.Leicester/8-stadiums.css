@@ -1,0 +1,53 @@
+/* height set to Test Silverstone - SP */
+.ebiz-svg-container #stadium-canvas {
+	height: 691px; }
+
+
+/* Nantwich Town - NT */
+.NT .ebiz-match-text,
+.NT #stand-tip {
+	height: 12em;
+	left: 39%;
+	top: 39.5%; }
+
+/* SR Silverstone */
+.SR .ebiz-match-text {
+     display: none !important; }
+.SR #stand-tip {
+	background-color: rgba(0,0,0,0.9);
+    border: none;
+    color: #ffffff;
+    height: 750px;
+    left: 0;
+    margin-left: -9px;
+    margin-top: 0;
+    padding-bottom: 1.25rem;
+    padding-left: 1.25rem;
+    top: -13px;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    width: 200px; }
+.SR .ebiz-tooltip li {
+ 	margin-bottom: 1.11111rem; }
+.SR .ebiz-tooltip .ebiz-label {
+    float: none;
+    width: 100%; }
+.SR .ebiz-tooltip .ebiz-data {
+    float: none;
+    width: 100%; }
+.SR .ebiz-quick-buy-option {
+    margin-left: -61px; }
+
+/* IBROX - IB */
+.IB .ebiz-match-text {
+	margin: -9.5em 0 0 -14.05em;
+    width: 24em; }
+.IB #stand-tip {
+    background-color: rgba(0,0,0,0.9);
+    border: none;
+    margin: -9.8em 0 0 -12em; }
+.IB .ebiz-quick-buy-option {
+    margin-left: -189px;
+    margin-top: -139px; }

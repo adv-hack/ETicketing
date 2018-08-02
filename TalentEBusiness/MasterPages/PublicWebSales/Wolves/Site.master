@@ -1,0 +1,52 @@
+﻿<%@ Master Language="VB" CodeFile="~/MasterPages/Shared/SharedClasses/Site.master.vb" Inherits="MasterPages_Shared_SharedClasses_Site" %>
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head id="Head1" runat="server">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="//a248.e.akamai.net/images.talentarena.co.uk/Global/Lib/shadowbox-3.0.3/shadowbox.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <script src="/App_Themes/PWS.Wolves/js/modernizr.custom.78582.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="//a248.e.akamai.net/images.talentarena.co.uk/Global/Lib/shadowbox-3.0.3/shadowbox.jQuery.js"></script>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
+    <link rel="icon" href="/App_Themes/PWS.Wolves/img/favicon.ico" type="image/x-icon">
+    <asp:ContentPlaceHolder id="SiteMasterHead" runat="server" />
+</head>
+
+<body id="MasterBodyTag" runat="server">
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-58WCFH"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-58WCFH');</script>
+    <!-- End Google Tag Manager --> 
+    <!--[if lt IE 9]>
+        <div style=" background: black; padding: 20px; text-align: center; height: 100% "><h1 style=" color: white; ">Internet Explorer is not supported on this website. Please upgrade to Internet Explorer 9  (or newer) or use another browser such as Mozilla Firefox or Google Chrome.</h1></div>
+    <![endif]-->
+    <asp:ContentPlaceHolder ID="SiteMasterBody" runat="server" />
+    <script src="//a248.e.akamai.net/images.talentarena.co.uk/Global/Lib/foundation-5.5.2/js/foundation.min.js"></script>
+    <script src="/App_Themes/PWS.Wolves/js/extra.js"></script>
+    <script>
+        $(document).foundation();
+        $(document).foundation('interchange', 'reflow');
+    </script>
+    <script src="/JavaScript/ebiz-modals.js"></script>
+    <%= GetPageExtraDataForBody()%>
+    <%= GetTrackingBodyCodesText()%>
+</body>
+
+</html>

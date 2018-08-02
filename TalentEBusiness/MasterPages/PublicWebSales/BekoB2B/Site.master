@@ -1,0 +1,157 @@
+﻿<%@ Master Language="VB" CodeFile="~/MasterPages/Shared/SharedClasses/Site.master.vb" Inherits="MasterPages_Shared_SharedClasses_Site" %>
+<%@ Register Namespace="Talent.CustomControls" Assembly="__code" tagprefix="TalentCustom" %>
+<%@ Register Src="~/UserControls/breadCrumbTrail.ascx" TagName="BreadCrumbTrail" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/HTMLInclude.ascx" TagName="HTMLInclude" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/OffCanvasMenu.ascx" TagPrefix="Talent" TagName="OffCanvasMenu" %>
+<%@ Register Src="~/UserControls/PageLeftProductNav.ascx" TagName="PageLeftNav" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/searchBar.ascx" TagName="searchBar" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/PersonalisationBar.ascx" TagName="PersonalisationBar" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/MicroBasket.ascx" TagName="MicroBasket" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/Alerts.ascx" TagName="Alerts" TagPrefix="Talent" %>
+
+<!DOCTYPE html>
+<!--[if IE 9]> <html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" dir="ltr">
+<head id="Head1" runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="viewport" content="width=device-width" />
+    <link href="//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <script src="../../JavaScript/vendor/modernizr-custom.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="//use.fontawesome.com/7e81f32a9c.js"></script>
+    <link rel="icon" href="/App_Themes/BekoB2B/img/favicon.ico" type="image/x-icon">
+
+    <!-- Revoo -->
+    <link rel="stylesheet" href="//mark.reevoo.com/stylesheets/reevoomark/embedded_reviews.css" type="text/css" />
+    <script id="reevoomark-loader" type="text/javascript" charset="utf-8">
+      (function(w,d,u,i,f,s,l) {
+        s=d.createElement('script');s.type='text/javascript';s.src=u;
+        l=d.getElementById(i);l.parentNode.insertBefore(s,l);w['ReevooMarkHandlerName']=f;
+        w[f]=function(){(w[f].q=w[f].q||[]).push(arguments)}
+      })(window, document, '//cdn.mark.reevoo.com/assets/reevoo_mark.js', 'reevoomark-loader', 'reevooMark');
+    </script>
+    
+    <asp:ContentPlaceHolder id="SiteMasterHead" runat="server" />
+</head>
+
+<body id="MasterBodyTag" runat="server">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push(
+    {'gtm.start': new Date().getTime(),event:'gtm.js'}
+    );var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MCGZ84B');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MCGZ84B"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="scmMainScriptManager" runat="server" />
+        
+            <!-- Header -->
+
+            <header class="header">
+                <div class="header-topbar">
+                    <div class="row">
+                        <div class="medium-12 large-8 columns header-topbar_personalisation_basket">
+                            <Talent:Alerts ID="uscAlerts" runat="server" />
+                            <Talent:PersonalisationBar ID="uscPersonalisationBar" runat="server" />
+                            <Talent:MicroBasket ID="MicroBasket" runat="server" />
+                        </div>
+                        <div class="medium-6 columns header-topbar_logo show-for-medium-only">
+                            <TalentCustom:Literal HTMLFileName="logo.html" ID="ltlLogo" runat="server" OnLoad="GetStaticHTMLInclude" />
+                        </div>
+                        <div class="medium-6 large-4 columns header-topbar_search show-for-medium">
+                            <Talent:SearchBar ID="uscSearchBar" runat="server" />
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="header-mobile">
+                    <div class="row">
+                        <div class="large-12 columns">
+                            <div class="row">
+                                <div class="small-4 columns header-mobile_nav_toggle">
+                                    <div data-responsive-toggle="navigation-menu" data-hide-for="medium">
+                                        <div data-toggle><i class="fa fa-bars" aria-hidden="true"></i></div>
+                                    </div>
+                                </div>
+                                <div class="small-4 columns header-mobile_logo hide-for-medium">
+                                    <TalentCustom:Literal HTMLFileName="logo.html" ID="ltlLogo2" runat="server" OnLoad="GetStaticHTMLInclude" />
+                                </div>
+                                <div class="small-4 columns header-mobile_search">
+                                    <div data-responsive-toggle="navigation-search" data-hide-for="medium">
+                                        <div data-toggle><i class="fa fa-search" aria-hidden="true"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="header-mobile_search">
+                    <div class="">
+                        <div class="large-12 columns">
+                            <div id="navigation-search" class="hide-for-medium">
+                                <ul class="vertical large-horizontal menu" data-responsive-menu="accordion large-dropdown">     
+                                    <li>
+                                        <Talent:SearchBar ID="uscSearchBarMobile" runat="server" />
+                                    </li>
+                                </ul> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-navigation">
+                    <div class="row">
+                        <div class="large-12 columns">
+                            <TalentCustom:Literal HTMLFileName="navigation.html" ID="ltlNavigation" runat="server" OnLoad="GetStaticHTMLInclude" />
+                        <div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Content -->
+
+            <section class="main-content">
+                <asp:ContentPlaceHolder ID="SiteMasterBody" runat="server" /> 
+            </section>   
+
+            <!-- Footer -->
+            <footer class="footer">
+                <Talent:HTMLInclude ID="uscHTMLInclude2" runat="server" Usage="5" Sequence="1" />
+                <TalentCustom:Literal HTMLFileName="footer-lower.html" ID="ltlFooterLower" runat="server" OnLoad="GetStaticHTMLInclude" />
+            </footer>
+
+        <TalentCustom:Literal HTMLFileName="favourites.htm" ID="ltlFavourites" runat="server" OnLoad="GetStaticHTMLInclude" />
+        <asp:HiddenField ID="hdfSessionID" runat="server" ClientIDMode="Static" />
+    </form>
+    <script src="//cdn.jsdelivr.net/alertifyjs/1.7.1/alertify.min.js"></script>
+    <script src="../../JavaScript/TimepickerAddon.js"></script>
+    <script src="../../JavaScript/vendor/foundation/foundation.min.js"></script>
+    <script src="../../JavaScript/vendor/jquery.matchHeight-min.js"></script>
+    <script src="//cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+    <script src="../../JavaScript/vendor/select2/js/select2.min.js"></script>
+    <script src="../../JavaScript/vendor/icheck.min.js"></script>
+    <script src="../../JavaScript/vendor/owl.carousel.min.js"></script>
+    <script src="../../JavaScript/Application/TalentEBusinessSuite.js"></script>
+    <script src="../../App_Themes/BekoB2B/js/theme.js"></script>
+
+
+    <!-- IMPORTANT APPLICATION STUFF DO NOT DELETE!! -->
+    <div id="loading-image" style="display: none" class="ebiz-loading-default ebiz-loading-results">
+        <div class="spinner"></div>
+    </div>
+
+    <%=GetPageExtraDataForBody()%>
+    <%= GetTrackingBodyCodesText %>
+
+</body>
+</html>

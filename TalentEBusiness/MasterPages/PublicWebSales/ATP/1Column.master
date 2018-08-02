@@ -1,0 +1,92 @@
+﻿<%@ Master Language="VB" CodeFile="~/MasterPages/Shared/SharedClasses/1Column.master.vb" Inherits="MasterPages_Shared_SharedClasses_1Column" %>
+<%@ Register Namespace="Talent.CustomControls" Assembly="__code" tagprefix="TalentCustom" %>
+<%@ Register Src="~/UserControls/PersonalisationBar.ascx" TagName="PersonalisationBar" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/Alerts.ascx" TagName="Alerts" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/MicroBasket.ascx" TagName="MicroBasket" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/HTMLInclude.ascx" TagName="HTMLInclude" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/breadCrumbTrail.ascx" TagName="BreadCrumbTrail" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/ChangeBU.ascx" TagName="ChangeBU" TagPrefix="Talent" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="SiteMasterHead" runat="server">
+
+    <!-- page level scripting -->
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server" />
+
+    <!-- page extra data table scripting -->
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server" />
+
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="SiteMasterBody" runat="server">
+    <div class="ebiz-body-overlay"></div>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="scmMainScriptManager" runat="server" />
+        <header>
+            
+                    <div class="ebiz-temp-header-wrap-upper">
+                        <div class="row">
+                            <div class="medium-12 large-6 no-pad-left no-pad-right columns">
+                                <div class="ebiz-custom-nav-wrap">
+                                    <Talent:PersonalisationBar ID="uscPersonalisationBar" runat="server" />
+                                    <Talent:Alerts ID="uscAlerts" runat="server" />
+                                    <Talent:MicroBasket ID="uscMicroBasket" runat="server" />
+                                </div>
+                            </div>  
+                            <div class="show-for-large-up large-6 no-pad-left no-pad-right columns">
+                                <div class="ebiz-custom-sponors">
+                                    <ul>
+                                        <li><img src="/App_Themes/PWS.ATP/img/ATP/teb_logo.jpg"></li>
+                                        <li><img src="/App_Themes/PWS.ATP/img/ATP/atp_logo.png"></li>
+                                        <li><img src="/App_Themes/PWS.ATP/img/ATP/istanbul_cup_logo.jpg"></li>
+                                        <li><img src="/App_Themes/PWS.ATP/img/ATP/wta_logo.png"></li>
+                                    </ul>
+                                </div>
+                            </div>   
+                        </div>
+                    </div>
+
+            <div class="ebiz-temp-header-wrap">
+                
+                <div class="row">
+                    <div class="small-12 medium-10 large-11 no-pad-left no-pad-right columns"> 
+                        <div class="ebiz-temp-navigation-wrap">
+                            <TalentCustom:Literal HTMLFileName="navigation.html" ID="ltlNavigation" runat="server" OnLoad="GetStaticHTMLInclude" />
+                        </div>
+                    </div>
+                    <div class="small-12 medium-2 large-1 no-pad-left no-pad-right columns">
+                        <div class="title-area-two">
+                            <!--<Talent:ChangeBU ID="uscChangeBU" runat="server" />-->
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            
+            <Talent:HTMLInclude ID="uscHTMLInclude1" runat="server" Usage="4" Sequence="1" />
+            
+    </header>
+
+        <section>
+            
+            <div class="row ebiz-content">
+                <div class="large-12 columns">
+                    <Talent:BreadCrumbTrail ID="uscBreadCrumbTrail" runat="server" />
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server" />
+                </div>
+            </div>
+        </section>
+            
+        <footer>
+            <Talent:HTMLInclude ID="uscHTMLInclude2" runat="server" Usage="5" Sequence="1" />
+            <TalentCustom:Literal HTMLFileName="footer.html" ID="ltlFooter" runat="server" OnLoad="GetStaticHTMLInclude" />
+        </footer>
+        <script src="//a248.e.akamai.net/images.talentarena.co.uk/Global/Lib/foundation-5.3.0/js/foundation.min.js"></script>
+        <script>
+            $(document).foundation();
+        </script>
+        
+        <link rel="icon" href="/App_Themes/PWS.ATP/img/ATP/favicon.ico" type="image/x-icon">
+    </form>
+    <%= GetPageExtraDataForBody()%>
+    <%= GetTrackingBodyCodesText()%>
+
+</asp:Content>

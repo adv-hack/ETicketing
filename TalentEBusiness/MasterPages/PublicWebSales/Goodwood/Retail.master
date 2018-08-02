@@ -1,0 +1,29 @@
+﻿<%@ Master Language="VB" CodeFile="~/MasterPages/Shared/SharedClasses/Retail.master.vb" Inherits="MasterPages_Shared_SharedClasses_Retail" %>
+<%@ Register Namespace="Talent.CustomControls" Assembly="__code" tagprefix="TalentCustom" %>
+<%@ Register Src="~/UserControls/Menu.ascx" TagName="Menu" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/miniBasket.ascx" TagName="miniBasket" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/PageLeftProductNav.ascx" TagName="PageLeftNav" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/searchBar.ascx" TagName="SearchBar" TagPrefix="Talent" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="SiteMasterHead" runat="server">
+    <!-- page level scripting -->
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server" />
+    <!-- page extra data table scripting -->
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server" />
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="SiteMasterBody" runat="server">
+    <TalentCustom:Literal HTMLFileName="shop-top.html" ID="ltShopTop" runat="server" OnLoad="GetStaticHTMLInclude" />
+    <div class="row retail-mp">
+        <div class="large-3 columns">
+            <TalentCustom:Literal HTMLFileName="shop-left-upper.html" ID="ltShopLeftUpper" runat="server" OnLoad="GetStaticHTMLInclude" />
+            <Talent:PageLeftNav ID="PageLeftNav1" runat="server" />
+            <Talent:SearchBar ID="uscSearchBar" runat="server" />
+            <TalentCustom:Literal HTMLFileName="shop-left-lower.html" ID="ltShopLeftLower" runat="server" OnLoad="GetStaticHTMLInclude" />
+        </div>
+        <div class="large-9 columns">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        </div>    
+    </div>
+    <TalentCustom:Literal HTMLFileName="shop-bottom.html" ID="ltShopBottom" runat="server" OnLoad="GetStaticHTMLInclude" />
+</asp:Content>

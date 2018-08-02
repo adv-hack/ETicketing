@@ -1,0 +1,841 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://localhost/TradingPortal" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://localhost/TradingPortal" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://localhost/TradingPortal">
+      <s:element name="CustomerAddRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="loginId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="company" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="XMLString" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CustomerAddRequestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerAddRequestResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CustomerRetrievalRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="loginId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="company" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="XMLString" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CustomerRetrievalRequestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerRetrievalRequestResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CustomerAssociationsRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="loginId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="company" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="XMLString" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CustomerAssociationsRequestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerAssociationsRequestResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerifyPasswordRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="loginId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="company" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="XMLString" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerifyPasswordRequestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VerifyPasswordRequestResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RetrievePasswordRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="loginId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="company" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="XMLString" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RetrievePasswordRequestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RetrievePasswordRequestResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CustomerUpdateRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="loginId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="company" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="XMLString" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CustomerUpdateRequestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerUpdateRequestResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddCustomerAssociationsRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="loginId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="company" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="XMLString" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddCustomerAssociationsRequestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddCustomerAssociationsRequestResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteCustomerAssociationsRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="loginId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="company" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="XMLString" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteCustomerAssociationsRequestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteCustomerAssociationsRequestResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RetrieveProfileDetailsRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="loginId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="company" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="XMLString" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RetrieveProfileDetailsRequestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RetrieveProfileDetailsRequestResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CustomerAddRequestSoapIn">
+    <wsdl:part name="parameters" element="tns:CustomerAddRequest" />
+  </wsdl:message>
+  <wsdl:message name="CustomerAddRequestSoapOut">
+    <wsdl:part name="parameters" element="tns:CustomerAddRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="CustomerRetrievalRequestSoapIn">
+    <wsdl:part name="parameters" element="tns:CustomerRetrievalRequest" />
+  </wsdl:message>
+  <wsdl:message name="CustomerRetrievalRequestSoapOut">
+    <wsdl:part name="parameters" element="tns:CustomerRetrievalRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="CustomerAssociationsRequestSoapIn">
+    <wsdl:part name="parameters" element="tns:CustomerAssociationsRequest" />
+  </wsdl:message>
+  <wsdl:message name="CustomerAssociationsRequestSoapOut">
+    <wsdl:part name="parameters" element="tns:CustomerAssociationsRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="VerifyPasswordRequestSoapIn">
+    <wsdl:part name="parameters" element="tns:VerifyPasswordRequest" />
+  </wsdl:message>
+  <wsdl:message name="VerifyPasswordRequestSoapOut">
+    <wsdl:part name="parameters" element="tns:VerifyPasswordRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="RetrievePasswordRequestSoapIn">
+    <wsdl:part name="parameters" element="tns:RetrievePasswordRequest" />
+  </wsdl:message>
+  <wsdl:message name="RetrievePasswordRequestSoapOut">
+    <wsdl:part name="parameters" element="tns:RetrievePasswordRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="CustomerUpdateRequestSoapIn">
+    <wsdl:part name="parameters" element="tns:CustomerUpdateRequest" />
+  </wsdl:message>
+  <wsdl:message name="CustomerUpdateRequestSoapOut">
+    <wsdl:part name="parameters" element="tns:CustomerUpdateRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddCustomerAssociationsRequestSoapIn">
+    <wsdl:part name="parameters" element="tns:AddCustomerAssociationsRequest" />
+  </wsdl:message>
+  <wsdl:message name="AddCustomerAssociationsRequestSoapOut">
+    <wsdl:part name="parameters" element="tns:AddCustomerAssociationsRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteCustomerAssociationsRequestSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteCustomerAssociationsRequest" />
+  </wsdl:message>
+  <wsdl:message name="DeleteCustomerAssociationsRequestSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteCustomerAssociationsRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveProfileDetailsRequestSoapIn">
+    <wsdl:part name="parameters" element="tns:RetrieveProfileDetailsRequest" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveProfileDetailsRequestSoapOut">
+    <wsdl:part name="parameters" element="tns:RetrieveProfileDetailsRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="CustomerAddRequestHttpGetIn">
+    <wsdl:part name="loginId" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="company" type="s:string" />
+    <wsdl:part name="XMLString" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CustomerAddRequestHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="CustomerRetrievalRequestHttpGetIn">
+    <wsdl:part name="loginId" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="company" type="s:string" />
+    <wsdl:part name="XMLString" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CustomerRetrievalRequestHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="CustomerAssociationsRequestHttpGetIn">
+    <wsdl:part name="loginId" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="company" type="s:string" />
+    <wsdl:part name="XMLString" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CustomerAssociationsRequestHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="VerifyPasswordRequestHttpGetIn">
+    <wsdl:part name="loginId" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="company" type="s:string" />
+    <wsdl:part name="XMLString" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="VerifyPasswordRequestHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="RetrievePasswordRequestHttpGetIn">
+    <wsdl:part name="loginId" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="company" type="s:string" />
+    <wsdl:part name="XMLString" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="RetrievePasswordRequestHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="CustomerUpdateRequestHttpGetIn">
+    <wsdl:part name="loginId" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="company" type="s:string" />
+    <wsdl:part name="XMLString" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CustomerUpdateRequestHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="AddCustomerAssociationsRequestHttpGetIn">
+    <wsdl:part name="loginId" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="company" type="s:string" />
+    <wsdl:part name="XMLString" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AddCustomerAssociationsRequestHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="DeleteCustomerAssociationsRequestHttpGetIn">
+    <wsdl:part name="loginId" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="company" type="s:string" />
+    <wsdl:part name="XMLString" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DeleteCustomerAssociationsRequestHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveProfileDetailsRequestHttpGetIn">
+    <wsdl:part name="loginId" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="company" type="s:string" />
+    <wsdl:part name="XMLString" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveProfileDetailsRequestHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="CustomerAddRequestHttpPostIn">
+    <wsdl:part name="loginId" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="company" type="s:string" />
+    <wsdl:part name="XMLString" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CustomerAddRequestHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="CustomerRetrievalRequestHttpPostIn">
+    <wsdl:part name="loginId" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="company" type="s:string" />
+    <wsdl:part name="XMLString" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CustomerRetrievalRequestHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="CustomerAssociationsRequestHttpPostIn">
+    <wsdl:part name="loginId" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="company" type="s:string" />
+    <wsdl:part name="XMLString" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CustomerAssociationsRequestHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="VerifyPasswordRequestHttpPostIn">
+    <wsdl:part name="loginId" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="company" type="s:string" />
+    <wsdl:part name="XMLString" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="VerifyPasswordRequestHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="RetrievePasswordRequestHttpPostIn">
+    <wsdl:part name="loginId" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="company" type="s:string" />
+    <wsdl:part name="XMLString" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="RetrievePasswordRequestHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="CustomerUpdateRequestHttpPostIn">
+    <wsdl:part name="loginId" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="company" type="s:string" />
+    <wsdl:part name="XMLString" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CustomerUpdateRequestHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="AddCustomerAssociationsRequestHttpPostIn">
+    <wsdl:part name="loginId" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="company" type="s:string" />
+    <wsdl:part name="XMLString" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AddCustomerAssociationsRequestHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="DeleteCustomerAssociationsRequestHttpPostIn">
+    <wsdl:part name="loginId" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="company" type="s:string" />
+    <wsdl:part name="XMLString" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DeleteCustomerAssociationsRequestHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveProfileDetailsRequestHttpPostIn">
+    <wsdl:part name="loginId" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="company" type="s:string" />
+    <wsdl:part name="XMLString" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveProfileDetailsRequestHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="CustomerSoap">
+    <wsdl:operation name="CustomerAddRequest">
+      <wsdl:input message="tns:CustomerAddRequestSoapIn" />
+      <wsdl:output message="tns:CustomerAddRequestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CustomerRetrievalRequest">
+      <wsdl:input message="tns:CustomerRetrievalRequestSoapIn" />
+      <wsdl:output message="tns:CustomerRetrievalRequestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CustomerAssociationsRequest">
+      <wsdl:input message="tns:CustomerAssociationsRequestSoapIn" />
+      <wsdl:output message="tns:CustomerAssociationsRequestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VerifyPasswordRequest">
+      <wsdl:input message="tns:VerifyPasswordRequestSoapIn" />
+      <wsdl:output message="tns:VerifyPasswordRequestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RetrievePasswordRequest">
+      <wsdl:input message="tns:RetrievePasswordRequestSoapIn" />
+      <wsdl:output message="tns:RetrievePasswordRequestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CustomerUpdateRequest">
+      <wsdl:input message="tns:CustomerUpdateRequestSoapIn" />
+      <wsdl:output message="tns:CustomerUpdateRequestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddCustomerAssociationsRequest">
+      <wsdl:input message="tns:AddCustomerAssociationsRequestSoapIn" />
+      <wsdl:output message="tns:AddCustomerAssociationsRequestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCustomerAssociationsRequest">
+      <wsdl:input message="tns:DeleteCustomerAssociationsRequestSoapIn" />
+      <wsdl:output message="tns:DeleteCustomerAssociationsRequestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveProfileDetailsRequest">
+      <wsdl:input message="tns:RetrieveProfileDetailsRequestSoapIn" />
+      <wsdl:output message="tns:RetrieveProfileDetailsRequestSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="CustomerHttpGet">
+    <wsdl:operation name="CustomerAddRequest">
+      <wsdl:input message="tns:CustomerAddRequestHttpGetIn" />
+      <wsdl:output message="tns:CustomerAddRequestHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CustomerRetrievalRequest">
+      <wsdl:input message="tns:CustomerRetrievalRequestHttpGetIn" />
+      <wsdl:output message="tns:CustomerRetrievalRequestHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CustomerAssociationsRequest">
+      <wsdl:input message="tns:CustomerAssociationsRequestHttpGetIn" />
+      <wsdl:output message="tns:CustomerAssociationsRequestHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VerifyPasswordRequest">
+      <wsdl:input message="tns:VerifyPasswordRequestHttpGetIn" />
+      <wsdl:output message="tns:VerifyPasswordRequestHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RetrievePasswordRequest">
+      <wsdl:input message="tns:RetrievePasswordRequestHttpGetIn" />
+      <wsdl:output message="tns:RetrievePasswordRequestHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CustomerUpdateRequest">
+      <wsdl:input message="tns:CustomerUpdateRequestHttpGetIn" />
+      <wsdl:output message="tns:CustomerUpdateRequestHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddCustomerAssociationsRequest">
+      <wsdl:input message="tns:AddCustomerAssociationsRequestHttpGetIn" />
+      <wsdl:output message="tns:AddCustomerAssociationsRequestHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCustomerAssociationsRequest">
+      <wsdl:input message="tns:DeleteCustomerAssociationsRequestHttpGetIn" />
+      <wsdl:output message="tns:DeleteCustomerAssociationsRequestHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveProfileDetailsRequest">
+      <wsdl:input message="tns:RetrieveProfileDetailsRequestHttpGetIn" />
+      <wsdl:output message="tns:RetrieveProfileDetailsRequestHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="CustomerHttpPost">
+    <wsdl:operation name="CustomerAddRequest">
+      <wsdl:input message="tns:CustomerAddRequestHttpPostIn" />
+      <wsdl:output message="tns:CustomerAddRequestHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CustomerRetrievalRequest">
+      <wsdl:input message="tns:CustomerRetrievalRequestHttpPostIn" />
+      <wsdl:output message="tns:CustomerRetrievalRequestHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CustomerAssociationsRequest">
+      <wsdl:input message="tns:CustomerAssociationsRequestHttpPostIn" />
+      <wsdl:output message="tns:CustomerAssociationsRequestHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VerifyPasswordRequest">
+      <wsdl:input message="tns:VerifyPasswordRequestHttpPostIn" />
+      <wsdl:output message="tns:VerifyPasswordRequestHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RetrievePasswordRequest">
+      <wsdl:input message="tns:RetrievePasswordRequestHttpPostIn" />
+      <wsdl:output message="tns:RetrievePasswordRequestHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CustomerUpdateRequest">
+      <wsdl:input message="tns:CustomerUpdateRequestHttpPostIn" />
+      <wsdl:output message="tns:CustomerUpdateRequestHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddCustomerAssociationsRequest">
+      <wsdl:input message="tns:AddCustomerAssociationsRequestHttpPostIn" />
+      <wsdl:output message="tns:AddCustomerAssociationsRequestHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCustomerAssociationsRequest">
+      <wsdl:input message="tns:DeleteCustomerAssociationsRequestHttpPostIn" />
+      <wsdl:output message="tns:DeleteCustomerAssociationsRequestHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveProfileDetailsRequest">
+      <wsdl:input message="tns:RetrieveProfileDetailsRequestHttpPostIn" />
+      <wsdl:output message="tns:RetrieveProfileDetailsRequestHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CustomerSoap" type="tns:CustomerSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CustomerAddRequest">
+      <soap:operation soapAction="http://localhost/TradingPortal/CustomerAddRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerRetrievalRequest">
+      <soap:operation soapAction="http://localhost/TradingPortal/CustomerRetrievalRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerAssociationsRequest">
+      <soap:operation soapAction="http://localhost/TradingPortal/CustomerAssociationsRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifyPasswordRequest">
+      <soap:operation soapAction="http://localhost/TradingPortal/VerifyPasswordRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetrievePasswordRequest">
+      <soap:operation soapAction="http://localhost/TradingPortal/RetrievePasswordRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerUpdateRequest">
+      <soap:operation soapAction="http://localhost/TradingPortal/CustomerUpdateRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddCustomerAssociationsRequest">
+      <soap:operation soapAction="http://localhost/TradingPortal/AddCustomerAssociationsRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCustomerAssociationsRequest">
+      <soap:operation soapAction="http://localhost/TradingPortal/DeleteCustomerAssociationsRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveProfileDetailsRequest">
+      <soap:operation soapAction="http://localhost/TradingPortal/RetrieveProfileDetailsRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CustomerSoap12" type="tns:CustomerSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CustomerAddRequest">
+      <soap12:operation soapAction="http://localhost/TradingPortal/CustomerAddRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerRetrievalRequest">
+      <soap12:operation soapAction="http://localhost/TradingPortal/CustomerRetrievalRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerAssociationsRequest">
+      <soap12:operation soapAction="http://localhost/TradingPortal/CustomerAssociationsRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifyPasswordRequest">
+      <soap12:operation soapAction="http://localhost/TradingPortal/VerifyPasswordRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetrievePasswordRequest">
+      <soap12:operation soapAction="http://localhost/TradingPortal/RetrievePasswordRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerUpdateRequest">
+      <soap12:operation soapAction="http://localhost/TradingPortal/CustomerUpdateRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddCustomerAssociationsRequest">
+      <soap12:operation soapAction="http://localhost/TradingPortal/AddCustomerAssociationsRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCustomerAssociationsRequest">
+      <soap12:operation soapAction="http://localhost/TradingPortal/DeleteCustomerAssociationsRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveProfileDetailsRequest">
+      <soap12:operation soapAction="http://localhost/TradingPortal/RetrieveProfileDetailsRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CustomerHttpGet" type="tns:CustomerHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="CustomerAddRequest">
+      <http:operation location="/CustomerAddRequest" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerRetrievalRequest">
+      <http:operation location="/CustomerRetrievalRequest" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerAssociationsRequest">
+      <http:operation location="/CustomerAssociationsRequest" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifyPasswordRequest">
+      <http:operation location="/VerifyPasswordRequest" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetrievePasswordRequest">
+      <http:operation location="/RetrievePasswordRequest" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerUpdateRequest">
+      <http:operation location="/CustomerUpdateRequest" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddCustomerAssociationsRequest">
+      <http:operation location="/AddCustomerAssociationsRequest" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCustomerAssociationsRequest">
+      <http:operation location="/DeleteCustomerAssociationsRequest" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveProfileDetailsRequest">
+      <http:operation location="/RetrieveProfileDetailsRequest" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CustomerHttpPost" type="tns:CustomerHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="CustomerAddRequest">
+      <http:operation location="/CustomerAddRequest" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerRetrievalRequest">
+      <http:operation location="/CustomerRetrievalRequest" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerAssociationsRequest">
+      <http:operation location="/CustomerAssociationsRequest" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifyPasswordRequest">
+      <http:operation location="/VerifyPasswordRequest" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetrievePasswordRequest">
+      <http:operation location="/RetrievePasswordRequest" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CustomerUpdateRequest">
+      <http:operation location="/CustomerUpdateRequest" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddCustomerAssociationsRequest">
+      <http:operation location="/AddCustomerAssociationsRequest" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCustomerAssociationsRequest">
+      <http:operation location="/DeleteCustomerAssociationsRequest" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveProfileDetailsRequest">
+      <http:operation location="/RetrieveProfileDetailsRequest" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Customer">
+    <wsdl:port name="CustomerSoap" binding="tns:CustomerSoap">
+      <soap:address location="http://localhost:2897/TalentSupplyNet/Customer.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CustomerSoap12" binding="tns:CustomerSoap12">
+      <soap12:address location="http://localhost:2897/TalentSupplyNet/Customer.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CustomerHttpGet" binding="tns:CustomerHttpGet">
+      <http:address location="http://localhost:2897/TalentSupplyNet/Customer.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CustomerHttpPost" binding="tns:CustomerHttpPost">
+      <http:address location="http://localhost:2897/TalentSupplyNet/Customer.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

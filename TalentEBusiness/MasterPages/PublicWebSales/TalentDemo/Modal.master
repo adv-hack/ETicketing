@@ -1,0 +1,21 @@
+﻿<%@ Master language="VB" CodeFile="~/MasterPages/Shared/SharedClasses/Modal.master.vb" Inherits="MasterPages_Shared_SharedClasses_Modal" %>
+
+<%@ Register Namespace="Talent.CustomControls" Assembly="__code" tagprefix="TalentCustom" %>
+
+<head id="Head1" runat="server">
+    <!-- page level scripting -->
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server" />
+    <!-- page extra data table scripting -->
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server" />
+</head>
+<body id="MasterBodyTag" runat="server">
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="scmMainScriptManager" runat="server" />
+        <div class="row">
+            <div class="large-12 columns">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+            </div>
+        </div>
+    </form>
+</body>
+</html>

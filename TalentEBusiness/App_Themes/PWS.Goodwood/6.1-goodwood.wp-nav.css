@@ -1,0 +1,685 @@
+@charset "UTF-8";
+ul.nav {
+	width: 100%;
+	max-width: 1024px;
+	margin: 0 auto;
+	text-transform: uppercase;
+	color: rgb(255,255,255);
+	position: relative;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ul.nav li {
+	padding: 0 10px;
+	font-size: 13px;
+	transition: all 0.25s;
+	cursor: pointer;
+	position: relative;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.menu_button {
+	width: 29px;
+	float: left;
+	padding: 19px;
+	padding: 16px;
+	position: relative;
+	z-index: 1000;
+	cursor: pointer;
+}
+.menu_button img {
+	width: 100%;
+	display: block;
+}
+/* -------------------------------------------------------------------------------------------------------------------- Explore Goodwood ----------------- */
+nav.g1 {
+	background-color: none;
+	/* height: 24px; */
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	color: rgb(255,255,255);
+	width: auto;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	/* height: 24px; */
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+nav.g1 ul {
+	position: absolute;
+	right: 0px;
+	width: 140px;
+	font-size: 12px;
+	text-transform: uppercase;
+	width: 200px;
+	z-index: 10000;
+	margin: 0px;
+	padding: 0px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	top: 2px;
+}
+nav.g1 ul.nav li {
+	font-size: 11px;
+	line-height: 24px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+nav.g1 ul li.goodwoodLogo {
+	font-size: 16px;
+	color: rgb(255,255,255);
+	font-family: "L Futura W01";
+	/* line-height: 22px; */
+	font-size: 12px;
+	cursor: pointer;
+	/* height: 20px; */
+	padding-top: 2px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+nav.g1 ul.sub-menu {
+	max-width: 194px !important;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	overflow: hidden;
+	margin-top: 1.500rem;
+}
+nav.g1 ul.sub-menu li {
+	font-family: 'ITC Garamond W01';
+	line-height: 25px;
+	border-top: 1px solid rgba(255,255,255,0.3);
+	padding: 2px 13px;
+	width: 100%;
+	background-color: rgb(0,0,0);
+}
+nav.g1 ul.sub-menu li a {
+	display: block;
+}
+nav.g1 ul li a {
+	color: rgb(255,255,255);
+}
+/* -------------------------------------------------------------------------------------------------------------------- Main Menu ----------------- */
+.menu-mainmenu-container {
+	margin: 0 auto;
+	padding: 0;
+	height: 72px;
+	height: 66px;
+	max-width: 940px;
+	max-width: 1024px;
+	overflow: hidden;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+nav#site-navigation {
+	background-color: rgb(255,255,255);
+	height: 72px;
+	height: 66px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: 'L Futura W01';
+	font-style: normal;
+	font-weight: 200;
+	text-transform: uppercase;
+	box-shadow: 0px 2px 4px rgba(0,0,0,0.25);
+	z-index: 1000;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+nav#site-navigation ul#menu-mainmenu {
+	margin: 0;
+	padding: 0;
+}
+nav#site-navigation ul#menu-mainmenu li {
+	line-height: 0px;
+	font-size: 13px;
+	color: rgb(0,0,0);
+	/* display: inline-block; */
+	display: inline;
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+nav#site-navigation ul#menu-mainmenu li a {
+	line-height: 0px;
+	color: rgb(0,0,0);
+	/*padding: 38px 10px 34px;*/
+	padding-top: 34px;
+	padding-bottom: 34px;
+	float: left;
+	/* display: block; */
+	width: 100%;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+html.lt-ie9 nav#site-navigation ul#menu-mainmenu li a {
+	padding-left: 10px!important;
+	padding-right: 10px!important;
+}
+nav#site-navigation ul#menu-mainmenu li:hover {
+	background-color: rgb(245,245,245);
+}
+nav#site-navigation ul#menu-mainmenu li:first-child a {
+	padding: 13px 0;
+	margin: 0;
+	border-left: 1px solid rgb(235,235,235);
+}
+nav#site-navigation ul#menu-mainmenu li#nav-login a, nav#site-navigation ul#menu-mainmenu li#nav-search a {
+	line-height: 0px;
+	color: rgb(0,0,0);
+	padding: 20px 0 15px;
+	padding: 17px 0 16px;
+	display: block;
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: center;
+	font-family: 'glyphishregular';
+	text-transform: none;
+	font-size: 24px;
+}
+nav#site-navigation ul#menu-mainmenu li#nav-login a {
+	border-bottom: 1px solid rgb(235,235,235);
+}
+#menu-item-55 a.sf-with-ul {
+	background-image: url(images/more-arrow.png);
+	background-repeat: no-repeat;
+	background-position: center 46px;
+	background-size: 9px 5px;
+}
+nav#site-navigation ul#menu-mainmenu li.menu-item-has-children li.menu-item-has-children {
+	position: relative;
+}
+nav#site-navigation ul#menu-mainmenu li.menu-item-has-children li.menu-item-has-children .sub-menu {
+	left: 200px;
+	top: 0;
+}
+nav#site-navigation ul#menu-mainmenu li.menu-item-has-children .sub-menu {
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+/* -------------------------------------------------------------------------------------------------------------------- Main Menu : Drop Down Sub Menus ----------------- */
+
+nav#site-navigation ul#menu-mainmenu .sub-menu {
+	position: absolute;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	top: 72px;
+	top: 66px;
+	padding: 0px;
+	margin: 0px;
+	z-index: 1000000000000;
+	width: 200px;
+	display: block;
+}
+nav#site-navigation ul#menu-mainmenu .sub-menu li {
+	padding: 0px !important;
+	margin: 0px !important;
+	border: none !important;
+	display: block !important;
+	line-height: 32px !important;
+	width: 200px !important;
+	color: rgb(255,255,255)!important;
+	text-align: left;
+	float: none;
+}
+nav#site-navigation ul#menu-mainmenu .sub-menu li a {
+	padding: 0px !important;
+	margin: 0px !important;
+	border: none !important;
+	display: block !important;
+	line-height: 26px !important;
+	width: 200px !important;
+	padding: 4px 16px !important;
+	background-color: rgba(0,0,0,0.8)!important;
+	color: rgb(255,255,255)!important;
+	border-bottom: 1px solid rgba(255,255,255,0.2) !important;
+	transition: all 0.25s;
+	font-size: 12px;
+}
+nav#site-navigation ul#menu-mainmenu .sub-menu li a {
+	background-color: rgb(255,255,255) !important;
+	color: rgb(0,0,0) !important;
+	border-top: 1px solid rgba(0,0,0,0.1)!important;
+}
+nav#site-navigation ul#menu-mainmenu .sub-menu li a:hover {
+	background-color: rgb(235,235,235) !important;
+	color: rgb(0,0,0) !important;
+}
+nav#site-navigation ul#menu-mainmenu .sub-menu li:last-child {
+	border: none !important;
+}
+/* -------------------------------------------------------------------------------------------------------------------- Section Primary Navs ----------------- */
+#primary, #secondary {
+	background-color: rgba(58,98,163,1);
+	font-family: 'L Futura W01';
+	font-style: normal;
+	font-weight: 200;
+	text-transform: uppercase;
+	height: 36px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-bottom: 1px solid rgb(255,255,255);
+	line-height: 31px;
+	/*overflow: hidden;*/
+	padding: 0;
+	margin: 0;
+}
+#primary ul.nav, #secondary ul.nav {
+	width: 100%;
+	margin: 0 auto;
+	text-transform: uppercase;
+	color: rgb(255,255,255);
+	position: relative;
+	list-style: none;
+	padding: 0;
+}
+#primary ul.nav li, #secondary ul.nav li {
+	padding: 0 10px;
+	font-size: 13px;
+	transition: all 0.25s;
+	cursor: pointer;
+	position: relative;
+	display: inline-block;
+	float: left;
+	border-bottom: 4px solid rgba(255,255,255,0.2);
+}
+#primary ul.nav li.selected, #secondary ul.nav li.selected {
+	border-bottom: 4px solid rgba(255,255,255,1);
+}
+#primary ul.nav li:hover, #secondary ul.nav li:hover {
+	background-color: rgba(255,255,255,0.2);
+}
+#navHamburger {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	display: none;
+}
+#icon-navHamburger {
+	padding: 26px 16px;
+	transition: all 0.25s;
+}
+nav#site-navigation ul#menu-mainmenu li.menu-selected a {
+	color: rgb(255,255,255);
+}
+/* -------------------------------------------------------------------------------------------------------------------- Secondary Navs (sub-cat-menu) ----------------- */
+ul.sub-cat-menu {
+	position: absolute;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+	z-index: 1000000000000;
+	width: 168px;
+	display: block;
+	top: 35px;
+	display: none;
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+	margin-left: -10px;
+}
+ul.sub-cat-menu li {
+	padding: 0px !important;
+	margin: 0px !important;
+	border: none !important;
+	display: block !important;
+	line-height: 32px !important;
+	width: 168px!important;
+	color: rgb(0,0,0)!important;
+	text-align: left;
+	float: none;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: rgb(255,255,255) !important;
+	color: rgb(0,0,0) !important;
+	border-top: 1px solid rgba(0,0,0,0.1)!important;
+}
+ul.sub-cat-menu li a {
+	padding: 0px !important;
+	margin: 0px !important;
+	border: none !important;
+	display: block !important;
+	line-height: 26px !important;
+	padding: 4px 16px !important;
+	transition: all 0.25s;
+	font-size: 12px;
+	color: rgb(0,0,0) !important;
+}
+ul.sub-cat-menu a:hover {
+	color: rgb(0,0,0) !important;
+	background-color: rgb(235,235,235)!important;
+}
+ul.sub-cat-menu li:hover {
+	background-color: rgba(255,255,255,0.8)!important;
+	color: rgb(0,0,0) !important;
+}
+/* Show sub-cat-menu when hovering over category name in primary nav */
+#primary .nav .cat-item:hover ul.sub-cat-menu {
+	display: block;
+}
+/* -------------------------------------------------------------------------------------------------------------------- Primary Nav You Are Here Markers ----------------- */
+
+/* FoS Explore */
+/* fos-explore-map */.category-festival-of-speed .menu-post-id-2530, /* fos-info-riders & drivers */ .postid-1808 .menu-post-id-2308, /* fos-explore-theme */ .postid-1803 .menu-post-id-2308, /* fos-explore-map */ .postid-1909 .menu-post-id-2308, /* fos-explore-hillclimb */ .postid-1780 .menu-post-id-2308, /* fos-explore-mms */ .postid-1791 .menu-post-id-2308, /* fos-explore-gas */ .postid-1793 .menu-post-id-2308, /* fos-explore-f1 */ .postid-1784 .menu-post-id-2308, /* fos-explore-supercars */ .postid-1928 .menu-post-id-2308, /* fos-explore-bikes */ .postid-1787 .menu-post-id-2308, /* fos-explore-concours */ .postid-1789 .menu-post-id-2308, /* fos-explore-central feature */ .postid-1782 .menu-post-id-2308, /* fos-explore-rally-stage */ .postid-2806 .menu-post-id-2308, /* fos-explore-aviation */ .postid-2808 .menu-post-id-2308 {
+	border-bottom: 4px solid rgb(255,255,255) !important;
+}
+/* fos-explore-theme */ .postid-1803 .menu-post-id-4551.selected, /* fos-info-riders & drivers */ .postid-1808 .menu-post-id-4551.selected, /* fos-explore-map */ .postid-1909 .menu-post-id-4551.selected, /* fos-explore-hillclimb */ .postid-1780 .menu-post-id-4551.selected, /* fos-explore-mms */ .postid-1791 .menu-post-id-4551.selected, /* fos-explore-gas */ .postid-1793 .menu-post-id-4551.selected, /* fos-explore-f1 */ .postid-1784 .menu-post-id-4551.selected, /* fos-explore-supercars */ .postid-1928 .menu-post-id-4551.selected, /* fos-explore-bikes */ .postid-1787 .menu-post-id-4551.selected, /* fos-explore-concours */ .postid-1789 .menu-post-id-4551.selected, /* fos-explore-central feature */ .postid-1782 .menu-post-id-4551.selected, /* fos-explore-rally-stage */ .postid-2806 .menu-post-id-4551.selected, /* fos-explore-aviation */ .postid-2808 .menu-post-id-4551.selected {
+	border-bottom: 4px solid rgba(255,255,255,0.2) !important;
+}
+/* fos-explore-map */.postid-1909 .entry-title, /* fos-explore-hillclimb */ .postid-1780 .entry-title, /* fos-explore-mms */ .postid-1791 .entry-title, /* fos-explore-gas */ .postid-1793 .entry-title, /* fos-explore-f1 */ .postid-1784 .entry-title, /* fos-explore-supercars */ .postid-1928 .entry-title, /* fos-explore-bikes */ .postid-1787 .entry-title, /* fos-explore-concours */ .postid-1789 .entry-title, /* fos-explore-central feature */ .postid-1782 .entry-title, /* fos-explore-more */ .postid-1793 .entry-title, /* fos-info-theme */ .postid-1803 .entry-title, /* fos-info-riders & drivers */ .postid-1808 .entry-title, /* fos-info-tickets */ .postid-1812 .entry-title, /* fos-info-eating & drinking */ .postid-1819 .entry-title {
+	display: none;
+}
+/* FoS Info */
+ /* fos-info-tickets */ .postid-1812 .menu-post-id-2309,  /* fos-info-accommodation */ .postid-1760 .menu-post-id-2309, /* fos-info-family */ .postid-1894 .menu-post-id-2309, /* fos-info-eating & drinking */ .postid-1819 .menu-post-id-2309, /* fos-info-faqs */ .postid-1860 .menu-post-id-2309 {
+	border-bottom: 4px solid rgb(255,255,255) !important;
+}
+/* fos-info-tickets */ .postid-1812 .menu-post-id-4551.selected,  /* fos-info-accommodation */ .postid-1760 .menu-post-id-4551.selected, /* fos-info-family */ .postid-1894 .menu-post-id-4551.selected, /* fos-info-eating & drinking */ .postid-1819 .menu-post-id-4551.selected, /* fos-info-faqs */ .postid-1860 .menu-post-id-4551.selected {
+	border-bottom: 4px solid rgba(255,255,255,0.2) !important;
+}
+/* FoS Partners */
+ /* fos-info-partners */ .postid-2643 .menu-post-id-2669 {
+	border-bottom: 4px solid rgb(255,255,255) !important;
+}
+/* fos-info-partners */ .postid-2643 .menu-post-id-4551.selected {
+	border-bottom: 4px solid rgba(255,255,255,0.2) !important;
+}
+/* revival-info */ .category-goodwood-revival-info .menu-post-id-4380, /* accommodation */ .postid-2882 .menu-post-id-4380, /* revival style */ .postid-2711 .menu-post-id-4380 {
+	border-bottom: 4px solid rgb(255,255,255) !important;
+}
+/* revival-info */ .category-goodwood-revival-info .menu-post-id-4553, /* accommodation */ .postid-2882 .menu-post-id-4553, /* revival style */ .postid-2711 .menu-post-id-4553 {
+	border-bottom: 4px solid rgba(255,255,255,0.2) !important;
+}
+/* revival-explore-map */ .postid-4296 .menu-post-id-2306, /* the races */ .postid-2560 .menu-post-id-2306, /* riders and drivers */ .postid-2644 .menu-post-id-2306, /* aviation */ .postid-2671 .menu-post-id-2306, /* music */ .postid-4129 .menu-post-id-2306 {
+	border-bottom: 4px solid rgb(255,255,255) !important;
+}
+/* revival-explore-map */ .postid-4296 .menu-post-id-4553, /* the races */ .postid-2560 .menu-post-id-4553, /* riders and drivers */ .postid-2644 .menu-post-id-4553, /* aviation */ .postid-2671 .menu-post-id-4553, /* music */ .postid-4129 .menu-post-id-4553 {
+	border-bottom: 4px solid rgba(255,255,255,0.2) !important;
+}
+/* bc calendar */ .postid-5183 .menu-post-id-3600, /* about */ .postid-3510 .menu-post-id-3548, /* pre-register */ .postid-3570 .menu-post-id-3582 {
+	border-bottom: 4px solid rgb(255,255,255) !important;
+}
+/* bc calendar */ .postid-5183 .menu-post-id-4552, /* about */ .postid-3510 .menu-post-id-4552, /* pre-register */ .postid-3570 .menu-post-id-4552 {
+	border-bottom: 4px solid rgba(255,255,255,0.2) !important;
+}
+/* grrc-latest */.category-grrc .menu-post-id-168 {
+	border-bottom: 4px solid rgb(255,255,255) !important;
+}
+/* grrc-calendar */
+.postid-2541 #primary ul.nav li.selected {
+	border-bottom: 4px solid rgba(255,255,255,0.2) !important;
+}
+.postid-2541 .menu-post-id-2553 {
+	border-bottom: 4px solid rgb(255,255,255) !important;
+}
+/* grrc-calendar */
+.postid-1842 .menu-post-id-4549 {
+	border-bottom: 4px solid rgba(255,255,255,0.2) !important;
+}
+.postid-1842 .menu-post-id-4442 {
+	border-bottom: 4px solid rgb(255,255,255) !important;
+}
+/* grrc-forum */
+.bbpress #primary ul.nav li.selected {
+	border-bottom: 4px solid rgba(255,255,255,0.2) !important;
+}
+.bbpress .menu-post-id-169 {
+	border-bottom: 4px solid rgb(255,255,255) !important;
+}
+/* grrc-members-meeting */
+.category-members-meeting .menu-post-id-4549.selected {
+	border-bottom: 4px solid rgba(255,255,255,0.2) !important;
+}
+.category-members-meeting .menu-post-id-408.selected {
+	border-bottom: 4px solid rgb(255,255,255) !important;
+}
+/* */
+.postid-4438 #primary ul.nav li.selected {
+	border-bottom: 4px solid rgba(255,255,255,0.2) !important;
+}
+.postid-4438 #primary ul.nav li.cat-item.menu-post-id-4442 {
+	border-bottom: 4px solid rgb(255,255,255) !important;
+}
+nav#site-navigation ul#menu-mainmenu li#nav-home img {
+	width: auto;
+	height: auto;
+	max-height: 40px;
+}
+/* GRRC - Calendar */
+.postid-2541 #primary ul.nav li.selected {
+	border-bottom: 4px solid rgba(255,255,255,0.2) !important;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------- Media Queries ----------------- */
+@media screen and (min-width:64.063em) {
+.menu-mainmenu-container {
+	width: 940px;
+	width: 100%;
+}
+nav#site-navigation ul#menu-mainmenu li {
+	border-right: 1px solid rgb(235,235,235);
+	border-right-style: solid;
+	text-align: center;
+}
+nav#site-navigation ul#menu-mainmenu li#nav-home {
+	/* width: 26%; */
+	/* display: block; */
+	float: left;
+	border-right: 1px solid rgb(235,235,235);
+	border-right-style: solid;
+	text-align: center;
+}
+/* road */
+nav#site-navigation ul#menu-mainmenu li#menu-item-88 {
+	width: 7%;
+	border-right: 1px solid rgb(235,235,235);
+	border-right-style: solid;
+	text-align: center;
+}
+/* race */
+nav#site-navigation ul#menu-mainmenu li#menu-item-94 {
+	width: 7%;
+	border-right: 1px solid rgb(235,235,235);
+	border-right-style: solid;
+	text-align: center;
+}
+/* grrc */
+nav#site-navigation ul#menu-mainmenu li#menu-item-167 {
+	width: 7%;
+	border-right: 1px solid rgb(235,235,235);
+	border-right-style: solid;
+	text-align: center;
+}
+/* fos */
+nav#site-navigation ul#menu-mainmenu li#menu-item-157 {
+	width: 17%;
+	border-right: 1px solid rgb(235,235,235);
+	border-right-style: solid;
+	text-align: center;
+}
+/* goodwood revival */
+nav#site-navigation ul#menu-mainmenu li#menu-item-1742 {
+	width: 17%;
+	border-right: 1px solid rgb(235,235,235);
+	border-right-style: solid;
+	text-align: center;
+}
+/* more */
+nav#site-navigation ul#menu-mainmenu li#menu-item-55 {
+	width: 7%;
+	border-right: 1px solid rgb(235,235,235);
+	border-right-style: solid;
+	text-align: center;
+}
+/* log-in and search */
+nav#site-navigation ul#menu-mainmenu li#nav-login {
+	width: 5%;
+	display: block;
+	float: left;
+	border-right: 1px solid rgb(235,235,235);
+	border-right-style: solid;
+	text-align: center;
+}
+/* tickets */
+nav#site-navigation ul#menu-mainmenu li#nav-tickets {
+	width: 7%;
+	display: block;
+	float: left;
+	border-right: 1px solid rgb(235,235,235);
+	border-right-style: solid;
+	text-align: center;
+}
+}
+
+@media screen and (max-width:64em) {
+nav#primary {
+	display: none;
+}
+.main-header {
+	margin-bottom: 1px;
+}
+.g1 .horizontalNav {
+	display: none;
+}
+nav.g1 {
+	display: none!important;
+}
+#site-navigation {
+	display: block;
+	-webkit-tap-highlight-color: rgb(0,0,0);
+}
+nav#site-navigation ul#menu-mainmenu li:first-child {
+	margin-right: 60px;
+	width: auto;
+	border-bottom: 0px;
+}
+nav#site-navigation ul#menu-mainmenu li:first-child a {
+	padding: 5px 5px 10px 5px;
+	margin-left: 63px;
+	width: auto;
+}
+nav#site-navigation {
+	height: auto;
+}
+nav#site-navigation ul#menu-mainmenu li {
+	display: none;
+	width: 100%;
+	float: none;
+	border-bottom: 1px solid rgb(235,235,235);
+}
+nav#site-navigation ul#menu-mainmenu li#nav-home {
+	display: block;
+}
+.menu-mainmenu-container {
+	overflow: visible;
+	height: auto;
+}
+nav#site-navigation ul#menu-mainmenu .mobilemenu_wrapper li:first-child {
+	border-bottom: 1px solid rgb(235,235,235);
+	margin-right: 0px;
+}
+nav#site-navigation ul#menu-mainmenu li a, nav#site-navigation ul#menu-mainmenu .mobilemenu_wrapper li:first-child a {
+	float: none;
+	margin-left: 0px;
+	border-right: 0px;
+	display: block;
+	padding: 20px 5px 20px 48px;
+}
+nav#site-navigation ul#menu-mainmenu li#nav-login, nav#site-navigation ul#menu-mainmenu li#nav-search {
+	border-right: 0px;
+	border-top: 0px;
+}
+nav#site-navigation ul#menu-mainmenu li#nav-login a, nav#site-navigation ul#menu-mainmenu li#nav-search a {
+	float: none;
+	font-size: 35px;
+	padding-left: 35px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: left;
+	display: block;
+	width: 100%;
+	border-top: 0px;
+}
+.mobilemenu_wrapper {
+	display: none;
+	border-top: 1px solid rgb(235,235,235);
+	width: 100%;
+}
+nav#site-navigation ul#menu-mainmenu .sub-menu {
+	width: auto!important;
+	position: relative;
+	left: 0px;
+	top: 0px;
+}
+nav#site-navigation ul#menu-mainmenu .sub-menu li {
+	width: 100%!important;
+	float: none;
+}
+nav#site-navigation ul#menu-mainmenu .sub-menu li a, nav#site-navigation ul#menu-mainmenu .sub-menu li:first-child a {
+	padding: 4px 0px 4px 65px !important;
+	display: block!important;
+	width: 100%!important;
+}
+nav#site-navigation ul#menu-mainmenu .mobilemenu_wrapper .sub-menu li a {
+	width: auto!important;
+}
+nav#site-navigation ul#menu-mainmenu li.menu-item-has-children .sub-menu {
+	box-shadow: none!important;
+	display: none;
+}
+nav#site-navigation ul#menu-mainmenu .sub-menu li:last-child {
+	border-bottom: 0px none!important;
+}
+nav#site-navigation ul#menu-mainmenu li.menu-item-has-children li.menu-item-has-children .sub-menu {
+	left: 0px!important;
+	top: 0px!important;
+}
+.menu-item-has-children {
+	background-image: url('/App_Themes/PWS.Goodwood/img/menu_arrow-db.png');
+	background-repeat: no-repeat;
+	background-position: 90% 15px;
+}
+.menu-item-has-children.open {
+	background-image: url('/App_Themes/PWS.Goodwood/img/menu_arrow-db-up.png');
+	background-repeat: no-repeat;
+	background-position: 90% 15px;
+}
+nav#site-navigation ul#menu-mainmenu li:first-child a {
+	border-left: 0px;
+}
+}
+nav#site-navigation ul#menu-mainmenu .sub-menu, nav.g1 ul.sub-menu {
+	display: none;
+}
+
+
+
+
+.menu_button,
+.menu_button:before,
+.menu_button:after {  
+	box-sizing: content-box;
+}
+#primary ul, #secondary ul {
+    font-family: 'L Futura W01';
+    font-style: normal;
+    font-weight: 200;
+    line-height: 31px;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 64em) { 
+	nav#site-navigation ul#menu-mainmenu .sub-menu li li a, nav#site-navigation ul#menu-mainmenu .sub-menu li li:first-child a { padding-left: 82px !important; }
+	nav#site-navigation ul#menu-mainmenu .sub-menu li li li a, nav#site-navigation ul#menu-mainmenu .sub-menu li li li:first-child a { padding-left: 99px !important; }
+} /* min-width 641px, medium screens */
+
+
+
+
+/* nav#site-navigation ul#menu-mainmenu .sub-menu li a,
+nav#site-navigation ul#menu-mainmenu .sub-menu li a:hover {
+    background-color: transparent !important;
+} */

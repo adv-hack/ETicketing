@@ -1,0 +1,29 @@
+.page-header-hero {
+	background-image: url("/assets/html/assets/HeroBanners/page-hero-default.jpg");
+}
+body.producttravel.TOUR .page-header-hero {
+	background: url(/assets/html/assets/HeroBanners/page-hero-stadium-tours.jpg) no-repeat center center;
+	background-size:cover;
+}
+body.producttravel.TRAVEL .page-header-hero {
+	background: url(/assets/html/assets/HeroBanners/page-hero-travel.jpg) no-repeat center center;
+	background-size:cover;
+}
+body.producthome.AWAY .page-header-hero {
+	background: url(/assets/html/assets/HeroBanners/page-hero-away-games.jpg) no-repeat top center;
+	background-size:cover;
+}
+body.matchdayhospitality .page-header-hero {
+	background: url(/assets/html/assets/HeroBanners/page-hero-hospitality.jpg) no-repeat top center;
+	background-size:cover;
+}
+body.productmembership .page-header-hero {
+	background: url(/assets/html/assets/HeroBanners/page-hero-membership.jpg) no-repeat top center;
+	background-size:cover;
+}
+
+/* temp */
+body.p-hospitality-package-details.SAINTS_B .page-header-hero {
+	background: url(/assets/html/assets/HeroBanners/page-hero-saints_b.jpg) no-repeat center center;
+	background-size:cover;
+}

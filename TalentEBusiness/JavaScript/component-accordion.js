@@ -1,0 +1,1 @@
+$(function(){$("#component-accordion").accordion({autoHeight:false,navigation:true,collapsible:true,active:false,icons:false,header:"div.header"});});

@@ -1,0 +1,87 @@
+﻿<%@ Master Language="VB" CodeFile="~/MasterPages/Shared/SharedClasses/Site.master.vb" Inherits="MasterPages_Shared_SharedClasses_Site" %>
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head id="Head1" runat="server">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="//a248.e.akamai.net/images.talentarena.co.uk/Global/Lib/shadowbox-3.0.3/shadowbox.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	<script src="/App_Themes/PWS.Everton/js/modernizr.custom.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="//a248.e.akamai.net/images.talentarena.co.uk/Global/Lib/foundation-5.4.7/js/vendor/fastclick.js"></script>
+    <script src="//a248.e.akamai.net/images.talentarena.co.uk/Global/Lib/shadowbox-3.0.3/shadowbox.jQuery.js"></script>
+    <script src="/App_Themes/PWS.Everton/js/classie.js"></script>
+    <script src="/App_Themes/PWS.Everton/js/mlpushmenu.js"></script>
+    <script src="/App_Themes/PWS.Everton/js/subnav.js"></script>
+    <script>
+        // Shadowbox.js
+        Shadowbox.init({ players: ["html"] });
+        function OpenAlertsWindow(URL, boxHeight, boxWidth) {
+            if (matchMedia(Foundation.media_queries.small).matches && !matchMedia(Foundation.media_queries.medium).matches) {
+                //small screen size
+            } else {
+                Shadowbox.open({ player: 'iframe', width: boxWidth, height: boxHeight, content: URL });
+            }
+        }
+        $(function(){
+            // FastClick
+            FastClick.attach(document.body);
+        });
+    </script>
+    <link rel="icon" href="/App_Themes/PWS.Everton/img/favicon.ico" type="image/x-icon">
+    <asp:ContentPlaceHolder id="SiteMasterHead" runat="server" />
+</head>
+<body id="MasterBodyTag" runat="server">
+    <!--[if lt IE 9]>
+        <div style=" background: black; padding: 20px; text-align: center; height: 100% "><h1 style=" color: white; ">Internet Explorer is not supported on this website. Please upgrade to Internet Explorer 9  (or newer) or use another browser such as Mozilla Firefox or Google Chrome.</h1></div>
+    <![endif]-->
+    <asp:ContentPlaceHolder ID="SiteMasterBody" runat="server" />
+    <script src="//a248.e.akamai.net/images.talentarena.co.uk/Global/Lib/foundation-5.3.0/js/foundation.min.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
+    <%= GetPageExtraDataForBody()%>
+    <%= GetTrackingBodyCodesText()%>
+    <script>
+        new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ), {
+            type : 'cover'
+        } );
+    </script>
+
+    <script>
+		ContentSubNav('#SubNavPanel');
+	</script>
+
+	<script>
+		$(document).ready(function() {
+			var stickyNavTop = $('.MenuDock').offset().top;
+			 
+			var stickyNav = function(){
+			var scrollTop = $(window).scrollTop();
+				  
+			if (scrollTop > stickyNavTop) { 
+				$('.MenuDock').addClass('docked');
+			} else {
+				$('.MenuDock').removeClass('docked'); 
+			}
+		};
+		 
+		stickyNav();
+		 
+		$(window).scroll(function() {
+			stickyNav();
+			});
+		});
+	</script>
+</body>
+</html>

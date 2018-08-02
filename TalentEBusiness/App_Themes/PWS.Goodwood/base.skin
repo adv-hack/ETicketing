@@ -1,0 +1,21 @@
+﻿
+
+
+
+<asp:Image runat="server" SkinID="MaestroCard" ImageUrl="https://a248.e.akamai.net/images.talentarena.co.uk/Global/Assets/maestro-curved-32px.png" AlternateText="Maestro Card" />
+<asp:Image runat="server" SkinID="MasterCard" ImageUrl="https://a248.e.akamai.net/images.talentarena.co.uk/Global/Assets/mastercard-curved-32px.png" AlternateText="Mastercard" />
+<asp:Image runat="server" SkinID="VisaCard" ImageUrl="https://a248.e.akamai.net/images.talentarena.co.uk/Global/Assets/visa-curved-32px.png" AlternateText="Visa Credit Card" />
+<asp:Image runat="server" SkinID="VisaDebitCard" ImageUrl="https://a248.e.akamai.net/images.talentarena.co.uk/Global/Assets/t.gif" AlternateText="Visa Debit Card" Visible="false" />
+<asp:Image runat="server" SkinID="VisaElectronCard" ImageUrl="https://a248.e.akamai.net/images.talentarena.co.uk/Global/Assets/t.gif" AlternateText="Visa Electron Card" Visible="false" />
+<asp:Image runat="server" SkinID="AmexCard" ImageUrl="https://a248.e.akamai.net/images.talentarena.co.uk/Global/Assets/AMEX.png" AlternateText="American Express Card" Visible="true" />
+<asp:Image runat="server" SkinID="PayPal" ImageUrl="https://a248.e.akamai.net/images.talentarena.co.uk/Global/Assets/paypal-curved-32px.png" AlternateText="Pay with PayPal" />
+<asp:Image runat="server" SkinID="DirectDebit" ImageUrl="https://a248.e.akamai.net/images.talentarena.co.uk/Global/Assets/direct-debit-curved-32px.png" AlternateText="Pay via Direct Debit" />
+<asp:Image runat="server" SkinID="Cashback" ImageUrl="https://a248.e.akamai.net/images.talentarena.co.uk/Global/Assets/t.gif" AlternateText="Cashback" Visible="false" />
+<asp:Image runat="server" SkinID="EPurse" ImageUrl="https://a248.e.akamai.net/images.talentarena.co.uk/Global/Assets/smart-card.png" AlternateText="Pay using E-Purse points" />
+<asp:Image runat="server" SkinID="CreditFinance" ImageUrl="https://a248.e.akamai.net/images.talentarena.co.uk/Global/Assets/t.gif" AlternateText="Credit Finance" Visible="false" />
+<asp:Image runat="server" SkinID="CV2" ImageUrl="https://a248.e.akamai.net/images.talentarena.co.uk/Global/Assets/cv2.png" AlternateText="Security Number on the back of the card" />
+<asp:Image runat="server" SkinID="GoogleCheckout" ImageUrl="https://a248.e.akamai.net/images.talentarena.co.uk/Global/Assets/google-wallet.png" AlternateText="Pay with Google Wallet" />
+
+<asp:ImageButton runat="server" SkinID="PayPalCheckout" ImageUrl="https://a248.e.akamai.net/images.talentarena.co.uk/Global/Assets/paypal-button.gif" AlternateText="Checkout using PayPal" />
+<asp:ImageButton runat="server" SkinID="GoogleCheckoutCheckout" ImageUrl="https://a248.e.akamai.net/images.talentarena.co.uk/Global/Assets/google-wallet-button.png" AlternateText="Checkout using Google Wallet" />
+

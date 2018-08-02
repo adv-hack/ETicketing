@@ -1,0 +1,90 @@
+﻿<%@ Master Language="VB" CodeFile="~/MasterPages/Shared/SharedClasses/1Column.master.vb" Inherits="MasterPages_Shared_SharedClasses_1Column" %>
+<%@ Register Namespace="Talent.CustomControls" Assembly="__code" tagprefix="TalentCustom" %>
+<%@ Register Src="~/UserControls/PersonalisationBar.ascx" TagName="PersonalisationBar" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/Alerts.ascx" TagName="Alerts" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/MicroBasket.ascx" TagName="MicroBasket" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/HTMLInclude.ascx" TagName="HTMLInclude" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/breadCrumbTrail.ascx" TagName="BreadCrumbTrail" TagPrefix="Talent" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="SiteMasterHead" runat="server">
+
+    <!-- page level scripting -->
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server" />
+
+    <!-- page extra data table scripting -->
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server" />
+
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="SiteMasterBody" runat="server">
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="scmMainScriptManager" runat="server" />
+
+            <div class="off-canvas-wrap" data-offcanvas>
+
+                <div class="inner-wrap">
+
+                    <nav class="header-mobile hide-for-large-up">
+                        <div class="row">
+                            <div class="large-12 columns">
+                                <img src="/App_Themes/PWS.LeedsUnited/img/leeds-united.png" alt="Leeds United Ticketing">
+                                <a class="right-off-canvas-toggle menu-icon-img" ></a>
+                            </div>
+                        </div>
+                    </nav>
+
+                    <aside class="right-off-canvas-menu">
+                        <ul class="off-canvas-list off-canvas-user">
+                            <TalentCustom:Literal HTMLFileName="off-canvas-home.html" ID="ltlOffCanvasHome" runat="server" OnLoad="GetStaticHTMLInclude" />
+                            <li class="off-canvas-personalisation"><Talent:PersonalisationBar ID="uscPersonalisationOffCanvas" runat="server" /></li>
+                            <li><Talent:Alerts ID="uscAlertsOffCanvas" runat="server" /></li>
+                            <li><Talent:MicroBasket ID="uscMicroBasketOffCanvas" runat="server" /></li>
+                        </ul>
+                        <ul class="off-canvas-list off-canvas-product">
+                            <TalentCustom:Literal HTMLFileName="off-canvas-myaccount-menu.html" ID="ltlOffCanvasMyAccount" runat="server" OnLoad="GetStaticHTMLInclude" />
+                            <TalentCustom:Literal HTMLFileName="off-canvas-product-menu.html" ID="ltlOffCanvasProduct" runat="server" OnLoad="GetStaticHTMLInclude" />
+                        </ul>
+                    </aside>
+
+                    <header class="header show-for-large-up">
+                        <div class="pre-header">
+                            <div class="row">
+                                <div class="large-12 columns">
+                                    <nav>
+                                        <ul>
+                                            <li><Talent:PersonalisationBar ID="uscPersonalisation" runat="server" /></li>
+                                            <li><Talent:Alerts ID="uscAlerts" runat="server" /></li>
+                                            <li><Talent:MicroBasket ID="uscMicroBasket" runat="server" /></li>
+                                        </ul>
+                                    <nav>
+                                </div>
+                            </div>
+                        </div>
+                        <TalentCustom:Literal HTMLFileName="middleheader.html" ID="ltlMiddleHeader" runat="server" OnLoad="GetStaticHTMLInclude" />
+                        <TalentCustom:Literal HTMLFileName="mainnav.html" ID="ltlMainNav" runat="server" OnLoad="GetStaticHTMLInclude" />
+                        <TalentCustom:Literal HTMLFileName="navigation.html" ID="ltlNavigation" runat="server" OnLoad="GetStaticHTMLInclude" />
+                    </header>
+
+                    <section class="main-section">
+                        <div class="row ebiz-content">
+                            <div class="large-12 columns">
+                                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server" />
+                            </div>
+                        </div>
+                    </section>
+
+                    <footer>
+                        <TalentCustom:Literal HTMLFileName="footer-upper.html" ID="ltlFooterUpper" runat="server" OnLoad="GetStaticHTMLInclude" />
+                        <TalentCustom:Literal HTMLFileName="footer-sponsors.html" ID="ltlFooterSponsors" runat="server" OnLoad="GetStaticHTMLInclude" />
+                        <TalentCustom:Literal HTMLFileName="footer-sitemap.html" ID="ltlFooterSitemap" runat="server" OnLoad="GetStaticHTMLInclude" />
+                        <TalentCustom:Literal HTMLFileName="footer-lower.html" ID="ltlFooterLower" runat="server" OnLoad="GetStaticHTMLInclude" />
+                    </footer>
+
+                    <a class="exit-off-canvas"></a>
+
+                </div>
+
+            </div>
+
+    </form>
+</asp:Content>

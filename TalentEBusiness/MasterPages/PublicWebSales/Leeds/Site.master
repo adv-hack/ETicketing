@@ -1,0 +1,68 @@
+﻿<%@ Master Language="VB" CodeFile="~/MasterPages/Shared/SharedClasses/Site.master.vb" Inherits="MasterPages_Shared_SharedClasses_Site" %>
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head id="Head1" runat="server">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css">  
+    <link rel="stylesheet" href="//a248.e.akamai.net/images.talentarena.co.uk/Global/Lib/bxslider-4/jquery.bxslider.css">
+    <script src="//a248.e.akamai.net/images.talentarena.co.uk/Global/Lib/foundation-5.3.0/js/vendor/modernizr.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="//a248.e.akamai.net/images.talentarena.co.uk/Global/Lib/foundation-5.3.0/js/vendor/fastclick.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>   
+    <script src="//a248.e.akamai.net/images.talentarena.co.uk/Global/Lib/bxslider-4/jquery.bxslider.min.js"></script>
+
+    <link href='//fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Fira+Sans:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script>
+        $(function () {
+            // FastClick
+            FastClick.attach(document.body);
+            // bxSlider
+            $('.bxslider').bxSlider({
+                minSlides: 4,
+                maxSlides: 4,
+                slideWidth: 320,
+                slideMargin: 10,
+            });
+        });
+    </script>
+    <link rel="icon" href="/App_Themes/PWS.LeedsUnited/img/favicon.ico" type="image/x-icon">
+    
+    <asp:ContentPlaceHolder id="SiteMasterHead" runat="server" />
+        
+</head>
+<body id="MasterBodyTag" runat="server">
+    
+    <asp:ContentPlaceHolder ID="SiteMasterBody" runat="server" />
+    <script src="/App_Themes/PWS.LeedsUnited/js/foundation.min.js"></script>
+    <script src="/App_Themes/PWS.LeedsUnited/js/hammer.min.js"></script>
+    <script src="/App_Themes/PWS.LeedsUnited/js/mobile.seat.selection.js"></script>
+    <script src="/App_Themes/PWS.LeedsUnited/js/leedsunited.js"></script>
+    <script>
+        $(document).foundation({
+            offcanvas: {
+                // Sets method in which offcanvas opens.
+                // [ move | overlap_single | overlap ]
+                open_method: 'overlap',
+                // Should the menu close when a menu link is clicked?
+                // [ true | false ]
+                close_on_click: false
+            }
+        });
+    </script>
+    
+
+    <%= GetPageExtraDataForBody()%>
+    <%= GetTrackingBodyCodesText()%>
+</body>
+</html>

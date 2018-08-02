@@ -1,0 +1,102 @@
+<svg>
+<g id="WHITE-HORSE-INSIDE">
+	<polygon id="WH-WH" stroke-width="0" points="6.226,254.498 6.226,230.498 151.05,230.498 163.05,218.498 163.05,254.498 	"/>
+	<text fid="WH-WH" transform="matrix(1 0 0 1 17.0002 241.251)" fill="#FFFFFF" font-family="'Arial'" font-size="10">THE WHITE HORSE - INSIDE</text>
+</g>
+<g id="WHITE-HORSE-GARDEN">
+	<polygon id="WH-WH1" stroke-width="0" points="340.247,190.336 340.247,214.336 175.247,214.336 175.247,202.336 163.247,190.336 
+			"/>
+	<text fid="WH-WH1" transform="matrix(1 0 0 1 185.2566 201.002)" fill="#FFFFFF" font-family="'Arial'" font-size="10">THE WHITE HORSE - GARDEN</text>
+</g>
+<g id="WINNING-POST">
+	<polygon id="WP-WP" stroke-width="0" points="370.395,116.219 370.395,140.219 466.396,140.219 466.396,128.219 478.396,116.219 	
+		"/>
+	<text fid="WP-WP" transform="matrix(1 0 0 1 380.843 126.8008)" fill="#FFFFFF" font-family="'Arial'" font-size="10">WINNING POST</text>
+</g>
+<g id="TURF-RESTAURANT">
+	<polygon id="TR-TR" stroke-width="0" points="525.279,72.798 513.279,60.798 513.279,58.798 397.279,58.798 397.279,82.798 
+		512.9,82.798 512.9,72.798 	"/>
+	<text fid="TR-TR" transform="matrix(1 0 0 1 407.468 69.4658)" fill="#FFFFFF" font-family="'Arial'" font-size="10">TURF RESTAURANT</text>
+</g>
+<g id="TATTERSALLS-AND-PADDOCK-LADIES">
+	<polygon id="TP-TL" stroke-width="0" points="533.77,233.831 533.77,209.831 691.988,209.831 703.988,197.831 704.073,209.831 
+		733.988,209.831 733.988,233.831 	"/>
+	<text fid="TP-TL" transform="matrix(1 0 0 1 543.3069 220.498)" fill="#FFFFFF" font-family="'Arial'" font-size="10">TATTERSALLS AND PADDOCK LADIES</text>
+</g>
+<g id="TATTERSALLS-AND-PADDOCK-GENTS">
+	<polygon id="TP-TG" stroke-width="0" points="733.988,159.498 733.988,183.498 704.073,183.498 703.988,195.498 691.988,183.498 
+		533.77,183.498 533.77,159.498 	"/>
+	<text fid="TP-TG" transform="matrix(1 0 0 1 543.3069 170.165)" fill="#FFFFFF" font-family="'Arial'" font-size="10">TATTERSALLS AND PADDOCK GENTS</text>
+</g>
+<g id="TATTERSALLS-AND-PADDOCK">
+	<polygon id="TP-TP" stroke-width="0" points="695.309,199.498 683.309,187.498 683.309,184.498 519.309,184.498 519.309,208.498 
+		682.93,208.498 682.93,199.498 	"/>
+	<text fid="TP-TP" transform="matrix(1 0 0 1 529.2786 195.166)" fill="#FFFFFF" font-family="'Arial'" font-size="10">TATTERSALLS AND PADDOCK</text>
+</g>
+<g id="RESTAURANT-1539">
+	<polygon id="15-15" stroke-width="0" points="684.016,152.816 672.016,140.816 672.016,133.816 556.016,133.816 
+		556.016,157.816 671.637,157.816 671.637,152.816 	"/>
+	<text fid="15-15" transform="matrix(1 0 0 1 566.2053 144.4834)" fill="#FFFFFF" font-family="'Arial'" font-size="10">RESTAURANT 1539</text>
+</g>
+<g id="OPEN-COURSE">
+	<rect id="OC-OC" x="50" y="317.475" stroke-width="0" width="94" height="24"/>
+	<text fid="OC-OC" transform="matrix(1 0 0 1 60.0491 328.1426)" fill="#FFFFFF" font-family="'Arial'" font-size="10">OPEN COURSE</text>
+</g>
+<g id="OPEN-COURSE">
+	<rect id="OC-OC" x="50" y="317.475" stroke-width="0" width="94" height="24"/>
+	<text fid="OC-OC" transform="matrix(1 0 0 1 60.0491 328.1426)" fill="#FFFFFF" font-family="'Arial'" font-size="10">OPEN COURSE</text>
+</g>
+<g id="LONG-ROOM-COMMONHALL">
+	<polygon id="LR-HOSP" stroke-width="0" points="486.615,108.798 486.615,132.798 653.615,132.798 653.615,120.798 
+		665.615,108.798 	"/>
+	<text fid="LR-HOSP" transform="matrix(1 0 0 1 496.6155 119.7979)" fill="#FFFFFF" font-family="'Arial'" font-size="10">LONG ROOM + COMMONHALL</text>
+</g>
+<g id="LONG-ROOM">
+	<polygon id="LR-LR" stroke-width="0" points="687.087,58.798 687.087,82.798 604.797,82.798 604.797,70.798 592.797,58.798 	"/>
+	<text fid="LR-LR" transform="matrix(1 0 0 1 614.8606 69.7979)" fill="#FFFFFF" font-family="'Arial'" font-size="10">LONG ROOM</text>
+</g>
+<g id="FINAL-FURLONG">
+	<polygon id="FF-FF" stroke-width="0" points="396.849,311.475 396.849,335.475 482.85,335.475 494.85,347.475 494.85,311.475 	"/>
+	<text fid="FF-FF" transform="matrix(1 0 0 1 405.9363 322.1426)" fill="#FFFFFF" font-family="'Arial'" font-size="10">FINAL FURLONG</text>
+</g>
+<g id="DEE-ENCLOSURE">
+	<polygon id="DS-DS" stroke-width="0" points="630.309,257.475 630.309,281.475 734.309,281.475 734.309,269.475 746.309,257.475 	"/>
+	<text fid="DS-DS" transform="matrix(1 0 0 1 639.5198 268.1426)" fill="#FFFFFF" font-family="'Arial'" font-size="10">DEE ENCLOSURE</text>
+</g>
+<g id="COUNTY-STAND-LADIES">
+	<polygon id="CC-CL" stroke-width="0" points="528.55,33.798 528.55,69.798 540.55,57.798 696.865,57.798 696.865,33.798 	"/>
+	<text fid="CC-CL" transform="matrix(1 0 0 1 538.4192 44.4648)" fill="#FFFFFF" font-family="'Arial'" font-size="10">COUNTY CONCOURSE LADIES</text>
+</g>
+<g id="COUNTY-STAND-GENTS">
+	<polygon id="CC-CG" stroke-width="0" points="360.55,33.798 360.55,57.798 515.55,57.798 527.55,69.798 527.55,33.798 	"/>
+	<text fid="CC-CG" transform="matrix(1 0 0 1 370.137 44.4648)" fill="#FFFFFF" font-family="'Arial'" font-size="10">COUNTY CONCOURSE GENTS</text>
+</g>
+<g id="COUNTY-STAND">
+	<polygon id="CC-CM" stroke-width="0" points="397.726,107.798 397.726,83.798 515.55,83.798 527.55,71.798 527.55,107.798 	"/>
+	<text fid="CC-CM" transform="matrix(1 0 0 1 407.7258 94.5508)" fill="#FFFFFF" font-family="'Arial'" font-size="10">COUNTY CONCOURSE</text>
+</g>
+<g id="BMO">
+	<rect id="BMO-BMO" x="78" y="387.475" stroke-width="0" width="226" height="24"/>
+	<text fid="BMO-BMO" transform="matrix(1 0 0 1 117.0964 398.1426)" fill="#FFFFFF" font-family="'Arial'" font-size="10">OPEN COURSE BOOKMAKERS</text>
+</g>
+<g id="BMAO">
+	<rect id="BMO-BMAO" x="78" y="417.475" stroke-width="0" width="226" height="24"/>
+	<text fid="BMO-BMAO" transform="matrix(1 0 0 1 85.2366 428.1426)" fill="#FFFFFF" font-family="'Arial'" font-size="10">OPEN COURSE BOOKMAKERS ASSISTANTS</text>
+</g>
+<g id="BMT">
+	<rect id="BMT-BMT" x="324" y="387.475" stroke-width="0" width="226" height="24"/>
+	<text fid="BMT-BMT" transform="matrix(1 0 0 1 365.78 398.1426)" fill="#FFFFFF" font-family="'Arial'" font-size="10">TATTERSALLS BOOKMAKERS</text>
+</g>
+<g id="BMAT">
+	<rect id="BMT-BMAT" x="324" y="417.475" stroke-width="0" width="226" height="24"/>
+	<text fid="BMT-BMAT" transform="matrix(1 0 0 1 334.0496 428.1426)" fill="#FFFFFF" font-family="'Arial'" font-size="10">TATTERSALLS BOOKMAKERS ASSISTANTS</text>
+</g>
+<g id="BMD">
+	<rect id="BMD-BMD" x="570" y="387.475" stroke-width="0" width="226" height="24"/>
+	<text fid="BMD-BMD" transform="matrix(1 0 0 1 635.7659 398.1426)" fill="#FFFFFF" font-family="'Arial'" font-size="10">DEE BOOKMAKERS</text>
+</g>
+<g id="BMAD">
+	<rect id="BMD-BMAD" x="570" y="417.475" stroke-width="0" width="226" height="24"/>
+	<text fid="BMD-BMAD" transform="matrix(1 0 0 1 603.9065 428.1426)" fill="#FFFFFF" font-family="'Arial'" font-size="10">DEE BOOKMAKERS ASSISTANTS</text>
+</g>
+</svg>

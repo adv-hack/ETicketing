@@ -1,0 +1,21 @@
+Change...
+
+Ln: 1226
+meta.foundation-mq-topbar {
+  font-family: "/only screen and (min-width:40.063em)/";
+  width: 58.75em; }
+
+Ln: 1524
+@media only screen and (min-width: 40.063em) {
+  .top-bar {
+
+to...
+
+Ln: 1226
+meta.foundation-mq-topbar {
+  font-family: "/only screen and (min-width:64.063em)/";
+  width: 64.063em; }
+
+Ln: 1524
+@media only screen and (min-width: 64.063em) {
+  .top-bar {

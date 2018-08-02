@@ -1,0 +1,112 @@
+﻿<%@ Master Language="VB" CodeFile="~/MasterPages/Shared/SharedClasses/Site.master.vb" Inherits="MasterPages_Shared_SharedClasses_Site" %>
+<%@ Register Namespace="Talent.CustomControls" Assembly="__code" tagprefix="TalentCustom" %>
+<%@ Register Src="~/UserControls/PersonalisationBar.ascx" TagName="PersonalisationBar" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/Alerts.ascx" TagName="Alerts" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/MicroBasket.ascx" TagName="MicroBasket" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/HTMLInclude.ascx" TagName="HTMLInclude" TagPrefix="Talent" %>
+
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"> <!--<![endif]-->
+<head id="Head1" runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="viewport" content="width=device-width" />
+
+    <link href="//fonts.googleapis.com/css?family=PT+Serif:400,700|Open+Sans:400,300,600,700,800" rel="stylesheet">
+    <script src="../../JavaScript/vendor/modernizr-custom.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="//use.fontawesome.com/7e81f32a9c.js"></script>
+
+    <link rel="icon" href="/App_Themes/PWS.Canaries/img/favicon.ico" type="image/x-icon">
+       
+    <asp:ContentPlaceHolder id="SiteMasterHead" runat="server" />
+        
+</head>
+<body id="MasterBodyTag" runat="server">
+    <div class="ebiz-overlay"></div>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="scmMainScriptManager" runat="server" />
+        <header>
+            <div class="ebiz-mp-top-tabs-wrap">
+                <div class="row">
+                    <div class="large-12 columns">
+                        <TalentCustom:Literal HTMLFileName="top-tabs.html" ID="ltlTopTabs" runat="server" OnLoad="GetStaticHTMLInclude" />
+                    </div>
+                </div>
+            </div>
+            <div class="ebiz-temp-header-wrap">
+                <div class="row">
+                    <div class="small-12 medium-4 large-4 columns ebiz-mp-logo"> 
+                        <TalentCustom:Literal HTMLFileName="logo.html" ID="ltlLogo" runat="server" OnLoad="GetStaticHTMLInclude" />
+                    </div>
+                    <div class="small-6 medium-4 large-5 columns ebiz-mp-personalisation">
+                        <Talent:PersonalisationBar ID="uscPersonalisationBar" runat="server" />
+                        <Talent:Alerts ID="uscAlerts" runat="server" />
+                    </div>
+                    <div class="small-6 medium-4 large-3 columns ebiz-mp-mini-basket">
+                        <Talent:MicroBasket ID="uscMicroBasket" runat="server" />
+                    </div>
+                </div>
+            </div>
+            <div class="row ebiz-mp-games-on-sale">
+                <div class="large-12 columns">
+                    <TalentCustom:Literal HTMLFileName="games-on-sale.html" ID="ltlGamesOnSale" runat="server" OnLoad="GetStaticHTMLInclude" />
+                </div>
+            </div>
+            <div class="row ebiz-mp-top-bar-wrap">
+                <div class="large-12 columns">
+                    <TalentCustom:Literal HTMLFileName="navigation.html" ID="ltlNavigation" runat="server" OnLoad="GetStaticHTMLInclude" />
+                </div>
+            </div>
+            <Talent:HTMLInclude ID="uscHTMLInclude1" runat="server" Usage="4" Sequence="1" />
+        </header>
+
+        <section>
+            <asp:ContentPlaceHolder ID="SiteMasterBody" runat="server" />
+        </section>
+            
+        <footer>
+            <Talent:HTMLInclude ID="uscHTMLInclude2" runat="server" Usage="5" Sequence="1" />
+            <TalentCustom:Literal HTMLFileName="footer.html" ID="ltlFooter" runat="server" OnLoad="GetStaticHTMLInclude" />
+        </footer>
+
+        <asp:HiddenField ID="hdfSessionID" runat="server" ClientIDMode="Static" />
+    </form>
+    <script src="../../JavaScript/TimepickerAddon.js"></script>
+    <script src="../../JavaScript/vendor/foundation/foundation.min.js"></script>
+    <script src="../../JavaScript/vendor/jquery.matchHeight-min.js"></script>
+    <script src="../../JavaScript/vendor/fastclick.min.js"></script>
+    <script src="//cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+    <script src="../../JavaScript/vendor/owl.carousel.min.js"></script>
+    <script src="../../JavaScript/vendor/select2/js/select2.min.js"></script>
+    <script src="//a248.e.akamai.net/images.talentarena.co.uk/Global/Lib/TinyNav.js-master/tinynav.min.js"></script>
+    <script src="../../JavaScript/Application/TalentEBusinessSuite.js"></script>
+    <script>
+        // Responsive OFFICIAL SITES Nav
+        $(function () {
+            // TinyNav.js 1
+            $(".ebiz-mp-top-tabs-wrap ul").tinyNav({
+                active: 'selected', // String: Set the "active" class
+                header: 'OFFICIAL SITES', // String: Specify text for "header" and show header instead of the active item
+                indent: '- ', // String: Specify text for indenting sub-items
+                label: '' // String: Sets the <label> text for the <select> (if not set, no label will be added)
+            });     
+        });
+    </script>
+
+    <!-- IMPORTANT APPLICATION STUFF DO NOT DELETE!! -->
+    <div id="loading-image" style="display: none" class="ebiz-loading-default ebiz-loading-results">
+        <i class="fa fa-spinner fa-pulse"></i>
+    </div>
+
+    <%=GetPageExtraDataForBody()%>
+    <%= GetTrackingBodyCodesText %>
+
+</body>
+</html>

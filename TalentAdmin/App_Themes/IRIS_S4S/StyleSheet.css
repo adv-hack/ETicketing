@@ -1,0 +1,47 @@
+﻿/* 
+Title: IRIS Software4Sport Page Admin System
+*/
+
+* { padding :0; }
+body { /*border-top: solid 2px #039;*/ border-bottom: solid 2px #00ADEF; font: 0.69em Tahoma, Verdana, Arial, Helvetica, sans-serif; margin: 0 10px 0 10px; padding: 0 0 10px 0; color: #7E7E7E; /*background:#fff url(images/bg.jpg) repeat-x;*/ float: left; width: auto;}
+img { border: none; }
+a { color: #00ADEF; text-decoration:underline; }
+a:hover { color: #003399; text-decoration: underline; }
+p { margin: 1em 0; }
+/*span { margin: 3em 0 0 0;}*/
+
+
+.select { font-size: 1em; color: #039;}
+.select option { padding: 2px; }
+.input-l { font-size: 1em; width: 70%; padding: 2px; color: #039; /*border: solid 1px #7E7E7E;background: #fff url(Images/boxBg.gif) no-repeat;*/ }
+.input-s { font-size: 1em; width: 10%; padding: 2px; color: #039; /*border: solid 1px #7E7E7E; background: #fff url(Images/boxBg.gif) no-repeat;*/}
+.line-input { min-width: 400px;}
+.textarea { font: 1em Tahoma, Verdana, Arial, Helvetica, sans-serif; width: 70%; padding: 2px; color: #039; /*border: solid 1px #7E7E7E; background: #fff url(Images/boxBg.gif) no-repeat;*/}
+.title { padding:2px 0 4px 0; color: #333; font-size: 1.75em; font-weight: bold; border-bottom:solid 1px #003399; margin-bottom: 10px;}
+
+.error{ font: bold 1.3em Arial, Helvetica, sans-serif; color:#f00; }
+.error-wrap {color: Red;}
+.error-wrap ul {list-style-type: none; padding: 0; margin: 10px 0 10px 0;}
+
+.line-wrap, .item {margin-bottom: 5px;}
+.line-wrap span, .item span {width: 120px; display: block; float: left;}
+
+.clear { clear: both; margin: 0; padding: 0; }
+.header { background: #039; padding: 10px; background:#039 url(images/headerbg.jpg) repeat-x bottom; /*border-bottom: solid 1px #039;*/ }
+.details { margin: 1em 0 0 0;}
+.item { margin: 3px 0 0 0;}
+
+#logo { float: left; width: 198px; height: 59px; background: url(images/IRISSoftware4Sport.png) no-repeat; }
+#strapline {float: right; padding-bottom: 10px; }
+#mainContent {width: 83%; float: left; padding: 1%;}
+h1 { font: bold 1.3em Arial, Helvetica, sans-serif; color: #fff; padding: 0; margin: 0; }
+
+/* left navigation
+---------------------------------------------------------- */
+#PageLeftNav {padding:0 0 25px 0;margin:0;background:#003399;border-top:solid 1px #fff; width: 15%; float: left;}
+#PageLeftNav ul{margin:0;padding:0; list-style-type: none;}
+#PageLeftNav li{margin:0;padding:4px 0 0 0;}
+#PageLeftNav a{padding:0;margin:0 12px;text-decoration:underline;font-weight:bold;color:#fff;}
+#PageLeftNav a:hover{color:#00ADEF;text-decoration:underline;}
+
+

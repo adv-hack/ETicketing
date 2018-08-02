@@ -1,0 +1,17 @@
+<svg>
+<g id="pitch"><rect x="150.455" y="129.223" fill="#009444" width="250" height="150"/><rect x="150.455" y="129.223" fill="#006838" width="22.727" height="150"/><rect x="195.91" y="129.223" fill="#006838" width="22.727" height="150"/><rect x="241.364" y="129.223" fill="#006838" width="22.727" height="150"/><rect x="286.818" y="129.223" fill="#006838" width="22.728" height="150"/><rect x="332.273" y="129.223" fill="#006838" width="22.728" height="150"/><rect x="377.728" y="129.223" fill="#006838" width="22.728" height="150"/><rect x="160.455" y="139.223" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="230" height="130"/><line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="275.455" y1="139.223" x2="275.455" y2="269.223"/><circle fill="none" stroke="#FFFFFF" stroke-miterlimit="10" cx="275.455" cy="204.223" r="30"/><g><rect x="160.455" y="174.223" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="30" height="60"/><rect x="160.455" y="184.223" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="15" height="40"/><path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M205.455,204.223c0-9.316-6.379-17.121-15-19.344v38.689C199.076,221.344,205.455,213.538,205.455,204.223z"/></g><g><rect x="360.455" y="174.223" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="30" height="60"/><rect x="375.455" y="184.223" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="15" height="40"/><path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M345.455,204.223c0-9.316,6.379-17.121,15-19.344v38.689C351.834,221.344,345.455,213.538,345.455,204.223z"/></g></g>
+<g id="areas"><rect id="W-WA" x="126.626" y="312.89" width="71.187" height="55.894"/>
+<rect id="W-WB" x="201.813" y="312.89" width="71.188" height="55.894"/>
+<rect id="W-WC" x="277" y="312.89" width="71.188" height="55.894"/>
+<rect id="W-WD" x="352.188" y="312.891" width="71.187" height="55.893"/>
+<polygon id="E-EB" points="183.471,95.556 183.471,39.663 273.455,39.663 273.455,65.61 258,65.61 258,95.556 "/>
+<polygon id="E-PETE" points="292,95.556 292,65.61 277.455,65.61 277.455,39.663 367.438,39.663 367.438,95.556 "/>
+<path id="E-EA" d="M89.521,95.556c1.059-30.999,26.606-55.893,57.858-55.893h32.091v55.893H89.521z"/>
+<path id="E-ED" d="M371.438,95.556V39.663h32.092c31.252,0,56.8,24.894,57.858,55.893H371.438z"/>
+<rect id="N-NC" x="49.632" y="232.268" width="45.551" height="58.014"/>
+<rect id="N-NB" x="49.632" y="170.993" width="45.551" height="58.015"/>
+<rect id="N-NA" x="49.632" y="109.719" width="45.551" height="58.014"/>
+<rect id="S-SC" x="440.632" y="232.268" width="45.551" height="58.014"/>
+<rect id="S-SB" x="440.632" y="170.993" width="45.551" height="58.015"/>
+<rect id="S-SA" x="440.632" y="109.719" width="45.551" height="58.014"/></g>
+</svg>

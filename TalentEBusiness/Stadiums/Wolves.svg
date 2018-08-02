@@ -1,0 +1,355 @@
+<svg>
+<g id="PITCH">
+	<g id="PITCH">
+		<rect x="201.368" y="214.152" fill="#0D9348" width="301.271" height="189.584"/>
+		<rect x="201.368" y="214.152" fill="#0C6B38" width="27.387" height="189.584"/>
+		<rect x="256.144" y="214.152" fill="#0C6B38" width="27.388" height="189.584"/>
+		<rect x="310.921" y="214.152" fill="#0C6B38" width="27.39" height="189.584"/>
+		<rect x="365.699" y="214.152" fill="#0C6B38" width="27.388" height="189.584"/>
+		<rect x="420.479" y="214.152" fill="#0C6B38" width="27.39" height="189.584"/>
+		<rect x="475.25" y="214.152" fill="#0C6B38" width="27.392" height="189.584"/>
+		<rect x="213.418" y="226.79" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="277.171" height="164.31"/>
+		<rect x="352.003" y="226.79" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="0" height="164.31"/>
+		<ellipse fill="none" stroke="#FFFFFF" stroke-miterlimit="10" cx="352.003" cy="308.943" rx="36.151" ry="37.915"/>
+		<rect x="213.418" y="271.028" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="36.152" height="75.831"/>
+		<rect x="213.418" y="283.664" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="18.076" height="50.561"/>
+		<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M267.647,308.943c0-11.774-7.688-21.639-18.077-24.446v48.896
+			C259.958,330.579,267.647,320.719,267.647,308.943z"/>
+		<rect x="454.439" y="271.028" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="36.146" height="75.831"/>
+		<rect x="472.511" y="283.664" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="18.076" height="50.561"/>
+		<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M436.357,308.943c0-11.774,7.689-21.639,18.082-24.446v48.896
+			C444.051,330.579,436.357,320.719,436.357,308.943z"/>
+	</g>
+</g>
+<g id="AREAS">
+	<polygon id="NSL-NL6" stroke-width="0" points="130.137,196.962 
+		156.259,170.839 191.262,205.841 184.373,212.73 	"/>
+	<polygon id="NSL-NL5" stroke-width="0" points="129.252,240.689 
+		129.252,198.788 183.661,214.606 183.661,250.235 	"/>
+	<polygon id="NSL-NL4" stroke-width="0" points="129.252,286.228 
+		129.252,242.72 183.661,252.266 183.661,289.766 	"/>
+	<polygon id="NSL-NL3" stroke-width="0" points="129.252,288.231 
+		183.661,291.77 183.661,327.879 129.252,331.179 	"/>
+	<polygon id="NSL-NL2" stroke-width="0" points="129.252,333.183 
+		183.661,329.883 183.661,367.051 129.252,376.735 	"/>
+	<polygon id="NSL-NL1" stroke-width="0" points="129.252,378.766 
+		183.661,369.078 183.661,404.719 129.252,420.011 	"/>
+	<polygon id="NSU-NU7" stroke-width="0" points="79.871,166.311 
+		115.8,130.381 154.845,169.425 135.007,189.264 	"/>
+	<polygon id="NSU-NU6" stroke-width="0" points="66.543,191.279 
+		66.543,179.639 78.341,167.841 133.478,190.793 127.252,197.019 127.252,207.188 	"/>
+	<polygon id="NSU-NU5" stroke-width="0" points="66.543,229.687 
+		66.543,193.346 127.252,209.256 127.252,240.338 	"/>
+	<polygon id="NSU-NU4" stroke-width="0" points="66.543,282.149 
+		66.543,231.719 127.252,242.369 127.252,286.097 	"/>
+	<polygon id="NSU-NU3" stroke-width="0" points="66.543,284.153 
+		127.252,288.102 127.252,331.302 66.543,334.987 	"/>
+	<polygon id="NSU-NU2" stroke-width="0" points="66.543,336.99 
+		127.252,333.304 127.252,377.094 66.543,387.902 	"/>
+	<polygon id="NSU-NU1" stroke-width="0" points="66.543,389.933 
+		127.252,379.121 127.252,420.573 66.543,437.64 	"/>
+	<polygon id="WSL-WL9" stroke-width="0" points="187.147,471.411 
+		200.998,419.471 232.566,419.471 221.043,471.411 	"/>
+	<polygon id="WSL-WL8" stroke-width="0" points="223.091,471.411 
+		234.615,419.471 266.898,419.471 258.592,471.411 	"/>
+	<polygon id="WSL-WL7" stroke-width="0" points="260.618,471.411 
+		268.924,419.471 300.534,419.471 295.818,471.411 	"/>
+	<polygon id="WSL-WL6" stroke-width="0" points="297.826,471.411 
+		302.542,419.471 334.536,419.471 332.765,471.411 	"/>
+	<polygon id="WSL-WL5" stroke-width="0" points="334.766,471.411 
+		336.537,419.471 368.268,419.471 369.729,471.411 	"/>
+	<polygon id="WSL-WL4" stroke-width="0" points="371.729,471.411 
+		370.268,419.471 401.775,419.471 406.627,471.411 	"/>
+	<polygon id="WSL-WL3" stroke-width="0" points="408.636,471.411 
+		403.785,419.471 436.047,419.471 443.952,471.411 	"/>
+	<polygon id="WSL-WL2" stroke-width="0" points="445.975,471.411 
+		438.07,419.471 469.725,419.471 480.971,471.411 	"/>
+	<polygon id="WSL-WL1" stroke-width="0" points="483.017,471.411 
+		471.771,419.471 502.769,419.471 516.686,471.411 	"/>
+	<polygon id="WSU-W9" stroke-width="0" points="166.901,547.341 
+		186.614,473.411 220.599,473.411 204.198,547.341 	"/>
+	<polygon id="WSU-W8" stroke-width="0" points="206.247,547.341 
+		222.647,473.411 258.272,473.411 246.45,547.341 	"/>
+	<polygon id="WSU-W7A" stroke-width="0" points="248.476,547.341 
+		260.298,473.411 276.96,473.411 267.69,547.341 	"/>
+	<polygon id="WSU-W7" stroke-width="0" points="269.706,547.341 
+		278.976,473.411 295.637,473.411 288.926,547.341 	"/>
+	<polygon id="WSU-W6" stroke-width="0" points="290.934,547.341 
+		297.645,473.411 332.696,473.411 330.174,547.341 	"/>
+	<polygon id="WSU-W5" stroke-width="0" points="332.175,547.341 
+		334.697,473.411 369.784,473.411 371.861,547.341 	"/>
+	<polygon id="WSU-W4" stroke-width="0" points="373.861,547.341 
+		371.785,473.411 406.814,473.411 413.721,547.341 	"/>
+	<polygon id="WSU-W3" stroke-width="0" points="415.729,547.341 
+		408.823,473.411 425.538,473.411 434.612,547.341 	"/>
+	<polygon id="WSU-W3A" stroke-width="0" points="436.627,547.341 
+		427.552,473.411 444.257,473.411 455.511,547.341 	"/>
+	<polygon id="WSU-W2" stroke-width="0" points="457.535,547.341 
+		446.28,473.411 481.404,473.411 497.41,547.341 	"/>
+	<polygon id="WSU-W1" stroke-width="0" points="499.456,547.341 
+		483.45,473.411 517.222,473.411 537.031,547.341 	"/>
+	<polygon id="SSM-SL5" stroke-width="0" points="523.686,404.004 
+		523.686,368.328 578.091,377.873 578.091,419.819 	"/>
+	<polygon id="SSM-SL4" stroke-width="0" points="523.686,366.302 
+		523.686,328.817 578.091,332.354 578.091,375.844 	"/>
+	<polygon id="SSM-SL3" stroke-width="0" points="523.686,326.812 
+		523.686,290.729 578.091,287.427 578.091,330.349 	"/>
+	<polygon id="SSM-SL1" stroke-width="0" points="523.686,213.893 
+		578.091,198.599 578.091,239.854 523.686,249.542 	"/>
+	<polygon id="SSM-S5" stroke-width="0" points="580.091,420.4 
+		580.091,378.224 640.804,388.879 640.804,438.053 	"/>
+	<polygon id="SSM-S4" stroke-width="0" points="580.091,376.194 
+		580.091,332.484 640.804,336.434 640.804,386.845 	"/>
+	<polygon id="SSM-S3" stroke-width="0" points="580.091,330.479 
+		580.091,287.306 640.804,283.62 640.804,334.429 	"/>
+	<polygon id="SSM-SL2" stroke-width="0" points="578.091,241.886 
+		523.686,251.573 523.686,278.434 578.091,273.535 	"/>
+	<polygon id="SSM-SL2A" stroke-width="0" points="523.686,280.443 
+		523.686,288.726 578.091,285.424 578.091,275.544 	"/>
+	<polygon id="SSM-S2A" stroke-width="0" points="580.091,275.364 
+		580.091,285.302 640.804,281.616 640.804,269.896 	"/>
+	<polygon id="SSM-S2" stroke-width="0" points="640.804,230.719 
+		580.091,241.53 580.091,273.355 640.804,267.887 	"/>
+	<polygon id="SSM-S1" stroke-width="0" points="580.091,198.037 
+		640.804,180.97 640.804,228.688 580.091,239.499 	"/>
+	<polygon id="ESL-JL10" stroke-width="0" points="486.878,144.426 
+		516.591,144.426 502.76,196.283 475.13,196.291 	"/>
+	<polygon id="ESL-JL9" stroke-width="0" points="453.787,144.426 
+		484.827,144.426 473.079,196.292 444.465,196.3 	"/>
+	<polygon id="ESL-JL8" stroke-width="0" points="420.023,144.426 
+		451.756,144.426 442.433,196.3 413.641,196.308 	"/>
+	<polygon id="ESL-JL7" stroke-width="0" points="386.532,144.426 
+		418.007,144.426 411.625,196.309 383.164,196.317 	"/>
+	<polygon id="ESL-JL6" stroke-width="0" points="352.721,144.426 
+		384.527,144.426 381.159,196.318 352.721,196.325 	"/>
+	<polygon id="ESL-JL5" stroke-width="0" points="319.608,144.426 
+		350.721,144.426 350.721,196.326 322.197,196.333 	"/>
+	<polygon id="ESL-JL4" stroke-width="0" points="286.428,144.426 
+		317.606,144.426 320.194,196.334 292.364,196.342 	"/>
+	<polygon id="ESL-JL3" stroke-width="0" points="252.916,144.426 
+		284.416,144.426 290.351,196.344 261.576,196.351 	"/>
+	<polygon id="ESL-JL2" stroke-width="0" points="218.957,144.426 
+		250.888,144.426 259.548,196.352 230.445,196.359 	"/>
+	
+	<polygon id="ESU-J10" stroke-width="0" points="487.331,142.426 
+		504.094,68.422 536.862,68.415 517.125,142.426 	"/>
+	<polygon id="ESU-J9" stroke-width="0" points="454.146,142.426 
+		467.448,68.431 502.043,68.422 485.28,142.426 	"/>
+	<polygon id="ESU-J8" stroke-width="0" points="420.27,142.426 
+		429.37,68.439 465.416,68.431 452.115,142.426 	"/>
+	<polygon id="ESU-J7" stroke-width="0" points="386.662,142.426 
+		391.465,68.448 427.354,68.439 418.253,142.426 	"/>
+	<polygon id="ESU-J6" stroke-width="0" points="352.721,142.426 
+		352.721,68.457 389.46,68.448 384.657,142.426 	"/>
+	<polygon id="ESU-J5" stroke-width="0" points="319.508,142.426 
+		315.823,68.465 350.721,68.457 350.721,142.426 	"/>
+	<polygon id="ESU-J4" stroke-width="0" points="286.2,142.426 
+		277.743,68.474 313.821,68.465 317.506,142.426 	"/>
+	<polygon id="ESU-J3" stroke-width="0" points="252.583,142.426 
+		240.249,68.482 275.73,68.475 284.187,142.426 	"/>
+	<polygon id="ESU-J2" stroke-width="0" points="218.514,142.426 
+		202.158,68.491 238.221,68.483 250.555,142.426 	"/>
+	<polygon id="ESU-J1" stroke-width="0" points="186.542,142.426 
+		166.732,68.5 200.11,68.492 216.465,142.426 	"/>
+</g>
+<g id="LABELS">
+	<text fid="NSL-NL6" transform="matrix(1 0 0 1 147.021 194.8386)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">NL6</text>
+	<text fid="NSL-NL5" transform="matrix(1 0 0 1 147.021 227.5642)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">NL5</text>
+	<text fid="NSL-NL4" transform="matrix(1 0 0 1 147.021 269.2957)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">NL4</text>
+	<text fid="NSL-NL3" transform="matrix(1 0 0 1 147.021 312.7585)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">NL3</text>
+	<text fid="NSL-NL2" transform="matrix(1 0 0 1 147.0205 356.3601)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">NL2</text>
+	<text fid="NSL-NL1" transform="matrix(1 0 0 1 147.0205 397.5984)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">NL1</text>
+	<text fid="NSU-NU7" transform="matrix(1 0 0 1 106.5947 162.8757)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">NU7</text>
+	<text fid="NSU-NU6" transform="matrix(1 0 0 1 86.1338 190.5671)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">NU6</text>
+	<text fid="NSU-NU5" transform="matrix(1 0 0 1 86.1338 219.8953)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">NU5</text>
+	<text fid="NSU-NU4" transform="matrix(1 0 0 1 86.1338 261.9607)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">NU4</text>
+	<text fid="NSU-NU3" transform="matrix(1 0 0 1 86.1338 312.6228)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">NU3</text>
+	<text fid="NSU-NU2" transform="matrix(1 0 0 1 86.1343 363.655)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">NU2</text>
+	<text fid="NSU-NU1" transform="matrix(1 0 0 1 86.1343 411.4333)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">NU1</text>
+	<text fid="WSL-WL9" transform="matrix(1 0 0 1 198.9556 448.4949)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">WL9</text>
+	<text fid="WSL-WL8" transform="matrix(1 0 0 1 234.0938 448.4949)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">WL8</text>
+	<text fid="WSL-WL7" transform="matrix(1 0 0 1 269.6748 448.4949)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">WL7</text>
+	<text fid="WSL-WL6" transform="matrix(1 0 0 1 305.2798 448.4949)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">WL6</text>
+	<text fid="WSL-WL5" transform="matrix(1 0 0 1 341.3457 448.4949)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">WL5</text>
+	<text fid="WSL-WL4" transform="matrix(1 0 0 1 377.5469 448.4949)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">WL4</text>
+	<text fid="WSL-WL3" transform="matrix(1 0 0 1 412.9668 448.4949)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">WL3</text>
+	<text fid="WSL-WL2" transform="matrix(1 0 0 1 448.6201 448.4949)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">WL2</text>
+	<text fid="WSL-WL1" transform="matrix(1 0 0 1 483.3271 448.4949)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">WL1</text>
+	<text fid="WSU-W9" transform="matrix(1 0 0 1 185.3716 513.4275)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">W9</text>
+	<text fid="WSU-W8" transform="matrix(1 0 0 1 223.8804 513.4275)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">W8</text>
+	
+		<text fid="WSU-W7A" transform="matrix(0.1392 -0.9903 0.9903 0.1392 262.0923 522.5359)" fill="#F2F2F2" font-family="'Calibri'" font-size="12.002">W7A</text>
+	
+		<text fid="WSU-W7" transform="matrix(0.1045 -0.9945 0.9945 0.1045 282.832 519.0251)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">W7</text>
+	<text fid="WSU-W6" transform="matrix(1 0 0 1 303.4365 513.4275)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">W6</text>
+	<text fid="WSU-W5" transform="matrix(1 0 0 1 343.6396 513.4275)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">W5</text>
+	<text fid="WSU-W4" transform="matrix(1 0 0 1 384.374 513.4275)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">W4</text>
+	
+		<text fid="WSU-W3" transform="matrix(0.1045 0.9945 -0.9945 0.1045 419.8066 502.3611)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">W3</text>
+	
+		<text fid="WSU-W3A" transform="matrix(0.1392 0.9903 -0.9903 0.1392 438.8613 499.0671)" fill="#F2F2F2" font-family="'Calibri'" font-size="12.002">W3A</text>
+	<text fid="WSU-W2" transform="matrix(1 0 0 1 463.4658 513.4275)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">W2</text>
+	<text fid="WSU-W1" transform="matrix(1 0 0 1 501.8613 513.4275)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">W1</text>
+	<text fid="SSM-SL5" transform="matrix(1 0 0 1 542.5664 397.1257)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">SL5</text>
+	<text fid="SSM-SL4" transform="matrix(1 0 0 1 542.5684 355.3826)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">SL4</text>
+	<text fid="SSM-SL3" transform="matrix(1 0 0 1 542.5693 311.9412)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">SL3</text>
+	<text fid="SSM-SL2" transform="matrix(1 0 0 1 542.5693 263.2126)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">SL2</text>
+	<text fid="SSM-SL2A" transform="matrix(1 0 0 1 541.0625 282.6794)" fill="#F2F2F2" font-family="'Calibri'" font-size="10">SL2A</text>
+	<text fid="SSM-SL1" transform="matrix(1 0 0 1 542.5693 227.1228)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">SL1</text>
+	<text fid="SSM-S5" transform="matrix(1 0 0 1 604.6494 411.1921)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">S5</text>
+	<text fid="SSM-S4" transform="matrix(1 0 0 1 604.6504 362.7185)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">S4</text>
+	<text fid="SSM-S3" transform="matrix(1 0 0 1 604.6494 312.0769)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">S3</text>
+	<text fid="SSM-S2" transform="matrix(1 0 0 1 604.6494 255.0906)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">S2</text>
+	<text fid="SSM-S2A" transform="matrix(1 0 0 1 602.7227 277.1433)" fill="#F2F2F2" font-family="'Calibri'" font-size="10">S2A</text>
+	<text fid="SSM-S1" transform="matrix(1 0 0 1 604.6494 213.2878)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">S1</text>
+	<text fid="ESL-JL10" transform="matrix(1 0 0 1 485.3418 173.446)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">JL10</text>
+	<text fid="ESL-JL9" transform="matrix(1 0 0 1 457.1689 173.446)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">JL9</text>
+	<text fid="ESL-JL8" transform="matrix(1 0 0 1 425.2207 173.446)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">JL8</text>
+	<text fid="ESL-JL7" transform="matrix(1 0 0 1 393.1094 173.446)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">JL7</text>
+	<text fid="ESL-JL6" transform="matrix(1 0 0 1 361.1465 173.446)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">JL6</text>
+	<text fid="ESL-JL5" transform="matrix(1 0 0 1 327.6001 173.4519)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">JL5</text>
+	<text fid="ESL-JL4" transform="matrix(1 0 0 1 295.8345 173.446)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">JL4</text>
+	<text fid="ESL-JL3" transform="matrix(1 0 0 1 264.1572 173.446)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">JL3</text>
+	<text fid="ESL-JL2" transform="matrix(1 0 0 1 231.7759 173.446)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">JL2</text>
+	
+	<text fid="ESU-J10" transform="matrix(1 0 0 1 504.1016 108.5076)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">J10</text>
+	<text fid="ESU-J9" transform="matrix(1 0 0 1 473.1406 108.5076)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">J9</text>
+	<text fid="ESU-J8" transform="matrix(1 0 0 1 437.8887 108.5076)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">J8</text>
+	<text fid="ESU-J7" transform="matrix(1 0 0 1 402.0537 108.5076)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">J7</text>
+	<text fid="ESU-J6" transform="matrix(1 0 0 1 366.1377 108.5076)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">J6</text>
+	<text fid="ESU-J5" transform="matrix(1 0 0 1 328.3184 108.5076)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">J5</text>
+	<text fid="ESU-J4" transform="matrix(1 0 0 1 292.6709 108.5076)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">J4</text>
+	<text fid="ESU-J3" transform="matrix(1 0 0 1 257.2632 108.5076)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">J3</text>
+	<text fid="ESU-J2" transform="matrix(1 0 0 1 221.4028 108.5076)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">J2</text>
+	<text fid="ESU-J1" transform="matrix(1 0 0 1 186.645 108.5076)" fill="#F2F2F2" font-family="'Calibri'" font-size="12">J1</text>
+</g>
+<g id="EXTRAS">
+	<rect x="1" y="636.919" fill="#cccccc" width="680" height="97.356"/>
+	<rect x="522.685" y="289.789" fill="none" width="0.001" height="37.959"/>
+	<rect x="522.685" y="327.754" fill="none" width="0.001" height="39.388"/>
+	<rect x="641.804" y="282.557" fill="none" width="0.001" height="52.938"/>
+	<rect x="641.804" y="229.525" fill="none" width="0.001" height="53.032"/>
+	<rect x="522.685" y="250.735" fill="none" width="0.001" height="39.055"/>
+	<rect x="641.804" y="388.035" fill="none" width="0.001" height="51.354"/>
+	<rect x="641.804" y="335.496" fill="none" width="0.001" height="52.539"/>
+	<polygon fill="#686868" points="639.283,169.296 639.283,167.628 640.453,167.628 640.453,172.373 639.283,172.373 639.283,170.69 
+		634.283,170.69 634.283,169.296 	"/>
+	<polygon fill="#686868" points="639.283,174.519 639.283,172.851 640.453,172.851 640.453,177.596 639.283,177.596 639.283,175.91 
+		634.283,175.91 634.283,174.519 	"/>
+	
+		<rect x="49.287" y="497.566" transform="matrix(-0.6763 -0.7366 0.7366 -0.6763 -179.7999 917.1229)" fill="#686868" width="124.632" height="0.999"/>
+	
+		<rect x="526.554" y="119.424" transform="matrix(-0.6883 -0.7254 0.7254 -0.6883 910.719 631.1569)" fill="#686868" width="128.8" height="1"/>
+	
+		<rect x="593.419" y="438.61" transform="matrix(-0.7602 -0.6497 0.6497 -0.7602 720.1356 1267.0012)" fill="#686868" width="0.999" height="123.949"/>
+	<polygon fill="#333333" points="44.781,170.169 51.879,182.469 44.781,194.769 30.583,194.769 23.484,182.469 30.583,170.169 	"/>
+	<polygon fill="#333333" points="54.234,182.441 46.988,170.062 51.16,170.062 58.404,182.441 51.16,194.819 46.988,194.819 	"/>
+	<polygon fill="#333333" points="44.781,225.969 51.879,238.268 44.781,250.572 30.583,250.572 23.484,238.268 30.583,225.969 	"/>
+	<polygon fill="#333333" points="54.234,238.242 46.988,225.864 51.16,225.864 58.404,238.242 51.16,250.621 46.988,250.621 	"/>
+	<polygon fill="#686868" points="44.781,198.583 51.879,210.883 44.781,223.185 30.583,223.185 23.484,210.883 30.583,198.583 	"/>
+	<polygon fill="#686868" points="54.234,210.855 46.988,198.478 51.16,198.478 58.404,210.855 51.16,223.235 46.988,223.235 	"/>
+	<polygon fill="#333333" points="44.781,253.871 51.879,266.17 44.781,278.471 30.583,278.471 23.484,266.17 30.583,253.871 	"/>
+	<polygon fill="#333333" points="54.234,266.141 46.988,253.764 51.16,253.764 58.404,266.141 51.16,278.521 46.988,278.521 	"/>
+	<polygon fill="#333333" points="44.781,337.572 51.879,349.87 44.781,362.176 30.583,362.176 23.484,349.87 30.583,337.572 	"/>
+	<polygon fill="#333333" points="54.234,349.844 46.988,337.469 51.16,337.469 58.404,349.844 51.16,362.221 46.988,362.221 	"/>
+	<polygon fill="#686868" points="44.781,309.675 51.879,321.97 44.781,334.272 30.583,334.272 23.484,321.97 30.583,309.675 	"/>
+	<polygon fill="#686868" points="54.234,321.944 46.988,309.565 51.16,309.565 58.404,321.944 51.16,334.321 46.988,334.321 	"/>
+	<polygon fill="#333333" points="44.781,365.471 51.879,377.771 44.781,390.073 30.583,390.073 23.484,377.771 30.583,365.471 	"/>
+	<polygon fill="#333333" points="54.234,377.744 46.988,365.365 51.16,365.365 58.404,377.744 51.16,390.122 46.988,390.122 	"/>
+	<polygon fill="#333333" points="77.361,120.447 84.46,132.746 77.361,145.046 63.164,145.046 56.063,132.746 63.164,120.447 	"/>
+	<polygon fill="#333333" points="79.104,147.172 85.982,134.585 88.129,138.16 81.252,150.746 66.909,150.912 64.762,147.335 	"/>
+	<polygon fill="#333333" points="191.358,25.317 198.458,37.617 191.358,49.917 177.162,49.917 170.062,37.617 177.162,25.317 	"/>
+	<polygon fill="#333333" points="184.259,56.603 196.639,49.357 196.639,53.527 184.259,60.772 171.881,53.527 171.881,49.357 	"/>
+	<polygon fill="#333333" points="525.399,25.317 532.5,37.617 525.399,49.917 511.202,49.917 504.101,37.617 511.202,25.317 	"/>
+	<polygon fill="#333333" points="518.301,56.603 530.678,49.357 530.678,53.527 518.301,60.772 505.922,53.527 505.922,49.357 	"/>
+	<polygon fill="#686868" points="358.309,25.317 365.41,37.617 358.309,49.917 344.114,49.917 337.014,37.617 344.114,25.317 	"/>
+	<polygon fill="#686868" points="351.211,56.603 363.59,49.357 363.59,53.527 351.211,60.772 338.833,53.527 338.833,49.357 	"/>
+	<polygon fill="#333333" points="526.986,588.196 534.084,575.895 526.986,563.594 512.788,563.594 505.69,575.895 512.788,588.196 
+			"/>
+	<polygon fill="#333333" points="519.887,556.908 532.265,564.156 532.265,559.985 519.887,552.74 507.508,559.985 507.508,564.156 
+			"/>
+	<polygon fill="#333333" points="659.705,195.801 652.604,208.1 659.705,220.401 673.9,220.401 681,208.1 673.9,195.801 	"/>
+	<polygon fill="#333333" points="650.25,208.073 657.496,195.694 653.325,195.694 646.08,208.073 653.325,220.452 657.496,220.452 	
+		"/>
+	<polygon fill="#333333" points="659.705,400.111 652.604,412.41 659.705,424.715 673.9,424.715 681,412.41 673.9,400.111 	"/>
+	<polygon fill="#333333" points="650.25,412.385 657.496,400.007 653.325,400.007 646.08,412.385 653.325,424.761 657.496,424.761 	
+		"/>
+	<polygon fill="#333333" points="190.135,588.196 197.234,575.895 190.135,563.594 175.938,563.594 168.839,575.895 
+		175.938,588.196 	"/>
+	<polygon fill="#333333" points="183.037,556.908 195.415,564.156 195.415,559.985 183.037,552.74 170.658,559.985 170.658,564.156 
+			"/>
+	<polygon fill="#686868" points="402.704,588.196 409.805,575.895 402.704,563.594 388.507,563.594 381.407,575.895 
+		388.507,588.196 	"/>
+	<polygon fill="#686868" points="395.604,556.908 407.984,564.156 407.984,559.985 395.604,552.74 383.227,559.985 383.227,564.156 
+			"/>
+	<polygon fill="#686868" points="318.025,588.196 325.125,575.895 318.025,563.594 303.829,563.594 296.729,575.895 
+		303.829,588.196 	"/>
+	<polygon fill="#686868" points="310.926,556.908 323.305,564.156 323.305,559.985 310.926,552.74 298.548,559.985 298.548,564.156 
+			"/>
+	<polygon fill="#686868" points="360.01,588.196 367.109,575.895 360.01,563.594 345.813,563.594 338.714,575.895 345.813,588.196 	
+		"/>
+	<polygon fill="#686868" points="352.911,556.908 365.291,564.156 365.291,559.985 352.911,552.74 340.534,559.985 340.534,564.156 
+			"/>
+	<polygon fill="#686868" points="44.781,282.426 51.879,294.725 44.781,307.028 30.583,307.028 23.484,294.725 30.583,282.426 	"/>
+	<polygon fill="#686868" points="54.234,294.698 46.988,282.321 51.16,282.321 58.404,294.698 51.16,307.077 46.988,307.077 	"/>
+	<path fill="none" stroke="#000000" stroke-width="0.708" stroke-miterlimit="10" d="M184.661,213.855"/>
+	<path fill="none" stroke="#000000" stroke-width="0.708" stroke-miterlimit="10" d="M65.543,179.225"/>
+	<polygon fill="#333333" points="15.934,695.282 11,686.734 15.934,678.185 25.802,678.185 30.735,686.734 25.802,695.282 	"/>
+	<polygon fill="#686868" points="15.934,726.089 11,717.538 15.934,708.988 25.802,708.988 30.735,717.538 25.802,726.089 	"/>
+	<text transform="matrix(1 0 0 1 16.3252 716.0994)" fill="#ABABAB" font-family="'Calibri'" font-size="10">M</text>
+	<polygon fill="#686868" points="364.535,695.282 359.602,686.736 364.535,678.185 374.402,678.185 379.336,686.736 
+		374.402,695.282 	"/>
+	<text transform="matrix(1 0 0 1 363.75 685.2966)" fill="#ABABAB" font-family="'Calibri'" font-size="10">E2</text>
+	<polygon fill="#686868" points="364.535,725.341 359.602,716.788 364.535,708.24 374.402,708.24 379.336,716.788 374.402,725.341 	
+		"/>
+	<text transform="matrix(1 0 0 1 366.6699 715.3494)" fill="#ABABAB" font-family="'Calibri'" font-size="10">E</text>
+	<polygon fill="#686868" points="170.627,725.339 165.692,716.788 170.627,708.238 180.494,708.238 185.427,716.788 
+		180.494,725.339 	"/>
+	<text transform="matrix(1 0 0 1 169.8418 715.3494)" fill="#ABABAB" font-family="'Calibri'" font-size="10">E1</text>
+	<polygon fill="#686868" points="170.627,695.282 165.692,686.734 170.627,678.185 180.494,678.185 185.427,686.734 
+		180.494,695.282 	"/>
+	<text transform="matrix(1 0 0 1 172.0713 680.6306)" fill="#ABABAB" font-family="'Calibri'" font-size="8">M</text>
+	<text transform="matrix(1 0 0 1 171.8042 688.6306)" fill="#ABABAB" font-family="'Calibri'" font-size="8">W</text>
+	<polygon fill="#686868" points="541.857,695.281 536.922,686.734 541.857,678.185 551.724,678.185 556.658,686.734 
+		551.724,695.281 	"/>
+	<text transform="matrix(1 0 0 1 540.8828 684.4431)" fill="#ABABAB" font-family="'Calibri'" font-size="7">NBB</text>
+	<polygon fill="#686868" points="541.857,725.339 536.922,716.786 541.857,708.238 551.724,708.238 556.658,716.786 
+		551.724,725.339 	"/>
+	<text transform="matrix(1 0 0 1 540.8691 715.1267)" fill="#ABABAB" font-family="'Calibri'" font-size="10">SB</text>
+	<text transform="matrix(1 0 0 1 302.8413 615.9919)" fill="#686868" font-family="'Calibri'" font-size="15">Billy Wright Stand</text>
+	<text transform="matrix(1 0 0 1 98.3457 470.0466)" fill="#686868" font-family="'Calibri'" font-size="15">Ticket Office</text>
+	<text transform="matrix(0 -1 1 0 12.2168 366.4871)" fill="#686868" font-family="'Calibri'" font-size="15">Stan Cullis Stand</text>
+	<text transform="matrix(1 0 0 1 30.3032 182.158)" fill="#A8A8A8" font-family="'Calibri'" font-size="15">NE</text>
+	<text transform="matrix(1 0 0 1 28.8501 237.9607)" fill="#A8A8A8" font-family="'Calibri'" font-size="15">ND</text>
+	<text transform="matrix(1 0 0 1 29.8374 209.5876)" fill="#A8A8A8" font-family="'Calibri'" font-size="9">NBB</text>
+	<text transform="matrix(1 0 0 1 29.4194 265.8611)" fill="#A8A8A8" font-family="'Calibri'" font-size="15">NC</text>
+	<text transform="matrix(1 0 0 1 30.002 349.5632)" fill="#A8A8A8" font-family="'Calibri'" font-size="15">NB</text>
+	<text transform="matrix(1 0 0 1 32.5474 321.6619)" fill="#A8A8A8" font-family="'Calibri'" font-size="15">M</text>
+	<text transform="matrix(1 0 0 1 29.291 377.4626)" fill="#A8A8A8" font-family="'Calibri'" font-size="15">NA</text>
+	<text transform="matrix(1 0 0 1 62.9126 132.4373)" fill="#A8A8A8" font-family="'Calibri'" font-size="15">NF</text>
+	<text transform="matrix(1 0 0 1 181.1475 37.3074)" fill="#ABABAB" font-family="'Calibri'" font-size="15">3</text>
+	<text transform="matrix(1 0 0 1 515.1895 37.3074)" fill="#ABABAB" font-family="'Calibri'" font-size="15">4</text>
+	<text transform="matrix(1 0 0 1 344.6035 37.3074)" fill="#ABABAB" font-family="'Calibri'" font-size="15">SB</text>
+	<text transform="matrix(1 0 0 1 515.8926 575.2439)" fill="#ABABAB" font-family="'Calibri'" font-size="15">7</text>
+	<text transform="matrix(1 0 0 1 663.4863 207.7908)" fill="#ABABAB" font-family="'Calibri'" font-size="15">5</text>
+	<text transform="matrix(1 0 0 1 663 412.1033)" fill="#ABABAB" font-family="'Calibri'" font-size="15">6</text>
+	<text transform="matrix(1 0 0 1 388.2715 575.2439)" fill="#ABABAB" font-family="'Calibri'" font-size="15">E2</text>
+	<text transform="matrix(1 0 0 1 303.5918 575.2439)" fill="#ABABAB" font-family="'Calibri'" font-size="15">E1</text>
+	<text transform="matrix(1 0 0 1 349.0586 575.2439)" fill="#ABABAB" font-family="'Calibri'" font-size="15">E</text>
+	<text transform="matrix(1 0 0 1 33.2456 299.1355)" fill="#A8A8A8" font-family="'Calibri'" font-size="11">M</text>
+	<text transform="matrix(1 0 0 1 32.4712 288.7908)" fill="#A8A8A8" font-family="'Calibri'" font-size="11">W</text>
+	<text transform="matrix(1 0 0 1 179.0391 575.2439)" fill="#ABABAB" font-family="'Calibri'" font-size="15">8</text>
+	<text transform="matrix(1 0 0 1 309.3818 12.6492)" fill="#686868" font-family="'Calibri'" font-size="15">Steve Bull Stand</text>
+	<text transform="matrix(-1.346898e-010 1 -1 -1.346898e-010 668.0684 233.137)" fill="#686868" font-family="'Calibri'" font-size="15">Sir Jack Hayward Stand</text>
+	<text transform="matrix(1 0 0 1 11 660.2761)" fill="#686868" font-family="'Calibri'" font-size="15">Molineux stand diagram with seating areas and turnstiles</text>
+	<text transform="matrix(1 0 0 1 38.9316 689.614)" fill="#686868" font-family="'Calibri'" font-size="10">Denotes Turnstile</text>
+	<text transform="matrix(1 0 0 1 38.9316 720.616)" fill="#686868" font-family="'Calibri'" font-size="10">Megastore</text>
+	<text transform="matrix(1 0 0 1 193.624 689.614)" fill="#686868" font-family="'Calibri'" font-size="10">Museum and WV1 Entrance</text>
+	<text transform="matrix(1 0 0 1 193.624 720.616)" fill="#686868" font-family="'Calibri'" font-size="10">Executive Entrance 1</text>
+	<text transform="matrix(1 0 0 1 387.5332 689.614)" fill="#686868" font-family="'Calibri'" font-size="10">Executive Entrance 2</text>
+	<text transform="matrix(1 0 0 1 387.5332 720.616)" fill="#686868" font-family="'Calibri'" font-size="10">Main Entrance</text>
+	<text transform="matrix(1 0 0 1 564.8535 689.8152)" fill="#686868" font-family="'Calibri'" font-size="10">North Bank Bar</text>
+	<text transform="matrix(1 0 0 1 564.8535 715.9187)" fill="#686868" font-family="'Calibri'" font-size="10">Steve Bull</text>
+	<text transform="matrix(1 0 0 1 564.8535 725.3357)" fill="#686868" font-family="'Calibri'" font-size="10">Executive Box Entrance</text>
+</g>
+</svg>

@@ -1,0 +1,161 @@
+﻿<%@ Master Language="VB" CodeFile="~/MasterPages/Shared/SharedClasses/Site.master.vb" Inherits="MasterPages_Shared_SharedClasses_Site" %>
+<%@ Register Namespace="Talent.CustomControls" Assembly="__code" tagprefix="TalentCustom" %>
+<%@ Register Src="~/UserControls/PersonalisationBar.ascx" TagName="PersonalisationBar" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/TicketingLoyalty.ascx" TagName="TicketingLoyalty" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/Alerts.ascx" TagName="Alerts" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/MicroBasket.ascx" TagName="MicroBasket" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/HTMLInclude.ascx" TagName="HTMLInclude" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/SessionStatus.ascx" TagName="SessionStatus" TagPrefix="Talent" %>
+
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"> <!--<![endif]-->
+<head id="Head1" runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="viewport" content="width=device-width" />
+
+    <link href='//fonts.googleapis.com/css?family=Karla:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6574154/790168/css/fonts.css" />
+    <script src="../../JavaScript/vendor/modernizr-custom.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="//use.fontawesome.com/7e81f32a9c.js"></script>
+
+    <link rel="icon" href="/App_Themes/PWS.Brentford/img/favicon.ico" type="image/x-icon">
+    
+    <script>function OpenAlertsWindow(URL, boxHeight, boxWidth) {  $("#ebiz-alert-reveal").foundation("open"); }</script>
+
+    <asp:ContentPlaceHolder id="SiteMasterHead" runat="server" />
+        
+</head>
+<body id="MasterBodyTag" runat="server">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M983NCP');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M983NCP"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="scmMainScriptManager" runat="server" />
+        <div class="ebiz-inner-box-shadow">
+            <header>
+                <div class="ebiz-header-container">
+                    <!-- Club name small -->
+                    <div class="ebiz-header-club-name-small hide-for-medium">
+                        <div class="row">
+                            <div class="small-12 columns">
+                                <TalentCustom:Literal HTMLFileName="clubname.html" ID="ltlClubNameSmall" runat="server" OnLoad="GetStaticHTMLInclude" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- User Controls medium -->
+                    <div class="ebiz-header-usercontrols-medium show-for-medium">
+                        <div class="row">
+                            <div class="large-12 columns">      
+                                
+                                <Talent:PersonalisationBar ID="uscPersonalisationBar" runat="server" />
+                                <Talent:TicketingLoyalty ID="TicketingLoyalty" runat="server" />
+                                <Talent:Alerts ID="uscAlerts" runat="server" />
+                                <Talent:MicroBasket ID="uscMicroBasket" runat="server" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Club contact medium -->
+                    <div class="ebiz-header-club-contact-medium show-for-medium">
+                        <div class="row show-for-medium">
+                            <div class="large-12 columns">      
+                                <div class="ebiz-mp-header-contact-wrap">
+                                    <TalentCustom:Literal HTMLFileName="clubcontact.html" ID="ltlClubContact" runat="server" OnLoad="GetStaticHTMLInclude" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Club name medium -->
+                    <div class="ebiz-header-club-name-medium show-for-medium">
+                        <div class="row show-for-medium">
+                            <div class="large-12 columns">      
+                                <TalentCustom:Literal HTMLFileName="clubname.html" ID="ltlClubNameMedium" runat="server" OnLoad="GetStaticHTMLInclude" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Club logo -->
+                    <div class="ebiz-header-logo">
+                        <a href="https://www.brentfordfc.com/" target="_blank">
+                            <img alt="Brentford FC" src="/App_Themes/PWS.Brentford/img/BrentfordLogo.svg">
+                        </a>
+                    </div>
+                    <!-- Navigation all -->
+                    <div class="ebiz-header-navigation">
+                        <div class="row">
+                            <div class="large-12 columns">
+                                <TalentCustom:Literal HTMLFileName="navigation.html" ID="ltlNavigation" runat="server" OnLoad="GetStaticHTMLInclude" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- User Controls small -->
+                    <div class="ebiz-header-usercontrols-small hide-for-medium">
+                        <div class="row">
+                            <div class="large-12 columns">      
+                                <Talent:MicroBasket ID="uscMicroBasketSmall" runat="server" />
+                                <Talent:PersonalisationBar ID="uscPersonalisationBarSmall" runat="server" />
+                                <Talent:TicketingLoyalty ID="TicketingLoyaltySmall" runat="server" />
+                                <Talent:Alerts ID="uscAlertsSmall" runat="server" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <Talent:HTMLInclude ID="uscHTMLInclude1" runat="server" Usage="4" Sequence="1" />
+            </header>
+
+            <section>
+                <div class="row">
+                    <div class="small-12 columns">
+                        <Talent:SessionStatus ID="uscSessionStatus" runat="server" />
+                        <TalentCustom:Literal HTMLFileName="dummysession.html" ID="ltlDummySession" runat="server" OnLoad="GetStaticHTMLInclude" />
+                    </div>
+                </div>
+            </section>
+
+            <section class="ebiz-content">
+                <asp:ContentPlaceHolder ID="SiteMasterBody" runat="server" />
+            </section>
+                
+            <footer>
+                <Talent:HTMLInclude ID="uscHTMLInclude2" runat="server" Usage="5" Sequence="1" />
+                <TalentCustom:Literal HTMLFileName="footer.html" ID="ltlFooter" runat="server" OnLoad="GetStaticHTMLInclude" />
+            </footer>
+        </div>
+
+        <asp:HiddenField ID="hdfSessionID" runat="server" ClientIDMode="Static" />
+    </form>
+    <script src="../../JavaScript/TimepickerAddon.js"></script>
+    <script src="../../JavaScript/vendor/foundation/foundation.min.js"></script>
+    <script src="../../JavaScript/vendor/jquery.matchHeight-min.js"></script>
+    <script src="../../JavaScript/vendor/fastclick.min.js"></script>
+    <script src="//cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+    <script src="../../JavaScript/vendor/select2/js/select2.min.js"></script>
+    <script src="//a248.e.akamai.net/images.talentarena.co.uk/Global/Lib/TinyNav.js-master/tinynav.min.js"></script>
+    <script src="../../JavaScript/Application/TalentEBusinessSuite.js"></script>
+
+    <!-- IMPORTANT APPLICATION STUFF DO NOT DELETE!! -->
+    <div id="loading-image" style="display: none" class="ebiz-loading-default ebiz-loading-results">
+        <i class="fa fa-spinner fa-pulse"></i>
+    </div>
+
+    <%=GetPageExtraDataForBody()%>
+    <%= GetTrackingBodyCodesText %>
+
+</body>
+</html>

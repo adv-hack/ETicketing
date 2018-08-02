@@ -1,0 +1,86 @@
+﻿<%@ Master Language="VB" CodeFile="~/MasterPages/Shared/SharedClasses/Site.master.vb" Inherits="MasterPages_Shared_SharedClasses_Site" %>
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head id="Head1" runat="server">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="//a248.e.akamai.net/images.talentarena.co.uk/Global/Lib/shadowbox-3.0.3/shadowbox.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
+    <script src="//a248.e.akamai.net/images.talentarena.co.uk/Global/Lib/foundation-5.3.0/js/vendor/modernizr.js"></script>
+    <link href='//fonts.googleapis.com/css?family=PT+Serif:400,700|Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="//a248.e.akamai.net/images.talentarena.co.uk/Global/Lib/foundation-5.3.0/js/vendor/fastclick.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script src="//a248.e.akamai.net/images.talentarena.co.uk/Global/Lib/shadowbox-3.0.3/shadowbox.jQuery.js"></script>
+    <script src="/ATP/App_Themes/PWS.ATP/js/jquery.nicescroll.min.js"></script>
+    <link href="//fonts.googleapis.com/css?family=Roboto:400,400italic,700" rel="stylesheet" type="text/css" />
+    <link href='//fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Oswald:400, 500, 700,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'/>
+    <script>
+        $(function () {
+            // FastClick
+            FastClick.attach(document.body);
+        });
+        var nice = false;
+        $(function () {
+            if( $(window).width() > 767
+            && ! navigator.userAgent.match(/(Android|iPod|iPhone|iPad|IEMobile|Opera Mini)/))
+        {
+            $('html').niceScroll({
+                autohidemode        : false,
+                cursorborder        : 0,
+                cursorborderradius  : 5,
+                cursorcolor         : '#222222',
+                cursorwidth         : 10,
+                horizrailenabled    : false,
+                mousescrollstep     : ( window.mfn_nicescroll ) ? window.mfn_nicescroll : 40,
+                scrollspeed         : 60
+            });
+            
+            $('body').removeClass('nice-scroll-on').addClass('nice-scroll');
+            niceScrollFix();
+        }
+        });
+        var obj = window;//$(window);
+        function niceScrollFix(){
+            var el = $('body > .nicescroll-rails');
+            if( el.length ){
+                if( el.is(":visible") ){
+                    $('body').addClass('nice-scroll');
+                } else {
+                    $('body').removeClass('nice-scroll');
+                }
+            }
+        }
+        $(function () {
+            $('#back_to_top').click(function(){
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 500);
+                return false;
+            });
+        });
+    </script>
+
+    
+
+    
+    <asp:ContentPlaceHolder id="SiteMasterHead" runat="server" />
+        
+</head>
+<body id="MasterBodyTag" runat="server">
+    
+    <asp:ContentPlaceHolder ID="SiteMasterBody" runat="server" />
+
+</body>
+</html>

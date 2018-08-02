@@ -1,0 +1,81 @@
+﻿<%@ Master Language="VB" CodeFile="~/MasterPages/Shared/SharedClasses/Site.master.vb" Inherits="MasterPages_Shared_SharedClasses_Site" %>
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head id="Head1" runat="server">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Always force latest IE rendering engine (even in intranet) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    
+    <!-- Typekit -->
+    <script src="//use.typekit.net/lru4qyb.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <!-- 3rd party menu css -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.6.2/css/jquery.mmenu.all.min.css?ver=4.4.2" type="text/css" />
+
+    <link rel="icon" href="/App_Themes/PWS.Silverstone/img-silverstone/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="//www.silverstone.co.uk/static/apple-touch-icon.png">
+
+    <script src="../../JavaScript/vendor/modernizr-custom.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<link href="//fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <script src="//use.fontawesome.com/7e81f32a9c.js"></script>
+
+    <asp:ContentPlaceHolder id="SiteMasterHead" runat="server" />
+</head>
+
+<body id="MasterBodyTag" runat="server">
+
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-82CDC"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window, document, 'script', 'dataLayer', 'GTM-82CDC');</script>
+    <!-- End Google Tag Manager -->
+    
+    <asp:ContentPlaceHolder ID="SiteMasterBody" runat="server" />
+
+    <!-- Menu -->
+    <script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/5.6.2/js/jquery.mmenu.min.js?ver=2.6.1'></script>
+    <script type='text/javascript' src='/App_Themes/PWS.Silverstone/js/DSemotion.js'></script>
+    <script type='text/javascript' src='/App_Themes/PWS.Silverstone/js/Silverstone.js'></script>
+
+    <script src="../../JavaScript/TimepickerAddon.js"></script>
+    <script src="../../JavaScript/vendor/foundation/foundation.min.js"></script>
+    <script src="../../JavaScript/vendor/jquery.matchHeight-min.js"></script>
+    <script src="../../JavaScript/vendor/fastclick.min.js"></script>
+    <script src="//cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+    <script src="../../JavaScript/vendor/select2/js/select2.min.js"></script>
+    <script src="../../JavaScript/Application/TalentEBusinessSuite.js"></script>
+    <script src="//a248.e.akamai.net/images.talentarena.co.uk/Global/Lib/TinyNav.js-master/tinynav.min.js"></script>
+    <script>
+        // Responsive Shop Nav
+        $(function () {
+            // TinyNav.js 1
+            $(".AspNet-TreeView ul").tinyNav({
+            active: 'selected', // String: Set the "active" class
+            header: 'Select Category', // String: Specify text for "header" and show header instead of the active item
+            indent: '- ', // String: Specify text for indenting sub-items
+            label: '' // String: Sets the <label> text for the <select> (if not set, no label will be added)
+            });     
+        });
+    </script>
+
+    <%=GetPageExtraDataForBody()%>
+    <%= GetTrackingBodyCodesText %>
+
+</body>
+</html>

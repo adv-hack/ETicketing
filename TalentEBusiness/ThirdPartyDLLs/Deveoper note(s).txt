@@ -1,0 +1,1 @@
+All .dll files inside this folder has to go to BIN folder when project gets compiled. For doing so we have refresh files (.refresh) inside BIN directory. If .refresh file for the DLL is missig inside the BIN directory then it will not copy the DLL to the BIN directory when copilcation happens and this might get you some errors. 

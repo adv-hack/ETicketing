@@ -1,0 +1,38 @@
+/* height set to Test Silverstone - SP */
+.ebiz-svg-container #stadium-canvas {
+	height: 530px; }
+
+
+/* Nantwich Town - NT */
+.NT .ebiz-match-text,
+.NT #stand-tip {
+	height: 12em;
+	left: 39%;
+	top: 39.5%; }
+
+/* Test Silverstone */
+.SP .ebiz-match-text {
+    background: #FFFFFF;
+    color: #222222;
+    height: auto;
+    left: 5px;
+    margin-left: 0;
+    margin-top: 5px;
+    min-height: 69px;
+    top: 0;
+    width: 676px; }
+.SP .ebiz-teams-wrapper {
+	display: none; }
+.SP .ebiz-match-text h3 small {
+    color: #222222; }
+.SP #stand-tip {
+	height: auto;
+	margin-left: 0;
+	left: 5px;
+	min-height: 69px;
+	top: 75px; 
+	width: 676px; }
+.SP #stand-tip li {
+	clear: none;
+	float: left;
+	width: 50%; }

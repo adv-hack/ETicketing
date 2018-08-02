@@ -1,0 +1,189 @@
+﻿<%@ Master Language="VB" CodeFile="~/MasterPages/Shared/SharedClasses/1Column.master.vb" Inherits="MasterPages_Shared_SharedClasses_1Column" %>
+
+<%@ Register Namespace="Talent.CustomControls" Assembly="__code" tagprefix="TalentCustom" %>
+<%@ Register Src="~/UserControls/PersonalisationBar.ascx" TagName="PersonalisationBar" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/MicroBasket.ascx" TagName="MicroBasket" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/HTMLInclude.ascx" TagName="HTMLInclude" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/breadCrumbTrail.ascx" TagName="BreadCrumbTrail" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/Alerts.ascx" TagName="Alerts" TagPrefix="Talent" %>
+<%@ Register Src="~/UserControls/TicketingLoyalty.ascx" TagName="TicketingLoyalty" TagPrefix="Talent" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="SiteMasterHead" runat="server">
+
+    <!-- page level scripting -->
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server" />
+
+    <!-- page extra data table scripting -->
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server" />
+
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="SiteMasterBody" runat="server">
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="scmMainScriptManager" runat="server" />
+            <div class="ebiz-mp-container">
+                <!-- Off Canvas Push Menu Start -->
+                <div id="mp-pusher" class="MasterContainer mp-pusher">
+                    <!-- MP Menu Start -->
+                    <div class="mp-menu mp-cover" id="mp-menu">
+                        <!-- Desktop Top Menu Start -->
+                        <div class="TopMobileMenu">
+                            <div class="TopNav">
+                                <div class="HeaderContact">
+                                    <a href="http://www.evertonfc.com/contactus">Contact Us</a>
+                                </div>
+                                <div class="HeaderCommunity">
+                                    <a href="http://community.evertonfc.com/">Community</a>
+                                </div>
+                            </div>
+                            <div class="HeaderBasket">
+                                <div class="HeaderBasketWrp">
+                                    <Talent:MicroBasket ID="uscMicroBasketoffcanvas" runat="server"/>
+                                </div>
+                            </div>
+                            <div class="HeaderUserLogin">
+                                <Talent:PersonalisationBar ID="uscPersonalisationBaroffcanvas" runat="server"/>
+                            </div>
+                            <div class="HeaderUserLoyalty">
+                                <Talent:TicketingLoyalty ID="TicketingLoyalty1offcanvas" runat="server" />
+                            </div>
+                            <div class="HeaderSocial">
+                                <ul>
+                                    <li><a href="https://www.facebook.com/Everton" class="icon-facebook" target="_blank"></a></li>
+                                    <li><a href="https://twitter.com/Everton" class="icon-twitter" target="_blank"></a></li>
+                                    <li><a href="https://www.youtube.com/user/OfficialEverton" class="icon-youtube" target="_blank"></a></li>
+                                    <li><a href="https://plus.google.com/Everton" class="icon-gplus" target="_blank"></a></li>
+                                    <li><a href="http://instagram.com/everton" class="icon-instagram" target="_blank"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Desktop Top Menu End -->
+                        <!-- Off Canvas Menu Start -->
+                        <TalentCustom:Literal HTMLFileName="mpmenu.html" ID="ltlMpMenu" runat="server" OnLoad="GetStaticHTMLInclude" />
+                        <!-- Off Canvas Menu End -->
+                        </div>
+                        <!-- MP Menu End -->
+                        <!-- Wrapper Start -->
+                        <div class="Wrapper">
+                            <!-- Main Navigation Start -->
+                            <div class="Header">
+                                <div class="Inner">
+                                    <header role="banner">
+                                        <a href="http://www.evertonfc.com/home" class="Logo">
+                                            <img src="/App_Themes/PWS.Everton/img/Logo.png">
+                                        </a>
+                                            <!-- HeaderWrapper Start -->
+                                            <div class="HeaderWrapper">
+                                                <!-- Header Top Start -->
+                                                <div class="HeaderTop">
+                                                    <a href="http://www.evertonfc.com/home" class="MobileLogo">
+                                                        <img src="/App_Themes/PWS.Everton/img/LogoText.png">
+                                                    </a>
+                                                    <a class="menu-trigger icon-menu MobileMenuIcon" id="trigger" href="#">
+                                                    </a>
+                                                    <!-- Header Top Wrap Start -->
+                                                    <div class="HeaderTopWrap">
+                                                        <!-- Header Social Start -->
+                                                        <div class="HeaderSocial">
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="https://www.facebook.com/Everton" target="_blank" class="icon-facebook"></a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="https://twitter.com/Everton" target="_blank" class="icon-twitter"></a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="https://www.youtube.com/user/OfficialEverton" target="_blank" class="icon-youtube"></a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="https://plus.google.com/+Everton" target="_blank" class="icon-gplus"></a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="http://instagram.com/everton" target="_blank" class="icon-instagram"></a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <!-- Header Social End -->
+                                                        <!-- Header Contact Start -->
+                                                        <div class="HeaderContact">
+                                                            <a href="http://www.evertonfc.com/contactus" class="">Contact Us
+                                                            </a>
+                                                        </div>
+                                                        <!-- Header Contact End -->
+                                                        <!-- Header Community Start -->
+                                                        <div class="HeaderCommunity">
+                                                            <a href="http://community.evertonfc.com/" target="_blank">Community
+                                                            </a>
+                                                        </div>
+                                                        <!-- Header Community End -->
+                                                        <!-- Header Login Start -->
+                                                        <div class="HeaderUserLogin" id="headerUserLogin">
+                                                            <Talent:PersonalisationBar ID="uscPersonalisationBar" runat="server" />
+                                                            
+                                                        </div>
+                                                        <!-- Header Login End -->
+                                                        <!-- Header Loyalty  Start -->
+                                                        <div class="HeaderUserLoyalty" id="headerUserLoyalty">
+                                                            <Talent:TicketingLoyalty ID="TicketingLoyalty1" runat="server" />
+                                                        </div>
+                                                        <!-- Header Loyalty  End -->
+                                                        <!-- Header Basket Start -->
+                                                        <div class="HeaderBasket">
+                                                            <div class="HeaderBasketWrp">
+                                                            <Talent:MicroBasket ID="uscMicroBasket" runat="server" />
+                                                            </div>
+                                                        </div>    
+                                                        <!-- Header Basket End -->
+                                                    </div>
+                                                </div>
+                                                <!-- Header Top End -->
+                                                <!-- Header Bottom Start -->
+                                                <TalentCustom:Literal HTMLFileName="mainnav.html" ID="ltlMainNav" runat="server" OnLoad="GetStaticHTMLInclude" />
+                                                <!-- Header Bottom End -->
+                                            <!-- HeaderWrapper End -->
+                                            </div>
+                                            <!-- Header Top End -->
+                                    <!-- Main Club Sponsor Start -->
+                                    <TalentCustom:Literal HTMLFileName="MainClubSponsor.html" ID="ltlMainClubSponsor" runat="server" OnLoad="GetStaticHTMLInclude" />
+                                    <!-- Main Club Sponsor End -->
+                                    </header>
+                                </div>
+                            </div>
+                        <!-- Menu Dock Start -->
+                        <TalentCustom:Literal HTMLFileName="menudock.html" ID="ltlMenuDock" runat="server" OnLoad="GetStaticHTMLInclude" />
+                        <li><Talent:Alerts ID="uscAlerts" runat="server" /></li>
+                        </ul>
+                        </div>       
+                        </div>
+                        </div>
+                        </div>
+                        <!-- Menu Dock End -->
+                    <!-- Main Navigation End -->
+
+                    <!-- Page Content Start  -->
+                    <section>
+                        <div class="ebiz-mp-content-wrap">
+                            <div class="row">
+                            <div class="large-12 columns">
+                                <Talent:BreadCrumbTrail ID="uscBreadCrumbTrail" runat="server" />
+                            </div>
+                        </div>
+                            <Talent:HTMLInclude ID="uscHTMLInclude3" runat="server" Usage="2" Sequence="3" />
+                            <div class="row ebiz-mp-content">
+                                <div class="large-12 columns">
+                                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server" />
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Page Content End  -->
+                </div>
+                    <footer>
+                        <Talent:HTMLInclude ID="uscHTMLInclude2" runat="server" Usage="5" Sequence="1" />
+                        <TalentCustom:Literal HTMLFileName="footer.html" ID="ltlFooter" runat="server" OnLoad="GetStaticHTMLInclude" />
+                    </footer>
+            </div><!-- Pusher End --> 
+        </div> <!-- Container End --> 
+    </form>
+</asp:Content>
+

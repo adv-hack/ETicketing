@@ -1,0 +1,39 @@
+﻿.off-canvas {
+	webkit-transition: transform .5s ease;
+    -moz-transition: transform .5s ease;
+    -o-transition: transform .5s ease;
+    transition: transform .5s ease;
+}
+.off-canvas.is-open {
+	-webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+.position-right {
+	-webkit-transform: translateX(250px);
+    -moz-transform: translateX(250px);
+    -ms-transform: translateX(250px);
+    -o-transform: translateX(250px);
+    transform: translateX(250px);
+}
+
+/* Removal of 'Use to contact me' flags on registration and update details */
+
+.registration .ebiz-personal-details .large-offset-3,
+.registration .ebiz-address-information .large-offset-3 {
+	display: none;
+}
+.updateprofile .ebiz-personal-details .large-offset-3,
+.updateprofile .ebiz-address-information .large-offset-3 {
+	display: none;
+}
+
+/* Removal of filter options on PurchaseHistory.aspx – see JIRA:  LRRU-20 */
+
+.ebiz-purchase-history-filters-wrap .ebiz-ticketing-products,
+.ebiz-purchase-history-filters-wrap .ebiz-corporate-products,
+.ebiz-purchase-history-filters-wrap .ebiz-package-id {
+	display: none !important;
+}
