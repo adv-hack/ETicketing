@@ -1,0 +1,24 @@
+<%@ Master Language="VB" CodeFile="MaintenanceMasterPage.master.vb" Inherits="MasterPages_MaintenanceMasterPage" %>
+
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <asp:ContentPlaceHolder ID="ContentHeader" runat="server" />
+    <title>TALENT Sport &ndash; Maintenance</title>
+</head>
+<body class="MaintenanceMasterPage">
+    <form id="form1" runat="server">
+		<div id="container">
+			<header>
+				<img src="/Maintenance/App_Themes/Maintenance/images/logo.png" alt="" />
+			</header>
+			<section>
+				<asp:ContentPlaceHolder ID="Content1" runat="server"></asp:ContentPlaceHolder>
+			</section>
+			<footer>
+			</footer>
+		</div>
+    </form>
+</body>
+</html>
+<!-- MaintenanceMasterPage -->

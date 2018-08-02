@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://localhost/TradingPortal" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://localhost/TradingPortal" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://localhost/TradingPortal">
+      <s:element name="ProcessTickets">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="loginId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="company" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="XMLString" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcessTicketsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProcessTicketsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SeasonTicketRenewals">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="loginId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="company" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="XMLString" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SeasonTicketRenewalsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SeasonTicketRenewalsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SeasonTicketSale">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="loginId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="company" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="XMLString" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SeasonTicketSaleResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SeasonTicketSaleResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ProcessTicketsSoapIn">
+    <wsdl:part name="parameters" element="tns:ProcessTickets" />
+  </wsdl:message>
+  <wsdl:message name="ProcessTicketsSoapOut">
+    <wsdl:part name="parameters" element="tns:ProcessTicketsResponse" />
+  </wsdl:message>
+  <wsdl:message name="SeasonTicketRenewalsSoapIn">
+    <wsdl:part name="parameters" element="tns:SeasonTicketRenewals" />
+  </wsdl:message>
+  <wsdl:message name="SeasonTicketRenewalsSoapOut">
+    <wsdl:part name="parameters" element="tns:SeasonTicketRenewalsResponse" />
+  </wsdl:message>
+  <wsdl:message name="SeasonTicketSaleSoapIn">
+    <wsdl:part name="parameters" element="tns:SeasonTicketSale" />
+  </wsdl:message>
+  <wsdl:message name="SeasonTicketSaleSoapOut">
+    <wsdl:part name="parameters" element="tns:SeasonTicketSaleResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProcessTicketsHttpGetIn">
+    <wsdl:part name="loginId" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="company" type="s:string" />
+    <wsdl:part name="XMLString" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ProcessTicketsHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SeasonTicketRenewalsHttpGetIn">
+    <wsdl:part name="loginId" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="company" type="s:string" />
+    <wsdl:part name="XMLString" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SeasonTicketRenewalsHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SeasonTicketSaleHttpGetIn">
+    <wsdl:part name="loginId" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="company" type="s:string" />
+    <wsdl:part name="XMLString" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SeasonTicketSaleHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ProcessTicketsHttpPostIn">
+    <wsdl:part name="loginId" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="company" type="s:string" />
+    <wsdl:part name="XMLString" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ProcessTicketsHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SeasonTicketRenewalsHttpPostIn">
+    <wsdl:part name="loginId" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="company" type="s:string" />
+    <wsdl:part name="XMLString" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SeasonTicketRenewalsHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SeasonTicketSaleHttpPostIn">
+    <wsdl:part name="loginId" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="company" type="s:string" />
+    <wsdl:part name="XMLString" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SeasonTicketSaleHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="TicketBookerSoap">
+    <wsdl:operation name="ProcessTickets">
+      <wsdl:input message="tns:ProcessTicketsSoapIn" />
+      <wsdl:output message="tns:ProcessTicketsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SeasonTicketRenewals">
+      <wsdl:input message="tns:SeasonTicketRenewalsSoapIn" />
+      <wsdl:output message="tns:SeasonTicketRenewalsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SeasonTicketSale">
+      <wsdl:input message="tns:SeasonTicketSaleSoapIn" />
+      <wsdl:output message="tns:SeasonTicketSaleSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="TicketBookerHttpGet">
+    <wsdl:operation name="ProcessTickets">
+      <wsdl:input message="tns:ProcessTicketsHttpGetIn" />
+      <wsdl:output message="tns:ProcessTicketsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SeasonTicketRenewals">
+      <wsdl:input message="tns:SeasonTicketRenewalsHttpGetIn" />
+      <wsdl:output message="tns:SeasonTicketRenewalsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SeasonTicketSale">
+      <wsdl:input message="tns:SeasonTicketSaleHttpGetIn" />
+      <wsdl:output message="tns:SeasonTicketSaleHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="TicketBookerHttpPost">
+    <wsdl:operation name="ProcessTickets">
+      <wsdl:input message="tns:ProcessTicketsHttpPostIn" />
+      <wsdl:output message="tns:ProcessTicketsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SeasonTicketRenewals">
+      <wsdl:input message="tns:SeasonTicketRenewalsHttpPostIn" />
+      <wsdl:output message="tns:SeasonTicketRenewalsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SeasonTicketSale">
+      <wsdl:input message="tns:SeasonTicketSaleHttpPostIn" />
+      <wsdl:output message="tns:SeasonTicketSaleHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="TicketBookerSoap" type="tns:TicketBookerSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ProcessTickets">
+      <soap:operation soapAction="http://localhost/TradingPortal/ProcessTickets" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SeasonTicketRenewals">
+      <soap:operation soapAction="http://localhost/TradingPortal/SeasonTicketRenewals" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SeasonTicketSale">
+      <soap:operation soapAction="http://localhost/TradingPortal/SeasonTicketSale" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="TicketBookerSoap12" type="tns:TicketBookerSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ProcessTickets">
+      <soap12:operation soapAction="http://localhost/TradingPortal/ProcessTickets" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SeasonTicketRenewals">
+      <soap12:operation soapAction="http://localhost/TradingPortal/SeasonTicketRenewals" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SeasonTicketSale">
+      <soap12:operation soapAction="http://localhost/TradingPortal/SeasonTicketSale" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="TicketBookerHttpGet" type="tns:TicketBookerHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="ProcessTickets">
+      <http:operation location="/ProcessTickets" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SeasonTicketRenewals">
+      <http:operation location="/SeasonTicketRenewals" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SeasonTicketSale">
+      <http:operation location="/SeasonTicketSale" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="TicketBookerHttpPost" type="tns:TicketBookerHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="ProcessTickets">
+      <http:operation location="/ProcessTickets" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SeasonTicketRenewals">
+      <http:operation location="/SeasonTicketRenewals" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SeasonTicketSale">
+      <http:operation location="/SeasonTicketSale" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TicketBooker">
+    <wsdl:port name="TicketBookerSoap" binding="tns:TicketBookerSoap">
+      <soap:address location="http://localhost:4999/TalentSupplyNet/TicketBooker.asmx" />
+    </wsdl:port>
+    <wsdl:port name="TicketBookerSoap12" binding="tns:TicketBookerSoap12">
+      <soap12:address location="http://localhost:4999/TalentSupplyNet/TicketBooker.asmx" />
+    </wsdl:port>
+    <wsdl:port name="TicketBookerHttpGet" binding="tns:TicketBookerHttpGet">
+      <http:address location="http://localhost:4999/TalentSupplyNet/TicketBooker.asmx" />
+    </wsdl:port>
+    <wsdl:port name="TicketBookerHttpPost" binding="tns:TicketBookerHttpPost">
+      <http:address location="http://localhost:4999/TalentSupplyNet/TicketBooker.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

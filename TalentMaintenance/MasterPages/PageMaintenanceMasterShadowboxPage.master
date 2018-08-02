@@ -1,0 +1,16 @@
+<%@ Master Language="VB" CodeFile="PageMaintenanceMasterShadowboxPage.master.vb" Inherits="MasterPages_PageMaintenanceMasterShadowboxPage" %>
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body class="MasterPageShadowbox">
+    <form id="form1" runat="server">
+    <div id="container">
+        <section>
+            <asp:ContentPlaceHolder ID="Content1" runat="server"></asp:ContentPlaceHolder>
+        </section>
+    </div>
+    </form>
+</body>
+</html>

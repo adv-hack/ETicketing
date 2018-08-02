@@ -1,0 +1,269 @@
+* {
+	margin: 0;
+	padding:0;
+}
+
+body {
+	font: 0.7em Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	margin: 10px;
+	padding: 0;
+	color: #333;
+}
+img { 
+	border: none;
+}
+a {
+	color: #f54d00;
+	text-decoration: none;
+}
+a:hover {
+	color: #f54d00;
+	text-decoration: underline;
+}
+h1 {
+	margin: 1em 0;
+	font-size: 2em;
+	
+}
+.Black
+{
+	color:Black;
+}
+p {
+	margin: 1em 0;
+}
+input:focus,
+textarea:focus,
+select:focus {
+	background-color: lightyellow;
+}
+   .highlightit{
+	        background-color:#cccccc;
+        }
+
+.buttonPage {
+	font-size: 1em;
+	font-weight: bold;
+	border: solid 1px #e5e5e5;
+	background: #ddd url(../images/default-table-th-bg.jpg) repeat-x;
+	padding: 2px;
+}
+.select {
+	font-size: 1em;
+}
+select option {
+	padding: 2px;
+}
+.input-l {
+	font-size: 1em;
+	width: 90%;
+	padding: 2px;
+}
+.input-s {
+	font-size: 1em;
+	width: 10%;
+	padding: 2px;
+}
+.textarea {
+	font: 1em Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	width: 90%;
+	padding: 2px;
+}
+tr.ruled{
+	background:#f1f1f1;
+}   
+
+div.default-table {
+	
+}
+div.default-table table {
+	background: #fff;
+	border: 1px solid #ddd;
+	border-spacing: 0;
+	width: 100%;
+	border-collapse: collapse;
+}
+div.default-table tbody {
+	border-top: 2px solid #f54d00;
+	border-bottom: 2px solid #f54d00;	
+}
+div.default-table tr.row {
+	
+}
+div.default-table tr.alternate-row {
+	background: #f9f9f9;
+}
+div.default-table th {
+	text-align: left;
+	border-bottom: 1px solid #e5e5e5;
+	padding: 5px;
+	background: #ddd url(../images/default-table-th-bg.jpg) repeat-x;
+	color: #333;
+}
+div.default-table td {
+	border-bottom: 1px solid #e5e5e5;
+	padding: 5px;
+}
+div.default-table .page a {
+	background: url(../images/application_edit.png) no-repeat 0 0.4em;
+	padding: 5px 0 5px 21px;
+}
+div.default-table .description {
+
+}
+div.default-table a.delete {
+	background: url(../images/bin.png) no-repeat 0 0.4em;
+	padding: 5px 0 5px 21px;
+}
+div.default-table a.edit {
+	background: url(../images/application_edit.png) no-repeat 0 0.4em;
+	padding: 5px 0 5px 21px;
+}
+.default-form .ftbControl a.delete {
+	background: url(../images/bin.png) no-repeat 0 0.4em;
+	padding: 5px 0 5px 21px;
+}
+.default-form .ftbControl a.edit {
+	background: url(../images/application_edit.png) no-repeat 0 0.4em;
+	padding: 5px 0 5px 21px;
+}
+div.default-table .language a {
+	background: url(../images/application_edit.png) no-repeat 0 0.4em;
+	padding: 5px 0 5px 21px;
+}
+div.default-table .location {
+
+}
+div.default-table .sequence {
+
+}
+div.default-table .html-include-name {
+
+}
+div.default-table .page-title {
+
+}
+div.default-table .page-header {
+
+}
+div.button-bar {
+	padding: 5px;
+	margin-top: 10px;
+	border: solid 1px #e5e5e5;
+}
+div.default-filter {
+	margin-bottom: 10px;
+}
+div.default-filter table {
+	background: #fff;
+	border: 1px solid #ddd;
+	border-spacing: 0;
+	width: 100%;
+	border-collapse: collapse;
+}
+div.default-filter th {
+	text-align: left;
+	border-bottom: 1px solid #e5e5e5;
+	padding: 5px;
+	color: #333;
+	white-space: nowrap;
+}
+div.default-filter td {
+	border-bottom: 1px solid #e5e5e5;
+	padding: 5px;
+	width: 100%;
+}
+div.default-filter .label {
+
+}
+div.filter .element {
+
+}
+
+
+.default-form {
+	background: #fff;
+	border: 1px solid #ddd;
+	border-spacing: 0;
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 10px;
+}
+.default-form tbody {
+	border-top: 2px solid #F54D00;
+	border-bottom: 2px solid #F54D00;
+}
+.default-form th {
+	text-align: left;
+	border-bottom: 1px solid #e5e5e5;
+	padding: 5px;
+	color: #333;
+	white-space: nowrap;
+}
+.default-form td {
+	border-bottom: 1px solid #e5e5e5;
+	padding: 5px;
+	width: 100%;
+}
+.default-form .ftbControl td {
+	border-bottom: none;
+	padding: 0;
+	width:auto;
+	
+}
+.default-form .ftbControl tbody 
+{
+	border-top:none;
+	border-bottom: none;
+	
+}
+.default-form .label {
+
+}
+.default-form .element {
+
+}
+
+div#page-details-summary tbody {
+	border: none;
+}
+
+img.template-image {
+	border: solid 1px #e5e5e5;
+	padding: 5px;
+}
+div#visual-template-selection img.template-image:hover {
+	border: solid 1px #f54d00;
+}
+
+div#visual-template-selection {
+	
+}
+div#visual-template-selection table {
+	background: #f1f1f1;
+	border: 1px solid #ddd;
+	border-spacing: 0;
+	width: 100%;
+	border-collapse: collapse;
+}
+div#visual-template-selection tbody {
+	
+}
+div#visual-template-selection td {
+	border: 1px solid #fff;
+	padding: 5px;
+	text-align: center;
+}
+.normalrow
+{
+	background-color:white;
+}
+.hightlighrow
+{
+	background-color:#cccccc;
+}
+.Hide
+{
+	Display:none;
+}
+

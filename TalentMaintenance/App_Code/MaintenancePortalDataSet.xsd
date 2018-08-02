@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MaintenancePortalDataSet" targetNamespace="http://tempuri.org/MaintenancePortalDataSet.xsd" xmlns:mstns="http://tempuri.org/MaintenancePortalDataSet.xsd" xmlns="http://tempuri.org/MaintenancePortalDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="TalentEBusinessDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="TalentEBusinessDBConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.TalentEBusinessDBConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_ecommerce_module_defaults_buTableAdapter" GeneratorDataComponentClassName="tbl_ecommerce_module_defaults_buTableAdapter" Name="tbl_ecommerce_module_defaults_bu" UserDataComponentName="tbl_ecommerce_module_defaults_buTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TalentEBusinessDBConnectionString (Web.config)" DbObjectName="TEST_TalentEBusinessDBBekoDev.dbo.tbl_ecommerce_module_defaults_bu" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="false" GeneratorGetMethodName="GetDataByDistBusinessUnit" GetMethodModifier="Public" GetMethodName="GetDataByDistBusinessUnit" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetDataByDistBusinessUnit" UserSourceName="GetDataByDistBusinessUnit">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT DISTINCT BUSINESS_UNIT, PARTNER 
+FROM         tbl_ecommerce_module_defaults_bu
+ORDER BY BUSINESS_UNIT, PARTNER</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="BUSINESS_UNIT" DataSetColumn="BUSINESS_UNIT" />
+              <Mapping SourceColumn="PARTNER" DataSetColumn="PARTNER" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="TalentEBusinessDBConnectionString (Web.config)" DbObjectName="TalentEBusinessDB.dbo.tbl_ecommerce_module_defaults_bu" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillByDistBU" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByDistBU" GeneratorSourceName="FillByDistBU" GetMethodModifier="Public" GetMethodName="GetDataByDistBU" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByDistBU" UserSourceName="FillByDistBU">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT DISTINCT BUSINESS_UNIT, '' AS PARTNER
+FROM         tbl_ecommerce_module_defaults_bu</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="TalentEBusinessDBConnectionString (Web.config)" DbObjectName="TalentEBusinessDB.dbo.tbl_ecommerce_module_defaults_bu" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillByPartner" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByPartner" GeneratorSourceName="FillByPartner" GetMethodModifier="Public" GetMethodName="GetDataByPartner" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByPartner" UserSourceName="FillByPartner">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT DISTINCT PARTNER, '' AS BUSINESS_UNIT
+FROM         tbl_ecommerce_module_defaults_bu</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="TalentEBusinessDBConnectionString (Web.config)" DbObjectName="TalentEBusinessDBTalentQANext.dbo.tbl_ecommerce_module_defaults_bu" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByBusinessUnit" GetMethodModifier="Public" GetMethodName="GetDataByBusinessUnit" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByBusinessUnit" UserSourceName="GetDataByBusinessUnit">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT DISTINCT BUSINESS_UNIT, PARTNER
+FROM            tbl_ecommerce_module_defaults_bu
+WHERE        (BUSINESS_UNIT = @BUSINESS_UNIT) AND (PARTNER = '*ALL')
+ORDER BY BUSINESS_UNIT, PARTNER</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="BUSINESS_UNIT" ColumnName="BUSINESS_UNIT" DataSourceName="TEST_TalentEBusinessDBBekoDev.dbo.tbl_ecommerce_module_defaults_bu" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@BUSINESS_UNIT" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="BUSINESS_UNIT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="TalentEBusinessDBConnectionString (Web.config)" DbObjectName="TalentEBusinessDBMCFC.dbo.tbl_ecommerce_module_defaults_bu" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByDistBusinessUnit_StarAllPartner" GetMethodModifier="Public" GetMethodName="GetDataByDistBusinessUnit_StarAllPartner" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByDistBusinessUnit_StarAllPartner" UserSourceName="GetDataByDistBusinessUnit_StarAllPartner">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT DISTINCT BUSINESS_UNIT, '*ALL' as PARTNER
+FROM         tbl_ecommerce_module_defaults_bu
+ORDER BY BUSINESS_UNIT, PARTNER</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="BUSINESS_UNIT_TableAdapter" GeneratorDataComponentClassName="BUSINESS_UNIT_TableAdapter" Name="tbl_ecommerce_module_defaults_bu1" UserDataComponentName="BUSINESS_UNIT_TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TalentEBusinessDBConnectionString (Web.config)" DbObjectName="TalentEBusinessDB.dbo.tbl_ecommerce_module_defaults_bu" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FilldistinctBusinessUnit" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetDatadistinctBusinessUnit" GeneratorSourceName="FilldistinctBusinessUnit" GetMethodModifier="Public" GetMethodName="GetDatadistinctBusinessUnit" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetDatadistinctBusinessUnit" UserSourceName="FilldistinctBusinessUnit">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT DISTINCT BUSINESS_UNIT
+FROM         tbl_ecommerce_module_defaults_bu</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="BUSINESS_UNIT" DataSetColumn="BUSINESS_UNIT" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PARTNER_TableAdapter" GeneratorDataComponentClassName="PARTNER_TableAdapter" Name="tbl_ecommerce_module_defaults_bu2" UserDataComponentName="PARTNER_TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TalentEBusinessDBConnectionString (Web.config)" DbObjectName="TalentEBusinessDB.dbo.tbl_ecommerce_module_defaults_bu" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FilldistinctPartner" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetDatadistinctPartner" GeneratorSourceName="FilldistinctPartner" GetMethodModifier="Public" GetMethodName="GetDatadistinctPartner" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetDatadistinctPartner" UserSourceName="FilldistinctPartner">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT DISTINCT PARTNER
+FROM         tbl_ecommerce_module_defaults_bu
+WHERE     (BUSINESS_UNIT = @BUSINESS_UNIT)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="BUSINESS_UNIT" ColumnName="BUSINESS_UNIT" DataSourceName="TalentEBusinessDB.dbo.tbl_ecommerce_module_defaults_bu" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@BUSINESS_UNIT" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="BUSINESS_UNIT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="PARTNER" DataSetColumn="PARTNER" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_price_list_headerTableAdapter" GeneratorDataComponentClassName="tbl_price_list_headerTableAdapter" Name="tbl_price_list_header" UserDataComponentName="tbl_price_list_headerTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TalentEBusinessDBConnectionString (Web.config)" DbObjectName="TalentEBusinessDB.dbo.tbl_price_list_header" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [tbl_price_list_header] WHERE (([PRICE_LIST] = @Original_PRICE_LIST))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_PRICE_LIST" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PRICE_LIST" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [tbl_price_list_header] ([PRICE_LIST], [PRICE_LIST_DESCRIPTION], [CURRENCY_CODE], [FREE_DELIVERY_VALUE], [MIN_DELIVERY_VALUE], [START_DATE], [END_DATE]) VALUES (@PRICE_LIST, @PRICE_LIST_DESCRIPTION, @CURRENCY_CODE, @FREE_DELIVERY_VALUE, @MIN_DELIVERY_VALUE, @START_DATE, @END_DATE)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@PRICE_LIST" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PRICE_LIST" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@PRICE_LIST_DESCRIPTION" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PRICE_LIST_DESCRIPTION" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@CURRENCY_CODE" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CURRENCY_CODE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@FREE_DELIVERY_VALUE" Precision="18" ProviderType="Decimal" Scale="5" Size="0" SourceColumn="FREE_DELIVERY_VALUE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@MIN_DELIVERY_VALUE" Precision="18" ProviderType="Decimal" Scale="5" Size="0" SourceColumn="MIN_DELIVERY_VALUE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@START_DATE" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="START_DATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@END_DATE" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="END_DATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT     tbl_price_list_header.*
+FROM         tbl_price_list_header</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [tbl_price_list_header] SET [PRICE_LIST] = @PRICE_LIST, [PRICE_LIST_DESCRIPTION] = @PRICE_LIST_DESCRIPTION, [CURRENCY_CODE] = @CURRENCY_CODE, [FREE_DELIVERY_VALUE] = @FREE_DELIVERY_VALUE, [MIN_DELIVERY_VALUE] = @MIN_DELIVERY_VALUE, [START_DATE] = @START_DATE, [END_DATE] = @END_DATE WHERE (([PRICE_LIST] = @Original_PRICE_LIST))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@PRICE_LIST" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PRICE_LIST" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@PRICE_LIST_DESCRIPTION" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PRICE_LIST_DESCRIPTION" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@CURRENCY_CODE" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="CURRENCY_CODE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@FREE_DELIVERY_VALUE" Precision="18" ProviderType="Decimal" Scale="5" Size="0" SourceColumn="FREE_DELIVERY_VALUE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Decimal" Direction="Input" ParameterName="@MIN_DELIVERY_VALUE" Precision="18" ProviderType="Decimal" Scale="5" Size="0" SourceColumn="MIN_DELIVERY_VALUE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@START_DATE" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="START_DATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@END_DATE" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="END_DATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_PRICE_LIST" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PRICE_LIST" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="PRICE_LIST_ID" DataSetColumn="PRICE_LIST_ID" />
+              <Mapping SourceColumn="PRICE_LIST" DataSetColumn="PRICE_LIST" />
+              <Mapping SourceColumn="PRICE_LIST_DESCRIPTION" DataSetColumn="PRICE_LIST_DESCRIPTION" />
+              <Mapping SourceColumn="CURRENCY_CODE" DataSetColumn="CURRENCY_CODE" />
+              <Mapping SourceColumn="FREE_DELIVERY_VALUE" DataSetColumn="FREE_DELIVERY_VALUE" />
+              <Mapping SourceColumn="MIN_DELIVERY_VALUE" DataSetColumn="MIN_DELIVERY_VALUE" />
+              <Mapping SourceColumn="START_DATE" DataSetColumn="START_DATE" />
+              <Mapping SourceColumn="END_DATE" DataSetColumn="END_DATE" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="TalentEBusinessDBConnectionString (Web.config)" DbObjectName="TalentEBusinessDB.dbo.tbl_price_list_header" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetDistinctPricelistHeaders" GeneratorSourceName="FillBy" GetMethodModifier="Public" GetMethodName="GetDistinctPricelistHeaders" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDistinctPricelistHeaders" UserSourceName="GetDistinctPricelistHeaders">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>Select distinct Price_List from tbl_price_list_header order by price_list</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ECommerceDefaultsTableAdapter" GeneratorDataComponentClassName="ECommerceDefaultsTableAdapter" Name="ECommerceDefaults" UserDataComponentName="ECommerceDefaultsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TalentEBusinessDBConnectionString (Web.config)" DbObjectName="TalentEBusinessDB.dbo.tbl_ecommerce_module_defaults_bu" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetAllData" GetMethodModifier="Public" GetMethodName="GetAllData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetAllData" UserSourceName="GetAllData">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [tbl_ecommerce_module_defaults_bu] ([BUSINESS_UNIT], [PARTNER], [APPLICATION], [MODULE], [DEFAULT_NAME], [VALUE]) VALUES (@BUSINESS_UNIT, @PARTNER, @APPLICATION, @MODULE, @DEFAULT_NAME, @VALUE)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BUSINESS_UNIT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BUSINESS_UNIT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@PARTNER" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PARTNER" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@APPLICATION" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="APPLICATION" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@MODULE" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="MODULE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@DEFAULT_NAME" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="DEFAULT_NAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@VALUE" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="VALUE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT     ID, BUSINESS_UNIT, PARTNER, APPLICATION, MODULE, DEFAULT_NAME, VALUE
+FROM         tbl_ecommerce_module_defaults_bu</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="BUSINESS_UNIT" DataSetColumn="BUSINESS_UNIT" />
+              <Mapping SourceColumn="PARTNER" DataSetColumn="PARTNER" />
+              <Mapping SourceColumn="APPLICATION" DataSetColumn="APPLICATION" />
+              <Mapping SourceColumn="MODULE" DataSetColumn="MODULE" />
+              <Mapping SourceColumn="DEFAULT_NAME" DataSetColumn="DEFAULT_NAME" />
+              <Mapping SourceColumn="VALUE" DataSetColumn="VALUE" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="TalentEBusinessDBConnectionString (Web.config)" DbObjectName="TalentEBusinessDB.dbo.tbl_ecommerce_module_defaults_bu" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy_BU_Partner" GetMethodModifier="Public" GetMethodName="GetDataBy_BU_Partner" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy_BU_Partner" UserSourceName="GetDataBy_BU_Partner">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT     ID, BUSINESS_UNIT, PARTNER, APPLICATION, MODULE, DEFAULT_NAME, VALUE
+FROM         tbl_ecommerce_module_defaults_bu
+WHERE     (BUSINESS_UNIT = @BusinessUnit) AND (PARTNER = @Partner)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="BusinessUnit" ColumnName="BUSINESS_UNIT" DataSourceName="TalentEBusinessDB.dbo.tbl_ecommerce_module_defaults_bu" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@BusinessUnit" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="BUSINESS_UNIT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Partner" ColumnName="PARTNER" DataSourceName="TalentEBusinessDB.dbo.tbl_ecommerce_module_defaults_bu" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@Partner" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="PARTNER" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="TalentEBusinessDBConnectionString (Web.config)" DbObjectName="TalentEBusinessDB.dbo.tbl_ecommerce_module_defaults_bu" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy_BU_Partner_DefaultName" GetMethodModifier="Public" GetMethodName="GetDataBy_BU_Partner_DefaultName" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy_BU_Partner_DefaultName" UserSourceName="GetDataBy_BU_Partner_DefaultName">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT     ID, BUSINESS_UNIT, PARTNER, APPLICATION, MODULE, DEFAULT_NAME, VALUE
+FROM         tbl_ecommerce_module_defaults_bu
+WHERE     (BUSINESS_UNIT = @BusinessUnit) AND (PARTNER = @Partner) AND (DEFAULT_NAME = @DefaultName)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="BusinessUnit" ColumnName="BUSINESS_UNIT" DataSourceName="TalentEBusinessDB.dbo.tbl_ecommerce_module_defaults_bu" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@BusinessUnit" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="BUSINESS_UNIT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Partner" ColumnName="PARTNER" DataSourceName="TalentEBusinessDB.dbo.tbl_ecommerce_module_defaults_bu" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@Partner" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="PARTNER" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="DefaultName" ColumnName="DEFAULT_NAME" DataSourceName="TalentEBusinessDB.dbo.tbl_ecommerce_module_defaults_bu" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@DefaultName" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="DEFAULT_NAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_ticketing_productsTableAdapter" GeneratorDataComponentClassName="tbl_ticketing_productsTableAdapter" Name="tbl_ticketing_products" UserDataComponentName="tbl_ticketing_productsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TalentEBusinessDBConnectionString (Web.config)" DbObjectName="TalentEBusinessDB.dbo.tbl_ticketing_products" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="GetData">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [tbl_ticketing_products] ([BUSINESS_UNIT], [PARTNER], [PRODUCT_TYPE], [DISPLAY_SEQUENCE], [ACTIVE]) VALUES (@BUSINESS_UNIT, @PARTNER, @PRODUCT_TYPE, @DISPLAY_SEQUENCE, @ACTIVE)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@BUSINESS_UNIT" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="BUSINESS_UNIT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@PARTNER" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PARTNER" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@PRODUCT_TYPE" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="PRODUCT_TYPE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@DISPLAY_SEQUENCE" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="DISPLAY_SEQUENCE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Boolean" Direction="Input" ParameterName="@ACTIVE" Precision="0" ProviderType="Bit" Scale="0" Size="0" SourceColumn="ACTIVE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT     tbl_ticketing_products.*
+FROM         tbl_ticketing_products</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="BUSINESS_UNIT" DataSetColumn="BUSINESS_UNIT" />
+              <Mapping SourceColumn="PARTNER" DataSetColumn="PARTNER" />
+              <Mapping SourceColumn="PRODUCT_TYPE" DataSetColumn="PRODUCT_TYPE" />
+              <Mapping SourceColumn="DISPLAY_SEQUENCE" DataSetColumn="DISPLAY_SEQUENCE" />
+              <Mapping SourceColumn="ACTIVE" DataSetColumn="ACTIVE" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="TalentEBusinessDBConnectionString (Web.config)" DbObjectName="TalentEBusinessDB.dbo.tbl_ticketing_products" DbObjectType="Table" GenerateMethods="Get" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByBUPartner" GetMethodModifier="Public" GetMethodName="GetDataByBUPartner" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByBUPartner" UserSourceName="GetDataByBUPartner">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT     tbl_ticketing_products.*
+FROM         tbl_ticketing_products
+WHERE BUSINESS_UNIT = @BusinessUnit
+AND Partner = @Partner</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="BusinessUnit" ColumnName="BUSINESS_UNIT" DataSourceName="TalentEBusinessDB.dbo.tbl_ticketing_products" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@BusinessUnit" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="BUSINESS_UNIT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="Partner" ColumnName="PARTNER" DataSourceName="TalentEBusinessDB.dbo.tbl_ticketing_products" DataTypeServer="nvarchar(50)" DbType="String" Direction="Input" ParameterName="@Partner" Precision="0" ProviderType="NVarChar" Scale="0" Size="50" SourceColumn="PARTNER" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MaintenancePortalDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="MaintenancePortalDataSet" msprop:Generator_UserDSName="MaintenancePortalDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tbl_ecommerce_module_defaults_bu" msprop:Generator_UserTableName="tbl_ecommerce_module_defaults_bu" msprop:Generator_RowEvArgName="tbl_ecommerce_module_defaults_buRowChangeEvent" msprop:Generator_TableVarName="tabletbl_ecommerce_module_defaults_bu" msprop:Generator_TablePropName="tbl_ecommerce_module_defaults_bu" msprop:Generator_RowDeletingName="tbl_ecommerce_module_defaults_buRowDeleting" msprop:Generator_RowChangingName="tbl_ecommerce_module_defaults_buRowChanging" msprop:Generator_RowDeletedName="tbl_ecommerce_module_defaults_buRowDeleted" msprop:Generator_RowEvHandlerName="tbl_ecommerce_module_defaults_buRowChangeEventHandler" msprop:Generator_TableClassName="tbl_ecommerce_module_defaults_buDataTable" msprop:Generator_RowChangedName="tbl_ecommerce_module_defaults_buRowChanged" msprop:Generator_RowClassName="tbl_ecommerce_module_defaults_buRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BUSINESS_UNIT" msprop:Generator_ColumnVarNameInTable="columnBUSINESS_UNIT" msprop:Generator_ColumnPropNameInRow="BUSINESS_UNIT" msprop:Generator_ColumnPropNameInTable="BUSINESS_UNITColumn" msprop:Generator_UserColumnName="BUSINESS_UNIT">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PARTNER" msprop:Generator_ColumnVarNameInTable="columnPARTNER" msprop:Generator_ColumnPropNameInRow="PARTNER" msprop:Generator_ColumnPropNameInTable="PARTNERColumn" msprop:Generator_UserColumnName="PARTNER">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_ecommerce_module_defaults_bu1" msprop:Generator_UserTableName="tbl_ecommerce_module_defaults_bu1" msprop:Generator_RowEvArgName="tbl_ecommerce_module_defaults_bu1RowChangeEvent" msprop:Generator_TableVarName="tabletbl_ecommerce_module_defaults_bu1" msprop:Generator_TablePropName="tbl_ecommerce_module_defaults_bu1" msprop:Generator_RowDeletingName="tbl_ecommerce_module_defaults_bu1RowDeleting" msprop:Generator_RowChangingName="tbl_ecommerce_module_defaults_bu1RowChanging" msprop:Generator_RowDeletedName="tbl_ecommerce_module_defaults_bu1RowDeleted" msprop:Generator_RowEvHandlerName="tbl_ecommerce_module_defaults_bu1RowChangeEventHandler" msprop:Generator_TableClassName="tbl_ecommerce_module_defaults_bu1DataTable" msprop:Generator_RowChangedName="tbl_ecommerce_module_defaults_bu1RowChanged" msprop:Generator_RowClassName="tbl_ecommerce_module_defaults_bu1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BUSINESS_UNIT" msprop:Generator_ColumnVarNameInTable="columnBUSINESS_UNIT" msprop:Generator_ColumnPropNameInRow="BUSINESS_UNIT" msprop:Generator_ColumnPropNameInTable="BUSINESS_UNITColumn" msprop:Generator_UserColumnName="BUSINESS_UNIT">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_ecommerce_module_defaults_bu2" msprop:Generator_UserTableName="tbl_ecommerce_module_defaults_bu2" msprop:Generator_RowEvArgName="tbl_ecommerce_module_defaults_bu2RowChangeEvent" msprop:Generator_TableVarName="tabletbl_ecommerce_module_defaults_bu2" msprop:Generator_TablePropName="tbl_ecommerce_module_defaults_bu2" msprop:Generator_RowDeletingName="tbl_ecommerce_module_defaults_bu2RowDeleting" msprop:Generator_RowChangingName="tbl_ecommerce_module_defaults_bu2RowChanging" msprop:Generator_RowDeletedName="tbl_ecommerce_module_defaults_bu2RowDeleted" msprop:Generator_RowEvHandlerName="tbl_ecommerce_module_defaults_bu2RowChangeEventHandler" msprop:Generator_TableClassName="tbl_ecommerce_module_defaults_bu2DataTable" msprop:Generator_RowChangedName="tbl_ecommerce_module_defaults_bu2RowChanged" msprop:Generator_RowClassName="tbl_ecommerce_module_defaults_bu2Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PARTNER" msprop:Generator_ColumnVarNameInTable="columnPARTNER" msprop:Generator_ColumnPropNameInRow="PARTNER" msprop:Generator_ColumnPropNameInTable="PARTNERColumn" msprop:Generator_UserColumnName="PARTNER">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_price_list_header" msprop:Generator_UserTableName="tbl_price_list_header" msprop:Generator_RowEvArgName="tbl_price_list_headerRowChangeEvent" msprop:Generator_TableVarName="tabletbl_price_list_header" msprop:Generator_TablePropName="tbl_price_list_header" msprop:Generator_RowDeletingName="tbl_price_list_headerRowDeleting" msprop:Generator_RowChangingName="tbl_price_list_headerRowChanging" msprop:Generator_RowDeletedName="tbl_price_list_headerRowDeleted" msprop:Generator_RowEvHandlerName="tbl_price_list_headerRowChangeEventHandler" msprop:Generator_TableClassName="tbl_price_list_headerDataTable" msprop:Generator_RowChangedName="tbl_price_list_headerRowChanged" msprop:Generator_RowClassName="tbl_price_list_headerRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PRICE_LIST_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnPRICE_LIST_ID" msprop:Generator_ColumnPropNameInRow="PRICE_LIST_ID" msprop:Generator_ColumnPropNameInTable="PRICE_LIST_IDColumn" msprop:Generator_UserColumnName="PRICE_LIST_ID" type="xs:long" />
+              <xs:element name="PRICE_LIST" msprop:Generator_ColumnVarNameInTable="columnPRICE_LIST" msprop:Generator_ColumnPropNameInRow="PRICE_LIST" msprop:Generator_ColumnPropNameInTable="PRICE_LISTColumn" msprop:Generator_UserColumnName="PRICE_LIST">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRICE_LIST_DESCRIPTION" msprop:Generator_ColumnVarNameInTable="columnPRICE_LIST_DESCRIPTION" msprop:Generator_ColumnPropNameInRow="PRICE_LIST_DESCRIPTION" msprop:Generator_ColumnPropNameInTable="PRICE_LIST_DESCRIPTIONColumn" msprop:Generator_UserColumnName="PRICE_LIST_DESCRIPTION" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CURRENCY_CODE" msprop:Generator_ColumnVarNameInTable="columnCURRENCY_CODE" msprop:Generator_ColumnPropNameInRow="CURRENCY_CODE" msprop:Generator_ColumnPropNameInTable="CURRENCY_CODEColumn" msprop:Generator_UserColumnName="CURRENCY_CODE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FREE_DELIVERY_VALUE" msprop:Generator_ColumnVarNameInTable="columnFREE_DELIVERY_VALUE" msprop:Generator_ColumnPropNameInRow="FREE_DELIVERY_VALUE" msprop:Generator_ColumnPropNameInTable="FREE_DELIVERY_VALUEColumn" msprop:Generator_UserColumnName="FREE_DELIVERY_VALUE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="MIN_DELIVERY_VALUE" msprop:Generator_ColumnVarNameInTable="columnMIN_DELIVERY_VALUE" msprop:Generator_ColumnPropNameInRow="MIN_DELIVERY_VALUE" msprop:Generator_ColumnPropNameInTable="MIN_DELIVERY_VALUEColumn" msprop:Generator_UserColumnName="MIN_DELIVERY_VALUE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="START_DATE" msprop:Generator_ColumnVarNameInTable="columnSTART_DATE" msprop:Generator_ColumnPropNameInRow="START_DATE" msprop:Generator_ColumnPropNameInTable="START_DATEColumn" msprop:Generator_UserColumnName="START_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="END_DATE" msprop:Generator_ColumnVarNameInTable="columnEND_DATE" msprop:Generator_ColumnPropNameInRow="END_DATE" msprop:Generator_ColumnPropNameInTable="END_DATEColumn" msprop:Generator_UserColumnName="END_DATE" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ECommerceDefaults" msprop:Generator_UserTableName="ECommerceDefaults" msprop:Generator_RowEvArgName="ECommerceDefaultsRowChangeEvent" msprop:Generator_TableVarName="tableECommerceDefaults" msprop:Generator_TablePropName="ECommerceDefaults" msprop:Generator_RowDeletingName="ECommerceDefaultsRowDeleting" msprop:Generator_RowChangingName="ECommerceDefaultsRowChanging" msprop:Generator_RowDeletedName="ECommerceDefaultsRowDeleted" msprop:Generator_RowEvHandlerName="ECommerceDefaultsRowChangeEventHandler" msprop:Generator_TableClassName="ECommerceDefaultsDataTable" msprop:Generator_RowChangedName="ECommerceDefaultsRowChanged" msprop:Generator_RowClassName="ECommerceDefaultsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:long" />
+              <xs:element name="BUSINESS_UNIT" msprop:Generator_ColumnVarNameInTable="columnBUSINESS_UNIT" msprop:Generator_ColumnPropNameInRow="BUSINESS_UNIT" msprop:Generator_ColumnPropNameInTable="BUSINESS_UNITColumn" msprop:Generator_UserColumnName="BUSINESS_UNIT">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PARTNER" msprop:Generator_ColumnVarNameInTable="columnPARTNER" msprop:Generator_ColumnPropNameInRow="PARTNER" msprop:Generator_ColumnPropNameInTable="PARTNERColumn" msprop:Generator_UserColumnName="PARTNER">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="APPLICATION" msprop:Generator_ColumnVarNameInTable="columnAPPLICATION" msprop:Generator_ColumnPropNameInRow="APPLICATION" msprop:Generator_ColumnPropNameInTable="APPLICATIONColumn" msprop:Generator_UserColumnName="APPLICATION">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MODULE" msprop:Generator_ColumnVarNameInTable="columnMODULE" msprop:Generator_ColumnPropNameInRow="_MODULE" msprop:Generator_ColumnPropNameInTable="MODULEColumn" msprop:Generator_UserColumnName="MODULE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DEFAULT_NAME" msprop:Generator_ColumnVarNameInTable="columnDEFAULT_NAME" msprop:Generator_ColumnPropNameInRow="DEFAULT_NAME" msprop:Generator_ColumnPropNameInTable="DEFAULT_NAMEColumn" msprop:Generator_UserColumnName="DEFAULT_NAME">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="VALUE" msprop:Generator_ColumnVarNameInTable="columnVALUE" msprop:Generator_ColumnPropNameInRow="VALUE" msprop:Generator_ColumnPropNameInTable="VALUEColumn" msprop:Generator_UserColumnName="VALUE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tbl_ticketing_products" msprop:Generator_UserTableName="tbl_ticketing_products" msprop:Generator_RowEvArgName="tbl_ticketing_productsRowChangeEvent" msprop:Generator_TableVarName="tabletbl_ticketing_products" msprop:Generator_TablePropName="tbl_ticketing_products" msprop:Generator_RowDeletingName="tbl_ticketing_productsRowDeleting" msprop:Generator_RowChangingName="tbl_ticketing_productsRowChanging" msprop:Generator_RowDeletedName="tbl_ticketing_productsRowDeleted" msprop:Generator_RowEvHandlerName="tbl_ticketing_productsRowChangeEventHandler" msprop:Generator_TableClassName="tbl_ticketing_productsDataTable" msprop:Generator_RowChangedName="tbl_ticketing_productsRowChanged" msprop:Generator_RowClassName="tbl_ticketing_productsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:long" />
+              <xs:element name="BUSINESS_UNIT" msprop:Generator_ColumnVarNameInTable="columnBUSINESS_UNIT" msprop:Generator_ColumnPropNameInRow="BUSINESS_UNIT" msprop:Generator_ColumnPropNameInTable="BUSINESS_UNITColumn" msprop:Generator_UserColumnName="BUSINESS_UNIT">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PARTNER" msprop:Generator_ColumnVarNameInTable="columnPARTNER" msprop:Generator_ColumnPropNameInRow="PARTNER" msprop:Generator_ColumnPropNameInTable="PARTNERColumn" msprop:Generator_UserColumnName="PARTNER">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRODUCT_TYPE" msprop:Generator_ColumnVarNameInTable="columnPRODUCT_TYPE" msprop:Generator_ColumnPropNameInRow="PRODUCT_TYPE" msprop:Generator_ColumnPropNameInTable="PRODUCT_TYPEColumn" msprop:Generator_UserColumnName="PRODUCT_TYPE">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DISPLAY_SEQUENCE" msprop:Generator_ColumnVarNameInTable="columnDISPLAY_SEQUENCE" msprop:Generator_ColumnPropNameInRow="DISPLAY_SEQUENCE" msprop:Generator_ColumnPropNameInTable="DISPLAY_SEQUENCEColumn" msprop:Generator_UserColumnName="DISPLAY_SEQUENCE" type="xs:int" />
+              <xs:element name="ACTIVE" msprop:Generator_ColumnVarNameInTable="columnACTIVE" msprop:Generator_ColumnPropNameInRow="ACTIVE" msprop:Generator_ColumnPropNameInTable="ACTIVEColumn" msprop:Generator_UserColumnName="ACTIVE" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tbl_price_list_header" />
+      <xs:field xpath="mstns:PRICE_LIST" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

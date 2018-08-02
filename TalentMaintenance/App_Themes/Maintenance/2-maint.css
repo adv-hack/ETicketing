@@ -1,0 +1,215 @@
+﻿h1, h2, h3, h4, h5, h6 {
+    color: white; }
+fieldset {
+    margin-bottom: 0; }
+table {
+    border: 1px solid #3aeefd;
+    border-collapse: collapse; }
+table table {
+    border: none; }
+thead th {
+    background: none; }
+th {
+    padding: 5px 10px 5px 5px;
+    text-align: left; }
+td {
+    padding: 5px 10px 5px 5px; }
+table tbody tr:nth-child(2n) td {
+    background: #238F97; }
+.alert-box {
+    margin-bottom: 10px;
+    padding: 10px; }   
+.alert {
+    background: red;
+    color: white; } 
+.alert-box ul {
+    margin-bottom: 0; }
+.panel {
+    border: 1px solid #3aeefd;
+    margin-bottom: 10px;
+    padding: 10px; }
+.row  {
+    margin-bottom: 10px; }
+.columns {
+    display: inline-block; }
+.large-2 {
+    width: 11%; }
+.large-3 {
+    width: 17%; }
+.large-4 {
+    width: 24%; }
+.large-6 {
+    width: 49%; }
+.large-9 {
+    width: 74%; }
+.large-12 {
+    width: 100%; }
+.columns label {
+    width: auto; }
+.columns input[type=text] {
+    width: 100%; }
+
+/* ComponentGroupDetails.aspx */
+.maint-component-group-details .large-3 {
+   width: 303px; }
+.maint-component-group-details .large-6 {
+   width: 606px; }
+.maint-component-group-details .large-9 {
+   width: 909px; }
+.maint-component-group-details .large-6 label {
+    display: inline-block;
+    float: none;
+    margin-right: 10px; }
+.maint-component-group-details .large-6 input[type=text] {
+    margin-right: 20px; 
+    width: 3em; }  
+.maint-component-details .large-4 span {
+    display: inline-block;
+    width: 50%; }
+.maint-component-details .large-2 label {
+    display: inline-block;
+    float: none;
+    margin-right: 10px; }    
+.maint-component-details .large-2 input[type=text] {
+    margin-right: 20px; 
+    width: 3em; } 
+.maint-component-group-TA { 
+    width: 920px; }
+.maint-component-group-details .large-6 { 
+    width: 303px; }
+.maint-component-details td {
+    width: 25%; }
+.maint-component-duration-settings-start input[type="text"],
+.maint-component-duration-settings-end input[type="text"],
+.maint-component-duration-settings-extra-days input[type="text"]  {
+    margin: 0 10px;
+    width: 3em; }
+.maint-component-details .large-3 {
+    width: 215px; }
+.maint-component-details .large-3 + .large-3 {
+    width: 180px; }
+.maint-component-details .large-4 {
+    width: 363px; }
+.maint-component-details .large-2 {
+    width: 215px; }
+
+
+/* ComponentGroupList.aspx */  
+.component-group-search .large-3 {
+   width: 303px; }
+.component-group-search .large-9 {
+   width: 909px; }
+   
+/* ComponentGroupDisplaySettings.aspx */
+.maint-bu-lang .large-3 {
+   width: 303px; }
+.maint-bu-lang .large-9 {
+   width: 909px; }
+   
+.maint-comp-group .large-3 {
+   width: 303px; }
+.maint-comp-group .large-6 {
+   width: 606px; }
+   
+.maint-comp-edit .large-6 {
+   width: 303px; }
+   
+.maint-comp-fields-edit .large-4 {
+   width: 303px; }
+.maint-comp-fields-edit .large-8 {
+   width: 808px; }
+   
+/* EditActivityAnswers.aspx */
+.maint-create-new-question-and-answer,
+.maint-list-all-questions {
+    margin-bottom: 10px; }
+    
+/* EditActivityQuestions.aspx */
+.maint-edit-a-question tr {
+    border-top: solid 1px #3aeefd; } 
+.maint-edit-a-question tbody tr:nth-child(2n) td {
+    background: none; }
+.maint-edit-a-question table tr {
+    border: none; } 
+    
+/* ActivityQuestions.aspx */
+.maint-create-new-questions-and-answers,
+.list-all-answers {
+    margin-bottom: 10px; }
+    
+/* TemplateQuestions.aspx */
+.maint-create-a-new-template-of-questions,
+.maint-create-new-questions-and-answers,
+.maint-list-all-questions-created,
+.maint-list-all-answers-created {
+    margin-bottom: 10px; }
+    
+/* EditActivityTemplates.aspx */
+.maint-save-this-template {
+    margin-bottom: 10px; }
+    
+/* AddActivityAnswers.aspx */
+
+/* Login.aspx */
+table#Login1 { border: none; }
+table#Login1 tbody tr:nth-child(2n) td {
+    background: none; }
+    
+/* VoucherDetails.aspx */
+.maint-voucher-details-navigation {
+    margin-bottom: 10px; }
+.maint-voucher-expires .maint-months-label,
+.maint-voucher-expires .maint-days-label {
+    width: 3em; }
+.maint-voucher-expires .maint-months-data,
+.maint-voucher-expires .maint-days-data {
+    width: 9em; }
+.maint-voucher-expires input[type="text"] {
+    width: 2em; }
+.maint-voucher-html .large-3 {
+    float: left; }   
+.maint-voucher-links-configuration tbody tr:nth-child(2n) td {
+    background: none; }
+.maint-voucher-html input[type=text] {
+    margin-right: 10px;
+    width: 50%; }
+    
+/* Generic */ 
+.aspNetDisabled {
+    background-color: #cccccc;
+    color: #666666; }    
+#ComponentGroupTopNavigation {
+    margin-bottom: 10px; }
+.ui-datepicker table {
+    border: none; }
+.ui-datepicker table tbody tr:nth-child(2n) td {
+    background: none;
+}
+
+/* ProductRelationships.aspx */
+.product-relationships-search input[type="text"] { 
+    width: auto; }
+
+/* EditProductRelationships.aspx */
+#edit-product-relationships-wrapper label {
+    width: 250px; }
+#edit-product-relationships-wrapper input[type="text"] { 
+    width: auto; }
+.product-relationships-link-button input {
+    margin-right: 10px; }
+
+/* Fixes */
+fieldset label {
+    text-align: left; }
+    
+    
+/* 
+.large-24 - 12 is the mxium 
+.maint-component-description - remove h6/b tags
+.maint-component-group - should only beo one tbody per table
+some div with a "columns" class are not contained in a div with a "row" class"
+need to be consistent with use of span and label
+.maint-component-group-details missing rows
+tr tags don't need the row class
+td tags don't need the column classes
+*/

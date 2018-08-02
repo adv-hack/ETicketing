@@ -1,0 +1,76 @@
+<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage1" %>
+
+<!DOCTYPE html>
+<%@ Register Src="../UserControls/PageMaintenanceTopNavigation.ascx" TagName="PageMaintenanceTopNavigation" TagPrefix="uc1" %>
+
+<html class="no-js" lang="en">
+<head runat="server">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.min.css">
+    <link rel="stylesheet" href="//a248.e.akamai.net/images.talentarena.co.uk/Global/Lib/shadowbox-3.0.3/shadowbox.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
+    <script src="//a248.e.akamai.net/images.talentarena.co.uk/Global/Lib/modernizr-2.6.2.min.js"></script>
+    <script src="//code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="//code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+    <script src="//a248.e.akamai.net/images.talentarena.co.uk/Global/Lib/shadowbox-3.0.3/shadowbox.jQuery.js"></script>
+    <script>
+        // Shadowbox.js
+        Shadowbox.init({ players: ["html"] });
+        function OpenAlertsWindow(URL, boxHeight, boxWidth) {
+            Shadowbox.open({ player: 'iframe', width: boxWidth, height: boxHeight, content: URL });
+        }
+    </script>
+    <link href="../Css/DateAndTimePicker.css" rel="stylesheet" />
+    <script src="../javascript/DateHelper.js"></script>
+    <script src="../javascript/DateAndTimePicker.js"></script>
+    <script src="../javascript/AlertEditSupport.js"></script>
+    <script src="../javascript/questionslist.js"></script>
+</head>
+<body class="MasterPage">
+    <form id="form1" runat="server">
+        <header>
+			<img src="/Maintenance/App_Themes/Maintenance/images/logo.png" alt="" />
+            <asp:ContentPlaceHolder ID="Content1" runat="server"></asp:ContentPlaceHolder>
+        </header>
+        <uc1:PageMaintenanceTopNavigation ID="PageMaintenanceTopNavigation1" runat="server" />
+
+        <nav id="navigation-menu">
+            <asp:PlaceHolder ID="plhBusinessUnits" runat="server">
+            <div class="businessunit-selection">
+                <asp:DropDownList ID="ddlBusinessUnits" runat="server" AutoPostBack="true" />
+            </div>
+            </asp:PlaceHolder>
+            <asp:Repeater ID="rptNavigationMenu" runat="server">
+                <HeaderTemplate>
+                    <ul>
+                </HeaderTemplate>
+                <ItemTemplate>
+                    <li class="odd">
+                        <asp:HyperLink ID="hplNavigateOption" runat="server" />
+                    </li>
+                </ItemTemplate>
+                <AlternatingItemTemplate>
+                    <li class="even">
+                        <asp:HyperLink ID="hplNavigateOption" runat="server" />
+                    </li>
+                </AlternatingItemTemplate>
+                <FooterTemplate>
+                    </ul>
+                </FooterTemplate>
+            </asp:Repeater>
+        </nav>
+
+
+        <section>
+            <div class="row">
+                <div class="large-12 columns">
+                    <asp:ContentPlaceHolder ID="Content2" runat="server"></asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            
+        </footer>
+    </form>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://localhost/TradingPortal" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://localhost/TradingPortal" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://localhost/TradingPortal">
+      <s:element name="RetrieveTransactionProgressRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="loginId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="company" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="XMLString" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RetrieveTransactionProgressRequestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RetrieveTransactionProgressRequestResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="RetrieveTransactionProgressRequestSoapIn">
+    <wsdl:part name="parameters" element="tns:RetrieveTransactionProgressRequest" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveTransactionProgressRequestSoapOut">
+    <wsdl:part name="parameters" element="tns:RetrieveTransactionProgressRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveTransactionProgressRequestHttpGetIn">
+    <wsdl:part name="loginId" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="company" type="s:string" />
+    <wsdl:part name="XMLString" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveTransactionProgressRequestHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveTransactionProgressRequestHttpPostIn">
+    <wsdl:part name="loginId" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="company" type="s:string" />
+    <wsdl:part name="XMLString" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="RetrieveTransactionProgressRequestHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="MonitorSoap">
+    <wsdl:operation name="RetrieveTransactionProgressRequest">
+      <wsdl:input message="tns:RetrieveTransactionProgressRequestSoapIn" />
+      <wsdl:output message="tns:RetrieveTransactionProgressRequestSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="MonitorHttpGet">
+    <wsdl:operation name="RetrieveTransactionProgressRequest">
+      <wsdl:input message="tns:RetrieveTransactionProgressRequestHttpGetIn" />
+      <wsdl:output message="tns:RetrieveTransactionProgressRequestHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="MonitorHttpPost">
+    <wsdl:operation name="RetrieveTransactionProgressRequest">
+      <wsdl:input message="tns:RetrieveTransactionProgressRequestHttpPostIn" />
+      <wsdl:output message="tns:RetrieveTransactionProgressRequestHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MonitorSoap" type="tns:MonitorSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RetrieveTransactionProgressRequest">
+      <soap:operation soapAction="http://localhost/TradingPortal/RetrieveTransactionProgressRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MonitorSoap12" type="tns:MonitorSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RetrieveTransactionProgressRequest">
+      <soap12:operation soapAction="http://localhost/TradingPortal/RetrieveTransactionProgressRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MonitorHttpGet" type="tns:MonitorHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="RetrieveTransactionProgressRequest">
+      <http:operation location="/RetrieveTransactionProgressRequest" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MonitorHttpPost" type="tns:MonitorHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="RetrieveTransactionProgressRequest">
+      <http:operation location="/RetrieveTransactionProgressRequest" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Monitor">
+    <wsdl:port name="MonitorSoap" binding="tns:MonitorSoap">
+      <soap:address location="http://localhost:4999/TalentSupplyNet/Monitor.asmx" />
+    </wsdl:port>
+    <wsdl:port name="MonitorSoap12" binding="tns:MonitorSoap12">
+      <soap12:address location="http://localhost:4999/TalentSupplyNet/Monitor.asmx" />
+    </wsdl:port>
+    <wsdl:port name="MonitorHttpGet" binding="tns:MonitorHttpGet">
+      <http:address location="http://localhost:4999/TalentSupplyNet/Monitor.asmx" />
+    </wsdl:port>
+    <wsdl:port name="MonitorHttpPost" binding="tns:MonitorHttpPost">
+      <http:address location="http://localhost:4999/TalentSupplyNet/Monitor.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

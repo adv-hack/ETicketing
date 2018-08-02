@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://localhost/TradingPortal" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://localhost/TradingPortal" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://localhost/TradingPortal">
+      <s:element name="DEXRedListRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="loginId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="company" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="XMLString" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DEXRedListRequestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DEXRedListRequestResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DEXWhiteListRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="loginId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="company" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="XMLString" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DEXWhiteListRequestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DEXWhiteListRequestResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="DEXRedListRequestSoapIn">
+    <wsdl:part name="parameters" element="tns:DEXRedListRequest" />
+  </wsdl:message>
+  <wsdl:message name="DEXRedListRequestSoapOut">
+    <wsdl:part name="parameters" element="tns:DEXRedListRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="DEXWhiteListRequestSoapIn">
+    <wsdl:part name="parameters" element="tns:DEXWhiteListRequest" />
+  </wsdl:message>
+  <wsdl:message name="DEXWhiteListRequestSoapOut">
+    <wsdl:part name="parameters" element="tns:DEXWhiteListRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="DEXRedListRequestHttpGetIn">
+    <wsdl:part name="loginId" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="company" type="s:string" />
+    <wsdl:part name="XMLString" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DEXRedListRequestHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="DEXWhiteListRequestHttpGetIn">
+    <wsdl:part name="loginId" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="company" type="s:string" />
+    <wsdl:part name="XMLString" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DEXWhiteListRequestHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="DEXRedListRequestHttpPostIn">
+    <wsdl:part name="loginId" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="company" type="s:string" />
+    <wsdl:part name="XMLString" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DEXRedListRequestHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="DEXWhiteListRequestHttpPostIn">
+    <wsdl:part name="loginId" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="company" type="s:string" />
+    <wsdl:part name="XMLString" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DEXWhiteListRequestHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="AccessControlSoap">
+    <wsdl:operation name="DEXRedListRequest">
+      <wsdl:input message="tns:DEXRedListRequestSoapIn" />
+      <wsdl:output message="tns:DEXRedListRequestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DEXWhiteListRequest">
+      <wsdl:input message="tns:DEXWhiteListRequestSoapIn" />
+      <wsdl:output message="tns:DEXWhiteListRequestSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="AccessControlHttpGet">
+    <wsdl:operation name="DEXRedListRequest">
+      <wsdl:input message="tns:DEXRedListRequestHttpGetIn" />
+      <wsdl:output message="tns:DEXRedListRequestHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DEXWhiteListRequest">
+      <wsdl:input message="tns:DEXWhiteListRequestHttpGetIn" />
+      <wsdl:output message="tns:DEXWhiteListRequestHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="AccessControlHttpPost">
+    <wsdl:operation name="DEXRedListRequest">
+      <wsdl:input message="tns:DEXRedListRequestHttpPostIn" />
+      <wsdl:output message="tns:DEXRedListRequestHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DEXWhiteListRequest">
+      <wsdl:input message="tns:DEXWhiteListRequestHttpPostIn" />
+      <wsdl:output message="tns:DEXWhiteListRequestHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AccessControlSoap" type="tns:AccessControlSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DEXRedListRequest">
+      <soap:operation soapAction="http://localhost/TradingPortal/DEXRedListRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DEXWhiteListRequest">
+      <soap:operation soapAction="http://localhost/TradingPortal/DEXWhiteListRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AccessControlSoap12" type="tns:AccessControlSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DEXRedListRequest">
+      <soap12:operation soapAction="http://localhost/TradingPortal/DEXRedListRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DEXWhiteListRequest">
+      <soap12:operation soapAction="http://localhost/TradingPortal/DEXWhiteListRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AccessControlHttpGet" type="tns:AccessControlHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="DEXRedListRequest">
+      <http:operation location="/DEXRedListRequest" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DEXWhiteListRequest">
+      <http:operation location="/DEXWhiteListRequest" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AccessControlHttpPost" type="tns:AccessControlHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="DEXRedListRequest">
+      <http:operation location="/DEXRedListRequest" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DEXWhiteListRequest">
+      <http:operation location="/DEXWhiteListRequest" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AccessControl">
+    <wsdl:port name="AccessControlSoap" binding="tns:AccessControlSoap">
+      <soap:address location="http://localhost:24184/TalentSupplyNet/AccessControl.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AccessControlSoap12" binding="tns:AccessControlSoap12">
+      <soap12:address location="http://localhost:24184/TalentSupplyNet/AccessControl.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AccessControlHttpGet" binding="tns:AccessControlHttpGet">
+      <http:address location="http://localhost:24184/TalentSupplyNet/AccessControl.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AccessControlHttpPost" binding="tns:AccessControlHttpPost">
+      <http:address location="http://localhost:24184/TalentSupplyNet/AccessControl.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
