@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RMAStatusResponse>
+  <TransactionHeader>
+    <SenderID />
+    <ReceiverID />
+    <ErrorStatus ErrorNumber=""></ErrorStatus>
+    <DocumentID />
+    <TransactionID />
+    <Company />
+    <TimeStamp />
+  </TransactionHeader>
+
+  <RMAStatus>
+    <BranchOrderNumber>2048045</BranchOrderNumber>
+    <CustomerPO>P105678</CustomerPO>
+    <OrderSuffix>11</OrderSuffix>
+    <OrderStatus>Paid</OrderStatus>
+    <Total>-172.20</Total>
+    <EntryDate>2000-04-25</EntryDate>
+    <InvoiceDate>2000-04-25</InvoiceDate>
+    <RMAReason Code="DF">DEFECTIVE</RMAReason>
+  </RMAStatus>
+  
+</RMAStatusResponse>
+

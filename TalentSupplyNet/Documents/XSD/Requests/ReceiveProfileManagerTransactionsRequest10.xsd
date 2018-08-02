@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="TransactionInterface">
+    <xs:complexType> 
+      <xs:sequence>
+        <xs:element name="Version" type="xs:decimal" />
+        <xs:element name="TransactionHeader">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SenderID" type="xs:string" minOccurs="1"/>
+              <xs:element name="ReceiverID" type="xs:string" minOccurs="1"/>
+              <xs:element name="CountryCode" type="xs:string" minOccurs="1"/>
+              <xs:element name="LoginID" type="xs:string" minOccurs="1"/>
+              <xs:element name="Password" type="xs:string" minOccurs="1"/>
+              <xs:element name="Company" type="xs:string" minOccurs="1"/>
+              <xs:element name="TransactionID" type="xs:string" minOccurs="1"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ListOfTransactions">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" minOccurs="0" name="Transaction">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="TransactionHeader">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="HeaderID" type="xs:unsignedInt" />
+                          <xs:element name="SourceSystemID" type="xs:string" />
+                          <xs:element name="SourceRecordType" type="xs:string" />
+                          <xs:element name="RecordEntryDate" type="xs:unsignedInt" />
+                          <xs:element name="RecordEntryTime" type="xs:unsignedInt" />
+                          <xs:element name="RecordEntryMethod" />
+                          <xs:element name="HeaderUnitPrice" type="xs:decimal" />
+                          <xs:element name="HeaderTotalPrice" type="xs:decimal" />
+                          <xs:element name="HeaderVATValue" type="xs:decimal" />
+                          <xs:element name="HeaderMargin" type="xs:decimal" />
+                          <xs:element name="HeaderTotalQuantity" type="xs:decimal" />
+                          <xs:element name="SourceCustomerID" type="xs:string" />
+                          <xs:element name="TalentCustomerID" type="xs:string" />
+                          <xs:element name="TalentContactID" type="xs:string" />
+                          <xs:element name="MemberNo" />
+                          <xs:element name="NoteType" />
+                          <xs:element name="ActionType" />
+                          <xs:element name="Attribute1" />
+                          <xs:element name="Attribute2" />
+                          <xs:element name="Attribute3" />
+                          <xs:element name="Attribute4" />
+                          <xs:element name="Attribute5" />
+                          <xs:element name="Attribute6" />
+                          <xs:element name="Attribute7" />
+                          <xs:element name="Attribute8" />
+                          <xs:element name="Attribute9" />
+                          <xs:element name="Attribute10" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="ListOfTransactionDetail">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element maxOccurs="unbounded" minOccurs="0" name="TransactionDetail">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="DetailHeaderID" type="xs:unsignedInt" />
+                                <xs:element name="DetailSourceSystemID" type="xs:string" />
+                                <xs:element name="DetailSourceRecordType" type="xs:string" />
+                                <xs:element name="Type" type="xs:string" />
+                                <xs:element name="Date" type="xs:unsignedInt" />
+                                <xs:element name="Time" type="xs:unsignedInt" />
+                                <xs:element name="Agent" type="xs:string" />
+                                <xs:element name="SaleLocation" type="xs:string" />
+                                <xs:element name="ProductCode" type="xs:string" />
+                                <xs:element name="ProductCategory1" type="xs:string" />
+                                <xs:element name="ProductCategory2" type="xs:string" />
+                                <xs:element name="ProductCategory3" type="xs:string" />
+                                <xs:element name="ProductCategory4" type="xs:string" />
+                                <xs:element name="ProductCategory5" type="xs:string" />
+                                <xs:element name="ProductCategory6" type="xs:string" />
+                                <xs:element name="ProductDescription" type="xs:string" />
+                                <xs:element name="ProductSupplier" type="xs:string" />
+                                <xs:element name="Quantity" type="xs:decimal" />
+                                <xs:element name="UnitPrice" type="xs:decimal" />
+                                <xs:element name="TotalPrice" type="xs:decimal" />
+                                <xs:element name="VATValue" type="xs:decimal" />
+                                <xs:element name="LineNumber" type="xs:unsignedByte" />
+                                <xs:element name="PaymentMethod" type="xs:string" />
+                                <xs:element name="CreditCardType" type="xs:string" />
+                                <xs:element name="Margin" type="xs:decimal" />
+                                <xs:element name="UOM" type="xs:string" />
+                                <xs:element name="ConversionFactor" type="xs:decimal" />
+                                <xs:element name="Currency" type="xs:string" />
+                                <xs:element name="Campaign" type="xs:unsignedByte" />
+                                <xs:element name="CampaignCode" />
+                                <xs:element name="EventCode" />
+                                <xs:element name="SpecificDetail" type="xs:string" />
+                                <xs:element name="DiscountValue" type="xs:decimal" />
+                                <xs:element name="NoteType" />
+                                <xs:element name="ActionType" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

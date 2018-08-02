@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomerSearchResponse xmlns="http://localhost/TradingPortal">
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID></SenderID>
+    <ReceiverID></ReceiverID>
+    <ErrorStatus ErrorNumber=""></ErrorStatus>
+    <DocumentID>9bf94b0a-0382-4234-85aa-587399a0e465</DocumentID>
+    <TransactionID>64353</TransactionID>
+    <TimeStamp>2012-08-20T14:55:11</TimeStamp>
+  </TransactionHeader>
+  <CustomerSearch>
+    <Response>
+      <ReturnCode></ReturnCode>
+    </Response>
+      <Customers>
+          <Customer>
+              <CustomerNo>000000000001</CustomerNo>
+              <ContactTitle>Mr</ContactTitle>
+              <ContactInitials>A</ContactInitials>
+              <ContactForename>Andy</ContactForename>
+              <ContactSurname>Smith</ContactSurname>
+          </Customer>
+          <Customer>
+              <CustomerNo>000000000002</CustomerNo>
+              <ContactTitle>Mrs</ContactTitle>
+              <ContactInitials>L</ContactInitials>
+              <ContactForename>Lisa</ContactForename>
+              <ContactSurname>Smith</ContactSurname>
+          </Customer>
+      </Customers>
+  </CustomerSearch>
+</CustomerSearchResponse>

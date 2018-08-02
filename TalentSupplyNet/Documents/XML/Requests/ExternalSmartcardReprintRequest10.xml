@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ExternalSmartcardReprintRequest>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID></SenderID>
+    <ReceiverID></ReceiverID>
+    <CountryCode></CountryCode>
+    <LoginID>IRIS</LoginID>
+    <Password>IRIS</Password>
+    <Company>IRIS</Company>
+    <TransactionID></TransactionID>
+  </TransactionHeader>
+  <SmartcardReprints>
+    <SmartcardReprint>
+      <CustomerNumber>000000000091</CustomerNumber>
+      <RealCustomerNumber>000000000091A</RealCustomerNumber>
+      <SmartcardNumber>99872032</SmartcardNumber>
+      <OldCardNumber>2032</OldCardNumber>
+      <ProductCode>ST0003</ProductCode>
+      <StadiumCode>AS</StadiumCode>
+      <StandCode>ST1</StandCode>
+      <AreaCode>AR1</AreaCode>
+      <Row>A</Row>
+      <SeatNumber>0003</SeatNumber>
+      <SeatSuffix></SeatSuffix>
+    </SmartcardReprint>
+    <SmartcardReprint>
+      <CustomerNumber>000000000091</CustomerNumber>
+      <RealCustomerNumber>000000000091B</RealCustomerNumber>
+      <SmartcardNumber>99872033</SmartcardNumber>
+      <OldCardNumber>2033</OldCardNumber>
+      <ProductCode>ST0003</ProductCode>
+      <StadiumCode>AS</StadiumCode>
+      <StandCode>ST1</StandCode>
+      <AreaCode>AR1</AreaCode>
+      <Row>A</Row>
+      <SeatNumber>0004</SeatNumber>
+      <SeatSuffix></SeatSuffix>
+    </SmartcardReprint>
+  </SmartcardReprints>
+</ExternalSmartcardReprintRequest>

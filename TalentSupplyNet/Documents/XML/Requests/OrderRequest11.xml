@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<OrderRequest>
+  <Version>1.1</Version>
+  <TransactionHeader>
+    <SenderID>000000134529</SenderID>
+    <ReceiverID></ReceiverID>
+    <CountryCode></CountryCode>
+    <LoginID>IRIS</LoginID>
+    <Password>IRIS</Password>
+    <Company>IRIS</Company>
+    <TransactionID></TransactionID>
+  </TransactionHeader>
+  <Order>
+    <OrderHeaderInformation>
+      <CustomerID>000000000001</CustomerID>
+      <WebOrderNo>UK1234</WebOrderNo>
+      <BillToSuffix></BillToSuffix>
+      <ShipToSuffix></ShipToSuffix>
+      <AddressingInformation>
+        <ShipTo>
+          <Address>
+            <ShipToAttention>Test User SHIP</ShipToAttention>
+            <ShipToAddress1></ShipToAddress1>
+            <ShipToAddress2>TEST SHIP</ShipToAddress2>
+            <ShipToAddress3>TEST SHIP</ShipToAddress3>
+            <ShipToCity>TEST</ShipToCity>
+            <ShipToProvince></ShipToProvince>
+            <ShipToPostalCode>TTT TTT</ShipToPostalCode>
+            <ShipToCountry>UK</ShipToCountry>
+          </Address>
+        </ShipTo>
+        <BillTo>
+          <Address>
+            <BillToAttention>Test User</BillToAttention>
+            <BillToAddress1></BillToAddress1>
+            <BillToAddress2>TEST BILL</BillToAddress2>
+            <BillToAddress3>TEST BILL</BillToAddress3>
+            <BillToCity>TEST</BillToCity>
+            <BillToProvince>UK</BillToProvince>
+            <BillToPostalCode>TTT TTT</BillToPostalCode>
+            <BillToCountry>UK</BillToCountry>
+          </Address>
+        </BillTo>
+        <CustomerPO></CustomerPO>
+        <EndUserPO></EndUserPO>
+      </AddressingInformation>
+      <ProcessingOptions>
+        <CarrierCode>ST</CarrierCode>
+        <CarrierCodeValue>1.00</CarrierCodeValue>
+        <AutoRelease></AutoRelease>
+        <SalesPerson></SalesPerson>
+        <OrderDueDate></OrderDueDate>
+        <SuspendCode></SuspendCode>
+        <ShipmentOptions>
+          <BackOrderFlag></BackOrderFlag>
+          <SplitShipmentFlag></SplitShipmentFlag>
+          <SplitLine></SplitLine>
+          <ShipFromBranches></ShipFromBranches>
+        </ShipmentOptions>
+      </ProcessingOptions>
+      <Payment>
+        <PaymentType>Credit Card</PaymentType>
+        <Bank></Bank>
+        <Branch></Branch>
+        <Sortcode></Sortcode>
+        <Amount></Amount>
+        <PaymentDate></PaymentDate>
+        <AccountDetails>
+          <AccountType></AccountType>
+          <AccountNumber></AccountNumber>
+          <AccountName></AccountName>
+          <AccountpostCode></AccountpostCode>
+          <AccountAddress></AccountAddress>
+        </AccountDetails>
+        <CreditCardDetails>
+          <CardType></CardType>
+          <CardNumber>4929123123123</CardNumber>
+          <ExpiryDate>1210</ExpiryDate>
+          <StartDate></StartDate>
+          <IssueNumber></IssueNumber>
+          <CV2Number></CV2Number>
+          <CardHolderName></CardHolderName>
+          <CardHolderPostCode></CardHolderPostCode>
+          <CardHolderAddress></CardHolderAddress>
+        </CreditCardDetails>
+      </Payment>
+      <OrderCharges>
+        <Charge></Charge>
+        <Charge></Charge>
+      </OrderCharges>
+      <DynamicMessage>
+        <MessageLines>This is a test delivery message in DYNAMIC MESSAGE</MessageLines>
+      </DynamicMessage>
+    </OrderHeaderInformation>
+    <OrderLineInformation>
+      <ProductLine>
+        <SKU>BH1212</SKU>
+        <AlternateSKU></AlternateSKU>
+        <Quantity>1</Quantity>
+        <FixedPrice>12</FixedPrice>
+        <CustomerLineNumber />
+        <ReservedInventory>
+          <ReserveCode>C</ReserveCode>
+          <ReserveSequence>01</ReserveSequence>
+        </ReservedInventory>
+        <LineComment>Hello</LineComment>
+      </ProductLine>
+      <ProductLine>
+        <SKU></SKU>
+        <AlternateSKU>BENPART</AlternateSKU>
+        <Quantity>1</Quantity>
+        <FixedPrice>12.99</FixedPrice>
+        <CustomerLineNumber />
+        <ReservedInventory>
+          <ReserveCode>C</ReserveCode>
+          <ReserveSequence>01</ReserveSequence>
+        </ReservedInventory>
+        <LineComment>Hello2!</LineComment>
+      </ProductLine>
+      <CommentLine>
+        <CommentText></CommentText>
+      </CommentLine>
+    </OrderLineInformation>
+    <ShowDetail>1</ShowDetail>
+  </Order>
+</OrderRequest>

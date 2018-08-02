@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="RetrieveTicketingItemsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Version" type="xs:string" />
+        <xs:element name="TransactionHeader">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SenderID" type="xs:string" />
+              <xs:element name="ReceiverID" type="xs:string" />
+              <xs:element name="CountryCode" type="xs:string" />
+              <xs:element name="LoginID" type="xs:string" />
+              <xs:element name="Password" type="xs:string" />
+              <xs:element name="Company" type="xs:string" />
+              <xs:element name="TransactionID" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="RetrieveTicketingItems">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Response">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ReturnCode" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="TicketingItemsDetails">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ReservedQuantity" type="xs:unsignedByte" />
+                    <xs:element name="WSFee" type="xs:decimal" />
+                    <xs:element name="CreditcardFee" type="xs:decimal" />
+                    <xs:element name="CarriageFee" type="xs:decimal" />
+                    <xs:element name="TotalPrice" type="xs:decimal" />
+                    <xs:element name="ShoppingBasket">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element maxOccurs="unbounded" name="ProductDetails">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="CustomerNo" type="xs:unsignedInt" />
+                                <xs:element name="ProductCode" type="xs:string" />
+                                <xs:element name="ProductDescription" type="xs:string" />
+                                <xs:element name="Seat" type="xs:string" />
+                                <xs:element name="PriceCode" type="xs:string" />
+                                <xs:element name="PriceBand" type="xs:string" />
+                                <xs:element name="Price" type="xs:decimal" />
+                                <xs:element name="ReservedSeat" type="xs:string" />
+                                <xs:element minOccurs="0" name="ErrorType" />
+                                <xs:element minOccurs="0" name="ErrorCode" type="xs:string" />
+                                <xs:element name="UserLimit" type="xs:string" />
+                                <xs:element minOccurs="0" name="MaxTickets" />
+                                <xs:element minOccurs="0" name="ProductLimit" type="xs:unsignedByte" />
+                                <xs:element name="PreReqProduct" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

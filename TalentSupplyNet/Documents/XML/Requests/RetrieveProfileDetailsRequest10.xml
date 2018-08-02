@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RetrieveProfileDetailsRequest>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID></SenderID>
+    <ReceiverID></ReceiverID>
+    <CountryCode></CountryCode>
+    <LoginID>IRIS</LoginID>
+    <Password>IRIS</Password>
+    <Company>IRIS</Company>
+    <TransactionID></TransactionID>
+  </TransactionHeader>
+
+  <ProfileDetails>
+   	<CustomerNo>000070019332</CustomerNo>
+	  <EmailAddress></EmailAddress>
+    <Category></Category>
+  </ProfileDetails>
+
+</RetrieveProfileDetailsRequest>

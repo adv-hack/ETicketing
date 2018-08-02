@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RemoveTicketingItemsReturnBasketRequest>
+	<Version>1.0</Version>
+	<TransactionHeader>
+		<SenderID></SenderID>
+		<ReceiverID></ReceiverID>
+		<CountryCode></CountryCode>
+    <LoginID>LFC</LoginID>
+    <Password>k6yef7ES</Password>
+    <Company>INTERNET</Company>
+		<TransactionID></TransactionID>
+	</TransactionHeader>
+
+	<RemoveTicketingItems>
+		<SessionId>301506012102694415701003421476922976</SessionId>
+		<CustomerNo>000010513472</CustomerNo>
+		<ProductCode></ProductCode>
+		<Seat></Seat>
+	</RemoveTicketingItems>
+
+</RemoveTicketingItemsReturnBasketRequest>

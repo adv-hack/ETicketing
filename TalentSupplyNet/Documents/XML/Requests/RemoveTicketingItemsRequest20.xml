@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RemoveTicketingItemsRequest>
+	<Version>1.0</Version>
+	<TransactionHeader>
+		<SenderID></SenderID>
+		<ReceiverID></ReceiverID>
+		<CountryCode></CountryCode>
+		<LoginID>CSGroup</LoginID>
+		<Password>password</Password>
+		<Company>CSG</Company>
+		<TransactionID></TransactionID>
+	</TransactionHeader>
+
+	<RemoveTicketingItems>
+		<SessionId>300308192029376182659612099</SessionId>
+		<ProductCode></ProductCode>
+		<Item>
+			<CustomerNo></CustomerNo>
+			<ProductCode>HLIV04</ProductCode>
+			<Seat>NOR/A/CC/0046</Seat>
+			<PriceCode></PriceCode>
+		</Item>
+		<Item>
+			<CustomerNo></CustomerNo>
+			<ProductCode>HLIV04</ProductCode>
+			<Seat>NOR/A/CC/0047</Seat>
+			<PriceCode></PriceCode>
+		</Item>
+		<Item>
+			<CustomerNo>1161087</CustomerNo>
+			<ProductCode>MEMP07</ProductCode>
+			<Seat></Seat>
+			<PriceCode>CA</PriceCode>
+		</Item>
+	</RemoveTicketingItems>
+
+</RemoveTicketingItemsRequest>

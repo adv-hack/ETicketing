@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<DTypeOrderRequest>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID>123456789</SenderID>
+    <ReceiverID>987654321</ReceiverID>
+    <CountryCode>UK</CountryCode>
+    <LoginID>UK3833HHD </LoginID>
+    <Password>Re887Jky52</Password>
+    <Company>CSG</Company>
+    <TransactionID>54321</TransactionID>
+  </TransactionHeader>
+  <Order>
+    <OrderHeaderInformation>
+      <BillToSuffix>1</BillToSuffix>
+      <CustomerPO>BFCustOrd1PO_z1</CustomerPO>
+      <EndUserPO>EndUserPO_z1</EndUserPO>
+      <ShipTo>
+        <Address>
+          <ShipToAttention>Mrs 1111Jones</ShipToAttention>
+          <ShipToAddress1>Red 11111House</ShipToAddress1>
+          <ShipToAddress2>55 The Street</ShipToAddress2>
+          <ShipToAddress3>Gosford</ShipToAddress3>
+          <ShipToCity>London</ShipToCity>
+          <ShipToProvince>UK</ShipToProvince>
+          <ShipToPostalCode>SW1 3IM</ShipToPostalCode>
+        </Address>
+      </ShipTo>
+      <ProcessingOptions>
+        <CarrierCode>P3</CarrierCode>
+        <ShipmentOptions>
+          <BackOrderFlag>Y</BackOrderFlag>
+          <ShipFromBranches>20</ShipFromBranches>
+        </ShipmentOptions>
+      </ProcessingOptions>
+
+      <BillTo>
+        <Attention>Jacob Lyons</Attention>
+        <Name>Electron Micro</Name>
+        <AddressLine1>192 Linford Street</AddressLine1>
+        <AddressLine2>Linslow</AddressLine2>
+        <AddressLine3></AddressLine3>
+        <AddressLine4></AddressLine4>
+        <City>Milton Keynes</City>
+        <Province>UK</Province>
+        <PostalCode>MK9 8GG</PostalCode>
+        <CountryCode>UK</CountryCode>
+        <EmailAddress>jlyons@Emicro.com</EmailAddress>
+        <PhoneNumber>01604575550</PhoneNumber>
+        <ExtensionNumber>33228</ExtensionNumber>
+        <FaxNumber>01604575555</FaxNumber>
+        <VATNumber>123456</VATNumber>
+        <AuthorizationNumber>A-123456</AuthorizationNumber>
+        <PricingLevel>P</PricingLevel>
+      </BillTo>
+
+      <ResellerInformation>
+        <Name></Name>
+        <Attention> </Attention>=
+        <AddressLine1></AddressLine1>
+        <AddressLine2></AddressLine2>
+        <AddressLine3></AddressLine3>
+        <AddressLine4></AddressLine4>
+        <City></City>
+        <Province></Province>
+        <PostalCode></PostalCode>
+        <CountryCode></CountryCode>
+        <EmailAddress></EmailAddress>
+      </ResellerInformation>
+
+    </OrderHeaderInformation>
+
+    <OrderLineInformation>
+
+      <ProductLine>
+        <SKU>Product Line 1</SKU>
+        <Quantity>1</Quantity>
+        <CustomerLineNumber/>
+      </ProductLine>
+      <ProductLine>
+        <SKU>Product Line 2</SKU>
+        <Quantity>1</Quantity>
+        <CustomerLineNumber/>
+      </ProductLine>
+      <ProductLine>
+        <SKU>Product Line 3</SKU>
+        <Quantity>1</Quantity>
+        <CustomerLineNumber/>
+      </ProductLine>
+
+      <CommentLine>
+        <CommentText>Handle with care 1</CommentText>
+      </CommentLine>
+      <CommentLine>
+        <CommentText>Handle with care 2</CommentText>
+      </CommentLine>
+      <CommentLine>
+        <CommentText>Handle with care 3</CommentText>
+      </CommentLine>
+
+    </OrderLineInformation>
+    <ShowDetail>1</ShowDetail>
+  </Order>
+  
+</DTypeOrderRequest>

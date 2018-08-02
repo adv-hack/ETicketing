@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<OrderRequest>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID>00008 000</SenderID>
+    <ReceiverID>987654321</ReceiverID>
+    <CountryCode>UK</CountryCode>
+    <LoginID>ben</LoginID>
+    <Password>ben</Password>
+    <Company>CSG</Company>
+    <TransactionID>12345</TransactionID>
+  </TransactionHeader>
+  <Order>
+    <OrderHeaderInformation>
+      <BillToSuffix>1</BillToSuffix>
+      <ShipToSuffix>000</ShipToSuffix>
+      <AddressingInformation>
+        <ShipTo>
+          <Address>
+            <ShipToAttention>Mrs Jones</ShipToAttention>
+            <ShipToAddress1>Red House</ShipToAddress1>
+            <ShipToAddress2>55 The Street</ShipToAddress2>
+            <ShipToAddress3>Gosford</ShipToAddress3>
+            <ShipToCity>London</ShipToCity>
+            <ShipToProvince>UK</ShipToProvince>
+            <ShipToPostalCode>SW1 3IM</ShipToPostalCode>
+          </Address>
+        </ShipTo>
+        <BillTo>
+          <Address>
+            <BillToAttention>Mrs Bilkings</BillToAttention>
+            <BillToAddress1>Bill House</BillToAddress1>
+            <BillToAddress2>55 Bilkings Place</BillToAddress2>
+            <BillToAddress3>Gosford</BillToAddress3>
+            <BillToCity>London</BillToCity>
+            <BillToProvince>UK</BillToProvince>
+            <BillToPostalCode>BILL 3IM</BillToPostalCode>
+          </Address>
+        </BillTo>
+        <CustomerPO>BFCustOrd1PO_z1</CustomerPO>
+        <EndUserPO>EndUserPO_z1</EndUserPO>
+      </AddressingInformation>  
+      <ProcessingOptions>
+        <CarrierCode>CT</CarrierCode>
+        <CarrierCodeValue/>
+        <AutoRelease>0</AutoRelease>
+        <SalesPerson>A</SalesPerson>
+        <OrderDueDate>20071214</OrderDueDate>
+        <SuspendCode>A</SuspendCode>
+        <ShipmentOptions>
+          <BackOrderFlag>Y</BackOrderFlag>
+          <SplitShipmentFlag>N</SplitShipmentFlag>
+          <SplitLine>N</SplitLine>
+          <ShipFromBranches>20</ShipFromBranches>
+        </ShipmentOptions>
+      </ProcessingOptions>
+      <Payment>
+        <PaymentType>CC</PaymentType>
+        <Bank>HSBC</Bank>
+        <Branch>Neston</Branch>
+        <Sortcode>45-09-45</Sortcode>
+        <Amount>1224.56</Amount>
+        <PaymentDate>12/11/2007</PaymentDate>
+        <AccountDetails>
+          <AccountType>Current</AccountType>
+          <AccountNumber>4567234435</AccountNumber>
+          <AccountName>Mr A Pratt</AccountName>
+          <AccountpostCode>DF4 2ER</AccountpostCode>
+          <AccountAddress></AccountAddress>
+        </AccountDetails>
+        <CreditCardDetails>
+          <CardType>Visa</CardType>
+          <CardNumber>4929222222222</CardNumber>
+          <ExpiryDate>0207</ExpiryDate>
+          <StartDate>0704</StartDate>
+          <IssueNumber>3</IssueNumber>
+          <CV2Number>155</CV2Number>
+          <CardHolderName>Mr A Pratt</CardHolderName>
+          <CardHolderPostCode>DF4 2ER</CardHolderPostCode>
+          <CardHolderAddress></CardHolderAddress>
+        </CreditCardDetails>
+      </Payment>
+      <OrderCharges>
+        <Charge>06</Charge>
+        <Charge>09</Charge>
+      </OrderCharges>
+      <DynamicMessage>
+        <MessageLines>Please deliver to Mrs Jones</MessageLines>
+      </DynamicMessage>
+      <Extension>
+        <Reference1>AA</Reference1>
+        <Reference2>AA</Reference2>
+        <Reference3>AA</Reference3>
+        <Reference4>AA</Reference4>
+        <FixedPrice1>12.99</FixedPrice1>
+        <FixedPrice2>12.99</FixedPrice2>
+        <FixedPrice3>12.99</FixedPrice3>
+        <FixedPrice4>12.99</FixedPrice4>
+        <DealID1>AA</DealID1>
+        <DealID2>AA</DealID2>
+        <DealID3>AA</DealID3>
+        <DealID4>AA</DealID4>
+        <DealID5>AA</DealID5>
+        <DealID6>AA</DealID6>
+        <DealID7>AA</DealID7>
+        <DealID8>AA</DealID8>
+        <Flag1>Y</Flag1>
+        <Flag2>Y</Flag2>
+        <Flag3>Y</Flag3>
+        <Flag4>Y</Flag4>
+        <Flag5>Y</Flag5>
+        <Flag6>Y</Flag6>
+        <Flag7>Y</Flag7>
+        <Status>AA</Status>
+      </Extension>
+    </OrderHeaderInformation>   
+    <OrderLineInformation>
+      <ProductLine>
+        <SKU>123A321</SKU>
+        <AlternateSKU></AlternateSKU>
+        <Quantity>1</Quantity>
+        <FixedPrice>12.99</FixedPrice>
+        <CustomerLineNumber />
+        <ReservedInventory>
+          <ReserveCode>C</ReserveCode>
+          <ReserveSequence>01</ReserveSequence>
+        </ReservedInventory>
+        <LineComment>ABCDEFGHIJKLMNO</LineComment> 
+        <Extension>
+        <Reference1>AA</Reference1>
+        <Reference2>AA</Reference2>
+        <Reference3>AA</Reference3>
+        <Reference4>AA</Reference4>
+        <Reference5>AA</Reference5>
+        <Reference6>AA</Reference6>
+        <Reference7>AA</Reference7>
+        <Reference8>AA</Reference8>
+        <Flag1>Y</Flag1>
+        <Flag2>Y</Flag2>
+        <Flag3>Y</Flag3>
+        <Flag4>Y</Flag4>
+        <Flag5>Y</Flag5>
+        <Flag6>Y</Flag6>
+        <Flag7>Y</Flag7>
+        <Flag8>Y</Flag8>
+        <Flag9>Y</Flag9>
+        <Flag0>Y</Flag0>
+        <Field1>AA</Field1>
+        <Field2>AA</Field2>
+        <Field3>AA</Field3>
+        <Field4>AA</Field4>
+        <FixedPrice1>12.99</FixedPrice1>
+        <FixedPrice2>12.99</FixedPrice2>
+        <FixedPrice3>12.99</FixedPrice3>
+        <FixedPrice4>12.99</FixedPrice4>
+        <FixedPrice5>12.99</FixedPrice5>
+        <FixedPrice6>12.99</FixedPrice6>
+        <FixedPrice7>12.99</FixedPrice7>
+        <FixedPrice8>12.99</FixedPrice8>
+        <DealID1>AA</DealID1>
+        <DealID2>AA</DealID2>
+        <DealID3>AA</DealID3>
+        <DealID4>AA</DealID4>
+        <DealID5>AA</DealID5>
+        <DealID6>AA</DealID6>
+        <DealID7>AA</DealID7>
+        <DealID8>AA</DealID8>
+        <Status>AA</Status>
+      </Extension>
+      </ProductLine>
+      <CommentLine>
+        <CommentText>TALENT ebusiness is a suite of ebusiness solutions that let you trade automatically, online and straight from your iSeries-based sales, accounts and ERP systems.The key benefit our software offers you is that connects to your IT systems with real-time integration. This means you can stay open for orders 24/7.TALENT Commerce Sell online 24/7 through your website, straight from your back-office systemsTALENT Self Service provide real-time information to your customers and suppliers over the web, accessing data straight from your back-office systemsTALENT SupplyNet Trade and communicate via XMLTALENT eCRM Multi-channel, multi-functional e-marketing and e-customer service functionality</CommentText>
+      </CommentLine>
+    
+    </OrderLineInformation>
+    <ShowDetail>1</ShowDetail>
+  </Order>
+</OrderRequest>

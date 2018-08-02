@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="OrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Version" type="xs:decimal" />
+        <xs:element name="TransactionHeader">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SenderID" />
+              <xs:element name="ReceiverID" />
+              <xs:element name="ErrorStatus">
+                <xs:complexType>
+                  <xs:attribute name="ErrorNumber" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="DocumentID" />
+              <xs:element name="TransactionID" />
+              <xs:element name="Company" />
+              <xs:element name="TimeStamp" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="OrderInfo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OrderNumbers">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="BranchOrderNumber" />
+                    <xs:element name="CustomerPO" />
+                    <xs:element name="ErrorStatus">
+                      <xs:complexType>
+                        <xs:attribute name="ErrorNumber" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="ThirdPartyFreight" />
+                    <xs:element name="Address">
+                      <xs:complexType mixed="true">
+                        <xs:sequence>
+                          <xs:element name="Name" />
+                          <xs:element name="Attention" type="xs:string" />
+                          <xs:element name="AddressLine1" />
+                          <xs:element name="AddressLine2" />
+                          <xs:element name="AddressLine3" />
+                          <xs:element name="AddressLine4" />
+                          <xs:element name="City" />
+                          <xs:element name="Province" />
+                          <xs:element name="PostalCode" />
+                          <xs:element name="CountryCode" />
+                        </xs:sequence>
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="AddressErrorMessage">
+                      <xs:complexType>
+                        <xs:attribute name="AddressErrorType" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="ContractNumber" />
+                    <xs:element name="OrderSuffix">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="DistributionWeight" />
+                          <xs:element name="SuffixErrorResponse">
+                            <xs:complexType>
+                              <xs:attribute name="SuffixErrorType" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="Carrier">
+                            <xs:complexType>
+                              <xs:attribute name="CarrierCode" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="FreightRate" />
+                          <xs:element name="LineInformation">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="ProductLine">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="LineError" />
+                                      <xs:element name="SKU" />
+                                      <xs:element name="UnitPrice" />
+                                      <xs:element name="WestCoastLineNumber" />
+                                      <xs:element name="CustomerLineNumber" />
+                                      <xs:element name="ShipFromBranch" />
+                                      <xs:element name="OrderQuantity" />
+                                      <xs:element name="AllocatedQuantity" />
+                                      <xs:element name="BackOrderedQuantity" />
+                                      <xs:element name="BackOrderETADate" />
+                                      <xs:element name="PriceDerivedFlag" />
+                                      <xs:element name="ForeignCurrency" />
+                                      <xs:element name="LineFreightRate" />
+                                      <xs:element name="TransitDays" />
+                                      <xs:element name="LineBillToSuffix" />
+                                      <xs:element name="CustomerSKU" />
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="CommentLine">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="CommentText" />
+                                      <xs:element name="CommentLineNumber" />
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="Suffix" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

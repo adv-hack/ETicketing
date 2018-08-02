@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<DispatchAdviceResponse>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID />
+    <ReceiverID />
+    <ErrorStatus ErrorNumber=""></ErrorStatus>
+    <DocumentID />
+    <TransactionID />
+    <Company />
+    <TimeStamp />
+  </TransactionHeader>
+
+  <DispatchAdvices>
+    <DispatchAdvice>
+      <DispatchAdviceHeader>
+        <DispatchAdviceNumber>9223228</DispatchAdviceNumber>
+        <BranchOrderNumber>1596653</BranchOrderNumber>
+        <CustomerPO>HAJ-0221</CustomerPO>
+        <AccountNumber>20772882000</AccountNumber>
+        <DateHeader>
+          <Date Type="Document">20030718</Date>
+          <Date Type="Dispatch">20030718</Date>
+          <Date Type="Delivery">20030718</Date>
+        </DateHeader>
+      </DispatchAdviceHeader>
+      <Address Type="Customer">
+        <Name></Name>
+        <Attention> </Attention>
+        <AddressLine1></AddressLine1>
+        <AddressLine2></AddressLine2>
+        <AddressLine3></AddressLine3>
+        <AddressLine4></AddressLine4>
+        <City></City>
+        <Province></Province>
+        <PostalCode></PostalCode>
+        <CountryCode></CountryCode>
+      </Address>
+      <Address Type="ShipTo">
+        <Name></Name>
+        <Attention> </Attention>=
+        <AddressLine1></AddressLine1>
+        <AddressLine2></AddressLine2>
+        <AddressLine3></AddressLine3>
+        <AddressLine4></AddressLine4>
+        <City></City>
+        <Province></Province>
+        <PostalCode></PostalCode>
+        <CountryCode></CountryCode>
+        <ShipToSuffix></ShipToSuffix>
+      </Address>
+      <Address Type="ShipFrom">
+        <Name></Name>
+        <Attention> </Attention>=
+        <AddressLine1></AddressLine1>
+        <AddressLine2></AddressLine2>
+        <AddressLine3></AddressLine3>
+        <AddressLine4></AddressLine4>
+        <City></City>
+        <Province></Province>
+        <PostalCode></PostalCode>
+        <CountryCode></CountryCode>
+      </Address>
+      <ConsignmentHeader>
+        <SequenceNumber>1</SequenceNumber>
+        <NumberOfPackages>1</NumberOfPackages>
+      </ConsignmentHeader>
+      <MeasurementHeader>
+        <UnitOfMeasure>KGM</UnitOfMeasure>
+        <Weight>49</Weight>
+      </MeasurementHeader>
+      <PackageHeader>
+        <IdentificationHeader>
+          <Identification TrackingNumber="32376872346575701091648" />
+        </IdentificationHeader>
+      </PackageHeader>
+
+      <LineHeader>
+        <LineItem LineNumber="1">
+          <Product SKU="P77622G" DispatchQuantity="3">
+            <Item Type="EANCode">1234231526374</Item>
+            <Item Type="CustomerSKU"></Item>
+            <SKUDescription1>DESK EXTENSION</SKUDescription1>
+            <SKUDescription2>FOR WINDOWS</SKUDescription2>
+            <SerialNumberHeader>
+              <SerialNumber>834387438724822</SerialNumber>
+              <SerialNumber>834387438724823</SerialNumber>
+              <SerialNumber>834387438724824</SerialNumber>
+            </SerialNumberHeader>
+          </Product>
+        </LineItem>
+      </LineHeader>
+      <TotalLinesShipped>1</TotalLinesShipped>
+    </DispatchAdvice>
+  </DispatchAdvices>
+
+</DispatchAdviceResponse>

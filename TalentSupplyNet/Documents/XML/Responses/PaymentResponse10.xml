@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PaymentResponse>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID></SenderID>
+    <ReceiverID></ReceiverID>
+    <CountryCode></CountryCode>
+    <LoginID>CSGroup</LoginID>
+    <Password>Password</Password>
+    <Company>CSG</Company>
+    <TransactionID></TransactionID>
+  </TransactionHeader>
+
+  <Payment>
+    <Response>
+      <ReturnCode></ReturnCode>
+      <SessionId>300308192029376182659612099</SessionId>
+      <CustomerNo>123456</CustomerNo>
+    </Response>
+
+    <ConfirmedDetails>
+      <PaymentReference>5566772527727</PaymentReference>
+      <WSFee>1.00</WSFee>
+      <CreditcardFee>0.50</CreditcardFee>
+      <CarriageFee>0.50</CarriageFee>
+      <TotalPrice>42.00</TotalPrice>
+      <ShoppingBasket>
+        <ProductDetails>
+          <CustomerNo>123456</CustomerNo>
+          <ProductCode>HLIV04</ProductCode>
+          <Seat>NOR/A/CC/0045</Seat>
+          <PriceCode>LG</PriceCode>
+          <PriceBand>A</PriceBand>
+          <Price>20.00</Price>
+          <CarriageMethod>P</CarriageMethod>
+          <CardPrint></CardPrint>
+          <SeatRestriction>OB</SeatRestriction>
+        </ProductDetails>
+        <ProductDetails>
+          <CustomerNo>123456</CustomerNo>
+          <ProductCode>HLIV04</ProductCode>
+          <Seat>NOR/A/CC/0046</Seat>
+          <PriceCode>LG</PriceCode>
+          <PriceBand>A</PriceBand>
+          <Price>20.00</Price>
+          <CarriageMethod>P</CarriageMethod>
+          <CardPrint></CardPrint>
+          <SeatRestriction>OB</SeatRestriction>
+        </ProductDetails>
+      </ShoppingBasket>
+    </ConfirmedDetails>
+  </Payment>
+</PaymentResponse>

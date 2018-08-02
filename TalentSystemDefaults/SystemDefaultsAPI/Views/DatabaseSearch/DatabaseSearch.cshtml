@@ -1,0 +1,211 @@
+﻿@using SystemDefaultsAPI.Models;
+@model DatabaseSearchModel
+
+<div class="row">
+	<div class="medium-12 column">
+		<h2>@Model.Title</h2>
+	</div>
+</div>
+
+@if(Model.hasStatus)
+{
+	@Html.Raw("<div class=\"row ebiz-left\" style=\"margin-top: 20px;\">")
+	@Html.Label("status-message", Model.StatusMessage, new {Class = "status-message"})
+	@Html.Raw("</div>")
+}
+
+<style>
+	.hide {
+		display: none;
+	}
+
+	.err {
+		color: red;
+	}
+
+	.tc {
+		color: red;
+	}
+</style>
+<input id="hdnJSUpdateSuccessMsg" type="hidden" value="Data updated successfully" />
+<input id="hdnJSErrMsg" type="hidden" value="error occurred: " />
+<input id="hdnJSValidationErrMsg" type="hidden" value="validation error" />
+<input id="hdnNoDataChanged" type="hidden" value="no data has been changed" />
+<input id="hdnJSUpdateErrorMsg" type="hidden" value="Problem occurred while updating data to the server.Please contact administrator."/>
+<input type="hidden" id="hdnDataTableExists" />
+<input type="hidden" id="hdnSearchedText" />
+<br />
+<div class="row">
+	<div class="medium-12 columns">
+        <div id="msgBox" class="alert-box success"></div>
+    </div>
+</div>
+<br />
+<div class="row">
+	<div class="medium-2 columns" style="text-align:left;">
+		Search Type:
+	</div>
+	<div class="medium-3 columns">
+		<select id="ddlSearchType" onchange="onSearchTypeChanged(this);">
+			<option value="NONE">Select Search Type</option>
+			<option value="TEXTSEARCH">Text Search</option>
+		</select>
+	</div>
+	<div class="medium-7 columns"></div>
+</div>
+<div class="row">
+	<div class="medium-2 columns" style="text-align:left;">
+		Search Text:
+	</div>
+	<div class="medium-3 columns">
+		<div style="text-align:left;">
+			<input type="text" id="txtSearch" onkeydown="txtSearchChanged(event, this);" style="float:left; margin-right: 5px;" />
+		</div>
+	</div>
+	<div class="medium-7 columns">
+		<button id="btnDBSearch" type="button" class="button" onclick="btnDBSearchedClicked();" style="float:left;">Search</button>
+	</div>
+</div>
+<div class="row">
+	<div class="medium-2 columns" style="text-align:left;">
+		Replace Text:
+	</div>
+	<div class="medium-3 columns">
+		<input type="text" id="txtReplace" style="float:left; margin-right: 5px;" />
+	</div>
+	<div class="medium-7 columns">
+		<button id="btnLocalReplace" type="button" class="button" disabled="disabled" onclick="onReplaceClicked();">
+			Local Replace
+		</button>
+	</div>
+</div>
+<table id="gridSearch" class="ebiz-responsive-table" style="width:100% !important"></table>
+<button id="btnSave" type="button" name="Save" onclick="return save();" class="button">Save</button>
+
+
+<script type="text/javascript">
+    @Html.Raw("var dbGridColumns = " + Model.ColumnsInformation + ";")
+    @Html.Raw("var dbGridTables = " + Model.TablesInformation + ";")
+    @Html.Raw("var getDataURL = \"" + Model.GETDataUrl + "\";")
+    @Html.Raw("var updateDataURL = \"" + Model.UPDATEDataUrl + "\";")
+
+    var dbCols, dbTables;
+
+    $(document).ready(function ()
+    {
+        $("#msgBox").hide();
+        try
+        {
+            // library variables
+            tableID = "gridSearch";
+
+            APIUrl = getDataURL;
+            APIUpdateURL = updateDataURL;
+            $("#hdnDataTableExists").val(0);
+
+			// if there is only one search type then default to first one
+            if ($("#ddlSearchType option").length <= 2)
+            {
+            	$("#ddlSearchType").val($("#ddlSearchType option")[$("#ddlSearchType option").length - 1].value);
+            	onSearchTypeChanged($("#ddlSearchType"));
+            }
+        }
+        catch (ex)
+        {
+            alert('Error occurred when initializing the data grid: ' + ex.message);
+        }
+    });
+
+    function btnDBSearchedClicked()
+    {
+        var searchText, searchType;
+        $("#msgBox").hide();
+        try
+        {
+            searchType = $("#ddlSearchType").val();
+            searchText = $("#txtSearch").val();
+
+            if (searchType == "NONE")
+            {
+                alert("Please select the search type.");
+                $("#txtSearchddlSearchType").focus();
+                return;
+            }
+            if (searchText == "")
+            {
+                alert("Please enter the search text.");
+                $("#txtSearch").focus();
+                return;
+            }
+
+            $("#hdnDataTableExists").val(1)
+            getData();
+            
+            $("#msgBox").html("");
+            $("#txtReplace").val("");
+        }
+        catch (ex)
+        {
+            alert(jsErrorMsg + ex.message);
+        }
+    }
+
+    function onSearchTypeChanged(control)
+    {
+        var searchType = "";
+        try
+        {
+            // reset
+            resetConfigurations();
+
+            searchType = $(control).val();
+            if (searchType != "NONE")
+            {
+                // 1. extraction from master json obj
+                dbTables = [];
+                $.each(dbGridTables, function (i, v)
+                {
+                    if (v.searchType == searchType)
+                    {
+                        dbTables.push(v);
+                        return;
+                    }
+                });
+
+                dbCols = [];
+                $.each(dbGridColumns, function (i, v)
+                {
+                    if (v.searchType == searchType)
+                    {
+                        dbCols.push(v);
+                        return;
+                    }
+                });
+
+                // 2. send it to framework so it configures itself for the data load
+                prepareDBTablesAndColumns(dbTables, dbCols);
+            }
+        }
+        catch (ex)
+        {
+            alert(jsErrorMsg + ex.message);
+        }
+    }
+
+    function txtSearchChanged(e, txtBox)
+    {
+    	try
+    	{
+    		// if enter key is pressed
+    		if (e.keyCode == 13)
+    		{
+    			btnDBSearchedClicked();
+    		}
+    	}
+    	catch (ex)
+    	{
+    		alert(jsErrorMsg + ex.message);
+    	}
+    };
+
+</script>

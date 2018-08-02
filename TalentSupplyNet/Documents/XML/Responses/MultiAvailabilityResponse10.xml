@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<MultiAvailabilityResponse>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID />
+    <ReceiverID />
+    <ErrorStatus ErrorNumber=""></ErrorStatus>
+    <DocumentID />
+    <TransactionID />
+    <Company />
+    <TimeStamp />
+  </TransactionHeader>
+
+  <Availability>
+
+    <Availability SKU="" Warehouse=""  Quantity="" />
+    <Availability SKU="" Warehouse=""  Quantity="" />
+    <Availability SKU="" Warehouse=""  Quantity="" />
+    <Availability SKU="" Warehouse=""  Quantity="" />
+    <Availability SKU="" Warehouse=""  Quantity="" />
+    <Availability SKU="" Warehouse=""  Quantity="" />
+    <Availability SKU="" Warehouse=""  Quantity="" />
+    <Availability SKU="" Warehouse=""  Quantity="" />
+    <Availability SKU="" Warehouse=""  Quantity="" />
+    <Availability SKU="" Warehouse=""  Quantity="" />
+
+  </Availability>
+
+</MultiAvailabilityResponse>

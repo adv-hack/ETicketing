@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="OrderDetailResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Version" type="xs:decimal" />
+        <xs:element name="TransactionHeader">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SenderID" />
+              <xs:element name="ReceiverID" />
+              <xs:element name="ErrorStatus">
+                <xs:complexType>
+                  <xs:attribute name="ErrorNumber" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="DocumentID" />
+              <xs:element name="TransactionID" />
+              <xs:element name="Company" />
+              <xs:element name="TimeStamp" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="OrderInfo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OrderNumbers">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="BranchOrderNumber" />
+                    <xs:element name="CustomerPO" />
+                    <xs:element name="ErrorStatus">
+                      <xs:complexType>
+                        <xs:attribute name="ErrorNumber" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="EndUserPO" />
+                    <xs:element name="OrderWeight" />
+                    <xs:element name="OrderEntryDate" />
+                    <xs:element name="InvoiceDate" />
+                    <xs:element name="PromiseDate" />
+                    <xs:element name="OrderType" />
+                    <xs:element name="FulfillmentFlag" />
+                    <xs:element name="ShipComplete" />
+                    <xs:element name="HoldReason" />
+                    <xs:element name="TermsCode" />
+                    <xs:element name="ResellerNBR" />
+                    <xs:element name="NumberOfCartons" />
+                    <xs:element name="CreditMemoReasonCode" />
+                    <xs:element name="ConfigFlag" />
+                    <xs:element name="SplitBillToSwitch" />
+                    <xs:element name="SplitFromOrderNumber" />
+                    <xs:element name="RMACode" />
+                    <xs:element name="CreditCardSW" />
+                    <xs:element name="GovEndUserType" />
+                    <xs:element name="EntryMethod" />
+                    <xs:element name="TermID" />
+                    <xs:element name="BackOrderStatus" />
+                    <xs:element name="ShippableSW" />
+                    <xs:element name="ConfigTimeStamp" />
+                    <xs:element name="SelSrcSlsHdr" />
+                    <xs:element name="SelSrcAcctnoHdr" />
+                    <xs:element name="OECarrier" />
+                    <xs:element name="FrtOutCode" />
+                    <xs:element name="ProNbrSW" />
+                    <xs:element name="ProNbr" />
+                    <xs:element name="OrderTotals">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="SalesTotal" />
+                          <xs:element name="FreightTotal" />
+                          <xs:element name="TaxTotal" />
+                          <xs:element name="SalePlusTax" />
+                          <xs:element name="GrandTotal" />
+                          <xs:element name="CODAmount" />
+                          <xs:element name="DiscountAmount" />
+                          <xs:element name="CurrencyCode" />
+                          <xs:element name="CompanyCurrency" />
+                          <xs:element name="CurrencyRate" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element maxOccurs="unbounded" name="Address">
+                      <xs:complexType mixed="true">
+                        <xs:sequence>
+                          <xs:element name="Name" />
+                          <xs:element name="Attention" type="xs:string" />
+                          <xs:element name="AddressLine1" />
+                          <xs:element name="AddressLine2" />
+                          <xs:element name="AddressLine3" />
+                          <xs:element name="AddressLine4" />
+                          <xs:element name="City" />
+                          <xs:element name="Province" />
+                          <xs:element name="PostalCode" />
+                          <xs:element name="CountryCode" />
+                        </xs:sequence>
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="ShipFromBranch">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute name="Number" type="xs:unsignedByte" use="required" />
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="OrderStatus" type="xs:string" />
+                    <xs:element name="Carrier">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute name="Code" type="xs:string" use="required" />
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="OrderShipDate" type="xs:date" />
+                    <xs:element name="OrderSuffix">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="LineInformation">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="ProductLine">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="SKU" />
+                                      <xs:element name="UnitPrice" />
+                                      <xs:element name="WestCoastLineNumber" />
+                                      <xs:element name="CustomerLineNumber" />
+                                      <xs:element name="OrderQuantity" />
+                                      <xs:element name="BackOrderQuantity" />
+                                      <xs:element name="BackOrderETADate" />
+                                      <xs:element name="SKUDescription" />
+                                      <xs:element name="ShipQuantity" />
+                                      <xs:element name="ComponentQty" />
+                                      <xs:element name="NonWayPromiseDate" />
+                                      <xs:element name="UnitOfMeasure" />
+                                      <xs:element name="ResellerUnitPrice" />
+                                      <xs:element name="ExtendedLineSales" />
+                                      <xs:element name="LineSalesTotal" />
+                                      <xs:element name="LineTerms" />
+                                      <xs:element name="ReserveSequenceNbr" />
+                                      <xs:element name="VendorPartNumber" />
+                                      <xs:element name="VendorName" />
+                                      <xs:element name="SelSrcSls" />
+                                      <xs:element name="SelSrcAcctno" />
+                                      <xs:element name="FreeItemSwitch" />
+                                      <xs:element name="SystemComponentSwitch" />
+                                      <xs:element name="CustomerSKU" />
+                                      <xs:element name="ConfigInformation">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="ConfigIndicator" type="xs:string" />
+                                            <xs:element name="ConfigStatus" type="xs:string" />
+                                            <xs:element name="ConfigAssemblyCode" type="xs:string" />
+                                            <xs:element name="ConfigLabCode" type="xs:string" />
+                                            <xs:element name="ConfigOnHoldSw" type="xs:string" />
+                                            <xs:element name="ConfigPcrCnt" type="xs:string" />
+                                            <xs:element name="ConfigPchCnt" type="xs:string" />
+                                            <xs:element name="ConfigStgCnt" type="xs:string" />
+                                            <xs:element name="ConfigSthCnt" type="xs:string" />
+                                            <xs:element name="ConfigWipCnt" type="xs:string" />
+                                            <xs:element name="ConfigQaaCnt" type="xs:string" />
+                                            <xs:element name="ConfigQahCnt" type="xs:string" />
+                                            <xs:element name="ConfigBinCnt" type="xs:string" />
+                                            <xs:element name="ConfigOshCnt" type="xs:string" />
+                                            <xs:element name="ConfigHoldReasonText" type="xs:string" />
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="SkuSerialNumber">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="SerialNumber" />
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="CommentLine">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="CommentText" />
+                                      <xs:element name="CommentLineNumber" />
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="Suffix" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

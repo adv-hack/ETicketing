@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://localhost/TradingPortal" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="CustomerSearchResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Version" type="xs:decimal" />
+                <xs:element name="TransactionHeader">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="SenderID" />
+                            <xs:element name="ReceiverID" />
+                            <xs:element name="ErrorStatus">
+                                <xs:complexType>
+                                    <xs:attribute name="ErrorNumber" type="xs:string" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="DocumentID" type="xs:string" />
+                            <xs:element name="TransactionID" type="xs:unsignedInt" />
+                            <xs:element name="TimeStamp" type="xs:dateTime" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="CustomerSearch">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Response">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="ReturnCode" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="Customers">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element maxOccurs="unbounded" name="Customer">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="CustomerNo" type="xs:string" />
+                                                    <xs:element name="ContactTitle" type="xs:string" />
+                                                    <xs:element name="ContactInitials" type="xs:string" />
+                                                    <xs:element name="ContactForename" type="xs:string" />
+                                                    <xs:element name="ContactSurname" type="xs:string" /> 
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

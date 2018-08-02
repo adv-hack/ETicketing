@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RemoveExpiredTicketingBasketsRequest>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID></SenderID>
+    <ReceiverID></ReceiverID>
+    <CountryCode></CountryCode>
+    <LoginID>CSGroup</LoginID>
+    <Password>Password</Password>
+    <Company>CSG</Company>
+    <TransactionID></TransactionID>
+  </TransactionHeader>
+
+  <RemoveExpiredTicketingBaskets></RemoveExpiredTicketingBaskets>
+  <SQLConnectionStrings>
+    <ConnectionString></ConnectionString>
+    <ConnectionString></ConnectionString>
+    <ConnectionString></ConnectionString>
+  </SQLConnectionStrings>
+</RemoveExpiredTicketingBasketsRequest>
+  

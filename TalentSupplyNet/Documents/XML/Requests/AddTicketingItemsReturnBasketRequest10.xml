@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AddTicketingItemsReturnBasketRequest>
+	<Version>1.0</Version>
+	<TransactionHeader>
+		<SenderID></SenderID>
+		<ReceiverID></ReceiverID>
+		<CountryCode></CountryCode>
+		<LoginID>IRIS</LoginID>
+		<Password>IRIS</Password>
+		<Company>IRIS</Company>
+		<TransactionID></TransactionID>
+	</TransactionHeader>
+	<Header>
+		<SessionID>301304302103020111006066338864979712</SessionID>
+		<ReservationMethod></ReservationMethod>
+		<ProductCode>HCL132</ProductCode>
+		<StandCode>*ALL</StandCode>
+		<AreaCode>*ALL</AreaCode>
+		<CustomerNumber>000000010515</CustomerNumber>
+		<DefaultPrice>25.00</DefaultPrice>
+	</Header>
+	<Item>
+		<RowSeat></RowSeat>
+		<PriceBand>A</PriceBand>
+		<Quantity>1</Quantity>
+	</Item>
+</AddTicketingItemsReturnBasketRequest>

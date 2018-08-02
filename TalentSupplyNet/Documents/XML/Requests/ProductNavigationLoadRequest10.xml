@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProductNavigationLoadRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID />
+    <ReceiverID />
+    <CountryCode />
+    <LoginID />
+    <Password />
+    <Company />
+    <TransactionID />
+  </TransactionHeader>
+  <ProductGroupDefinitions Mode="REPLACE" Total="14">
+    <ProductGroup Mode="ADD">
+      <Code>133-Coffee machines</Code>
+      <Details Language="ENG">
+        <Description1>Coffee Machines</Description1>
+        <PageTitle>Buy Coffee Machines</PageTitle>
+      </Details>
+    </ProductGroup>
+    <ProductGroup Mode="ADD">
+      <Code>132-Food Prep</Code>
+      <Details Language="ENG">
+        <Description1>Food Preperation</Description1>
+        <PageTitle>Buy Hand Blenders</PageTitle>
+      </Details>
+    </ProductGroup>
+    <ProductGroup Mode="ADD">
+      <Code>128-Microwaves</Code>
+      <Details Language="ENG">
+        <Description1>Microwaves</Description1>
+        <PageTitle>Microwaves | Microwave Grill Ovens | Beko UK</PageTitle>
+        <MetaDescription>Our new range of microwaves makes cooking healthy meals super fast and easy. Choose from a variety of features and functions to suit your needs.</MetaDescription>
+      </Details>
+    </ProductGroup>
+    <ProductGroup Mode="ADD">
+      <Code>131-Irons</Code>
+      <Details Language="ENG">
+        <Description1>Irons</Description1>
+        <PageTitle>Buy Irons</PageTitle>
+      </Details>
+    </ProductGroup>
+    <ProductGroup Mode="ADD">
+      <Code>130-Toasters</Code>
+      <Details Language="ENG">
+        <Description1>Toasters</Description1>
+        <PageTitle>Buy Toasters</PageTitle>
+      </Details>
+    </ProductGroup>
+    <ProductGroup Mode="ADD">
+      <Code>129-Kettles</Code>
+      <Details Language="ENG">
+        <Description1>Kettles</Description1>
+        <PageTitle>Electric Kettles | 1.65 Litre with Opening Lid | Beko UK</PageTitle>
+        <MetaDescription>Boil water with ease using one of our electric kettles. With temperature control and a detachable limescale filter, our kettles are easy to use.</MetaDescription>
+      </Details>
+    </ProductGroup>
+    <ProductGroup Mode="ADD">
+      <Code>134-Vacuum Cleaners</Code>
+      <Details Language="ENG">
+        <Description1>Vacuum Cleaners</Description1>
+        <PageTitle>Buy Vacuum Cleaners</PageTitle>
+      </Details>
+    </ProductGroup>
+    <ProductGroup Mode="ADD">
+      <Code>133-Bean to cup-Coff</Code>
+      <Details Language="ENG">
+        <Description1>Bean to cup</Description1>
+        <PageTitle>Buy Coffee Machines</PageTitle>
+      </Details>
+    </ProductGroup>
+    <ProductGroup Mode="ADD">
+      <Code>133-Filter-Coffee ma</Code>
+      <Details Language="ENG">
+        <Description1>Filter</Description1>
+        <PageTitle>Buy Coffee Machines</PageTitle>
+      </Details>
+    </ProductGroup>
+    <ProductGroup Mode="ADD">
+      <Code>128-700 Watts-Microw</Code>
+      <Details Language="ENG">
+        <Description1>700 Watts</Description1>
+        <PageTitle>Microwaves | Microwave Grill Ovens | Beko UK</PageTitle>
+        <MetaDescription>Our new range of microwaves makes cooking healthy meals super fast and easy. Choose from a variety of features and functions to suit your needs.</MetaDescription>
+      </Details>
+    </ProductGroup>
+    <ProductGroup Mode="ADD">
+      <Code>128-800 Watts-Microw</Code>
+      <Details Language="ENG">
+        <Description1>800 Watts</Description1>
+        <PageTitle>Microwaves | Microwave Grill Ovens | Beko UK</PageTitle>
+        <MetaDescription>Our new range of microwaves makes cooking healthy meals super fast and easy. Choose from a variety of features and functions to suit your needs.</MetaDescription>
+      </Details>
+    </ProductGroup>
+    <ProductGroup Mode="ADD">
+      <Code>131-Steam Station-Ir</Code>
+      <Details Language="ENG">
+        <Description1>Steam Station</Description1>
+        <PageTitle>Buy Irons</PageTitle>
+      </Details>
+    </ProductGroup>
+    <ProductGroup Mode="ADD">
+      <Code>131-Steam Iron-Irons</Code>
+      <Details Language="ENG">
+        <Description1>Steam Iron</Description1>
+        <PageTitle>Buy Irons</PageTitle>
+      </Details>
+    </ProductGroup>
+    <ProductGroup Mode="ADD">
+      <Code>131-Hybrid Steam Iro</Code>
+      <Details Language="ENG">
+        <Description1>Hybrid Steam Iron</Description1>
+        <PageTitle>Buy Irons</PageTitle>
+      </Details>
+    </ProductGroup>
+  </ProductGroupDefinitions>
+  <ProductGroupHierarchies Total="1">
+    <ProductGroupHierarchy BusinessUnit="BEKO" Partner="*ALL" Mode="REPLACE">
+      <Defaults>
+        <LastProductAfterLevel>2</LastProductAfterLevel>
+      </Defaults>
+      <Level1 Total="7">
+        <ProductGroup Mode="ADD">
+          <Code>133-Coffee machines</Code>
+          <DisplaySequence>000001</DisplaySequence>
+          <AdvancedSearchTemplate />
+          <ProductPageTemplate />
+          <ProductListTemplate>1</ProductListTemplate>
+          <ShowChildrenAsGroups>false</ShowChildrenAsGroups>
+          <ShowProductsAsList>false</ShowProductsAsList>
+          <ShowInNavigation>true</ShowInNavigation>
+          <HTMLGroup>true</HTMLGroup>
+          <HTMLGroupType>DB</HTMLGroupType>
+          <ShowProductDisplay>true</ShowProductDisplay>
+          <Theme />
+          <Details Language="ENG">
+            <Description1>Coffee machines</Description1>
+            <Description2>Coffee machines desc 2</Description2>
+            <HTML1>
+              <![CDATA[<div class="large-12 columns ebiz-browse-html-image"><img src="https://fiftyeggs.blob.core.windows.net/bekoupload/category/Banner-Appliance-SDA-Coffee.jpg" alt="Beko Coffee Machines"></div>
+]]>
+            </HTML1>
+            <HTML2><![CDATA[<div class="ebiz-browse-html-description"><p>Beko’s new range of coffee machines are perfect for when you and your family want to sit down together for a relaxing coffee break. The filter coffee machines from our Sense range let you control the strength of your coffee while our Bean to Cup coffee machine comes with an integrated milk frother, so you can enjoy a barista style coffee experience from the comfort of your home.</p></div>]]></HTML2>
+            <PageTitle>Buy Coffee Machines</PageTitle>
+            <MetaDescription>m desc</MetaDescription>
+            <MetaKeywords>m keywords</MetaKeywords>
+          </Details>
+          <Level2 Total="2">
+            <ProductGroup Mode="ADD">
+              <Code>133-Bean to cup-Coff</Code>
+              <DisplaySequence>000002</DisplaySequence>
+              <AdvancedSearchTemplate />
+              <ProductPageTemplate />
+              <ProductListTemplate>1</ProductListTemplate>
+              <ShowChildrenAsGroups>false</ShowChildrenAsGroups>
+              <ShowProductsAsList>false</ShowProductsAsList>
+              <ShowInNavigation>true</ShowInNavigation>
+              <ShowInGroupedNavigation>false</ShowInGroupedNavigation>
+              <HTMLGroup>false</HTMLGroup>
+              <HTMLGroupType />
+              <ShowProductDisplay>true</ShowProductDisplay>
+              <Theme>BEKO</Theme>
+              <Details Language="ENG">
+                <Description1>Coffee machines</Description1>
+                <HTML1>
+                  <![CDATA[<div class="large-12 columns ebiz-browse-html-image"><img src="https://fiftyeggs.blob.core.windows.net/bekoupload/category/Banner-Appliance-SDA-Coffee.jpg" alt="Beko Coffee Machines"></div>
+]]>
+                </HTML1>
+                <HTML2><![CDATA[<div class="ebiz-browse-html-description"><p>Beko’s new range of coffee machines are perfect for when you and your family want to sit down together for a relaxing coffee break. The filter coffee machines from our Sense range let you control the strength of your coffee while our Bean to Cup coffee machine comes with an integrated milk frother, so you can enjoy a barista style coffee experience from the comfort of your home.</p></div>]]></HTML2>
+                <PageTitle>Buy Coffee Machines</PageTitle>
+                <MetaKeywords />
+              </Details>
+              <Products Total="1">
+                <Product>
+                  <SKU>8835733200</SKU>
+                  <DisplaySequence>000003</DisplaySequence>
+                </Product>
+              </Products>
+            </ProductGroup>
+            <ProductGroup Mode="ADD">
+              <Code>133-Filter-Coffee ma</Code>
+              <DisplaySequence>000004</DisplaySequence>
+              <AdvancedSearchTemplate />
+              <ProductPageTemplate />
+              <ProductListTemplate>1</ProductListTemplate>
+              <ShowChildrenAsGroups>false</ShowChildrenAsGroups>
+              <ShowProductsAsList>false</ShowProductsAsList>
+              <ShowInNavigation>true</ShowInNavigation>
+              <ShowInGroupedNavigation>false</ShowInGroupedNavigation>
+              <HTMLGroup>false</HTMLGroup>
+              <HTMLGroupType />
+              <ShowProductDisplay>true</ShowProductDisplay>
+              <Theme>BEKO</Theme>
+              <Details Language="ENG">
+                <Description1>Coffee machines</Description1>
+                <HTML1>
+                  <![CDATA[<div class="large-12 columns ebiz-browse-html-image"><img src="https://fiftyeggs.blob.core.windows.net/bekoupload/category/Banner-Appliance-SDA-Coffee.jpg" alt="Beko Coffee Machines"></div>
+]]>
+                </HTML1>
+                <HTML2><![CDATA[<div class="ebiz-browse-html-description"><p>Beko’s new range of coffee machines are perfect for when you and your family want to sit down together for a relaxing coffee break. The filter coffee machines from our Sense range let you control the strength of your coffee while our Bean to Cup coffee machine comes with an integrated milk frother, so you can enjoy a barista style coffee experience from the comfort of your home.</p></div>]]></HTML2>
+                <PageTitle>Buy Coffee Machines</PageTitle>
+                <MetaKeywords />
+              </Details>
+              <Products Total="2">
+                <Product>
+                  <SKU>8835693200</SKU>
+                  <DisplaySequence>000005</DisplaySequence>
+                </Product>
+                <Product>
+                  <SKU>8836963200</SKU>
+                  <DisplaySequence>000006</DisplaySequence>
+                </Product>
+              </Products>
+            </ProductGroup>
+          </Level2>
+        </ProductGroup>
+        <ProductGroup Mode="ADD">
+          <Code>132-Food Prep</Code>
+          <DisplaySequence>000006</DisplaySequence>
+          <AdvancedSearchTemplate />
+          <ProductPageTemplate />
+          <ProductListTemplate>1</ProductListTemplate>
+          <ShowChildrenAsGroups>false</ShowChildrenAsGroups>
+          <ShowProductsAsList>false</ShowProductsAsList>
+          <ShowInNavigation>true</ShowInNavigation>
+          <HTMLGroup>true</HTMLGroup>
+          <HTMLGroupType>DB</HTMLGroupType>
+          <ShowProductDisplay>true</ShowProductDisplay>
+          <Theme />
+          <Details Language="ENG">
+            <Description1>Food Prep</Description1>
+            <HTML1>
+              <![CDATA[<div class="large-12 columns ebiz-browse-html-image"><img src="https://fiftyeggs.blob.core.windows.net/bekoupload/category/Banner-Appliance-SDA-Food-Prep.jpg" alt="Beko Food Prep"></div>
+]]>
+            </HTML1>
+            <HTML2><![CDATA[<div class="ebiz-browse-html-description"><p>Beko’s new range of food preparation appliances is perfect for those kitchen gadget lovers. If you’re looking for a handy solution to your daily food preparation needs, we offer a range of hand blender sets which come with a selection of accessories to help you save time in the kitchen.</p></div>]]></HTML2>
+            <PageTitle>Buy Hand Blenders</PageTitle>
+            <MetaKeywords />
+          </Details>
+          <Products Total="1">
+            <Product>
+              <SKU>8836873200</SKU>
+              <DisplaySequence>000007</DisplaySequence>
+            </Product>
+          </Products>
+        </ProductGroup>
+        <ProductGroup Mode="ADD">
+          <Code>128-Microwaves</Code>
+          <DisplaySequence>000007</DisplaySequence>
+          <AdvancedSearchTemplate />
+          <ProductPageTemplate />
+          <ProductListTemplate>1</ProductListTemplate>
+          <ShowChildrenAsGroups>false</ShowChildrenAsGroups>
+          <ShowProductsAsList>false</ShowProductsAsList>
+          <ShowInNavigation>true</ShowInNavigation>
+          <HTMLGroup>true</HTMLGroup>
+          <HTMLGroupType>DB</HTMLGroupType>
+          <ShowProductDisplay>true</ShowProductDisplay>
+          <Theme />
+          <Details Language="ENG">
+            <Description1>Microwaves</Description1>
+            <HTML1><![CDATA[<div class="large-12 columns ebiz-browse-html-image"><img src="https://fiftyeggs.blob.core.windows.net/bekoupload/category/Banner-Appliance-SDA-Microwaves.jpg" alt="Beko Microwaves"></div>]]></HTML1>
+            <HTML2><![CDATA[<div class="ebiz-browse-html-description"><p>Beko’s range of microwaves help you get exactly what you want, and fast. Whether you need to re-heat leftovers for dinner or defrost your mincemeat, we offer microwaves packed with features that help save time in the kitchen. With a host of freestanding and built-in models to choose from, our microwaves also match our built-in ovens, helping your kitchen look stylish and co-ordinated.</p></div>]]></HTML2>
+            <PageTitle>Microwaves | Microwave Grill Ovens | Beko UK</PageTitle>
+            <MetaDescription>Our new range of microwaves makes cooking healthy meals super fast and easy. Choose from a variety of features and functions to suit your needs.</MetaDescription>
+            <MetaKeywords />
+          </Details>
+          <Level2 Total="2">
+            <ProductGroup Mode="ADD">
+              <Code>128-700 Watts-Microw</Code>
+              <DisplaySequence>000008</DisplaySequence>
+              <AdvancedSearchTemplate />
+              <ProductPageTemplate />
+              <ProductListTemplate>1</ProductListTemplate>
+              <ShowChildrenAsGroups>false</ShowChildrenAsGroups>
+              <ShowProductsAsList>false</ShowProductsAsList>
+              <ShowInNavigation>true</ShowInNavigation>
+              <ShowInGroupedNavigation>false</ShowInGroupedNavigation>
+              <HTMLGroup>false</HTMLGroup>
+              <HTMLGroupType />
+              <ShowProductDisplay>true</ShowProductDisplay>
+              <Theme>BEKO</Theme>
+              <Details Language="ENG">
+                <Description1>Microwaves</Description1>
+                <HTML1><![CDATA[<div class="large-12 columns ebiz-browse-html-image"><img src="https://fiftyeggs.blob.core.windows.net/bekoupload/category/Banner-Appliance-SDA-Microwaves.jpg" alt="Beko Microwaves"></div>]]></HTML1>
+                <HTML2><![CDATA[<div class="ebiz-browse-html-description"><p>Beko’s range of microwaves help you get exactly what you want, and fast. Whether you need to re-heat leftovers for dinner or defrost your mincemeat, we offer microwaves packed with features that help save time in the kitchen. With a host of freestanding and built-in models to choose from, our microwaves also match our built-in ovens, helping your kitchen look stylish and co-ordinated.</p></div>]]></HTML2>
+                <PageTitle>Microwaves | Microwave Grill Ovens | Beko UK</PageTitle>
+                <MetaDescription>Our new range of microwaves makes cooking healthy meals super fast and easy. Choose from a variety of features and functions to suit your needs.</MetaDescription>
+                <MetaKeywords />
+              </Details>
+              <Products Total="4">
+                <Product>
+                  <SKU>8850403200</SKU>
+                  <DisplaySequence>000009</DisplaySequence>
+                </Product>
+                <Product>
+                  <SKU>8850423200</SKU>
+                  <DisplaySequence>000010</DisplaySequence>
+                </Product>
+                <Product>
+                  <SKU>8850443200</SKU>
+                  <DisplaySequence>000011</DisplaySequence>
+                </Product>
+                <Product>
+                  <SKU>8854293200</SKU>
+                  <DisplaySequence>000012</DisplaySequence>
+                </Product>
+              </Products>
+            </ProductGroup>
+            <ProductGroup Mode="ADD">
+              <Code>128-800 Watts-Microw</Code>
+              <DisplaySequence>000013</DisplaySequence>
+              <AdvancedSearchTemplate />
+              <ProductPageTemplate />
+              <ProductListTemplate>1</ProductListTemplate>
+              <ShowChildrenAsGroups>false</ShowChildrenAsGroups>
+              <ShowProductsAsList>false</ShowProductsAsList>
+              <ShowInNavigation>true</ShowInNavigation>
+              <ShowInGroupedNavigation>false</ShowInGroupedNavigation>
+              <HTMLGroup>false</HTMLGroup>
+              <HTMLGroupType />
+              <ShowProductDisplay>true</ShowProductDisplay>
+              <Theme>BEKO</Theme>
+              <Details Language="ENG">
+                <Description1>Microwaves</Description1>
+                <HTML1><![CDATA[<div class="large-12 columns ebiz-browse-html-image"><img src="https://fiftyeggs.blob.core.windows.net/bekoupload/category/Banner-Appliance-SDA-Microwaves.jpg" alt="Beko Microwaves"></div>]]></HTML1>
+                <HTML2><![CDATA[<div class="ebiz-browse-html-description"><p>Beko’s range of microwaves help you get exactly what you want, and fast. Whether you need to re-heat leftovers for dinner or defrost your mincemeat, we offer microwaves packed with features that help save time in the kitchen. With a host of freestanding and built-in models to choose from, our microwaves also match our built-in ovens, helping your kitchen look stylish and co-ordinated.</p></div>]]></HTML2>
+                <PageTitle>Microwaves | Microwave Grill Ovens | Beko UK</PageTitle>
+                <MetaDescription>Our new range of microwaves makes cooking healthy meals super fast and easy. Choose from a variety of features and functions to suit your needs.</MetaDescription>
+                <MetaKeywords />
+              </Details>
+              <Products Total="1">
+                <Product>
+                  <SKU>8854283200</SKU>
+                  <DisplaySequence>000014</DisplaySequence>
+                </Product>
+              </Products>
+            </ProductGroup>
+          </Level2>
+        </ProductGroup>
+        <ProductGroup Mode="ADD">
+          <Code>131-Irons</Code>
+          <DisplaySequence>000014</DisplaySequence>
+          <AdvancedSearchTemplate />
+          <ProductPageTemplate />
+          <ProductListTemplate>1</ProductListTemplate>
+          <ShowChildrenAsGroups>false</ShowChildrenAsGroups>
+          <ShowProductsAsList>false</ShowProductsAsList>
+          <ShowInNavigation>true</ShowInNavigation>
+          <HTMLGroup>true</HTMLGroup>
+          <HTMLGroupType>DB</HTMLGroupType>
+          <ShowProductDisplay>true</ShowProductDisplay>
+          <Theme />
+          <Details Language="ENG">
+            <Description1>Irons</Description1>
+            <HTML1>
+              <![CDATA[<div class="large-12 columns ebiz-browse-html-image"><img src="https://fiftyeggs.blob.core.windows.net/bekoupload/category/Banner-Appliance-SDA-Irons.jpg" alt="Beko Irons"></div>
+]]>
+            </HTML1>
+            <HTML2><![CDATA[<div class="ebiz-browse-html-description"><p>Beko’s new range of irons offers useful features which help deal with even the most stubborn of creases. Whether you’re someone who irons once in a while or someone who spends Saturday morning ironing a whole load of laundry, there’s a Beko iron for every home.</p></div>]]></HTML2>
+            <PageTitle>Buy Irons</PageTitle>
+            <MetaKeywords />
+          </Details>
+          <Level2 Total="3">
+            <ProductGroup Mode="ADD">
+              <Code>131-Steam Station-Ir</Code>
+              <DisplaySequence>000015</DisplaySequence>
+              <AdvancedSearchTemplate />
+              <ProductPageTemplate />
+              <ProductListTemplate>1</ProductListTemplate>
+              <ShowChildrenAsGroups>false</ShowChildrenAsGroups>
+              <ShowProductsAsList>false</ShowProductsAsList>
+              <ShowInNavigation>true</ShowInNavigation>
+              <ShowInGroupedNavigation>false</ShowInGroupedNavigation>
+              <HTMLGroup>false</HTMLGroup>
+              <HTMLGroupType />
+              <ShowProductDisplay>true</ShowProductDisplay>
+              <Theme>BEKO</Theme>
+              <Details Language="ENG">
+                <Description1>Irons</Description1>
+                <HTML1>
+                  <![CDATA[<div class="large-12 columns ebiz-browse-html-image"><img src="https://fiftyeggs.blob.core.windows.net/bekoupload/category/Banner-Appliance-SDA-Irons.jpg" alt="Beko Irons"></div>
+]]>
+                </HTML1>
+                <HTML2><![CDATA[<div class="ebiz-browse-html-description"><p>Beko’s new range of irons offers useful features which help deal with even the most stubborn of creases. Whether you’re someone who irons once in a while or someone who spends Saturday morning ironing a whole load of laundry, there’s a Beko iron for every home.</p></div>]]></HTML2>
+                <PageTitle>Buy Irons</PageTitle>
+                <MetaKeywords />
+              </Details>
+              <Products Total="1">
+                <Product>
+                  <SKU>8834973200</SKU>
+                  <DisplaySequence>000016</DisplaySequence>
+                </Product>
+              </Products>
+            </ProductGroup>
+            <ProductGroup Mode="ADD">
+              <Code>131-Steam Iron-Irons</Code>
+              <DisplaySequence>000017</DisplaySequence>
+              <AdvancedSearchTemplate />
+              <ProductPageTemplate />
+              <ProductListTemplate>1</ProductListTemplate>
+              <ShowChildrenAsGroups>false</ShowChildrenAsGroups>
+              <ShowProductsAsList>false</ShowProductsAsList>
+              <ShowInNavigation>true</ShowInNavigation>
+              <ShowInGroupedNavigation>false</ShowInGroupedNavigation>
+              <HTMLGroup>false</HTMLGroup>
+              <HTMLGroupType />
+              <ShowProductDisplay>true</ShowProductDisplay>
+              <Theme>BEKO</Theme>
+              <Details Language="ENG">
+                <Description1>Irons</Description1>
+                <HTML1>
+                  <![CDATA[<div class="large-12 columns ebiz-browse-html-image"><img src="https://fiftyeggs.blob.core.windows.net/bekoupload/category/Banner-Appliance-SDA-Irons.jpg" alt="Beko Irons"></div>
+]]>
+                </HTML1>
+                <HTML2><![CDATA[<div class="ebiz-browse-html-description"><p>Beko’s new range of irons offers useful features which help deal with even the most stubborn of creases. Whether you’re someone who irons once in a while or someone who spends Saturday morning ironing a whole load of laundry, there’s a Beko iron for every home.</p></div>]]></HTML2>
+                <PageTitle>Buy Irons</PageTitle>
+                <MetaKeywords />
+              </Details>
+              <Products Total="1">
+                <Product>
+                  <SKU>8836843200</SKU>
+                  <DisplaySequence>000018</DisplaySequence>
+                </Product>
+              </Products>
+            </ProductGroup>
+            <ProductGroup Mode="ADD">
+              <Code>131-Hybrid Steam Iro</Code>
+              <DisplaySequence>000019</DisplaySequence>
+              <AdvancedSearchTemplate />
+              <ProductPageTemplate />
+              <ProductListTemplate>1</ProductListTemplate>
+              <ShowChildrenAsGroups>false</ShowChildrenAsGroups>
+              <ShowProductsAsList>false</ShowProductsAsList>
+              <ShowInNavigation>true</ShowInNavigation>
+              <ShowInGroupedNavigation>false</ShowInGroupedNavigation>
+              <HTMLGroup>false</HTMLGroup>
+              <HTMLGroupType />
+              <ShowProductDisplay>true</ShowProductDisplay>
+              <Theme>BEKO</Theme>
+              <Details Language="ENG">
+                <Description1>Irons</Description1>
+                <HTML1>
+                  <![CDATA[<div class="large-12 columns ebiz-browse-html-image"><img src="https://fiftyeggs.blob.core.windows.net/bekoupload/category/Banner-Appliance-SDA-Irons.jpg" alt="Beko Irons"></div>
+]]>
+                </HTML1>
+                <HTML2><![CDATA[<div class="ebiz-browse-html-description"><p>Beko’s new range of irons offers useful features which help deal with even the most stubborn of creases. Whether you’re someone who irons once in a while or someone who spends Saturday morning ironing a whole load of laundry, there’s a Beko iron for every home.</p></div>]]></HTML2>
+                <PageTitle>Buy Irons</PageTitle>
+                <MetaKeywords />
+              </Details>
+              <Products Total="2">
+                <Product>
+                  <SKU>8836263200</SKU>
+                  <DisplaySequence>000020</DisplaySequence>
+                </Product>
+                <Product>
+                  <SKU>8834963200</SKU>
+                  <DisplaySequence>000021</DisplaySequence>
+                </Product>
+              </Products>
+            </ProductGroup>
+          </Level2>
+        </ProductGroup>
+        <ProductGroup Mode="ADD">
+          <Code>130-Toasters</Code>
+          <DisplaySequence>000021</DisplaySequence>
+          <AdvancedSearchTemplate />
+          <ProductPageTemplate />
+          <ProductListTemplate>1</ProductListTemplate>
+          <ShowChildrenAsGroups>false</ShowChildrenAsGroups>
+          <ShowProductsAsList>false</ShowProductsAsList>
+          <ShowInNavigation>true</ShowInNavigation>
+          <HTMLGroup>true</HTMLGroup>
+          <HTMLGroupType>DB</HTMLGroupType>
+          <ShowProductDisplay>true</ShowProductDisplay>
+          <Theme />
+          <Details Language="ENG">
+            <Description1>Toasters</Description1>
+            <HTML1>
+              <![CDATA[<div class="large-12 columns ebiz-browse-html-image"><img src="https://fiftyeggs.blob.core.windows.net/bekoupload/category/Banner-Appliance-SDA-Kettles.jpg" alt="Beko Kettles"></div>
+]]>
+            </HTML1>
+            <HTML2><![CDATA[<div class="ebiz-browse-html-description"><p>Beko’s new Sense range offers kettles that come with useful features for when you need hot water in a hurry. Featuring models with 4 temperature settings and a keep warm function, our kettles help you enjoy your hot drink just the way you like it. What’s more, the kettles in our Sense range match our toasters, helping your kitchen look modern and co-ordinated.</p></div>]]></HTML2>
+            <PageTitle>Buy Toasters</PageTitle>
+            <MetaKeywords />
+          </Details>
+          <Products Total="2">
+            <Product>
+              <SKU>8835713200</SKU>
+              <DisplaySequence>000022</DisplaySequence>
+            </Product>
+            <Product>
+              <SKU>8836333200</SKU>
+              <DisplaySequence>000023</DisplaySequence>
+            </Product>
+          </Products>
+        </ProductGroup>
+        <ProductGroup Mode="ADD">
+          <Code>129-Kettles</Code>
+          <DisplaySequence>000023</DisplaySequence>
+          <AdvancedSearchTemplate />
+          <ProductPageTemplate />
+          <ProductListTemplate>1</ProductListTemplate>
+          <ShowChildrenAsGroups>false</ShowChildrenAsGroups>
+          <ShowProductsAsList>false</ShowProductsAsList>
+          <ShowInNavigation>true</ShowInNavigation>
+          <HTMLGroup>true</HTMLGroup>
+          <HTMLGroupType>DB</HTMLGroupType>
+          <ShowProductDisplay>true</ShowProductDisplay>
+          <Theme />
+          <Details Language="ENG">
+            <Description1>Beko’s new Sense range offers kettles that come with useful features for when you need hot water in a hurry. Featuring models with 4 temperature settings and a keep warm function, our kettles help you enjoy your hot drink just the way you like it. What’s more, the kettles in our Sense range match our toasters, helping your kitchen look modern and co-ordinated.</Description1>
+            <HTML1><![CDATA[<div class="large-12 columns ebiz-browse-html-image"><img src="https://fiftyeggs.blob.core.windows.net/bekoupload/category/Banner-Appliance-SDA-Kettles.jpg" alt="Beko Kettles"></div>]]></HTML1>
+            <HTML2><![CDATA[<div class="ebiz-browse-html-description"><p>Beko’s new Sense range offers kettles that come with useful features for when you need hot water in a hurry. Featuring models with 4 temperature settings and a keep warm function, our kettles help you enjoy your hot drink just the way you like it. What’s more, the kettles in our Sense range match our toasters, helping your kitchen look modern and co-ordinated.</p></div>]]></HTML2>
+            <PageTitle>Electric Kettles | 1.65 Litre with Opening Lid | Beko UK</PageTitle>
+            <MetaDescription>Boil water with ease using one of our electric kettles. With temperature control and a detachable limescale filter, our kettles are easy to use.</MetaDescription>
+            <MetaKeywords />
+          </Details>
+          <Products Total="4">
+            <Product>
+              <SKU>8835723200</SKU>
+              <DisplaySequence>000024</DisplaySequence>
+            </Product>
+            <Product>
+              <SKU>8836863200</SKU>
+              <DisplaySequence>000025</DisplaySequence>
+            </Product>
+            <Product>
+              <SKU>8835703200</SKU>
+              <DisplaySequence>000026</DisplaySequence>
+            </Product>
+            <Product>
+              <SKU>8836853200</SKU>
+              <DisplaySequence>000027</DisplaySequence>
+            </Product>
+          </Products>
+        </ProductGroup>
+        <ProductGroup Mode="ADD">
+          <Code>134-Vacuum Cleaners</Code>
+          <DisplaySequence>000027</DisplaySequence>
+          <AdvancedSearchTemplate />
+          <ProductPageTemplate />
+          <ProductListTemplate>1</ProductListTemplate>
+          <ShowChildrenAsGroups>false</ShowChildrenAsGroups>
+          <ShowProductsAsList>false</ShowProductsAsList>
+          <ShowInNavigation>true</ShowInNavigation>
+          <HTMLGroup>true</HTMLGroup>
+          <HTMLGroupType>DB</HTMLGroupType>
+          <ShowProductDisplay>true</ShowProductDisplay>
+          <Theme />
+          <Details Language="ENG">
+            <Description1>Vacuum Cleaners</Description1>
+            <HTML1>
+              <![CDATA[<div class="large-12 columns ebiz-browse-html-image"><img src="https://fiftyeggs.blob.core.windows.net/bekoupload/category/Banner-Appliance-SDA-Vacuum-Cleaners.jpg" alt="Beko Vacuum Cleaners"></div>
+]]>
+            </HTML1>
+            <HTML2><![CDATA[<div class="ebiz-browse-html-description"><p>Beko’s new range of vacuum cleaners helps you clean your home deeply and efficiently. Whether you’re after the convenience of a bagless vacuum or the flexibility of using a cordless vacuum, our range of vacuums offers powerful and effortless cleaning for each of the floor types in your home.</p></div>]]></HTML2>
+            <PageTitle>Buy Vacuum Cleaners</PageTitle>
+            <MetaKeywords />
+          </Details>
+          <Products Total="4">
+            <Product>
+              <SKU>8836873200</SKU>
+              <DisplaySequence>000028</DisplaySequence>
+            </Product>
+            <Product>
+              <SKU>8837713200</SKU>
+              <DisplaySequence>000029</DisplaySequence>
+            </Product>
+            <Product>
+              <SKU>8835743200</SKU>
+              <DisplaySequence>000030</DisplaySequence>
+            </Product>
+            <Product>
+              <SKU>8837723200</SKU>
+              <DisplaySequence>000031</DisplaySequence>
+            </Product>
+          </Products>
+        </ProductGroup>
+      </Level1>
+    </ProductGroupHierarchy>
+  </ProductGroupHierarchies>
+</ProductNavigationLoadRequest>

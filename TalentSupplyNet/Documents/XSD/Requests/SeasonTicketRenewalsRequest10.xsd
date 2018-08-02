@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="SeasonTicketRenewalsRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Version" type="xs:decimal" />
+        <xs:element name="TransactionHeader">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SenderID" />
+              <xs:element name="ReceiverID" />
+              <xs:element name="CountryCode" />
+              <xs:element name="LoginID" type="xs:string" />
+              <xs:element name="Password" type="xs:string" />
+              <xs:element name="Company" type="xs:string" />
+              <xs:element name="TransactionID" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SeasonTicketRenewals">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="Renewal">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="CustomerNo" type="xs:string" />
+                    <xs:element name="StadiumCode" type="xs:string" />
+                    <xs:element name="Stand" type="xs:string" />
+                    <xs:element name="Area" type="xs:string" />
+                    <xs:element name="Row" type="xs:string" />
+                    <xs:element name="Seat" type="xs:string" />
+                    <xs:element name="Suffix" type="xs:string" />
+                    <xs:element name="Payment">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="PaymentMode" type="xs:string" />
+                          <xs:element name="PaymentMethod" type="xs:string" />
+                          <xs:element name="SessionId" />
+                          <xs:element name="ChequeNumber" type="xs:string" minOccurs="0" maxOccurs="1" />
+                          <xs:element name="ChequeAccount" type="xs:string" minOccurs="0" maxOccurs="1" />
+
+                          <xs:element name="CardNumber" type="xs:string" />
+                          <xs:element name="ExpiryDate" type="xs:unsignedShort" />
+                          <xs:element name="StartDate" />
+                          <xs:element name="IssueNumber" />
+                          <xs:element name="CV2Number" />
+                          <xs:element name="PaymentDetails">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Reference" minOccurs="0" />
+                                <xs:element name="Name" minOccurs="0"/>
+                                <xs:element name="Address1" minOccurs="0" />
+                                <xs:element name="Address2" minOccurs="0" />
+                                <xs:element name="Address3" minOccurs="0" />
+                                <xs:element name="Address4" minOccurs="0" />
+                                <xs:element name="Country" minOccurs="0" />
+                                <xs:element name="PostCode" minOccurs="0" />
+                                <xs:element name="Telephone1" minOccurs="0" />
+                                <xs:element name="Telephone2" minOccurs="0" />
+                                <xs:element name="Telephone3" minOccurs="0" />
+                                <xs:element name="EmailAddress" minOccurs="0" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

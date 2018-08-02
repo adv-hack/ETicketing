@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="AmendTemplateRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Version" type="xs:decimal" />
+        <xs:element name="TransactionHeader">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SenderID" type="xs:string" />
+              <xs:element name="ReceiverID" type="xs:string" />
+              <xs:element name="CountryCode" type="xs:string" />
+              <xs:element name="LoginID" type="xs:string" />
+              <xs:element name="Password" type="xs:string" />
+              <xs:element name="Company" type="xs:string" />
+              <xs:element name="TransactionID" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ProcessingOptions">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AddNewTemplate" type="xs:string" />
+              <xs:element name="ReplaceTemplate" type="xs:string" />
+              <xs:element name="AddToTemplate" type="xs:string" />
+              <xs:element name="DeleteTemplate" type="xs:string" />
+              <xs:element name="DeleteFromTemplate" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TemplateHeader">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BusinessUnit" type="xs:string" />
+              <xs:element name="Partner" type="xs:string" />
+              <xs:element name="UserID" type="xs:string" />
+              <xs:element name="Name" type="xs:string" />
+              <xs:element name="Description" type="xs:string" />
+              <xs:element name="IsDefault" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element maxOccurs="unbounded" name="TemplateLine">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Product" type="xs:string" />
+              <xs:element name="Quantity" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

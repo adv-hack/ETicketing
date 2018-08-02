@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CustomerUpdateRequest>
+  <Version>1.1</Version>
+  <TransactionHeader>
+    <SenderID></SenderID>
+    <ReceiverID></ReceiverID>
+    <CountryCode></CountryCode>
+    <LoginID>CSGroup</LoginID>
+    <Password>Password</Password>
+    <Company>CSG</Company>
+    <TransactionID></TransactionID>
+  </TransactionHeader>
+  <Defaults>
+    <BusinessUnit>BEKO</BusinessUnit>
+  </Defaults>
+  <CustomerUpdate>
+    <Sites Total="1">
+      <Site Mode="">
+        <Name>IRIS</Name>
+        <AccountNumber1></AccountNumber1>
+        <AccountNumber2></AccountNumber2>
+        <AccountNumber3></AccountNumber3>
+        <AccountNumber4></AccountNumber4>
+        <AccountNumber5></AccountNumber5>
+        <Address>
+          <Line1>Market Street</Line1>
+          <Line2>Market Street</Line2>
+          <Line3>Nantwich</Line3>
+          <Line4>Cheshire</Line4>
+          <Line5>England</Line5>
+          <PostCode>CW5 5DQ</PostCode>
+          <Country>United Kingdom</Country>
+        </Address>
+        <TelephoneNumber></TelephoneNumber>
+        <FaxNumber></FaxNumber>
+        <VATNumber></VATNumber>
+        <URL></URL>
+        <ID></ID>
+        <CRMBranch></CRMBranch>
+        <Contacts Total="">
+          <Contact Mode="">
+            <Title>Mr</Title>
+            <Initials>D</Initials>
+            <Forename>Derek</Forename>
+            <Surname>Webster</Surname>
+            <FullName>Derek Webster</FullName>
+            <Salutation>Des</Salutation>
+            <EmailAddress>des.Webster@computersoftware.com</EmailAddress>
+            <LoginID></LoginID>
+            <Password></Password>
+            <AccountNumber1></AccountNumber1>
+            <AccountNumber2></AccountNumber2>
+            <AccountNumber3></AccountNumber3>
+            <AccountNumber4></AccountNumber4>
+            <AccountNumber5></AccountNumber5>
+            <Addresses Total="">
+              <Address Mode="">
+                <SequenceNumber>1</SequenceNumber>
+                <Default>True</Default>
+                <Reference>Default Address</Reference>
+                <Line1>Market Street</Line1>
+                <Line2>Market Street</Line2>
+                <Line3>Nantwich</Line3>
+                <Line4>Cheshire</Line4>
+                <Line5>England</Line5>
+                <PostCode>CW5 5DQ</PostCode>
+                <Country>United Kingdom</Country>
+              </Address>
+            </Addresses>
+            <Position>Salesman</Position>
+            <Gender>M</Gender>
+            <TelephoneNumber1>01270 613800</TelephoneNumber1>
+            <TelephoneNumber2></TelephoneNumber2>
+            <TelephoneNumber3></TelephoneNumber3>
+            <TelephoneNumber4></TelephoneNumber4>
+            <TelephoneNumber5></TelephoneNumber5>
+            <DateOfBirth>19770806</DateOfBirth>
+            <ContactViaMail>Y</ContactViaMail>
+            <HTMLNewsletter>N</HTMLNewsletter>
+            <Subscription1>N</Subscription1>
+            <Subscription2>N</Subscription2>
+            <Subscription3>N</Subscription3>
+            <MailFlag1>N</MailFlag1>
+            <ExternalId1>1234</ExternalId1>
+            <ExternalId2>5678</ExternalId2>
+            <MessagingID></MessagingID>
+            <Boolean1></Boolean1>
+            <Boolean2></Boolean2>
+            <Boolean3></Boolean3>
+            <Boolean4></Boolean4>
+            <Boolean5></Boolean5>
+            <ID></ID>
+            <USERID1></USERID1>
+            <USERID2></USERID2>
+            <USERID3></USERID3>
+            <USERID4></USERID4>
+			      <USERID5></USERID5>
+			      <USERID6></USERID6>
+			      <USERID7></USERID7>
+			      <USERID8></USERID8>
+			      <USERID9></USERID9>
+            <RestrictedPaymentTypes Total="">
+              <PaymentType Mode=""></PaymentType>
+            </RestrictedPaymentTypes>
+            <Attributes Total="">
+              <Attribute Mode=""></Attribute>
+            </Attributes>
+            <LoyaltyPoints></LoyaltyPoints>
+            <IsLockedOut>False</IsLockedOut>
+            <CustomerPurchaseHistory>False</CustomerPurchaseHistory>
+          </Contact>
+        </Contacts>
+      </Site>
+    </Sites>
+  </CustomerUpdate>
+</CustomerUpdateRequest>

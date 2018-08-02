@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://localhost/TradingPortal" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="RetrievePurchaseHistoryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Version" type="xs:decimal" />
+        <xs:element name="TransactionHeader">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SenderID" />
+              <xs:element name="ReceiverID" />
+              <xs:element name="ErrorStatus">
+                <xs:complexType>
+                  <xs:attribute name="ErrorNumber" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="DocumentID" type="xs:string" />
+              <xs:element name="TransactionID" type="xs:string" />
+              <xs:element name="TimeStamp" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Products">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="Product">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="SaleDate" type="xs:string" />
+                    <xs:element name="ProductDescription" type="xs:string" />
+                    <xs:element name="Seat" type="xs:string" />
+                    <xs:element name="SalesPrice" type="xs:string" />
+                    <xs:element name="BatchReference" type="xs:string"/>
+                    <xs:element name="PaymentReference" type="xs:string" />
+                    <xs:element name="StatusCode" type="xs:string" />
+                    <xs:element name="LoyaltyPoints" type="xs:string"/>
+                    <xs:element name="PromotionID" type="xs:string" />
+                    <xs:element name="ProductCode" type="xs:string" />
+                    <xs:element name="ProductType" type="xs:string"/>
+                    <xs:element name="ProductDate" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

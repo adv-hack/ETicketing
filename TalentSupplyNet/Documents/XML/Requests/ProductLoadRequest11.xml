@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ProductLoadRequest>
+    <Version>1.1</Version>
+    <TransactionHeader>
+        <SenderID></SenderID>
+        <ReceiverID></ReceiverID>
+        <CountryCode></CountryCode>
+        <LoginID></LoginID>
+        <Password></Password>
+        <Company></Company>
+        <TransactionID></TransactionID>
+    </TransactionHeader>
+    <CategoryDefinitions Total="4" Mode="REPLACE">
+        <CategoryDefinition Mode="ADD">
+            <Code>HDSTORAGE</Code>
+            <DisplaySequence>1</DisplaySequence>
+            <Description Language="ENG">Hard Drive Storage</Description>
+            <Description Language="FRE">disque dur de stockage</Description>
+        </CategoryDefinition>
+        <CategoryDefinition Mode="ADD">
+            <Code>HDCAPACITY</Code>
+            <DisplaySequence>2</DisplaySequence>
+            <Description Language="ENG">Capacity</Description>
+            <Description Language="FRE">Capacite</Description>
+        </CategoryDefinition>
+        <CategoryDefinition Mode="ADD">
+            <Code>RAM</Code>
+            <DisplaySequence>3</DisplaySequence>
+            <Description Language="ENG">RAM</Description>
+        </CategoryDefinition>
+        <CategoryDefinition Mode="ADD">
+            <Code>INSTALLEDSIZE</Code>
+            <DisplaySequence>4</DisplaySequence>
+            <Description Language="ENG">Installed Size</Description>
+            <Description Language="FRE">Taille installee</Description>
+        </CategoryDefinition>
+    </CategoryDefinitions>
+    <AttributeDefinitions Total="2" Mode="REPLACE">
+        <AttributeDefinition Mode="ADD">
+            <Code>1GB</Code>
+            <DisplaySequence>1</DisplaySequence>
+            <Description Language="ENG">1 GB</Description>
+            <Value></Value>
+            <Date></Date>
+            <Boolean></Boolean>
+        </AttributeDefinition>
+        <AttributeDefinition Mode="ADD">
+            <Code>80GB</Code>
+            <DisplaySequence></DisplaySequence>
+            <Description Language="ENG">80 GB</Description>
+            <Value></Value>
+            <Date></Date>
+            <Boolean></Boolean>
+        </AttributeDefinition>
+    </AttributeDefinitions>
+    <ProductDefinitions Total="1" Mode="REPLACE">
+        <ProductDefinition Mode="ADD">
+            <SKU>57GY</SKU>
+            <AlternativeSKU>WER55687611I</AlternativeSKU>
+            <MasterProduct>N</MasterProduct>
+            <Details Language="ENG">
+                <Description1>1 pair of Chinese Spy Trousers</Description1>
+                <Description2></Description2>
+                <Description3></Description3>
+                <Description4></Description4>
+                <Description5></Description5>
+                <HTML1></HTML1>
+                <HTML2></HTML2>
+                <HTML3></HTML3>
+                <SearchKeywords></SearchKeywords>
+                <PageTitle></PageTitle>
+                <MetaDescription></MetaDescription>
+                <MetaKeywords></MetaKeywords>
+                <AvailableOnline>False</AvailableOnline>
+                <Weight>1234.12</Weight>
+                <ProductGLCode1>YES</ProductGLCode1>
+                <ProductGLCode2>YES</ProductGLCode2>
+                <ProductGLCode3>YES</ProductGLCode3>
+                <ProductGLCode4>YES</ProductGLCode4>
+                <ProductGLCode5>YES</ProductGLCode5>
+            </Details>
+            <Attributes Total="2">
+                <Attribute Category="HDSTORAGE" SubCategory="HDCAPACITY">
+                    <Code>80GB</Code>
+                    <DisplaySequence>1</DisplaySequence>
+                </Attribute>
+                <Attribute Category="RAM" SubCategory="INSTALLEDSIZE">
+                    <Code>1GB</Code>
+                    <DisplaySequence>2</DisplaySequence>
+                </Attribute>
+            </Attributes>
+        </ProductDefinition>
+    </ProductDefinitions>
+</ProductLoadRequest>

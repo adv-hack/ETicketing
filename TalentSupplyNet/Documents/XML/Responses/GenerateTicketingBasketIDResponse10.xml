@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<GenerateTicketingBasketIDResponse>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID></SenderID>
+    <ReceiverID></ReceiverID>
+    <CountryCode></CountryCode>
+    <LoginID>CSGroup</LoginID>
+    <Password>Password</Password>
+    <Company>CSG</Company>
+    <TransactionID></TransactionID>
+  </TransactionHeader>
+
+  <TicketingBasketID>123412341234123412341234</TicketingBasketID>
+</GenerateTicketingBasketIDResponse>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<OrderTrackingResponse>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID />
+    <ReceiverID />
+    <ErrorStatus ErrorNumber=""></ErrorStatus>
+    <DocumentID />
+    <TransactionID />
+    <Company />
+    <TimeStamp />
+  </TransactionHeader>
+
+  <OrderInfo>
+    <OrderNumbers>
+
+      <BranchOrderNumber></BranchOrderNumber>
+      <CustomerPO></CustomerPO>
+      <ErrorStatus ErrorNumber=""></ErrorStatus>
+      <TotalWeight>8</TotalWeight>
+      <CartonCount>1</CartonCount>
+
+      <OrderSuffix ID="">
+        <DistributionWeight></DistributionWeight>
+        <SuffixErrorResponse SuffixErrorType=""></SuffixErrorResponse>
+        <Carrier CarrierCode=""></Carrier>
+
+        <Package ID="0000474410">
+          <BoxNumber>001</BoxNumber>
+          <BoxWeight>8</BoxWeight>
+          <ShipDate>2001-05-25</ShipDate>
+          <TrackingURL>http:\\www.JustA TestingURL.com?TrackingID=0000474410</TrackingURL>
+          <Contents>
+            <SKU>123A321</SKU>
+            <Quantity>3</Quantity>
+            <SkuSerialNumber>
+              <SerialNumber>SN LAYERPAD 2</SerialNumber>
+              <SerialNumber>SN LAYPAD1</SerialNumber>
+            </SkuSerialNumber>
+            <SKU>123A321</SKU>
+            <Quantity>3</Quantity>
+            <CustomerSKU>3</CustomerSKU>
+            <SkuSerialNumber>
+              <SerialNumber></SerialNumber>
+            </SkuSerialNumber>
+            <SKU>123A321</SKU>
+            <Quantity>3</Quantity>
+            <CustomerSKU>3</CustomerSKU>
+            <SkuSerialNumber>
+              <SerialNumber></SerialNumber>
+            </SkuSerialNumber>
+            <SKU>123A321</SKU>
+            <Quantity>3</Quantity>
+            <CustomerSKU>3</CustomerSKU>
+            <SkuSerialNumber>
+              <SerialNumber></SerialNumber>
+            </SkuSerialNumber>
+          </Contents>
+        </Package>
+      </OrderSuffix>
+
+    </OrderNumbers>
+  </OrderInfo>
+</OrderTrackingResponse>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="CustomerRetrievalRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Version" type="xs:decimal" />
+        <xs:element name="TransactionHeader">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SenderID" />
+              <xs:element name="ReceiverID" />
+              <xs:element name="CountryCode" />
+              <xs:element name="LoginID" type="xs:string" />
+              <xs:element name="Password" type="xs:string" />
+              <xs:element name="Company" type="xs:string" />
+              <xs:element name="TransactionID" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CustomerRetrieval">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CustomerNo" type="xs:string" />
+              <xs:element name="UserID1" type="xs:string" minOccurs="0"/>
+              <xs:element name="UserID2" type="xs:string" minOccurs="0"/>
+              <xs:element name="UserID3" type="xs:string" minOccurs="0"/>
+              <xs:element name="UserID4" type="xs:string" minOccurs="0"/>
+              <xs:element name="UserID5" type="xs:string" minOccurs="0"/>
+              <xs:element name="UserID6" type="xs:string" minOccurs="0"/>
+              <xs:element name="UserID7" type="xs:string" minOccurs="0"/>
+              <xs:element name="UserID8" type="xs:string" minOccurs="0"/>
+              <xs:element name="UserID9" type="xs:string" minOccurs="0"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

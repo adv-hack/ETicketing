@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ProductStockLoadRequest>
+	<Version>1.0</Version>
+	<TransactionHeader>
+		<SenderID></SenderID>
+		<ReceiverID></ReceiverID>
+		<CountryCode></CountryCode>
+		<LoginID></LoginID>
+		<Password></Password>
+		<Company></Company>
+		<TransactionID></TransactionID>
+	</TransactionHeader>
+  <Warehouses Total="1" Mode="ADD">
+    <Warehouse Mode="ADD">
+      <Code>01</Code>
+      <Description Language="ENG">Web Shop</Description>
+    </Warehouse>
+  </Warehouses>
+  <Products Mode="ADD" Total="2">
+    <Product Mode="ADD">
+      <SKU>ABCDEF</SKU>
+      <Quantity Warehouse="01" ReStockCode="A">17</Quantity>
+    </Product>
+    <Product Mode="ADD">
+      <SKU>ABCDEG</SKU>
+      <Quantity Warehouse="01" ReStockCode="B">78</Quantity>
+    </Product>
+  </Products>
+  <Defaults Total="1" Mode="ADD">
+    <Warehouse BusinessUnit="UNITEDKINGDOM" Partner="*ALL" Mode="ADD">01</Warehouse>
+  </Defaults>
+</ProductStockLoadRequest>

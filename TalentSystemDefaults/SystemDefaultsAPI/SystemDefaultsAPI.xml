@@ -1,0 +1,148 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SystemDefaultsAPI</name>
+    </assembly>
+    <members>
+        <member name="P:SystemDefaultsAPI.UtilityClasses.DTOrder.Column">
+            <summary>
+            Column to which ordering should be applied.
+            This is an index reference to the columns array of information that is also submitted to the server.
+            </summary>
+        </member>
+        <member name="P:SystemDefaultsAPI.UtilityClasses.DTOrder.Dir">
+            <summary>
+            Ordering direction for this column.
+            It will be dt-string asc or dt-string desc to indicate ascending ordering or descending ordering, respectively.
+            </summary>
+        </member>
+        <member name="M:SystemDefaultsAPI.Utilities.GetDESettings(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="params"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:SystemDefaultsAPI.Utilities.GetParams(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="inputParams"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:SystemDefaultsAPI.Utilities.CheckAgentLogin(TalentSystemDefaults.DESettings)">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="settings"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:SystemDefaultsAPI.Utilities.RetrieveAgentDetailsFromSessionID(TalentSystemDefaults.DESettings,System.String)">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="settings"></param>
+            <param name="sessionID"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:SystemDefaultsAPI.Utilities.GetSystemDefaultsURL(TalentSystemDefaults.DESettings)">
+            <summary>
+            Get WebAPI endpoint
+            </summary>
+            <param name="settings"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:SystemDefaultsAPI.Models.DatabaseSearchModel.#ctor(TalentSystemDefaults.DESettings)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="settings"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:SystemDefaultsAPI.Models.DatabaseSearchModel.Initialise">
+            <summary>
+            Prepares class instance to fulfil data requests
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="M:SystemDefaultsAPI.Models.DatabaseSearchModel.GetData(System.Collections.Generic.Dictionary{System.String,System.String},System.Int32,System.String,System.Int32,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            Returns data to build a data grid
+            </summary>
+            <param name="params"></param>
+            <param name="searchType"></param>
+            <param name="offset"></param>
+            <param name="pageSize"></param>
+            <param name="sortColumn"></param>
+            <param name="sortOrder"></param>
+            <param name="searchText"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:SystemDefaultsAPI.Models.DatabaseSearchModel.Save(System.Collections.Generic.Dictionary{System.String,System.String},System.String,System.String)">
+            <summary>
+            Updates data modified inside a data grid
+            </summary>
+            <param name="params"></param>
+            <param name="searchType"></param>
+            <param name="jsonData"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:SystemDefaultsAPI.Models.DatabaseSearchModel.ConvertDataTableToList(System.Data.DataTable)">
+            <summary>
+            Returns list of columnName-Value pair
+            </summary>
+            <param name="tblTextLang"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:SystemDefaultsAPI.Models.DatabaseSearchModel.PrepareConfigurations">
+            <summary>
+            Prepare all configurations regarding to different search types available on the page
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="M:SystemDefaultsAPI.Models.DatabaseSearchModel.GetJSON(System.Int32)">
+            <summary>
+            Returns JSON object having set all columns/tables configurations
+            </summary>
+            <param name="configType"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="T:SystemDefaultsAPI.Models.SearchDataConfigs">
+            <summary>
+            DataConfigs contains all table/column configurations for the grid
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="T:My.Resources.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:My.Resources.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:My.Resources.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:SystemDefaultsAPI.SystemDefaultsController">
+            <summary>
+            Note: Its been used inside ViewRenderer to render the views from webAPI. Its not used directly anywhere else in the project
+            </summary>
+            <remarks></remarks>
+        </member>
+    </members>
+</doc>

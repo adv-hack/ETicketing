@@ -1,0 +1,127 @@
+﻿@using SystemDefaultsAPI.Models;
+@using TalentSystemDefaults;
+@using System.Text;
+
+@model DatabaseUpdatesModel
+<center>
+	<div class="row ebiz-left" style="margin-top:20px;">
+		<div class="medium-12 columns">
+			@if (Model.HasStatus)
+			{
+                <div class="alert-box success">@Model.StatusMessage</div>
+			}
+		</div>
+	</div>
+	<div class="row">
+		<div class="medium-6 columns ebiz-submit-top ebiz-left">
+			@Html.Raw("<a href=\"javascript:goToBackUrl('" + Model.BackURL + "');\" class=\"button\"><i class=\"fa fa-backward\"></i> Back</a>")
+		</div>
+		<div class="medium-6 columns ebiz-submit-top">
+			<input name="btnSubmit" value="Submit" id="btnSubmitTop" onclick="return validate();" class="button" type="submit" />
+		</div>
+	</div>
+	@* NOTE: DON`T REMOVE THE FOLLOWING CODE*@
+	@*<div class="row">
+			<div class="medium-5 columns ebiz-left">
+				@Html.Label(DatabaseUpdatesModel.CONNECTION_STRING)
+			</div>
+			<div class="medium-7 columns ebiz-left">
+				@Html.DropDownList(DatabaseUpdatesModel.CONNECTION_STRING, Model.ConnectionStrings, "--Choose Value--")
+			</div>
+		</div>*@
+	<div class="row">
+		@{
+			foreach (KeyValuePair<string, string> audit in Model.AuditGroupInfo)
+			{
+				@Html.Raw("<div class='medium-5 columns ebiz-left'>")
+				@Html.Label(Model.GetProperCase(audit.Key))
+				@Html.Raw("</div>")
+				@Html.Raw("<div class='medium-7 columns' style='text-align:left'>")
+				@Html.Label(audit.Value)
+				@Html.Raw("</div>")
+
+			}
+		}
+	</div>
+	<div class="row">
+		@if (Model.HasBusinessUnit)
+		{
+			@Html.Raw("<div class='medium-5 columns ebiz-left'>")
+			@Html.Label(Model.GetProperCase(DatabaseUpdatesModel.APPLY_IN_BUSINESS_UNIT))
+			@Html.Raw("</div>")
+			@Html.Raw("<div class='medium-7 columns'>")
+			@Html.DropDownList(DatabaseUpdatesModel.BUSINESS_UNIT, Model.BusinessUnits, "--Choose Value--")
+			@Html.Raw("</div>")
+		}
+	</div>
+
+	<div class="row">
+		<ul class="accordion" data-accordion data-allow-all-closed="true">
+			@{
+				int i = 1;
+				foreach (TalentDataAccess talentAccess in Model.TalentAccessDetailList)
+				{
+					@Html.Raw("<li class=\"accordion-item ebiz-left\">")
+					string accordionName = Model.GetProperCase(talentAccess.TableName.Replace("tbl", String.Empty));
+					@Html.Raw("<a href=\"" + "#panel_" + i.ToString() + "\" class=\"accordion-title\">" + accordionName + "</a>")
+					@Html.Raw("<div id='panel_" + i.ToString() + "' class=\"accordion-content\" data-tab-content>")
+
+					foreach (DESQLParameter param in talentAccess.CommandElements.CommandParameter)
+					{
+						if (param.ParamName != "@BUSINESS_UNIT")
+						{
+							@Html.Raw("<div class='row'>")
+							@Html.Raw("<div class='medium-5 columns ebiz-left'>")
+							@Html.Label(Model.GetParamName(param.ParamName))
+							@Html.Raw("</div>")
+							@Html.Raw("<div class='medium-7 columns' style='text-align:left'>")
+							@Html.Raw(String.Format("<label>{0}</label>", Server.HtmlEncode(param.ParamValue.ToString())))
+							@Html.Raw("</div>")
+							@Html.Raw("</div>")
+						}
+					}
+					i = i + 1;
+					@Html.Raw("</div></li>")
+				}
+			}
+		</ul>
+	</div>
+	<div class="row">
+		<div class="medium-12 columns ebiz-submit-bottom">
+			<input name="btnSubmit" value="Submit" id="btnSubmitBottom" onclick="return validate();" class="button" type="submit" />
+		</div>
+	</div>
+</center>
+<script type="text/javascript">
+	function validate()
+	{
+		var retVal;
+		retVal = true;
+		try
+		{
+			if ($("#CONNECTION_STRING").val() == "")
+			{
+				alert("Please select the value for CONNECTION_STRING");
+				$("#CONNECTION_STRING").focus();
+				retVal = false;
+			}
+			if (retVal && $("#BUSINESS_UNIT").val() == "")
+			{
+				alert("Please select the value for BUSINESS_UNIT");
+				$("#BUSINESS_UNIT").focus();
+				retVal = false;
+			}
+		}
+		catch (ex)
+		{
+			retVal = false;
+		}
+		return retVal;
+	}
+
+	function goToBackUrl(url)
+	{
+		var backUrl = getHostPath() + url;
+		window.location.href = backUrl;
+	}
+</script>

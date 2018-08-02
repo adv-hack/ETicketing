@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AddTicketingReservedItemsResponse>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID />
+    <ReceiverID />
+    <ErrorStatus ErrorNumber=""></ErrorStatus>
+    <DocumentID />
+    <TransactionID />
+    <Company />
+    <TimeStamp />
+  </TransactionHeader>
+  <AddTicketingItems>
+	<Response>
+		<ReturnCode></ReturnCode>
+		<SessionID>300308192029376182659612099</SessionID>
+    <ProductCode>FORTH3</ProductCode>
+		<CustomerNumber>000000000000</CustomerNumber>
+	</Response>
+  </AddTicketingItems>
+</AddTicketingReservedItemsResponse>

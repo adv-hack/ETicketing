@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CustomerAssociationsResponse>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID></SenderID>
+    <ReceiverID></ReceiverID>
+    <CountryCode></CountryCode>
+    <LoginID>CSGroup</LoginID>
+    <Password>Password</Password>
+    <Company>CSG</Company>
+    <TransactionID></TransactionID>
+  </TransactionHeader>
+
+  <CustomerRetrieval>
+    <Response>
+      <ReturnCode></ReturnCode>
+      <CustomerNo>123456</CustomerNo>
+    </Response>
+
+    <CustomerDetails>
+      <CustomerNumber>000000123456</CustomerNumber>
+      <CustomerAssociatedNumber>000000123456</CustomerAssociatedNumber>
+      <Forename>Des</Forename>
+      <Surname>Webster</Surname>
+      <AddressLine1>Market Street</AddressLine1>
+      <PostCode>CW5 5DQ</PostCode>
+      <PriceBand>23</PriceBand>
+      <ActiveFlag>1</ActiveFlag>
+      <LoyaltyPoints>232</LoyaltyPoints>
+    </CustomerDetails>
+  </CustomerRetrieval>
+</CustomerAssociationsResponse>

@@ -1,0 +1,42 @@
+﻿@using System.Web.Mvc;
+@using System.Web.Mvc.Html;
+@using System.Linq;
+@using SystemDefaultsAPI.Models;
+@using TalentSystemDefaults;
+@model TabContentModel
+@{
+	string style = "tabs-panel";
+	if (Model.Active)
+	{
+		style += " is-active";
+	}
+	style += " ebiz-" + Model.ID;
+}
+<div class="@style" id="@Model.ID">
+	@{
+		string panelID = String.Empty;
+		string[] accordions = Model.Select(x => x.mConfig.AccordionGroup).ToArray();
+		string[] distinctAccordions = accordions.Distinct().Where(x => string.IsNullOrEmpty(x) != true).ToArray();
+	}
+	@foreach (BaseFieldModel m in Model.Where(x => string.IsNullOrEmpty(x.mConfig.AccordionGroup) == true))
+	{
+		@Html.Partial(m.ViewName, m);
+	}
+	<ul class="accordion" data-accordion="" data-allow-all-closed="true">
+		@{
+			foreach (string ag in distinctAccordions)
+			{
+				panelID = "pnl" + ag.Replace(" ", "");
+				@Html.Raw(string.Format("<li class=\"accordion-item\" data-accordion-item>"));
+				@Html.Raw(string.Format("<a class=\"accordion-title\" href=\"" + "#" + panelID + "\">" + ag + "</a>"));
+				@Html.Raw(string.Format("<div id=\"" + panelID + "\" class=\"accordion-content\" data-tab-content>"));
+				foreach (BaseFieldModel m in Model.Where(x => string.IsNullOrEmpty(x.mConfig.AccordionGroup) == false && x.mConfig.AccordionGroup == ag))
+				{
+					@Html.Partial(m.ViewName, m);
+				}
+				@Html.Raw("</div>");
+				@Html.Raw("</li>");
+			}
+		}
+	</ul>
+</div>

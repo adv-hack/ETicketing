@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AddOrderTrackingResponse>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID></SenderID>
+    <ReceiverID></ReceiverID>
+    <CountryCode></CountryCode>
+    <LoginID>CSGroup</LoginID>
+    <Password>Password</Password>
+    <Company>CSG</Company>
+    <TransactionID></TransactionID>
+  </TransactionHeader>
+  <OrderTrackingResponse>
+    <Response>
+      <ReturnCode></ReturnCode>
+    </Response>    
+  </OrderTrackingResponse>
+</AddOrderTrackingResponse>

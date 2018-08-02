@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="OrderChangeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Version" type="xs:decimal" />
+        <xs:element name="TransactionHeader">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SenderID" />
+              <xs:element name="ReceiverID" />
+              <xs:element name="ErrorStatus">
+                <xs:complexType>
+                  <xs:attribute name="ErrorNumber" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="DocumentID" />
+              <xs:element name="TransactionID" />
+              <xs:element name="Company" />
+              <xs:element name="TimeStamp" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="OrderHeaderInformation">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OrderHeaderError" type="xs:string" />
+              <xs:element name="BranchOrderNumber" type="xs:unsignedInt" />
+              <xs:element name="OrderSuffix" type="xs:unsignedByte" />
+              <xs:element name="CustomerPO" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LineInformation">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AddLine">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="LineError" />
+                    <xs:element name="SKU" type="xs:string" />
+                    <xs:element name="Quantity" type="xs:string" />
+                    <xs:element name="ShippedQuantity" type="xs:string" />
+                    <xs:element name="BackOrderQuantity" type="xs:string" />
+                    <xs:element name="BackOrderETA" type="xs:string" />
+                    <xs:element name="WestCoastLineNumber" type="xs:unsignedByte" />
+                    <xs:element name="CustomerLineNumber" />
+                    <xs:element name="UnitPrice" type="xs:decimal" />
+                    <xs:element name="ShipFromWarehouse" type="xs:unsignedByte" />
+                    <xs:element name="LocalCurrencyPrice" type="xs:decimal" />
+                    <xs:element name="PriceDerivedFlag" type="xs:string" />
+                    <xs:element name="ForeignCurrency" type="xs:string" />
+                    <xs:element name="CarrierCode" type="xs:string" />
+                    <xs:element name="FreightRate" type="xs:unsignedByte" />
+                    <xs:element name="TransitDays" type="xs:unsignedByte" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="ChangeLine">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="LineError" />
+                    <xs:element name="SKU" type="xs:string" />
+                    <xs:element name="Quantity" type="xs:string" />
+                    <xs:element name="ShippedQuantity" type="xs:string" />
+                    <xs:element name="BackOrderQuantity" type="xs:string" />
+                    <xs:element name="BackOrderETA" type="xs:string" />
+                    <xs:element name="OldWestCoastLineNumber" type="xs:unsignedByte" />
+                    <xs:element name="NewWestCoastLineNumber" type="xs:unsignedByte" />
+                    <xs:element name="CustomerLineNumber" type="xs:unsignedByte" />
+                    <xs:element name="UnitPrice" type="xs:decimal" />
+                    <xs:element name="Suffix" type="xs:unsignedByte" />
+                    <xs:element name="LocalCurrencyPrice" type="xs:decimal" />
+                    <xs:element name="PriceDerivedFlag" />
+                    <xs:element name="ForeignCurrency" type="xs:string" />
+                    <xs:element name="CarrierCode" type="xs:string" />
+                    <xs:element name="FreightRate" type="xs:unsignedByte" />
+                    <xs:element name="TransitDays" type="xs:unsignedByte" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="DeleteLine">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="LineError" />
+                    <xs:element name="WestCoastLineNumber" type="xs:unsignedByte" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="AddComment">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="LineError" />
+                    <xs:element name="WestCoastLineNumber" type="xs:unsignedByte" />
+                    <xs:element name="Suffix" type="xs:unsignedByte" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RefundPaymentRequest>
+	<Version>1.0</Version>
+	<TransactionHeader>
+		<SenderID></SenderID>
+		<ReceiverID></ReceiverID>
+		<CountryCode></CountryCode>
+		<LoginID>CSGroup</LoginID>
+		<Password>Password</Password>
+		<Company>CSG</Company>
+		<TransactionID></TransactionID>
+	</TransactionHeader>
+	<RefundPayment>
+		<PaymentReference></PaymentReference>
+		<RefundCustomerNo>119876</RefundCustomerNo>
+		<RefundMode>Inline</RefundMode>
+		<RefundMethod>CreditCard</RefundMethod>
+		<CardNumber>5641820300097008</CardNumber>
+		<ExpiryDate>0102</ExpiryDate>
+		<StartDate>0409</StartDate>
+		<IssueNumber>01</IssueNumber>
+		<CV2Number>123</CV2Number>
+        <RetainCustomerReservations>N</RetainCustomerReservations>
+		<Product>
+			<CustomerNo>123456</CustomerNo>
+			<ProductCode>HLIV04</ProductCode>
+			<ProductDetails>NOR/A/CC/0045</ProductDetails>
+			<Quantity></Quantity>
+		</Product>
+		<Product>
+			<CustomerNo>123456</CustomerNo>
+			<ProductCode>HLIV04</ProductCode>
+			<ProductDetails>NOR/A/CC/0045</ProductDetails>
+			<Quantity></Quantity>
+		</Product>
+	</RefundPayment>
+</RefundPaymentRequest>
+

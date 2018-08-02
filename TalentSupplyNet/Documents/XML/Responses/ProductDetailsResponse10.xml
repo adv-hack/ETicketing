@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ProductDetailsResponse>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID></SenderID>
+    <ReceiverID></ReceiverID>
+    <CountryCode></CountryCode>
+    <LoginID>CSGroup</LoginID>
+    <Password>Password</Password>
+    <Company>CSG</Company>
+    <TransactionID></TransactionID>
+  </TransactionHeader>
+
+  <ProductDetails>
+    <Response>
+      <ReturnCode></ReturnCode>
+      <SessionId>300308192029376182659612099</SessionId>
+      <ProductCode>HLIV04</ProductCode>
+    </Response>
+
+    <Stands>
+      <StandDetails>
+        <StandCode>NOR</StandCode>
+        <StandDescription>North Stand</StandDescription>
+        <AreaDetails>
+          <AreaCode>A</AreaCode>
+          <AreaDescription>Area A</AreaDescription>
+        </AreaDetails>
+        <AreaDetails>
+          <AreaCode>B</AreaCode>
+          <AreaDescription>Area B</AreaDescription>
+        </AreaDetails>
+      </StandDetails>
+      <StandDetails>
+        <StandCode>SOU</StandCode>
+        <StandDescription>South Stand</StandDescription>
+        <AreaDetails>
+          <AreaCode>A</AreaCode>
+          <AreaDescription>Area A</AreaDescription>
+        </AreaDetails>
+        <AreaDetails>
+          <AreaCode>B</AreaCode>
+          <AreaDescription>Area B</AreaDescription>
+        </AreaDetails>
+      </StandDetails>
+    </Stands>
+
+    <!--If concession sales is switched on then a new section will appear-->
+    <PriceBands>
+      <PriceBandDetails>
+        <PriceBand>A</PriceBand>
+        <PriceBandDescription>Adult</PriceBandDescription>
+        <PriceBandPriority>1</PriceBandPriority>
+      </PriceBandDetails>
+      <PriceBandDetails>
+        <PriceBand>J</PriceBand>
+        <PriceBandDescription>Junior</PriceBandDescription>
+        <PriceBandPriority>2</PriceBandPriority>
+      </PriceBandDetails>
+      <PriceBandDetails>
+        <PriceBand>O</PriceBand>
+        <PriceBandDescription>OAP</PriceBandDescription>
+        <PriceBandPriority>3</PriceBandPriority>
+      </PriceBandDetails>
+    </PriceBands>
+  </ProductDetails>
+</ProductDetailsResponse>

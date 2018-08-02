@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RemoveExpiredNoiseSessionsResponse>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID></SenderID>
+    <ReceiverID></ReceiverID>
+    <CountryCode></CountryCode>
+    <LoginID>CSGroup</LoginID>
+    <Password>Password</Password>
+    <Company>CSG</Company>
+    <TransactionID></TransactionID>
+  </TransactionHeader>
+
+  <RemoveExpiredNoiseSessions>
+    <TotalSessionsRemoved></TotalSessionsRemoved>
+    <RemainingUsersOnLine></RemainingUsersOnLine>
+    <NoiseServerResults>
+      <NoiseServer HttpAddress="" Count="" Success="" />
+      <NoiseServer HttpAddress="" Count="" Success="" />
+      <NoiseServer HttpAddress="" Count="" Success="" />
+    </NoiseServerResults>
+  </RemoveExpiredNoiseSessions>
+  
+</RemoveExpiredNoiseSessionsResponse>

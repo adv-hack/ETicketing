@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CustomerAssociationsRequest>
+	<Version>1.0</Version>
+	<TransactionHeader>
+		<SenderID></SenderID>
+		<ReceiverID></ReceiverID>
+		<CountryCode></CountryCode>
+		<LoginID>IRIS</LoginID>
+		<Password>IRIS</Password>
+		<Company>IRIS</Company>
+		<TransactionID></TransactionID>
+	</TransactionHeader>
+  
+  <Customer>
+	  <CustomerNo>000070019332</CustomerNo>
+  </Customer>
+
+</CustomerAssociationsRequest>

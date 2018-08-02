@@ -1,0 +1,304 @@
+﻿@using SystemDefaultsAPI.Models;
+@using TalentSystemDefaults.DataEntities;
+@using TalentSystemDefaults;
+@using System.Text;
+
+@model DefaultListModel
+
+@if (Model.ShowBackURL)
+{
+	@Html.Raw("<div class=\"ebiz-back-button-wrap\">");
+	@Html.Raw("<a href=\"javascript:goTotBackUrl();\" class=\"button\"><i class=\"fa fa-backward\"></i> Back</a>");
+	@Html.Raw("</div>");
+}
+
+@{
+    if (Model.HasStatus)
+    {
+        string style = "alert-box ";
+        if (Model.GetDEList.HasError)
+        {
+            style += "alert";
+        }
+        else
+        {
+            style += "success";
+        }
+        <div class="@style">@Model.StatusMessage</div>
+    }
+}
+
+<h2>@Model.Title</h2>
+
+<div type="err" id="err_msg" style="display:none;" class="alert-box alert"></div>
+
+@{
+	if (Model.EnableBUSelector)
+	{
+		@Html.Raw("<div class='panel ebiz-default-list-bu-selector'><div class='row'><div class='medium-3 columns'>")
+		@Html.Label(Model.GetProperCase(DefaultListModel.BUSINESS_UNIT))
+		@Html.Raw("</div><div class='medium-9 columns'>")
+		@Html.DropDownList(DefaultListModel.BUSINESS_UNIT, Model.BusinessUnits, "--Choose Value--")
+		@Html.Raw("</div></div></div>")
+	}
+}
+
+
+<div class="panel ebiz-responsive-table ebiz-default-list-wrap">
+	<table id="defaultListTable">
+		<thead>
+			<tr>
+				@{
+					foreach (DataColumn col in Model.DataColumns)
+					{
+						<th>@col.Header</th>
+					}
+					if (Model.EnableSelectColumn || Model.EnableEditColumn || Model.EnableDeleteColumn)
+					{
+						<th>@DefaultListModel.OPTIONS</th>
+					}
+				}
+			</tr>
+		</thead>
+		<tbody>
+			@{
+				int i = 0;
+				foreach (DEListDetail item in Model.Data)
+				{
+					i = 0;
+					<tr>
+						@foreach (string value in item.Columns)
+						{
+							if (Model.EnableSelectAsHyperLink && @i == 0)
+							{
+								<td>
+									<a href='#' onclick="@string.Format("return selectClick(\"{0}\", \"{1}\", \"{2}\", \"{3}\", \"{4}\");", item.SelectURL, item.VariableKeys[0], item.VariableKeys[1], item.VariableKeys[2], item.VariableKeys[3])">
+										@value
+									</a>
+								</td>
+							}
+							else
+							{
+								<td>@value</td>
+							}
+							i = i + 1;
+						}
+
+						@if (Model.EnableSelectColumn || Model.EnableEditColumn || Model.EnableDeleteColumn)
+						{
+							<td class="ebiz-actions">
+								@{
+
+							if (Model.EnableSelectColumn)
+							{
+								@Html.Raw(string.Format("<a class='fa fa-chevron-circle-right' onclick='return selectClick(\"{0}\", \"{1}\", \"{2}\", \"{3}\", \"{4}\")'></a>", item.SelectURL, item.VariableKeys[0], item.VariableKeys[1], item.VariableKeys[2], item.VariableKeys[3]));
+							}
+							if (Model.EnableEditColumn)
+							{
+								if (item.EnableRowWiseEdit)
+								{
+									@Html.Raw(string.Format("<a id='btnEdit' href='#' class='fa fa-pencil' onclick='return setDefaultKeys(this,\"{0}\", \"{1}\", \"{2}\", \"{3}\")'></a>", item.VariableKeys[0], item.VariableKeys[1], item.VariableKeys[2], item.VariableKeys[3]));
+								}
+							}
+							if (Model.EnableDeleteColumn)
+							{
+								if (item.EnableRowWiseDelete)
+								{
+									@Html.Raw(string.Format("<a id='btnDelete' href='#' class='fa fa-times' onclick='return setDefaultKeys(this,\"{0}\", \"{1}\", \"{2}\", \"{3}\")'></a>", item.VariableKeys[0], item.VariableKeys[1], item.VariableKeys[2], item.VariableKeys[3]));
+								}
+							}
+								}
+							</td>
+						}
+					</tr>
+				}
+			}
+		</tbody>
+	</table>
+</div>
+
+
+
+
+<div id="DivGrid">
+	@Html.Hidden("ModuleName", Model.ModuleName)
+	<input type="hidden" id="action" name="action" />
+	<input type="hidden" id="variableKey1" name="variableKey1" />
+	<input type="hidden" id="variableKey2" name="variableKey2" />
+	<input type="hidden" id="variableKey3" name="variableKey3" />
+	<input type="hidden" id="variableKey4" name="variableKey4" />
+	@{
+		foreach (string buttonName in Model.ActionButtons)
+		{
+			@Html.Raw("<a id='btnAction' href='#' class='button' onclick='actionButtonClick();'/>" + buttonName + "</a>");
+		}
+	}
+</div>
+<div id="deleteConfirmationModal" class="reveal" data-reveal>
+	<h2 id="firstModalTitle">Confirmation</h2>
+	<p>Are you sure you want to delete it?</p>
+	<div class="button-group">
+		<a href="#" class="secondary button" onclick="deleteConfirmationYesClick()">Yes</a>
+		<a href="#" class="secondary button" onclick="deleteConfirmationNoClick()">No</a>
+	</div>
+	<button class="close-button" data-close aria-label="Close modal" type="button">
+		<span aria-hidden="true"><i class="fa fa-times"></i></span>
+	</button>
+</div>
+
+
+<input type="hidden" id="hdnAddURL" value="@Model.AddURL" />
+<input type="hidden" id="hdnUpdateURL" value="@Model.UpdateURL" />
+<input type="hidden" id="hdnDeleteURL" value="@Model.DeleteURL" />
+<input type="hidden" id="hdnBackURL" value="@Model.BackURL" />
+<div id="modalClicks" style="display:none;">
+	<a id="deleteModalLink" data-open="deleteConfirmationModal"></a>
+</div>
+
+<script lang="text/javascript">
+	$(document).ready(function ()
+	{
+		var searchText= "";
+		try
+		{
+			if ($("select[id='BUSINESS_UNIT']"))
+			{
+				if (getParameterByName("businessunit") != "")
+				{
+					$("select[id='BUSINESS_UNIT']").val(getParameterByName("businessunit"));
+				}
+			}
+
+			var a = $('#defaultListTable').dataTable();
+
+			// search based on querystring parameter //
+			if (getParameterByName("searchText"))
+			{
+				if (getParameterByName("listname").toLowerCase() == "databaseaudit")
+				{
+					searchText = getParameterByName("searchText");
+				}
+				$(".dataTables_filter input[type='search']").val(searchText).trigger("search");
+			}
+		}
+		catch (ex)
+		{
+			alert('Error occurred: ' + ex.message);
+		}
+	});
+
+	function queryStr(Key)
+	{
+		var url = window.location.href;
+		url = url.replace("#", "")
+		var KeysValues = url.split(/[\?&]+/);
+		for (i = 0; i < KeysValues.length; i++)
+		{
+			KeyValue = KeysValues[i].split("=");
+			if (KeyValue[0].toLowerCase() == Key.toLowerCase())
+			{
+				return KeyValue[1];
+			}
+		}
+	}
+
+	function selectClick(selectURL, key1, key2, key3, key4)
+	{
+		document.getElementById("variableKey1").value = key1;
+		document.getElementById("variableKey2").value = key2;
+		document.getElementById("variableKey3").value = key3;
+		document.getElementById("variableKey4").value = key4;
+
+		var val, enableBUSelector, redirect;
+
+		redirect = true;
+		enableBUSelector = "@Model.EnableBUSelector.ToString().ToLower()" == "true" ? true : false;
+
+		$("div[type='err']").hide();
+
+		// read from dropdown
+		if (enableBUSelector && $("#BUSINESS_UNIT").length > 0)
+		{
+			val = $("#BUSINESS_UNIT :selected").val();
+		}
+			// read from URL
+		else
+		{
+			val = getParameterByName("businessUnit");
+		}
+
+		if (val == '' && enableBUSelector)
+		{
+			redirect = false;
+			$("div[type='err']").text("Please select business unit");
+			$("div[type='err']").show();
+		}
+		else
+		{
+			selectURL = getHostPath() + selectURL.replace("{1}", val).replace("{2}", key1);
+		}
+
+		// Fetch search text too inside url
+		if (getParameterByName("listname").toLowerCase() == "databaseaudit")
+		{
+			var searchText = $(".dataTables_filter input[type='search']").val();
+			if (searchText && searchText != "")
+			{
+				selectURL += "&searchText=" + searchText;
+			}
+		}
+		if (redirect)
+		{
+			window.location.href = selectURL;
+		}
+	}
+
+	function setDefaultKeys(source, key1, key2, key3, key4)
+	{
+		var url;
+		url = getHostPath() + document.getElementById("hdnAddURL").value;
+
+		document.getElementById("variableKey1").value = key1;
+		document.getElementById("variableKey2").value = key2;
+		document.getElementById("variableKey3").value = key3;
+		document.getElementById("variableKey4").value = key4;
+		var updateURL = getHostPath() + document.getElementById("hdnUpdateURL").value;
+
+		if (source.id == "btnEdit")
+		{
+			window.location.href = updateURL.replace("{2}", key1);
+			return false;
+		}
+		else if (source.id == "btnDelete")
+		{
+			$("#deleteModalLink").click();
+			return false;
+		}
+	}
+
+	function deleteConfirmationYesClick()
+	{
+		document.getElementById("action").value = "delete";
+		document.forms[0].submit();
+	}
+
+	function deleteConfirmationNoClick()
+	{
+		$("button[class='close-button']").click();
+	}
+
+	function actionButtonClick()
+	{
+		var url;
+		url = document.getElementById("hdnAddURL").value;
+		window.location.href = getHostPath() + url;
+	}
+
+	function goTotBackUrl()
+	{
+		var url;
+		url = document.getElementById("hdnBackURL").value;
+		window.location.href = getHostPath() + url;
+	}
+</script>
+

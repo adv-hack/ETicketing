@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<SeasonTicketRenewalResponse>
+  <TransactionHeader>
+    <SenderID></SenderID>
+    <ReceiverID></ReceiverID>
+    <CountryCode></CountryCode>
+    <LoginID></LoginID>
+    <Password></Password>
+    <Company></Company>
+    <TransactionID></TransactionID>
+  </TransactionHeader>
+  
+  <TransactionDetails>
+    <AddSeasonTickets></AddSeasonTickets>
+    <TakePayments></TakePayments>
+    <SuccessCount></SuccessCount>
+    <FailureCount></FailureCount>
+    <RenewalResponse>
+      <Success></Success>
+      <TicketingBasketID></TicketingBasketID>
+      
+      <AddSeasonTicketsResponse>
+        <ReturnCode></ReturnCode>
+        <SessionID></SessionID>
+        <ProductCode></ProductCode>
+        <StandCode></StandCode>
+        <AreaCode></AreaCode>
+        <CustomerNumber></CustomerNumber>
+        <PriceCategory></PriceCategory>
+      </AddSeasonTicketsResponse>
+
+      <PaymentResponse>
+        <ReturnCode></ReturnCode>
+        <SessionId></SessionId>
+        <CustomerNo></CustomerNo>
+        <ConfirmedDetails>
+          <PaymentReference></PaymentReference>
+          <WSFee></WSFee>
+          <CreditcardFee></CreditcardFee>
+          <CarriageFee></CarriageFee>
+          <TotalPrice></TotalPrice>
+          <ShoppingBasket>
+            <ProductDetails>
+              <CustomerNo></CustomerNo>
+              <ProductCode></ProductCode>
+              <Seat></Seat>
+              <PriceCode></PriceCode>
+              <PriceBand></PriceBand>
+              <Price></Price>
+            </ProductDetails>
+          </ShoppingBasket>
+        </ConfirmedDetails>
+      </PaymentResponse>
+    </RenewalResponse>
+  </TransactionDetails>
+</SeasonTicketRenewalResponse>

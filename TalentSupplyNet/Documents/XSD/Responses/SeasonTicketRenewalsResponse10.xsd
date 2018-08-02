@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://localhost/TradingPortal" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="SeasonTicketRenewalsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Version" type="xs:decimal" />
+        <xs:element name="TransactionHeader">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SenderID" />
+              <xs:element name="ReceiverID" />
+              <xs:element name="ErrorStatus">
+                <xs:complexType>
+                  <xs:attribute name="ErrorNumber" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="DocumentID" type="xs:string" />
+              <xs:element name="TransactionID" type="xs:unsignedShort" />
+              <xs:element name="TimeStamp" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TransactionDetails">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SuccessCount" type="xs:unsignedByte" />
+              <xs:element name="FailureCount" type="xs:unsignedByte" />
+              <xs:element maxOccurs="unbounded" name="SeasonTicketRenewalResponse">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Success" type="xs:string" />
+                    <xs:element name="TicketingBasketID" type="xs:integer" />
+                    <xs:element name="AddToBasketResponse">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="ReturnCode" type="xs:string" />
+                          <xs:element name="SessionID" type="xs:integer" />
+                          <xs:element name="ProductCode" />
+                          <xs:element name="Seat" type="xs:string" />
+                          <xs:element name="CustomerNumber" type="xs:unsignedShort" />
+                          <xs:element name="PriceCategory" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="PaymentResponse">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="ReturnCode" type="xs:string" />
+                          <xs:element name="SessionID" type="xs:integer" />
+                          <xs:element name="CustomerNo" type="xs:unsignedShort" />
+                          <xs:element name="AdditionalInfo" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

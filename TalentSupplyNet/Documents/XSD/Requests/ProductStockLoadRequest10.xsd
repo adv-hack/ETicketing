@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="ProductStockLoadRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Version" type="xs:decimal" />
+        <xs:element name="TransactionHeader">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SenderID" />
+              <xs:element name="ReceiverID" />
+              <xs:element name="CountryCode" />
+              <xs:element name="LoginID" />
+              <xs:element name="Password" />
+              <xs:element name="Company" />
+              <xs:element name="TransactionID" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Warehouses">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Warehouse">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Code" type="xs:string" />
+                    <xs:element name="Description">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute name="Language" type="xs:string" use="required" />
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="Mode" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="Total" type="xs:integer" use="required" />
+            <xs:attribute name="Mode" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Products">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="Product">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="SKU" type="xs:string" />
+                    <xs:element name="Quantity">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:integer">
+                            <xs:attribute name="Warehouse" type="xs:string" use="required" />
+                            <xs:attribute name="ReStockCode" type="xs:string" use="required" />
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="Mode" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="Mode" type="xs:string" use="required" />
+            <xs:attribute name="Total" type="xs:integer" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Defaults">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Warehouse">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute name="BusinessUnit" type="xs:string" use="required" />
+                      <xs:attribute name="Partner" type="xs:string" use="required" />
+                      <xs:attribute name="Mode" type="xs:string" use="required" />
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="Total" type="xs:integer" use="required" />
+            <xs:attribute name="Mode" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

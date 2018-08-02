@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="ProductListReturnAllResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Version" type="xs:decimal" />
+        <xs:element name="TransactionHeader">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SenderID" />
+              <xs:element name="ReceiverID" />
+              <xs:element name="CountryCode" />
+              <xs:element name="LoginID" type="xs:string" />
+              <xs:element name="Password" type="xs:string" />
+              <xs:element name="Company" type="xs:string" />
+              <xs:element name="TransactionID" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ProductList">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Response">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ReturnCode" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Products">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="Product">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="ProductCode" type="xs:string" />
+                          <xs:element name="ProductDescription" type="xs:string" />
+                          <xs:element minOccurs="0" name="ProductDate" type="xs:string" />
+                          <xs:element minOccurs="0" name="ProductTime" type="xs:string" />
+                          <xs:element name="ProductDateISO" type="xs:string" />
+                          <xs:element name="ProductTime24H" type="xs:string" />
+                          <xs:element name="ProductPriceBand" type="xs:string" />
+                          <xs:element name="ProductApplicable" type="xs:string" />
+                          <xs:element name="ProductType" type="xs:string" />
+                          <xs:element name="ProductRequiredMembership" />
+                          <xs:element name="ProductRequiredMembershipDescription" />
+                          <xs:element name="ProductRequiredMembershipPurchased" />
+                          <xs:element name="ProductEntryTime" />
+                          <xs:element name="ProductTicketLimit" />
+                          <xs:element name="ProductStadiumCode" />
+                          <xs:element name="PriceCode" />
+                          <xs:element name="ProductAssociatedTravelProductCode" />
+                          <xs:element name="RequiredLoyaltyPoints" type="xs:string" />
+                          <xs:element name="LoyaltyRequirementMet" type="xs:string" />
+                          <xs:element name="LimitRequirementMet" type="xs:string" />
+                          <xs:element name="PreReq">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="ProductGroup" type="xs:string" />
+                                <xs:element name="Description" type="xs:string" />
+                                <xs:element name="MultiGroup" type="xs:string" />
+                                <xs:element name="Stadium" type="xs:string" />
+                                <xs:element name="ValidationRule" type="xs:string" />
+                                <xs:element name="Comments" type="xs:string" />
+                                <xs:element name="PreReqProducts">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element maxOccurs="unbounded" name="PreReqProduct">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="PreReqProductCode" type="xs:string" />
+                                            <xs:element name="PreReqProductDescription" type="xs:string" />
+                                            <xs:element name="PreReqProductType" type="xs:string" />
+                                            <xs:element name="PreReqProductDate" type="xs:date" />
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="LoyaltyDetails">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="ApplyRestriction" type="xs:string" />
+                                <xs:element name="NoOfPointsAwarded" type="xs:string" />
+                                <xs:element name="UpdatePreviouslyAwardedPoints" type="xs:string" />
+                                <xs:element name="UpdateFromDate" type="xs:date" />
+                                <xs:element name="UpdateToDate" type="xs:date" />
+                                <xs:element name="NoOfPurchasePointsAwarded" type="xs:string" />
+                                <xs:element name="AwardToSeasonTicketHolders" type="xs:string" />
+                                <xs:element name="SeasonTicketID" type="xs:string" />
+                                <xs:element name="PointsSchedule">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element maxOccurs="unbounded" name="Schedule">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="From" type="xs:date" />
+                                            <xs:element name="RequiredPoints" type="xs:string" />
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="CustomerUpdateRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Version" type="xs:decimal" />
+        <xs:element name="TransactionHeader">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SenderID" />
+              <xs:element name="ReceiverID" />
+              <xs:element name="CountryCode" />
+              <xs:element name="LoginID" type="xs:string" />
+              <xs:element name="Password" type="xs:string" />
+              <xs:element name="Company" type="xs:string" />
+              <xs:element name="TransactionID" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Defaults">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BusinessUnit" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CustomerUpdate" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Sites">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Site">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Name" type="xs:string" minOccurs="0"/>
+                          <xs:element name="AccountNumber1" minOccurs="0"/>
+                          <xs:element name="AccountNumber2" minOccurs="0"/>
+                          <xs:element name="AccountNumber3" minOccurs="0"/>
+                          <xs:element name="AccountNumber4" minOccurs="0"/>
+                          <xs:element name="AccountNumber5" minOccurs="0"/>
+                          <xs:element name="Address" minOccurs="0">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Line1" type="xs:string" />
+                                <xs:element name="Line2" type="xs:string" />
+                                <xs:element name="Line3" type="xs:string" />
+                                <xs:element name="Line4" type="xs:string" />
+                                <xs:element name="Line5" type="xs:string" />
+                                <xs:element name="PostCode" type="xs:string" />
+                                <xs:element name="Country" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="TelephoneNumber" minOccurs="0"/>
+                          <xs:element name="FaxNumber" minOccurs="0"/>
+                          <xs:element name="VATNumber" minOccurs="0"/>
+                          <xs:element name="URL" minOccurs="0"/>
+                          <xs:element name="ID" minOccurs="0"/>
+                          <xs:element name="CRMBranch" minOccurs="0"/>
+                          <xs:element name="Contacts">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Contact">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element  minOccurs="0" name="Title" type="xs:string"/>
+                                      <xs:element  minOccurs="0" name="Initials" type="xs:string" />
+                                      <xs:element  minOccurs="0" name="Forename" type="xs:string"  />
+                                      <xs:element  minOccurs="0" name="Surname" type="xs:string" />
+                                      <xs:element  minOccurs="0" name="FullName" type="xs:string" />
+                                      <xs:element minOccurs="0" name="Salutation" type="xs:string" />
+                                      <xs:element minOccurs="0" name="EmailAddress" type="xs:string" />
+                                      <xs:element  minOccurs="0" name="LoginID" />
+                                      <xs:element   minOccurs="0" name="Password" type="xs:string" />
+                                      <xs:element  minOccurs="0" name="AccountNumber1" />
+                                      <xs:element  minOccurs="0" name="AccountNumber2" />
+                                      <xs:element  minOccurs="0" name="AccountNumber3" />
+                                      <xs:element  minOccurs="0" name="AccountNumber4" />
+                                      <xs:element  minOccurs="0" name="AccountNumber5" />
+                                      <xs:element  minOccurs="0" name="Addresses" >
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Address" minOccurs="0">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="SequenceNumber" type="xs:unsignedByte" minOccurs="0"/>
+                                                  <xs:element name="Default" type="xs:string" minOccurs="0"/>
+                                                  <xs:element name="Reference" type="xs:string" minOccurs="0"/>
+                                                  <xs:element name="Line1" type="xs:string" minOccurs="0"/>
+                                                  <xs:element name="Line2" type="xs:string" minOccurs="0"/>
+                                                  <xs:element name="Line3" type="xs:string" minOccurs="0"/>
+                                                  <xs:element name="Line4" type="xs:string" minOccurs="0"/>
+                                                  <xs:element name="Line5" type="xs:string" minOccurs="0"/>
+                                                  <xs:element name="PostCode" type="xs:string" minOccurs="0"/>
+                                                  <xs:element name="Country" type="xs:string" minOccurs="0"/>
+                                                </xs:sequence>
+                                                <xs:attribute name="Mode" type="xs:string" use="required" />
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                          <xs:attribute name="Total" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="Position" type="xs:string"  minOccurs="0"/>
+                                      <xs:element name="Gender" type="xs:string"  minOccurs="0"/>
+                                      <xs:element name="TelephoneNumber1" type="xs:string"  minOccurs="0"/>
+                                      <xs:element name="TelephoneNumber2"  minOccurs="0"/>
+                                      <xs:element name="TelephoneNumber3"  minOccurs="0"/>
+                                      <xs:element name="TelephoneNumber4"  minOccurs="0"/>
+                                      <xs:element name="TelephoneNumber5"  minOccurs="0"/>
+                                      <xs:element name="DateOfBirth" type="xs:unsignedInt"  minOccurs="0"/>
+                                      <xs:element name="ContactViaMail" type="xs:string"  minOccurs="0"/>
+                                      <xs:element name="HTMLNewsletter" type="xs:string"  minOccurs="0"/>
+                                      <xs:element name="Subscription1" type="xs:string"  minOccurs="0"/>
+                                      <xs:element name="Subscription2" type="xs:string"  minOccurs="0"/>
+                                      <xs:element name="Subscription3" type="xs:string"  minOccurs="0"/>
+                                      <xs:element name="MailFlag1" type="xs:string"  minOccurs="0"/>
+                                      <xs:element name="ExternalId1" type="xs:unsignedShort"  minOccurs="0"/>
+                                      <xs:element name="ExternalId2" type="xs:unsignedShort"  minOccurs="0"/>
+                                      <xs:element name="MessagingID"  minOccurs="0"/>
+                                      <xs:element name="Boolean1"  minOccurs="0"/>
+                                      <xs:element name="Boolean2"  minOccurs="0"/>
+                                      <xs:element name="Boolean3"  minOccurs="0"/>
+                                      <xs:element name="Boolean4"  minOccurs="0"/>
+                                      <xs:element name="Boolean5"  minOccurs="0"/>
+                                      <xs:element name="ID" minOccurs="0" />
+                                      <xs:element name="USERID1" minOccurs="0"/>
+                                      <xs:element name="USERID2" minOccurs="0"/>
+                                      <xs:element name="USERID3" minOccurs="0"/>
+                                      <xs:element name="USERID4" minOccurs="0"/>
+                                      <xs:element name="USERID5" minOccurs="0"/>
+                                      <xs:element name="USERID6" minOccurs="0"/>
+                                      <xs:element name="USERID7" minOccurs="0"/>
+                                      <xs:element name="USERID8" minOccurs="0"/>
+                                      <xs:element name="USERID9" minOccurs="0"/>
+                                      <xs:element name="RestrictedPaymentTypes" minOccurs="0">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="PaymentType">
+                                              <xs:complexType>
+                                                <xs:attribute name="Mode" type="xs:string" use="required" />
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                          <xs:attribute name="Total" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="Attributes" minOccurs="0">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Attribute">
+                                              <xs:complexType>
+                                                <xs:attribute name="Mode" type="xs:string" use="required" />
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                          <xs:attribute name="Total" type="xs:string" use="required" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="LoyaltyPoints" minOccurs="0"/>
+                                      <xs:element name="IsLockedOut" type="xs:string" minOccurs="0" />
+                                      <xs:element name="CustomerPurchaseHistory" type="xs:string" minOccurs="0" />
+                                      <xs:element name="ContactSource" minOccurs="0" type="xs:string" />
+                                      <xs:element name="ContactSuffix" minOccurs="0" type="xs:string" />
+                                      <xs:element name="ContactNickName" minOccurs="0" type="xs:string" />
+                                      <xs:element name="ContactUserName" minOccurs="0" type="xs:string" />
+                                      <xs:element name="ContactSLAccount" minOccurs="0" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="Mode" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute name="Total" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="Mode" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="Total" type="xs:unsignedByte" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

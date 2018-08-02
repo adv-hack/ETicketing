@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CustomerUpdateRequest>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID></SenderID>
+    <ReceiverID></ReceiverID>
+    <CountryCode></CountryCode>
+    <LoginID>IRIS</LoginID>
+    <Password>IRIS</Password>
+    <Company>IRIS</Company>
+    <TransactionID></TransactionID>
+  </TransactionHeader>
+  
+  <CustomerUpdate>
+    <CustomerNo>000000000010</CustomerNo>
+    <ContactTitle>Mr</ContactTitle>
+    <ContactInitials></ContactInitials>
+    <ContactForename>Dave</ContactForename>
+    <ContactSurname>Hughes</ContactSurname>
+    <Salutation>r</Salutation>
+    <CompanyName>Computer Software Group</CompanyName>
+    <PositionInCompany>Pepper House</PositionInCompany>
+    <AddressLine1>Market Street</AddressLine1>
+    <AddressLine2>Market Street</AddressLine2>
+    <AddressLine3>Nantwich</AddressLine3>
+    <AddressLine4>Cheshire</AddressLine4>
+    <AddressLine5>England</AddressLine5>
+    <PostCode>CW5 5DQ</PostCode>
+    <Gender>M</Gender>
+    <HomeTelephoneNumber>01270 613800</HomeTelephoneNumber>
+    <WorkTelephoneNumber>01270 613800</WorkTelephoneNumber>
+    <MobileNumber>07770 613800</MobileNumber>
+    <EmailAddress>david.hughes@computersoftware.comXXX</EmailAddress>
+    <DateOfBirth>19770806</DateOfBirth>
+    <ContactViaMail>Y</ContactViaMail>
+    <Subscription1>Y</Subscription1>
+    <Subscription2>Y</Subscription2>
+    <Subscription3>Y</Subscription3>
+    <MailFlag1>Y</MailFlag1>
+    <ExternalId1>1234</ExternalId1>
+    <ExternalId2>5678</ExternalId2>
+    <Password>5678</Password>
+      <Attributes>
+        <Attribute action="Add"></Attribute>
+      </Attributes>
+  </CustomerUpdate>
+
+</CustomerUpdateRequest>

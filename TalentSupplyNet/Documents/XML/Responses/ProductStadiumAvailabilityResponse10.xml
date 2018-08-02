@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ProductStadiumAvailabilityResponse>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID></SenderID>
+    <ReceiverID></ReceiverID>
+    <CountryCode></CountryCode>
+    <LoginID>CSGroup</LoginID>
+    <Password>Password</Password>
+    <Company>CSG</Company>
+    <TransactionID></TransactionID>
+  </TransactionHeader>
+
+  <ProductList>
+    <Response>
+      <ReturnCode></ReturnCode>
+    </Response>
+
+    <Products>
+      <Product>
+        <ProductCode>HLIV04</ProductCode>
+        <StandCode>N</StandCode>
+        <AreaCode>32</AreaCode>
+        <Availability>0010</Availability>
+        <AdditionalText>Some Text</AdditionalText>
+        <Capacity>0234</Capacity>
+        <Reserved>99</Reserved>
+      </Product>
+      <Product>
+        <ProductCode>HLIV05</ProductCode>
+        <StandCode>N</StandCode>
+        <AreaCode>33</AreaCode>
+        <Availability>0020</Availability>
+        <AdditionalText>Some Text</AdditionalText>
+        <Capacity>0276</Capacity>
+        <Reserved>83</Reserved>
+      </Product>
+    </Products>
+  </ProductList>
+</ProductStadiumAvailabilityResponse>

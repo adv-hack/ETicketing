@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ProductAlertResponse>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID />
+    <ReceiverID />
+    <ErrorStatus ErrorNumber=""></ErrorStatus>
+    <DocumentID />
+    <TransactionID />
+    <Company />
+    <TimeStamp />
+  </TransactionHeader>
+
+  <ProductAlerts>
+    <ProductAlert>
+      <SKU>123A321</SKU>
+      <Description>Short description of item</Description>
+      <EMailAddress>marksmith@domain.com</EMailAddress>
+      <FirstName>Mark</FirstName>
+      <LastName>Smith</LastName>
+      <ExpiryDate>2001-01-01</ExpiryDate>
+    </ProductAlert>
+  </ProductAlerts>
+</ProductAlertResponse>
+

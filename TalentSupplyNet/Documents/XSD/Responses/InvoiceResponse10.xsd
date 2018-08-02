@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="InvoiceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Version" type="xs:decimal" />
+        <xs:element name="TransactionHeader">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SenderID" />
+              <xs:element name="ReceiverID" />
+              <xs:element name="ErrorStatus">
+                <xs:complexType>
+                  <xs:attribute name="ErrorNumber" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="DocumentID" />
+              <xs:element name="TransactionID" />
+              <xs:element name="Company" />
+              <xs:element name="TimeStamp" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Invoices">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Invoice">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="InvoiceHeader">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="InvoiceType" type="xs:string" />
+                          <xs:element name="InvoiceNumber" type="xs:unsignedInt" />
+                          <xs:element name="InvoiceDate" type="xs:unsignedInt" />
+                          <xs:element name="CustomerPO" type="xs:string" />
+                          <xs:element name="OriginalOrderNumber" type="xs:unsignedInt" />
+                          <xs:element name="OriginalOrderDate" type="xs:dateTime" />
+                          <xs:element name="ShipToSuffix" type="xs:string" />
+                          <xs:element name="DispatchSequence" type="xs:string" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="IMAccountNumber" type="xs:string" />
+                    <xs:element maxOccurs="unbounded" name="Address">
+                      <xs:complexType mixed="true">
+                        <xs:sequence>
+                          <xs:element name="Name" type="xs:string" />
+                          <xs:element name="Attention" type="xs:string" />
+                          <xs:element name="AddressLine1" type="xs:string" />
+                          <xs:element name="AddressLine2" type="xs:string" />
+                          <xs:element name="AddressLine3" type="xs:string" />
+                          <xs:element name="AddressLine4" type="xs:string" />
+                          <xs:element name="City" type="xs:string" />
+                          <xs:element name="PostalCode" type="xs:string" />
+                          <xs:element name="CountryCode" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="Type" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="VAT">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="VATNumber" type="xs:string" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Currency">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="CurrencyCode" type="xs:string" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="PaymentTerms">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="TermsCode" type="xs:unsignedByte" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="PaymentDue">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="PaymentDueDate" type="xs:unsignedInt" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="LineItemHeader">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="LineItem">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Product">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="CustomerSKU" />
+                                      <xs:element name="EANCode" type="xs:unsignedLong" />
+                                      <xs:element name="ManufacturerSKU" type="xs:string" />
+                                      <xs:element name="SKUDescription1" type="xs:string" />
+                                      <xs:element name="SKUDescription2" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="SKU" type="xs:string" use="required" />
+                                    <xs:attribute name="InvoicedQuantity" type="xs:string" use="required" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="SerialNumberHeader">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element maxOccurs="unbounded" name="SerialNumber" type="xs:string" />
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="Tax">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:decimal">
+                                        <xs:attribute name="Type" type="xs:string" use="required" />
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="LineMonetaryInfo">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="UnitPrice" type="xs:decimal" />
+                                      <xs:element name="LineItemAmount" type="xs:decimal" />
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute name="LineNumber" type="xs:unsignedByte" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element maxOccurs="unbounded" name="TotalInformation">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:unsignedByte">
+                            <xs:attribute name="Type" type="xs:string" use="required" />
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element maxOccurs="unbounded" name="TotalFinancial">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:decimal">
+                            <xs:attribute name="Type" type="xs:string" use="required" />
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element maxOccurs="unbounded" name="Final">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:decimal">
+                            <xs:attribute name="Type" type="xs:string" use="required" />
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

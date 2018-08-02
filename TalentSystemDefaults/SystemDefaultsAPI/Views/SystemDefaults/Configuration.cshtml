@@ -1,0 +1,107 @@
+﻿@using SystemDefaultsAPI.Models;
+@using System.Web.Mvc;
+@using System.Web.Mvc.Html;
+
+@model ConfigurationModel
+
+@{
+	string tabContentView = "~/Views/PartialViews/_TabContent.cshtml";
+}
+<script lang="text/javascript">
+	function showDescription(description)
+	{
+		$('#descriptionMessage').text(description);
+		$("#descriptionModalLink").click();
+	}
+
+	function showPlaceHolders(placeHolders)
+	{
+		$('#placeHolderContent').empty();
+		var items = placeHolders.split("|")
+		for (i = 0; i < items.length; i++)
+		{
+			var values = items[i].split("~");
+			$('#placeHolderContent').append('<tr><td>' + values[0] + '</td><td>' + values[1] + '</td></tr>');
+		}
+		$("#placeHolderModalLink").click();
+	}
+</script>
+
+
+@if (Model.HasStatus)
+{ 
+    string style="alert-box ";
+    if(Model.HasError)
+    {
+        style += "success";
+    }
+    else
+    {
+        style += "warning";
+    }
+    <div class="@style">@Model.StatusMessage</div>
+}
+
+<div class="row ebiz-back-refresh-actions-wrap">
+	<div class="small-6 columns">
+		@Html.Raw("<a href=\"" + Model.BackURL + "\" class=\"button\"><i class=\"fa fa-backward\"></i> Back</a>")
+	</div>
+	<div class="small-6 columns">
+		@Html.Raw("<a href=\"javascript:window.location = window.location.href;\" class=\"button\"><i class=\"fa fa-refresh\"></i> Refresh</a>")
+	</div>
+</div>
+
+@Html.Raw(string.Format("<ul class=\"tabs" + (Model.DefaultTabType == "HORIZONTAL" ? "" : " vertical") + "\" data-tabs id=\"allTabs\">"))
+
+@{
+	foreach (TabContentModel t in Model.Tabs.Values)
+	{
+		string val = "tabs-title";
+		if (t.Active)
+		{
+			val += " is-active";
+		}
+		@Html.Raw(string.Format("<li class=\"" + @val + "\"><a id=\"lnk" + t.ID + "\" href=\"#" + t.ID + "\" class=\"ebiz-capitalize\" aria-selected=\"" + (t.Active == true ? "true" : "false") + "\">" + "<i class=\"fa " + Model.TabClasses[t.TabHeader] + "\"></i>" + t.TabHeader.ToLower() + "</a></li>"));
+	}
+	@Html.Raw("</ul>")
+	
+	@Html.Raw(string.Format("<div class='tabs-content' " + (Model.DefaultTabType.ToLower() == "vertical" ? "style='" + Model.TabTypes[Model.DefaultTabType] + "'" : "") + " data-tabs-content=\"allTabs\">"))
+
+	<div class="ebiz-submit-top-wrap">
+		<input name="btnSubmit" value="Submit" id="btnSubmitTop" onclick="return validate();" class="button" type="submit" />
+	</div>
+	foreach (TabContentModel t in Model.Tabs.Values)
+	{
+		@Html.Partial(tabContentView, t)
+	}
+	<div class="ebiz-submit-bottom-wrap">
+		<input name="btnSubmit" value="Submit" id="btnSubmitBottom" onclick="return validate();" class="button" type="submit" />
+	</div>
+}
+	
+	
+
+<div id="modalClicks" style="display:none;">
+	<a id="descriptionModalLink" data-open="descriptionModal"></a>
+	<a id="placeHolderModalLink" data-open="placeHolderModal"></a>
+</div>
+
+<div id="descriptionModal" class="reveal ebiz-inline-modal" data-reveal>
+	<p id="descriptionMessage"></p>
+	<button class="close-button" data-close aria-label="Close modal" type="button">
+		<span aria-hidden="true"><i class="fa fa-times"></i></span>
+	</button>
+</div>
+
+<div id="placeHolderModal" class="reveal ebiz-inline-modal" data-reveal>
+	<table id="placeHolderContent"></table>
+	<button class="close-button" data-close aria-label="Close modal" type="button">
+		<span aria-hidden="true"><i class="fa fa-times"></i></span>
+	</button>
+</div>
+@{
+	foreach (KeyValuePair<string, string> hdnField in Model.HiddenFields)
+	{
+		@Html.Hidden(hdnField.Key, hdnField.Value)
+	}
+}

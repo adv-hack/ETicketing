@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SupplierRemittanceResponse xmlns="http://localhost/TradingPortal" xsi:schemaLocation="http://localhost/TradingPortal http://localhost/TradingPortal/Documents/XSD/Responses/SupplierRemittanceResponse10.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID></SenderID>
+    <ReceiverID></ReceiverID>
+    <ErrorStatus ErrorNumber=""></ErrorStatus>
+    <DocumentID>7395e9b9-0ac4-4121-bb1a-a87b8b9c058b</DocumentID>
+    <TransactionID>5388</TransactionID>
+    <TimeStamp>2007-06-19T15:39:05</TimeStamp>
+  </TransactionHeader>
+  <SupplierRemittanceAdvice>
+    <RemittanceAdvice>
+      <RemittanceAdviceHeader>
+        <SupplierCode>00467</SupplierCode>
+        <PaymentRunNo>1</PaymentRunNo>
+        <PaymentReference>PAYREF</PaymentReference>
+        <PaymentMethod></PaymentMethod>
+        <DocumentDate>18/06/2007 00:00:00</DocumentDate>
+        <ChequeNo></ChequeNo>
+        <RemittanceCurrCode></RemittanceCurrCode>
+        <RemittanceValue>0.00</RemittanceValue>
+        <SupplierName></SupplierName>
+        <SupplierAddress1></SupplierAddress1>
+        <SupplierAddress2></SupplierAddress2>
+        <SupplierAddress3></SupplierAddress3>
+        <SupplierAddress4></SupplierAddress4>
+        <SupplierAddress5></SupplierAddress5>
+        <SupplierPostcode></SupplierPostcode>
+        <SupplierBankAccNo></SupplierBankAccNo>
+        <SupplierBankName></SupplierBankName>
+        <RemittanceLines>1</RemittanceLines>
+      </RemittanceAdviceHeader>
+      <RemittanceAdviceDetail>
+        <RemittanceLine>
+          <RemittanceLineNo>1</RemittanceLineNo>
+          <MasterItemType>1 </MasterItemType>
+          <LedgerItemDocumentRef>21344   </LedgerItemDocumentRef>
+          <SuppliersRef>                    </SuppliersRef>
+          <SOPOrderNo>               </SOPOrderNo>
+          <PostingAmount>0.00</PostingAmount>
+          <DiscountAmount>0.00</DiscountAmount>
+          <VAT>0.00</VAT>
+        </RemittanceLine>
+      </RemittanceAdviceDetail>
+    </RemittanceAdvice>
+    <RemittanceAdvice>
+      <RemittanceAdviceHeader>
+        <SupplierCode>00467</SupplierCode>
+        <PaymentRunNo>2</PaymentRunNo>
+        <PaymentReference>PAYREF2</PaymentReference>
+        <PaymentMethod></PaymentMethod>
+        <DocumentDate>01/01/2007 00:00:00</DocumentDate>
+        <ChequeNo></ChequeNo>
+        <RemittanceCurrCode></RemittanceCurrCode>
+        <RemittanceValue>0.00</RemittanceValue>
+        <SupplierName>Sup Name</SupplierName>
+        <SupplierAddress1>Address1</SupplierAddress1>
+        <SupplierAddress2>Address2</SupplierAddress2>
+        <SupplierAddress3>Address3</SupplierAddress3>
+        <SupplierAddress4></SupplierAddress4>
+        <SupplierAddress5></SupplierAddress5>
+        <SupplierPostcode></SupplierPostcode>
+        <SupplierBankAccNo></SupplierBankAccNo>
+        <SupplierBankName></SupplierBankName>
+        <RemittanceLines>1</RemittanceLines>
+      </RemittanceAdviceHeader>
+      <RemittanceAdviceDetail>
+        <RemittanceLine>
+          <RemittanceLineNo>1</RemittanceLineNo>
+          <MasterItemType>1 </MasterItemType>
+          <LedgerItemDocumentRef>12345   </LedgerItemDocumentRef>
+          <SuppliersRef>                    </SuppliersRef>
+          <SOPOrderNo>               </SOPOrderNo>
+          <PostingAmount>0.00</PostingAmount>
+          <DiscountAmount>0.00</DiscountAmount>
+          <VAT>0.00</VAT>
+        </RemittanceLine>
+        <RemittanceLine>
+          <RemittanceLineNo>2</RemittanceLineNo>
+          <MasterItemType>1 </MasterItemType>
+          <LedgerItemDocumentRef>123456  </LedgerItemDocumentRef>
+          <SuppliersRef>                    </SuppliersRef>
+          <SOPOrderNo>               </SOPOrderNo>
+          <PostingAmount>0.00</PostingAmount>
+          <DiscountAmount>0.00</DiscountAmount>
+          <VAT>0.00</VAT>
+        </RemittanceLine>
+      </RemittanceAdviceDetail>
+    </RemittanceAdvice>
+  </SupplierRemittanceAdvice>
+</SupplierRemittanceResponse>

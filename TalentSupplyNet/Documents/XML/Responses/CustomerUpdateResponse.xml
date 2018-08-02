@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomerUpdateResponse xmlns="http://localhost/TradingPortal">
+  <Version>1.1</Version>
+  <TransactionHeader>
+    <SenderID>
+    </SenderID>
+    <ReceiverID>
+    </ReceiverID>
+    <ErrorStatus ErrorNumber="">
+    </ErrorStatus>
+    <DocumentID>719614cb-b932-412b-9e9a-8047ec3eb06f</DocumentID>
+    <TransactionID>13905</TransactionID>
+    <TimeStamp>2009-03-09T15:42:20</TimeStamp>
+  </TransactionHeader>
+  <CustomerUpdateDetails>
+    <Response>
+      <ReturnCode />
+    </Response>
+    <Sites>
+      <Site>
+        <Name>IRIS</Name>
+        <SiteActionSuccess>True</SiteActionSuccess>
+        <SiteAddressActionSuccess>True</SiteAddressActionSuccess>
+        <Contacts>
+          <Contact>
+            <CustomerNo>testuser@test.com</CustomerNo>
+            <AuthoriseActionSuccess>True</AuthoriseActionSuccess>
+            <UserActionSuccess>True</UserActionSuccess>
+            <Addresses>
+              <Address>
+                <PostCode>CW5 5DQ</PostCode>
+                <AddressActionSuccess>True</AddressActionSuccess>
+              </Address>
+            </Addresses>
+          </Contact>
+        </Contacts>
+      </Site>
+    </Sites>
+  </CustomerUpdateDetails>
+</CustomerUpdateResponse>

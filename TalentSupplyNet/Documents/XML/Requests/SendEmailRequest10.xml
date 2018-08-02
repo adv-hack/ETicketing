@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SendEmailRequest>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID>123456789</SenderID>
+    <ReceiverID>987654321</ReceiverID>
+    <CountryCode>UK</CountryCode>
+    <LoginID>UK3833HHD </LoginID>
+    <Password>Re887Jky52</Password>
+    <Company>CSG</Company>
+    <TransactionID>54321</TransactionID>
+  </TransactionHeader>
+	<SendEmail>
+    <FromAddress>NCFCticketoffice@ncfc-canaries.co.uk</FromAddress>
+    <ToAddress>alexander.carr@advancedcomputersoftware.com</ToAddress>
+    <EmailType>PPSPaymentFailure</EmailType>
+    <Parameters>
+      <CustomerNumber>000000010515</CustomerNumber>
+      <ProductDescription>Manchester United vs. Chelsea</ProductDescription>
+      <Turnstiles>S20</Turnstiles>
+      <Gates>STH124</Gates>
+      <Seat>7</Seat>
+      <PaymentValue>50.00</PaymentValue>
+    </Parameters>
+	</SendEmail>
+</SendEmailRequest>

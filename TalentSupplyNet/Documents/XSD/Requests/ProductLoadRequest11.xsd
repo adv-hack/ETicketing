@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="CharRestriction1000">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="1000"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ProductLoadRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Version" type="xs:decimal" />
+        <xs:element name="TransactionHeader">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SenderID" />
+              <xs:element name="ReceiverID" />
+              <xs:element name="CountryCode" />
+              <xs:element name="LoginID" />
+              <xs:element name="Password" />
+              <xs:element name="Company" />
+              <xs:element name="TransactionID" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CategoryDefinitions" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="CategoryDefinition">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Code" type="xs:string" />
+                    <xs:element name="DisplaySequence" type="xs:integer" />
+                    <xs:element maxOccurs="unbounded" name="Description">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute name="Language" type="xs:string" use="required" />
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="Mode" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="Total" type="xs:integer" use="required" />
+            <xs:attribute name="Mode" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="AttributeDefinitions" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="AttributeDefinition">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Code" type="xs:string" />
+                    <xs:element name="DisplaySequence" type="xs:string" />
+                    <xs:element name="Description">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute name="Language" type="xs:string" use="required" />
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Value" />
+                    <xs:element name="Date" />
+                    <xs:element name="Boolean" />
+                  </xs:sequence>
+                  <xs:attribute name="Mode" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="Total" type="xs:integer" use="required" />
+            <xs:attribute name="Mode" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ProductDefinitions" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProductDefinition" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="SKU" type="xs:string" />
+                    <xs:element name="AlternativeSKU" type="xs:string" minOccurs="0" />
+                    <xs:element name="MasterProduct" type="xs:string" />
+                    <xs:element name="Details">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Description1" type="xs:string"  minOccurs="0"/>
+                          <xs:element name="Description2" type="CharRestriction1000"  minOccurs="0"/>
+                          <xs:element name="Description3" type="CharRestriction1000" minOccurs="0" />
+                          <xs:element name="Description4" type="CharRestriction1000" minOccurs="0"/>
+                          <xs:element name="Description5" type="CharRestriction1000" minOccurs="0" />
+                          <xs:element name="HTML1" minOccurs="0"/>
+                          <xs:element name="HTML2" minOccurs="0"/>
+                          <xs:element name="HTML3" minOccurs="0"/>
+                          <xs:element name="HTML4" minOccurs="0"/>
+                          <xs:element name="HTML5" minOccurs="0"/>
+                          <xs:element name="HTML6" minOccurs="0"/>
+                          <xs:element name="HTML7" minOccurs="0"/>
+                          <xs:element name="HTML8" minOccurs="0"/>
+                          <xs:element name="HTML9" minOccurs="0"/>
+                          <xs:element name="SearchKeywords" minOccurs="0"/>
+                          <xs:element name="PageTitle" minOccurs="0"/>
+                          <xs:element name="MetaDescription" minOccurs="0"/>
+                          <xs:element name="MetaKeywords" minOccurs="0"/>
+                          <xs:element name="AvailableOnline" type="xs:string" minOccurs="0"/>
+                          <xs:element name="Weight" type="xs:decimal" minOccurs="0"/>
+                          <xs:element name ="ProductGLCode1" type ="xs:string" minOccurs="0"/>
+                          <xs:element name ="ProductGLCode2" type ="xs:string" minOccurs="0"/>
+                          <xs:element name ="ProductGLCode3" type ="xs:string" minOccurs="0"/>
+                          <xs:element name ="ProductGLCode4" type ="xs:string" minOccurs="0"/>
+                          <xs:element name ="ProductGLCode5" type ="xs:string" minOccurs="0"/>
+                        </xs:sequence>
+                        <xs:attribute name="Language" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Attributes" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element maxOccurs="unbounded" name="Attribute">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Code" type="xs:string" />
+                                <xs:element name="DisplaySequence" type="xs:integer" />
+                              </xs:sequence>
+                              <xs:attribute name="Category" type="xs:string" use="required" />
+                              <xs:attribute name="SubCategory" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="Total" type="xs:integer" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="Mode" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="Total" type="xs:integer" use="required" />
+            <xs:attribute name="Mode" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

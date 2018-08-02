@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AmendTicketingOrderResponse>
+	<Version>1.0</Version>
+	<TransactionHeader>
+		<SenderID></SenderID>
+		<ReceiverID></ReceiverID>
+		<CountryCode></CountryCode>
+		<LoginID>jonathan</LoginID>
+		<Password>jonathan</Password>
+		<Company>CSG</Company>
+		<TransactionID></TransactionID>
+	</TransactionHeader>
+	<AmendTicketingOrder>
+		<Response>
+			<ReturnCode></ReturnCode>
+		</Response>
+	</AmendTicketingOrder>
+</AmendTicketingOrderResponse>	

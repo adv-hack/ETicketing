@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="ProductOptionsLoadRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Version" type="xs:decimal" />
+        <xs:element name="TransactionHeader">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SenderID" />
+              <xs:element name="ReceiverID" />
+              <xs:element name="CountryCode" />
+              <xs:element name="LoginID" />
+              <xs:element name="Password" />
+              <xs:element name="Company" />
+              <xs:element name="TransactionID" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="OptionTypeDefinitions" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DefaultBusinessUnit" type="xs:string" />
+              <xs:element name="DefaultPartner" type="xs:string" />
+              <xs:element maxOccurs="unbounded" name="OptionType">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Code" type="xs:string" />
+                    <xs:element name="Details">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Description" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="Language" type="xs:string" use="required" />
+                        <xs:attribute name="BusinessUnit" type="xs:string" use="optional" />
+                        <xs:attribute name="Partner" type="xs:string" use="optional" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="Mode" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="Total" type="xs:integer" use="required" />
+            <xs:attribute name="Mode" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="OptionDefinitions" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DefaultBusinessUnit" type="xs:string"/>
+              <xs:element name="DefaultPartner" type="xs:string" />
+              <xs:element maxOccurs="unbounded" name="Option">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Code" type="xs:string" />
+                    <xs:element name="Details">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Description" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute name="Language" type="xs:string" use="required" />
+                        <xs:attribute name="BusinessUnit" type="xs:string" use="optional" />
+                        <xs:attribute name="Partner" type="xs:string" use="optional" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="Mode" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="Total" type="xs:integer" use="required" />
+            <xs:attribute name="Mode" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ProductOptions" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProductOption">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="Options">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element maxOccurs="unbounded" name="OptionType">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element maxOccurs="unbounded" name="Option">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute name="SKUSuffix" type="xs:string" use="optional" />
+                                        <xs:attribute name="DisplayOrder" type="xs:unsignedByte" use="required" />
+                                        <xs:attribute name="SubstituteSKU" type="xs:string" use="optional" />
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute name="AppendSequence" type="xs:unsignedByte" use="optional" />
+                              <xs:attribute name="DisplayOrder" type="xs:unsignedByte" use="required" />
+                              <xs:attribute name="DisplayType" type="xs:string" use="required" />
+                              <xs:attribute name="OptionType" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="Action" type="xs:string" use="required" />
+                        <xs:attribute name="MasterProduct" type="xs:string" use="required" />
+                        <xs:attribute name="SKUAction" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="BusinessUnit" type="xs:string" use="required" />
+                  <xs:attribute name="Partner" type="xs:string" use="required" />
+                  <xs:attribute name="Mode" type="xs:string" use="required" />
+                  <xs:attribute name="Total" type="xs:integer" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="Total" type="xs:integer" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

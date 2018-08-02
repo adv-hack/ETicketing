@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="ProductRelationsLoadRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Version" type="xs:decimal" />
+        <xs:element name="TransactionHeader">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SenderID" />
+              <xs:element name="ReceiverID" />
+              <xs:element name="CountryCode" />
+              <xs:element name="LoginID" />
+              <xs:element name="Password" />
+              <xs:element name="Company" />
+              <xs:element name="TransactionID" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ProductRelations">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="ProductRelation">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Defaults">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="LastProductAfterLevel" type="xs:unsignedByte" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Relations">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element  maxOccurs="unbounded" name="Relation">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Product">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute name="Level1" type="xs:string" use="optional" />
+                                        <xs:attribute name="Level2" type="xs:string" use="optional" />
+                                        <xs:attribute name="Level3" type="xs:string" use="optional" />
+                                        <xs:attribute name="Level4" type="xs:string" use="optional" />
+                                        <xs:attribute name="Level5" type="xs:string" use="optional" />
+                                        <xs:attribute name="Level6" type="xs:string" use="optional" />
+                                        <xs:attribute name="Level7" type="xs:string" use="optional" />
+                                        <xs:attribute name="Level8" type="xs:string" use="optional" />
+                                        <xs:attribute name="Level9" type="xs:string" use="optional" />
+                                        <xs:attribute name="Level10" type="xs:string" use="optional" />
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="RelatedProduct">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute name="Level1" type="xs:string" use="optional" />
+                                        <xs:attribute name="Level2" type="xs:string" use="optional" />
+                                        <xs:attribute name="Level3" type="xs:string" use="optional" />
+                                        <xs:attribute name="Level4" type="xs:string" use="optional" />
+                                        <xs:attribute name="Level5" type="xs:string" use="optional" />
+                                        <xs:attribute name="Level6" type="xs:string" use="optional" />
+                                        <xs:attribute name="Level7" type="xs:string" use="optional" />
+                                        <xs:attribute name="Level8" type="xs:string" use="optional" />
+                                        <xs:attribute name="Level9" type="xs:string" use="optional" />
+                                        <xs:attribute name="Level10" type="xs:string" use="optional" />
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute name="Qualifier" type="xs:string" use="required" />
+                              <xs:attribute name="Mode" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="Total" type="xs:integer" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="BusinessUnit" type="xs:string" use="required" />
+                  <xs:attribute name="Partner" type="xs:string" use="required" />
+                  <xs:attribute name="Mode" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="Total" type="xs:integer" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

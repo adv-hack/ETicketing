@@ -1,0 +1,125 @@
+﻿body {
+}
+
+label.err-message {
+	color: red;
+	margin-top: 0px;
+	margin-bottom: 8px;
+}
+
+.button {
+	background-color: #f05451;
+}
+
+.ebiz-submit-top {
+	text-align: right;
+}
+
+.ebiz-submit-bottom {
+	text-align: right;
+}
+
+/*new*/
+
+.tabs {
+	background-color: #f8f7ee;
+	box-shadow: inset 0 -2px 3px rgba(203, 196, 130, 0.06);
+	margin-bottom: 1.25rem !important;
+}
+
+	.tabs .tab-title > a {
+		background-color: transparent;
+		color: #c3c2b9;
+		font-size: 0.875rem;
+		padding: 1rem;
+	}
+
+		.tabs .tab-title > a:hover {
+			color: #29324e;
+			background-color: rgba(233, 230, 202, 0.3);
+		}
+
+			.tabs .tab-title > a:hover i {
+				color: #c3c2b9;
+			}
+
+	.tabs .tab-title.active a {
+		box-shadow: inset 0 2px 0 #f05451;
+	}
+
+		.tabs .tab-title.active a:hover {
+			background-color: #fff;
+		}
+
+		.tabs .tab-title.active a i {
+			color: #f05451;
+		}
+
+	.tabs.vertical {
+		width: 25%;
+	}
+
+		.tabs.vertical .tab-title.active a {
+			box-shadow: inset 2px 0 0 #f05451;
+		}
+
+		.tabs.vertical + .tabs-content-defaults-wrap {
+			float: right;
+			width: 75%;
+		}
+
+div[class^="ebiz-save-defaults"] {
+	text-align: right;
+}
+
+.accordion .accordion-navigation > a {
+	background-color: #f8f7ee;
+	color: #c3c2b9;
+}
+
+	.accordion .accordion-navigation > a:hover {
+		background-color: #F4F3E3;
+		color: #29324e;
+	}
+
+.accordion .accordion-navigation.active > a {
+	background: transparent;
+	box-shadow: inset 0 2px 0 #f05451;
+	color: #29324e;
+}
+
+.accordion-navigation > a:after {
+	content: "\f078";
+	float: right;
+	font-family: FontAwesome;
+	font-size: 1rem;
+	padding-left: 1rem;
+}
+
+.accordion-navigation > a:hover:after {
+	color: #c3c2b9;
+}
+
+.accordion-navigation.active a:after {
+	content: "\f077";
+	color: #f05451;
+}
+
+.button {
+	background-color: #f05451;
+}
+.ebiz-left {
+	text-align:left;
+}
+.ebiz-right {
+	text-align:right;
+}
+.ebiz-capitalize {
+	text-transform: capitalize;
+}
+	button:hover, button:focus, .button:hover, .button:focus {
+		background-color: #E9524F;
+	}
+.status-message{
+	color: red;
+}

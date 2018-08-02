@@ -1,0 +1,554 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="ProductPriceLoadRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Version" type="xs:decimal" />
+        <xs:element name="TransactionHeader">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SenderID" />
+              <xs:element name="ReceiverID" />
+              <xs:element name="CountryCode" />
+              <xs:element name="LoginID" />
+              <xs:element name="Password" />
+              <xs:element name="Company" />
+              <xs:element name="TransactionID" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TaxCodes" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TaxCode" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Code" type="xs:string" />
+                    <xs:element name="Description">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute name="Language" type="xs:string" use="required" />
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="Mode" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="Total" type="xs:integer" use="required" />
+            <xs:attribute name="Mode" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CurrencyCodes" minOccurs="0" >
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CurrencyCode" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Code" type="xs:string" />
+                    <xs:element name="Description">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute name="Language" type="xs:string" use="required" />
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="HTMLCurrencySymbol" type="xs:string" />
+                  </xs:sequence>
+                  <xs:attribute name="Mode" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="Total" type="xs:integer" use="required" />
+            <xs:attribute name="Mode" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PriceLists" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PriceList" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Code" type="xs:string" />
+                    <xs:element name="Description" type="xs:string" />
+                    <xs:element name="CurrencyCode" type="xs:string" />
+                    <xs:element name="FreeDeliveryValue" type="xs:decimal" minOccurs="0"/>
+                    <xs:element name="MinimumDeliveryValue" type="xs:decimal" minOccurs="0" />
+                    <xs:element name="StartDate" type="xs:string" />
+                    <xs:element name="EndDate" type="xs:string" />
+                    <xs:element name="Products">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Product" maxOccurs="unbounded" minOccurs="0">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="SKU" type="xs:string" />
+                                <xs:element name="FromDate" type="xs:string" />
+                                <xs:element name="ToDate" type="xs:string" />
+                                <xs:element name="TaxCode" type="xs:string" />
+                                <xs:element name="TariffCode" type="xs:string" minOccurs="0" />
+                                <xs:element name="Price">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Gross" type="xs:decimal" />
+                                      <xs:element name="Net" type="xs:decimal" />
+                                      <xs:element name="Tax" type="xs:decimal" />
+                                      <xs:element name="Delivery" minOccurs="0">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Gross" type="xs:decimal" />
+                                            <xs:element name="Net" type="xs:decimal" />
+                                            <xs:element name="Tax" type="xs:decimal" />
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="Sale" minOccurs="0">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Gross" type="xs:decimal"/>
+                                            <xs:element name="Net" type="xs:decimal"/>
+                                            <xs:element name="Tax" type="xs:decimal"/>
+                                            <xs:element name="Delivery" minOccurs="0">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="Gross" type="xs:decimal"/>
+                                                  <xs:element name="Net" type="xs:decimal"/>
+                                                  <xs:element name="Tax" type="xs:decimal"/>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="PriceBreak1" minOccurs="0">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="PriceBreakCode" />
+                                      <xs:element name="PriceBreakQuantity" type="xs:integer" />
+                                      <xs:element name="Gross" type="xs:decimal" />
+                                      <xs:element name="Net" type="xs:decimal" />
+                                      <xs:element name="Tax" type="xs:decimal" />
+                                      <xs:element name="Delivery" minOccurs="0">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Gross" type="xs:decimal" />
+                                            <xs:element name="Net" type="xs:decimal" />
+                                            <xs:element name="Tax" type="xs:decimal" />
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="Sale" minOccurs="0">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="PriceBreakQuantity" type="xs:integer"/>
+                                            <xs:element name="Gross" type="xs:decimal"/>
+                                            <xs:element name="Net" type="xs:decimal"/>
+                                            <xs:element name="Tax" type="xs:decimal"/>
+                                            <xs:element name="Delivery" minOccurs="0">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="Gross" type="xs:decimal"/>
+                                                  <xs:element name="Net" type="xs:decimal"/>
+                                                  <xs:element name="Tax" type="xs:decimal"/>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="PriceBreak2" minOccurs="0">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="PriceBreakQuantity" type="xs:integer" />
+                                      <xs:element name="Gross" type="xs:decimal" />
+                                      <xs:element name="Net" type="xs:decimal" />
+                                      <xs:element name="Tax" type="xs:decimal" />
+                                      <xs:element name="Delivery" minOccurs="0">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Gross" type="xs:decimal" />
+                                            <xs:element name="Net" type="xs:decimal" />
+                                            <xs:element name="Tax" type="xs:decimal" />
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="Sale" minOccurs="0">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="PriceBreakQuantity" type="xs:integer"/>
+                                            <xs:element name="Gross" type="xs:decimal"/>
+                                            <xs:element name="Net" type="xs:decimal"/>
+                                            <xs:element name="Tax" type="xs:decimal"/>
+                                            <xs:element name="Delivery" minOccurs="0">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="Gross" type="xs:decimal"/>
+                                                  <xs:element name="Net" type="xs:decimal"/>
+                                                  <xs:element name="Tax" type="xs:decimal"/>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="PriceBreak3" minOccurs="0">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="PriceBreakQuantity" type="xs:integer" />
+                                      <xs:element name="Gross" type="xs:decimal" />
+                                      <xs:element name="Net" type="xs:decimal" />
+                                      <xs:element name="Tax" type="xs:decimal" />
+                                      <xs:element name="Delivery" minOccurs="0">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Gross" type="xs:decimal" />
+                                            <xs:element name="Net" type="xs:decimal" />
+                                            <xs:element name="Tax" type="xs:decimal" />
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="Sale" minOccurs="0">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="PriceBreakQuantity" type="xs:integer"/>
+                                            <xs:element name="Gross" type="xs:decimal"/>
+                                            <xs:element name="Net" type="xs:decimal"/>
+                                            <xs:element name="Tax" type="xs:decimal"/>
+                                            <xs:element name="Delivery" minOccurs="0">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="Gross" type="xs:decimal"/>
+                                                  <xs:element name="Net" type="xs:decimal"/>
+                                                  <xs:element name="Tax" type="xs:decimal"/>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="PriceBreak4" minOccurs="0">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="PriceBreakQuantity" type="xs:integer" />
+                                      <xs:element name="Gross" type="xs:decimal" />
+                                      <xs:element name="Net" type="xs:decimal" />
+                                      <xs:element name="Tax" type="xs:decimal" />
+                                      <xs:element name="Delivery" minOccurs="0">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Gross" type="xs:decimal" />
+                                            <xs:element name="Net" type="xs:decimal" />
+                                            <xs:element name="Tax" type="xs:decimal" />
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="Sale" minOccurs="0">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="PriceBreakQuantity" type="xs:integer"/>
+                                            <xs:element name="Gross" type="xs:decimal"/>
+                                            <xs:element name="Net" type="xs:decimal"/>
+                                            <xs:element name="Tax" type="xs:decimal"/>
+                                            <xs:element name="Delivery" minOccurs="0">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="Gross" type="xs:decimal"/>
+                                                  <xs:element name="Net" type="xs:decimal"/>
+                                                  <xs:element name="Tax" type="xs:decimal"/>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="PriceBreak5" minOccurs="0">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="PriceBreakQuantity" type="xs:integer" />
+                                      <xs:element name="Gross" type="xs:decimal" />
+                                      <xs:element name="Net" type="xs:decimal" />
+                                      <xs:element name="Tax" type="xs:decimal" />
+                                      <xs:element name="Delivery" minOccurs="0">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Gross" type="xs:decimal" />
+                                            <xs:element name="Net" type="xs:decimal" />
+                                            <xs:element name="Tax" type="xs:decimal" />
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="Sale" minOccurs="0">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="PriceBreakQuantity" type="xs:integer"/>
+                                            <xs:element name="Gross" type="xs:decimal"/>
+                                            <xs:element name="Net" type="xs:decimal"/>
+                                            <xs:element name="Tax" type="xs:decimal"/>
+                                            <xs:element name="Delivery" minOccurs="0">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="Gross" type="xs:decimal"/>
+                                                  <xs:element name="Net" type="xs:decimal"/>
+                                                  <xs:element name="Tax" type="xs:decimal"/>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="PriceBreak6" minOccurs="0">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="PriceBreakQuantity" type="xs:integer" />
+                                      <xs:element name="Gross" type="xs:decimal" />
+                                      <xs:element name="Net" type="xs:decimal" />
+                                      <xs:element name="Tax" type="xs:decimal" />
+                                      <xs:element name="Delivery" minOccurs="0">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Gross" type="xs:decimal" />
+                                            <xs:element name="Net" type="xs:decimal" />
+                                            <xs:element name="Tax" type="xs:decimal" />
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="Sale" minOccurs="0">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="PriceBreakQuantity" type="xs:integer"/>
+                                            <xs:element name="Gross" type="xs:decimal"/>
+                                            <xs:element name="Net" type="xs:decimal"/>
+                                            <xs:element name="Tax" type="xs:decimal"/>
+                                            <xs:element name="Delivery" minOccurs="0">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="Gross" type="xs:decimal"/>
+                                                  <xs:element name="Net" type="xs:decimal"/>
+                                                  <xs:element name="Tax" type="xs:decimal"/>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="PriceBreak7" minOccurs="0">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="PriceBreakQuantity" type="xs:integer" />
+                                      <xs:element name="Gross" type="xs:decimal" />
+                                      <xs:element name="Net" type="xs:decimal" />
+                                      <xs:element name="Tax" type="xs:decimal" />
+                                      <xs:element name="Delivery" minOccurs="0">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Gross" type="xs:decimal" />
+                                            <xs:element name="Net" type="xs:decimal" />
+                                            <xs:element name="Tax" type="xs:decimal" />
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="Sale" minOccurs="0">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="PriceBreakQuantity" type="xs:integer"/>
+                                            <xs:element name="Gross" type="xs:decimal"/>
+                                            <xs:element name="Net" type="xs:decimal"/>
+                                            <xs:element name="Tax" type="xs:decimal"/>
+                                            <xs:element name="Delivery" minOccurs="0">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="Gross" type="xs:decimal"/>
+                                                  <xs:element name="Net" type="xs:decimal"/>
+                                                  <xs:element name="Tax" type="xs:decimal"/>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="PriceBreak8" minOccurs="0">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="PriceBreakQuantity" type="xs:integer" />
+                                      <xs:element name="Gross" type="xs:decimal" />
+                                      <xs:element name="Net" type="xs:decimal" />
+                                      <xs:element name="Tax" type="xs:decimal" />
+                                      <xs:element name="Delivery" minOccurs="0">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Gross" type="xs:decimal" />
+                                            <xs:element name="Net" type="xs:decimal" />
+                                            <xs:element name="Tax" type="xs:decimal" />
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="Sale" minOccurs="0">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="PriceBreakQuantity" type="xs:integer"/>
+                                            <xs:element name="Gross" type="xs:decimal"/>
+                                            <xs:element name="Net" type="xs:decimal"/>
+                                            <xs:element name="Tax" type="xs:decimal"/>
+                                            <xs:element name="Delivery" minOccurs="0">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="Gross" type="xs:decimal"/>
+                                                  <xs:element name="Net" type="xs:decimal"/>
+                                                  <xs:element name="Tax" type="xs:decimal"/>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="PriceBreak9" minOccurs="0">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="PriceBreakQuantity" type="xs:integer" />
+                                      <xs:element name="Gross" type="xs:decimal" />
+                                      <xs:element name="Net" type="xs:decimal" />
+                                      <xs:element name="Tax" type="xs:decimal" />
+                                      <xs:element name="Delivery" minOccurs="0">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Gross" type="xs:decimal" />
+                                            <xs:element name="Net" type="xs:decimal" />
+                                            <xs:element name="Tax" type="xs:decimal" />
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="Sale" minOccurs="0">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="PriceBreakQuantity" type="xs:integer"/>
+                                            <xs:element name="Gross" type="xs:decimal"/>
+                                            <xs:element name="Net" type="xs:decimal"/>
+                                            <xs:element name="Tax" type="xs:decimal"/>
+                                            <xs:element name="Delivery" minOccurs="0">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="Gross" type="xs:decimal"/>
+                                                  <xs:element name="Net" type="xs:decimal"/>
+                                                  <xs:element name="Tax" type="xs:decimal"/>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="PriceBreak10" minOccurs="0">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="PriceBreakQuantity" type="xs:integer" />
+                                      <xs:element name="Gross" type="xs:decimal" />
+                                      <xs:element name="Net" type="xs:decimal" />
+                                      <xs:element name="Tax" type="xs:decimal" />
+                                      <xs:element name="Delivery" minOccurs="0">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Gross" type="xs:decimal" />
+                                            <xs:element name="Net" type="xs:decimal" />
+                                            <xs:element name="Tax" type="xs:decimal" />
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element name="Sale" minOccurs="0">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="PriceBreakQuantity" type="xs:integer"/>
+                                            <xs:element name="Gross" type="xs:decimal"/>
+                                            <xs:element name="Net" type="xs:decimal"/>
+                                            <xs:element name="Tax" type="xs:decimal"/>
+                                            <xs:element name="Delivery" minOccurs="0">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="Gross" type="xs:decimal"/>
+                                                  <xs:element name="Net" type="xs:decimal"/>
+                                                  <xs:element name="Tax" type="xs:decimal"/>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                               </xs:sequence>
+                              <xs:attribute name="Mode" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="Total" type="xs:integer" use="required" />
+                        <xs:attribute name="Mode" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="Mode" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="Total" type="xs:integer" use="required" />
+            <xs:attribute name="Mode" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Defaults" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Default" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute name="Name" type="xs:string" use="required" />
+                      <xs:attribute name="BusinessUnit" type="xs:string" use="required" />
+                      <xs:attribute name="Partner" type="xs:string" use="required" />
+                      <xs:attribute name="Mode" type="xs:string" use="required" />
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              
+            </xs:sequence>
+            <xs:attribute name="Total" type="xs:integer" use="required" />
+            <xs:attribute name="Mode" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

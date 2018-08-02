@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ProductListReturnAllRequest>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID></SenderID>
+    <ReceiverID></ReceiverID>
+    <CountryCode></CountryCode>
+    <LoginID>CSGroup</LoginID>
+    <Password>Password</Password>
+    <Company>CSG</Company>
+    <TransactionID></TransactionID>
+  </TransactionHeader>
+
+  <ProductList>
+    <StadiumCodes></StadiumCodes>
+    <CustomerNo>000000000012</CustomerNo>
+    <ProductType></ProductType>
+  </ProductList>
+</ProductListReturnAllRequest>
+  

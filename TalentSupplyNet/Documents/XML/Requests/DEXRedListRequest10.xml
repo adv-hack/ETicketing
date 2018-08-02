@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<DEXRedListRequest>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID></SenderID>
+    <ReceiverID></ReceiverID>
+    <CountryCode></CountryCode>
+    <LoginID>IRIS</LoginID>
+    <Password>IRIS</Password>
+    <Company>INTERNET</Company>
+    <TransactionID></TransactionID>
+  </TransactionHeader>
+  <ProductCode>DANC00</ProductCode>
+</DEXRedListRequest>

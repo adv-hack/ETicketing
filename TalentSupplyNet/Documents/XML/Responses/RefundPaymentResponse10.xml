@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RefundPaymentResponse>
+	<Version>1.0</Version>
+	<TransactionHeader>
+		<SenderID></SenderID>
+		<ReceiverID></ReceiverID>
+		<CountryCode></CountryCode>
+		<LoginID>CSGroup</LoginID>
+		<Password>Password</Password>
+		<Company>CSG</Company>
+		<TransactionID></TransactionID>
+	</TransactionHeader>
+
+	<RefundPayment>
+		<Response>
+			<ReturnCode></ReturnCode>
+			<RefundReference>524262727</RefundReference>
+			<RefundTotal>43.00</RefundTotal>
+		</Response>
+		<RefundDetails>
+			<ProductDetails>
+				<CustomerNo>123456</CustomerNo>
+				<ProductCode>HLIV04</ProductCode>
+				<Seat>NOR/A/CC/0045</Seat>
+				<Price>20.00</Price>
+			</ProductDetails>
+			<ProductDetails>
+				<CustomerNo>123456</CustomerNo>
+				<ProductCode>HLIV04</ProductCode>
+				<Seat>NOR/A/CC/0046</Seat>
+				<Price>20.00</Price>
+			</ProductDetails>
+		</RefundDetails>
+	</RefundPayment>
+</RefundPaymentResponse>

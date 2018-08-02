@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<SeasonTicketResponse>
+  <TransactionHeader>
+    <SenderID></SenderID>
+    <ReceiverID></ReceiverID>
+    <CountryCode></CountryCode>
+    <LoginID></LoginID>
+    <Password></Password>
+    <Company></Company>
+    <TransactionID></TransactionID>
+  </TransactionHeader>
+
+  <TransactionDetails>
+    <RegisterCustomers></RegisterCustomers>
+    <TakePayments></TakePayments>
+    <SuccessCount></SuccessCount>
+    <FailureCount></FailureCount>
+
+    <SeasonTicketSaleCustomerResponse>
+
+      <Success></Success>
+      <TicketingBasketID></TicketingBasketID>
+
+      <RegisterCustomerResponse>
+        <ReturnCode></ReturnCode>
+        <CustomerDetails>
+          <CustomerNo></CustomerNo>
+          <ContactTitle></ContactTitle>
+          <ContactInitials></ContactInitials>
+          <ContactForename></ContactForename>
+          <ContactSurname></ContactSurname>
+          <Salutation></Salutation>
+          <CompanyName></CompanyName>
+          <PositionInCompany></PositionInCompany>
+          <AddressLine1></AddressLine1>
+          <AddressLine2></AddressLine2>
+          <AddressLine3></AddressLine3>
+          <AddressLine4></AddressLine4>
+          <AddressLine5></AddressLine5>
+          <PostCode></PostCode>
+          <Gender></Gender>
+          <HomeTelephoneNumber></HomeTelephoneNumber>
+          <WorkTelephoneNumber></WorkTelephoneNumber>
+          <MobileNumber></MobileNumber>
+          <EmailAddress></EmailAddress>
+          <DateOfBirth></DateOfBirth>
+          <ContactViaMail></ContactViaMail>
+          <Subscription1></Subscription1>
+          <Subscription2></Subscription2>
+          <Subscription3></Subscription3>
+          <ContactViaMail1></ContactViaMail1>
+          <ContactViaMail2></ContactViaMail2>
+          <ContactViaMail3></ContactViaMail3>
+          <ContactViaMail4></ContactViaMail4>
+          <ContactViaMail5></ContactViaMail5>
+          <ExternalId1></ExternalId1>
+          <ExternalId2></ExternalId2>
+        </CustomerDetails>
+      </RegisterCustomerResponse>
+
+      <AddToBasketResponse>
+        <ReturnCode></ReturnCode>
+        <SessionID></SessionID>
+        <ProductCode></ProductCode>
+        <StandCode></StandCode>
+        <AreaCode></AreaCode>
+        <CustomerNumber></CustomerNumber>
+        <PriceCategory></PriceCategory>
+      </AddToBasketResponse>
+
+      <PaymentResponse>
+        <ReturnCode></ReturnCode>
+        <SessionId></SessionId>
+        <CustomerNo></CustomerNo>
+        <ConfirmedDetails>
+          <PaymentReference></PaymentReference>
+          <WSFee></WSFee>
+          <CreditcardFee></CreditcardFee>
+          <CarriageFee></CarriageFee>
+          <TotalPrice></TotalPrice>
+          <ShoppingBasket>
+            <ProductDetails>
+              <CustomerNo></CustomerNo>
+              <ProductCode></ProductCode>
+              <Seat></Seat>
+              <PriceCode></PriceCode>
+              <PriceBand></PriceBand>
+              <Price></Price>
+            </ProductDetails>
+          </ShoppingBasket>
+        </ConfirmedDetails>
+      </PaymentResponse>
+
+    </SeasonTicketSaleCustomerResponse>
+  </TransactionDetails>
+</SeasonTicketResponse>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<GenerateTicketingBasketIDRequest>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID></SenderID>
+    <ReceiverID></ReceiverID>
+    <CountryCode></CountryCode>
+    <LoginID>COMPUTICKET</LoginID>
+    <Password>COMPUTICKET</Password>
+    <Company>MMTPARTNER</Company>
+    <TransactionID></TransactionID>
+  </TransactionHeader>
+  <CustomerNumber>00</CustomerNumber>
+</GenerateTicketingBasketIDRequest>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ProductAlertOutboundRequest>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID>54321</SenderID>
+    <ReceiverID>54321</ReceiverID>
+    <CountryCode>UK</CountryCode>
+    <LoginID>andy</LoginID>
+    <Password>andy</Password>
+    <Company>CSG</Company>
+    <TransactionID>54321</TransactionID>
+  </TransactionHeader>
+</ProductAlertOutboundRequest>

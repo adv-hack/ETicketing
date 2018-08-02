@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ProductSeatNumbersResponse>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID></SenderID>
+    <ReceiverID></ReceiverID>
+    <CountryCode></CountryCode>
+    <LoginID>CSGroup</LoginID>
+    <Password>Password</Password>
+    <Company>CSG</Company>
+    <TransactionID></TransactionID>
+  </TransactionHeader>
+
+  <ProductList>
+    <Response>
+      <ReturnCode></ReturnCode>
+    </Response>
+    <Rows>
+      <Row RowName="AA" RowSeatNumbers="0010 0011 0012 0013" />
+      <Row RowName="AB" RowSeatNumbers="0010 0011 0012 0013" />
+      <Row RowName="AC" RowSeatNumbers="0010 0011 0012 0013" />
+      <Row RowName="AD" RowSeatNumbers="0010 0011 0012 0013" />
+    </Rows>
+  </ProductList>
+</ProductSeatNumbersResponse>

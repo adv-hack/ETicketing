@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AmendBasketResponse>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID />
+    <ReceiverID />
+    <ErrorStatus ErrorNumber=""></ErrorStatus>
+    <DocumentID />
+    <TransactionID />
+    <Company />
+    <TimeStamp />
+  </TransactionHeader>
+
+  <BasketHeader>
+    <BusinessUnit></BusinessUnit>
+    <Partner></Partner>
+    <UserID></UserID>
+  </BasketHeader>
+  <BasketLine>
+    <LineError></LineError>
+    <Product></Product>
+    <Quantity></Quantity>
+  </BasketLine>
+  <BasketLine>
+    <LineError></LineError>
+    <Product></Product>
+    <Quantity></Quantity>
+  </BasketLine>
+  <BasketLine>
+    <LineError></LineError>
+    <Product></Product>
+    <Quantity></Quantity>
+  </BasketLine>
+</AmendBasketResponse>

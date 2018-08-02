@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AmendTemplateResponse>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID />
+    <ReceiverID />
+    <ErrorStatus ErrorNumber=""></ErrorStatus>
+    <DocumentID />
+    <TransactionID />
+    <Company />
+    <TimeStamp />
+  </TransactionHeader>
+
+  <TemplateHeader>
+    <BusinessUnit></BusinessUnit>
+    <Partner></Partner>
+    <UserID></UserID>
+  </TemplateHeader>
+  <TemplateLine>
+    <LineError></LineError>
+    <Product></Product>
+    <Quantity></Quantity>
+  </TemplateLine>
+  <TemplateLine>
+    <LineError></LineError>
+    <Product></Product>
+    <Quantity></Quantity>
+  </TemplateLine>
+  <TemplateLine>
+    <LineError></LineError>
+    <Product></Product>
+    <Quantity></Quantity>
+  </TemplateLine>
+</AmendTemplateResponse>

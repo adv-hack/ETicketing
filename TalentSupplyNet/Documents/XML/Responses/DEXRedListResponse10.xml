@@ -1,0 +1,503 @@
+<?xml version="1.0" ?>
+<RedList clearList="true" xmlns="http://tempuri.org/RedListSchema.xsd">
+  <RedListEntry>
+    <EventName>Johnny Clegg Live at The Teatro</EventName>
+    <EventDate>201209152000</EventDate>
+    <EventID>6628863</EventID>
+    <VenueName>Teatro At Montecasino</VenueName>
+    <VenueID>13712</VenueID>
+    <CustomerName>  Test   Tickets</CustomerName>
+    <BasketRef>B2DX6Y47</BasketRef>
+    <TicketID>1</TicketID>
+    <TicketSaleDate>201207061057</TicketSaleDate>
+    <TicketPrintDate>201207061057</TicketPrintDate>
+    <TicketSaleTerminal>Client Services Jhbg 2 Corne</TicketSaleTerminal>
+    <!-- Barcode>event id-sales date-venue id-area id-section id-rowseat-ticket id</Barcode-->
+    <Barcode>6628863-20120706105744-13712-235941-223723-e11-1</Barcode>
+    <BarcodeType>PDF417</BarcodeType>
+    <AreaName>Middle Stalls</AreaName>
+    <AreaID>235941</AreaID>
+    <SectionName>Middle Stalls</SectionName>
+    <SectionID>223723</SectionID>
+    <RowNo>E</RowNo>
+    <SeatNo>11</SeatNo>
+    <EntranceDesc>Door 1</EntranceDesc>
+    <GateDesc>Use Door 1</GateDesc>
+    <PriceType>Adult</PriceType>
+  </RedListEntry>
+  <RedListEntry>
+    <EventName>Johnny Clegg Live at The Teatro</EventName>
+    <EventDate>201209152000</EventDate>
+    <EventID>6628863</EventID>
+    <VenueName>Teatro At Montecasino</VenueName>
+    <VenueID>13712</VenueID>
+    <CustomerName>  Test   Tickets</CustomerName>
+    <BasketRef>B2DX6Y47</BasketRef>
+    <TicketID>2</TicketID>
+    <TicketSaleDate>201207061057</TicketSaleDate>
+    <TicketPrintDate>201207061057</TicketPrintDate>
+    <TicketSaleTerminal>Client Services Jhbg 2 Corne</TicketSaleTerminal>
+    <!-- Barcode>event id-sales date-venue id-area id-section id-rowseat-ticket id</Barcode-->
+    <Barcode>6628863-20120706105744-13712-235941-223723-e12-2</Barcode>
+    <BarcodeType>PDF417</BarcodeType>
+    <AreaName>Middle Stalls</AreaName>
+    <AreaID>235941</AreaID>
+    <SectionName>Middle Stalls</SectionName>
+    <SectionID>223723</SectionID>
+    <RowNo>E</RowNo>
+    <SeatNo>12</SeatNo>
+    <EntranceDesc>Door 1</EntranceDesc>
+    <GateDesc>Use Door 1</GateDesc>
+    <PriceType>Adult</PriceType>
+  </RedListEntry>
+  <RedListEntry>
+    <EventName>Johnny Clegg Live at The Teatro</EventName>
+    <EventDate>201209152000</EventDate>
+    <EventID>6628863</EventID>
+    <VenueName>Teatro At Montecasino</VenueName>
+    <VenueID>13712</VenueID>
+    <CustomerName>  Test   Tickets</CustomerName>
+    <BasketRef>B2DX6Y47</BasketRef>
+    <TicketID>3</TicketID>
+    <TicketSaleDate>201207061057</TicketSaleDate>
+    <TicketPrintDate>201207061057</TicketPrintDate>
+    <TicketSaleTerminal>Client Services Jhbg 2 Corne</TicketSaleTerminal>
+    <!-- Barcode>event id-sales date-venue id-area id-section id-rowseat-ticket id</Barcode-->
+    <Barcode>6628863-20120706105744-13712-235941-223723-v1-3</Barcode>
+    <BarcodeType>PDF417</BarcodeType>
+    <AreaName>Middle Stalls</AreaName>
+    <AreaID>235941</AreaID>
+    <SectionName>Middle Stalls</SectionName>
+    <SectionID>223723</SectionID>
+    <RowNo>V</RowNo>
+    <SeatNo>1</SeatNo>
+    <EntranceDesc>Door 5</EntranceDesc>
+    <GateDesc>Use Door 5</GateDesc>
+    <PriceType>Adult</PriceType>
+  </RedListEntry>
+  <RedListEntry>
+    <EventName>Johnny Clegg Live at The Teatro</EventName>
+    <EventDate>201209152000</EventDate>
+    <EventID>6628863</EventID>
+    <VenueName>Teatro At Montecasino</VenueName>
+    <VenueID>13712</VenueID>
+    <CustomerName>  Test   Tickets</CustomerName>
+    <BasketRef>B2DX6Y47</BasketRef>
+    <TicketID>4</TicketID>
+    <TicketSaleDate>201207061057</TicketSaleDate>
+    <TicketPrintDate>201207061057</TicketPrintDate>
+    <TicketSaleTerminal>Client Services Jhbg 2 Corne</TicketSaleTerminal>
+    <!-- Barcode>event id-sales date-venue id-area id-section id-rowseat-ticket id</Barcode-->
+    <Barcode>6628863-20120706105744-13712-235941-223723-v2-4</Barcode>
+    <BarcodeType>PDF417</BarcodeType>
+    <AreaName>Middle Stalls</AreaName>
+    <AreaID>235941</AreaID>
+    <SectionName>Middle Stalls</SectionName>
+    <SectionID>223723</SectionID>
+    <RowNo>V</RowNo>
+    <SeatNo>2</SeatNo>
+    <EntranceDesc>Door 5</EntranceDesc>
+    <GateDesc>Use Door 5</GateDesc>
+    <PriceType>Adult</PriceType>
+  </RedListEntry>
+  <RedListEntry>
+    <EventName>Johnny Clegg Live at The Teatro</EventName>
+    <EventDate>201209152000</EventDate>
+    <EventID>6628863</EventID>
+    <VenueName>Teatro At Montecasino</VenueName>
+    <VenueID>13712</VenueID>
+    <CustomerName>  Test   Tickets</CustomerName>
+    <BasketRef>B2DX6Y47</BasketRef>
+    <TicketID>5</TicketID>
+    <TicketSaleDate>201207061057</TicketSaleDate>
+    <TicketPrintDate>201207061057</TicketPrintDate>
+    <TicketSaleTerminal>Client Services Jhbg 2 Corne</TicketSaleTerminal>
+    <!-- Barcode>event id-sales date-venue id-area id-section id-rowseat-ticket id</Barcode-->
+    <Barcode>6628863-20120706105744-13712-235941-223723-zb12-5</Barcode>
+    <BarcodeType>PDF417</BarcodeType>
+    <AreaName>Middle Stalls</AreaName>
+    <AreaID>235941</AreaID>
+    <SectionName>Middle Stalls</SectionName>
+    <SectionID>223723</SectionID>
+    <RowNo>ZB</RowNo>
+    <SeatNo>12</SeatNo>
+    <EntranceDesc>Door 5</EntranceDesc>
+    <GateDesc>Use Door 5</GateDesc>
+    <PriceType>Adult</PriceType>
+  </RedListEntry>
+  <RedListEntry>
+    <EventName>Johnny Clegg Live at The Teatro</EventName>
+    <EventDate>201209152000</EventDate>
+    <EventID>6628863</EventID>
+    <VenueName>Teatro At Montecasino</VenueName>
+    <VenueID>13712</VenueID>
+    <CustomerName>  Test   Tickets</CustomerName>
+    <BasketRef>B2DX6Y47</BasketRef>
+    <TicketID>6</TicketID>
+    <TicketSaleDate>201207061057</TicketSaleDate>
+    <TicketPrintDate>201207061057</TicketPrintDate>
+    <TicketSaleTerminal>Client Services Jhbg 2 Corne</TicketSaleTerminal>
+    <!-- Barcode>event id-sales date-venue id-area id-section id-rowseat-ticket id</Barcode-->
+    <Barcode>6628863-20120706105744-13712-235941-223723-zb13-6</Barcode>
+    <BarcodeType>PDF417</BarcodeType>
+    <AreaName>Middle Stalls</AreaName>
+    <AreaID>235941</AreaID>
+    <SectionName>Middle Stalls</SectionName>
+    <SectionID>223723</SectionID>
+    <RowNo>ZB</RowNo>
+    <SeatNo>13</SeatNo>
+    <EntranceDesc>Door 5</EntranceDesc>
+    <GateDesc>Use Door 5</GateDesc>
+    <PriceType>Adult</PriceType>
+  </RedListEntry>
+  <RedListEntry>
+    <EventName>Johnny Clegg Live at The Teatro</EventName>
+    <EventDate>201209152000</EventDate>
+    <EventID>6628863</EventID>
+    <VenueName>Teatro At Montecasino</VenueName>
+    <VenueID>13712</VenueID>
+    <CustomerName>Mr Alison Bader</CustomerName>
+    <BasketRef>B2D9M47X</BasketRef>
+    <TicketID>50</TicketID>
+    <TicketSaleDate>201207171314</TicketSaleDate>
+    <TicketPrintDate>201207171321</TicketPrintDate>
+    <TicketSaleTerminal>Internet 11 Was2</TicketSaleTerminal>
+    <!-- Barcode>event id-sales date-venue id-area id-section id-rowseat-ticket id</Barcode-->
+    <Barcode>6628863-20120717131404-13712-235941-223723-v21-50</Barcode>
+    <BarcodeType>PDF417</BarcodeType>
+    <AreaName>Middle Stalls</AreaName>
+    <AreaID>235941</AreaID>
+    <SectionName>Middle Stalls</SectionName>
+    <SectionID>223723</SectionID>
+    <RowNo>V</RowNo>
+    <SeatNo>21</SeatNo>
+    <EntranceDesc>Door 5</EntranceDesc>
+    <GateDesc>Use Door 5</GateDesc>
+    <PriceType>Adult</PriceType>
+  </RedListEntry>
+  <RedListEntry>
+    <EventName>Johnny Clegg Live at The Teatro</EventName>
+    <EventDate>201209152000</EventDate>
+    <EventID>6628863</EventID>
+    <VenueName>Teatro At Montecasino</VenueName>
+    <VenueID>13712</VenueID>
+    <CustomerName>Mr Alison Bader</CustomerName>
+    <BasketRef>B2D9M47X</BasketRef>
+    <TicketID>51</TicketID>
+    <TicketSaleDate>201207171314</TicketSaleDate>
+    <TicketPrintDate>201207171321</TicketPrintDate>
+    <TicketSaleTerminal>Internet 11 Was2</TicketSaleTerminal>
+    <!-- Barcode>event id-sales date-venue id-area id-section id-rowseat-ticket id</Barcode-->
+    <Barcode>6628863-20120717131404-13712-235941-223723-v22-51</Barcode>
+    <BarcodeType>PDF417</BarcodeType>
+    <AreaName>Middle Stalls</AreaName>
+    <AreaID>235941</AreaID>
+    <SectionName>Middle Stalls</SectionName>
+    <SectionID>223723</SectionID>
+    <RowNo>V</RowNo>
+    <SeatNo>22</SeatNo>
+    <EntranceDesc>Door 5</EntranceDesc>
+    <GateDesc>Use Door 5</GateDesc>
+    <PriceType>Adult</PriceType>
+  </RedListEntry>
+  <RedListEntry>
+    <EventName>Johnny Clegg Live at The Teatro</EventName>
+    <EventDate>201209152000</EventDate>
+    <EventID>6628863</EventID>
+    <VenueName>Teatro At Montecasino</VenueName>
+    <VenueID>13712</VenueID>
+    <CustomerName>Mr Alison Bader</CustomerName>
+    <BasketRef>B2D9M47X</BasketRef>
+    <TicketID>52</TicketID>
+    <TicketSaleDate>201207171314</TicketSaleDate>
+    <TicketPrintDate>201207171321</TicketPrintDate>
+    <TicketSaleTerminal>Internet 11 Was2</TicketSaleTerminal>
+    <!-- Barcode>event id-sales date-venue id-area id-section id-rowseat-ticket id</Barcode-->
+    <Barcode>6628863-20120717131404-13712-235941-223723-v23-52</Barcode>
+    <BarcodeType>PDF417</BarcodeType>
+    <AreaName>Middle Stalls</AreaName>
+    <AreaID>235941</AreaID>
+    <SectionName>Middle Stalls</SectionName>
+    <SectionID>223723</SectionID>
+    <RowNo>V</RowNo>
+    <SeatNo>23</SeatNo>
+    <EntranceDesc>Door 5</EntranceDesc>
+    <GateDesc>Use Door 5</GateDesc>
+    <PriceType>Adult</PriceType>
+  </RedListEntry>
+  <RedListEntry>
+    <EventName>Johnny Clegg Live at The Teatro</EventName>
+    <EventDate>201209152000</EventDate>
+    <EventID>6628863</EventID>
+    <VenueName>Teatro At Montecasino</VenueName>
+    <VenueID>13712</VenueID>
+    <CustomerName>Mr M Ederi</CustomerName>
+    <BasketRef>B2DCTFFP</BasketRef>
+    <TicketID>156</TicketID>
+    <TicketSaleDate>201207211008</TicketSaleDate>
+    <TicketPrintDate>201207211008</TicketPrintDate>
+    <TicketSaleTerminal>Ch Hyper Sandton</TicketSaleTerminal>
+    <!-- Barcode>event id-sales date-venue id-area id-section id-rowseat-ticket id</Barcode-->
+    <Barcode>6628863-20120721100833-13712-235941-223723-ze29-156</Barcode>
+    <BarcodeType>PDF417</BarcodeType>
+    <AreaName>Middle Stalls</AreaName>
+    <AreaID>235941</AreaID>
+    <SectionName>Middle Stalls</SectionName>
+    <SectionID>223723</SectionID>
+    <RowNo>ZE</RowNo>
+    <SeatNo>29</SeatNo>
+    <EntranceDesc>Door 6</EntranceDesc>
+    <GateDesc>Use Door 6</GateDesc>
+    <PriceType>Adult</PriceType>
+  </RedListEntry>
+  <RedListEntry>
+    <EventName>Johnny Clegg Live at The Teatro</EventName>
+    <EventDate>201209152000</EventDate>
+    <EventID>6628863</EventID>
+    <VenueName>Teatro At Montecasino</VenueName>
+    <VenueID>13712</VenueID>
+    <CustomerName>Mr M Ederi</CustomerName>
+    <BasketRef>B2DCTFFP</BasketRef>
+    <TicketID>157</TicketID>
+    <TicketSaleDate>201207211008</TicketSaleDate>
+    <TicketPrintDate>201207211008</TicketPrintDate>
+    <TicketSaleTerminal>Ch Hyper Sandton</TicketSaleTerminal>
+    <!-- Barcode>event id-sales date-venue id-area id-section id-rowseat-ticket id</Barcode-->
+    <Barcode>6628863-20120721100833-13712-235941-223723-ze30-157</Barcode>
+    <BarcodeType>PDF417</BarcodeType>
+    <AreaName>Middle Stalls</AreaName>
+    <AreaID>235941</AreaID>
+    <SectionName>Middle Stalls</SectionName>
+    <SectionID>223723</SectionID>
+    <RowNo>ZE</RowNo>
+    <SeatNo>30</SeatNo>
+    <EntranceDesc>Door 6</EntranceDesc>
+    <GateDesc>Use Door 6</GateDesc>
+    <PriceType>Adult</PriceType>
+  </RedListEntry>
+  <RedListEntry>
+    <EventName>Johnny Clegg Live at The Teatro</EventName>
+    <EventDate>201209152000</EventDate>
+    <EventID>6628863</EventID>
+    <VenueName>Teatro At Montecasino</VenueName>
+    <VenueID>13712</VenueID>
+    <CustomerName>Mr M Ederi</CustomerName>
+    <BasketRef>B2DCTFFP</BasketRef>
+    <TicketID>158</TicketID>
+    <TicketSaleDate>201207211008</TicketSaleDate>
+    <TicketPrintDate>201207211008</TicketPrintDate>
+    <TicketSaleTerminal>Ch Hyper Sandton</TicketSaleTerminal>
+    <!-- Barcode>event id-sales date-venue id-area id-section id-rowseat-ticket id</Barcode-->
+    <Barcode>6628863-20120721100833-13712-235941-223723-ze31-158</Barcode>
+    <BarcodeType>PDF417</BarcodeType>
+    <AreaName>Middle Stalls</AreaName>
+    <AreaID>235941</AreaID>
+    <SectionName>Middle Stalls</SectionName>
+    <SectionID>223723</SectionID>
+    <RowNo>ZE</RowNo>
+    <SeatNo>31</SeatNo>
+    <EntranceDesc>Door 6</EntranceDesc>
+    <GateDesc>Use Door 6</GateDesc>
+    <PriceType>Adult</PriceType>
+  </RedListEntry>
+  <RedListEntry>
+    <EventName>Johnny Clegg Live at The Teatro</EventName>
+    <EventDate>201209152000</EventDate>
+    <EventID>6628863</EventID>
+    <VenueName>Teatro At Montecasino</VenueName>
+    <VenueID>13712</VenueID>
+    <CustomerName>Mr M Ederi</CustomerName>
+    <BasketRef>B2DCTFFP</BasketRef>
+    <TicketID>159</TicketID>
+    <TicketSaleDate>201207211008</TicketSaleDate>
+    <TicketPrintDate>201207211008</TicketPrintDate>
+    <TicketSaleTerminal>Ch Hyper Sandton</TicketSaleTerminal>
+    <!-- Barcode>event id-sales date-venue id-area id-section id-rowseat-ticket id</Barcode-->
+    <Barcode>6628863-20120721100833-13712-235941-223723-ze32-159</Barcode>
+    <BarcodeType>PDF417</BarcodeType>
+    <AreaName>Middle Stalls</AreaName>
+    <AreaID>235941</AreaID>
+    <SectionName>Middle Stalls</SectionName>
+    <SectionID>223723</SectionID>
+    <RowNo>ZE</RowNo>
+    <SeatNo>32</SeatNo>
+    <EntranceDesc>Door 6</EntranceDesc>
+    <GateDesc>Use Door 6</GateDesc>
+    <PriceType>Adult</PriceType>
+  </RedListEntry>
+  <RedListEntry>
+    <EventName>Johnny Clegg Live at The Teatro</EventName>
+    <EventDate>201209152000</EventDate>
+    <EventID>6628863</EventID>
+    <VenueName>Teatro At Montecasino</VenueName>
+    <VenueID>13712</VenueID>
+    <CustomerName>Mr M Ederi</CustomerName>
+    <BasketRef>B2DCTFFP</BasketRef>
+    <TicketID>160</TicketID>
+    <TicketSaleDate>201207211008</TicketSaleDate>
+    <TicketPrintDate>201207211008</TicketPrintDate>
+    <TicketSaleTerminal>Ch Hyper Sandton</TicketSaleTerminal>
+    <!-- Barcode>event id-sales date-venue id-area id-section id-rowseat-ticket id</Barcode-->
+    <Barcode>6628863-20120721100833-13712-235941-223723-ze33-160</Barcode>
+    <BarcodeType>PDF417</BarcodeType>
+    <AreaName>Middle Stalls</AreaName>
+    <AreaID>235941</AreaID>
+    <SectionName>Middle Stalls</SectionName>
+    <SectionID>223723</SectionID>
+    <RowNo>ZE</RowNo>
+    <SeatNo>33</SeatNo>
+    <EntranceDesc>Door 6</EntranceDesc>
+    <GateDesc>Use Door 6</GateDesc>
+    <PriceType>Adult</PriceType>
+  </RedListEntry>
+  <RedListEntry>
+    <EventName>Johnny Clegg Live at The Teatro</EventName>
+    <EventDate>201209152000</EventDate>
+    <EventID>6628863</EventID>
+    <VenueName>Teatro At Montecasino</VenueName>
+    <VenueID>13712</VenueID>
+    <CustomerName>Mr M Ederi</CustomerName>
+    <BasketRef>B2DCTFFP</BasketRef>
+    <TicketID>161</TicketID>
+    <TicketSaleDate>201207211008</TicketSaleDate>
+    <TicketPrintDate>201207211008</TicketPrintDate>
+    <TicketSaleTerminal>Ch Hyper Sandton</TicketSaleTerminal>
+    <!-- Barcode>event id-sales date-venue id-area id-section id-rowseat-ticket id</Barcode-->
+    <Barcode>6628863-20120721100833-13712-235941-223723-ze34-161</Barcode>
+    <BarcodeType>PDF417</BarcodeType>
+    <AreaName>Middle Stalls</AreaName>
+    <AreaID>235941</AreaID>
+    <SectionName>Middle Stalls</SectionName>
+    <SectionID>223723</SectionID>
+    <RowNo>ZE</RowNo>
+    <SeatNo>34</SeatNo>
+    <EntranceDesc>Door 6</EntranceDesc>
+    <GateDesc>Use Door 6</GateDesc>
+    <PriceType>Adult</PriceType>
+  </RedListEntry>
+  <RedListEntry>
+    <EventName>Johnny Clegg Live at The Teatro</EventName>
+    <EventDate>201209152000</EventDate>
+    <EventID>6628863</EventID>
+    <VenueName>Teatro At Montecasino</VenueName>
+    <VenueID>13712</VenueID>
+    <CustomerName>Mr M Ederi</CustomerName>
+    <BasketRef>B2DCTFFP</BasketRef>
+    <TicketID>162</TicketID>
+    <TicketSaleDate>201207211008</TicketSaleDate>
+    <TicketPrintDate>201207211008</TicketPrintDate>
+    <TicketSaleTerminal>Ch Hyper Sandton</TicketSaleTerminal>
+    <!-- Barcode>event id-sales date-venue id-area id-section id-rowseat-ticket id</Barcode-->
+    <Barcode>6628863-20120721100833-13712-235941-223723-ze35-162</Barcode>
+    <BarcodeType>PDF417</BarcodeType>
+    <AreaName>Middle Stalls</AreaName>
+    <AreaID>235941</AreaID>
+    <SectionName>Middle Stalls</SectionName>
+    <SectionID>223723</SectionID>
+    <RowNo>ZE</RowNo>
+    <SeatNo>35</SeatNo>
+    <EntranceDesc>Door 6</EntranceDesc>
+    <GateDesc>Use Door 6</GateDesc>
+    <PriceType>Adult</PriceType>
+  </RedListEntry>
+  <RedListEntry>
+    <EventName>Johnny Clegg Live at The Teatro</EventName>
+    <EventDate>201209152000</EventDate>
+    <EventID>6628863</EventID>
+    <VenueName>Teatro At Montecasino</VenueName>
+    <VenueID>13712</VenueID>
+    <CustomerName>Mr M Ederi</CustomerName>
+    <BasketRef>B2DCTFFP</BasketRef>
+    <TicketID>163</TicketID>
+    <TicketSaleDate>201207211008</TicketSaleDate>
+    <TicketPrintDate>201207211008</TicketPrintDate>
+    <TicketSaleTerminal>Ch Hyper Sandton</TicketSaleTerminal>
+    <!-- Barcode>event id-sales date-venue id-area id-section id-rowseat-ticket id</Barcode-->
+    <Barcode>6628863-20120721100833-13712-235941-223723-ze36-163</Barcode>
+    <BarcodeType>PDF417</BarcodeType>
+    <AreaName>Middle Stalls</AreaName>
+    <AreaID>235941</AreaID>
+    <SectionName>Middle Stalls</SectionName>
+    <SectionID>223723</SectionID>
+    <RowNo>ZE</RowNo>
+    <SeatNo>36</SeatNo>
+    <EntranceDesc>Door 6</EntranceDesc>
+    <GateDesc>Use Door 6</GateDesc>
+    <PriceType>Adult</PriceType>
+  </RedListEntry>
+  <RedListEntry>
+    <EventName>Johnny Clegg Live at The Teatro</EventName>
+    <EventDate>201209152000</EventDate>
+    <EventID>6628863</EventID>
+    <VenueName>Teatro At Montecasino</VenueName>
+    <VenueID>13712</VenueID>
+    <CustomerName>Mr M Ederi</CustomerName>
+    <BasketRef>B2DCTFFP</BasketRef>
+    <TicketID>164</TicketID>
+    <TicketSaleDate>201207211008</TicketSaleDate>
+    <TicketPrintDate>201207211008</TicketPrintDate>
+    <TicketSaleTerminal>Ch Hyper Sandton</TicketSaleTerminal>
+    <!-- Barcode>event id-sales date-venue id-area id-section id-rowseat-ticket id</Barcode-->
+    <Barcode>6628863-20120721100833-13712-235941-223723-ze37-164</Barcode>
+    <BarcodeType>PDF417</BarcodeType>
+    <AreaName>Middle Stalls</AreaName>
+    <AreaID>235941</AreaID>
+    <SectionName>Middle Stalls</SectionName>
+    <SectionID>223723</SectionID>
+    <RowNo>ZE</RowNo>
+    <SeatNo>37</SeatNo>
+    <EntranceDesc>Door 6</EntranceDesc>
+    <GateDesc>Use Door 6</GateDesc>
+    <PriceType>Adult</PriceType>
+  </RedListEntry>
+  <RedListEntry>
+    <EventName>Johnny Clegg Live at The Teatro</EventName>
+    <EventDate>201209152000</EventDate>
+    <EventID>6628863</EventID>
+    <VenueName>Teatro At Montecasino</VenueName>
+    <VenueID>13712</VenueID>
+    <CustomerName>Dr M M R Mackintosh</CustomerName>
+    <BasketRef>B2DEC314</BasketRef>
+    <TicketID>204</TicketID>
+    <TicketSaleDate>201207241537</TicketSaleDate>
+    <TicketPrintDate>201207251140</TicketPrintDate>
+    <TicketSaleTerminal>Montecasino 1 | 276</TicketSaleTerminal>
+    <!-- Barcode>event id-sales date-venue id-area id-section id-rowseat-ticket id</Barcode-->
+    <Barcode>6628863-20120724153715-13712-235941-223723-v20-204</Barcode>
+    <BarcodeType>PDF417</BarcodeType>
+    <AreaName>Middle Stalls</AreaName>
+    <AreaID>235941</AreaID>
+    <SectionName>Middle Stalls</SectionName>
+    <SectionID>223723</SectionID>
+    <RowNo>V</RowNo>
+    <SeatNo>20</SeatNo>
+    <EntranceDesc>Door 5</EntranceDesc>
+    <GateDesc>Use Door 5</GateDesc>
+    <PriceType>Adult</PriceType>
+  </RedListEntry>
+  <RedListEntry>
+    <EventName>Johnny Clegg Live at The Teatro</EventName>
+    <EventDate>201209152000</EventDate>
+    <EventID>6628863</EventID>
+    <VenueName>Teatro At Montecasino</VenueName>
+    <VenueID>13712</VenueID>
+    <CustomerName>Dr M M R Mackintosh</CustomerName>
+    <BasketRef>B2DEC314</BasketRef>
+    <TicketID>203</TicketID>
+    <TicketSaleDate>201207241537</TicketSaleDate>
+    <TicketPrintDate>201207251140</TicketPrintDate>
+    <TicketSaleTerminal>Montecasino 1 | 276</TicketSaleTerminal>
+    <!-- Barcode>event id-sales date-venue id-area id-section id-rowseat-ticket id</Barcode-->
+    <Barcode>6628863-20120724153715-13712-235941-223723-v21-203</Barcode>
+    <BarcodeType>PDF417</BarcodeType>
+    <AreaName>Middle Stalls</AreaName>
+    <AreaID>235941</AreaID>
+    <SectionName>Middle Stalls</SectionName>
+    <SectionID>223723</SectionID>
+    <RowNo>V</RowNo>
+    <SeatNo>21</SeatNo>
+    <EntranceDesc>Door 5</EntranceDesc>
+    <GateDesc>Use Door 5</GateDesc>
+    <PriceType>Adult</PriceType>
+  </RedListEntry>
+</RedList>

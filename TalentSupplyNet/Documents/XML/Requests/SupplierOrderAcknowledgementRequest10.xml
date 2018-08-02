@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SupplierOrderAcknowledgementRequest>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID>123456789</SenderID>
+    <ReceiverID>987654321</ReceiverID>
+    <CountryCode>UK</CountryCode>
+    <LoginID>UK3833HHD </LoginID>
+    <Password>Re887Jky52</Password>
+    <Company>CSG</Company>
+    <TransactionID>54321</TransactionID>
+  </TransactionHeader>
+  <OrderAcknowledgements>
+    <OrderAcknowledgement>
+      <OrderAcknowledgementHeader>
+        <CompanyCode>WC</CompanyCode>
+        <VendorNumber>ag_vendor001</VendorNumber>
+        <PurchaseOrderNumber>ag_PO001</PurchaseOrderNumber>
+        <DespatchDate>20070323</DespatchDate>
+      </OrderAcknowledgementHeader>
+      <OrderAcknowledgementLines>
+        <OrderAcknowledgementLine LineNumber="1">
+          <ProductCode>ABC123</ProductCode>
+          <OrderQuantity>5000</OrderQuantity>
+          <UnitPrice>12.99</UnitPrice>
+          <DeliveryDate>20081110</DeliveryDate>         
+        </OrderAcknowledgementLine>
+        <OrderAcknowledgementLine LineNumber="2">
+          <ProductCode>DEF123</ProductCode>
+          <OrderQuantity>5000</OrderQuantity>
+          <UnitPrice>12.99</UnitPrice>
+          <DeliveryDate>20081110</DeliveryDate>
+        </OrderAcknowledgementLine>
+      </OrderAcknowledgementLines>
+    </OrderAcknowledgement>
+  </OrderAcknowledgements>
+</SupplierOrderAcknowledgementRequest>

@@ -1,0 +1,2228 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TalentSystemDefaults</name>
+    </assembly>
+    <members>
+        <member name="M:TalentSystemDefaults.Utilities.GetAllString">
+            <summary>
+            XML Comment
+            </summary>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.Utilities.CheckForDBNull_String(System.Object)">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.Utilities.CheckForDBNull_Int(System.Object)">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.Utilities.CheckForDBNull_Boolean_DefaultFalse(System.Object)">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.Utilities.ConstructParameter(System.String,System.String,System.Data.SqlDbType,System.Data.ParameterDirection)">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="paramName"></param>
+            <param name="paramValue"></param>
+            <param name="paramType"></param>
+            <param name="paramDirection"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.Utilities.LogSQL(TalentSystemDefaults.DESQLCommand)">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="cmd"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.Utilities.GetClassName(System.String,System.String)">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="namespaceString"></param>
+            <param name="className"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.Utilities.Stringify(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="values"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.Utilities.GetGroupID(TalentSystemDefaults.DESettings)">
+            <summary>
+            Get next available transaction group id
+            </summary>
+            <param name="settings"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.Utilities.Constructify(System.String)">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.Utilities.SerializeTransaction(TalentSystemDefaults.TalentDataAccess,TalentSystemDefaults.DESettings)">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="objtalentSqlAccessDetail"></param>
+            <param name="settings"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.Utilities.MatchStrings(System.String,System.String,System.Boolean)">
+            <summary>
+            Compare two strings values
+            </summary>
+            <param name="StringValue1"></param>
+            <param name="StringValue2"></param>
+            <param name="IgnoreCase">Optional parameter</param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.Utilities.CompareStrings(System.String,System.String)">
+            <summary>
+            Returns if one string value contains another string value
+            </summary>
+            <param name="StringValue1"></param>
+            <param name="StringValue2"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="T:TalentSystemDefaults.DBDB2Access">
+            <summary>
+            Provides the functionality to execute the command object against the given connection string
+            by using DBAccess Class
+            </summary>
+        </member>
+        <member name="M:TalentSystemDefaults.DBAccess.Sql2005Open">
+            <summary>
+            XML Comment
+            </summary>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DBAccess.Sql2005Close">
+            <summary>
+            XML Comment
+            </summary>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DBAccess.TALENTTKTOpen">
+            <summary>
+            XML Comment
+            </summary>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DBAccess.TALENTTKTClose">
+            <summary>
+            XML Comment
+            </summary>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DBAccess.AccessDataBaseSQL2005">
+            <summary>
+            XML Comment
+            </summary>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DBAccess.TalentSQLOpen">
+            <summary>
+            XML Comment
+            </summary>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DBAccess.TalentSQLClose">
+            <summary>
+            XML Comment
+            </summary>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DBAccess.AccessDataBaseTalentSQL">
+            <summary>
+            XML Comment
+            </summary>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DBAccess.AccessDataBaseTALENTTKT">
+            <summary>
+            XML Comment
+            </summary>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DBAccess.ExecuteDataSetForSQLDB(System.Data.SqlClient.SqlCommand)">
+            <summary>
+            Executes the command object using SQLDataAdapter to fill the dataset and return
+            </summary>
+            <param name="commandToExecute">The command to execute.</param>
+            <returns>DataSet</returns>
+        </member>
+        <member name="M:TalentSystemDefaults.DBAccess.AccessDatabase">
+            <summary>
+            XML Comment
+            </summary>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DBDB2Access.BeginTransaction(TalentSystemDefaults.DestinationDatabase,TalentSystemDefaults.ErrorObj@,System.Nullable{System.Data.IsolationLevel})">
+            <summary>
+            Opens the connection and create and returns the transaction object
+            </summary>
+            <param name="err">The error object as ref</param>
+            <param name="givenIsolationLevel">The given isolation level.</param>
+            <returns>iDB2Transaction instance</returns>
+        </member>
+        <member name="M:TalentSystemDefaults.DBDB2Access.EndTransaction(TalentSystemDefaults.DestinationDatabase,TalentSystemDefaults.ErrorObj@,IBM.Data.DB2.iSeries.iDB2Transaction)">
+            <summary>
+            Ends the transaction and disposes any unhandled transaction object
+            </summary>
+            <param name="err">The error object as ref</param>
+            <param name="givenTransaction">The given transaction.</param>
+        </member>
+        <member name="M:TalentSystemDefaults.DBDB2Access.EndTransaction(TalentSystemDefaults.DestinationDatabase,TalentSystemDefaults.ErrorObj@,IBM.Data.DB2.iSeries.iDB2Transaction,IBM.Data.DB2.iSeries.iDB2DataReader)">
+            <summary>
+            Ends the transaction and disposes any unhandled transaction object and closes the reader object
+            </summary>
+            <param name="err">The error object as ref</param>
+            <param name="givenTransaction">The given transaction.</param>
+            <param name="readerToClose">The reader to close.</param>
+        </member>
+        <member name="M:TalentSystemDefaults.DBDB2Access.AccessWithTransaction(IBM.Data.DB2.iSeries.iDB2Transaction)">
+            <summary>
+            Execute the command obejct with transaction
+            </summary>
+            <param name="givenTransaction">The given transaction.</param>
+            <returns>Error Object</returns>
+        </member>
+        <member name="M:TalentSystemDefaults.DBDB2Access.AccessDataBaseTALENTTKT">
+            <summary>
+            Access the data base DB2 TalentTKT
+            This is called by DBAccess Class
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TalentSystemDefaults.DBDB2Access.ConnectionByDestinationDBOpen(TalentSystemDefaults.DestinationDatabase)">
+            <summary>
+             XML Comment
+            </summary>
+            <param name="destinationDatabase"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DBDB2Access.ConnectionByDestinationDBClose(TalentSystemDefaults.DestinationDatabase)">
+            <summary>
+             XML Comment
+            </summary>
+            <param name="destinationDatabase"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DBDB2Access.ExecuteDataSet(IBM.Data.DB2.iSeries.iDB2Command)">
+            <summary>
+            Executes the command object using DB2DataAdapter to fill the dataset and return
+            </summary>
+            <param name="commandToExecute">The command to execute.</param>
+            <returns>DataSet</returns>
+        </member>
+        <member name="M:TalentSystemDefaults.DBDB2Access.ExecuteNonQuery(IBM.Data.DB2.iSeries.iDB2Command)">
+            <summary>
+            Executes the command object using executenonquery method and
+            returns a dataset with a table with single column and row ROWS_AFFECTED
+            </summary>
+            <param name="commandToExecute">The command to execute.</param>
+            <returns>A dataset with a table with single column and row ROWS_AFFECTED</returns>
+        </member>
+        <member name="M:TalentSystemDefaults.DBDB2Access.PrepareCommandElement(IBM.Data.DB2.iSeries.iDB2Command)">
+            <summary>
+            Prepares the command element
+            Assign the command instance properties from DEDB2Command instance
+            </summary>
+            <param name="givenDB2Command">The given DB2 command.</param>
+            <returns>ErrorObj</returns>
+        </member>
+        <member name="M:TalentSystemDefaults.DBDB2Access.AttachParametersToCommand(IBM.Data.DB2.iSeries.iDB2Command)">
+            <summary>
+            Attaches the parameters to the given DB2 command instance
+            </summary>
+            <param name="givenDB2Command">The given DB2 command.</param>
+            <returns></returns>
+        </member>
+        <member name="M:TalentSystemDefaults.DBDB2Access.HasValue(System.String)">
+            <summary>
+            Determines whether the specified given value has value.
+            </summary>
+            <param name="givenValueToCheck">The given value to check.</param>
+            <returns>
+            <c>true</c> if the specified given value to check has value; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:TalentSystemDefaults.DBDB2Access.HasValue(System.Data.CommandType)">
+            <summary>
+            Determines whether the specified given type to has any CommandType.
+            </summary>
+            <param name="givenTypeToCheck">The given type to check.</param>
+            <returns>
+            <c>true</c> if the specified given type has value; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:TalentSystemDefaults.DBDB2Access.HasValue(System.String,IBM.Data.DB2.iSeries.iDB2DbType)">
+            <summary>
+            Determines whether the specified given value is matching with given iDB2DbType.
+            </summary>
+            <param name="givenValueToCheck">The given value to check.</param>
+            <param name="givenTypeToCheck">The given type to check.</param>
+            <returns>
+            <c>true</c> if the specified given value is matching with given iDB2DbType; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="P:TalentSystemDefaults.DBDB2Access.CommandElement">
+            <summary>
+            Sets the command element of type DEDB2Command
+            </summary>
+            <value>The command element.</value>
+        </member>
+        <member name="T:TalentSystemDefaults.TalentDB2Access">
+            <summary>
+            Provides the gateway to access the Data Access Layer for DB2
+            </summary>
+        </member>
+        <member name="F:TalentSystemDefaults.TalentBase._FulfilmentFeeCategory">
+            <summary>
+            Gets or sets the fulfilment fee category dictionary (fulfilment method, fee category)
+            key - fulfilment method
+            value - fee category
+            </summary>
+            <value>
+            The fulfilment fee category.
+            </value>
+        </member>
+        <member name="M:TalentSystemDefaults.TalentBase.GetConnectionDetails(System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Gets the connection details and populating the DESettings object
+            </summary>
+            <param name="businessUnit">The business unit.</param>
+            <param name="application">The application.</param>
+            <param name="moduleName">Name of the module.</param>
+            <param name="sectionName">Name of the section.</param>
+            <param name="subSectionName">Name of the sub section.</param>
+            <param name="partner">The partner.</param>
+        </member>
+        <member name="M:TalentSystemDefaults.TalentBase.CheckResponseForError(System.Data.DataSet,TalentSystemDefaults.ErrorObj)">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="ds"></param>
+            <param name="err"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.TalentBase.connectionDets.#ctor(System.String,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Int32)">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="destinationDatabase"></param>
+            <param name="databaseType1"></param>
+            <param name="backOfficeConnectionString"></param>
+            <param name="destinationType"></param>
+            <param name="canOverrideCacheAttributes"></param>
+            <param name="isCacheEnabled"></param>
+            <param name="cacheSeconds"></param>
+            <remarks></remarks>
+        </member>
+        <member name="F:TalentSystemDefaults.TalentDB2Access._commandElements">
+            <summary>
+            DEDB2Command Instance
+            </summary>
+        </member>
+        <member name="M:TalentSystemDefaults.TalentDB2Access.DB2Access(TalentSystemDefaults.DestinationDatabase)">
+            <summary>
+            Functionality to provide the gateway to access the Data Access Layer for DB2
+            </summary>
+            <param name="destinationDatabase"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.TalentDB2Access.DB2Access(TalentSystemDefaults.DestinationDatabase,IBM.Data.DB2.iSeries.iDB2Transaction)">
+            <summary>
+            Use this for Insert, Update and Delete
+            Functionality to provide the gateway to access the Data Access Layer with Transaction object
+            If any exception transaction will be rollbacked here
+            </summary>
+            <param name="destinationDatabase"></param>
+            <param name="givenTransaction">The given transaction.</param>
+            <returns></returns>
+        </member>
+        <member name="M:TalentSystemDefaults.TalentDB2Access.BeginTransaction(TalentSystemDefaults.DestinationDatabase,TalentSystemDefaults.ErrorObj@,System.Nullable{System.Data.IsolationLevel})">
+            <summary>
+            Begins the transaction and returns the transaction object with open state connection.
+            Make sure to call EndTransaction method to close transaction
+            </summary>
+            <param name="destinationDatabase"></param>
+            <param name="err">The err.</param>
+            <param name="givenIsolationLevel">The given isolation level.</param>
+            <returns></returns>
+        </member>
+        <member name="M:TalentSystemDefaults.TalentDB2Access.EndTransaction(TalentSystemDefaults.DestinationDatabase,IBM.Data.DB2.iSeries.iDB2Transaction)">
+            <summary>
+            Ends the transaction by passing the object to DBDataAccess
+            </summary>
+            <param name="destinationDatabase"></param>
+            <param name="givenTransaction">The given transaction.</param>
+            <returns>Error Object</returns>
+        </member>
+        <member name="M:TalentSystemDefaults.TalentDB2Access.EndTransaction(TalentSystemDefaults.DestinationDatabase,IBM.Data.DB2.iSeries.iDB2Transaction,IBM.Data.DB2.iSeries.iDB2DataReader)">
+            <summary>
+            Ends the transaction and close the reader by passing the object to DBDataAccess
+            </summary>
+            <param name="destinationDatabase"></param>
+            <param name="givenTransaction">The given transaction.</param>
+            <param name="readerToClose">The reader to close.</param>
+            <returns>Error Object</returns>
+        </member>
+        <member name="P:TalentSystemDefaults.TalentDB2Access.CommandElements">
+            <summary>
+            Gets or sets the command elements of type DEDB2Command
+            </summary>
+            <value>The command elements.</value>
+        </member>
+        <member name="P:TalentSystemDefaults.TalentDB2Access.ResultDataSet">
+            <summary>
+            Gets or sets the result data set.
+            </summary>
+            <value>The result data set.</value>
+        </member>
+        <member name="T:TalentSystemDefaults.DBObjectBase">
+            <summary>
+            Provides the functionalities which are common across the data objects
+            </summary>
+        </member>
+        <member name="F:TalentSystemDefaults.DBObjectBase.settings">
+            <summary>
+            Instance of DESettings
+            </summary>
+        </member>
+        <member name="F:TalentSystemDefaults.DBObjectBase._DBTypeForTable">
+            <summary>
+            Get database type
+            </summary>
+            <value></value>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DBObjectBase.#ctor(TalentSystemDefaults.DESettings)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="settings"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DBObjectBase.RetrieveCurrentValues(System.Collections.Generic.List{TalentSystemDefaults.ConfigurationItem})">
+            <summary>
+            Returns list of Current Configurations
+            </summary>
+            <param name="configs"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DBObjectBase.AddMissingValues(System.Collections.Generic.List{TalentSystemDefaults.ConfigurationItem},System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Inserts the mssing configurations
+            </summary>
+            <param name="configs"></param>
+            <param name="currentValues"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DBObjectBase.UpdateCurrentValue(System.Collections.Generic.List{TalentSystemDefaults.ConfigurationItem},System.Data.SqlClient.SqlTransaction)">
+            <summary>
+            Updates the configuration data
+            </summary>
+            <param name="configs"></param>
+            <param name="givenTransaction"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DBObjectBase.UpdateCurrentValueDB2(System.Collections.Generic.List{TalentSystemDefaults.ConfigurationItem},IBM.Data.DB2.iSeries.iDB2Transaction)">
+            <summary>
+            Updates the configuration data for DB2
+            </summary>
+            <param name="configs"></param>
+            <param name="givenTransaction"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DBObjectBase.InsertCurrentValue(System.Collections.Generic.List{TalentSystemDefaults.ConfigurationItem},System.Data.SqlClient.SqlTransaction,System.String@)">
+            <summary>
+            Inserts Configurations
+            </summary>
+            <param name="configs"></param>
+            <param name="givenTransaction"></param>
+            <param name="Key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TalentSystemDefaults.DBObjectBase.InsertCurrentValueDB2(System.Collections.Generic.List{TalentSystemDefaults.ConfigurationItem},IBM.Data.DB2.iSeries.iDB2Transaction)">
+            <summary>
+            Inserts Configurations for DB2
+            </summary>
+            <param name="configs"></param>
+            <param name="givenTransaction"></param>
+            <param name="Key"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DBObjectBase.RetrieveAllValues(System.String,System.String[],System.String[],System.String)">
+            <summary>
+            Returns all configurations
+            </summary>
+            <param name="businessUnit"></param>
+            <param name="defaultKeys"></param>
+            <param name="variableKeys"></param>
+            <param name="displayName"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DBObjectBase.RetrieveAllValues(System.String,System.String,System.String[],System.String[],System.String)">
+            <summary>
+            Returns all configurations
+            </summary>
+            <param name="businessUnit"></param>
+            <param name="defaultKeys"></param>
+            <param name="variableKeys"></param>
+            <param name="displayName"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DBObjectBase.RetrieveAlliSeriesValues(System.String,System.String[],System.String[],System.String)">
+            <summary>
+            Returns all iseries configurations
+            </summary>
+            <param name="companyCode"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DBObjectBase.RetrieveListValues(System.Collections.Generic.List{TalentSystemDefaults.DataColumn},System.Collections.Generic.List{TalentSystemDefaults.KeyColumn})">
+            <summary>
+            Returns configurations as a list of DEListDetail
+            </summary>
+            <param name="dataColumns"></param>
+            <param name="defaultKeyColumns"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DBObjectBase.RetrieveListValues">
+            <summary>
+            Returns configurations as a list of DEListDetail
+            </summary>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DBObjectBase.RetrieveDTForList">
+            <summary>
+            Returns configurations as a DataTable
+            </summary>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DBObjectBase.RetrieveDTForList(System.Collections.Generic.List{TalentSystemDefaults.DataColumn},System.Collections.Generic.List{TalentSystemDefaults.KeyColumn})">
+            <summary>
+            Returns configurations as a DataTable
+            </summary>
+            <param name="dataColumns"></param>
+            <param name="variableKeyColumns"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DBObjectBase.DeleteCurrentValues(System.Data.SqlClient.SqlTransaction)">
+            <summary>
+            Deletes configurations
+            </summary>
+            <param name="givenTransaction"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DBObjectBase.DeleteCurrentValuesDB2(IBM.Data.DB2.iSeries.iDB2Transaction)">
+            <summary>
+            Deletes configurations in DB2
+            </summary>
+            <param name="givenTransaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TalentSystemDefaults.DBObjectBase.ConstructParameter(System.String,System.Object,System.Data.SqlDbType,System.Data.ParameterDirection)">
+            <summary>
+            Constructs the parameter using the DESQLParamater instance
+            </summary>
+            <param name="paramName">Name of the parameter.</param>
+            <param name="paramValue">The parameter value.</param>
+            <param name="paramType">Type of the parameter. Default SqlDbType.NVarchar</param>
+            <param name="paramDirection">The parameter direction. Default ParameterDirection.Input</param>
+            <returns>DESQLParameter instance with details</returns>
+        </member>
+        <member name="M:TalentSystemDefaults.DBObjectBase.ConstructDB2Parameter(System.String,System.String,IBM.Data.DB2.iSeries.iDB2DbType,System.Data.ParameterDirection)">
+            <summary>
+            Constructs the parameter using the DEDB2Parameter instance
+            </summary>
+            <param name="paramName"></param>
+            <param name="paramValue"></param>
+            <param name="paramType"></param>
+            <param name="paramDirection"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DBObjectBase.ConstructDB2Parameter(System.String,System.String,System.Int32,IBM.Data.DB2.iSeries.iDB2DbType,System.Data.ParameterDirection)">
+            <summary>
+            Constructs the parameter using the DEDB2Paramater instance
+            </summary>
+            <param name="paramName">Name of the parameter.</param>
+            <param name="paramValue">The parameter value.</param>
+            <param name="paramType">Type of the parameter. Default iDB2DbType.Char</param>
+            <param name="paramDirection">The parameter direction. Default ParameterDirection.Input</param>
+            <returns>DEDB2Parameter instance with details</returns>
+        </member>
+        <member name="M:TalentSystemDefaults.DBObjectBase.ToUpper(System.String)">
+            <summary>
+            Change the given string to upper case
+            </summary>
+            <param name="stringToUpper">The string to upper.</param>
+            <returns>if nothing returns empty string otherwise upper case string</returns>
+        </member>
+        <member name="P:TalentSystemDefaults.DBObjectBase.ResultDataSet">
+            <summary>
+            Gets or sets the result data set.
+            </summary>
+            <value>The result data set.</value>
+        </member>
+        <member name="M:TalentSystemDefaults.Database_Text_Search.TextSearch(System.String,System.Int32,System.Int32,System.String,System.Boolean)">
+            <summary>
+            Returns text/control lang data from Front-End database
+            </summary>
+            <param name="searchText"></param>
+            <param name="pageOffset"></param>
+            <param name="pageSize"></param>
+            <param name="sortColumn"></param>
+            <param name="sortOrder"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.Database_Text_Search.SaveTextSearchData(System.Collections.Generic.List{TalentSystemDefaults.DataEntities.TextSearchEntity},System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Updates text/control lang data into Front-End database
+            </summary>
+            <param name="modifiedRows"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.Database_Text_Search.ReplaceSearchText(System.String,System.String)">
+            <summary>
+            Replaces the search-text passed with the replace text into the control/page text DB tables
+            It is not in use anymore.
+            </summary>
+            <param name="searchString"></param>
+            <param name="replaceString"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.SystemObjects.tbl_agent.#ctor(TalentSystemDefaults.DESettings@)">
+            <summary>
+            Constructror
+            </summary>
+            <param name="settings"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.SystemObjects.tbl_agent.RetrieveAgentDetailsFromSessionID(System.String)">
+            <summary>
+            Returns agent details by session ID
+            </summary>
+            <param name="SessionID"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.SystemObjects.tbl_logs.#ctor(TalentSystemDefaults.DESettings)">
+            <summary>
+            Constructror
+            </summary>
+            <param name="settings"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.SystemObjects.tbl_logs.InsertLog(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Inserts error log details into the SQL database
+            </summary>
+            <param name="sourceClass"></param>
+            <param name="sourceMethod"></param>
+            <param name="logCode"></param>
+            <param name="logFilter1"></param>
+            <param name="logFilter2"></param>
+            <param name="logFilter3"></param>
+            <param name="logFilter4"></param>
+            <param name="logFilter5"></param>
+            <param name="logContent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.SystemObjects.tbl_url_bu.#ctor(TalentSystemDefaults.DESettings@)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="settings"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.SystemObjects.tbl_url_bu.RetrieveBusinessUnit(System.String)">
+            <summary>
+            Retrieve BusinessUnits
+            </summary>
+            <param name="application"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.ConfigObjects.tbl_config_detail_audit.#ctor(TalentSystemDefaults.DESettings@)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="settings"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.ConfigObjects.tbl_config_detail_audit.Insert(System.IO.MemoryStream,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+            Inserts serialized transaction into the database
+            </summary>
+            <param name="ms"></param>
+            <param name="GroupID"></param>
+            <param name="ModuleName"></param>
+            <param name="UserName"></param>
+            <param name="TableName"></param>
+            <param name="Action"></param>
+            <param name="DataSource"></param>
+            <param name="Catalog"></param>
+            <param name="BusinessUnit"></param>
+            <param name="GivenTransaction"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.ConfigObjects.tbl_config_detail_audit.GetCommandsByGroupId(System.Int32)">
+            <summary>
+            Returns a set of serialized transactions for a specified group
+            </summary>
+            <param name="GroupID"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.ConfigObjects.tbl_config_detail_audit.GetNextGroupID">
+            <summary>
+            Returns next available group ID from database
+            </summary>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_ecommerce_module_defaults_bu.#ctor(TalentSystemDefaults.DESettings@)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="settings"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_ecommerce_module_defaults_bu.GetGroupID">
+            <summary>
+            Returns the group ID
+            </summary>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_ecommerce_module_defaults_bu.GetSystemDefaultsURL">
+            <summary>
+            Returns web API url from database
+            </summary>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_ecommerce_module_defaults_bu.RetrieveCurrentValues(System.String,System.Collections.Generic.List{TalentSystemDefaults.ConfigurationItem})">
+            <summary>
+            Returns current configurations
+            </summary>
+            <param name="businessUnit"></param>
+            <param name="configs"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_ecommerce_module_defaults_bu.GetCurrentValues(System.Data.DataTable)">
+            <summary>
+            Returns set of configurations read from datatable passed
+            </summary>
+            <param name="dt"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_ecommerce_module_defaults_bu.GetConfigurationData(System.Data.DataTable,System.String[],System.String[])">
+            <summary>
+            Returns configurations as list of ConfigurationEntity read from dataTable passed
+            </summary>
+            <param name="dt"></param>
+            <param name="defaultKeys"></param>
+            <param name="variableKeys"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_ecommerce_module_defaults_bu.UpdateData(System.String,System.Collections.Generic.List{TalentSystemDefaults.ConfigurationItem},System.Data.SqlClient.SqlTransaction)">
+            <summary>
+            Updates configurations
+            </summary>
+            <param name="businessUnit"></param>
+            <param name="configs"></param>
+            <param name="givenTransaction"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_marketing_campaigns_lang.#ctor(TalentSystemDefaults.DESettings@)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="settings"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_marketing_campaigns_lang.RetrieveCurrentValues(System.String,System.Collections.Generic.List{TalentSystemDefaults.ConfigurationItem})">
+            <summary>
+            Returns current configurations
+            </summary>
+            <param name="businessUnit"></param>
+            <param name="configs"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_marketing_campaigns_lang.GetCurrentValues(System.Data.DataTable)">
+            <summary>
+            Returns set of configurations read from datatable passed
+            </summary>
+            <param name="dt"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_marketing_campaigns_lang.GetConfigurationData(System.Data.DataTable,System.String[],System.String[])">
+            <summary>
+            Returns configurations as list of ConfigurationEntity read from dataTable passed
+            </summary>
+            <param name="dt"></param>
+            <param name="defaultKeys"></param>
+            <param name="variableKeys"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_marketing_campaigns_lang.UpdateData(System.String,System.Collections.Generic.List{TalentSystemDefaults.ConfigurationItem},System.Data.SqlClient.SqlTransaction)">
+            <summary>
+            Updates configurations
+            </summary>
+            <param name="businessUnit"></param>
+            <param name="configs"></param>
+            <param name="givenTransaction"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_page_attribute.#ctor(TalentSystemDefaults.DESettings@)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="settings"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_page_attribute.RetrieveCurrentValues(System.String,System.Collections.Generic.List{TalentSystemDefaults.ConfigurationItem})">
+            <summary>
+            Returns current configurations
+            </summary>
+            <param name="businessUnit"></param>
+            <param name="configs"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_page_attribute.GetCurrentValues(System.Data.DataTable)">
+            <summary>
+            Returns set of configurations read from datatable passed
+            </summary>
+            <param name="dt"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_page_attribute.GetConfigurationData(System.Data.DataTable,System.String[],System.String[])">
+            <summary>
+            Returns configurations as list of ConfigurationEntity read from dataTable passed
+            </summary>
+            <param name="dt"></param>
+            <param name="defaultKeys"></param>
+            <param name="variableKeys"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_page_attribute.UpdateData(System.String,System.Collections.Generic.List{TalentSystemDefaults.ConfigurationItem},System.Data.SqlClient.SqlTransaction)">
+            <summary>
+            Updates configurations
+            </summary>
+            <param name="businessUnit"></param>
+            <param name="configs"></param>
+            <param name="givenTransaction"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="T:TalentSystemDefaults.DataAccess.DataObjects.tbl_page_text_lang">
+            <summary>
+            Provides the functionality to manage data from the table tbl_control_text_lang based on business functionality
+            </summary>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_page_text_lang.RetrieveCurrentValues(System.String,System.Collections.Generic.List{TalentSystemDefaults.ConfigurationItem})">
+            <summary>
+            Returns current configurations
+            </summary>
+            <param name="businessUnit"></param>
+            <param name="configs"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_page_text_lang.GetCurrentValues(System.Data.DataTable)">
+            <summary>
+            Returns set of configurations read from datatable passed
+            </summary>
+            <param name="dt"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_page_text_lang.UpdateData(System.String,System.Collections.Generic.List{TalentSystemDefaults.ConfigurationItem},System.Data.SqlClient.SqlTransaction)">
+            <summary>
+            Updates configurations
+            </summary>
+            <param name="businessUnit"></param>
+            <param name="configs"></param>
+            <param name="givenTransaction"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_page_text_lang.GetConfigurationData(System.Data.DataTable,System.String[],System.String[])">
+            <summary>
+            Returns configurations as list of ConfigurationEntity read from dataTable passed
+            </summary>
+            <param name="dt"></param>
+            <param name="defaultKeys"></param>
+            <param name="variableKeys"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_activity_template_type.#ctor(TalentSystemDefaults.DESettings@)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="settings"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_activity_template_type.GetConfigurationData(System.Data.DataTable,System.String[],System.String[])">
+            <summary>
+            Returns configurations as list of ConfigurationEntity read from dataTable passed
+            </summary>
+            <param name="dt"></param>
+            <param name="defaultKeys"></param>
+            <param name="variableKeys"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_activity_template_type.GetCurrentValues(System.Data.DataTable,System.Collections.Generic.List{TalentSystemDefaults.ConfigurationItem})">
+            <summary>
+            Returns set of configurations read from datatable passed
+            </summary>
+            <param name="dt"></param>
+            <param name="configs"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_activity_template_type.RetrieveCurrentValues(System.String,System.Collections.Generic.List{TalentSystemDefaults.ConfigurationItem})">
+            <summary>
+            Returns current configurations
+            </summary>
+            <param name="businessUnit"></param>
+            <param name="configs"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_activity_template_type.UpdateData(System.String,System.String,System.Collections.Generic.List{TalentSystemDefaults.ConfigurationItem},System.Data.SqlClient.SqlTransaction)">
+            <summary>
+            Updates configurations
+            </summary>
+            <param name="businessUnit"></param>
+            <param name="name"></param>
+            <param name="configs"></param>
+            <param name="givenTransaction"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.CD000.GetConfigurationData(System.Data.DataTable,System.String[],System.String[])">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="dt"></param>
+            <param name="defaultKeys"></param>
+            <param name="variableKeys"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.CD000.UpdateData(System.String,System.String,System.Collections.Generic.List{TalentSystemDefaults.ConfigurationItem},IBM.Data.DB2.iSeries.iDB2Transaction)">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="businessUnit"></param>
+            <param name="variableKey1Value"></param>
+            <param name="configs"></param>
+            <param name="givenTransaction"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.CD000.RetrieveCurrentValuesData(System.Collections.Generic.List{TalentSystemDefaults.ConfigurationItem})">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="businessUnit"></param>
+            <param name="configs"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.CD000.GetCurrentValues(System.Data.DataTable,System.Collections.Generic.List{TalentSystemDefaults.ConfigurationItem})">
+            <summary>
+            Xml Comment
+            </summary>
+            <param name="dt"></param>
+            <param name="configs"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.CD00A.GetConfigurationData(System.Data.DataTable,System.String[],System.String[])">
+            <summary>
+            XMLComment
+            </summary>
+            <param name="dt"></param>
+            <param name="defaultKeys"></param>
+            <param name="variableKeys"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.CD00A.RetrieveCurrentValuesData(System.Collections.Generic.List{TalentSystemDefaults.ConfigurationItem})">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="businessUnit"></param>
+            <param name="configs"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.CD00A.GetCurrentValues(System.Data.DataTable,System.Collections.Generic.List{TalentSystemDefaults.ConfigurationItem})">
+            <summary>
+            Xml Comment
+            </summary>
+            <param name="dt"></param>
+            <param name="configs"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.CD00A.UpdateData(System.String,System.String,System.Collections.Generic.List{TalentSystemDefaults.ConfigurationItem},IBM.Data.DB2.iSeries.iDB2Transaction)">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="businessUnit"></param>
+            <param name="variableKey1Value"></param>
+            <param name="configs"></param>
+            <param name="givenTransaction"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.CD00B.GetConfigurationData(System.Data.DataTable,System.String[],System.String[])">
+            <summary>
+            XML comment
+            </summary>
+            <param name="dt"></param>
+            <param name="defaultKeys"></param>
+            <param name="variableKeys"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.CD00B.RetrieveCurrentValuesData(System.Collections.Generic.List{TalentSystemDefaults.ConfigurationItem})">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="businessUnit"></param>
+            <param name="configs"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.CD00B.GetCurrentValues(System.Data.DataTable,System.Collections.Generic.List{TalentSystemDefaults.ConfigurationItem})">
+            <summary>
+            Xml Comment
+            </summary>
+            <param name="dt"></param>
+            <param name="configs"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.CD00B.UpdateData(System.String,System.String,System.Collections.Generic.List{TalentSystemDefaults.ConfigurationItem},IBM.Data.DB2.iSeries.iDB2Transaction)">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="businessUnit"></param>
+            <param name="variableKey1Value"></param>
+            <param name="configs"></param>
+            <param name="givenTransaction"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.MD501.#ctor(TalentSystemDefaults.DESettings@)">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="settings"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.MD501.SelectByCompAndType(System.String,System.String)">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="companyCode"></param>
+            <param name="type51"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.MD501.IsPaymentTypeUnique(System.String)">
+            <summary>
+            Returns if the new Payment Type Code being added is unique is not
+            </summary>
+            <param name="PaymentTypeCode"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.MD501.RetrieveCurrentValues(System.Collections.Generic.List{TalentSystemDefaults.ConfigurationItem})">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="configs"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.MD501.UpdateCurrentValueDB2(System.Collections.Generic.List{TalentSystemDefaults.ConfigurationItem},IBM.Data.DB2.iSeries.iDB2Transaction)">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="configs"></param>
+            <param name="givenTransaction"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.MD501.InsertCurrentValueDB2(System.Collections.Generic.List{TalentSystemDefaults.ConfigurationItem},IBM.Data.DB2.iSeries.iDB2Transaction)">
+            <summary>
+            Inserts configurations for DB2
+            </summary>
+            <param name="configs"></param>
+            <param name="givenTransaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.MD501.DeleteCurrentValuesDB2(IBM.Data.DB2.iSeries.iDB2Transaction)">
+            <summary>
+            Deletes configurations from DB2
+            </summary>
+            <param name="givenTransaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.MD501.GetConfigurationData(System.Data.DataTable,System.String[],System.String[])">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="dt"></param>
+            <param name="defaultKeys"></param>
+            <param name="variableKeys"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.MD501.RetrieveCurrentValues(System.String,System.Collections.Generic.List{TalentSystemDefaults.ConfigurationItem})">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="businessUnit"></param>
+            <param name="configs"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.MD501.GetCurrentValues(System.Data.DataTable,System.Collections.Generic.List{TalentSystemDefaults.ConfigurationItem})">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="dt"></param>
+            <param name="configs"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.MD501.UpdateData(System.String,System.String,System.Collections.Generic.List{TalentSystemDefaults.ConfigurationItem},IBM.Data.DB2.iSeries.iDB2Transaction)">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="businessUnit"></param>
+            <param name="variableKey1Value"></param>
+            <param name="configs"></param>
+            <param name="givenTransaction"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.MD501.InsertData(System.Collections.Generic.List{TalentSystemDefaults.ConfigurationItem},IBM.Data.DB2.iSeries.iDB2Transaction)">
+             <summary>
+            
+             </summary>
+             <param name="businessUnit"></param>
+             <param name="variableKey1Value"></param>
+             <param name="configs"></param>
+             <param name="givenTransaction"></param>
+             <returns></returns>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.MD501.DeleteData(System.String,System.String,IBM.Data.DB2.iSeries.iDB2Transaction)">
+            <summary>
+            Deletes payment type information from MD501
+            </summary>
+            <param name="type51"></param>
+            <param name="code51"></param>
+            <param name="givenTransaction"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.ModuleObjects.GenderType.#ctor(TalentSystemDefaults.DESettings@)">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="settings"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.ModuleObjects.GenderType.RetrieveDTForList">
+            <summary>
+            XML Comment
+            </summary>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.ModuleObjects.GenderType.SelectDTGenderTypes(System.Data.DataTable)">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="dtFromSQL"></param>
+            <param name="dtFromDB2"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.ModuleObjects.GenderType.SelectDB2GenderTypes">
+            <summary>
+            XML Comment
+            </summary>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.ModuleObjects.GenderType.DeleteCurrentValues(System.Data.SqlClient.SqlTransaction)">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="givenTransaction"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.ModuleObjects.PaymentType.#ctor(TalentSystemDefaults.DESettings@)">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="settings"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.ModuleObjects.PaymentType.RetrieveDTForList">
+            <summary>
+            XML Comment
+            </summary>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.ModuleObjects.PaymentType.SelectDTMergedPaymentTypes(System.Data.DataTable,System.Data.DataTable)">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="dtFromSQL"></param>
+            <param name="dtFromDB2"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.ModuleObjects.PaymentType.GetDB2RelatedPayCode(System.String,System.Data.DataTable)">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="sqlPayTypeCode"></param>
+            <param name="dtFromDB2"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.ModuleObjects.PaymentType.SelectSQLPaymentTypes">
+            <summary>
+            XML Comment
+            </summary>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.ModuleObjects.PaymentType.SelectDB2PaymentTypes">
+            <summary>
+            XML Comment
+            </summary>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.ModuleObjects.PaymentType.DeleteCurrentValues(System.Data.SqlClient.SqlTransaction)">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="givenTransaction"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.ConfigObjects.tbl_config_detail.GetConfigurationItems(System.Data.DataTable)">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="dt"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.ConfigObjects.tbl_config_detail.GetAllowedValues(System.Data.DataRow)">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="row"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.ConfigObjects.tbl_config_detail.UpdateConfigItem(System.String,TalentSystemDefaults.ConfigurationItem)">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="masterConfigId"></param>
+            <param name="config"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.ConfigObjects.tbl_config_detail.CompareGUIDVaues(System.String,System.String)">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="masterConfig"></param>
+            <param name="config"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.ConfigObjects.tbl_config_detail.IncrementUniqueId(System.Data.SqlClient.SqlTransaction)">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="givenTransaction"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.ConfigObjects.tbl_config_detail.GetMasterConfigurations(System.String,System.String[])">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="tableName"></param>
+            <param name="defaultNames"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.ConfigObjects.tbl_config_detail.#ctor(TalentSystemDefaults.DESettings)">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="settings"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.ConfigObjects.tbl_config_detail.RetrieveConfigurationItems(System.Collections.Generic.List{System.String})">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="ids"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.ConfigObjects.tbl_config_detail.RetrieveConfigurationItem(System.String,System.String)">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="masterConfig"></param>
+            <param name="variableKey1"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.ConfigObjects.tbl_config_detail.GetMasterConfigIds(System.String,System.String[])">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="tableName"></param>
+            <param name="defaultNames"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.ConfigObjects.tbl_config_detail.SaveAll(TalentSystemDefaults.DataEntities.ConfigurationEntity[],System.String,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="entities"></param>
+            <param name="givenTransaction"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.ConfigObjects.tbl_config_detail.SaveEntity(TalentSystemDefaults.DataEntities.ConfigurationEntity,System.String,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="entity"></param>
+            <param name="givenTransaction"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.ConfigObjects.tbl_config_detail.GetUniqueId(System.Data.SqlClient.SqlTransaction)">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="givenTransaction"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.ConfigObjects.tbl_config_detail.UpdateConfigId(System.String,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="oldGUID"></param>
+            <param name="newGUID"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.ConfigObjects.tbl_table_detail.#ctor(TalentSystemDefaults.DESettings)">
+            <summary>
+            XML Comment
+            </summary>
+            <param name="settings"></param>
+            <remarks></remarks>
+        </member>
+        <member name="T:TalentSystemDefaults.DEDB2Command">
+            <summary>
+            Class Provides the Properties for building up the DB2Command instance
+            </summary>
+        </member>
+        <member name="F:TalentSystemDefaults.DEDB2Command._commandText">
+            <summary>
+            Command Text
+            </summary>
+        </member>
+        <member name="F:TalentSystemDefaults.DEDB2Command._commandType">
+            <summary>
+            Command Type
+            </summary>
+        </member>
+        <member name="F:TalentSystemDefaults.DEDB2Command._commandParameter">
+            <summary>
+            Command Parameter of type DEDB2Parameter (DB2Parameter)
+            </summary>
+        </member>
+        <member name="F:TalentSystemDefaults.DEDB2Command._commandExecutionType">
+            <summary>
+            Command Execution Method of type CommandExecution Enum
+            </summary>
+        </member>
+        <member name="P:TalentSystemDefaults.DEDB2Command.CommandText">
+            <summary>
+            Gets or sets the command text Transact SQL Statement
+            or Parameterised SQL Statement
+            or Stored Procedure Name
+            </summary>
+            <value>The command text.</value>
+        </member>
+        <member name="P:TalentSystemDefaults.DEDB2Command.CommandType">
+            <summary>
+            Gets or sets the type of the command based on Data.CommandType
+            </summary>
+            <value>The type of the command.</value>
+        </member>
+        <member name="P:TalentSystemDefaults.DEDB2Command.CommandExecutionType">
+            <summary>
+            Gets or sets the execution type for the command based on Talent.Common.CommandExecution
+            </summary>
+            <value>The type of the command execution.</value>
+        </member>
+        <member name="P:TalentSystemDefaults.DEDB2Command.CommandParameter">
+            <summary>
+            Gets or sets the command parameter details
+            through Generic List collection of DEDB2Parameter instance
+            </summary>
+            <value>The command parameter.</value>
+        </member>
+        <member name="T:TalentSystemDefaults.DEDB2Parameter">
+            <summary>
+            Provides the properties to build DB2 paramater object
+            </summary>
+        </member>
+        <member name="F:TalentSystemDefaults.DEDB2Parameter._paramName">
+            <summary>
+            Paramater Name
+            </summary>
+        </member>
+        <member name="F:TalentSystemDefaults.DEDB2Parameter._paramValue">
+            <summary>
+            Parameter Value
+            </summary>
+        </member>
+        <member name="F:TalentSystemDefaults.DEDB2Parameter._paramType">
+            <summary>
+            Parameter Type
+            </summary>
+        </member>
+        <member name="F:TalentSystemDefaults.DEDB2Parameter._paramDirection">
+            <summary>
+            Parameter Direction
+            </summary>
+        </member>
+        <member name="F:TalentSystemDefaults.DEDB2Parameter._paramLength">
+            <summary>
+            Paramater Length or Size
+            </summary>
+        </member>
+        <member name="P:TalentSystemDefaults.DEDB2Parameter.ParamName">
+            <summary>
+            Gets or sets the name of the parameter
+            </summary>
+            <value>The name of the param.</value>
+        </member>
+        <member name="P:TalentSystemDefaults.DEDB2Parameter.ParamValue">
+            <summary>
+            Gets or sets the parameter value
+            </summary>
+            <value>The param value.</value>
+        </member>
+        <member name="P:TalentSystemDefaults.DEDB2Parameter.ParamType">
+            <summary>
+            Gets or sets the type of the parameter (DB2DbType)
+            </summary>
+            <value>The type of the param.</value>
+        </member>
+        <member name="P:TalentSystemDefaults.DEDB2Parameter.ParamDirection">
+            <summary>
+            Gets or sets the parameter direction of type Data.ParameterDirection
+            </summary>
+            <value>The param direction.</value>
+        </member>
+        <member name="P:TalentSystemDefaults.DEDB2Parameter.ParamLength">
+            <summary>
+            Gets or sets the parameter length
+            </summary>
+            <value>The parameter length</value>
+        </member>
+        <member name="T:TalentSystemDefaults.DBDataAccess">
+            <summary>
+            Provides the functionality to execute the command object against the given connection string
+            by using DBAccess Class
+            </summary>
+        </member>
+        <member name="M:TalentSystemDefaults.DBDataAccess.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:TalentSystemDefaults.DBDataAccess.BeginTransaction(TalentSystemDefaults.DestinationDatabase,TalentSystemDefaults.ErrorObj@,System.Nullable{System.Data.IsolationLevel})">
+            <summary>
+            Opens the connection and create and returns the transaction object
+            </summary>
+            <param name="err">The error object as ref</param>
+            <param name="givenIsolationLevel">The given isolation level.</param>
+            <returns>SQLTransaction instance</returns>
+        </member>
+        <member name="M:TalentSystemDefaults.DBDataAccess.EndTransaction(TalentSystemDefaults.DestinationDatabase,TalentSystemDefaults.ErrorObj@,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+            Ends the transaction and disposes any unhandled transaction object
+            </summary>
+            <param name="err">The error object as ref</param>
+            <param name="givenTransaction">The given transaction.</param>
+        </member>
+        <member name="M:TalentSystemDefaults.DBDataAccess.EndTransaction(TalentSystemDefaults.DestinationDatabase,TalentSystemDefaults.ErrorObj@,System.Data.SqlClient.SqlTransaction,System.Data.SqlClient.SqlDataReader)">
+            <summary>
+            Ends the transaction and disposes any unhandled transaction object and closes the reader object
+            </summary>
+            <param name="err">The error object as ref</param>
+            <param name="givenTransaction">The given transaction.</param>
+            <param name="readerToClose">The reader to close.</param>
+        </member>
+        <member name="M:TalentSystemDefaults.DBDataAccess.AccessWithTransaction(System.Data.SqlClient.SqlTransaction)">
+            <summary>
+            Execute the command obejct with transaction
+            </summary>
+            <param name="givenTransaction">The given transaction.</param>
+            <returns>Error Object</returns>
+        </member>
+        <member name="M:TalentSystemDefaults.DBDataAccess.AccessDataBaseSQL2005">
+            <summary>
+            Access the data base SQL 2005
+            This is called by DBAccess Class
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TalentSystemDefaults.DBDataAccess.AccessDataBaseTalentSQL">
+            <summary>
+             XML Comment
+            </summary>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DBDataAccess.ConnectionByDestinationDBOpen(TalentSystemDefaults.DestinationDatabase)">
+            <summary>
+             XML Comment
+            </summary>
+            <param name="destinationDatabase"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DBDataAccess.ConnectionByDestinationDBClose(TalentSystemDefaults.DestinationDatabase)">
+            <summary>
+             XML Comment
+            </summary>
+            <param name="destinationDatabase"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DBDataAccess.ExecuteDataSet(System.Data.SqlClient.SqlCommand)">
+            <summary>
+            Executes the command object using SQLDataAdapter to fill the dataset and return
+            </summary>
+            <param name="commandToExecute">The command to execute.</param>
+            <returns>DataSet</returns>
+        </member>
+        <member name="M:TalentSystemDefaults.DBDataAccess.ExecuteNonQuery(System.Data.SqlClient.SqlCommand)">
+            <summary>
+            Executes the command object using executenonquery method and
+            returns a dataset with a table with single column and row ROWS_AFFECTED
+            </summary>
+            <param name="commandToExecute">The command to execute.</param>
+            <returns>A dataset with a table with single column and row ROWS_AFFECTED</returns>
+        </member>
+        <member name="M:TalentSystemDefaults.DBDataAccess.PrepareCommandElement(System.Data.SqlClient.SqlCommand)">
+            <summary>
+            Prepares the command element
+            Assign the command instance properties from DESQLCommand instance
+            </summary>
+            <param name="givenSqlCommand">The given SQL command.</param>
+            <returns>ErrorObj</returns>
+        </member>
+        <member name="M:TalentSystemDefaults.DBDataAccess.AttachParametersToCommand(System.Data.SqlClient.SqlCommand)">
+            <summary>
+            Attaches the parameters to the given SQL command instance
+            </summary>
+            <param name="givenSqlCommand">The given SQL command.</param>
+            <returns></returns>
+        </member>
+        <member name="M:TalentSystemDefaults.DBDataAccess.HasValue(System.String)">
+            <summary>
+            Determines whether the specified given value has value.
+            </summary>
+            <param name="givenValueToCheck">The given value to check.</param>
+            <returns>
+            <c>true</c> if the specified given value to check has value; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:TalentSystemDefaults.DBDataAccess.HasValue(System.Data.CommandType)">
+            <summary>
+            Determines whether the specified given type to has any CommandType.
+            </summary>
+            <param name="givenTypeToCheck">The given type to check.</param>
+            <returns>
+            <c>true</c> if the specified given type has value; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:TalentSystemDefaults.DBDataAccess.HasValue(System.Object,System.Data.SqlDbType)">
+            <summary>
+            Determines whether the specified given value is matching with given SQLDbType.
+            </summary>
+            <param name="givenValueToCheck">The given value to check.</param>
+            <param name="givenTypeToCheck">The given type to check.</param>
+            <returns>
+            <c>true</c> if the specified given value is matching with given SQLDbType; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="P:TalentSystemDefaults.DBDataAccess.CommandElement">
+            <summary>
+            Sets the command element of type DESQLCommand
+            </summary>
+            <value>The command element.</value>
+        </member>
+        <member name="T:TalentSystemDefaults.CommandExecution">
+            <summary>
+            Provides the execution type for the command instance
+            </summary>
+        </member>
+        <member name="F:TalentSystemDefaults.CommandExecution.ExecuteDataSet">
+            <summary>
+            Execute Command and return DataSet
+            </summary>
+        </member>
+        <member name="F:TalentSystemDefaults.CommandExecution.ExecuteNonQuery">
+            <summary>
+            Execute Command and return rows affected
+            </summary>
+        </member>
+        <member name="F:TalentSystemDefaults.CommandExecution.ExecuteScalar">
+            <summary>
+            Execute Command and return single value or value of first row, first column
+            </summary>
+        </member>
+        <member name="F:TalentSystemDefaults.CommandExecution.ExecuteReader">
+            <summary>
+            Execute Command and return DataReader instance
+            </summary>
+        </member>
+        <member name="T:TalentSystemDefaults.DESQLCommand">
+            <summary>
+            Class Provides the Properties for building up the SQLCommand instance
+            </summary>
+        </member>
+        <member name="F:TalentSystemDefaults.DESQLCommand._commandText">
+            <summary>
+            Command Text
+            </summary>
+        </member>
+        <member name="F:TalentSystemDefaults.DESQLCommand._commandType">
+            <summary>
+            Command Type
+            </summary>
+        </member>
+        <member name="F:TalentSystemDefaults.DESQLCommand._commandParameter">
+            <summary>
+            Command Parameter of type DESQLParameter (SqlParameter)
+            </summary>
+        </member>
+        <member name="F:TalentSystemDefaults.DESQLCommand._commandExecutionType">
+            <summary>
+            Command Execution Method of type CommandExecution Enum
+            </summary>
+        </member>
+        <member name="P:TalentSystemDefaults.DESQLCommand.CommandText">
+            <summary>
+            Gets or sets the command text Transact SQL Statement
+            or Parameterised SQL Statement
+            or Stored Procedure Name
+            </summary>
+            <value>The command text.</value>
+        </member>
+        <member name="P:TalentSystemDefaults.DESQLCommand.CommandType">
+            <summary>
+            Gets or sets the type of the command based on Data.CommandType
+            </summary>
+            <value>The type of the command.</value>
+        </member>
+        <member name="P:TalentSystemDefaults.DESQLCommand.CommandExecutionType">
+            <summary>
+            Gets or sets the execution type for the command based on Talent.Common.CommandExecution
+            </summary>
+            <value>The type of the command execution.</value>
+        </member>
+        <member name="P:TalentSystemDefaults.DESQLCommand.CommandParameter">
+            <summary>
+            Gets or sets the command parameter details
+            through Generic List collection of DESQLParameter instance
+            </summary>
+            <value>The command parameter.</value>
+        </member>
+        <member name="T:TalentSystemDefaults.DESQLParameter">
+            <summary>
+            Provides the properties to build sql paramater object
+            </summary>
+        </member>
+        <member name="F:TalentSystemDefaults.DESQLParameter._paramName">
+            <summary>
+            Paramater Name
+            </summary>
+        </member>
+        <member name="F:TalentSystemDefaults.DESQLParameter._paramValue">
+            <summary>
+            Parameter Value
+            </summary>
+        </member>
+        <member name="F:TalentSystemDefaults.DESQLParameter._paramType">
+            <summary>
+            Parameter Type
+            </summary>
+        </member>
+        <member name="F:TalentSystemDefaults.DESQLParameter._paramDirection">
+            <summary>
+            Parameter Direction
+            </summary>
+        </member>
+        <member name="P:TalentSystemDefaults.DESQLParameter.ParamName">
+            <summary>
+            Gets or sets the name of the parameter
+            </summary>
+            <value>The name of the param.</value>
+        </member>
+        <member name="P:TalentSystemDefaults.DESQLParameter.ParamValue">
+            <summary>
+            Gets or sets the parameter value
+            </summary>
+            <value>The param value.</value>
+        </member>
+        <member name="P:TalentSystemDefaults.DESQLParameter.ParamType">
+            <summary>
+            Gets or sets the type of the parameter (SqlDbType)
+            </summary>
+            <value>The type of the param.</value>
+        </member>
+        <member name="P:TalentSystemDefaults.DESQLParameter.ParamDirection">
+            <summary>
+            Gets or sets the parameter direction of type Data.ParameterDirection
+            </summary>
+            <value>The param direction.</value>
+        </member>
+        <member name="T:TalentSystemDefaults.ActivityStatusEnum">
+            <summary>
+            Provides the status types for the STATUS column in the table tbl_log_header
+            </summary>
+        </member>
+        <member name="F:TalentSystemDefaults.ActivityStatusEnum.STARTED">
+            <summary>
+            Start status
+            </summary>
+        </member>
+        <member name="F:TalentSystemDefaults.ActivityStatusEnum.INPROGRESS">
+            <summary>
+            In progress status
+            </summary>
+        </member>
+        <member name="F:TalentSystemDefaults.ActivityStatusEnum.SUCCESS">
+            <summary>
+            Success
+            </summary>
+        </member>
+        <member name="F:TalentSystemDefaults.ActivityStatusEnum.FAILED">
+            <summary>
+            Failed
+            </summary>
+        </member>
+        <member name="T:TalentSystemDefaults.DataTransferStatusEnum">
+            <summary>
+            Provides the status types for the STATUS column in the table tbl_data_transfer_status
+            </summary>
+        </member>
+        <member name="F:TalentSystemDefaults.DataTransferStatusEnum.CLEARING_WORK_TABLE">
+            <summary>
+            Clearing work table (on insert)
+            </summary>
+        </member>
+        <member name="F:TalentSystemDefaults.DataTransferStatusEnum.EXTRACTING_FROM_ISERIES">
+            <summary>
+            In progress status (extracting - on update)
+            </summary>
+        </member>
+        <member name="F:TalentSystemDefaults.DataTransferStatusEnum.UPDATING_SQL_TABLES">
+            <summary>
+            Updating Tables (on update)
+            </summary>
+        </member>
+        <member name="F:TalentSystemDefaults.DataTransferStatusEnum.FINISHED">
+            <summary>
+            Success/Finished (on update)
+            </summary>
+        </member>
+        <member name="F:TalentSystemDefaults.DataTransferStatusEnum.FAILED">
+            <summary>
+            Failed - exception occurred (on update)
+            </summary>
+        </member>
+        <member name="T:TalentSystemDefaults.DestinationDatabase">
+            <summary>
+            Global class for constant values and enum
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="T:TalentSystemDefaults.TalentDataAccess">
+            <summary>
+            Provides the gateway to access the Data Access Layer
+            </summary>
+        </member>
+        <member name="F:TalentSystemDefaults.TalentDataAccess._commandElements">
+            <summary>
+            DESQLCommand Instance
+            </summary>
+        </member>
+        <member name="M:TalentSystemDefaults.TalentDataAccess.#ctor">
+            <summary>
+            XML Comment
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.TalentDataAccess.SQLAccess(TalentSystemDefaults.DestinationDatabase,System.Boolean)">
+            <summary>
+            Functionality to provide the gateway to access the Data Access Layer
+            </summary>
+            <param name="destinationDatabase"></param>
+            <param name="allowSerialize"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.TalentDataAccess.SQLAccess(TalentSystemDefaults.DestinationDatabase,System.Data.SqlClient.SqlTransaction,System.Boolean)">
+            <summary>
+            Use this for Insert, Update and Delete
+            Functionality to provide the gateway to access the Data Access Layer with Transaction object
+            If any exception transaction will be rollbacked here
+            </summary>
+            <param name="destinationDatabase"></param>
+            <param name="givenTransaction">The given transaction.</param>
+            <param name="allowSerialize">To allow serialization of TalentDataAccess instance </param>
+            <returns></returns>
+        </member>
+        <member name="M:TalentSystemDefaults.TalentDataAccess.BeginTransaction(TalentSystemDefaults.DestinationDatabase,TalentSystemDefaults.ErrorObj@,System.Nullable{System.Data.IsolationLevel})">
+            <summary>
+            Begins the transaction and returns the transaction object with open state connection.
+            Make sure to call EndTransaction method to close transaction
+            </summary>
+            <param name="destinationDatabase"></param>
+            <param name="err">The err.</param>
+            <param name="givenIsolationLevel">The given isolation level.</param>
+            <returns></returns>
+        </member>
+        <member name="M:TalentSystemDefaults.TalentDataAccess.EndTransaction(TalentSystemDefaults.DestinationDatabase,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+            Ends the transaction by passing the object to DBDataAccess
+            </summary>
+            <param name="destinationDatabase"></param>
+            <param name="givenTransaction">The given transaction.</param>
+            <returns>Error Object</returns>
+        </member>
+        <member name="M:TalentSystemDefaults.TalentDataAccess.EndTransaction(TalentSystemDefaults.DestinationDatabase,System.Data.SqlClient.SqlTransaction,System.Data.SqlClient.SqlDataReader)">
+            <summary>
+            Ends the transaction and close the reader by passing the object to DBDataAccess
+            </summary>
+            <param name="destinationDatabase"></param>
+            <param name="givenTransaction">The given transaction.</param>
+            <param name="readerToClose">The reader to close.</param>
+            <returns>Error Object</returns>
+        </member>
+        <member name="M:TalentSystemDefaults.TalentDataAccess.GetModuleNameByDestinationDB(TalentSystemDefaults.DestinationDatabase)">
+            <summary>
+             XML Comment
+            </summary>
+            <param name="destinationDatabase"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.TalentDataAccess.SetConnectionStringParameters">
+            <summary>
+             XML Comment
+            </summary>
+            <remarks></remarks>
+        </member>
+        <member name="P:TalentSystemDefaults.TalentDataAccess.CommandElements">
+            <summary>
+            Gets or sets the command elements of type DESQLCommand
+            </summary>
+            <value>The command elements.</value>
+        </member>
+        <member name="P:TalentSystemDefaults.TalentDataAccess.ResultDataSet">
+            <summary>
+            Gets or sets the result data set.
+            </summary>
+            <value>The result data set.</value>
+        </member>
+        <member name="T:TalentSystemDefaults.TalentDataSet">
+            <summary>
+            This class will hold the custom result set so that custom type can be moved to cache
+            </summary>
+        </member>
+        <member name="P:TalentSystemDefaults.TalentDataSet.ResultDataSet">
+            <summary>
+            Gets or sets the result data set of type System.Data.DataSet
+            </summary>
+            <value>
+            The result data set.
+            </value>
+        </member>
+        <member name="P:TalentSystemDefaults.TalentDataSet.DictionaryDataSet">
+            <summary>
+            Gets or sets the dictionary data set of type Generic.Dictionary(Of String, String)
+            </summary>
+            <value>
+            The dictionary data set.
+            </value>
+        </member>
+        <member name="T:TalentSystemDefaults.DataAccess.DataObjects.tbl_control_text_lang">
+            <summary>
+            Provides the functionality to manage data from the table tbl_control_text_lang based on business functionality
+            </summary>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_control_text_lang.#ctor(TalentSystemDefaults.DESettings@)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="settings"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_control_text_lang.RetrieveCurrentValues(System.String,System.Collections.Generic.List{TalentSystemDefaults.ConfigurationItem})">
+            <summary>
+            Returns current configurations
+            </summary>
+            <param name="businessUnit"></param>
+            <param name="configs"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_control_text_lang.GetCurrentValues(System.Data.DataTable)">
+            <summary>
+            Returns set of configurations read from datatable passed
+            </summary>
+            <param name="dt"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_control_text_lang.GetConfigurationData(System.Data.DataTable,System.String[],System.String[])">
+            <summary>
+            Returns configurations as list of ConfigurationEntity read from dataTable passed
+            </summary>
+            <param name="dt"></param>
+            <param name="defaultKeys"></param>
+            <param name="variableKeys"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_control_text_lang.UpdateData(System.String,System.Collections.Generic.List{TalentSystemDefaults.ConfigurationItem},System.Data.SqlClient.SqlTransaction)">
+            <summary>
+            Updates configurations
+            </summary>
+            <param name="businessUnit"></param>
+            <param name="configs"></param>
+            <param name="givenTransaction"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_control_attribute.#ctor(TalentSystemDefaults.DESettings@)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="settings"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_control_attribute.RetrieveCurrentValues(System.String,System.Collections.Generic.List{TalentSystemDefaults.ConfigurationItem})">
+            <summary>
+            Returns current configurations for control attributes
+            </summary>
+            <param name="businessUnit"></param>
+            <param name="configs"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_control_attribute.GetCurrentValues(System.Data.DataTable)">
+            <summary>
+            Returns set of configurations read from datatable passed
+            </summary>
+            <param name="dt"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_control_attribute.GetConfigurationData(System.Data.DataTable,System.String[],System.String[])">
+            <summary>
+            Returns configurations as list of ConfigurationEntity read from dataTable passed
+            </summary>
+            <param name="dt"></param>
+            <param name="defaultKeys"></param>
+            <param name="variableKeys"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_control_attribute.UpdateData(System.String,System.Collections.Generic.List{TalentSystemDefaults.ConfigurationItem},System.Data.SqlClient.SqlTransaction)">
+            <summary>
+            Updates configurations
+            </summary>
+            <param name="businessUnit"></param>
+            <param name="configs"></param>
+            <param name="givenTransaction"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_payment_type.#ctor(TalentSystemDefaults.DESettings@)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="settings"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_payment_type.IsPaymentTypeUnique(System.String)">
+            <summary>
+            Returns if the new Payment Type Code being added is unique is not
+            </summary>
+            <param name="PaymentTypeCode"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_payment_type.IsCustomPaymentTypeCode(System.String)">
+            <summary>
+            Confirms if the PaymentType Code is custom or system. true - Custom | false - System
+            </summary>
+            <param name="paymentTypeCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_payment_type.GetConfigurationData(System.Data.DataTable,System.String[],System.String[])">
+            <summary>
+            Returns configurations as list of ConfigurationEntity read from dataTable passed
+            </summary>
+            <param name="dt"></param>
+            <param name="defaultKeys"></param>
+            <param name="variableKeys"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_payment_type.RetrieveCurrentValues(System.String,System.Collections.Generic.List{TalentSystemDefaults.ConfigurationItem})">
+            <summary>
+            Returns current configurations
+            </summary>
+            <param name="businessUnit"></param>
+            <param name="configs"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_payment_type.GetCurrentValues(System.Data.DataTable,System.Collections.Generic.List{TalentSystemDefaults.ConfigurationItem})">
+            <summary>
+            Returns set of configurations read from datatable passed
+            </summary>
+            <param name="dt"></param>
+            <param name="configs"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_payment_type.UpdateData(System.String,System.String,System.Collections.Generic.List{TalentSystemDefaults.ConfigurationItem},System.Data.SqlClient.SqlTransaction)">
+            <summary>
+            Updates configurations
+            </summary>
+            <param name="businessUnit"></param>
+            <param name="paymentCode"></param>
+            <param name="configs"></param>
+            <param name="givenTransaction"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_payment_type.InsertData(System.String,System.String,System.Collections.Generic.List{TalentSystemDefaults.ConfigurationItem},System.Data.SqlClient.SqlTransaction,System.String@)">
+            <summary>
+            Insert Configurations
+            </summary>
+            <param name="businessUnit"></param>
+            <param name="paymentCode"></param>
+            <param name="configs"></param>
+            <param name="givenTransaction"></param>
+            <param name="key"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_payment_type.DeleteData(System.String,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+            Deletes Configurations
+            </summary>
+            <param name="paymentCode"></param>
+            <param name="givenTransaction"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_payment_type_bu.#ctor(TalentSystemDefaults.DESettings@)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="settings"></param>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_payment_type_bu.GetConfigurationData(System.Data.DataTable,System.String[],System.String[])">
+            <summary>
+            Returns configurations as list of ConfigurationEntity read from dataTable passed
+            </summary>
+            <param name="dt"></param>
+            <param name="defaultKeys"></param>
+            <param name="variableKeys"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_payment_type_bu.GetCurrentValues(System.Data.DataTable,System.Collections.Generic.List{TalentSystemDefaults.ConfigurationItem})">
+            <summary>
+            Returns set of configurations read from datatable passed
+            </summary>
+            <param name="dt"></param>
+            <param name="configs"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_payment_type_bu.RetrieveCurrentValues(System.String,System.Collections.Generic.List{TalentSystemDefaults.ConfigurationItem})">
+            <summary>
+            Returns current configurations
+            </summary>
+            <param name="businessUnit"></param>
+            <param name="configs"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_payment_type_bu.UpdateData(System.String,System.String,System.Collections.Generic.List{TalentSystemDefaults.ConfigurationItem},System.Data.SqlClient.SqlTransaction)">
+            <summary>
+            Updates configurations
+            </summary>
+            <param name="businessUnit"></param>
+            <param name="paymentCode"></param>
+            <param name="configs"></param>
+            <param name="givenTransaction"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_payment_type_bu.DeleteData(System.String,System.String,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+            Deletes Configurations
+            </summary>
+            <param name="businessUnit"></param>
+            <param name="paymentCode"></param>
+            <param name="givenTransaction"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="M:TalentSystemDefaults.DataAccess.DataObjects.tbl_payment_type_bu.InsertData(System.String,System.String,System.Collections.Generic.List{TalentSystemDefaults.ConfigurationItem},System.Data.SqlClient.SqlTransaction)">
+            <summary>
+            Insert Configurations
+            </summary>
+            <param name="businessUnit"></param>
+            <param name="paymentCode"></param>
+            <param name="configs"></param>
+            <param name="givenTransaction"></param>
+            <returns></returns>
+            <remarks></remarks>
+        </member>
+        <member name="T:My.Resources.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:My.Resources.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:My.Resources.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>

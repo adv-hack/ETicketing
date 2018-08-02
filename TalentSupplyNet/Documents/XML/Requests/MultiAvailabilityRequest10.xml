@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MultiAvailabilityRequest>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID>123456789</SenderID>
+    <ReceiverID>987654321</ReceiverID>
+    <CountryCode>UK</CountryCode>
+    <LoginID>asda</LoginID>
+    <Password>asda</Password>
+    <Company>ASDA</Company>
+    <TransactionID>54321</TransactionID>
+  </TransactionHeader>
+  <Availability SKU="DI813953" Warehouse="PK" />
+  <Availability SKU="DI816301" Warehouse="PK" />
+  <Availability SKU="DI817411" Warehouse="PK" />
+  <Availability SKU="DI819761" Warehouse="PK" />
+  <Availability SKU="DI821381" Warehouse="PK" />
+  <Availability SKU="DI821631" Warehouse="PK" />
+  <Availability SKU="DI822861" Warehouse="PK" />
+  <Availability SKU="DI824672" Warehouse="PK" />
+  <Availability SKU="DI825361" Warehouse="PK" />
+  <Availability SKU="DI825971" Warehouse="PK" />
+  <Availability SKU="DI826313" Warehouse="PK" />
+  <Availability SKU="DI826313X" Warehouse="PK" />
+  <Availability SKU="DI829531" Warehouse="PK" />
+  <Availability SKU="DI831892" Warehouse="PK" />
+  <Availability SKU="DI832882" Warehouse="PK" />
+  <Availability SKU="DI834391" Warehouse="PK" />
+  <Availability SKU="DI834401" Warehouse="PK" />
+  <Availability SKU="DI834411" Warehouse="PK" />
+  <Availability SKU="DI836361" Warehouse="PK" />
+  <Availability SKU="DI813953" Warehouse="PK" />
+  <Availability SKU="DI816301" Warehouse="PK" />
+  <Availability SKU="DI817411" Warehouse="PK" />
+  <Availability SKU="DI819761" Warehouse="PK" />
+  <Availability SKU="DI821381" Warehouse="PK" />
+  <Availability SKU="DI821631" Warehouse="PK" />
+  <Availability SKU="DI822861" Warehouse="PK" />
+  <Availability SKU="DI824672" Warehouse="PK" />
+  <Availability SKU="DI825361" Warehouse="PK" />
+  <Availability SKU="DI825971" Warehouse="PK" />
+  <Availability SKU="DI826313" Warehouse="PK" />
+  <Availability SKU="DI826313X" Warehouse="PK" />
+  <Availability SKU="DI829531" Warehouse="PK" />
+  <Availability SKU="DI831892" Warehouse="PK" />
+  <Availability SKU="DI832882" Warehouse="PK" />
+  <Availability SKU="DI834391" Warehouse="PK" />
+  <Availability SKU="DI834401" Warehouse="PK" />
+  <Availability SKU="DI834411" Warehouse="PK" />
+  <Availability SKU="DI836361" Warehouse="PK" />
+  <Availability SKU="DI813953" Warehouse="PK" />
+  <Availability SKU="DI816301" Warehouse="PK" />
+  <Availability SKU="DI817411" Warehouse="PK" />
+  <Availability SKU="DI819761" Warehouse="PK" />
+  <Availability SKU="DI821381" Warehouse="PK" />
+  <Availability SKU="DI821631" Warehouse="PK" />
+  <Availability SKU="DI822861" Warehouse="PK" />
+  <Availability SKU="DI824672" Warehouse="PK" />
+  <Availability SKU="DI825361" Warehouse="PK" />
+  <Availability SKU="DI825971" Warehouse="PK" />
+  <Availability SKU="DI826313" Warehouse="PK" />
+  <Availability SKU="DI826313X" Warehouse="PK" />
+  <Availability SKU="DI829531" Warehouse="PK" />
+  <Availability SKU="DI831892" Warehouse="PK" />
+  <Availability SKU="DI832882" Warehouse="PK" />
+  <Availability SKU="DI834391" Warehouse="PK" />
+  <Availability SKU="DI834401" Warehouse="PK" />
+  <Availability SKU="DI834411" Warehouse="PK" />
+  <Availability SKU="DI836361" Warehouse="PK" />
+  <Availability SKU="DI813953" Warehouse="PK" />
+  <Availability SKU="DI816301" Warehouse="PK" />
+  <Availability SKU="DI817411" Warehouse="PK" />
+  <Availability SKU="DI819761" Warehouse="PK" />
+  <Availability SKU="DI821381" Warehouse="PK" />
+  <Availability SKU="DI821631" Warehouse="PK" />
+  <Availability SKU="DI822861" Warehouse="PK" />
+  <Availability SKU="DI824672" Warehouse="PK" />
+  <Availability SKU="DI825361" Warehouse="PK" />
+  <Availability SKU="DI825971" Warehouse="PK" />
+  <Availability SKU="DI826313" Warehouse="PK" />
+  <Availability SKU="DI826313X" Warehouse="PK" />
+  <Availability SKU="DI829531" Warehouse="PK" />
+  <Availability SKU="DI831892" Warehouse="PK" />
+  <Availability SKU="DI832882" Warehouse="PK" />
+  <Availability SKU="DI834391" Warehouse="PK" />
+  <Availability SKU="DI834401" Warehouse="PK" />
+  <Availability SKU="DI834411" Warehouse="PK" />
+  <Availability SKU="DI836361" Warehouse="PK" />
+  <Availability SKU="DI813953" Warehouse="PK" />
+  <Availability SKU="DI816301" Warehouse="PK" />
+  <Availability SKU="DI817411" Warehouse="PK" />
+  <Availability SKU="DI819761" Warehouse="PK" />
+  <Availability SKU="DI821381" Warehouse="PK" />
+  <Availability SKU="DI821631" Warehouse="PK" />
+  <Availability SKU="DI822861" Warehouse="PK" />
+  <Availability SKU="DI824672" Warehouse="PK" />
+  <Availability SKU="DI825361" Warehouse="PK" />
+  <Availability SKU="DI825971" Warehouse="PK" />
+  <Availability SKU="DI826313" Warehouse="PK" />
+  <Availability SKU="DI826313X" Warehouse="PK" />
+  <Availability SKU="DI829531" Warehouse="PK" />
+  <Availability SKU="DI831892" Warehouse="PK" />
+  <Availability SKU="DI832882" Warehouse="PK" />
+  <Availability SKU="DI834391" Warehouse="PK" />
+  <Availability SKU="DI834401" Warehouse="PK" />
+  <Availability SKU="DI834411" Warehouse="PK" />
+  <Availability SKU="DI836361" Warehouse="PK" />
+  <Availability SKU="DI813953" Warehouse="PK" />
+  <Availability SKU="DI816301" Warehouse="PK" />
+  <Availability SKU="DI817411" Warehouse="PK" />
+  <Availability SKU="DI819761" Warehouse="PK" />
+  <Availability SKU="DI821381" Warehouse="PK" />
+  <Availability SKU="DI821631" Warehouse="PK" />
+  <Availability SKU="DI822861" Warehouse="PK" />
+  <Availability SKU="DI824672" Warehouse="PK" />
+  <Availability SKU="DI825361" Warehouse="PK" />
+  <Availability SKU="DI825971" Warehouse="PK" />
+  <Availability SKU="DI826313" Warehouse="PK" />
+  <Availability SKU="DI826313X" Warehouse="PK" />
+  <Availability SKU="DI829531" Warehouse="PK" />
+  <Availability SKU="DI831892" Warehouse="PK" />
+  <Availability SKU="DI832882" Warehouse="PK" />
+  <Availability SKU="DI834391" Warehouse="PK" />
+  <Availability SKU="DI834401" Warehouse="PK" />
+  <Availability SKU="DI834411" Warehouse="PK" />
+  <Availability SKU="DI836361" Warehouse="PK" />
+
+
+
+</MultiAvailabilityRequest>
+
+

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<OrderChangeResponse>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID />
+    <ReceiverID />
+    <ErrorStatus ErrorNumber=""></ErrorStatus>
+    <DocumentID />
+    <TransactionID />
+    <Company />
+    <TimeStamp />
+  </TransactionHeader>
+
+  <OrderInfo>
+    <OrderNumbers>
+      <BranchOrderNumber>2048043</BranchOrderNumber>
+      <CustomerPO>CustomerPO_1</CustomerPO>
+      <OrderHeaderError>OrderHeaderError_1</OrderHeaderError>
+
+      <OrderSuffix Suffix="">
+        <LineInformation>
+          <AddLine>
+            <LineError></LineError>
+            <SKU>123C321</SKU>
+            <Quantity>3</Quantity>
+            <ShippedQuantity>0</ShippedQuantity>
+            <BackOrderQuantity>3</BackOrderQuantity>
+            <BackOrderETA>20/08/2003</BackOrderETA>
+            <WestCoastLineNumber>020</WestCoastLineNumber>
+            <CustomerLineNumber />
+            <UnitPrice>2.17</UnitPrice>
+            <ShipFromWarehouse>20</ShipFromWarehouse>
+            <LocalCurrencyPrice>2.17</LocalCurrencyPrice>
+            <PriceDerivedFlag>A</PriceDerivedFlag>
+            <ForeignCurrency>EUR</ForeignCurrency >
+            <CarrierCode>OT</CarrierCode>
+            <FreightRate>20</FreightRate>
+            <TransitDays>1</TransitDays>
+          </AddLine>
+          <ChangeLine>
+            <LineError></LineError>
+            <SKU>123D321</SKU>
+            <Quantity>2</Quantity>
+            <ShippedQuantity>0</ShippedQuantity>
+            <BackOrderQuantity>2</BackOrderQuantity>
+            <BackOrderETA>20/08/2003</BackOrderETA>
+            <OldWestCoastLineNumber>020</OldWestCoastLineNumber>
+            <NewWestCoastLineNumber>030</NewWestCoastLineNumber>
+            <CustomerLineNumber>001</CustomerLineNumber>
+            <UnitPrice>2.17</UnitPrice>
+            <Suffix>11</Suffix>
+            <LocalCurrencyPrice>2.17</LocalCurrencyPrice>
+            <PriceDerivedFlag></PriceDerivedFlag>
+            <ForeignCurrency>EUR</ForeignCurrency >
+            <CarrierCode>OT</CarrierCode>
+            <FreightRate>20</FreightRate>
+            <TransitDays>1</TransitDays>
+          </ChangeLine>
+          <DeleteLine>
+            <LineError></LineError>
+            <WestCoastLineNumber>020</WestCoastLineNumber>
+          </DeleteLine>
+          <AddComment>
+            <LineError></LineError>
+            <WestCoastLineNumber>030</WestCoastLineNumber>
+            <Suffix>11</Suffix>
+          </AddComment>
+        </LineInformation>
+      </OrderSuffix>
+    </OrderNumbers>
+  </OrderInfo>
+</OrderChangeResponse>
+
+

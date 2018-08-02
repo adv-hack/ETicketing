@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RetrieveEligibleTicketingCustomersRequest>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID></SenderID>
+    <ReceiverID></ReceiverID>
+    <CountryCode></CountryCode>
+    <LoginID>CSGroup</LoginID>
+    <Password>Password</Password>
+    <Company>CSG</Company>
+    <TransactionID></TransactionID>
+  </TransactionHeader>
+
+  <RetrieveEligibleCustomers>
+    <ProductCode>HOME1</ProductCode>
+    <FromCustomerNumber>000000000000</FromCustomerNumber>
+    <IncludeProductPurchasers>Y</IncludeProductPurchasers>
+  </RetrieveEligibleCustomers>
+
+</RetrieveEligibleTicketingCustomersRequest>
+

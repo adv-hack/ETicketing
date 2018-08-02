@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<SeasonTicketSaleRequest>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID></SenderID>
+    <ReceiverID></ReceiverID>
+    <CountryCode></CountryCode>
+    <LoginID>nufc</LoginID>
+    <Password>nufcpps</Password>
+    <Company>CSG</Company>
+    <TransactionID></TransactionID>
+  </TransactionHeader>
+  <SeasonTicketSale>
+    <Header>
+      <RegisterCustomers>Y</RegisterCustomers>
+      <ContinueSaleOnFailedRegistration>N</ContinueSaleOnFailedRegistration>
+    </Header>
+    <Details>
+      <Sale>
+        <CustomerNo>000000001570</CustomerNo>
+        <CustomerDetails>
+          <ContactTitle>Mr</ContactTitle>
+          <ContactInitials>D</ContactInitials>
+          <ContactForename>Des</ContactForename>
+          <ContactSurname>Webster</ContactSurname>
+          <Salutation>Des Webster</Salutation>
+          <MothersName></MothersName>
+          <FathersName></FathersName>
+          <CompanyName>Computer Software Group</CompanyName>
+          <PositionInCompany>Pepper House</PositionInCompany>
+          <AddressLine1>Market Street</AddressLine1>
+          <AddressLine2>Market Street</AddressLine2>
+          <AddressLine3>Nantwich</AddressLine3>
+          <AddressLine4>Cheshire</AddressLine4>
+          <AddressLine5>England</AddressLine5>
+          <PostCode>CW5 5DQ</PostCode>
+          <Gender>M</Gender>
+          <HomeTelephoneNumber>01270 613800</HomeTelephoneNumber>
+          <WorkTelephoneNumber>01270 613800</WorkTelephoneNumber>
+          <MobileNumber>07770 613800</MobileNumber>
+          <EmailAddress>des.Webster@computersoftware.com</EmailAddress>
+          <DateOfBirth>19770806</DateOfBirth>
+          <ContactViaMail>Y</ContactViaMail>
+          <Subscription1>N</Subscription1>
+          <Subscription2>N</Subscription2>
+          <Subscription3>N</Subscription3>
+          <MailFlag1>N</MailFlag1>
+          <ExternalId1>1234</ExternalId1>
+          <ExternalId2>5678</ExternalId2>
+          <Password>5678</Password>
+          <UserID1></UserID1>
+          <UserID2></UserID2>
+          <UserID3></UserID3>
+		      <UserID4></UserID4>
+		      <UserID5></UserID5>
+		      <UserID6></UserID6>
+		      <UserID7></UserID7>
+		      <UserID8></UserID8>
+		      <UserID9></UserID9>
+          <Attributes>
+            <Attribute action="add">HELLO</Attribute>
+          </Attributes>
+        
+        
+        </CustomerDetails>
+        <ProductCode>ST0910</ProductCode>
+        <StadiumCode>NT</StadiumCode>
+        <Stand>E</Stand>
+        <Area>BF</Area>
+        <Row></Row>
+        <Seat></Seat>
+        <Suffix></Suffix>
+        <Payment>
+          <PaymentMode>Inline</PaymentMode>
+          <PaymentMethod>CreditCard</PaymentMethod>
+          <SessionId></SessionId>
+          <CardNumber>4929123123123</CardNumber>
+          <ExpiryDate>1209</ExpiryDate>
+          <StartDate></StartDate>
+          <IssueNumber></IssueNumber>
+          <CV2Number></CV2Number>
+          <PaymentDetails>
+            <Reference></Reference>
+            <Name></Name>
+            <Address1></Address1>
+            <Address2></Address2>
+            <Address3></Address3>
+            <Address4></Address4>
+            <Country></Country>
+            <PostCode></PostCode>
+            <Telephone1></Telephone1>
+            <Telephone2></Telephone2>
+            <Telephone3></Telephone3>
+            <EmailAddress></EmailAddress>
+          </PaymentDetails>
+        </Payment>
+      </Sale>
+      <Sale>
+        <CustomerNo>000000001570</CustomerNo>
+        <CustomerDetails>
+          <ContactTitle>Mr</ContactTitle>
+          <ContactInitials>D</ContactInitials>
+          <ContactForename>Des</ContactForename>
+          <ContactSurname>Webster</ContactSurname>
+          <Salutation>Des Webster</Salutation>
+          <CompanyName>Computer Software Group</CompanyName>
+          <PositionInCompany>Pepper House</PositionInCompany>
+          <AddressLine1>Market Street</AddressLine1>
+          <AddressLine2>Market Street</AddressLine2>
+          <AddressLine3>Nantwich</AddressLine3>
+          <AddressLine4>Cheshire</AddressLine4>
+          <AddressLine5>England</AddressLine5>
+          <PostCode>CW5 5DQ</PostCode>
+          <Gender>M</Gender>
+          <HomeTelephoneNumber>01270 613800</HomeTelephoneNumber>
+          <WorkTelephoneNumber>01270 613800</WorkTelephoneNumber>
+          <MobileNumber>07770 613800</MobileNumber>
+          <EmailAddress>des.Webster@computersoftware.com</EmailAddress>
+          <DateOfBirth>19770806</DateOfBirth>
+          <ContactViaMail>Y</ContactViaMail>
+          <Subscription1>N</Subscription1>
+          <Subscription2>N</Subscription2>
+          <Subscription3>N</Subscription3>
+          <MailFlag1>N</MailFlag1>
+          <ExternalId1>1234</ExternalId1>
+          <ExternalId2>5678</ExternalId2>
+          <Password>5678</Password>
+          <UserID1></UserID1>
+          <UserID2></UserID2>
+          <UserID3></UserID3>
+          <UserID4></UserID4>
+          <UserID5></UserID5>
+          <UserID6></UserID6>
+          <UserID7></UserID7>
+          <UserID8></UserID8>
+          <UserID9></UserID9>
+          <Attributes>
+            <Attribute action="add">HELLO</Attribute>
+          </Attributes>
+        </CustomerDetails>
+        <ProductCode>ST0910</ProductCode>
+        <StadiumCode>NT</StadiumCode>
+        <Stand>E</Stand>
+        <Area>BF</Area>
+        <Row></Row>
+        <Seat></Seat>
+        <Suffix></Suffix>
+        <Payment>
+          <PaymentMode>Inline</PaymentMode>
+          <PaymentMethod>CreditCard</PaymentMethod>
+          <SessionId></SessionId>
+          <CardNumber>4929123123123</CardNumber>
+          <ExpiryDate>1209</ExpiryDate>
+          <StartDate></StartDate>
+          <IssueNumber></IssueNumber>
+          <CV2Number></CV2Number>
+          <PaymentDetails>
+            <Reference></Reference>
+            <Name></Name>
+            <Address1></Address1>
+            <Address2></Address2>
+            <Address3></Address3>
+            <Address4></Address4>
+            <Country></Country>
+            <PostCode></PostCode>
+            <Telephone1></Telephone1>
+            <Telephone2></Telephone2>
+            <Telephone3></Telephone3>
+            <EmailAddress></EmailAddress>
+          </PaymentDetails>
+        </Payment>
+      </Sale>
+    </Details>
+  </SeasonTicketSale>
+
+</SeasonTicketSaleRequest>

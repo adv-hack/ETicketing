@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RetreivePurchaseHistoryResponse>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID></SenderID>
+    <ReceiverID></ReceiverID>
+    <ErrorStatus ErrorNumber=""></ErrorStatus>
+    <DocumentID>36e2e8c7-9252-4f65-ac0e-d47018e05927</DocumentID>
+    <TransactionID>14409</TransactionID>
+    <TimeStamp>2009-03-18T10:23:40</TimeStamp>
+  </TransactionHeader>
+  <Products>
+    <Product>
+      <SaleDate>06/08/2008 00:00:00</SaleDate>
+      <ProductDescription>Vs FULHAM  FC</ProductDescription>
+      <Seat>S/SA/A/0007</Seat>
+      <SalesPrice>0.00</SalesPrice>
+      <BatchReference></BatchReference>
+      <PaymentReference>Not Applicable</PaymentReference>
+      <StatusCode>RESERV</StatusCode>
+      <LoyaltyPoints></LoyaltyPoints>
+      <PromotionID>0000000000000</PromotionID>
+    </Product>
+    <Product>
+      <SaleDate>06/08/2008 00:00:00</SaleDate>
+      <ProductDescription>Vs FULHAM  FC</ProductDescription>
+      <Seat>S/SA/A/0009</Seat>
+      <SalesPrice>0.00</SalesPrice>
+      <BatchReference></BatchReference>
+      <PaymentReference>Not Applicable</PaymentReference>
+      <StatusCode>RESERV</StatusCode>
+      <LoyaltyPoints></LoyaltyPoints>
+      <PromotionID>0000000000000</PromotionID>
+    </Product>
+  </Products>
+</RetreivePurchaseHistoryResponse>

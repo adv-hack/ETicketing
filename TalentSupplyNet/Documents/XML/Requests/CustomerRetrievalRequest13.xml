@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CustomerRetrievalRequest>
+  <Version>1.3</Version>
+  <TransactionHeader>
+    <SenderID></SenderID>
+    <ReceiverID></ReceiverID>
+    <CountryCode></CountryCode>
+    <LoginID>IRIS</LoginID>
+    <Password>IRIS</Password>
+    <Company>IRIS</Company>
+    <TransactionID></TransactionID>
+  </TransactionHeader>
+
+  <CustomerRetrieval>
+    <ID>27090100015041</ID>
+    <IDType>T</IDType>
+  </CustomerRetrieval>
+
+</CustomerRetrievalRequest>

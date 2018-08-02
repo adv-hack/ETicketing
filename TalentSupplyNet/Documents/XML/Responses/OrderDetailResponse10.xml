@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<OrderDetailResponse>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID />
+    <ReceiverID />
+    <ErrorStatus ErrorNumber=""></ErrorStatus>
+    <DocumentID />
+    <TransactionID />
+    <Company />
+    <TimeStamp />
+  </TransactionHeader>
+
+  <OrderInfo>
+    <OrderNumbers>
+      <BranchOrderNumber></BranchOrderNumber>
+      <CustomerPO></CustomerPO>
+      <ErrorStatus ErrorNumber=""></ErrorStatus>
+
+      <EndUserPO/>
+      <OrderWeight></OrderWeight>
+      <OrderEntryDate></OrderEntryDate>
+      <InvoiceDate></InvoiceDate>
+      <PromiseDate></PromiseDate>
+      <OrderType></OrderType>
+      <FulfillmentFlag/>
+      <ShipComplete></ShipComplete>
+      <HoldReason></HoldReason>
+      <TermsCode></TermsCode>
+      <ResellerNBR></ResellerNBR>
+      <NumberOfCartons></NumberOfCartons>
+      <CreditMemoReasonCode/>
+      <ConfigFlag/>
+      <SplitBillToSwitch/>
+      <SplitFromOrderNumber/>
+      <RMACode/>
+      <CreditCardSW/>
+      <GovEndUserType/>
+      <EntryMethod></EntryMethod>
+      <TermID></TermID>
+      <BackOrderStatus></BackOrderStatus>
+      <ShippableSW></ShippableSW>
+      <ConfigTimeStamp/>
+      <SelSrcSlsHdr></SelSrcSlsHdr>
+      <SelSrcAcctnoHdr/>
+      <OECarrier></OECarrier>
+      <FrtOutCode/>
+      <ProNbrSW/>
+      <ProNbr/>
+
+      <OrderTotals>
+        <SalesTotal></SalesTotal>
+        <FreightTotal></FreightTotal>
+        <TaxTotal></TaxTotal>
+        <SalePlusTax></SalePlusTax>
+        <GrandTotal></GrandTotal>
+        <CODAmount></CODAmount>
+        <DiscountAmount></DiscountAmount>
+        <CurrencyCode></CurrencyCode>
+        <CompanyCurrency></CompanyCurrency>
+        <CurrencyRate></CurrencyRate>
+      </OrderTotals>
+
+      <Address Type="ShipTo">
+        <Name></Name>
+        <Attention> </Attention>=
+        <AddressLine1></AddressLine1>
+        <AddressLine2></AddressLine2>
+        <AddressLine3></AddressLine3>
+        <AddressLine4></AddressLine4>
+        <City></City>
+        <Province></Province>
+        <PostalCode></PostalCode>
+        <CountryCode></CountryCode>
+      </Address>
+
+      <Address Type="BillTo">
+        <Name></Name>
+        <Attention> </Attention>=
+        <AddressLine1></AddressLine1>
+        <AddressLine2></AddressLine2>
+        <AddressLine3></AddressLine3>
+        <AddressLine4></AddressLine4>
+        <City></City>
+        <Province></Province>
+        <PostalCode></PostalCode>
+        <CountryCode></CountryCode>
+      </Address>
+
+      <ShipFromBranch Number="20">UK</ShipFromBranch>
+      <OrderStatus>Paid</OrderStatus>
+      <Carrier Code="CT">CITY LINK</Carrier>
+      <OrderShipDate>2003-03-07</OrderShipDate>
+
+      <OrderSuffix Suffix="">
+        
+        <LineInformation>
+          <ProductLine>
+            <SKU></SKU>
+            <UnitPrice></UnitPrice>
+            <WestCoastLineNumber></WestCoastLineNumber>
+            <CustomerLineNumber></CustomerLineNumber>
+            <OrderQuantity></OrderQuantity>
+            <BackOrderQuantity></BackOrderQuantity>
+            <BackOrderETADate></BackOrderETADate>
+            
+            <SKUDescription></SKUDescription>
+            <ShipQuantity></ShipQuantity>
+            <ComponentQty></ComponentQty>
+            <NonWayPromiseDate></NonWayPromiseDate>
+            <UnitOfMeasure></UnitOfMeasure>
+            <ResellerUnitPrice></ResellerUnitPrice>
+            <ExtendedLineSales></ExtendedLineSales>
+            <LineSalesTotal></LineSalesTotal>
+            <LineTerms></LineTerms>
+            <ReserveSequenceNbr></ReserveSequenceNbr>
+            <VendorPartNumber></VendorPartNumber>
+            <VendorName></VendorName>
+            <SelSrcSls></SelSrcSls>
+            <SelSrcAcctno></SelSrcAcctno>
+            <FreeItemSwitch></FreeItemSwitch>
+            <SystemComponentSwitch></SystemComponentSwitch>
+            <CustomerSKU></CustomerSKU>
+
+            <ConfigInformation>
+              <ConfigIndicator>NA</ConfigIndicator>
+              <ConfigStatus>NA</ConfigStatus>
+              <ConfigAssemblyCode>NA</ConfigAssemblyCode>
+              <ConfigLabCode>NA</ConfigLabCode>
+              <ConfigOnHoldSw>NA</ConfigOnHoldSw>
+              <ConfigPcrCnt>NA</ConfigPcrCnt>
+              <ConfigPchCnt>NA</ConfigPchCnt>
+              <ConfigStgCnt>NA</ConfigStgCnt>
+              <ConfigSthCnt>NA</ConfigSthCnt>
+              <ConfigWipCnt>NA</ConfigWipCnt>
+              <ConfigQaaCnt>NA</ConfigQaaCnt>
+              <ConfigQahCnt>NA</ConfigQahCnt>
+              <ConfigBinCnt>NA</ConfigBinCnt>
+              <ConfigOshCnt>NA</ConfigOshCnt>
+              <ConfigHoldReasonText>NA</ConfigHoldReasonText>
+            </ConfigInformation>
+
+            <SkuSerialNumber>
+              <SerialNumber />
+            </SkuSerialNumber>
+          </ProductLine>
+
+          <CommentLine>
+            <CommentText></CommentText>
+            <CommentLineNumber></CommentLineNumber>
+          </CommentLine>
+        </LineInformation>
+      </OrderSuffix>
+    </OrderNumbers>
+  </OrderInfo>
+</OrderDetailResponse>
+
+

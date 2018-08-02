@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+  <PurchaseOrderResponse>
+    <Version>1.0</Version>
+    <TransactionHeader>
+      <SenderID />
+      <ReceiverID />
+      <ErrorStatus ErrorNumber=""></ErrorStatus>
+      <DocumentID />
+      <TransactionID />
+      <Company />
+      <TimeStamp />
+    </TransactionHeader>
+
+    <PurchaseOrders>
+      <PurchaseOrder>
+        <PurchaseOrderHeader>
+          <LOBCode></LOBCode>
+          <DataStructureName></DataStructureName>
+          <PurchaseOrderNumber>P037580</PurchaseOrderNumber>
+          <VendorNumber>00927</VendorNumber>
+          <VendorType></VendorType>
+          <SendThisSession></SendThisSession>
+          <SentOK>Y</SentOK>
+          <XMLDocumentName></XMLDocumentName>
+          <ReleaseNumber>0</ReleaseNumber>
+          <OrderStatus></OrderStatus>
+          <BuyerID></BuyerID>
+          <WarehouseID>PK</WarehouseID>
+          <ShipToNumber></ShipToNumber>
+          <CarrierCode></CarrierCode>
+          <OrderDate>20011102T12:00.00</OrderDate>
+          <ExpectedDate>20070308</ExpectedDate>
+          <RequestedReceiptDate>20070308</RequestedReceiptDate>
+          <NumberOfLinesOnOrder>3</NumberOfLinesOnOrder>
+          <TotalQuantity>0.000</TotalQuantity>
+          <TotalEstimatedCost>0.00</TotalEstimatedCost>
+          <TaxTotal>0.00</TaxTotal>
+          <DiscountPercent>0.00</DiscountPercent>
+          <DiscountAmount>0.00</DiscountAmount>
+          <TransactionCurrencyCode></TransactionCurrencyCode>
+          <BaseCurrencyCode></BaseCurrencyCode>
+          <TransactionExchangeRate>0.000000</TransactionExchangeRate>
+          <MultyDivideFlag></MultyDivideFlag>
+          <InvoiceNumber></InvoiceNumber>
+          <SpecialInstructions></SpecialInstructions>
+          <Comments>
+            <Internal>
+              <CommentLine>
+                <CommentText>Hello this is internal line 1 of type O</CommentText>
+                <CommentLineNumber>1</CommentLineNumber>
+              </CommentLine>
+              <CommentLine>
+                <CommentText>Hello this is internal line 2 of type O</CommentText>
+                <CommentLineNumber>2</CommentLineNumber>
+              </CommentLine>
+            </Internal>
+            <External>
+              <CommentLine>
+                <CommentText>Hello this is External line 1 of type OO</CommentText>
+                <CommentLineNumber>1</CommentLineNumber>
+              </CommentLine>
+              <CommentLine>
+                <CommentText>Hello this is External line 2 of type OO</CommentText>
+                <CommentLineNumber>2</CommentLineNumber>
+              </CommentLine>
+            </External>
+          </Comments>
+          <UDF01></UDF01>
+          <UDF02></UDF02>
+          <UDF03></UDF03>
+          <UDF04></UDF04>
+          <UDF05></UDF05>
+          <UDF06></UDF06>
+          <UDF07></UDF07>
+          <UDF08></UDF08>
+          <UDF09></UDF09>
+          <UDF10></UDF10>
+        </PurchaseOrderHeader>
+        <PurchaseOrderLines>
+          <PurchaseOrderLine LineNumber="1">
+            <LineActionCode> </LineActionCode>
+            <Line_OrderStatus> </Line_OrderStatus>
+            <Line_BuyerID> </Line_BuyerID>
+            <Line_WarehouseID>PK</Line_WarehouseID>
+            <ProductNumber>DI841771 </ProductNumber>
+            <ProductDescription>Brake disc DI 841771 </ProductDescription>
+            <UserProductNumber>1.5805.1.4 </UserProductNumber>
+            <UserProductDescription> </UserProductDescription>
+            <MeasureCode> </MeasureCode>
+            <DeliveryDate>20070308T12:nn.00</DeliveryDate>
+            <QuantityOrdered>120.000</QuantityOrdered>
+            <QuantityReceived>120.000</QuantityReceived>
+            <QuantityOutstanding>0.000</QuantityOutstanding>
+            <EstimatedCost>0.000000</EstimatedCost>
+            <ActualSellingPrice>0.00</ActualSellingPrice>
+            <SpecialSellingPrice>0.00</SpecialSellingPrice>
+            <Line_DiscountAmount>0.00</Line_DiscountAmount>
+            <Line_DiscountPercent>0.00</Line_DiscountPercent>
+            <LineInstructions> </LineInstructions>
+          </PurchaseOrderLine>
+          <PurchaseOrderLine LineNumber="2">
+            <LineActionCode> </LineActionCode>
+            <Line_OrderStatus> </Line_OrderStatus>
+            <Line_BuyerID> </Line_BuyerID>
+            <Line_WarehouseID>PK</Line_WarehouseID>
+            <ProductNumber>DI955528 </ProductNumber>
+            <ProductDescription>**** Superseded by DB 955528 </ProductDescription>
+            <UserProductNumber> 1.1751.2.4 </UserProductNumber>
+            <UserProductDescription> </UserProductDescription>
+            <MeasureCode> </MeasureCode>
+            <DeliveryDate>20070308T12:nn.00</DeliveryDate>
+            <QuantityOrdered>288.000</QuantityOrdered>
+            <QuantityReceived>288.000</QuantityReceived>
+            <QuantityOutstanding>0.000</QuantityOutstanding>
+            <EstimatedCost>0.000000</EstimatedCost>
+            <ActualSellingPrice>0.00</ActualSellingPrice>
+            <SpecialSellingPrice>0.00</SpecialSellingPrice>
+            <Line_DiscountAmount>0.00</Line_DiscountAmount>
+            <Line_DiscountPercent>0.00</Line_DiscountPercent>
+            <LineInstructions> </LineInstructions>
+          </PurchaseOrderLine>
+          <PurchaseOrderLine LineNumber="3">
+            <LineActionCode> </LineActionCode>
+            <Line_OrderStatus> </Line_OrderStatus>
+            <Line_BuyerID> </Line_BuyerID>
+            <Line_WarehouseID>PK</Line_WarehouseID>
+            <ProductNumber>DI955993 </ProductNumber>
+            <ProductDescription>Brake disc DI 955993 </ProductDescription>
+            <UserProductNumber>1.4030.2.E </UserProductNumber>
+            <UserProductDescription> </UserProductDescription>
+            <MeasureCode> </MeasureCode>
+            <DeliveryDate>20070308T12:nn.00</DeliveryDate>
+            <QuantityOrdered>288.000</QuantityOrdered>
+            <QuantityReceived>288.000</QuantityReceived>
+            <QuantityOutstanding>0.000</QuantityOutstanding>
+            <EstimatedCost>0.000000</EstimatedCost>
+            <ActualSellingPrice>0.00</ActualSellingPrice>
+            <SpecialSellingPrice>0.00</SpecialSellingPrice>
+            <Line_DiscountAmount>0.00</Line_DiscountAmount>
+            <Line_DiscountPercent>0.00</Line_DiscountPercent>
+            <LineInstructions> </LineInstructions>
+          </PurchaseOrderLine>
+        </PurchaseOrderLines>
+      </PurchaseOrder>
+    </PurchaseOrders>
+  </PurchaseOrderResponse>
+

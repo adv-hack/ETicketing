@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="RetrievePromotionsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Version" type="xs:decimal" />
+        <xs:element name="TransactionHeader">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SenderID" />
+              <xs:element name="ReceiverID" />
+              <xs:element name="CountryCode" />
+              <xs:element name="LoginID" type="xs:string" />
+              <xs:element name="Password" type="xs:string" />
+              <xs:element name="Company" type="xs:string" />
+              <xs:element name="TransactionID" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PromotionList">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Response">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ReturnCode" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Promotions">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Promotion">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="PromotionType" type="xs:unsignedByte" />
+                    <xs:element name="Priority" />
+                    <xs:element name="MatchType" />
+                    <xs:element name="ProductCode" type="xs:unsignedShort" />
+                    <xs:element name="Stand" />
+                    <xs:element name="Area" />
+                    <xs:element name="PreReq" />
+                    <xs:element name="PriceCodes">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element maxOccurs="unbounded" name="PriceCode" type="xs:unsignedShort" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="PriceBand" type="xs:unsignedByte" />
+                    <xs:element name="ShortDescription" type="xs:string" />
+                    <xs:element name="LongDescription" type="xs:string" />
+                    <xs:element name="CompetitionCode" type="xs:unsignedByte" />
+                    <xs:element name="MaxDiscountPerProduct" type="xs:unsignedByte" />
+                    <xs:element name="MaxDiscountPerPromotion" type="xs:unsignedByte" />
+                    <xs:element name="StartDate" type="xs:date" />
+                    <xs:element name="EndDate" type="xs:date" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

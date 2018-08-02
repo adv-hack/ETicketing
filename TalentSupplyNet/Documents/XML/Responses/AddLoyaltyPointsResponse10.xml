@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AddLoyaltyPointsResponse>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID />
+    <ReceiverID />
+    <ErrorStatus ErrorNumber=""></ErrorStatus>
+    <DocumentID />
+    <TransactionID />
+    <Company />
+    <TimeStamp />
+  </TransactionHeader>
+  <LoyaltyPoints>
+    <Item>
+      <CustomerNumber>000000001808</CustomerNumber>
+      <ProductCode>FORTH3</ProductCode>
+      <Date>01/12/2011</Date>
+      <Time>14:55:00</Time>
+      <StandCode>ES</StandCode>
+      <AreaCode>AR1</AreaCode>
+      <Row>A</Row>
+      <Seat>001</Seat>
+      <Points></Points>
+      <Success>True</Success>
+    </Item>
+  </LoyaltyPoints>
+</AddLoyaltyPointsResponse>

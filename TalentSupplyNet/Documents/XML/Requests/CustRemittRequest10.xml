@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CustomerRemittanceRequest>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID>123456789</SenderID>
+    <ReceiverID>987654321</ReceiverID>
+    <CountryCode>UK</CountryCode>
+    <LoginID>UK3833HHD </LoginID>
+    <Password>Re887Jky52</Password>
+    <Company>CSG</Company>
+    <TransactionID>54321</TransactionID>
+  </TransactionHeader>
+  
+  <Remittances>
+    <RemittanceHeader Header="">
+      <CompanyCode>CSG</CompanyCode>
+      <BankAccountNo>12345678</BankAccountNo>
+      <SOPorderNo>qwerty67</SOPorderNo>
+      <BankReference>CSG Webservice payment</BankReference>
+      <PaymentMethod>Direct Debit</PaymentMethod>
+      <PostingDate>2007-04-24</PostingDate>
+      <CurrencyCode>GBP</CurrencyCode>
+      <CurrencyValue>1999.98</CurrencyValue>
+      <ConfirmedBaseCurrencyValue>1999.98</ConfirmedBaseCurrencyValue>
+      <CustomerBankCode>34-89-78</CustomerBankCode>
+      <ThirdPartyName>Csg Group</ThirdPartyName>
+      <ThirdPartyAddressLine1>Pepper House</ThirdPartyAddressLine1>
+      <ThirdPartyAddressLine2>Market Street</ThirdPartyAddressLine2>
+      <ThirdPartyAddressLine3>Nantwich</ThirdPartyAddressLine3>
+      <ThirdPartyAddressLine4>Cheshire</ThirdPartyAddressLine4>
+      <ThirdPartyAddressLine5>England</ThirdPartyAddressLine5>
+      <ThirdPartyPostcode>CW6 2ER</ThirdPartyPostcode>
+      <OriginatingAccountName>CSG</OriginatingAccountName>
+      <OurBankDetails>Bust</OurBankDetails>
+      <ThirdPartyCountry>England</ThirdPartyCountry>
+      <OurBankCountryCode>GB</OurBankCountryCode>
+    </RemittanceHeader>
+
+    <RemittanceLines>
+      <RemittanceLine LineNumber="1" />
+      <MasterItemType>DI813953-MIT</MasterItemType>
+      <LedgerEntryDocumentReference>DI813953-Ref</LedgerEntryDocumentReference>
+      <PostingAmountPrime>333.33</PostingAmountPrime>
+      <DiscountAmountPrime>333.33</DiscountAmountPrime>
+      <SuppliersReference>DI813953-SupRef</SuppliersReference>
+    </RemittanceLines >
+    
+    <RemittanceLines>
+      <RemittanceLine LineNumber="2" />
+      <MasterItemType>DI816301-MIT</MasterItemType>
+      <LedgerEntryDocumentReference>DI816301-Ref</LedgerEntryDocumentReference>
+      <PostingAmountPrime>666.66</PostingAmountPrime>
+      <DiscountAmountPrime>666.66</DiscountAmountPrime>
+      <SuppliersReference>DI816301-SupRef</SuppliersReference>
+    </RemittanceLines >
+    
+    <RemittanceLines>
+      <RemittanceLine LineNumber="3" />
+      <MasterItemType>DI817411-MIT</MasterItemType>
+      <LedgerEntryDocumentReference>DI817411-Ref</LedgerEntryDocumentReference>
+      <PostingAmountPrime>999.99</PostingAmountPrime>
+      <DiscountAmountPrime>999.99</DiscountAmountPrime>
+      <SuppliersReference>DI817411-SupRef</SuppliersReference>
+    </RemittanceLines >    
+  </Remittances>
+</CustomerRemittanceRequest>
+

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CustomerRetrievalResponse>
+  <Version>1.2</Version>
+  <TransactionHeader>
+    <SenderID></SenderID>
+    <ReceiverID></ReceiverID>
+    <CountryCode></CountryCode>
+    <LoginID>CSGroup</LoginID>
+    <Password>Password</Password>
+    <Company>CSG</Company>
+    <TransactionID></TransactionID>
+  </TransactionHeader>
+
+  <CustomerRetrieval>
+    <Response>
+      <ReturnCode></ReturnCode>
+      <CustomerNo>123456</CustomerNo>
+    </Response>
+
+    <CustomerDetails>
+      <CustomerNo>000000123456</CustomerNo>
+      <ContactTitle>Mr</ContactTitle>
+      <ContactInitials>D</ContactInitials>
+      <ContactForename>Des</ContactForename>
+      <ContactSurname>Webster</ContactSurname>
+      <Salutation>Des Webster</Salutation>
+      <CompanyName>Computer Software Group</CompanyName>
+      <PositionInCompany>Pepper House</PositionInCompany>
+      <AddressLine1>Market Street</AddressLine1>
+      <AddressLine2></AddressLine2>
+      <AddressLine3>Nantwich</AddressLine3>
+      <AddressLine4>Cheshire</AddressLine4>
+      <AddressLine5>England</AddressLine5>
+      <PostCode>CW5 5DQ</PostCode>
+      <Gender>M</Gender>
+      <HomeTelephoneNumber>01270 613800</HomeTelephoneNumber>
+      <WorkTelephoneNumber></WorkTelephoneNumber>
+      <MobileNumber></MobileNumber>
+      <EmailAddress>des.Webster@computersoftware.com</EmailAddress>
+      <DateOfBirth>19770806</DateOfBirth>
+      <ContactViaMail>Y</ContactViaMail>
+      <Subscription1>N</Subscription1>
+      <Subscription2>N</Subscription2>
+      <Subscription3>N</Subscription3>
+      <ContactViaMail1>N</ContactViaMail1>
+      <ContactViaMail2></ContactViaMail2>
+      <ContactViaMail3></ContactViaMail3>
+      <ContactViaMail4></ContactViaMail4>
+      <ContactViaMail5></ContactViaMail5>
+      <ExternalId1>1234</ExternalId1>
+      <ExternalId2>5678</ExternalId2>
+      <ATSReady>Y</ATSReady>
+      <PriceBand>A</PriceBand>
+      <LoyaltyPoints>02215</LoyaltyPoints>
+      <WebReady>0</WebReady>
+    </CustomerDetails>
+  </CustomerRetrieval>
+</CustomerRetrievalResponse>

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="CompletePNAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Version" type="xs:decimal" />
+        <xs:element name="TransactionHeader">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SenderID" />
+              <xs:element name="ReceiverID" />
+              <xs:element name="ErrorStatus">
+                <xs:complexType>
+                  <xs:attribute name="ErrorNumber" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="DocumentID" />
+              <xs:element name="TransactionID" />
+              <xs:element name="Company" />
+              <xs:element name="TimeStamp" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="MultiPNA">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="PriceAndAvailability">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Price" type="xs:decimal" />
+                    <xs:element name="SpecialPriceFlag" />
+                    <xs:element name="ManufacturerPartNumber" type="xs:string" />
+                    <xs:element name="ManufacturerPartNumberOccurs" />
+                    <xs:element name="VendorNumber" />
+                    <xs:element name="Description" />
+                    <xs:element name="ReserveInventoryFlag" />
+                    <xs:element name="AvailableRebQty" />
+                    <xs:element maxOccurs="unbounded" name="Branch">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Availability" type="xs:unsignedShort" />
+                          <xs:element name="OnOrder" />
+                          <xs:element name="ETADate" />
+                        </xs:sequence>
+                        <xs:attribute name="ID" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="SKU" type="xs:string" use="required" />
+                  <xs:attribute name="Quantity" type="xs:unsignedByte" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

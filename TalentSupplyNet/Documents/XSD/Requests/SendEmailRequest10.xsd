@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SendEmailRequestRequest10" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="SendEmailRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Version" type="xs:decimal" />
+        <xs:element name="TransactionHeader">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SenderID" />
+              <xs:element name="ReceiverID" />
+              <xs:element name="CountryCode" />
+              <xs:element name="LoginID" type="xs:string" />
+              <xs:element name="Password" type="xs:string" />
+              <xs:element name="Company" type="xs:string" />
+              <xs:element name="TransactionID" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SendEmail">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FromAddress" type="xs:string" minOccurs="1" />
+              <xs:element name="ToAddress" type="xs:string" minOccurs="1" />
+              <xs:element name="EmailType" type="xs:string" minOccurs="1" />
+              <xs:element name="Parameters">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="CustomerNumber" type="xs:string" minOccurs="1" />
+                    <xs:element name="PaymentReference" type="xs:string" minOccurs="0" />
+                    <xs:element name="ProductDescription" type="xs:string" minOccurs="0" />
+                    <xs:element name="Turnstiles" type="xs:string" minOccurs="0" />
+                    <xs:element name="Gates" type="xs:string" minOccurs="0" />
+                    <xs:element name="Seat" type="xs:string" minOccurs="0" />
+                    <xs:element name="BuybackGroupId" type="xs:string" minOccurs="0" />
+                    <xs:element name="PaymentValue" type="xs:string" minOccurs="0" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

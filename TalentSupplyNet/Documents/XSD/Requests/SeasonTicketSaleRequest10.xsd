@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="SeasonTicketSaleRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Version" type="xs:decimal" />
+        <xs:element name="TransactionHeader">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SenderID" />
+              <xs:element name="ReceiverID" />
+              <xs:element name="CountryCode" />
+              <xs:element name="LoginID" type="xs:string" />
+              <xs:element name="Password" type="xs:string" />
+              <xs:element name="Company" type="xs:string" />
+              <xs:element name="TransactionID" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SeasonTicketSale">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Header">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="RegisterCustomers" type="xs:string" />
+                    <xs:element name="ContinueSaleOnFailedRegistration" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Details">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="Sale">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="CustomerNo" type="xs:string" />
+                          <xs:element name="CustomerDetails">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="ContactTitle" type="xs:string" />
+                                <xs:element name="ContactInitials" type="xs:string" />
+                                <xs:element name="ContactForename" type="xs:string" />
+                                <xs:element name="ContactSurname" type="xs:string" />
+                                <xs:element name="Salutation" type="xs:string" />
+                                <xs:element name="MothersName" type="xs:string" minOccurs="0"/>
+                                <xs:element name="FathersName" type="xs:string" minOccurs="0"/>
+                                <xs:element name="CompanyName" type="xs:string" />
+                                <xs:element name="PositionInCompany" type="xs:string" />
+                                <xs:element name="AddressLine1" type="xs:string" />
+                                <xs:element name="AddressLine2" type="xs:string" />
+                                <xs:element name="AddressLine3" type="xs:string" />
+                                <xs:element name="AddressLine4" type="xs:string" />
+                                <xs:element name="AddressLine5" type="xs:string" />
+                                <xs:element name="PostCode" type="xs:string" />
+                                <xs:element name="Gender" type="xs:string" />
+                                <xs:element name="HomeTelephoneNumber" type="xs:string" />
+                                <xs:element name="WorkTelephoneNumber" type="xs:string" />
+                                <xs:element name="MobileNumber" type="xs:string" />
+                                <xs:element name="EmailAddress" type="xs:string" />
+                                <xs:element name="DateOfBirth" type="xs:string" />
+                                <xs:element name="ContactViaMail" type="xs:string" />
+                                <xs:element name="Subscription1" type="xs:string" />
+                                <xs:element name="Subscription2" type="xs:string" />
+                                <xs:element name="Subscription3" type="xs:string" />
+                                <xs:element name="MailFlag1" type="xs:string" />
+                                <xs:element name="ExternalId1" type="xs:string" />
+                                <xs:element name="ExternalId2" type="xs:string" />
+                                <xs:element name="Password" type="xs:string" />
+                                <xs:element name="UserID1" minOccurs="0" />
+                                <xs:element name="UserID2" minOccurs="0" />
+                                <xs:element name="UserID3" minOccurs="0" />
+                                <xs:element name="UserID4" minOccurs="0" />
+                                <xs:element name="UserID5" minOccurs="0" />
+                                <xs:element name="UserID6" minOccurs="0" />
+                                <xs:element name="UserID7" minOccurs="0" />
+                                <xs:element name="UserID8" minOccurs="0" />
+                                <xs:element name="UserID9" minOccurs="0" />
+                                <xs:element name="Attributes">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Attribute">
+                                        <xs:complexType>
+                                          <xs:simpleContent>
+                                            <xs:extension base="xs:string">
+                                              <xs:attribute name="action" type="xs:string" use="required" />
+                                            </xs:extension>
+                                          </xs:simpleContent>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="ProductCode" type="xs:string" />
+                          <xs:element name="StadiumCode" type="xs:string" />
+                          <xs:element name="Stand" type="xs:string" />
+                          <xs:element name="Area" type="xs:string" />
+                          <xs:element name="Row" />
+                          <xs:element name="Seat" />
+                          <xs:element name="Suffix" />
+                          <xs:element name="Payment">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="PaymentMode" type="xs:string" />
+                                <xs:element name="PaymentMethod" type="xs:string" />
+                                <xs:element name="SessionId" />
+                                <xs:element name="ChequeNumber" type="xs:string" minOccurs="0" maxOccurs="1" />
+                                <xs:element name="ChequeAccount" type="xs:string" minOccurs="0" maxOccurs="1" />
+                                <xs:element name="CardNumber" type="xs:string" />
+                                <xs:element name="ExpiryDate" type="xs:string" />
+                                <xs:element name="StartDate" />
+                                <xs:element name="IssueNumber" />
+                                <xs:element name="CV2Number" />
+                                <xs:element name="PaymentDetails">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="Reference" />
+                                      <xs:element name="Name" />
+                                      <xs:element name="Address1" />
+                                      <xs:element name="Address2" />
+                                      <xs:element name="Address3" />
+                                      <xs:element name="Address4" />
+                                      <xs:element name="Country" />
+                                      <xs:element name="PostCode" />
+                                      <xs:element name="Telephone1" />
+                                      <xs:element name="Telephone2" />
+                                      <xs:element name="Telephone3" />
+                                      <xs:element name="EmailAddress" />
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

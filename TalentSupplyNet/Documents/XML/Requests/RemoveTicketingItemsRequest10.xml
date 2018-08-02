@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RemoveTicketingItemsRequest>
+	<Version>1.0</Version>
+	<TransactionHeader>
+		<SenderID></SenderID>
+		<ReceiverID></ReceiverID>
+		<CountryCode></CountryCode>
+		<LoginID>IRIS</LoginID>
+		<Password>IRIS</Password>
+		<Company>IRIS</Company>
+		<TransactionID></TransactionID>
+	</TransactionHeader>
+
+	<RemoveTicketingItems>
+		<SessionId>301505272103022831007700619107448320</SessionId>
+		<CustomerNo></CustomerNo>
+		<ProductCode></ProductCode>
+		<Seat></Seat>
+	</RemoveTicketingItems>
+
+</RemoveTicketingItemsRequest>

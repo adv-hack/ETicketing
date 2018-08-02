@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<SupplierInvoiceAcceptedResponse>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID />
+    <ReceiverID />
+    <ErrorStatus ErrorNumber=""></ErrorStatus>
+    <DocumentID />
+    <TransactionID />
+    <Company />
+    <TimeStamp />
+  </TransactionHeader>
+
+  <InvoiceStatusInformation>
+    <InvoiceInfo>
+      <InvoiceNumber>I1234</InvoiceNumber>
+      <InvoiceStatus>SETTLED</InvoiceStatus>
+    </InvoiceInfo>
+    <InvoiceInfo>
+      <InvoiceNumber>I1235</InvoiceNumber>
+      <InvoiceStatus>DUE</InvoiceStatus>
+    </InvoiceInfo>
+  </InvoiceStatusInformation>
+</SupplierInvoiceAcceptedResponse>

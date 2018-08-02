@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ProductListResponse>
+  <Version>1.1</Version>
+  <TransactionHeader>
+    <SenderID></SenderID>
+    <ReceiverID></ReceiverID>
+    <CountryCode></CountryCode>
+    <LoginID>CSGroup</LoginID>
+    <Password>Password</Password>
+    <Company>CSG</Company>
+    <TransactionID></TransactionID>
+  </TransactionHeader>
+
+  <ProductList>
+    <Response>
+      <ReturnCode></ReturnCode>
+    </Response>
+
+    <Products>
+      <Product>
+        <ProductCode>HLIV04</ProductCode>
+        <ProductDescription>Liverpool</ProductDescription>
+		  <ProductDate>Wed 16th April</ProductDate>
+		  <ProductTime>7:45pm</ProductTime>
+		  <ProductDateISO>2008-04-16</ProductDateISO>
+		  <ProductTime24H>19:45:00</ProductTime24H>
+		  <ProductPriceBand>A</ProductPriceBand>
+          <ProductApplicable>Y</ProductApplicable>
+		  <ProductType>H</ProductType>
+		  <ProductRequiredMembership></ProductRequiredMembership>
+		  <ProductRequiredMembershipDescription></ProductRequiredMembershipDescription>
+		  <ProductRequiredMembershipPurchased></ProductRequiredMembershipPurchased>
+		  <ProductEntryTime></ProductEntryTime>
+		  <ProductTicketLimit></ProductTicketLimit>
+		  <ProductStadiumCode></ProductStadiumCode>
+        <PriceCode></PriceCode>
+		  <ProductAssociatedTravelProductCode></ProductAssociatedTravelProductCode>
+        <RequiredLoyaltyPoints>12</RequiredLoyaltyPoints>
+        <LoyaltyRequirementMet>Y</LoyaltyRequirementMet>
+        <LimitRequirementMet>Y</LimitRequirementMet>
+        <PreReq>
+          <ProductGroup>pre-req group</ProductGroup>
+          <Description>A description</Description>
+          <MultiGroup>A Multi-Group</MultiGroup>
+          <Stadium>Stadium codes</Stadium>
+          <ValidationRule>validation rules</ValidationRule>
+          <Comments>some comments go here</Comments>
+          <PreReqProducts>
+            <PreReqProduct>
+              <PreReqProductCode>CODE1</PreReqProductCode>
+              <PreReqProductDescription>Description for product (prereq)</PreReqProductDescription>
+              <PreReqProductType>type1</PreReqProductType>
+              <PreReqProductDate>2009-03-17</PreReqProductDate>
+            </PreReqProduct>
+            <PreReqProduct>
+              <PreReqProductCode>CODE2</PreReqProductCode>
+              <PreReqProductDescription>Description for product (prereq)</PreReqProductDescription>
+              <PreReqProductType>type2</PreReqProductType>
+              <PreReqProductDate>2009-03-18</PreReqProductDate>
+            </PreReqProduct>
+            <PreReqProduct>
+              <PreReqProductCode>CODE3</PreReqProductCode>
+              <PreReqProductDescription>Description for product (prereq)</PreReqProductDescription>
+              <PreReqProductType>type3</PreReqProductType>
+              <PreReqProductDate>2009-03-19</PreReqProductDate>
+            </PreReqProduct>
+          </PreReqProducts>
+        </PreReq>
+        <LoyaltyDetails>
+          <ApplyRestriction>Y</ApplyRestriction>
+          <NoOfPointsAwarded>1</NoOfPointsAwarded>
+          <UpdatePreviouslyAwardedPoints>Y</UpdatePreviouslyAwardedPoints>
+          <UpdateFromDate>2008-08-02</UpdateFromDate>
+          <UpdateToDate>2008-09-02</UpdateToDate>
+          <NoOfPurchasePointsAwarded>5</NoOfPurchasePointsAwarded>
+          <AwardToSeasonTicketHolders>Y</AwardToSeasonTicketHolders>
+          <SeasonTicketID>0000000001</SeasonTicketID>
+          <PointsSchedule>
+            <Schedule>
+              <From>2008-08-02</From>
+              <RequiredPoints>5</RequiredPoints>
+            </Schedule>
+            <Schedule>
+              <From>2008-08-02</From>
+              <RequiredPoints>4</RequiredPoints>
+            </Schedule>
+            <Schedule>
+              <From>2008-08-02</From>
+              <RequiredPoints>3</RequiredPoints>
+            </Schedule>
+          </PointsSchedule>
+        </LoyaltyDetails>
+	  </Product>
+      <Product>
+	      <ProductCode>AACC04</ProductCode>
+		  <ProductDescription>Accrington Stanley</ProductDescription>
+		  <ProductDateISO>23/04/2008</ProductDateISO>
+          <ProductTime24H>150000</ProductTime24H>
+          <ProductPriceBand>A</ProductPriceBand>
+          <ProductApplicable>Y</ProductApplicable>
+		  <ProductType></ProductType>
+		  <ProductRequiredMembership></ProductRequiredMembership>
+		  <ProductRequiredMembershipDescription></ProductRequiredMembershipDescription>
+		  <ProductRequiredMembershipPurchased></ProductRequiredMembershipPurchased>
+		  <ProductEntryTime></ProductEntryTime>
+		  <ProductTicketLimit></ProductTicketLimit>
+		  <ProductStadiumCode></ProductStadiumCode>
+        <PriceCode></PriceCode>
+		  <ProductAssociatedTravelProductCode></ProductAssociatedTravelProductCode>
+        <RequiredLoyaltyPoints>12</RequiredLoyaltyPoints>
+        <LoyaltyRequirementMet>Y</LoyaltyRequirementMet>
+        <LimitRequirementMet>Y</LimitRequirementMet>
+        <PreReq>
+          <ProductGroup>pre-req group</ProductGroup>
+          <Description>A description</Description>
+          <MultiGroup>A Multi-Group</MultiGroup>
+          <Stadium>Stadium codes</Stadium>
+          <ValidationRule>validation rules</ValidationRule>
+          <Comments>some comments go here</Comments>
+          <PreReqProducts>
+            <PreReqProduct>
+              <PreReqProductCode>CODE1</PreReqProductCode>
+              <PreReqProductDescription>Description for product (prereq)</PreReqProductDescription>
+              <PreReqProductType>type1</PreReqProductType>
+              <PreReqProductDate>2009-03-17</PreReqProductDate>
+            </PreReqProduct>
+            <PreReqProduct>
+              <PreReqProductCode>CODE2</PreReqProductCode>
+              <PreReqProductDescription>Description for product (prereq)</PreReqProductDescription>
+              <PreReqProductType>type2</PreReqProductType>
+              <PreReqProductDate>2009-03-18</PreReqProductDate>
+            </PreReqProduct>
+            <PreReqProduct>
+              <PreReqProductCode>CODE3</PreReqProductCode>
+              <PreReqProductDescription>Description for product (prereq)</PreReqProductDescription>
+              <PreReqProductType>type3</PreReqProductType>
+              <PreReqProductDate>2009-03-19</PreReqProductDate>
+            </PreReqProduct>
+          </PreReqProducts>
+        </PreReq>
+        <LoyaltyDetails>
+          <ApplyRestriction>Y</ApplyRestriction>
+          <NoOfPointsAwarded>1</NoOfPointsAwarded>
+          <UpdatePreviouslyAwardedPoints>Y</UpdatePreviouslyAwardedPoints>
+          <UpdateFromDate>2008-08-02</UpdateFromDate>
+          <UpdateToDate>2008-09-02</UpdateToDate>
+          <NoOfPurchasePointsAwarded>5</NoOfPurchasePointsAwarded>
+          <AwardToSeasonTicketHolders>Y</AwardToSeasonTicketHolders>
+          <SeasonTicketID>0000000001</SeasonTicketID>
+          <PointsSchedule>
+            <Schedule>
+              <From>2008-08-02</From>
+              <RequiredPoints>5</RequiredPoints>
+            </Schedule>
+            <Schedule>
+              <From>2008-08-02</From>
+              <RequiredPoints>4</RequiredPoints>
+            </Schedule>
+            <Schedule>
+              <From>2008-08-02</From>
+              <RequiredPoints>3</RequiredPoints>
+            </Schedule>
+          </PointsSchedule>
+        </LoyaltyDetails>
+      </Product>
+    </Products>
+  </ProductList>
+</ProductListResponse>

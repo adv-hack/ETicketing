@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="AmendTicketingItemsRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Version" type="xs:string" />
+				<xs:element name="TransactionHeader">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="SenderID" type="xs:string" />
+							<xs:element name="ReceiverID" type="xs:string" />
+							<xs:element name="CountryCode" type="xs:string" />
+							<xs:element name="LoginID" type="xs:string" />
+							<xs:element name="Password" type="xs:string" />
+							<xs:element name="Company" type="xs:string" />
+							<xs:element name="TransactionID" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="AmendTicketingItems">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="SessionID" type="xs:string" />
+							<xs:element name="CustomerNumber" type="xs:string" />
+							<xs:element maxOccurs="unbounded" name="Item">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="ProductCode" type="xs:string" />
+										<xs:element name="Seat" type="xs:string" />
+										<xs:element name="CustomerNumber" type="xs:string" />
+										<xs:element name="PriceCode" type="xs:string" />
+										<xs:element name="PriceBand" type="xs:string" />
+										<xs:element minOccurs="0" name="PostOrCollect" type="xs:string" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RefundPaymentResponse>
+	<Version>1.0</Version>
+	<TransactionHeader>
+		<SenderID></SenderID>
+		<ReceiverID></ReceiverID>
+		<CountryCode></CountryCode>
+		<LoginID>CSGroup</LoginID>
+		<Password>Password</Password>
+		<Company>CSG</Company>
+		<TransactionID></TransactionID>
+	</TransactionHeader>
+
+	<RefundPayment>
+		<Response>
+			<ReturnCode></ReturnCode>
+			<RefundTotal>0.00</RefundTotal>
+		</Response>
+		<RefundDetails>
+			<ProductDetails>
+				<CustomerNo>000000011400</CustomerNo>
+				<ProductCode>HMCSP5</ProductCode>
+        <PriceBand>RS</PriceBand>
+        <PriceCode>A</PriceCode>
+				<NumberOfCancellations>1</NumberOfCancellations>
+        <RefundTotal>0.00</RefundTotal>
+      <RefundReference>000000000029824</RefundReference>
+			</ProductDetails>
+		</RefundDetails>
+	</RefundPayment>
+</RefundPaymentResponse>

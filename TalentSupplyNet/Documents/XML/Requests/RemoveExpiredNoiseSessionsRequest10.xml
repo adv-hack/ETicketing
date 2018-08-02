@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RemoveExpiredNoiseSessionsRequest>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID></SenderID>
+    <ReceiverID></ReceiverID>
+    <CountryCode></CountryCode>
+    <LoginID></LoginID>
+    <Password></Password>
+    <Company></Company>
+    <TransactionID></TransactionID>
+  </TransactionHeader>
+
+  <RemoveExpiredNoiseSessions>
+    <TimeoutThreshold>20</TimeoutThreshold>
+    <NoiseServerURLs>
+      <HTTPAddress></HTTPAddress>
+      <HTTPAddress></HTTPAddress>
+      <HTTPAddress></HTTPAddress>
+    </NoiseServerURLs>
+    <SQLConnectionStrings>
+      <ConnectionString></ConnectionString>
+      <ConnectionString></ConnectionString>
+      <ConnectionString></ConnectionString>
+    </SQLConnectionStrings>
+  </RemoveExpiredNoiseSessions>
+
+</RemoveExpiredNoiseSessionsRequest>

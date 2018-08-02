@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RemoveTicketingItemsResponse>
+	<Version>1.0</Version>
+	<TransactionHeader>
+		<SenderID></SenderID>
+		<ReceiverID></ReceiverID>
+		<CountryCode></CountryCode>
+		<LoginID>CSGroup</LoginID>
+		<Password>Password</Password>
+		<Company>CSG</Company>
+		<TransactionID></TransactionID>
+	</TransactionHeader>
+
+	<RemoveTicketingItems>
+		<Response>
+			<ReturnCode></ReturnCode>
+			<SessionId>300308192029376182659612099</SessionId>
+			<CustomerNo>123456</CustomerNo>
+			<ProductCode>HLIV04</ProductCode>
+			<Seat>NOR/A/CC/0046</Seat>
+		</Response>
+
+		<TicketingItemsDetails>
+			<ReservedQuantity>1</ReservedQuantity>
+			<ReservedSeconds>300</ReservedSeconds>
+			<WSFee>1.00</WSFee>
+			<CreditcardFee>0.50</CreditcardFee>
+			<CarriageFee>0.50</CarriageFee>
+			<TotalPrice>42.00</TotalPrice>
+			<ShoppingBasket>
+				<ProductDetails>
+					<CustomerNo>123456</CustomerNo>
+					<ProductCode>HLIV04</ProductCode>
+					<ProductDescription>LIVERPOOL</ProductDescription>
+					<Seat>NOR/A/CC/0045</Seat>
+					<PriceCode>LG</PriceCode>
+					<PriceBand>A</PriceBand>
+					<Price>20.00</Price>
+					<ReservedSeat>N</ReservedSeat>
+					<ErrorCode>U</ErrorCode>
+					<UserLimit>2</UserLimit>
+					<ProductLimit>3</ProductLimit>
+					<PreReqProduct></PreReqProduct>
+				</ProductDetails>
+				<ProductDetails>
+					<CustomerNo>123456</CustomerNo>
+					<ProductCode>HLIV04</ProductCode>
+					<ProductDescription>LIVERPOOL</ProductDescription>
+					<Seat>NOR/A/CC/0045</Seat>
+					<PriceCode>LG</PriceCode>
+					<PriceBand>A</PriceBand>
+					<Price>20.00</Price>
+					<ReservedSeat>N</ReservedSeat>
+					<ErrorType></ErrorType>
+					<UserLimit></UserLimit>
+					<MaxTickets></MaxTickets>
+					<PreReqProduct></PreReqProduct>
+				</ProductDetails>
+			</ShoppingBasket>
+		</TicketingItemsDetails>
+	</RemoveTicketingItems>
+</RemoveTicketingItemsResponse>

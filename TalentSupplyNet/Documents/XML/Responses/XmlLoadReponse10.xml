@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<XmlLoadResponse xmlns="http://localhost/TradingPortal" xsi:schemaLocation="http://localhost/TradingPortal http://localhost/TradingPortal/Documents/XSD/Responses/XmlLoadResponse10.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID></SenderID>
+    <ReceiverID></ReceiverID>
+    <ErrorStatus ErrorNumber=""></ErrorStatus>
+    <DocumentID></DocumentID>
+    <TransactionID></TransactionID>
+    <Company></Company>
+    <TimeStamp></TimeStamp>
+  </TransactionHeader>
+  <ecrminputs>
+    <ecrminput id="0100000007037">
+      <xml id="100" title="Address Line 1">Person 1</xml>
+      <xml id="102" title="Address Line 3">Person 1</xml>
+      <xml id="103" title="Address Line 4">Person 1</xml>
+      <xml id="104" title="Address Line 5">Person 1</xml>
+      <xml id="105" title="Post Code">Person 1</xml>
+      <xml id="200" title="Contact Title">Mr</xml>
+      <xml id="202" title="Contact Surname">Person 1</xml>
+      <xml id="203" title="Contact Forename">Person 1</xml>
+      <xml id="204" title="Telephone #1">Person 1</xml>
+      <xml id="208" title="Telephone #3">Person 1</xml>
+      <xml id="210" title="Telephone #4">Person 1</xml>
+      <xml id="227" title="Email Address">Person1@computersoftware.com</xml>
+      <xml id="229" title="Date Of Birth">19670307</xml>
+      <xml id="350" title="Address Line 1">Person 1a</xml>
+      <xml id="352" title="Address Line 3">Person 1a</xml>
+      <xml id="353" title="Address Line 4">Person 1a</xml>
+      <xml id="354" title="Address Line 5">Person 1a</xml>
+      <xml id="355" title="Post Code">Person 1a</xml>
+      <xml id="300" title="Contact Title">Mr</xml>
+      <xml id="302" title="Contact Surname">Person 1a</xml>
+      <xml id="303" title="Contact Forename">Person 1a</xml>
+      <xml id="304" title="Telephone #1">Person 1a</xml>
+      <xml id="308" title="Telephone #3">Person 1a</xml>
+      <xml id="310" title="Telephone #4">Person 1a</xml>
+      <xml id="327" title="Email Address">Person1a@computersoftware.com</xml>
+      <xml id="329" title="Date Of Birth">19670307</xml>
+    </ecrminput>
+    <ecrminput id="0100000007038">
+      <xml id="100" title="Address Line 1">Person 2</xml>
+      <xml id="102" title="Address Line 3">Person 2</xml>
+      <xml id="103" title="Address Line 4">Person 2</xml>
+      <xml id="104" title="Address Line 5">Person 2</xml>
+      <xml id="105" title="Post Code">Person 2</xml>
+      <xml id="200" title="Contact Title">Mr</xml>
+      <xml id="202" title="Contact Surname">Person 2</xml>
+      <xml id="203" title="Contact Forename">Person 2</xml>
+      <xml id="204" title="Telephone #1">Person 2</xml>
+      <xml id="208" title="Telephone #3">Person 2</xml>
+      <xml id="210" title="Telephone #4">Person 2</xml>
+      <xml id="227" title="Email Address">Person2@computersoftware.com</xml>
+      <xml id="229" title="Date Of Birth">19670307</xml>
+    </ecrminput>
+    <ecrminput id="0100000007039">
+      <xml id="100" title="Address Line 1">Person 3</xml>
+      <xml id="102" title="Address Line 3">Person 3</xml>
+      <xml id="103" title="Address Line 4">Person 3</xml>
+      <xml id="104" title="Address Line 5">Person 3</xml>
+      <xml id="105" title="Post Code">Person 3</xml>
+      <xml id="200" title="Contact Title">Mr</xml>
+      <xml id="202" title="Contact Surname">Person 3</xml>
+      <xml id="203" title="Contact Forename">Person 3</xml>
+      <xml id="204" title="Telephone #1">Person 3</xml>
+      <xml id="208" title="Telephone #3">Person 3</xml>
+      <xml id="210" title="Telephone #4">Person 3</xml>
+      <xml id="227" title="Email Address">Person3@computersoftware.com</xml>
+      <xml id="229" title="Date Of Birth">19670307</xml>
+    </ecrminput>
+    <ecrminput id="0100000007040">
+      <xml id="100" title="Address Line 1">Person 4</xml>
+      <xml id="102" title="Address Line 3">Person 4</xml>
+      <xml id="103" title="Address Line 4">Person 4</xml>
+      <xml id="104" title="Address Line 5">Person 4</xml>
+      <xml id="105" title="Post Code">Person 4</xml>
+      <xml id="200" title="Contact Title">Mr</xml>
+      <xml id="202" title="Contact Surname">Person 4</xml>
+      <xml id="203" title="Contact Forename">Person 4</xml>
+      <xml id="204" title="Telephone #1">Person 4</xml>
+      <xml id="208" title="Telephone #3">Person 4</xml>
+      <xml id="210" title="Telephone #4">Person 4</xml>
+      <xml id="227" title="Email Address">Person4@computersoftware.com</xml>
+      <xml id="229" title="Date Of Birth">19670307</xml>
+    </ecrminput>
+  </ecrminputs>
+</XmlLoadResponse>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ProductSeatAvailabilityResponse>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID></SenderID>
+    <ReceiverID></ReceiverID>
+    <CountryCode></CountryCode>
+    <LoginID>CSGroup</LoginID>
+    <Password>Password</Password>
+    <Company>CSG</Company>
+    <TransactionID></TransactionID>
+  </TransactionHeader>
+
+  <ProductList>
+    <Response>
+		<ReturnCode></ReturnCode>
+      <RowTotal>006</RowTotal>
+      <ColumnTotal>0150</ColumnTotal>
+	</Response>
+    <Rows>
+		<Row RowName="AA" RowCapacity="001" RowSequence="1" RowDetail="........AAAA..A.... ...AAAAAAAAAAAAAAAAAAAA" />
+		<Row RowName="AA" RowCapacity="001" RowSequence="2" RowDetail="........AA....A.... ...AAAAAAAAAAAAAAAAAAAA" />
+		<Row RowName="AA" RowCapacity="001" RowSequence="3" RowDetail="........A.AA..A.... ...AAAAAAAAAAAA..AAAAAA" />
+		<Row RowName="AA" RowCapacity="001" RowSequence="4" RowDetail="........AAA...A.... ...AAAAAAAAAAAAAAAAAAAA" />
+	</Rows>
+</ProductList>
+</ProductSeatAvailabilityResponse>

@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="SeasonTicketResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="TransactionHeader">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SenderID" />
+              <xs:element name="ReceiverID" />
+              <xs:element name="CountryCode" />
+              <xs:element name="LoginID" />
+              <xs:element name="Password" />
+              <xs:element name="Company" />
+              <xs:element name="TransactionID" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TransactionDetails">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RegisterCustomers" />
+              <xs:element name="TakePayments" />
+              <xs:element name="SuccessCount" />
+              <xs:element name="FailureCount" />
+              <xs:element name="TicketBookerCustomerResponse">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Success" />
+                    <xs:element name="TicketingBasketID" />
+                    <xs:element name="RegisterCustomerResponse">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="ReturnCode" />
+                          <xs:element name="CustomerDetails">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="CustomerNo" />
+                                <xs:element name="ContactTitle" />
+                                <xs:element name="ContactInitials" />
+                                <xs:element name="ContactForename" />
+                                <xs:element name="ContactSurname" />
+                                <xs:element name="Salutation" />
+                                <xs:element name="CompanyName" />
+                                <xs:element name="PositionInCompany" />
+                                <xs:element name="AddressLine1" />
+                                <xs:element name="AddressLine2" />
+                                <xs:element name="AddressLine3" />
+                                <xs:element name="AddressLine4" />
+                                <xs:element name="AddressLine5" />
+                                <xs:element name="PostCode" />
+                                <xs:element name="Gender" />
+                                <xs:element name="HomeTelephoneNumber" />
+                                <xs:element name="WorkTelephoneNumber" />
+                                <xs:element name="MobileNumber" />
+                                <xs:element name="EmailAddress" />
+                                <xs:element name="DateOfBirth" />
+                                <xs:element name="ContactViaMail" />
+                                <xs:element name="Subscription1" />
+                                <xs:element name="Subscription2" />
+                                <xs:element name="Subscription3" />
+                                <xs:element name="ContactViaMail1" />
+                                <xs:element name="ContactViaMail2" />
+                                <xs:element name="ContactViaMail3" />
+                                <xs:element name="ContactViaMail4" />
+                                <xs:element name="ContactViaMail5" />
+                                <xs:element name="ExternalId1" />
+                                <xs:element name="ExternalId2" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="AddToBasketResponse">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="ReturnCode" />
+                          <xs:element name="SessionID" />
+                          <xs:element name="ProductCode" />
+                          <xs:element name="StandCode" />
+                          <xs:element name="AreaCode" />
+                          <xs:element name="CustomerNumber" />
+                          <xs:element name="PriceCategory" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="PaymentResponse">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="ReturnCode" />
+                          <xs:element name="SessionId" />
+                          <xs:element name="CustomerNo" />
+                          <xs:element name="ConfirmedDetails">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="PaymentReference" />
+                                <xs:element name="WSFee" />
+                                <xs:element name="CreditcardFee" />
+                                <xs:element name="CarriageFee" />
+                                <xs:element name="TotalPrice" />
+                                <xs:element name="ShoppingBasket">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="ProductDetails">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="CustomerNo" />
+                                            <xs:element name="ProductCode" />
+                                            <xs:element name="Seat" />
+                                            <xs:element name="PriceCode" />
+                                            <xs:element name="PriceBand" />
+                                            <xs:element name="Price" />
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="DirectDebitResponse">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="ReturnCode" />
+                          <xs:element name="CustomerNo" />
+                          <xs:element name="AccountName" />
+                          <xs:element name="AccountNumber" />
+                          <xs:element name="SortCode" />
+                          <xs:element name="ConfirmedDetails">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="DDIReference" />
+                                <xs:element name="PaymentReference" />
+                                <xs:element name="TotalAmount" />
+                                <xs:element name="ScheduledEntries" />
+                                <xs:element name="PaymentSchedule">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="payment">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="PaymentDate" />
+                                            <xs:element name="PaymentAmount" />
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

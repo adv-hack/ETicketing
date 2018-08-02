@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SupplierInvoiceRequest>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID>123456789</SenderID>
+    <ReceiverID>987654321</ReceiverID>
+    <CountryCode>UK</CountryCode>
+    <LoginID>UK3833HHD </LoginID>
+    <Password>Re887Jky52</Password>
+    <Company>CSG</Company>
+    <TransactionID>54321</TransactionID>
+  </TransactionHeader>
+	<Invoices>
+		<Invoice>
+			<InvoiceHeader>
+				<VendorNumber>ag_vendor001</VendorNumber>
+				<InvoiceNumber>ag_invoice001</InvoiceNumber>
+				<InvoiceDate>20070323</InvoiceDate>
+				<PurchaseOrderNumber>20070323</PurchaseOrderNumber>
+				<InvoiceAmount>10000</InvoiceAmount>
+				<VATAmount>1750</VATAmount>
+				<GrossAmount>11750</GrossAmount>
+				<InvoicedProcessed>N</InvoicedProcessed>
+				<CompanyCode>CSG</CompanyCode>
+				<CurrencyCode>GBP</CurrencyCode>
+			</InvoiceHeader>
+			<InvoiceLines>
+				<InvoiceLine LineNumber="1">
+					<QuantityInvoiced>5000</QuantityInvoiced>
+					<UnitOfMeasure>bag</UnitOfMeasure>
+					<InvoiceLineNetAmount>5000</InvoiceLineNetAmount>
+					<InvoiceLineVATAmount>875</InvoiceLineVATAmount>
+					<ProductCode>707826</ProductCode>
+					<CompanyCode>CSG</CompanyCode>
+					<VATCode>1</VATCode>
+					<LocationCode>MK</LocationCode>
+					<CurrencyCode>GBP</CurrencyCode>
+          <CustomerOrderReference>ABC</CustomerOrderReference>
+          <OrderNumber>ABC123</OrderNumber>
+          <DespatchDate>20080631</DespatchDate>
+          <DeliveryNoteNumber>ABC123</DeliveryNoteNumber>
+          <ProofOfDelivery>AAA</ProofOfDelivery>
+          <CustomerOrderDate>20080631</CustomerOrderDate>
+          <DeliveryName>Mr Smith</DeliveryName>
+          <DeliveryAddress1>Pepper House</DeliveryAddress1>
+          <DeliveryAddress2>Market Street</DeliveryAddress2>
+          <DeliveryAddress3>Nantwich</DeliveryAddress3>
+          <DeliveryAddress4>Cheshire</DeliveryAddress4>
+          <DeliveryAddress5>UK</DeliveryAddress5>
+          <DeliveryPostcode>CW55DQ</DeliveryPostcode>
+          <PaymentMethod>CC</PaymentMethod>
+          <SettlementDiscount>12.99</SettlementDiscount>
+				</InvoiceLine>
+				<InvoiceLine LineNumber="2">
+		          <QuantityInvoiced>5000</QuantityInvoiced>
+		          <UnitOfMeasure>bag</UnitOfMeasure>
+		          <InvoiceLineNetAmount>5000</InvoiceLineNetAmount>
+		          <InvoiceLineVATAmount>875</InvoiceLineVATAmount>
+		          <ProductCode>707932</ProductCode>              
+			        <CompanyCode>CSG</CompanyCode>	
+		          <VATCode>1</VATCode>
+		          <LocationCode>MK</LocationCode>
+		          <CurrencyCode>GBP</CurrencyCode>
+              <Description>Red bag</Description>
+              <DespatchTime>120000</DespatchTime>
+              <VATRate>17.5</VATRate>
+              <UnitCostPrice>12.90</UnitCostPrice>
+		        </InvoiceLine>
+			</InvoiceLines>
+		</Invoice>
+	</Invoices>
+</SupplierInvoiceRequest>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ProductPricingDetailsResponse>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID></SenderID>
+    <ReceiverID></ReceiverID>
+    <CountryCode></CountryCode>
+    <LoginID>CSGroup</LoginID>
+    <Password>Password</Password>
+    <Company>CSG</Company>
+    <TransactionID></TransactionID>
+  </TransactionHeader>
+
+  <ProductPricingDetails>
+    <Response>
+      <ReturnCode></ReturnCode>
+      <ProductCode>FORTH3</ProductCode>
+    </Response>
+
+	  <PriceDetails>
+		  <StandCode>NOR</StandCode>
+		  <StandDescription>North Stand</StandDescription>
+		  <AreaCode>A</AreaCode>
+		  <AreaDescription>Area A</AreaDescription>
+		  <PriceBandDetails>
+			  <PriceBand>A</PriceBand>
+			  <Price>25.00</Price>
+		  </PriceBandDetails>
+		  <PriceBandDetails>
+			  <PriceBand>J</PriceBand>
+			  <Price>17.50</Price>
+		  </PriceBandDetails>
+		  <PriceBandDetails>
+			  <PriceBand>O</PriceBand>
+			  <Price>17.50</Price>
+		  </PriceBandDetails>
+	  </PriceDetails>
+	  <PriceDetails>
+		  <StandCode>SOU</StandCode>
+		  <StandDescription>South Stand</StandDescription>
+		  <AreaCode>A</AreaCode>
+		  <AreaDescription>Area A</AreaDescription>
+		  <PriceBandDetails>
+			  <PriceBand>A</PriceBand>
+			  <Price>28.00</Price>
+		  </PriceBandDetails>
+		  <PriceBandDetails>
+			  <PriceBand>J</PriceBand>
+			  <Price>20.00</Price>
+		  </PriceBandDetails>
+		  <PriceBandDetails>
+			  <PriceBand>O</PriceBand>
+			  <Price>20.00</Price>
+		  </PriceBandDetails>
+	  </PriceDetails>
+
+    <PriceBands>
+      <PriceBandDetails>
+        <PriceBand>A</PriceBand>
+        <PriceBandDescription>Adult</PriceBandDescription>
+        <PriceBandPriority>1</PriceBandPriority>
+      </PriceBandDetails>
+      <PriceBandDetails>
+        <PriceBand>J</PriceBand>
+        <PriceBandDescription>Junior</PriceBandDescription>
+        <PriceBandPriority>2</PriceBandPriority>
+      </PriceBandDetails>
+      <PriceBandDetails>
+        <PriceBand>O</PriceBand>
+        <PriceBandDescription>OAP</PriceBandDescription>
+        <PriceBandPriority>3</PriceBandPriority>
+      </PriceBandDetails>
+    </PriceBands>
+	  
+  </ProductPricingDetails>
+</ProductPricingDetailsResponse>

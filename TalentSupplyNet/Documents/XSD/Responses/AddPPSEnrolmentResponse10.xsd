@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="AddPPSEnrolmentResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Version" type="xs:decimal" />
+				<xs:element name="TransactionHeader">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="SenderID" />
+							<xs:element name="ReceiverID" />
+							<xs:element name="ErrorStatus">
+								<xs:complexType>
+									<xs:attribute name="ErrorNumber" type="xs:string" use="required" />
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="DocumentID" />
+							<xs:element name="TransactionID" />
+							<xs:element name="Company" />
+							<xs:element name="TimeStamp" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="AddPPSEnrolment">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Response">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="SuccessCount" type="xs:string"/>
+										<xs:element name="ErrorCount" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="FailedRequests">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="PPSEnrolment">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="CustomerNo" type="xs:unsignedInt" />
+													<xs:element name="PaymentDetails">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="CreditCard">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="CardNumber" type="xs:unsignedLong" />
+																			<xs:element name="ExpiryDate" type="xs:unsignedByte" />
+																			<xs:element name="StartDate" type="xs:unsignedShort" />
+																			<xs:element name="IssueNumber" type="xs:unsignedByte" />
+																			<xs:element name="CV2Number" type="xs:unsignedByte" />
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+																<xs:element name="DirectDebit">
+																	<xs:complexType>
+																		<xs:sequence>
+																			<xs:element name="AccountName" type="xs:string" />
+																			<xs:element name="SortCode" type="xs:unsignedInt" />
+																			<xs:element name="AccountCode" type="xs:unsignedInt" />
+																		</xs:sequence>
+																	</xs:complexType>
+																</xs:element>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+													<xs:element maxOccurs="unbounded" name="PPSScheme">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="ProductCode" type="xs:string" />
+																<xs:element name="SeasonTicketSeat" type="xs:string" />
+																<xs:element name="RegisteredPost" />
+																<xs:element name="ReturnCode"/>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

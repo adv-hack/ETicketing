@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RetrieveProfileDetailsResponse>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID></SenderID>
+    <ReceiverID></ReceiverID>
+    <CountryCode></CountryCode>
+    <LoginID>CSGroup</LoginID>
+    <Password>Password</Password>
+    <Company>CSG</Company>
+    <TransactionID></TransactionID>
+  </TransactionHeader>
+
+  <ProfileDetailsRetrieval>
+    <Response>
+      <ReturnCode></ReturnCode>
+    </Response>
+
+    <ProfileDetails>
+      <Attribute></Attribute>      
+    </ProfileDetails>
+  </ProfileDetailsRetrieval>
+</RetrieveProfileDetailsResponse>

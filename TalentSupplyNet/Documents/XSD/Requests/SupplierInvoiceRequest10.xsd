@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="SupplierInvoiceRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Version" type="xs:decimal" />
+        <xs:element name="TransactionHeader">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SenderID" type="xs:string" />
+              <xs:element name="ReceiverID" type="xs:string" />
+              <xs:element name="CountryCode" type="xs:string" />
+              <xs:element name="LoginID" type="xs:string" />
+              <xs:element name="Password" type="xs:string" />
+              <xs:element name="Company" type="xs:string" />
+              <xs:element name="TransactionID" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Invoices">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Invoice">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="InvoiceHeader">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="VendorNumber" type="xs:string" />
+                          <xs:element name="InvoiceNumber" type="xs:string" />
+                          <xs:element name="InvoiceDate" type="xs:string" />
+                          <xs:element name="PurchaseOrderNumber" type="xs:string" />
+                          <xs:element name="InvoiceAmount" type="xs:string" />
+                          <xs:element name="VATAmount" type="xs:string" />
+                          <xs:element name="GrossAmount" type="xs:string" />
+                          <xs:element name="InvoicedProcessed" type="xs:string" />
+                          <xs:element name="CompanyCode" type="xs:string" />
+                          <xs:element name="CurrencyCode" type="xs:string" />
+                          <xs:element name="CustomerOrderReference" type="xs:string" />
+                          <xs:element name="OrderNumber" type="xs:string" />
+                          <xs:element name="DespatchDate" type="xs:string" />
+                          <xs:element name="DeliveryNoteNumber" type="xs:string" />
+                          <xs:element name="ProofOfDelivery" type="xs:string" />
+                          <xs:element name="CustomerOrderDate" type="xs:string" />
+                          <xs:element name="DeliveryName" type="xs:string" />
+                          <xs:element name="DeliveryAddress1" type="xs:string" />
+                          <xs:element name="DeliveryAddress2" type="xs:string" />
+                          <xs:element name="DeliveryAddress3" type="xs:string" />
+                          <xs:element name="DeliveryAddress4" type="xs:string" />
+                          <xs:element name="DeliveryAddress5" type="xs:string" />
+                          <xs:element name="DeliveryPostcode" type="xs:string" />
+                          <xs:element name="PaymentMethod" type="xs:string" />
+                          <xs:element name="SettlementDiscount" type="xs:string" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="InvoiceLines">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element maxOccurs="unbounded" name="InvoiceLine">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="QuantityInvoiced" type="xs:string" />
+                                <xs:element name="UnitOfMeasure" type="xs:string" />
+                                <xs:element name="InvoiceLineNetAmount" type="xs:string" />
+                                <xs:element name="InvoiceLineVATAmount" type="xs:string" />
+                                <xs:element name="ProductCode" type="xs:string" />
+                                <xs:element name="CompanyCode" type="xs:string" />
+                                <xs:element name="VATCode" type="xs:string" />
+                                <xs:element name="LocationCode" type="xs:string" />
+                                <xs:element name="CurrencyCode" type="xs:string" />
+                                <xs:element name="Description" type="xs:string" />
+                                <xs:element name="DespatchTime" type="xs:string" />
+                                <xs:element name="VATRate" type="xs:string" />
+                                <xs:element name="UnitCostPrice" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute name="LineNumber" type="xs:unsignedByte" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ProductListResponse>
+  <Version>1.1</Version>
+  <TransactionHeader>
+    <SenderID></SenderID>
+    <ReceiverID></ReceiverID>
+    <CountryCode></CountryCode>
+    <LoginID>CSGroup</LoginID>
+    <Password>Password</Password>
+    <Company>CSG</Company>
+    <TransactionID></TransactionID>
+  </TransactionHeader>
+
+  <ProductList>
+    <Response>
+      <ReturnCode></ReturnCode>
+    </Response>
+
+    <Products>
+      <Product>
+        <ProductCode>HLIV04</ProductCode>
+        <ProductDescription>Liverpool</ProductDescription>
+		  <ProductDate>Wed 16th April</ProductDate>
+		  <ProductTime>7:45pm</ProductTime>
+		  <ProductDateISO>2008-04-16</ProductDateISO>
+		  <ProductTime24H>19:45:00</ProductTime24H>
+		  <ProductPriceBand>A</ProductPriceBand>
+          <ProductApplicable>Y</ProductApplicable>
+		  <ProductType>H</ProductType>
+		  <ProductRequiredMembership></ProductRequiredMembership>
+		  <ProductRequiredMembershipDescription></ProductRequiredMembershipDescription>
+		  <ProductRequiredMembershipPurchased></ProductRequiredMembershipPurchased>
+		  <ProductEntryTime></ProductEntryTime>
+		  <ProductTicketLimit></ProductTicketLimit>
+		  <ProductStadiumCode></ProductStadiumCode>
+        <PriceCode></PriceCode>
+		  <ProductAssociatedTravelProductCode></ProductAssociatedTravelProductCode>
+        <RequiredLoyaltyPoints>12</RequiredLoyaltyPoints>
+        <LoyaltyRequirementMet>Y</LoyaltyRequirementMet>
+        <LimitRequirementMet>Y</LimitRequirementMet>
+	  </Product>
+      <Product>
+	      <ProductCode>AACC04</ProductCode>
+		  <ProductDescription>Accrington Stanley</ProductDescription>
+		  <ProductDateISO>23/04/2008</ProductDateISO>
+          <ProductTime24H>150000</ProductTime24H>
+          <ProductPriceBand>A</ProductPriceBand>
+          <ProductApplicable>Y</ProductApplicable>
+		  <ProductType></ProductType>
+		  <ProductRequiredMembership></ProductRequiredMembership>
+		  <ProductRequiredMembershipDescription></ProductRequiredMembershipDescription>
+		  <ProductRequiredMembershipPurchased></ProductRequiredMembershipPurchased>
+		  <ProductEntryTime></ProductEntryTime>
+		  <ProductTicketLimit></ProductTicketLimit>
+		  <ProductStadiumCode></ProductStadiumCode>
+        <PriceCode></PriceCode>
+		  <ProductAssociatedTravelProductCode></ProductAssociatedTravelProductCode>
+        <RequiredLoyaltyPoints>12</RequiredLoyaltyPoints>
+        <LoyaltyRequirementMet>Y</LoyaltyRequirementMet>
+        <LimitRequirementMet>Y</LimitRequirementMet>
+      </Product>
+    </Products>
+  </ProductList>
+</ProductListResponse>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AvailabilityResponse>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID />
+    <ReceiverID />
+    <ErrorStatus ErrorNumber=""></ErrorStatus>
+    <DocumentID />
+    <TransactionID />
+    <Company />
+    <TimeStamp />
+  </TransactionHeader>
+
+  <Availability>
+
+    <Availability SKU="CA1188R" Quantity="5">
+      <ManufacturerPartNumber />
+      <ManufacturerPartNumberOccurs />
+      <VendorNumber />
+      <Description />
+      <ReserveInventoryFlag />
+      <AvailableRebQty />
+      <Branch ID="" Name="" />
+      <Availability />
+      <OnOrder />
+      <ETADate />
+    </Availability>
+    
+    <Availability SKU="BH770146" Quantity="8">
+      <ManufacturerPartNumber />
+      <ManufacturerPartNumberOccurs />
+      <VendorNumber />
+      <Description />
+      <ReserveInventoryFlag />
+      <AvailableRebQty />
+      <Branch ID="" Name="" />
+      <Availability />
+      <OnOrder />
+      <ETADate />
+    </Availability>
+    
+  </Availability>
+
+</AvailabilityResponse>

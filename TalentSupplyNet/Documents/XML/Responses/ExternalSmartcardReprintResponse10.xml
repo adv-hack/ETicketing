@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ExternalSmartcardReprintResponse>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID />
+    <ReceiverID />
+    <ErrorStatus ErrorNumber=""></ErrorStatus>
+    <DocumentID />
+    <TransactionID />
+    <Company />
+    <TimeStamp />
+  </TransactionHeader>
+  <SmartcardReprints>
+    <Response>
+      <ReturnCode></ReturnCode>
+    </Response>
+    <SmartcardReprint>
+      <CustomerNumber>000000010515B</CustomerNumber>
+      <RealCustomerNumber>000000010515</RealCustomerNumber>
+      <SmartcardNumber>12345</SmartcardNumber>
+      <Status>S1</Status>
+      <StatusInformation>Print Successful</StatusInformation>
+    </SmartcardReprint>
+    <SmartcardReprint>
+      <CustomerNumber>000000010515C</CustomerNumber>
+      <RealCustomerNumber>000000010515</RealCustomerNumber>
+      <SmartcardNumber>12346</SmartcardNumber>
+      <Status>S1</Status>
+      <StatusInformation>Print Successful</StatusInformation>
+    </SmartcardReprint>
+  </SmartcardReprints>
+</ExternalSmartcardReprintResponse>

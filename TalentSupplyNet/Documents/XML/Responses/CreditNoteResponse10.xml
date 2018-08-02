@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CreditNoteResponse>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID />
+    <ReceiverID />
+    <ErrorStatus ErrorNumber=""></ErrorStatus>
+    <DocumentID />
+    <TransactionID />
+    <Company />
+    <TimeStamp />
+  </TransactionHeader>
+
+  <CreditNotes>
+
+    <CreditNote>
+
+      <CreditNoteHeader>
+        <CreditNoteType>CreditNote</CreditNoteType>
+        <CreditNoteNumber>202540088</CreditNoteNumber>
+        <CreditNoteDate>20040217</CreditNoteDate>
+        <CustomerPO>CST400222</CustomerPO>
+        <OriginalOrderNumber>205544811</OriginalOrderNumber>
+      </CreditNoteHeader>
+
+      <AccountNumber>UK20451887000</AccountNumber>
+
+      <Address Type="Customer">
+        <Name></Name>
+        <Attention> </Attention>=
+        <AddressLine1></AddressLine1>
+        <AddressLine2></AddressLine2>
+        <AddressLine3></AddressLine3>
+        <AddressLine4></AddressLine4>
+        <City></City>
+        <Province></Province>
+        <PostalCode></PostalCode>
+        <CountryCode></CountryCode>
+      </Address>
+
+      <Address Type="ShipTo">
+        <Name></Name>
+        <Attention> </Attention>=
+        <AddressLine1></AddressLine1>
+        <AddressLine2></AddressLine2>
+        <AddressLine3></AddressLine3>
+        <AddressLine4></AddressLine4>
+        <City></City>
+        <Province></Province>
+        <PostalCode></PostalCode>
+        <CountryCode></CountryCode>
+      </Address>
+
+      <Address Type="ShipFrom">
+        <Name></Name>
+        <Attention> </Attention>=
+        <AddressLine1></AddressLine1>
+        <AddressLine2></AddressLine2>
+        <AddressLine3></AddressLine3>
+        <AddressLine4></AddressLine4>
+        <City></City>
+        <Province></Province>
+        <PostalCode></PostalCode>
+        <CountryCode></CountryCode>
+      </Address>
+      <VAT>
+        <VATNumber>UK445522668</VATNumber>
+      </VAT>
+      <Currency>
+        <CurrencyCode>GBP</CurrencyCode>
+      </Currency>
+      <PaymentTerms>
+        <TermsCode>66</TermsCode>
+      </PaymentTerms>
+      <PaymentDue>
+        <PaymentDueDate>20040231</PaymentDueDate>
+      </PaymentDue>
+
+      <LineItemHeader>
+        <LineItem LineNumber="1">
+          <Product SKU="P803551" CreditNoteQuantity="3">
+            <CustomerSKU></CustomerSKU>
+            <EANCode>1234567891230</EANCode>
+            <ManufacturerSKU>VEHH887A6</ManufacturerSKU>
+            <SKUDescription1>INTEGRATED CD ROM</SKUDescription1>
+            <SKUDescription2>2X RW/4X DVD</SKUDescription2>
+          </Product>
+          <SerialNumberHeader>
+            <SerialNumber>SE445262</SerialNumber>
+            <SerialNumber>SE445263</SerialNumber>
+            <SerialNumber>SE445264</SerialNumber>
+          </SerialNumberHeader>
+          <Tax Type="VAT">20.02</Tax>
+          <LineMonetaryInfo>
+            <UnitPrice>32.11</UnitPrice>
+            <LineItemAmount>96.33</LineItemAmount>
+          </LineMonetaryInfo>
+        </LineItem>
+      </LineItemHeader>
+
+      <TotalInformation Type="TotalQuantity">3</TotalInformation>
+      <TotalInformation Type="OrderLines">1</TotalInformation>
+      <TotalFinancial Type="TotalAmountDue">136.35</TotalFinancial>
+      <TotalFinancial Type="TotalLineItemAmount">96.33</TotalFinancial>
+      <TotalFinancial Type="TotalTaxableAmount">116.33</TotalFinancial>
+      <TotalFinancial Type="TotalCharges">20</TotalFinancial>
+      <TotalFinancial Type="TotalTaxAmount">20.02</TotalFinancial>
+
+      <Final Type="FinalTaxableAmount">96.33</Final>
+      <Final Type="FinalTaxAmount">20.02</Final>
+
+    </CreditNote>
+
+  </CreditNotes>
+
+</CreditNoteResponse>

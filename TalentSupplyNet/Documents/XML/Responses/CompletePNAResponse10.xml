@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CompletePNAResponse>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID />
+    <ReceiverID />
+    <ErrorStatus ErrorNumber=""></ErrorStatus>
+    <DocumentID />
+    <TransactionID />
+    <Company />
+    <TimeStamp />
+  </TransactionHeader>
+  <MultiPNA>
+    <PriceAndAvailability SKU="DI836361" Quantity="10">
+      <Price>2.99</Price>
+      <SpecialPriceFlag />
+      <ManufacturerPartNumber>ABC</ManufacturerPartNumber>
+      <ManufacturerPartNumberOccurs />
+      <VendorNumber />
+      <Description />
+      <ReserveInventoryFlag />
+      <AvailableRebQty />
+      <Branch ID="PK">
+        <Availability>539</Availability>
+        <OnOrder />
+        <ETADate />
+      </Branch>
+      <Branch ID="AA">
+        <Availability>539</Availability>
+        <OnOrder />
+        <ETADate />
+      </Branch>
+    </PriceAndAvailability>
+    <PriceAndAvailability SKU="CO2109" Quantity="10">
+      <Price>2.99</Price>
+      <SpecialPriceFlag />
+      <ManufacturerPartNumber>DEF</ManufacturerPartNumber>
+      <ManufacturerPartNumberOccurs />
+      <VendorNumber />
+      <Description />
+      <ReserveInventoryFlag />
+      <AvailableRebQty />
+      <Branch ID="BL">
+        <Availability>0</Availability>
+        <OnOrder />
+        <ETADate />
+      </Branch>
+      <Branch ID="PK">
+        <Availability>0</Availability>
+        <OnOrder />
+        <ETADate />
+      </Branch>
+    </PriceAndAvailability>
+  </MultiPNA>
+
+</CompletePNAResponse>

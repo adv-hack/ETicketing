@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AmendTicketingItemsReturnBasketRequest>
+	<Version>1.0</Version>
+	<TransactionHeader>
+		<SenderID></SenderID>
+		<ReceiverID></ReceiverID>
+		<CountryCode></CountryCode>
+		<LoginID>jonathan</LoginID>
+		<Password>jonathan</Password>
+		<Company>CSG</Company>
+		<TransactionID></TransactionID>
+	</TransactionHeader>
+	<AmendTicketingItems>
+		<SessionID>300308192029376182659612099</SessionID>
+		<CustomerNumber>000000107771</CustomerNumber>
+		<Item>	
+			<ProductCode>FORTH3</ProductCode>
+			<Seat>ES/AR1/B/0051</Seat>
+			<CustomerNumber>000000107772</CustomerNumber>
+			<PriceCode>CR</PriceCode>
+			<PriceBand>A</PriceBand>
+			<PostOrCollect></PostOrCollect>
+		</Item>
+		<Item>	
+			<ProductCode>FORTH3</ProductCode>
+			<Seat>ES/AR1/B/0053</Seat>
+			<CustomerNumber>000000107773</CustomerNumber>
+			<PriceCode>CR</PriceCode>
+			<PriceBand>A</PriceBand>
+			<PostOrCollect></PostOrCollect>
+		</Item>
+	</AmendTicketingItems>
+</AmendTicketingItemsReturnBasketRequest>

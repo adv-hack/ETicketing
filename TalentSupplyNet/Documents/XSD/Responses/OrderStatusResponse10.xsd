@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="OrderStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Version" type="xs:decimal" />
+        <xs:element name="TransactionHeader">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SenderID" />
+              <xs:element name="ReceiverID" />
+              <xs:element name="ErrorStatus">
+                <xs:complexType>
+                  <xs:attribute name="ErrorNumber" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="DocumentID" />
+              <xs:element name="TransactionID" />
+              <xs:element name="Company" />
+              <xs:element name="TimeStamp" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="OrderStatusInformation">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CustomerPO">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="OrderInfo">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="BranchOrderNumber" type="xs:unsignedInt" />
+                          <xs:element name="OrderEntryDate" type="xs:date" />
+                          <xs:element maxOccurs="unbounded" name="OrderSuffix">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="ShipFromBranch">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute name="Number" type="xs:unsignedByte" use="required" />
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="TotalSales" type="xs:decimal" />
+                                <xs:element name="InvoiceDate" type="xs:date" />
+                                <xs:element name="OrderShipDate" type="xs:date" />
+                                <xs:element maxOccurs="unbounded" name="OrderCreditMemo">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute name="Code" type="xs:string" use="required" />
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute name="ID" type="xs:unsignedByte" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="OrderStatus" type="xs:string">
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="Number" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<OrderStatusResponse>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID />
+    <ReceiverID />
+    <ErrorStatus ErrorNumber=""></ErrorStatus>
+    <DocumentID />
+    <TransactionID />
+    <Company />
+    <TimeStamp />
+  </TransactionHeader>
+
+  <OrderInfo>
+    <OrderNumbers>
+      
+      <BranchOrderNumber></BranchOrderNumber>
+      <CustomerPO></CustomerPO>
+      <ErrorStatus ErrorNumber=""></ErrorStatus>
+      <OrderEntryDate></OrderEntryDate>
+      
+      <OrderSuffix ID="">
+        <ShipFromBranch Number=""></ShipFromBranch>
+        <OrderStatus></OrderStatus>
+        <TotalSales></TotalSales>
+        <InvoiceDate></InvoiceDate>
+        <OrderShipDate></OrderShipDate>
+        <OrderCreditMemo Code=""></OrderCreditMemo>
+        <OrderCreditMemo Code=""></OrderCreditMemo>
+      </OrderSuffix>
+      
+    </OrderNumbers>
+  </OrderInfo>
+</OrderStatusResponse>

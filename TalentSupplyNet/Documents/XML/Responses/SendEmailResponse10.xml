@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SendEmailResponse xmlns="http://localhost/TradingPortal">
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID></SenderID>
+    <ReceiverID></ReceiverID>
+    <ErrorStatus ErrorNumber="" />
+    <DocumentID>30059a14-f6ba-42ae-a981-c3cf898299af</DocumentID>
+    <TransactionID>13787</TransactionID>
+    <TimeStamp>2009-03-03T13:32:15</TimeStamp>
+  </TransactionHeader>
+</SendEmailResponse>

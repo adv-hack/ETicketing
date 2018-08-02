@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AddPPSEnrolmentResponse>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID />
+    <ReceiverID />
+    <ErrorStatus ErrorNumber=""></ErrorStatus>
+    <DocumentID />
+    <TransactionID />
+    <Company />
+    <TimeStamp />
+  </TransactionHeader>
+  <AddPPSEnrolment>
+    <Response>
+      <SuccessCount>100</SuccessCount>
+      <ErrorCount>52</ErrorCount>
+    </Response>
+    <FailedRequests>
+      <PPSEnrolment>
+        <CustomerNo>123456</CustomerNo>
+        <PaymentDetails>
+          <CreditCard>
+            <CardNumber>5641820300097008</CardNumber>
+            <ExpiryDate>0102</ExpiryDate>
+            <StartDate>0409</StartDate>
+            <IssueNumber>01</IssueNumber>
+            <CV2Number>123</CV2Number>
+          </CreditCard>
+          <DirectDebit>
+            <AccountName>Stuart Atkinson</AccountName>
+            <SortCode>123456</SortCode>
+            <AccountCode>1234567890</AccountCode>
+          </DirectDebit>
+        </PaymentDetails>
+        <PPSScheme>
+          <ProductCode>PPS001</ProductCode>
+          <SeasonTicketSeat>NOR/A/CC/0046</SeasonTicketSeat>
+          <RegisteredPost />
+          <ReturnCode>MC</ReturnCode>
+        </PPSScheme>
+        <PPSScheme>
+          <ProductCode>PPS001</ProductCode>
+          <SeasonTicketSeat>NOR/A/CC/0047</SeasonTicketSeat>
+          <RegisteredPost />
+          <ReturnCode>MC</ReturnCode>
+        </PPSScheme>
+      </PPSEnrolment>
+    </FailedRequests>
+  </AddPPSEnrolment>
+</AddPPSEnrolmentResponse>

@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="PurchaseOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Version" type="xs:decimal" />
+        <xs:element name="TransactionHeader">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SenderID" />
+              <xs:element name="ReceiverID" />
+              <xs:element name="ErrorStatus">
+                <xs:complexType>
+                  <xs:attribute name="ErrorNumber" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="DocumentID" />
+              <xs:element name="TransactionID" />
+              <xs:element name="Company" />
+              <xs:element name="TimeStamp" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PurchaseOrders">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PurchaseOrder">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="PurchaseOrderHeader">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="LOBCode" />
+                          <xs:element name="DataStructureName" />
+                          <xs:element name="PurchaseOrderNumber" type="xs:unsignedInt" />
+                          <xs:element name="VendorNumber" />
+                          <xs:element name="VendorType" />
+                          <xs:element name="SendThisSession" />
+                          <xs:element name="SentOK" />
+                          <xs:element name="XMLDocumentName" />
+                          <xs:element name="ReleaseNumber" />
+                          <xs:element name="OrderStatus" />
+                          <xs:element name="BuyerID" />
+                          <xs:element name="WarehouseID" />
+                          <xs:element name="ShipToNumber" />
+                          <xs:element name="CarrierCode" />
+                          <xs:element name="OrderDate" />
+                          <xs:element name="OrderTime" />
+                          <xs:element name="ExpectedDate" />
+                          <xs:element name="RequestedReceiptDate" />
+                          <xs:element name="NumberOfLinesOnOrder" />
+                          <xs:element name="TotalQuantity" />
+                          <xs:element name="TotalEstimatedCost" />
+                          <xs:element name="TaxTotal" />
+                          <xs:element name="DiscountPercent" />
+                          <xs:element name="DiscountAmount" />
+                          <xs:element name="TransactionCurrencyCode" />
+                          <xs:element name="BaseCurrencyCode" />
+                          <xs:element name="TransactionExchangeRate" />
+                          <xs:element name="MultyDivideFlag" />
+                          <xs:element name="InvoiceNumber" />
+                          <xs:element name="SpecialInstructions" />
+                          <xs:element name="Comments">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Internal">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element maxOccurs="unbounded" name="CommentLine">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="CommentText" type="xs:string" />
+                                            <xs:element name="CommentLineNumber" type="xs:string" />
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="External">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element maxOccurs="unbounded" name="CommentLine">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="CommentText" type="xs:string" />
+                                            <xs:element name="CommentLineNumber" type="xs:string" />
+                                          </xs:sequence>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="UDF01" />
+                          <xs:element name="UDF02" />
+                          <xs:element name="UDF03" />
+                          <xs:element name="UDF04" />
+                          <xs:element name="UDF05" />
+                          <xs:element name="UDF06" />
+                          <xs:element name="UDF07" />
+                          <xs:element name="UDF08" />
+                          <xs:element name="UDF09" />
+                          <xs:element name="UDF10" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="PurchaseOrderLines">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element maxOccurs="unbounded" name="PurchaseOrderLine">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="LineActionCode" />
+                                <xs:element minOccurs="0" name="OrderStatus" />
+                                <xs:element minOccurs="0" name="BuyerID" />
+                                <xs:element minOccurs="0" name="WarehouseID" />
+                                <xs:element minOccurs="0" name="Line_OrderStatus" />
+                                <xs:element minOccurs="0" name="Line_BuyerID" />
+                                <xs:element minOccurs="0" name="Line_WarehouseID" />
+                                <xs:element name="ProductNumber" />
+                                <xs:element name="ProductDescription" />
+                                <xs:element name="UserProductNumber" />
+                                <xs:element name="UserProductDescription" />
+                                <xs:element name="MeasureCode" />
+                                <xs:element name="DeliveryDate" />
+                                <xs:element name="QuantityOrdered" />
+                                <xs:element name="QuantityReceived" />
+                                <xs:element name="EstimatedCost" />
+                                <xs:element name="ActualSellingPrice" />
+                                <xs:element name="SpecialSellingPrice" />
+                                <xs:element name="Line_DiscountAmount" />
+                                <xs:element name="Line_DiscountPercent" />
+                                <xs:element name="LineInstructions" />
+                              </xs:sequence>
+                              <xs:attribute name="LineNumber" type="xs:unsignedByte" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

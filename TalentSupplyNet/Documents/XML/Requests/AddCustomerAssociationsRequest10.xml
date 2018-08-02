@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AddCustomerAssociationsRequest>
+	<Version>1.0</Version>
+	<TransactionHeader>
+		<SenderID></SenderID>
+		<ReceiverID></ReceiverID>
+		<CountryCode></CountryCode>
+    <LoginID>CSGroup</LoginID>
+    <Password>Password</Password>
+    <Company>CSG</Company>
+		<TransactionID></TransactionID>
+	</TransactionHeader>
+  <CustomerAssociationAdd>    
+    <CustomerNumber>0000000001</CustomerNumber>
+    <FriendsAndFamilyID>000000000002</FriendsAndFamilyID>
+    <FriendsAndFamilyMode>V1</FriendsAndFamilyMode>
+    <Surname>Courcoux</Surname>
+    <Postcode>WD250RR</Postcode>
+  </CustomerAssociationAdd>
+</AddCustomerAssociationsRequest>

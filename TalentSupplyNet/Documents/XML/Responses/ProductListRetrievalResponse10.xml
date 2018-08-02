@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ProductListRetrievalResponse>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID></SenderID>
+    <ReceiverID></ReceiverID>
+    <CountryCode></CountryCode>
+    <LoginID>CSGroup</LoginID>
+    <Password>Password</Password>
+    <Company>CSG</Company>
+    <TransactionID></TransactionID>
+  </TransactionHeader>
+
+  <ProductListRetrieval>
+    <Response>
+      <ReturnCode></ReturnCode>
+    </Response>
+
+    <ProductList>
+      <Product>
+        <ProductCode>HLIV04</ProductCode>
+        <ProductDescription>Liverpool</ProductDescription>
+        <ProductDate>16042004</ProductDate>
+        <ProductTime>3pm</ProductTime>
+        <ProductPriceBand>A</ProductPriceBand>
+        <ProductApplicable>Y</ProductApplicable>
+        <ProductAllocation>999</ProductAllocation>
+      </Product>
+      <Product>
+        <ProductCode>AACC04</ProductCode>
+        <ProductDescription>Accrington Stanley</ProductDescription>
+        <ProductDate>23042004</ProductDate>
+        <ProductTime>3pm</ProductTime>
+        <ProductPriceBand>A</ProductPriceBand>
+        <ProductApplicable>Y</ProductApplicable>
+        <ProductAllocation>999</ProductAllocation>
+      </Product>
+    </ProductList>
+  </ProductListRetrieval>
+</ProductListRetrievalResponse>

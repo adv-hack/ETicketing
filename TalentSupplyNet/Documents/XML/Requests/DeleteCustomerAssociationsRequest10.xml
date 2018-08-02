@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DeleteCustomerAssociationsRequest>
+	<Version>1.0</Version>
+	<TransactionHeader>
+		<SenderID></SenderID>
+		<ReceiverID></ReceiverID>
+		<CountryCode></CountryCode>
+    <LoginID>CSGroup</LoginID>
+    <Password>Password</Password>
+    <Company>CSG</Company>
+		<TransactionID></TransactionID>
+	</TransactionHeader>
+  <CustomerAssociationDelete>    
+    <CustomerNumber>1091022</CustomerNumber>
+    <FriendsAndFamilyID>000000000000</FriendsAndFamilyID>    
+    <Surname></Surname>
+    <Postcode></Postcode>
+  </CustomerAssociationDelete>
+</DeleteCustomerAssociationsRequest>

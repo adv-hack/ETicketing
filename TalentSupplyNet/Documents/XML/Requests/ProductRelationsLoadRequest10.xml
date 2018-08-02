@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ProductRelationsLoadRequest>
+	<Version>1.0</Version>
+	<TransactionHeader>
+		<SenderID></SenderID>
+		<ReceiverID></ReceiverID>
+		<CountryCode></CountryCode>
+		<LoginID></LoginID>
+		<Password></Password>
+		<Company></Company>
+		<TransactionID></TransactionID>
+	</TransactionHeader>
+	<ProductRelations Total="2">
+		<ProductRelation BusinessUnit="UNITEDKINGDOM" Partner="*ALL" Mode="REPLACE">
+			<Defaults>
+				<LastProductAfterLevel>6</LastProductAfterLevel>
+			</Defaults>	
+			<Relations Total="1">
+				<Relation Qualifier="1" Mode="ADD">
+					<Product Level1="" Level2="" Level3="" Level4="" Level5="" Level6="" Level7="" Level8="" Level9="" Level10=""></Product>
+					<RelatedProduct Level1="" Level2="" Level3="" Level4="" Level5="" Level6="" Level7="" Level8="" Level9="" Level10=""></RelatedProduct> 
+				</Relation>
+			</Relations>
+		</ProductRelation>
+		<ProductRelation BusinessUnit="FRANCE" Partner="*ALL" Mode="REPLACE">
+			<Defaults>
+				<LastProductAfterLevel>5</LastProductAfterLevel>
+			</Defaults>
+			<Relations Total="1">
+				<Relation Qualifier="1" Mode="ADD">
+					<Product Level1="" Level2="" Level3="" Level4="" Level5="" Level6="" Level7="" Level8="" Level9="" Level10=""></Product>
+					<RelatedProduct Level1="" Level2="" Level3="" Level4="" Level5="" Level6="" Level7="" Level8="" Level9="" Level10=""></RelatedProduct> 
+				</Relation>
+			</Relations>
+		</ProductRelation>
+	</ProductRelations>
+</ProductRelationsLoadRequest>

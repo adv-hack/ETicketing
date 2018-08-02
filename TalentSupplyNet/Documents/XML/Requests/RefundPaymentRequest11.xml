@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RefundPaymentRequest>
+	<Version>1.1</Version>
+	<TransactionHeader>
+		<SenderID></SenderID>
+		<ReceiverID></ReceiverID>
+		<CountryCode></CountryCode>
+		<LoginID>IRIS</LoginID>
+		<Password>IRIS</Password>
+		<Company>IRIS</Company>
+		<TransactionID></TransactionID>
+	</TransactionHeader>
+	<RefundPayment>
+		<RefundCustomerNo>11400</RefundCustomerNo>
+		<RefundMode>Inline</RefundMode>
+		<RefundMethod>Cash</RefundMethod>
+		<Product>
+			<CustomerNo>11400</CustomerNo>
+			<ProductCode>HMCSP5</ProductCode>
+      <PriceBand>RS</PriceBand>
+      <PriceCode>A</PriceCode>
+      <CancelAllMatching>Y</CancelAllMatching>
+		</Product>
+	</RefundPayment>
+</RefundPaymentRequest>

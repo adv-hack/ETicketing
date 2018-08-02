@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RetrieveTransactionProgressResponse>
+  <TransactionHeader>
+    <SenderID></SenderID>
+    <ReceiverID></ReceiverID>
+    <CountryCode></CountryCode>
+    <LoginID></LoginID>
+    <Password></Password>
+    <Company></Company>
+    <TransactionID></TransactionID>
+  </TransactionHeader>
+  <TransactionProgress>
+      <TransactionId></TransactionId>
+      <ReturnCode></ReturnCode>
+      <Complete>True</Complete>
+      <TotalRecords>100</TotalRecords>
+      <ProcessedRecords>50</ProcessedRecords>
+  </TransactionProgress>
+</RetrieveTransactionProgressResponse>

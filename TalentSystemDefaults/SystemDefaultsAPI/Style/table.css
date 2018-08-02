@@ -1,0 +1,16 @@
+﻿
+.text-field-type {
+    border:none;
+    table-layout: fixed;
+    width: 900px;
+    padding-bottom:0em;
+    padding-top:0em;   
+    border-collapse: collapse;
+ }
+
+.boolean-field-type {
+      border:none;
+      table-layout: fixed;
+      width: 500px;
+}
+

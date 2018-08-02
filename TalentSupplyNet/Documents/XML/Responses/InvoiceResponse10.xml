@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<InvoiceResponse>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID />
+    <ReceiverID />
+    <ErrorStatus ErrorNumber=""></ErrorStatus>
+    <DocumentID />
+    <TransactionID />
+    <Company />
+    <TimeStamp />
+  </TransactionHeader>
+ 
+  <Invoices>
+    <Invoice>
+      <InvoiceHeader>
+        <InvoiceType>Invoice</InvoiceType>
+        <InvoiceNumber>202540088</InvoiceNumber>
+        <InvoiceDate>20040217</InvoiceDate>
+        <CustomerPO>CST400222</CustomerPO>
+        <OriginalOrderNumber>205544811</OriginalOrderNumber>
+        <OriginalOrderDate>20070117</OriginalOrderDate>
+        <ShipToSuffix>00A</ShipToSuffix>
+        <DispatchSequence>00A</DispatchSequence>
+      </InvoiceHeader>
+      <Comments>
+        <CommentLine>
+          <CommentText></CommentText>
+          <CommentLineNumber></CommentLineNumber>
+        </CommentLine>
+      </Comments>
+      <IMAccountNumber>UK20451887000</IMAccountNumber>
+      <Address Type="Customer">
+        <Name></Name>
+        <Attention> </Attention>=
+        <AddressLine1></AddressLine1>
+        <AddressLine2></AddressLine2>
+        <AddressLine3></AddressLine3>
+        <AddressLine4></AddressLine4>
+        <City></City>
+        <Province></Province>
+        <PostalCode></PostalCode>
+        <CountryCode></CountryCode>
+      </Address>
+      
+      <Address Type="ShipTo">
+        <Name></Name>
+        <Attention> </Attention>=
+        <AddressLine1></AddressLine1>
+        <AddressLine2></AddressLine2>
+        <AddressLine3></AddressLine3>
+        <AddressLine4></AddressLine4>
+        <City></City>
+        <Province></Province>
+        <PostalCode></PostalCode>
+        <CountryCode></CountryCode>
+      </Address>
+      <Address Type="ShipFrom">
+        <Name></Name>
+        <Attention> </Attention>=
+        <AddressLine1></AddressLine1>
+        <AddressLine2></AddressLine2>
+        <AddressLine3></AddressLine3>
+        <AddressLine4></AddressLine4>
+        <City></City>
+        <Province></Province>
+        <PostalCode></PostalCode>
+        <CountryCode></CountryCode>
+      </Address>
+      <VAT>
+        <VATNumber>UK445522668</VATNumber>
+      </VAT>
+      <Currency>
+        <CurrencyCode>GBP</CurrencyCode>
+      </Currency>
+      <PaymentTerms>
+        <TermsCode>66</TermsCode>
+      </PaymentTerms>
+      <PaymentDue>
+        <PaymentDueDate>20040231</PaymentDueDate>
+      </PaymentDue>
+
+      <LineItemHeader>
+        <LineItem LineNumber="1">
+          <Product SKU="P803551" InvoicedQuantity="3">
+            <CustomerSKU></CustomerSKU>
+            <EANCode>1234567891230</EANCode>
+            <ManufacturerSKU>VEHH887A6</ManufacturerSKU>
+            <SKUDescription1>INTEGRATED CD ROM</SKUDescription1>
+            <SKUDescription2>2X RW/4X DVD</SKUDescription2>
+          </Product>
+          <SerialNumberHeader>
+            <SerialNumber>SE445262</SerialNumber>
+            <SerialNumber>SE445263</SerialNumber>
+            <SerialNumber>SE445264</SerialNumber>
+          </SerialNumberHeader>
+          <Tax Type="VAT">20.02</Tax>
+          <LineMonetaryInfo>
+            <UnitPrice>32.11</UnitPrice>
+            <LineItemAmount>96.33</LineItemAmount>
+          </LineMonetaryInfo>
+        </LineItem>
+      </LineItemHeader>
+
+      <TotalInformation Type="TotalQuantity">3</TotalInformation>
+      <TotalInformation Type="OrderLines">1</TotalInformation>
+      <TotalFinancial Type="TotalAmountDue">136.35</TotalFinancial>
+      <TotalFinancial Type="TotalLineItemAmount">96.33</TotalFinancial>
+      <TotalFinancial Type="TotalTaxableAmount">116.33</TotalFinancial>
+      <TotalFinancial Type="TotalCharges">20</TotalFinancial>
+      <TotalFinancial Type="TotalTaxAmount">20.02</TotalFinancial>
+
+      <Final Type="FinalTaxableAmount">96.33</Final>
+      <Final Type="FinalTaxAmount">20.02</Final>
+
+    </Invoice>
+
+  </Invoices>
+
+</InvoiceResponse>

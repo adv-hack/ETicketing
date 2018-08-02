@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<OrderResponse>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID />
+    <ReceiverID />
+    <ErrorStatus ErrorNumber=""></ErrorStatus>
+    <DocumentID />
+    <TransactionID />
+    <Company />
+    <TimeStamp />
+  </TransactionHeader>
+
+  <OrderInfo>
+    <OrderNumbers>
+      <BranchOrderNumber></BranchOrderNumber>
+      <CustomerPO></CustomerPO>
+      <ErrorStatus ErrorNumber=""></ErrorStatus>
+      <ThirdPartyFreight></ThirdPartyFreight>
+     
+      <Address Type="ShipTo">
+        <Name></Name>
+        <Attention> </Attention>=
+        <AddressLine1></AddressLine1>
+        <AddressLine2></AddressLine2>
+        <AddressLine3></AddressLine3>
+        <AddressLine4></AddressLine4>
+        <City></City>
+        <Province></Province>
+        <PostalCode></PostalCode>
+        <CountryCode></CountryCode>
+      </Address>
+
+      <AddressErrorMessage AddressErrorType=""></AddressErrorMessage>
+      <ContractNumber></ContractNumber>
+     
+      <OrderSuffix Suffix="">
+        <DistributionWeight></DistributionWeight>
+        <SuffixErrorResponse SuffixErrorType=""></SuffixErrorResponse>
+        <Carrier CarrierCode=""></Carrier>
+        <FreightRate></FreightRate>        
+        <LineInformation>         
+          <ProductLine>
+            <LineError></LineError>
+            <SKU></SKU>
+            <UnitPrice></UnitPrice>
+            <WestCoastLineNumber></WestCoastLineNumber>
+            <CustomerLineNumber></CustomerLineNumber>
+            <ShipFromBranch></ShipFromBranch>
+            <OrderQuantity></OrderQuantity>
+            <AllocatedQuantity></AllocatedQuantity>
+            <BackOrderedQuantity></BackOrderedQuantity>
+            <BackOrderETADate></BackOrderETADate>
+            <PriceDerivedFlag></PriceDerivedFlag>
+            <ForeignCurrency></ForeignCurrency>
+            <LineFreightRate></LineFreightRate>
+            <TransitDays></TransitDays>
+            <LineBillToSuffix></LineBillToSuffix>
+            <CustomerSKU></CustomerSKU>
+          </ProductLine>         
+          <CommentLine>
+            <CommentText></CommentText>
+            <CommentLineNumber></CommentLineNumber>
+          </CommentLine>     
+        </LineInformation>
+      </OrderSuffix>  
+    </OrderNumbers>
+  </OrderInfo>
+</OrderResponse>

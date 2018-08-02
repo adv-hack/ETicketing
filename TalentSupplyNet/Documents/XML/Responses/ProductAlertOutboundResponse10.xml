@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ProductAlertOutboundResponse>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID />
+    <ReceiverID />
+    <ErrorStatus ErrorNumber=""></ErrorStatus>
+    <DocumentID />
+    <TransactionID />
+    <Company />
+    <TimeStamp />
+  </TransactionHeader>
+
+  <ProductAlerts>
+
+    <ProductAlert>
+      <Product_Code>Bh770153</Product_Code>
+      <Description>Brake Hose Bh770153</Description>
+      <Company>Csg</Company>
+      <Email_Address>Marksmith@Optionchain.Co.Uk</Email_Address>
+      <First_Name>Mark</First_Name>
+      <Last_Name>Smith</Last_Name>
+      <Quantity>8</Quantity>
+    </ProductAlert>
+
+    <ProductAlert>
+      <Product_Code>Bh1212</Product_Code>
+      <Description>Bh1212</Description>
+      <Company>Csg</Company>
+      <Email_Address>Fredsmith@Optionchain.Co.Uk</Email_Address>
+      <First_Name>Fred</First_Name>
+      <Last_Name>Smith</Last_Name>
+      <Quantity>999975.99</Quantity>
+    </ProductAlert>
+
+    <ProductAlert>
+      <Product_Code>Ca1182r</Product_Code>
+      <Description>Brake Caliper Ca 1182r</Description>
+      <Company>Csg</Company>
+      <Email_Address>Harrysmith@Optionchain.Co.Uk</Email_Address>
+      <First_Name>Harry</First_Name>
+      <Last_Name>Smith</Last_Name>
+      <Quantity>8</Quantity>
+    </ProductAlert>
+ 
+  </ProductAlerts>
+
+</ProductAlertOutboundResponse>

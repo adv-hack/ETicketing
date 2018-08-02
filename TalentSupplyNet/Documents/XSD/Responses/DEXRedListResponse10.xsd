@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="RedList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="RedListEntry">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EventName" type="xs:string" minOccurs="1" maxOccurs="1" />
+              <xs:element name="EventDate" type="xs:string" minOccurs="1" maxOccurs="1" />
+              <xs:element name="EventID" type="xs:string" minOccurs="1" maxOccurs="1" />
+              <xs:element name="VenueName" type="xs:string" minOccurs="1" maxOccurs="1" />
+              <xs:element name="VenueID" type="xs:string" minOccurs="1" maxOccurs="1" />
+              <xs:element name="CustomerName" type="xs:string" minOccurs="1" maxOccurs="1" />
+              <xs:element name="BasketRef" type="xs:string" minOccurs="1" maxOccurs="1" />
+              <xs:element name="TicketID" type="xs:string" minOccurs="1" maxOccurs="1" />
+              <xs:element name="TicketSaleDate" type="xs:string" minOccurs="1" maxOccurs="1" />
+              <xs:element name="TicketPrintDate" type="xs:string" minOccurs="1" maxOccurs="1" />
+              <xs:element name="TicketSaleTerminal" type="xs:string" minOccurs="1" maxOccurs="1" />
+              <xs:element name="Barcode" type="xs:string" minOccurs="1" maxOccurs="1" />
+              <xs:element name="BarcodeType" type="xs:string" minOccurs="1" maxOccurs="1" />
+              <xs:element name="AreaName" type="xs:string" minOccurs="1" maxOccurs="1" />
+              <xs:element name="AreaID" type="xs:string" minOccurs="1" maxOccurs="1" />
+              <xs:element name="SectionName" type="xs:string" minOccurs="1" maxOccurs="1" />
+              <xs:element name="SectionID" type="xs:string" minOccurs="1" maxOccurs="1" />
+              <xs:element name="RowNo" type="xs:string" minOccurs="1" maxOccurs="1" />
+              <xs:element name="SeatNo" type="xs:string" minOccurs="1" maxOccurs="1" />
+              <xs:element name="EntranceDesc" type="xs:string" minOccurs="1" maxOccurs="1" />
+              <xs:element name="GateDesc" type="xs:string" minOccurs="1" maxOccurs="1" />
+              <xs:element name="PriceType" type="xs:string" minOccurs="1" maxOccurs="1" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

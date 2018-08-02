@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="TicketBookerRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Version" type="xs:decimal" />
+        <xs:element name="TransactionHeader">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SenderID" />
+              <xs:element name="ReceiverID" />
+              <xs:element name="CountryCode" />
+              <xs:element name="LoginID" />
+              <xs:element name="Password" />
+              <xs:element name="Company" />
+              <xs:element name="TransactionID" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Header">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RegisterCustomers" type="xs:string" />
+              <xs:element name="ContinueSaleOnFailedRegistration" />
+              <xs:element name="TakePayments" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Details">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TicketBookerCustomerRequest">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="CustomerAdd" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="ContactTitle" />
+                          <xs:element name="ContactInitials" />
+                          <xs:element name="ContactForename" />
+                          <xs:element name="ContactSurname" />
+                          <xs:element name="Salutation" />
+                          <xs:element name="CompanyName" />
+                          <xs:element name="PositionInCompany" />
+                          <xs:element name="AddressLine1" />
+                          <xs:element name="AddressLine3" />
+                          <xs:element name="AddressLine4" />
+                          <xs:element name="AddressLine5" />
+                          <xs:element name="PostCode" />
+                          <xs:element name="Gender" />
+                          <xs:element name="HomeTelephoneNumber" />
+                          <xs:element name="EmailAddress" />
+                          <xs:element name="DateOfBirth" />
+                          <xs:element name="ContactViaMail" />
+                          <xs:element name="Subscription1" />
+                          <xs:element name="Subscription2" />
+                          <xs:element name="Subscription3" />
+                          <xs:element name="MailFlag1" />
+                          <xs:element name="ExternalId1" />
+                          <xs:element name="ExternalId2" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Product">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="ProductCode" type="xs:string" />
+                          <xs:element name="StadiumCode" />
+                          <xs:element name="StandCode" />
+                          <xs:element name="AreaCode" />
+                          <xs:element name="CustomerNumber" type="xs:string" />
+                          <xs:element name="PriceCode" type="xs:string" minOccurs="0" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Item">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="PriceBand" type="xs:string" />
+                          <xs:element name="Quantity" type="xs:unsignedByte" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Payment">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="PaymentMode" />
+                          <xs:element name="PaymentMethod" />
+                          <xs:element name="ChequeNumber" minOccurs="0"/>
+                          <xs:element name="ChequeAccount" minOccurs="0" />
+                          <xs:element name="SessionId" />
+                        
+                          <xs:element name="CardNumber" />
+                          <xs:element name="ExpiryDate" />
+                          <xs:element name="StartDate" />
+                          <xs:element name="IssueNumber" />
+                          <xs:element name="CV2Number" />
+                          <xs:element name="PaymentDetails">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="Reference" />
+                                <xs:element name="Name" />
+                                <xs:element name="Address1" />
+                                <xs:element name="Address2" />
+                                <xs:element name="Address3" />
+                                <xs:element name="Address4" />
+                                <xs:element name="Country" />
+                                <xs:element name="PostCode" />
+                                <xs:element name="Telephone1" />
+                                <xs:element name="Telephone2" />
+                                <xs:element name="Telephone3" />
+                                <xs:element name="EmailAddress" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PNAResponse>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID />
+    <ReceiverID />
+    <ErrorStatus ErrorNumber=""></ErrorStatus>
+    <DocumentID />
+    <TransactionID />
+    <Company />
+    <TimeStamp />
+  </TransactionHeader>
+
+  <PriceAndAvailability SKU="" Quantity="">
+  <Price></Price>
+  <SpecialPriceFlag></SpecialPriceFlag>
+	  <AlternateSKU></AlternateSKU>
+	  <AlternateSKUOccurs></AlternateSKUOccurs>
+		<VendorNumber></VendorNumber>
+  <Description></Description>
+  <ReserveInventoryFlag></ReserveInventoryFlag>
+  <AvailableRebQty></AvailableRebQty>
+  <Branch ID="" Name=""></Branch>
+  <Availability></Availability> 
+  <OnOrder></OnOrder> 
+  <ETADate></ETADate> 
+ </PriceAndAvailability>
+</PNAResponse>

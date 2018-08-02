@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ProductOptionsLoadRequest>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID></SenderID>
+    <ReceiverID></ReceiverID>
+    <CountryCode></CountryCode>
+    <LoginID></LoginID>
+    <Password></Password>
+    <Company></Company>
+    <TransactionID></TransactionID>
+  </TransactionHeader>
+  <OptionTypeDefinitions Total="4" Mode="REPLACE">
+    <DefaultBusinessUnit>UNITEDKINGDOM</DefaultBusinessUnit>
+    <DefaultPartner>*ALL</DefaultPartner>
+    <OptionType Mode="ADD">
+      <Code>WAISTSIZE</Code>
+      <Details Language="ENG" BusinessUnit="UNITEDKINGDOM" Partner="*ALL">
+        <Description>Waist Size</Description>
+      </Details>
+    </OptionType>
+    <OptionType Mode="ADD">
+      <Code>LEGLENGTH</Code>
+      <Details Language="ENG" BusinessUnit="UNITEDKINGDOM" Partner="*ALL">
+        <Description>Leg Length</Description>
+      </Details>
+    </OptionType>
+    <OptionType Mode="ADD">
+      <Code>CHESTSIZE</Code>
+      <Details Language="ENG" BusinessUnit="UNITEDKINGDOM" Partner="*ALL">
+        <Description>Chect Size</Description>
+      </Details>
+    </OptionType>
+    <OptionType Mode="ADD">
+      <Code>COLOUR</Code>
+      <Details Language="ENG" BusinessUnit="UNITEDKINGDOM" Partner="*ALL">
+        <Description>Colour</Description>
+      </Details>
+    </OptionType>
+  </OptionTypeDefinitions>
+  <OptionDefinitions Total="7" Mode="REPLACE">
+    <DefaultBusinessUnit>UNITEDKINGDOM</DefaultBusinessUnit>
+    <DefaultPartner>*ALL</DefaultPartner>
+    <Option Mode="ADD">
+      <Code>38</Code>
+      <Details Language="ENG" BusinessUnit="UNITEDKINGDOM" Partner="*ALL">
+        <Description>38"</Description>
+      </Details>
+    </Option>
+    <Option Mode="ADD">
+      <Code>40</Code>
+      <Details Language="ENG" BusinessUnit="UNITEDKINGDOM" Partner="*ALL">
+        <Description>40"</Description>
+      </Details>
+    </Option>
+    <Option Mode="ADD">
+      <Code>42</Code>
+      <Details Language="ENG" BusinessUnit="UNITEDKINGDOM" Partner="*ALL">
+        <Description>42"</Description>
+      </Details>
+    </Option>
+    <Option Mode="ADD">
+      <Code>R</Code>
+      <Details Language="ENG" BusinessUnit="UNITEDKINGDOM" Partner="*ALL">
+        <Description>Regular</Description>
+      </Details>
+    </Option>
+    <Option Mode="ADD">
+      <Code>L</Code>
+      <Details Language="ENG" BusinessUnit="UNITEDKINGDOM" Partner="*ALL">
+        <Description>Long</Description>
+      </Details>
+    </Option>
+    <Option Mode="ADD">
+      <Code>RED</Code>
+      <Details Language="ENG" BusinessUnit="UNITEDKINGDOM" Partner="*ALL">
+        <Description>Red</Description>
+      </Details>
+    </Option>
+    <Option Mode="ADD">
+      <Code>BLU</Code>
+      <Details Language="ENG" BusinessUnit="UNITEDKINGDOM" Partner="*ALL">
+        <Description>Blue</Description>
+      </Details>
+    </Option>
+  </OptionDefinitions>
+  <ProductOptions Total="1">
+    <ProductOption BusinessUnit="UNITEDKINGDOM" Partner="*ALL" Mode="REPLACE" Total="3">
+      <Options Action="ADD" MasterProduct="6789" SKUAction="APPEND">
+        <OptionType AppendSequence="1" DisplayOrder="1" DisplayType="LIST" OptionType="CHESTSIZE">
+          <Option SKUSuffix="38" DisplayOrder="1">38</Option>
+          <Option SKUSuffix="40" DisplayOrder="2">40</Option>
+          <Option SKUSuffix="42" DisplayOrder="3">42</Option>
+        </OptionType>
+      </Options>
+      <Options Action="ADD" MasterProduct="1234" SKUAction="APPEND">
+        <OptionType AppendSequence="1" DisplayOrder="1" DisplayType="LIST" OptionType="WAISTSIZE">
+          <Option SKUSuffix="38" DisplayOrder="1">38</Option>
+          <Option SKUSuffix="40" DisplayOrder="2">40</Option>
+        </OptionType>
+        <OptionType AppendSequence="2" DisplayOrder="2" DisplayType="DDLIST" OptionType="LEGLENGTH">
+          <Option SKUSuffix="REG" DisplayOrder="1">R</Option>
+          <Option SKUSuffix="LNG" DisplayOrder="2">L</Option>
+        </OptionType>
+      </Options>
+      <Options Action="ADD" MasterProduct="ABCD" SKUAction="SUBSTITUTE">
+        <OptionType DisplayOrder="1" DisplayType="DDL" OptionType="COLOUR">
+          <Option SubstituteSKU="WXYZRED" DisplayOrder="1">RED</Option>
+          <Option SubstituteSKU="WXYZBLU" DisplayOrder="2">BLU</Option>
+        </OptionType>
+      </Options>
+    </ProductOption>
+  </ProductOptions>
+</ProductOptionsLoadRequest>

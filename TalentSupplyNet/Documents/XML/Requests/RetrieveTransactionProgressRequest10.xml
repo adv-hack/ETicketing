@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RetrieveTransactionProgressRequest>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID></SenderID>
+    <ReceiverID></ReceiverID>
+    <CountryCode></CountryCode>
+    <LoginID></LoginID>
+    <Password></Password>
+    <Company></Company>
+    <TransactionID></TransactionID>
+  </TransactionHeader>
+  <RetrieveTransactionProgress>
+    <TransactionId></TransactionId>
+  </RetrieveTransactionProgress>
+</RetrieveTransactionProgressRequest>

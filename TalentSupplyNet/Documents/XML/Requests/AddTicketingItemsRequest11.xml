@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AddTicketingItemsRequest>
+	<Version>1.1</Version>
+	<TransactionHeader>
+		<SenderID></SenderID>
+		<ReceiverID></ReceiverID> 
+		<CountryCode></CountryCode>
+		<LoginID>COMPUTICKET</LoginID>
+		<Password>COMPUTICKET</Password>
+		<Company>MMTPARTNER</Company>
+		<TransactionID></TransactionID>
+	</TransactionHeader>
+	<Header>
+		<SessionID>301505272103022831007700619107448320</SessionID>
+		<ProductCode>HPL151</ProductCode>
+		<StandCode>E</StandCode>
+		<AreaCode>EA</AreaCode>
+		<CustomerNumber>000000010515</CustomerNumber>
+    <ExcludeRestrictedSeats>Y</ExcludeRestrictedSeats>
+    <DefaultPrice>0</DefaultPrice>
+    <Membership>
+      <PriceCode></PriceCode>
+    </Membership>
+    <ReservationMethod></ReservationMethod>
+	</Header>
+	<Item>
+		<PriceBand>A</PriceBand>
+		<Quantity>1</Quantity>
+    <RowSeat></RowSeat>
+  </Item>
+</AddTicketingItemsRequest>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AddTicketingSeasonTicketRenewalsRequest>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID></SenderID>
+    <ReceiverID></ReceiverID>
+    <CountryCode></CountryCode>
+    <LoginID>jonathan</LoginID>
+    <Password>jonathan</Password>
+    <Company>CSG</Company>
+    <TransactionID></TransactionID>
+  </TransactionHeader>
+  <Header>
+    <SessionID>300308192029376182659612099</SessionID>
+    <CustomerNumber>000000000000</CustomerNumber>
+    <StadiumCode>AA</StadiumCode>
+    <IgnoreFriendsAndFamily>Y</IgnoreFriendsAndFamily>
+  </Header>
+</AddTicketingSeasonTicketRenewalsRequest>

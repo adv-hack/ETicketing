@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CustomerSearchRequest>
+  <Version>1.1</Version>
+  <TransactionHeader>
+    <SenderID></SenderID>
+    <ReceiverID></ReceiverID>
+    <CountryCode></CountryCode>
+    <LoginID>IRIS</LoginID>
+    <Password>IRIS</Password>
+    <Company>IRIS</Company>
+    <TransactionID></TransactionID>
+  </TransactionHeader>
+  <CustomerSearch>
+    <ResultsLimit></ResultsLimit>
+    <Start></Start>
+    <Length></Length>
+    <SortOrder></SortOrder>
+    <Draw></Draw>
+    <CustomerNumber></CustomerNumber>
+    <Forename></Forename>
+    <Surname>Carr</Surname>
+    <AddressLine1></AddressLine1>
+    <AddressLine2></AddressLine2>
+    <AddressLine3></AddressLine3>
+    <AddressLine4></AddressLine4>
+    <Postcode></Postcode>
+    <DOB></DOB>
+    <Email></Email>
+  </CustomerSearch>
+</CustomerSearchRequest>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ProductListRequest>
+  <Version>1.1</Version>
+  <TransactionHeader>
+    <SenderID></SenderID>
+    <ReceiverID></ReceiverID>
+    <CountryCode></CountryCode>
+    <LoginID>CSGroup</LoginID>
+    <Password>Password</Password>
+    <Company>CSG</Company>
+    <TransactionID></TransactionID>
+  </TransactionHeader>
+
+  <ProductList>
+    <StadiumCodes>AA,BB,CC</StadiumCodes>
+    <CustomerNo>000000000012</CustomerNo>
+    <ProductType></ProductType>
+  </ProductList>
+
+  
+
+</ProductListRequest>
+  

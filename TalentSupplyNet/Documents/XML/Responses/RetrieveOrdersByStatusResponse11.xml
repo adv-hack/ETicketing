@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RetrieveOrdersByStatusResponse>
+  <Version>1.1</Version>
+  <TransactionHeader>
+    <SenderID></SenderID>
+    <ReceiverID></ReceiverID>
+    <ErrorStatus ErrorNumber="" />
+    <DocumentID>e882c4c2-b274-407c-9fbe-9b16cf0d6421</DocumentID>
+    <TransactionID>69728</TransactionID>
+    <TimeStamp>2016-03-03T12:02:06</TimeStamp>
+  </TransactionHeader>
+  <Response>
+    <Orders>
+      <Order>
+        <OrderHeaderInformation>
+          <CustomerId>000000000101</CustomerId>
+          <WebOrderNo>BOXOFFICE9020</WebOrderNo>
+          <BusinessUnit>BOXOFFICE</BusinessUnit>
+          <Partner>PUBLIC</Partner>
+          <CreatedDate>01/03/2016 09:59:38</CreatedDate>
+          <LastActivityDate>01/03/2016 10:00:38</LastActivityDate>
+          <AddressingInformation>
+            <ContactName> Ian St. John</ContactName>
+            <AddressLine1></AddressLine1>
+            <AddressLine2>4, Booths Park</AddressLine2>
+            <AddressLine3>Knutsford</AddressLine3>
+            <AddressLine4>Cheshire</AddressLine4>
+            <AddressLine5>Cheshire</AddressLine5>
+            <PostCode>WA16 8QZ</PostCode>
+            <Country>United Kingdom</Country>
+            <ContactEmail></ContactEmail>
+            <SpecialInstructions1></SpecialInstructions1>
+            <SpecialInstructions2></SpecialInstructions2>
+            <ShippedDate></ShippedDate>
+            <ProjectedDeliveryDate>06/03/2016 09:59:38</ProjectedDeliveryDate>
+            <DeliveryType>UK 3-5</DeliveryType>
+            <DeliveryTypeDescription>UK Standard Delivery</DeliveryTypeDescription>
+          </AddressingInformation>
+          <BillingAddressInformation>
+            <ContactName> Ian St. John</ContactName>
+            <ContactTitle>Mr</ContactTitle>
+            <ContactInitials></ContactInitials>
+            <ContactForename>Ian</ContactForename>
+            <ContactSurname>St. John</ContactSurname>
+            <ContactCompanyName></ContactCompanyName>
+            <ContactEmail>ianstjohn@googlemail.com</ContactEmail>
+            <AddressLine1></AddressLine1>
+            <AddressLine2>101a New Chester Road</AddressLine2>
+            <AddressLine3>Wirral</AddressLine3>
+            <AddressLine4></AddressLine4>
+            <AddressLine5>Merseyside</AddressLine5>
+            <PostCode>CH624RA</PostCode>
+            <Country></Country>
+            <MobileNumber></MobileNumber>
+            <TelephoneNumber>XD</TelephoneNumber>
+            <WorkNumber></WorkNumber>
+            <FaxNumber></FaxNumber>
+            <OtherNumber></OtherNumber>
+          </BillingAddressInformation>
+          <TrackingNo></TrackingNo>
+          <Language></Language>
+          <Warehouse></Warehouse>
+          <Currency>GBP</Currency>
+          <ShippingCode></ShippingCode>
+          <GiftMessage>
+            <IsGift>True</IsGift>
+            <RecipientName>J. Smith</RecipientName>
+            <GiftText>Nicest neighbour I ever had</GiftText>
+          </GiftMessage>
+          <DeliveryNotes>Put it under the mat if we're not in.</DeliveryNotes>
+          <PurchaseOrder></PurchaseOrder>
+          <SmartcardNumber></SmartcardNumber>
+          <PaymentOptions>
+            <PaymentType>Credit Card</PaymentType>
+            <TotalOrderItemsValueGross>55.500</TotalOrderItemsValueGross>
+            <TotalOrderItemsValueNet>0.000</TotalOrderItemsValueNet>
+            <TotalorderItemsValueTax>0.000</TotalorderItemsValueTax>
+            <TotalDeliveryGross>0.000</TotalDeliveryGross>
+            <TotalDeliveryNet>0.000</TotalDeliveryNet>
+            <TotalDeliveryTax>0.000</TotalDeliveryTax>
+            <PromotionDescription></PromotionDescription>
+            <PromotionValue>0.000</PromotionValue>
+            <PromotionPercentage>0.00000</PromotionPercentage>
+            <TotalOrderValue>55.500</TotalOrderValue>
+            <TotalAmountCharged>55.500</TotalAmountCharged>
+            <CreditCardType></CreditCardType>
+          </PaymentOptions>
+          <TaxOptions>
+            <TaxInclusive1>False</TaxInclusive1>
+            <TaxDisplay1>False</TaxDisplay1>
+            <TaxCode1></TaxCode1>
+            <TaxAmount1>0.000</TaxAmount1>
+            <TaxInclusive2>False</TaxInclusive2>
+            <TaxDisplay2>False</TaxDisplay2>
+            <TaxCode2></TaxCode2>
+            <TaxAmount2>0.000</TaxAmount2>
+            <TaxInclusive3>False</TaxInclusive3>
+            <TaxDisplay3>False</TaxDisplay3>
+            <TaxCode3></TaxCode3>
+            <TaxAmount3>0.000</TaxAmount3>
+            <TaxInclusive4>False</TaxInclusive4>
+            <TaxDisplay4>False</TaxDisplay4>
+            <TaxCode4></TaxCode4>
+            <TaxAmount4>0.000</TaxAmount4>
+            <TaxInclusive5>False</TaxInclusive5>
+            <TaxDisplay5>False</TaxDisplay5>
+            <TaxCode5></TaxCode5>
+            <TaxAmount5>0.000</TaxAmount5>
+          </TaxOptions>
+        </OrderHeaderInformation>
+        <OrderDetailsInformation>
+          <Item>
+            <LineNumber>1</LineNumber>
+            <SKU>141</SKU>
+            <ProductDescription>Kennels Candle</ProductDescription>
+            <Quantity>3.000</Quantity>
+            <QuantityShipped></QuantityShipped>
+            <MasterProduct></MasterProduct>
+            <PromotionValue>0.000</PromotionValue>
+            <PromotionPercentage>0.00000</PromotionPercentage>
+            <PaymentOptions>
+              <PurchasePriceGross>18.500</PurchasePriceGross>
+              <PurchasePriceNet>0.000</PurchasePriceNet>
+              <PurchasePriceTax>0.000</PurchasePriceTax>
+              <DeliveryGross>0.000</DeliveryGross>
+              <DeliveryNet>0.000</DeliveryNet>
+              <DeliveryTax>0.000</DeliveryTax>
+              <TaxCode></TaxCode>
+              <LinePriceGross>55.500</LinePriceGross>
+              <LinePriceNet>0.000</LinePriceNet>
+              <LinePriceTax>0.000</LinePriceTax>
+            </PaymentOptions>
+            <Instructions></Instructions>
+          </Item>
+        </OrderDetailsInformation>
+      </Order>
+    </Orders>
+  </Response>
+</RetrieveOrdersByStatusResponse>

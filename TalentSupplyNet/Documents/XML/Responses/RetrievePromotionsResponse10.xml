@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RetrievePromotionsResponse>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID></SenderID>
+    <ReceiverID></ReceiverID>
+    <CountryCode></CountryCode>
+    <LoginID>CSGroup</LoginID>
+    <Password>Password</Password>
+    <Company>CSG</Company>
+    <TransactionID></TransactionID>
+  </TransactionHeader>
+
+  <PromotionList>
+    <Response>
+      <ReturnCode></ReturnCode>
+    </Response>
+  </PromotionList>
+    <Promotions>
+    <Promotion>
+    <PromotionType>1</PromotionType>
+    <Priority></Priority>
+    <MatchType></MatchType>
+    <ProductCode>12345</ProductCode>
+    <Stand></Stand>
+    <Area></Area>
+    <PreReq></PreReq>
+    <PriceCodes>
+      <PriceCode>1111</PriceCode>
+      <PriceCode>2222</PriceCode>
+    </PriceCodes>
+    <PriceBand>2</PriceBand>
+    <ShortDescription>Promotions</ShortDescription>
+    <LongDescription>Promotions Description</LongDescription>
+    <CompetitionCode>222</CompetitionCode>
+    <MaxDiscountPerProduct>5</MaxDiscountPerProduct>
+    <MaxDiscountPerPromotion>10</MaxDiscountPerPromotion>
+    <StartDate>2009-03-01</StartDate>
+    <EndDate>2009-03-30</EndDate>
+    </Promotion>
+    </Promotions>
+</RetrievePromotionsResponse>
+
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AmendTicketingOrderRequest>
+	<Version>1.0</Version>
+	<TransactionHeader>
+		<SenderID></SenderID>
+		<ReceiverID></ReceiverID>
+		<CountryCode></CountryCode>
+		<LoginID>IRIS</LoginID>
+		<Password>IRIS</Password>
+		<Company>IRIS</Company>
+		<TransactionID></TransactionID>
+	</TransactionHeader>
+	<AmendTicketingOrder>
+    <PaymentReference>1234567</PaymentReference>
+		<CustomerNumber>000000107771</CustomerNumber>
+		<Item>	
+			<ProductCode>FORTH3</ProductCode>
+			<Seat>ES/AR1/B/0051</Seat>
+			<CustomerNumber>000000107772</CustomerNumber>
+		</Item>
+    <Item>
+      <ProductCode>FORTH3</ProductCode>
+      <Seat>ES/AR1/B/0053</Seat>
+      <CustomerNumber>000000107773</CustomerNumber>
+    </Item>
+	</AmendTicketingOrder>
+</AmendTicketingOrderRequest>

@@ -1,0 +1,51 @@
+<!--When creating v1.1, consider using this format-->
+
+
+
+
+
+
+
+
+
+
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ProductStockLoadRequest>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID></SenderID>
+    <ReceiverID></ReceiverID>
+    <CountryCode></CountryCode>
+    <LoginID></LoginID>
+    <Password></Password>
+    <Company></Company>
+    <TransactionID></TransactionID>
+  </TransactionHeader>
+  <WarehouseDefinitions Total="1" Mode="REPLACE">
+    <WarehouseDefinition Mode="ADD">
+      <Code>01</Code>
+      <Description Language="ENG">Web Shop</Description>
+    </WarehouseDefinition>
+  </WarehouseDefinitions>
+
+
+  <Warehouses>
+    <Warehouse>
+      <Code></Code>
+      <Products>
+        <Product>
+          <SKU></SKU>
+          <Quantity></Quantity>
+          <ReStockCode></ReStockCode>
+        </Product>
+      </Products>
+    </Warehouse>
+  </Warehouses>
+
+
+  <Defaults Total="1" Mode="REPLACE">
+    <Warehouse BusinessUnit="UNITEDKINGDOM" Partner="*ALL" Mode="ADD">01</Warehouse>
+  </Defaults>
+
+</ProductStockLoadRequest>

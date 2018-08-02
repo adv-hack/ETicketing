@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AddOrderTrackingRequest>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID></SenderID>
+    <ReceiverID></ReceiverID>
+    <CountryCode></CountryCode>
+    <LoginID>IRIS</LoginID>
+    <Password>IRIS</Password>
+    <Company>IRIS</Company>
+    <TransactionID></TransactionID>
+  </TransactionHeader>
+  <OrderDetails>
+    <PaymentReference>12010639</PaymentReference>
+    <TrackingReference>97799-HH-8HGJH7</TrackingReference>
+  </OrderDetails>
+</AddOrderTrackingRequest>

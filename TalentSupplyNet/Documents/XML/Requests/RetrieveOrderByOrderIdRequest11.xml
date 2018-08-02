@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RetrieveOrderByOrderIdRequest>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID></SenderID>
+    <ReceiverID></ReceiverID>
+    <CountryCode></CountryCode>
+    <LoginID>IRIS</LoginID>
+    <Password>IRIS</Password>
+    <Company>IRIS</Company>
+    <TransactionID></TransactionID>
+  </TransactionHeader>
+  <Orders>
+    <WebOrderNo></WebOrderNo>
+    <WebTempOrderNo>BOXOFFICE69646</WebTempOrderNo>
+    <ExcludeCustInfo>1</ExcludeCustInfo>
+  </Orders>
+</RetrieveOrderByOrderIdRequest>

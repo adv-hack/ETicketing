@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<DeleteCustomerAssociationsResponse>
+  <Version>1.0</Version>
+  <TransactionHeader>
+    <SenderID />
+    <ReceiverID />
+    <ErrorStatus ErrorNumber=""></ErrorStatus>
+    <DocumentID />
+    <TransactionID />
+    <Company />
+    <TimeStamp />
+  </TransactionHeader>
+  <CustomerAssociationDelete>
+    <Response>
+      <ReturnCode></ReturnCode>
+      <SessionID>300308192029376182659612099</SessionID>
+      <CustomerNumber>000000000000</CustomerNumber>
+    </Response>
+  </CustomerAssociationDelete>
+</DeleteCustomerAssociationsResponse>

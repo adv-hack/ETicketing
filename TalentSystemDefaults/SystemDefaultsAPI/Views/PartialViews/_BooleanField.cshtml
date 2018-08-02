@@ -1,0 +1,30 @@
+﻿@using SystemDefaultsAPI.Models; 
+@model BooleanFieldModel
+<div class="dm-control">
+	<div class="row ebiz-@Model.FieldName">
+		<div class="medium-3 columns ebiz-left">
+			@Html.Label(Model.FieldName,Model.DisplayName, new{Class= "dm-field"})
+		</div>
+		@{
+			string style = (!Model.IsValid? "": "display:none;");
+		}
+		<div class="medium-8 columns ebiz-left">
+			@Html.CheckBox(Model.FieldName, Model.CurrentValue, new {Checked = Model.UpdatedValue})
+			<span type="err" id="err_@Model.FieldName" style="@style" class="ebiz-left error"> @Model.ErrorMessage </span>
+		</div>
+
+		<div class="medium-1 columns">
+			@{
+				string visibility = (Model.Description != String.Empty?"visible":"hidden");
+			}
+			<i class="fa fa-info-circle" style='visibility: @visibility' onclick='showDescription("@Model.Description");'></i>
+			&nbsp;
+			@{
+				visibility = (Model.AllowedPlaceHolders != String.Empty?"visible":"hidden");
+			}
+			<i class="fa fa-code" style='visibility: @visibility' onclick='showPlaceHolders("@Model.AllowedPlaceHolders");'></i>
+		</div>
+	</div>
+	@Html.Hidden(Model.CurrentValueId, Model.HashedCurrentValue)
+	@Html.Raw(string.Format("<input type=\"hidden\" name=\"" + Model.MetaDataId + "\" id=\"" + Model.MetaDataId + "\" value=\"" + Model.Data + "\" " + Model.ValidationAttributes + "/>"))
+</div>
