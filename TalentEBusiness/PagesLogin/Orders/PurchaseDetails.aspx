@@ -4,6 +4,8 @@
 <%@ Register Src="~/UserControls/DirectDebitSummary.ascx" TagName="DirectDebitSummary" TagPrefix="Talent" %>
 
 <asp:content id="Content1" contentplaceholderid="ContentPlaceHolder1" runat="Server">
+
+
     <Talent:PageHeaderText ID="uscPageHeaderText" runat="server" />
     <Talent:HTMLInclude ID="uscHTMLInclude" runat="server" Usage="2" Sequence="1" />
     <asp:PlaceHolder ID="plhErrorMessage" runat="server" Visible="false">
@@ -375,7 +377,7 @@
                     <asp:Button ID="btnSeatHistorySelectedItem" runat="server" CssClass="button ebiz-seat-hist-selected" OnClientClick="if (validateButtonAction('seatHist','.ebiz-item-select', '.ebiz-order-details') == false) return(false);" />                           
                     <asp:Button ID="btnSeatPrintHistorySelectedItem" runat="server" CssClass="button ebiz-seat-print-hist-selected" OnClientClick="if (validateButtonAction('seatPrintHist','.ebiz-item-select', '.ebiz-order-details') == false) return(false);" />                   
                     <asp:Button ID="btnResendEmail" runat="server" CssClass="button resend-email" OnClientClick="if (validateButtonAction('email','.ebiz-item-select', '.ebiz-order-details') == false) return(false);" />                   
-                    <asp:Button ID="btnResendMessage" runat="server" CssClass="button resend-message" OnClientClick="if (validateButtonAction('number','.ebiz-item-select', '.ebiz-order-details') == false) return(false);" />                   
+                    <asp:Button ID="btnResendMessage" runat="server" CssClass="button resend-message" />                                     
                 </div>
             </asp:PlaceHolder>
             <asp:Repeater ID="rptOrderDetails" runat="server">
@@ -722,6 +724,89 @@
     <asp:HiddenField runat="server" ID="hdfStopCodeDiagMessage" ClientIDMode="Static" />                
     <asp:HiddenField runat="server" ID="hdfStopCodeOkBtnText" ClientIDMode="Static" />  
     <asp:HiddenField runat="server" ID="hdfStopCodeCancBtnText" ClientIDMode="Static" />  
+    <asp:HiddenField runat="server" ID="hdfResendNumber" ClientIDMode="Static" />  
+    <asp:HiddenField runat="server" ID ="hdfBookingId" ClientIDMode="Static" />
     </asp:PlaceHolder>
+
+    <script>
+        var phoneNumber = document.getElementById("hdfResendNumber").value;
+        var callId = document.getElementById("hdfBookingId").value;
+        //var todayDate = New Date(Now.Year, Now.Month, Now.Day);
+        //var hostname = 'https://xmpp.org/extensions/xep-0206.pdf';
+        //var hostname = 'https://' + window.location.hostname + ':20759/Assets/page1.jpg'
+        if (phoneNumber != undefined || phoneNumber != null) {
+            var url = 'https://eu11.chat-api.com/instance7892/message?token=zk4m5fcrzm40yrls';
+            //var url = 'https://eu11.chat-api.com/instance7892/sendFile?token=zk4m5fcrzm40yrls';
+            //var mobileNumber = parseInt(document.getElementById("hdfResendNumber").value);
+            var data = {
+                //phone: '919913362841', // Receivers phone
+                phone: phoneNumber, // Receivers phone
+                body: "http://www.qaready.talent-sport.co.uk/Boxoffice/Assets/HTML/HospitalityPDF/" + callId + "-03082018-0636.pdf", // Message
+                //body: hostname, // Message
+                filename: "11182-03082018-0636.pdf",
+            };
+            
+            // Send a request
+            //console.log(JSON.stringify(data));
+            $.ajax(url, {
+                "data": JSON.stringify(data),
+                "contentType": 'application/json',
+                "type": 'POST',
+                "success": function (data) {
+                    //callbackfn(data)
+                    console.log(data.phone + " " + data.body + " Successfully sent");
+                },
+                "error": function (textStatus, errorThrown) {
+                    //callbackfn("Error getting the data")
+                    console.log(textStatus, errorThrown + " error");
+                }
+            });
+            //alert(url);
+            url = "https://eu11.chat-api.com/instance8194/messages?token=t6a8d1zu9gk6t5ye&lastMessageNumber=1";
+            $.get(url, function (data) { // Make a GET request
+                for (var i = 0; i < data.messages.length; i++) { // For each message
+                    var message = data.messages[i];
+                    console.log(message.author + ': ' + message.body); //Send it to console
+
+                    if (message.senderName!='') {
+
+                        var message =message.body;
+                        if (message.indexOf("Hello") >= 0) {
+                            if (typeof message.author != 'undefined') {
+
+                                phoneNumber = message.author.replace('@c.us', '');
+                                var data = {
+                                    phone: phoneNumber, // Receivers phone
+                                    body: "Hello", // Message
+                                    //body: hostname, // Message
+
+                                }
+                                $.ajax(url, {
+                                    "data": JSON.stringify(data),
+                                    "contentType": 'application/json',
+                                    "type": 'POST',
+                                    "success": function (data) {
+                                        //callbackfn(data)
+                                        console.log(data.phone + " " + data.body + " Successfully sent");
+                                    },
+                                    "error": function (textStatus, errorThrown) {
+                                        //callbackfn("Error getting the data")
+                                        console.log(textStatus, errorThrown + " error");
+                                    }
+                                });
+                            }
+                          
+
+                            
+
+                        }
+
+                    }
+                }
+            });
+        }
+
+    </script>
+
 </asp:content>
 

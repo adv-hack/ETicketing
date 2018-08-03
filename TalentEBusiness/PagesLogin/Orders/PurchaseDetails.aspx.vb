@@ -339,6 +339,7 @@ Partial Class PagesLogin_Orders_PurchaseDetails
                         btnSeatHistorySelectedItem.Text = _wfr.Content("SeatHistoryLabel", _languageCode, True)
                         btnSeatPrintHistorySelectedItem.Text = _wfr.Content("SeatPrintHistoryLabel", _languageCode, True)
                         btnResendEmail.Text = _wfr.Content("ResendEmailButtonText", _languageCode, True)
+                        btnResendMessage.Text = _wfr.Content("ResendMessageButtonText", _languageCode, True)
 
                         hdfIsBulk.Value = If(Not String.IsNullOrEmpty(Request.QueryString("bulkid")) AndAlso Request.QueryString("bulkid").ToString() <> "0", "true", "false")
                         hdfSingleSelectOnlyErr.Value = getActionErrorDescription(actionErrorList.NoMultipleSelectionsAllowed)
@@ -1194,6 +1195,22 @@ Partial Class PagesLogin_Orders_PurchaseDetails
         End If
     End Sub
 
+    Protected Sub btnResendMessage_Click(sender As Object, e As EventArgs) Handles btnResendMessage.Click
+        If _dtPurchaseHistory IsNot Nothing Then
+            hdfResendNumber.Value = Profile.User.Details.Mobile_Number
+            hdfBookingId.Value = _dtPurchaseHistory.Rows(0)("CallId")
+            'Dim callId As String = "9411";
+            'Dim path As String = @"\\Win-72a9d09q7eg\c\TalentEBusinessSuiteAssets\TalentQAReady\Test\BoxOffice\HTML\HospitalityPDF";
+            'Dim fileName As String = Directory.GetFiles(path).Where((f) >= f.Contains(callId + "-")).Select((f) >=
+            '{
+            '    var index = f.LastIndexOf(@"\");
+            '    var name = f.Substring(Index + 1);
+            '    Return name;
+            '}).FirstOrDefault();
+            ';
+            'Console.WriteLine(fileName);
+        End If
+    End Sub
     Protected Function FormatDespatchDate(ByVal despatchDate As String, ByVal ticketNumber As String) As String
         If despatchDate.Equals("000000") OrElse String.IsNullOrEmpty(ticketNumber) OrElse ticketNumber.Equals("**MEMBERSHIP**") Then
             Return String.Empty
